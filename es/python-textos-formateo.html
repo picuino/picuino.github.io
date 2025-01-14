@@ -105,120 +105,151 @@ el formato que se debe dar al contenido de la variable.</p>
 <p>Ejemplo:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">nombre</span> <span class="o">=</span> <span class="s1">&#39;Guido&#39;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">apellido</span> <span class="o">=</span> <span class="s1">&#39;van Rossum&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s1">&#39;El creador de Python es </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="n">apellido</span><span class="si">}</span><span class="s1">&#39;</span>
-<span class="go">    &#39;El creador de Python es Guido van Rossum&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;El creador de Python es </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="n">apellido</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="go">    El creador de Python es Guido van Rossum</span>
 
-<span class="gp">&gt;&gt;&gt; </span><span class="n">numero</span> <span class="o">=</span> <span class="mi">7</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s1">&#39;James Bond es el agente </span><span class="si">{</span><span class="n">numero</span><span class="si">:</span><span class="s1">03d</span><span class="si">}</span><span class="s1">&#39;</span>
-<span class="go">    &#39;James Bond es el agente 007&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">num</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;James Bond es el agente </span><span class="si">{</span><span class="n">num</span><span class="si">:</span><span class="s1">03d</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="go">    James Bond es el agente 007</span>
 </pre></div>
 </div>
 <div class="section" id="ejercicios">
 <h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Enlazar permanentemente con este título">¶</a></h2>
 <ol class="arabic">
-<li><p class="first">Repite el siguiente ejercicio con tu propio nombre.</p>
+<li><p class="first">Repite el siguiente ejercicio cambiando el valor de la variable
+'nombre' con tu propio nombre.</p>
 <p>Ejercicio:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">nombre</span> <span class="o">=</span> <span class="s1">&#39;Anselmo&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">nombre</span><span class="si">:</span><span class="s1">&gt;20</span><span class="si">}</span><span class="s1">&#39;</span>    <span class="c1"># Justificado a la derecha</span>
-<span class="go">    &#39;             Anselmo&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">nombre</span><span class="si">:</span><span class="s1">&lt;20</span><span class="si">}</span><span class="s1">&#39;</span>    <span class="c1"># Justificado a la izquierda</span>
-<span class="go">    &#39;Anselmo             &#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">nombre</span><span class="si">:</span><span class="s1">^20</span><span class="si">}</span><span class="s1">&#39;</span>    <span class="c1"># Centrado</span>
-<span class="go">    &#39;      Anselmo       &#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">nombre</span><span class="si">:</span><span class="s1">_^20</span><span class="si">}</span><span class="s1">&#39;</span>   <span class="c1"># Centrado con relleno &#39;_&#39;</span>
-<span class="go">    &#39;______Anselmo_______&#39;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nombre</span> <span class="o">=</span> <span class="s1">&#39;Anselmo&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">nombre</span><span class="si">:</span><span class="s1">&gt;20</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>    <span class="c1"># Justificado a la derecha</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">nombre</span><span class="si">:</span><span class="s1">&lt;20</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>    <span class="c1"># Justificado a la izquierda</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">nombre</span><span class="si">:</span><span class="s1">^20</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>    <span class="c1"># Centrado</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">nombre</span><span class="si">:</span><span class="s1">_^20</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>   <span class="c1"># Centrado con relleno &#39;_&#39;</span>
+</pre></div>
+</div>
+<p>Salida:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>             <span class="n">Anselmo</span>
+<span class="n">Anselmo</span>
+      <span class="n">Anselmo</span>
+<span class="n">______Anselmo_______</span>
 </pre></div>
 </div>
 </li>
-<li><p class="first">Repite el siguiente ejercicio con la variable número <code class="docutils literal notranslate"><span class="pre">numero</span> <span class="pre">=</span> <span class="pre">72</span></code>.
+<li><p class="first">Repite el siguiente ejercicio cambiando el valor de la variable
+<code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">=</span> <span class="pre">78</span></code>.
 En la última línea cambia el número por tu año de nacimiento.</p>
 <p>Ejercicio:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">nmr</span> <span class="o">=</span> <span class="mi">44</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">nmr</span><span class="si">:</span><span class="s1">10d</span><span class="si">}</span><span class="s1">&#39;</span>    <span class="c1"># Formato decimal entero. Longitud 10</span>
-<span class="go">    &#39;        44&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">nmr</span><span class="si">:</span><span class="s1">+10d</span><span class="si">}</span><span class="s1">&#39;</span>   <span class="c1"># Formato decimal entero con signo. Longitud 10</span>
-<span class="go">    &#39;       +44&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">nmr</span><span class="si">:</span><span class="s1">10X</span><span class="si">}</span><span class="s1">&#39;</span>    <span class="c1"># Formato hexadecimal en mayúsculas. Longitud 10</span>
-<span class="go">    &#39;        2C&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">nmr</span><span class="si">:</span><span class="s1">010b</span><span class="si">}</span><span class="s1">&#39;</span>   <span class="c1"># Formato binario con ceros a la izquierda. Longitud 10</span>
-<span class="go">    &#39;0000101100&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">nmr</span><span class="si">:</span><span class="s1">c</span><span class="si">}</span><span class="s1">&#39;</span>      <span class="c1"># Formato de número a Unicode</span>
-<span class="go">    &#39;,&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="mi">128512</span><span class="si">:</span><span class="s1">c</span><span class="si">}</span><span class="s1">&#39;</span>   <span class="c1"># Formato de número a Unicode</span>
-<span class="go">    &#39;😀&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="mi">2023</span><span class="si">:</span><span class="s1">c</span><span class="si">}</span><span class="s1">&#39;</span>     <span class="c1"># Formato de número a Unicode</span>
-<span class="go">    &#39;ߧ&#39;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">44</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">num</span><span class="si">:</span><span class="s1">10d</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>    <span class="c1"># Formato decimal entero. Longitud 10</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">num</span><span class="si">:</span><span class="s1">+10d</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>   <span class="c1"># Formato decimal entero con signo. Longitud 10</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">num</span><span class="si">:</span><span class="s1">10X</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>    <span class="c1"># Formato hexadecimal en mayúsculas. Longitud 10</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">num</span><span class="si">:</span><span class="s1">010b</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>   <span class="c1"># Formato binario con ceros a la izquierda. Longitud 10</span>
+</pre></div>
+</div>
+<p>Salida:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>        <span class="mi">44</span>
+       <span class="o">+</span><span class="mi">44</span>
+        <span class="mi">2</span><span class="n">C</span>
+<span class="mi">0000101100</span>
 </pre></div>
 </div>
 </li>
-<li><p class="first">Repite el siguiente ejercicio con la variable <code class="docutils literal notranslate"><span class="pre">e</span> <span class="pre">=</span> <span class="pre">2,71828</span></code>.
+<li><p class="first">Repite el siguiente ejercicio con la variable <code class="docutils literal notranslate"><span class="pre">e</span> <span class="pre">=</span> <span class="pre">2.718281828</span></code>.
 Recuerda que en Python los decimales siempre se separan con un punto,
 no con una coma.</p>
 <p>Ejercicio:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pi</span> <span class="o">=</span> <span class="mf">3.14159</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Número de punto flotante con 10 espacios en total y 3 decimales</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">pi</span><span class="si">:</span><span class="s1">10.3f</span><span class="si">}</span><span class="s1">&#39;</span>
-<span class="go">    &#39;     3.142&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">pi</span><span class="si">:</span><span class="s1">010.3f</span><span class="si">}</span><span class="s1">&#39;</span> <span class="c1"># Igual que el primero, con ceros a la izquierda</span>
-<span class="go">    &#39;000003.142&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">pi</span><span class="si">:</span><span class="s1">10.0f</span><span class="si">}</span><span class="s1">&#39;</span>  <span class="c1"># Igual que el primero, con cero decimales</span>
-<span class="go">    &#39;         3&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">pi</span><span class="si">:</span><span class="s1">10.4e</span><span class="si">}</span><span class="s1">&#39;</span>  <span class="c1"># Igual que el primero, en notación científica</span>
-<span class="go">    &#39; 3.142e+00&#39;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pi</span> <span class="o">=</span> <span class="mf">3.14159</span>
+<span class="c1"># Número de punto flotante que ocupa 10 espacios en total y tiene 3 decimales</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">pi</span><span class="si">:</span><span class="s1">10.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">pi</span><span class="si">:</span><span class="s1">010.5f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span> <span class="c1"># Cinco decimales y ceros a la izquierda</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">pi</span><span class="si">:</span><span class="s1">10.0f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>  <span class="c1"># Igual que el primero, con cero decimales</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">pi</span><span class="si">:</span><span class="s1">10.4e</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>  <span class="c1"># Igual que el primero, en notación científica</span>
+</pre></div>
+</div>
+<p>Salida:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>     <span class="mf">3.142</span>
+<span class="mf">0003.14159</span>
+         <span class="mi">3</span>
+ <span class="mf">3.142e+00</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Repite el siguiente ejercicio cambiando el valor de los números
+utilizados para que aparezcan otros caracteres Unicode.</p>
+<p>Ejercicio:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="mi">78</span><span class="si">:</span><span class="s1">c</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>      <span class="c1"># Formato de carácter Unicode</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="mi">128520</span><span class="si">:</span><span class="s1">c</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>  <span class="c1"># Formato de carácter Unicode</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="mi">250</span><span class="si">:</span><span class="s1">c</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>     <span class="c1"># Formato de carácter Unicode</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="mi">2023</span><span class="si">:</span><span class="s1">c</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>    <span class="c1"># Formato de carácter Unicode</span>
+</pre></div>
+</div>
+<p>Salida:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>N
+😀
+ú
+ߧ
 </pre></div>
 </div>
 </li>
 <li><p class="first">Escribe un programa que pida un carácter por el teclado y que devuelva
-los siguientes 10 caracteres Unicode.</p>
+los siguientes 20 caracteres Unicode.</p>
 <p>Utiliza la función <code class="docutils literal notranslate"><span class="pre">ord()</span></code> para convertir el carácter en su número
 Unicode.</p>
 <p>Pista:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">caracter</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Introduce un caracter: &#39;</span><span class="p">)</span>
-<span class="n">numero</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">caracter</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="k">for</span> <span class="n">code</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">numero</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">numero</span> <span class="o">+</span> <span class="mi">11</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Código: ...  caracter: ... &#39;</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">char</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Introduce un carácter: &#39;</span><span class="p">)</span>
+<span class="n">num</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">char</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="k">for</span> <span class="n">code</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">num</span> <span class="o">+</span> <span class="mi">21</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Código: ...  carácter: ... &#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Salida:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Introduce</span> <span class="n">un</span> <span class="n">caracter</span><span class="p">:</span> <span class="n">ç</span>
-<span class="n">Código</span><span class="p">:</span> <span class="mh">0x000E8</span> <span class="n">caracter</span><span class="p">:</span> <span class="n">è</span>
-<span class="n">Código</span><span class="p">:</span> <span class="mh">0x000E9</span> <span class="n">caracter</span><span class="p">:</span> <span class="n">é</span>
-<span class="n">Código</span><span class="p">:</span> <span class="mh">0x000EA</span> <span class="n">caracter</span><span class="p">:</span> <span class="n">ê</span>
-<span class="n">Código</span><span class="p">:</span> <span class="mh">0x000EB</span> <span class="n">caracter</span><span class="p">:</span> <span class="n">ë</span>
-<span class="n">Código</span><span class="p">:</span> <span class="mh">0x000EC</span> <span class="n">caracter</span><span class="p">:</span> <span class="n">ì</span>
-<span class="n">Código</span><span class="p">:</span> <span class="mh">0x000ED</span> <span class="n">caracter</span><span class="p">:</span> <span class="n">í</span>
-<span class="n">Código</span><span class="p">:</span> <span class="mh">0x000EE</span> <span class="n">caracter</span><span class="p">:</span> <span class="n">î</span>
-<span class="n">Código</span><span class="p">:</span> <span class="mh">0x000EF</span> <span class="n">caracter</span><span class="p">:</span> <span class="n">ï</span>
-<span class="n">Código</span><span class="p">:</span> <span class="mh">0x000F0</span> <span class="n">caracter</span><span class="p">:</span> <span class="n">ð</span>
-<span class="n">Código</span><span class="p">:</span> <span class="mh">0x000F1</span> <span class="n">caracter</span><span class="p">:</span> <span class="n">ñ</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Introduce un carácter: ñ
+Código: 242  carácter: ò
+Código: 243  carácter: ó
+Código: 244  carácter: ô
+Código: 245  carácter: õ
+Código: 246  carácter: ö
+Código: 247  carácter: ÷
+Código: 248  carácter: ø
+Código: 249  carácter: ù
+Código: 250  carácter: ú
+Código: 251  carácter: û
+Código: 252  carácter: ü
+Código: 253  carácter: ý
+Código: 254  carácter: þ
+Código: 255  carácter: ÿ
+Código: 256  carácter: Ā
+Código: 257  carácter: ā
+Código: 258  carácter: Ă
+Código: 259  carácter: ă
+Código: 260  carácter: Ą
+Código: 261  carácter: ą
 </pre></div>
 </div>
 <p>Prueba a introducir diferentes caracteres desde el teclado.
 Prueba a copiar de Internet y pegar símbolos, emojis, letras griegas y
 cirílicas, etc.</p>
 </li>
-<li><p class="first">Escribe una función que devuelva el valor de un color RGB en
-Hexadecimal. Los tres parámetros de la función serán tres números
+<li><p class="first">Escribe una función que imprima el valor de un color RGB en
+hexadecimal. Los tres parámetros de la función serán tres números
 decimales R, G y B (Red, Green y Blue) que deben estar en el rango
-de 0 a 255.
-Si algún número es mayor de 255 o menor de 0 se debe recortar al valor
-permitido.</p>
-<p>Pista: define una función que limite el valor de cada número y lo
-formatee a formato hexadecimal. Luego puedes definir una segunda
-función que llame tres veces a la primera función con los valores
-de los tres colores.</p>
+de 0 a 255.</p>
 <p>Recuerda que los valores hexadecimales deben estar en mayúsculas y
 tener dos cifras obligatoriamente.
-La manera de convertir una variable a hexadecimal con dos cifras es
-añadir a la variable el siguiente formato: <code class="docutils literal notranslate"><span class="pre">f'{variable:02X}'</span></code>.</p>
+La manera de convertir una variable a hexadecimal que tenga siempre
+dos cifras es añadir a la variable el siguiente formato:
+<code class="docutils literal notranslate"><span class="pre">f'{variable:02X}'</span></code>.</p>
 <p>Ejemplo:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rgb</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="mi">196</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
-<span class="n">rgb</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">64</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">color_hex</span><span class="p">(</span><span class="n">red</span><span class="p">,</span> <span class="n">green</span><span class="p">,</span> <span class="n">blue</span><span class="p">):</span>
+   <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39; ... &#39;</span><span class="p">)</span>
+
+
+<span class="n">color_hex</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="mi">196</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="n">color_hex</span><span class="p">(</span><span class="mi">250</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">64</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Salida:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">80</span><span class="n">C404</span>
-<span class="n">FF0040</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#80C404</span>
+<span class="c1">#FA0540</span>
 </pre></div>
 </div>
 </li>

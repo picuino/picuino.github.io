@@ -214,7 +214,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/content.html</loc>
-  <lastmod>2025-03-01</lastmod>
+  <lastmod>2025-03-15</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -238,13 +238,13 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/control-actuator-index.html</loc>
-  <lastmod>2025-02-13</lastmod>
+  <lastmod>2025-03-13</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/control-actuator-servomotor.html</loc>
-  <lastmod>2025-02-13</lastmod>
+  <lastmod>2025-03-13</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -286,13 +286,13 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/control-sensor-dht11.html</loc>
-  <lastmod>2025-02-13</lastmod>
+  <lastmod>2025-03-13</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/control-sensor-index.html</loc>
-  <lastmod>2025-02-13</lastmod>
+  <lastmod>2025-03-13</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -652,7 +652,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/electronic-binary.html</loc>
-  <lastmod>2025-02-22</lastmod>
+  <lastmod>2025-03-13</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -724,13 +724,13 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/electronic-digital-index.html</loc>
-  <lastmod>2025-02-27</lastmod>
+  <lastmod>2025-03-15</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/electronic-digital-signals.html</loc>
-  <lastmod>2025-02-26</lastmod>
+  <lastmod>2025-03-13</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -772,31 +772,31 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/electronic-error-detection.html</loc>
-  <lastmod>2025-02-26</lastmod>
+  <lastmod>2025-03-13</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/electronic-gate-and.html</loc>
-  <lastmod>2025-02-26</lastmod>
+  <lastmod>2025-03-15</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/electronic-gate-not.html</loc>
-  <lastmod>2025-02-26</lastmod>
+  <lastmod>2025-03-15</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/electronic-gate-or.html</loc>
-  <lastmod>2025-02-26</lastmod>
+  <lastmod>2025-03-15</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/electronic-gate-xor.html</loc>
-  <lastmod>2025-02-26</lastmod>
+  <lastmod>2025-03-15</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -820,7 +820,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/electronic-morgan-laws.html</loc>
-  <lastmod>2025-02-26</lastmod>
+  <lastmod>2025-03-15</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -904,7 +904,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/error-404.html</loc>
-  <lastmod>2025-03-01</lastmod>
+  <lastmod>2025-03-15</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -1036,7 +1036,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/genindex.html</loc>
-  <lastmod>2025-03-01</lastmod>
+  <lastmod>2025-03-15</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -1192,7 +1192,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/index.html</loc>
-  <lastmod>2025-03-01</lastmod>
+  <lastmod>2025-03-15</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -2332,7 +2332,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/search.html</loc>
-  <lastmod>2025-03-01</lastmod>
+  <lastmod>2025-03-15</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -2770,7 +2770,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/uno-doc/dht11.html</loc>
-  <lastmod>2025-02-13</lastmod>
+  <lastmod>2025-03-13</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -2782,7 +2782,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/uno-doc/index.html</loc>
-  <lastmod>2025-02-13</lastmod>
+  <lastmod>2025-03-13</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -2800,7 +2800,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/uno-doc/ldr.html</loc>
-  <lastmod>2025-02-13</lastmod>
+  <lastmod>2025-03-13</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -3076,7 +3076,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/content.html</loc>
-  <lastmod>2025-03-01</lastmod>
+  <lastmod>2025-03-15</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -3100,13 +3100,13 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/control-actuator-index.html</loc>
-  <lastmod>2025-02-13</lastmod>
+  <lastmod>2025-03-13</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/control-actuator-servomotor.html</loc>
-  <lastmod>2025-02-13</lastmod>
+  <lastmod>2025-03-13</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -3148,13 +3148,13 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/control-sensor-dht11.html</loc>
-  <lastmod>2025-02-13</lastmod>
+  <lastmod>2025-03-13</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/control-sensor-index.html</loc>
-  <lastmod>2025-02-13</lastmod>
+  <lastmod>2025-03-13</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -3514,7 +3514,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/electronic-binary.html</loc>
-  <lastmod>2025-02-22</lastmod>
+  <lastmod>2025-03-13</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -3586,13 +3586,13 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/electronic-digital-index.html</loc>
-  <lastmod>2025-02-27</lastmod>
+  <lastmod>2025-03-15</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/electronic-digital-signals.html</loc>
-  <lastmod>2025-02-26</lastmod>
+  <lastmod>2025-03-13</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -3634,31 +3634,31 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/electronic-error-detection.html</loc>
-  <lastmod>2025-02-26</lastmod>
+  <lastmod>2025-03-13</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/electronic-gate-and.html</loc>
-  <lastmod>2025-02-26</lastmod>
+  <lastmod>2025-03-15</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/electronic-gate-not.html</loc>
-  <lastmod>2025-02-26</lastmod>
+  <lastmod>2025-03-15</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/electronic-gate-or.html</loc>
-  <lastmod>2025-02-26</lastmod>
+  <lastmod>2025-03-15</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/electronic-gate-xor.html</loc>
-  <lastmod>2025-02-26</lastmod>
+  <lastmod>2025-03-15</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -3682,7 +3682,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/electronic-morgan-laws.html</loc>
-  <lastmod>2025-02-26</lastmod>
+  <lastmod>2025-03-15</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -3766,7 +3766,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/error-404.html</loc>
-  <lastmod>2025-03-01</lastmod>
+  <lastmod>2025-03-15</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -3898,7 +3898,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/genindex.html</loc>
-  <lastmod>2025-03-01</lastmod>
+  <lastmod>2025-03-15</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -4054,7 +4054,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/index.html</loc>
-  <lastmod>2025-03-01</lastmod>
+  <lastmod>2025-03-15</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -5194,7 +5194,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/search.html</loc>
-  <lastmod>2025-03-01</lastmod>
+  <lastmod>2025-03-15</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -5632,7 +5632,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/uno-doc/dht11.html</loc>
-  <lastmod>2025-02-13</lastmod>
+  <lastmod>2025-03-13</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -5644,7 +5644,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/uno-doc/index.html</loc>
-  <lastmod>2025-02-13</lastmod>
+  <lastmod>2025-03-13</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -5662,7 +5662,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/uno-doc/ldr.html</loc>
-  <lastmod>2025-02-13</lastmod>
+  <lastmod>2025-03-13</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>

@@ -103,33 +103,41 @@
             
   <div class="section" id="la-puerta-logica-and">
 <span id="electronic-gate-and"></span><h1><span class="section-number">7. </span>The logic AND gate<a class="headerlink" href="#la-puerta-logica-and" title="Permalink to this headline">¶</a></h1>
-<p>The AND logic gate has two or more inputs and one output. Its symbol is the following:</p>
+<p>La puerta lógica AND tiene dos o más entradas y una salida.</p>
+<p>La salida tiene un valor lógico alto (1) si todas sus entradas
+tiene un valor lógico alto (1).</p>
+<p>Es decir, si la entrada A <strong>y</strong> la entrada B están a nivel alto,
+la salida estará a nivel alto. De ahí el nombre <strong>AND</strong> en inglés.</p>
+<p>El <strong>símbolo de la puerta AND</strong> es el siguiente:</p>
 <div class="figure align-center" id="id1">
 <a class="reference internal image-reference" href="_images/electronic-simbolo-puerta-and.png"><img alt="Puerta lógica AND de dos entradas." src="_images/electronic-simbolo-puerta-and.png" style="width: 180px;"></a>
 <p class="caption"><span class="caption-text">Symbol of the two-input AND logic gate.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
-<p>The output has a logic high value (1) if all its inputs have a logic high value (1). That is, if input A <strong>and</strong> input B are high, the output will be high. Hence the name <strong>AND</strong> in English.</p>
-<p>The logical AND function is represented by multiplication, so that the output of the gate will be the logical multiplication of the inputs:</p>
+<p>La <strong>función lógica de la puerta AND</strong> se representa mediante una multiplicación,
+de manera que la salida de la puerta será la multiplicación lógica de las entradas:</p>
 <div class="math">
 <p><img src="_images/math/da7e15d1e9215d1d516d70a96e3206d93fca70dd.svg" alt="Out = A \cdot B"></p>
-</div><p>If both inputs are worth one, the output will be worth one, but if either input is worth zero, the output will be worth zero.</p>
-<p>The truth table of the logical AND function is as follows:</p>
+</div><p>La <strong>tabla de verdad de la puerta AND</strong> es la siguiente:</p>
 <div class="figure align-center" id="id2">
 <a class="reference internal image-reference" href="_images/electronic-puerta-and-02.png"><img alt="Tabla de verdad de la puerta lógica AND de dos entradas." src="_images/electronic-puerta-and-02.png" style="width: 160px;"></a>
 <p class="caption"><span class="caption-text">Truth table of the two-input AND logic gate.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
 </div>
+<p>If both inputs are worth one, the output will be worth one, but if either input is worth zero, the output will be worth zero.</p>
 <div class="section" id="la-puerta-logica-nand">
 <h2>The NAND logic gate<a class="headerlink" href="#la-puerta-logica-nand" title="Permalink to this headline">¶</a></h2>
-<p>The NAND logic gate has two or more inputs and one output. Its symbol is the following:</p>
+<p>La puerta lógica NAND tiene dos o más entradas y una salida.</p>
+<p>The output will be the same as that of an AND gate, but inverted. That is to say that the output will only be worth zero when all the inputs are worth one.</p>
+<p>El <strong>símbolo de la puerta NAND</strong> es el siguiente:</p>
 <div class="figure align-center" id="id3">
 <a class="reference internal image-reference" href="_images/electronic-simbolo-puerta-nand.png"><img alt="Puerta lógica NAND de dos entradas." src="_images/electronic-simbolo-puerta-nand.png" style="width: 180px;"></a>
 <p class="caption"><span class="caption-text">Symbol of the two-input NAND logic gate.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
 </div>
-<p>The output will be the same as that of an AND gate, but inverted. That is to say that the output will only be worth zero when all the inputs are worth one.</p>
-<p>The NAND logic function is represented by negated multiplication, so that the output of the gate will be the logical multiplication of the inputs that is finally inverted:</p>
+<p>La <strong>función lógica de la puerta NAND</strong> se representa mediante una
+multiplicación negada, de manera que la salida de la puerta será la
+multiplicación lógica de las entradas que finalmente se invierte:</p>
 <div class="math">
 <p><img src="_images/math/4f974054d96a33ea9993b9246badaa092e10f81b.svg" alt="Out = \overline{ A \cdot B }"></p>
-</div><p>The truth table of the NAND logic function is as follows:</p>
+</div><p>La <strong>tabla de verdad de la puerta NAND</strong> es la siguiente:</p>
 <div class="figure align-center" id="id4">
 <a class="reference internal image-reference" href="_images/electronic-puerta-nand-02.png"><img alt="Tabla de verdad de la puerta lógica NAND de dos entradas." src="_images/electronic-puerta-nand-02.png" style="width: 160px;"></a>
 <p class="caption"><span class="caption-text">Truth table of two-input NAND logic gate.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
@@ -144,11 +152,15 @@
 <div class="section" id="ejercicios">
 <h2>Exercises<a class="headerlink" href="#ejercicios" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li>Draw the AND logic gate symbol, its logic function, and its truth table.</li>
-<li>Draw the NAND logic gate symbol, its logic function, and its truth table.</li>
-<li>Check with the simulator that the truth table of the AND function and that the truth table of the NAND function are correct.</li>
+<li>Explica con tus palabras el funcionamiento de la puerta lógica AND.</li>
+<li>Dibuja el símbolo de la puerta lógica AND de dos entradas,
+su función lógica y su tabla de verdad.</li>
+<li>Explica con tus palabras el funcionamiento de la puerta lógica NAND.</li>
+<li>Dibuja el símbolo de la puerta lógica NAND de dos entradas,
+su función lógica y su tabla de verdad.</li>
 <li>In the simulator, add an inverting gate to the output of the AND gate and check that its response is the same as that of the NAND gate.</li>
-<li>Draw a three-input AND logic gate and its truth table.</li>
+<li>Dibuja una puerta lógica AND de tres entradas,
+su función lógica y su tabla de verdad.</li>
 </ol>
 </div>
 </div>
@@ -191,7 +203,7 @@
       unless otherwise specified.
       <br>
       <span class="lastupdated">
-        Last updated on February, 2025.
+        Last updated on March, 2025.
       </span>
 
     </p>

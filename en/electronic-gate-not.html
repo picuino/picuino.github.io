@@ -5,8 +5,8 @@
   <meta name="keywords" content="Technology, Secondary Education, Drawing, Structures, Mechanisms, Materials, Electricity, Electronics, Computer Science, Programming, Control, Arduino, Communications, Workshop">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Libre educational resources for Technology in Secondary Education. Electronics - Digital electronics - 5. The NOT logic gate">
-  <title>5. The NOT logic gate - Digital electronics - Picuino</title>
+  <meta name="description" content="Libre educational resources for Technology in Secondary Education. Electronics - Digital electronics - 5. The logical gate not">
+  <title>5. The logical gate not - Digital electronics - Picuino</title>
 
   
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
@@ -27,7 +27,7 @@
   <link rel="glossary" title="Glossary" href="genindex.html">
   <link rel="index" title="Index" href="content.html">
   <link rel="search" title="Search" href="search.html">
-  <link rel="next" title="6. The OR logic gate" href="electronic-gate-or.html">
+  <link rel="next" title="6. The logic gate or" href="electronic-gate-or.html">
   <link rel="prev" title="4. The binary system" href="electronic-binary.html">
 
 </head>
@@ -71,7 +71,7 @@
         
           <li><a href="electronic-digital-index.html">Digital electronics</a>/</li>
         
-      <li><span class="section-number">5. </span>The NOT logic gate</li>
+      <li><span class="section-number">5. </span>The logical gate not</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -102,39 +102,29 @@
            <div itemprop="articleBody">
             
   <div class="section" id="la-puerta-logica-not">
-<span id="electronic-gate-not"></span><h1><span class="section-number">5. </span>The NOT logic gate<a class="headerlink" href="#la-puerta-logica-not" title="Permalink to this headline">¶</a></h1>
-<p>Los componentes más sencillos de la electrónica digital son las
-<strong>puertas lógicas</strong>, que llevan a cabo operaciones lógicas básicas.
-Combinando estas puertas lógicas se pueden llegar a construir circuitos
-mucho más complejos, hasta llegar a los computadores modernos.</p>
-<p>La puerta lógica más sencilla posible es la <strong>puerta negación</strong>, también
-llamada <strong>puerta inversora</strong> o <strong>puerta NOT</strong>.
-Esta puerta invierte el valor de la señal de entrada, de manera que si
-la entrada vale un 1 lógico, la salida valdrá un 0 lógico y viceversa.</p>
-<p>El <strong>símbolo de la puerta NOT</strong> es el siguiente:</p>
+<span id="electronic-gate-not"></span><h1><span class="section-number">5. </span>The logical gate not<a class="headerlink" href="#la-puerta-logica-not" title="Permalink to this headline">¶</a></h1>
+<p>The simplest components of digital electronics are the <strong>logical gates</strong>, which carry out basic logical operations. Combining these logical gates, much more complex circuits can be built, until you reach modern computers.</p>
+<p>The simplest logical gate is the <strong>negation gate</strong>, also called <strong>Inverter gate</strong> or <strong>gate Not</strong>. This gate invests the value of the input signal, so that if the input is worth a logical one, the output will be worth a logical and vice versa.</p>
+<p>The <strong>Gate symbol Not</strong> is as follows:</p>
 <div class="figure align-center" id="id1">
 <a class="reference internal image-reference" href="_images/electronic-simbolo-puerta-not.png"><img alt="Puerta lógica NOT." src="_images/electronic-simbolo-puerta-not.png" style="width: 180px;"></a>
-<p class="caption"><span class="caption-text">NOT logic gate.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">Logical Gate Not.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
-<p>The circle at the exit of the triangle is the one that represents that the door inverts, or negates, the input value.</p>
-<p>La <strong>función lógica de la puerta NOT</strong> se representa mediante una línea
-sobre el elemento a invertir o negar:</p>
+<p>The circle at the exit of the triangle is the one that represents that the gate invests, or denies, the entrance value.</p>
+<p>The <strong>logical function of the not</strong> gate is represented by a line on the element to be invest or deny:</p>
 <div class="math">
-<p><img src="_images/math/6810fbea3d3c5ea61b210f94850e3c0bc6d55440.svg" alt="Out = \overline{ A }"></p>
-</div><p>A continuación podemos ver la
-<a class="reference external" href="https://es.wikipedia.org/wiki/Tabla_de_verdad#Negaci%C3%B3n" rel="noopener noreferrer" target="_blank">tabla de verdad</a>
-de la puerta NOT, que representa todos los valores posibles de entrada y
-de salida de la puerta lógica:</p>
+<p><img src="_images/math/ed5d101ad1ca68682d37eaacbc88277cf22ff67f.svg" alt="Out = \ overline {a}"></p>
+</div><p>Below we can see the <cite>Truth Table &lt;https://es.wikipedia.org/wiki/tabla_de_verdad#negaci%C3%B3n&gt;</cite> __ of the Not Puerta, which represents all possible values ​​of entry and exit of the logical gate:</p>
 <div class="figure align-center" id="id2">
 <a class="reference internal image-reference" href="_images/electronic-puerta-not-02.png"><img alt="Tabla de verdad de puerta lógica NOT." src="_images/electronic-puerta-not-02.png" style="width: 114px;"></a>
-<p class="caption"><span class="caption-text">Truth table of the NOT logic gate.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">Truth Table of the logic gate not.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
 </div>
-<p>When the input (A) is zero, the output (Out) will be one.</p>
-<p>When the input (A) is one, the output (Out) will be zero.</p>
+<p>When the entry is worth zero, the output (out) will be worth one.</p>
+<p>When the entrance is worth one, the output (out) will be worth zero.</p>
 <div class="section" id="simulacion">
 <h2>Simulation<a class="headerlink" href="#simulacion" title="Permalink to this headline">¶</a></h2>
-<p>In the following simulation we can see a NOT gate with an input that can change value and an output that is always the opposite of the input value.</p>
-<p>In the simulator the values ​​can be represented with numbers (0, 1), with logic levels (L, H) or with voltage values ​​(0V, 5V), with the following correspondence:</p>
+<p>In the following simulation we can see a Not Puerta with an entry that can change value and an exit that is always worth the opposite of the entrance value.</p>
+<p>In the simulator the values ​​can be represented with numbers (0, 1), with logical levels (L, H) or with voltage values ​​(0V, 5V), with the following correspondence:</p>
 <table class="colwidths-auto docutils align-default">
 <thead style="vertical-align:bottom;">
 <tr class="row-odd"><th class="head">Level</th>
@@ -143,36 +133,34 @@ de salida de la puerta lógica:</p>
 </tr>
 </thead>
 <tbody style="vertical-align:top;">
-<tr class="row-even"><td>L = LOW</td>
-<td>0 = Logical zero</td>
-<td>0 Volts</td>
+<tr class="row-even"><td>L = low</td>
+<td>0 = logical zero</td>
+<td>0 volts</td>
 </tr>
-<tr class="row-odd"><td>H = HIGH</td>
-<td>1 = Logical one</td>
-<td>5 Volts</td>
+<tr class="row-odd"><td>H = high</td>
+<td>1 = logical one</td>
+<td>5 volts</td>
 </tr>
 </tbody>
 </table>
-<p>You must click on the input logic value to change its value.</p>
+<p>You have to click on the logical input value to change value.</p>
 <div class="video-center">
 <iframe src="/circuits/index.html?startCircuit=digital-puerta-not.txt"></iframe>
 </div></div>
 <div class="section" id="ejercicios">
 <h2>Exercises<a class="headerlink" href="#ejercicios" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
-<li><p class="first">¿Qué es una puerta lógica?</p>
-<p>¿Qué se puede llegar a construir con las puertas lógicas?</p>
+<li><p class="first">What is a logical gate?</p>
+<p>What can be built with logical gates?</p>
 </li>
-<li><p class="first">Explica con tus palabras el funcionamiento de la puerta lógica NOT.</p>
+<li><p class="first">Explain with your words the functioning of the logic gate not.</p>
 </li>
-<li><p class="first">Draw the NOT gate symbol and write below its logical function and its three different names.</p>
+<li><p class="first">Draw the Not gate symbol and write under its logical function and its three different names.</p>
 </li>
-<li><p class="first">Dibuja la tabla de verdad de la puerta NOT con <strong>valores numéricos</strong>
-0 y 1.</p>
-<p>Dibuja la tabla de verdad de la puerta NOT con <strong>niveles lógicos</strong>
-L y H.</p>
+<li><p class="first">Draw the Truth Table of the Not Puerta with <strong>numerical values​​</strong> 0 and 1.</p>
+<p>Draw the Truth Table of the Not Puerta with <strong>logical levels</strong> L and H.</p>
 </li>
-<li><p class="first">Perform a simulation of two NOT gates in series. What do you think the two-door truth table will be like?</p>
+<li><p class="first">Make a two -gate simulation in series. How do you think it will be the Truth Table of the two gates?</p>
 <p>Perform the simulation and draw the truth table of the two gates in series.</p>
 </li>
 </ol>
@@ -188,7 +176,7 @@ L y H.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="electronic-gate-or.html" class="btn btn-neutral float-right" title="6. The OR logic gate" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="electronic-gate-or.html" class="btn btn-neutral float-right" title="6. The logic gate or" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="electronic-binary.html" class="btn btn-neutral" title="4. The binary system" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -287,10 +275,10 @@ L y H.</p>
 <li class="toctree-l3"><a class="reference internal" href="electronic-error-detection.html">2. Error detection</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-error-correction.html">3. Bug fixes</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-binary.html">4. The binary system</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">5. The NOT logic gate</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electronic-gate-or.html">6. The OR logic gate</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electronic-gate-and.html">7. The logic AND gate</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electronic-gate-xor.html">8. The XOR logic gate</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">5. The logical gate not</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-gate-or.html">6. The logic gate or</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-gate-and.html">7. The logic and</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-gate-xor.html">8. THE LOGIC gate XOR</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-morgan-laws.html">9. De Morgan's laws</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-truth-table.html">10. The truth table</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-gray-code.html">11. Código Gray</a></li>

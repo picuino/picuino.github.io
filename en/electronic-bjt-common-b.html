@@ -115,11 +115,16 @@
 <iframe src="/circuits/index.html?startCircuit=bjt-common-b.txt"></iframe>
 </div><p>The function of each of the components is the following:</p>
 <ul>
-<li><p class="first">The <strong>alternating signal generator</strong> generates a small input signal of 0.1 volts peak.</p>
+<li><p class="first">El <strong>generador de señal alterna</strong> genera una pequeña señal de entrada
+de 0.050 voltios de pico.</p>
 </li>
 <li><p class="first"><strong>Resistors R1 and R2</strong> maintain a fixed voltage at the base that <strong>biases the transistor</strong> so that it always works with positive currents, despite the input voltage being both positive and negative.</p>
 </li>
-<li><p class="first">The <strong>NPN transistor</strong> receives a small voltage signal through the emitter, which produces a current in the emitter. The transistor transfers that current from the emitter to the collector, where a resistor converts the current into a voltage higher than the input voltage.</p>
+<li><p class="first">El <strong>transistor NPN</strong> recibe una señal de pequeña tensión por
+el emisor, que produce una corriente en el emisor.
+El transistor transfiere esa corriente del emisor al colector, donde
+la resistencia R3 convierte la corriente en una tensión mayor que la
+tensión de entrada.</p>
 <p>At this stage there is no current amplification, only voltage amplification.</p>
 </li>
 <li><p class="first"><strong>Resistor R3</strong> receives the collector current and converts it into output voltage. The higher this resistance, the higher the output voltage and therefore the voltage amplification of the stage.</p>
@@ -144,7 +149,9 @@
 <p><img src="_images/math/72ed3d3029a7e6d0bbe8ff1e8ca6243f94c4b93d.svg" alt="Gain\_V = \cfrac{V_{out\_max} - V_{out\_min}}{ V_{in\_max} - V_{in\_min}}"></p>
 </div><p>You can obtain the required voltage values from the oscilloscopes at the bottom of the simulator.</p>
 </li>
-<li><p class="first">If we modify R3 with a value of 2kOhm and R1 with a value of 70kOhm, what happens to the output signal of the circuit? Why do you think this happens?</p>
+<li><p class="first">Si modificamos R3 con un valor de 500 Ohm y R1 con un valor de 8 kOhm,
+¿Qué le ocurre a la señal de salida del circuito?
+¿Por qué crees que ocurre esto?</p>
 </li>
 </ol>
 </div>
@@ -188,7 +195,7 @@
       unless otherwise specified.
       <br>
       <span class="lastupdated">
-        Last updated on April, 2025.
+        Last updated on May, 2025.
       </span>
 
     </p>

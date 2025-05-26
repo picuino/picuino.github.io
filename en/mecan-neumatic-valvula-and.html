@@ -136,57 +136,25 @@
 <thead style="vertical-align:bottom;">
 <tr class="row-odd"><th class="head">Left track</th>
 <th class="head">Right track</th>
-<th class="head">Upper route</th>
+<th class="head">Upper track</th>
 </tr>
 </thead>
 <tbody style="vertical-align:top;">
-<tr class="row-even"><td>No pressure</td>
-<td>No pressure</td>
-<td>No pressure</td>
+<tr class="row-even"><td>No pressure (0)</td>
+<td>No pressure (0)</td>
+<td>No pressure (0)</td>
 </tr>
-<tr class="row-odd"><td>with pressure</td>
-<td>No pressure</td>
-<td>No pressure</td>
+<tr class="row-odd"><td>With pressure (1)</td>
+<td>No pressure (0)</td>
+<td>No pressure (0)</td>
 </tr>
-<tr class="row-even"><td>No pressure</td>
-<td>with pressure</td>
-<td>No pressure</td>
+<tr class="row-even"><td>No pressure (0)</td>
+<td>With pressure (1)</td>
+<td>No pressure (0)</td>
 </tr>
-<tr class="row-odd"><td>with pressure</td>
-<td>with pressure</td>
-<td>with pressure</td>
-</tr>
-</tbody>
-</table>
-<p>If we translate Without pressure with a zero and With pressure with a one, we obtain the classic truth table of the and function:</p>
-<table class="colwidths-given docutils align-center">
-<colgroup>
-<col style="width:33%;">
-<col style="width:33%;">
-<col style="width:33%;">
-</colgroup>
-<thead style="vertical-align:bottom;">
-<tr class="row-odd"><th class="head">Left track</th>
-<th class="head">Right track</th>
-<th class="head">Upper route</th>
-</tr>
-</thead>
-<tbody style="vertical-align:top;">
-<tr class="row-even"><td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr class="row-odd"><td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr class="row-even"><td>0</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr class="row-odd"><td>1</td>
-<td>1</td>
-<td>1</td>
+<tr class="row-odd"><td>With pressure (1)</td>
+<td>With pressure (1)</td>
+<td>With pressure (1)</td>
 </tr>
 </tbody>
 </table>
@@ -210,7 +178,7 @@
 </div>
 </div>
 <div class="section" id="union-de-valvulas">
-<h2>valve union<a class="headerlink" href="#union-de-valvulas" title="Permalink to this headline">¶</a></h2>
+<h2>Valve union<a class="headerlink" href="#union-de-valvulas" title="Permalink to this headline">¶</a></h2>
 <p>In a pneumatic circuit we can combine several selector and simultaneity valves to achieve complex behaviors.</p>
 <p>In the following circuit we can see two different valves (one simultaneous and another selector) that combine the pressurized air from three 3/2 valves to a single-acting cylinder.</p>
 <div class="figure align-center" id="id9">
@@ -236,7 +204,7 @@
 </li>
 <li><p class="first">Explain the operation of the pneumatic simultaneity valve and draw its truth table.</p>
 </li>
-<li><p class="first">It simulates the operation of a single-acting cylinder with a stem that must come out when the <strong>two 3/2</strong> maneuver valves** are activated at the same time.</p>
+<li><p class="first">Simulates the operation of a single-acting cylinder with a stem that must come out when the <strong>two 3/2</strong> maneuver valves are activated at the same time.</p>
 <p><a class="reference external" href="../_static/flash/simulador-neumatica.html" rel="noopener noreferrer" target="_blank">Pneumatics simulator.</a></p>
 </li>
 <li><p class="first">Draw the above circuit on paper and explain its operation.</p>
@@ -258,8 +226,8 @@
 <col style="width:25%;">
 </colgroup>
 <thead style="vertical-align:bottom;">
-<tr class="row-odd"><th class="head">Left valve</th>
-<th class="head">Center valve</th>
+<tr class="row-odd"><th class="head">Left valve 1</th>
+<th class="head">Left valve 2</th>
 <th class="head">Right valve</th>
 <th class="head">Stem</th>
 </tr>
@@ -270,39 +238,39 @@
 <td>Not actuated</td>
 <td>Inside</td>
 </tr>
-<tr class="row-odd"><td>Powered</td>
+<tr class="row-odd"><td>Actuated</td>
 <td>Not actuated</td>
 <td>Not actuated</td>
 <td>&#160;</td>
 </tr>
 <tr class="row-even"><td>Not actuated</td>
-<td>Powered</td>
+<td>Actuated</td>
 <td>Not actuated</td>
 <td>&#160;</td>
 </tr>
-<tr class="row-odd"><td>Powered</td>
-<td>Powered</td>
+<tr class="row-odd"><td>Actuated</td>
+<td>Actuated</td>
 <td>Not actuated</td>
 <td>&#160;</td>
 </tr>
 <tr class="row-even"><td>Not actuated</td>
 <td>Not actuated</td>
-<td>Powered</td>
+<td>Actuated</td>
 <td>&#160;</td>
 </tr>
-<tr class="row-odd"><td>Powered</td>
+<tr class="row-odd"><td>Actuated</td>
 <td>Not actuated</td>
-<td>Powered</td>
+<td>Actuated</td>
 <td>&#160;</td>
 </tr>
 <tr class="row-even"><td>Not actuated</td>
-<td>Powered</td>
-<td>Powered</td>
+<td>Actuated</td>
+<td>Actuated</td>
 <td>&#160;</td>
 </tr>
-<tr class="row-odd"><td>Powered</td>
-<td>Powered</td>
-<td>Powered</td>
+<tr class="row-odd"><td>Actuated</td>
+<td>Actuated</td>
+<td>Actuated</td>
 <td>&#160;</td>
 </tr>
 </tbody>

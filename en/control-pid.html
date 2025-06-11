@@ -152,7 +152,7 @@
 <p>This control action will therefore serve to stabilize a response that oscillates too much.</p>
 <a class="reference internal image-reference" href="_images/img-0057.png"><img alt="PID. Respuesta al Control Derivativo." class="align-center" src="_images/img-0057.png" style="width: 800px;"></a>
 <p>In the previous graphs it can be seen how, by increasing the derivative action Kd, it is possible to reduce the oscillations to the point that they disappear for Kd=50. It can also be seen how the response slows down a bit as the derivative constant increases. With Kd=0 the system takes 1.8 seconds to rise to the reference value. With Kd=20 the system takes 2 seconds to rise to the reference value. In this example the derivative action has been scaled so that its values ​​are between 0 and 100.</p>
-<p>One problem with derivative control is that it amplifies rapidly varying signals, such as high-frequency noise. Due to this effect, the noise of the error signal appears amplified in the drive of the plant. In order to reduce this effect, it is necessary to reduce the noise of the error signal by means of a <a class="reference external" href="https://es.wikipedia.org/wiki/Filtro_paso_bajo" rel="noopener noreferrer" target="_blank">low-pass filter</a> before applying it to the derivative term. With this filter the derivative action is limited, so it is desirable to reduce the noise of the error signal by other means before resorting to a low pass filter.</p>
+<p>One problem with derivative control is that it amplifies rapidly varying signals, such as high-frequency noise. Due to this effect, the noise of the error signal appears amplified in the drive of the plant. In order to reduce this effect, it is necessary to reduce the noise of the error signal by means of a <a class="reference external" href="https://en.wikipedia.org/wiki/Low-pass_filter" rel="noopener noreferrer" target="_blank">low-pass filter</a> before applying it to the derivative term. With this filter the derivative action is limited, so it is desirable to reduce the noise of the error signal by other means before resorting to a low pass filter.</p>
 <p>At this point, the system is fast and stable, but still has a small steady state error. This means that the actual position of the system is not exactly the desired position. In order to reduce this error, the third action of the PID controller is used, the Integral control.</p>
 </div>
 <div class="section" id="accion-de-control-integral">
@@ -212,9 +212,9 @@
 </div>
 <div class="section" id="referencias">
 <h2>References<a class="headerlink" href="#referencias" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="https://es.wikipedia.org/wiki/Proportional_integral_derivative" rel="noopener noreferrer" target="_blank">Wikipedia: PID controller</a></p>
-<p><a class="reference external" href="https://es.wikipedia.org/wiki/Control_system" rel="noopener noreferrer" target="_blank">Wikipedia: Control system</a></p>
-<p><a class="reference external" href="https://es.wikipedia.org/wiki/Servomotor_de_modelismo" rel="noopener noreferrer" target="_blank">Wikipedia: Servomotor</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Proportional%E2%80%93integral%E2%80%93derivative_controller" rel="noopener noreferrer" target="_blank">Wikipedia: PID controller</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Control_system" rel="noopener noreferrer" target="_blank">Wikipedia: Control system</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Servo_(radio_control)" rel="noopener noreferrer" target="_blank">Wikipedia: Servomotor</a></p>
 <p>[1] Ogata, Katsuhiko. Modern Control Engineering. Third edition. Prentice Hall Publisher.</p>
 <p>[2] Ogata, Katsuhiko. Control systems in discrete time. Second edition. Prentice Hall Publisher.</p>
 </div>
@@ -258,7 +258,7 @@
       unless otherwise specified.
       <br>
       <span class="lastupdated">
-        Last updated on May, 2025.
+        Last updated on June, 2025.
       </span>
 
     </p>

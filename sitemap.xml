@@ -651,6 +651,24 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://www.picuino.com/en/electric-simulador-mixto.html</loc>
+  <lastmod>2025-06-26</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.picuino.com/en/electric-simulador-paralelo.html</loc>
+  <lastmod>2025-06-26</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.picuino.com/en/electric-simulador-serie.html</loc>
+  <lastmod>2025-06-26</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://www.picuino.com/en/electric-sistema-electrico.html</loc>
   <lastmod>2025-06-26</lastmod>
   <changefreq>weekly</changefreq>
@@ -3544,6 +3562,24 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/electric-simulador-interruptor.html</loc>
+  <lastmod>2025-06-26</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.picuino.com/es/electric-simulador-mixto.html</loc>
+  <lastmod>2025-06-26</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.picuino.com/es/electric-simulador-paralelo.html</loc>
+  <lastmod>2025-06-26</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.picuino.com/es/electric-simulador-serie.html</loc>
   <lastmod>2025-06-26</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>

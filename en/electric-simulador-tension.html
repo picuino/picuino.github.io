@@ -5,8 +5,8 @@
   <meta name="keywords" content="Technology, Secondary Education, Drawing, Structures, Mechanisms, Materials, Electricity, Electronics, Computer Science, Programming, Control, Arduino, Communications, Workshop">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Libre educational resources for Technology in Secondary Education. Electricity - Lamp wiring with terminals - 12. Wiring lamps with Crocodile Clips">
-  <title>12. Wiring lamps with Crocodile Clips - Lamp wiring with terminals - Picuino</title>
+  <meta name="description" content="Libre educational resources for Technology in Secondary Education. Electricity - Electric simulator - 5. Electrical voltage">
+  <title>5. Electrical voltage - Electric simulator - Picuino</title>
 
   
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
@@ -14,7 +14,7 @@
   <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
 
   
-  <link rel="canonical" href="https://www.picuino.com/en/bornas-crocodile-clips.html">
+  <link rel="canonical" href="https://www.picuino.com/en/electric-simulador-tension.html">
 
   
   <link rel="search" type="application/opensearchdescription+xml"
@@ -27,8 +27,8 @@
   <link rel="glossary" title="Glossary" href="genindex.html">
   <link rel="index" title="Index" href="content.html">
   <link rel="search" title="Search" href="search.html">
-  <link rel="next" title="Resources for electricity" href="electric-recursos.html">
-  <link rel="prev" title="11. Switch and switch" href="bornas-conmutador-interruptor.html">
+  <link rel="next" title="6. Electric current" href="electric-simulador-corriente.html">
+  <link rel="prev" title="4. Mixed circuit connection" href="electric-simulador-mixto.html">
 
 </head>
 
@@ -69,15 +69,15 @@
         
           <li><a href="electric-index.html">Electricity</a>/</li>
         
-          <li><a href="bornas-lamparas-index.html">Lamp wiring with terminals</a>/</li>
+          <li><a href="electric-simulador-index.html">Electric simulator</a>/</li>
         
-      <li><span class="section-number">12. </span>Wiring lamps with Crocodile Clips</li>
+      <li><span class="section-number">5. </span>Electrical voltage</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/bornas-crocodile-clips.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/electric-simulador-tension.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -92,7 +92,7 @@
   original Spanish version. If you'd like to contribute, please
   <a href="contacto.html" target="_blank">contact</a> the author
   with the updated
-  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/en/LC_MESSAGES/bornas-crocodile-clips.po" target="_blank">translation file</a>.
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/en/LC_MESSAGES/electric-simulador-tension.po" target="_blank">translation file</a>.
   </div>
   
   <hr>
@@ -101,10 +101,79 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="cableado-de-lamparas-con-crocodile-clips">
-<span id="bornas-crocodile-clips"></span><h1><span class="section-number">12. </span>Wiring lamps with Crocodile Clips<a class="headerlink" href="#cableado-de-lamparas-con-crocodile-clips" title="Permalink to this headline">¶</a></h1>
-<a class="reference internal image-reference" href="_images/electric-bornas-crocodile-01-interruptor.png"><img alt="_images/electric-bornas-crocodile-01-interruptor.png" src="_images/electric-bornas-crocodile-01-interruptor.png" style="width: 700px;"></a>
-<p><a class="reference download internal" download="" href="_downloads/electric-bornas-crocodile.zip"><code class="xref download docutils literal notranslate"><span class="pre">Terminal</span> <span class="pre">connection</span> <span class="pre">exercises</span> <span class="pre">with</span> <span class="pre">Crocodile</span> <span class="pre">Clips.</span></code></a></p>
+  <div class="section" id="tension-electrica">
+<span id="electric-simulador-tension"></span><h1><span class="section-number">5. </span><span class="target" id="index-3"></span>Electrical voltage<a class="headerlink" href="#tension-electrica" title="Permalink to this headline">¶</a></h1>
+<p>The electrical voltage of a generator, also called electric voltage, is the energy with which the generator drives electrons in an electrical circuit.</p>
+<p>All electrical circuits need at least one generator that drives electrons through the circuit. The generator acts as a water pump with electrons, forcing them to move through the electrical circuit.</p>
+<p>The electrical voltage is measured in volts. In the following table the typical tensions of several common generators appear in our environment:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width:67%;">
+<col style="width:33%;">
+</colgroup>
+<thead style="vertical-align:bottom;">
+<tr class="row-odd"><th class="head">Generator</th>
+<th class="head">Tension [V]</th>
+</tr>
+</thead>
+<tbody style="vertical-align:top;">
+<tr class="row-even"><td>AA type alkaline battery.</td>
+<td>1.5 volts</td>
+</tr>
+<tr class="row-odd"><td>Lithium button stack.</td>
+<td>3 volts</td>
+</tr>
+<tr class="row-even"><td>Battery of a smartphone.</td>
+<td>3.6 volts</td>
+</tr>
+<tr class="row-odd"><td>USB connector</td>
+<td>5 volts</td>
+</tr>
+<tr class="row-even"><td>Laptop loader.</td>
+<td>20 volts</td>
+</tr>
+<tr class="row-odd"><td>Wall plug.</td>
+<td>230 volts</td>
+</tr>
+<tr class="row-even"><td>Medium voltage transport line.</td>
+<td>22,000 volts</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="tension-de-tierra">
+<h2><span class="target" id="index-4"></span>Earth voltage<a class="headerlink" href="#tension-de-tierra" title="Permalink to this headline">¶</a></h2>
+<p>The voltage of the Earth (the terrain on which we are) is considered to be worth zero volts and is the absolute reference of any electrical circuit. A copper bar of one meter in length is normally numbered on the ground, to which a cable with yellow and green colors is connected.</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/electric-toma-tierra.jpg"><img alt="_images/electric-toma-tierra.jpg" src="_images/electric-toma-tierra.jpg" style="width: 320px;"></a>
+<p class="caption"><span class="caption-text">Grounding with their yellow-green cable.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+<div class="legend">
+<a class="reference external" href="https://en.wikipedia.org/wiki/File:HomeEarthRodAustralia1.jpg" rel="noopener noreferrer" target="_blank">Ali K</a>,
+<a class="reference external" href="https://creativecommons.org/licenses/by-sa/3.0/deed.en" rel="noopener noreferrer" target="_blank">CC BY-SA 3.0 Unported</a>,
+via Wikimedia Commons.</div>
+</div>
+<p>From earth voltage, tensions can be both positive and negative. In the circuits the earth symbol is usually drawn to indicate what we consider zero voltage.</p>
+<p>In the following simulator we can observe several series generators who add their tensions. The green color indicates positive tensions and the red color indicates negative tensions. The earth symbol indicates absolute zero tension.</p>
+<div class="video-center">
+<iframe src="/circuits/index.html?startCircuit=electric-simulador-tension.txt"></iframe>
+</div></div>
+<div class="section" id="voltimetro">
+<h2><span class="target" id="index-5"></span>Voltmeter<a class="headerlink" href="#voltimetro" title="Permalink to this headline">¶</a></h2>
+<p>The voltmeter is a device that measures the voltage difference between two points of a circuit. To simulate a voltmeter we must choose it from the menu <code class="docutils literal notranslate"><span class="pre">Draw</span></code>... <code class="docutils literal notranslate"><span class="pre">Metters</span> <span class="pre">and</span> <span class="pre">Labels</span></code>... <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Voltmeter</span></code>.</p>
+<p>Voltmeter are always connected in parallel with the elements we want to measure.</p>
+<p>In the following simulation, add the necessary voltmeters to measure the tension of the two batteries together (V1 plus V2), the tension of the L1 lamp and the tension of the L2 lamp.</p>
+<div class="video-center">
+<iframe src="/circuits/index.html?startCircuit=electric-simulador-tension-2.txt"></iframe>
+</div></div>
+<div class="section" id="ejercicios">
+<h2>Exercises<a class="headerlink" href="#ejercicios" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>What is electrical voltage or voltage?</li>
+<li>Why do all electrical circuits need at least one electric generator?</li>
+<li>What voltage in volts have typical batteries and batteries?</li>
+<li>What is earth tension?</li>
+<li>What is a voltmeter? How should it be connected to measure tension?</li>
+</ol>
+</div>
 </div>
 
 
@@ -116,10 +185,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="electric-recursos.html" class="btn btn-neutral float-right" title="Resources for electricity" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="electric-simulador-corriente.html" class="btn btn-neutral float-right" title="6. Electric current" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="bornas-conmutador-interruptor.html" class="btn btn-neutral" title="11. Switch and switch" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="electric-simulador-mixto.html" class="btn btn-neutral" title="4. Mixed circuit connection" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -145,7 +214,7 @@
       unless otherwise specified.
       <br>
       <span class="lastupdated">
-        Last updated on June, 2025.
+        Last updated on July, 2025.
       </span>
 
     </p>
@@ -178,7 +247,7 @@
           
           </a>
           <br>
-          <a href="../es/bornas-crocodile-clips.html">Español</a>
+          <a href="../es/electric-simulador-tension.html">Español</a>
           <br>
 
           
@@ -220,22 +289,17 @@
 <li class="toctree-l2"><a class="reference internal" href="electric-potencia.html">Electrical power</a></li>
 <li class="toctree-l2"><a class="reference internal" href="electric-sistema-electrico.html">Spanish electrical system</a></li>
 <li class="toctree-l2"><a class="reference internal" href="electric-cableado.html">Electrical circuit wiring</a></li>
-<li class="toctree-l2"><a class="reference internal" href="electric-simulador-index.html">Simulador eléctrico</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="bornas-lamparas-index.html">Lamp wiring with terminals</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="bornas-interruptor.html">1. Switch and lamp</a></li>
-<li class="toctree-l3"><a class="reference internal" href="bornas-conmutador.html">2. Switch and two lamps</a></li>
-<li class="toctree-l3"><a class="reference internal" href="bornas-conmutador-doble.html">3. Switches and lamp</a></li>
-<li class="toctree-l3"><a class="reference internal" href="bornas-interruptores-paralelo.html">4. Switches in parallel</a></li>
-<li class="toctree-l3"><a class="reference internal" href="bornas-interruptores-serie.html">5. Switches in series</a></li>
-<li class="toctree-l3"><a class="reference internal" href="bornas-lamparas-paralelo.html">6. Lamps in parallel</a></li>
-<li class="toctree-l3"><a class="reference internal" href="bornas-lamparas-serie.html">7. Lamps in series</a></li>
-<li class="toctree-l3"><a class="reference internal" href="bornas-lamparas-serie-corto.html">8. Lamps in series and a short circuit</a></li>
-<li class="toctree-l3"><a class="reference internal" href="bornas-lamparas-independientes.html">9. Independent lamps</a></li>
-<li class="toctree-l3"><a class="reference internal" href="bornas-lamparas-serie-doble.html">10. Switches and lamps in series</a></li>
-<li class="toctree-l3"><a class="reference internal" href="bornas-conmutador-interruptor.html">11. Switch and switch</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">12. Wiring lamps with Crocodile Clips</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="electric-simulador-index.html">Electric simulator</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-interruptor.html">1. Switch and button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-serie.html">2. Serial connection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-paralelo.html">3. Connection in parallel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-mixto.html">4. Mixed circuit connection</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">5. Electrical voltage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-corriente.html">6. Electric current</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-resistencia.html">7. Electrical resistance</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="bornas-lamparas-index.html">Lamp wiring with terminals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="electric-recursos.html">Resources for electricity</a></li>
 </ul>
 </li>

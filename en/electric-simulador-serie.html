@@ -5,8 +5,8 @@
   <meta name="keywords" content="Technology, Secondary Education, Drawing, Structures, Mechanisms, Materials, Electricity, Electronics, Computer Science, Programming, Control, Arduino, Communications, Workshop">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Libre educational resources for Technology in Secondary Education. Electricity - Simulador eléctrico - 2. Conexión en serie">
-  <title>2. Conexión en serie - Simulador eléctrico - Picuino</title>
+  <meta name="description" content="Libre educational resources for Technology in Secondary Education. Electricity - Electric simulator - 2. Serial connection">
+  <title>2. Serial connection - Electric simulator - Picuino</title>
 
   
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
@@ -27,8 +27,8 @@
   <link rel="glossary" title="Glossary" href="genindex.html">
   <link rel="index" title="Index" href="content.html">
   <link rel="search" title="Search" href="search.html">
-  <link rel="next" title="3. Conexión en paralelo" href="electric-simulador-paralelo.html">
-  <link rel="prev" title="1. Interruptor y pulsador" href="electric-simulador-interruptor.html">
+  <link rel="next" title="3. Connection in parallel" href="electric-simulador-paralelo.html">
+  <link rel="prev" title="1. Switch and button" href="electric-simulador-interruptor.html">
 
 </head>
 
@@ -69,9 +69,9 @@
         
           <li><a href="electric-index.html">Electricity</a>/</li>
         
-          <li><a href="electric-simulador-index.html">Simulador eléctrico</a>/</li>
+          <li><a href="electric-simulador-index.html">Electric simulator</a>/</li>
         
-      <li><span class="section-number">2. </span>Conexión en serie</li>
+      <li><span class="section-number">2. </span>Serial connection</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -102,100 +102,63 @@
            <div itemprop="articleBody">
             
   <div class="section" id="conexion-en-serie">
-<span id="electric-simulador-serie"></span><h1><span class="section-number">2. </span>Conexión en serie<a class="headerlink" href="#conexion-en-serie" title="Permalink to this headline">¶</a></h1>
-<p>La conexión en serie tiene la propiedad de sumar la tensión de los
-generadores y de repartir la tensión entre los receptores.
-Cuando se retira (o se estropea) uno de los elementos de una conexión
-en serie, la corriente deja de circular y el circuito se apaga.</p>
+<span id="electric-simulador-serie"></span><h1><span class="section-number">2. </span><span class="target" id="index-1"></span>Serial connection<a class="headerlink" href="#conexion-en-serie" title="Permalink to this headline">¶</a></h1>
+<p>Two components are in series if they are connected behind each other in the same branch of a circuit.</p>
+<p>The serial connection has the property of adding the voltage of the generators and distributing the tension between the receptors. When it is removed (or spoils) one of the elements of a serial connection, the current stops circulating and the circuit goes out.</p>
 <div class="section" id="generadores-en-serie">
-<h2>Generadores en serie<a class="headerlink" href="#generadores-en-serie" title="Permalink to this headline">¶</a></h2>
-<p>Los generadores en serie suman sus tensiones para poder conseguir
-tensiones mayores. La mayoría de las pilas eléctricas tienen una tensión
-inferior a 4 voltios, de manera que se juntan en serie para conseguir
-tensiones mayores.</p>
-<p>Por ejemplo la batería tradicional de un automóvil de gasolina tiene
-6 pilas de plomo de 2 voltios cada una, consiguiendo así los 12 voltios
-totales típicos de estas baterías.</p>
-<p>Las pilas que forman la batería de un automóvil eléctrico tienen 3.6
-voltios cada una y se colocan en serie para conseguir cientos de voltios,
-necesarios para mover el motor eléctrico.</p>
-<p>Simula en el simulador online los siguientes circuitos con generadores
-en serie para ver cómo afecta la suma de tensiones a la lámpara:</p>
+<h2>Serial generators<a class="headerlink" href="#generadores-en-serie" title="Permalink to this headline">¶</a></h2>
+<p>Series generators add their tensions to get larger tensions. Most electric batteries have a voltage less than 4 volts, so that they come together in series to get larger tensions.</p>
+<p>For example, the traditional battery of a gasoline car has 6 lead batteries of 2 volts each, thus achieving the 12 total volts typical of these batteries.</p>
+<p>The batteries that form the battery of an electric car have 3.6 volts each and are placed in series to get hundreds of volts, necessary to move the electric motor.</p>
+<p>Simulates the following circuits with series generators in the online simulator to see how the sum of tensions to the lamp affects:</p>
 <img alt="_images/electric-simulador-serie-02.png" class="align-center" src="_images/electric-simulador-serie-02.png">
-<p>Cuantas más pilas colocamos en serie, más tensión tiene el circuito
-y más se enciende la lámpara.</p>
+<p>The more batteries we place in series, the more tension the circuit has and the lar lamp is turned on.</p>
 <div class="video-center">
 <iframe src="/circuits/index.html?startCircuit=empty.txt"></iframe>
 </div><div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p>Para conseguir que las pilas tengan sólo 1.5 voltios (la tensión típica
-de una pila alcalina), es necesario clicar doble sobre la pila o clicar
-con el botón derecho del ratón sobre la pila y escoger <code class="docutils literal notranslate"><span class="pre">Editar</span></code>:</p>
+<p>To ensure that the batteries have only 1.5 volts (the typical tension of an alkaline battery), it is necessary to click double on the battery or click with the right mouse button on the battery and choose <code class="docutils literal notranslate"><span class="pre">Edit</span></code>:</p>
 <img alt="_images/electric-simulador-serie-01.png" class="align-center" src="_images/electric-simulador-serie-01.png">
-<p class="last">En el cuadro de diálogo Tensión cambiaremos el valor a 1.5 (con punto
-en vez de coma) y terminaremos clicando en el botón <strong>OK</strong>.</p>
+<p class="last">In the voltage dialog box we will change the value to 1.5 and end up clicking on the <strong>OK</strong> button.</p>
 </div>
 </div>
 <div class="section" id="receptores-en-serie">
-<h2>Receptores en serie<a class="headerlink" href="#receptores-en-serie" title="Permalink to this headline">¶</a></h2>
-<p>Los receptores en serie se reparten la tensión total del generador de
-manera que cuantos más elementos se coloquen en serie, menos tensión
-tendrá cada uno.</p>
-<p>Simula en el simulador online los siguientes circuitos con lámparas
-en serie para ver cómo afecta a la tensión de cada lámpara:</p>
+<h2>Series receptors<a class="headerlink" href="#receptores-en-serie" title="Permalink to this headline">¶</a></h2>
+<p>The series receptors distribute the total generator tension so that the more elements are placed in series, the less voltage each will have.</p>
+<p>Simulates in the online simulator the following circuits with series lamps to see how it affects the tension of each lamp:</p>
 <img alt="_images/electric-simulador-serie-03.png" class="align-center" src="_images/electric-simulador-serie-03.png">
 <div class="video-center">
 <iframe src="/circuits/index.html?startCircuit=empty.txt"></iframe>
-</div><p>Cuando el circuito tiene solamente <strong>una lámpara</strong>, esta recibe toda la
-tensión del generador y por lo tanto luce al máximo.</p>
-<p>Cuando el circuito tiene <strong>dos lámparas</strong> en serie, cada una recibe
-la mitad de la tensión del generador, por lo que se iluminan menos.</p>
-<p>Por último cuando el circuito tiene <strong>tres lámparas</strong> en serie, cada una
-recibe una tercera parte de la tensión del generador, por lo que apenas
-se iluminan.</p>
-<p>Si ahora eliminamos una de las lámparas en serie, podemos comprobar
-cómo todo el circuito deja de funcionar. Para que un circuito en serie
-funcione, todos sus elementos deben permitir el paso de la corriente:</p>
+</div><p>When the circuit has only <strong>one lamp</strong>, it receives all the generator tension and therefore looks to the fullest.</p>
+<p>When the circuit has <strong>two lamps</strong> in series, each receives half of the generator's tension, so they light up less.</p>
+<p>Finally, when the circuit has <strong>three lamps</strong> in series, each receives a third of the generator's tension, so they barely light up.</p>
+<p>If we now eliminate one of the series lamps, we can check how the entire circuit stops working. For a series circuit to work, all its elements must allow the passage of the current:</p>
 <img alt="_images/electric-simulador-serie-04.png" class="align-center" src="_images/electric-simulador-serie-04.png">
 </div>
 <div class="section" id="interruptores-en-serie">
-<h2>Interruptores en serie<a class="headerlink" href="#interruptores-en-serie" title="Permalink to this headline">¶</a></h2>
-<p>Los interruptores sirven para controlar el paso de corriente a través
-de los receptores. Por esa razón, los interruptores se conectan siempre
-en serie con los receptores que se quiere controlar.
-Al estar en serie, cuando el interruptor esté abierto no pasará tampoco
-corriente por el receptor y cuando el interruptor esté cerrado también
-pasará corriente por el receptor.</p>
-<p>Cuando queremos controlar una lámpara desde dos puntos distintos, la
-conexión es un poco distinta a la serie y hay que utilizar el siguiente
-circuito.</p>
-<p>Simula en el simulador online los siguientes circuitos con interruptores
-y con conmutador en serie (se debe pulsar <strong>S</strong> mayúscula para dibujar
-el conmutador):</p>
+<h2>Series switches<a class="headerlink" href="#interruptores-en-serie" title="Permalink to this headline">¶</a></h2>
+<p>The switches serve to control the current passage through the receptors. For that reason, the switches are always connected in series with the receivers you want to control. Being series, when the switch is open, it will not pass the receiver either by the receiver and when the switch is closed it will also pass the receiver.</p>
+<p>When we want to control a lamp from two different points, the connection is a bit different from the series and the following circuit must be used.</p>
+<p>Simulates the following circuits with switches in the online simulator with switches and with a series switch (it must be clicking ** S ** Capital to draw the switch):</p>
 <img alt="_images/electric-simulador-serie-05.png" class="align-center" src="_images/electric-simulador-serie-05.png">
 <div class="video-center">
 <iframe src="/circuits/index.html?startCircuit=empty.txt"></iframe>
-</div><p>Al pulsar el interruptor en serie, la lámpara se iluminará.</p>
-<p>En el circuito de la derecha la lámpara se iluminará siempre que los dos
-conmutadores se coloquen en la misma dirección. Este es el circuito típico
-que se utiliza para encender la lámpara de un pasillo desde dos posiciones
-distintas.</p>
+</div><p>By pressing the series switch, the lamp will light.</p>
+<p>In the right circuit the lamp will be illuminated provided that the two switches are placed in the same direction. This is the typical circuit that is used to light the lamp of a hall from two different positions.</p>
 </div>
 <div class="section" id="ejercicios">
-<h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Permalink to this headline">¶</a></h2>
+<h2>Exercises<a class="headerlink" href="#ejercicios" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
-<li><p class="first">Dibuja un circuito con generadores en serie.
-¿Qué le ocurre al circuito cuando los generadores están en serie?</p>
+<li><p class="first">What is a serial connection and what properties do you have?</p>
 </li>
-<li><p class="first">Dibuja un circuito con receptores en serie.
-¿Qué le ocurre al circuito cuando los receptores están en serie?</p>
+<li><p class="first">Draw a circuit with series generators. What happens to the circuit when the generators are in series?</p>
 </li>
-<li><p class="first">¿Por qué los interruptores siempre se conectan en serie con los
-receptores que queremos controlar?</p>
+<li><p class="first">Draw a circuit with serial receptors. What happens to the circuit when the receptors are in series?</p>
 </li>
-<li><p class="first">¿Qué pasaría si conectamos tres pilas de 6 voltios en serie con tres
-lámparas en serie? ¿Cuánto crees que se iluminarían?</p>
-<p>Simula el circuito en el <a class="reference external" href="../circuits/?startCircuit=empty.txt" rel="noopener noreferrer" target="_blank">simulador de circuitos online</a> para comprobarlo.</p>
+<li><p class="first">Why do the switches always connect in series with the receivers that we want to control?</p>
+</li>
+<li><p class="first">What would happen if we connect three batteries of 6 volts in series with three lamps in series? How much do you think they would light?</p>
+<p>Simulates the circuit in the <a class="reference external" href="../circuits/?startCircuit=empty.txt" rel="noopener noreferrer" target="_blank">online circuit simulator</a> to check it.</p>
 </li>
 </ol>
 </div>
@@ -210,10 +173,10 @@ lámparas en serie? ¿Cuánto crees que se iluminarían?</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="electric-simulador-paralelo.html" class="btn btn-neutral float-right" title="3. Conexión en paralelo" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="electric-simulador-paralelo.html" class="btn btn-neutral float-right" title="3. Connection in parallel" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="electric-simulador-interruptor.html" class="btn btn-neutral" title="1. Interruptor y pulsador" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="electric-simulador-interruptor.html" class="btn btn-neutral" title="1. Switch and button" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -239,7 +202,7 @@ lámparas en serie? ¿Cuánto crees que se iluminarían?</p>
       unless otherwise specified.
       <br>
       <span class="lastupdated">
-        Last updated on June, 2025.
+        Last updated on July, 2025.
       </span>
 
     </p>
@@ -314,11 +277,14 @@ lámparas en serie? ¿Cuánto crees que se iluminarían?</p>
 <li class="toctree-l2"><a class="reference internal" href="electric-potencia.html">Electrical power</a></li>
 <li class="toctree-l2"><a class="reference internal" href="electric-sistema-electrico.html">Spanish electrical system</a></li>
 <li class="toctree-l2"><a class="reference internal" href="electric-cableado.html">Electrical circuit wiring</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="electric-simulador-index.html">Simulador eléctrico</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="electric-simulador-interruptor.html">1. Interruptor y pulsador</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">2. Conexión en serie</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electric-simulador-paralelo.html">3. Conexión en paralelo</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electric-simulador-mixto.html">4. Conexión en circuito mixto</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="electric-simulador-index.html">Electric simulator</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-interruptor.html">1. Switch and button</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">2. Serial connection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-paralelo.html">3. Connection in parallel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-mixto.html">4. Mixed circuit connection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-tension.html">5. Electrical voltage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-corriente.html">6. Electric current</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-resistencia.html">7. Electrical resistance</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="bornas-lamparas-index.html">Lamp wiring with terminals</a></li>

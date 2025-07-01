@@ -5,8 +5,8 @@
 .. _electric-simulador-mixto:
 
 
-Conexión en circuito mixto
-==========================
+:index:`Conexión en circuito mixto`
+===================================
 Un circuito mixto combina conexiones en serie y conexiones en paralelo.
 
 En el siguiente circuito hay un **interruptor general** que está en
@@ -22,9 +22,9 @@ su lámpara correspondiente L1, L2 y L3. Eso significa que cada uno
 de los interruptores puede encender o apagar cada una de sus lámparas
 en serie.
 
-Al estar las tres ramas interruptor-lámpara en paralelo, cada una de
-las ramas es independiente de las demás y, por lo tanto, se puede
-encender o apagar de forma independiente de las demás ramas.
+Como las tres ramas interruptor-lámpara están conectadas en paralelo,
+cada una funciona de manera independiente de las otras, por lo que 
+se pueden encender o apagar sin afectar a las demás.
 
 Simula en el simulador online el circuito anterior para comprobar su
 funcionamiento:

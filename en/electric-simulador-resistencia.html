@@ -27,7 +27,7 @@
   <link rel="glossary" title="Glossary" href="genindex.html">
   <link rel="index" title="Index" href="content.html">
   <link rel="search" title="Search" href="search.html">
-  <link rel="next" title="Lamp wiring with terminals" href="bornas-lamparas-index.html">
+  <link rel="next" title="8. Electric power" href="electric-simulador-potencia.html">
   <link rel="prev" title="6. Electric current" href="electric-simulador-corriente.html">
 
 </head>
@@ -103,18 +103,75 @@
             
   <div class="section" id="resistencia-electrica">
 <span id="electric-simulador-resistencia"></span><h1><span class="section-number">7. </span><span class="target" id="index-3"></span>Electrical resistance<a class="headerlink" href="#resistencia-electrica" title="Permalink to this headline">¶</a></h1>
+<p>Electrical resistance is the opposition that shows certain components (resistors) to the passage of electric current. The greater the value of the resistance of a component, the less current it will happen through it.</p>
+<p>The resistances have three major applications:</p>
+<ul>
+<li><p class="first"><strong>Generate heat.</strong> It is one of the main applications. For example, the resistances of a toaster produce heat to toast the bread. The resistance of an oven, a washing machine or an electric blanket are other daily examples.</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/electric-resistencia-calentamiento.jpg"><img alt="_images/electric-resistencia-calentamiento.jpg" src="_images/electric-resistencia-calentamiento.jpg" style="width: 320px;"></a>
+<p class="caption"><span class="caption-text">Heating resistance of a coffee machine.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+<div class="legend">
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/File:Heizstab-heatingelement-espressomachine.jpg" rel="noopener noreferrer" target="_blank">Acosta.eu</a>,
+<a class="reference external" href="https://creativecommons.org/licenses/by-sa/3.0/deed.en" rel="noopener noreferrer" target="_blank">CC BY-SA 3.0 Unported</a>,
+via Wikimedia Commons.</p>
+</div>
+</div>
+</li>
+<li><p class="first"><strong>Reduce current.</strong> Another example is found in the resistors that are connected in series with the terminals of an electric motor so that the motor start occurs gently, without abruptness.</p>
+</li>
+<li><p class="first"><strong>Get intermediate voltages.</strong> In electronics this is one of the main applications of resistors. From a 5 volt voltage source, tensions can be obtained from 0 volts to 5 volts through the entire intermediate range.</p>
+</li>
+</ul>
+<p>In the following simulated circuit, two series resistances have been connected to achieve a lower voltage than the stack voltage. Modify the value of the resistors to be able to achieve an exact output voltage of 3.5 volts.</p>
 <div class="video-center">
-<iframe src="/circuits/index.html?startCircuit=empty.txt"></iframe>
+<iframe src="/circuits/index.html?startCircuit=electric-simulador-resistencia-1.txt"></iframe>
 </div><div class="section" id="ohmios">
 <h2><span class="target" id="index-4"></span>Ohms<a class="headerlink" href="#ohmios" title="Permalink to this headline">¶</a></h2>
+<p>The electrical resistance value is measured in <strong>ohms</strong>, shortened with the Greek letter omega [Ω]. In the following table, typical values ​​of several common resistances appear in our environment:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width:67%;">
+<col style="width:33%;">
+</colgroup>
+<thead style="vertical-align:bottom;">
+<tr class="row-odd"><th class="head">Component</th>
+<th class="head">Resistance [Ω]</th>
+</tr>
+</thead>
+<tbody style="vertical-align:top;">
+<tr class="row-even"><td>Car lamp with 15 watts of electric power.</td>
+<td>10 ohms</td>
+</tr>
+<tr class="row-odd"><td>Air electric heater.</td>
+<td>22 ohms</td>
+</tr>
+<tr class="row-even"><td>Current limitation resistance of an indicator LED.</td>
+<td>220 ohms</td>
+</tr>
+<tr class="row-odd"><td>Input resistance of an audio amplifier.</td>
+<td>10 000 ohms</td>
+</tr>
+<tr class="row-even"><td>Input resistance of a electric multimeter.</td>
+<td>10 000 000 ohms</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="ohmimetro">
 <h2><span class="target" id="index-5"></span>Ohmmeter<a class="headerlink" href="#ohmimetro" title="Permalink to this headline">¶</a></h2>
-</div>
+<p>An <strong>ohmmeter</strong> is a device that allows measuring the resistance of a circuit composed of resistors. The ohmmeter injects a certain amount of current in the circuit to be able to measure. For this reason, all circuit batteries must be disconnected before measuring the electrical resistance with this device.</p>
+<p>To simulate an ohmmeter we must choose it from the menu <code class="docutils literal notranslate"><span class="pre">Draw</span></code>... <code class="docutils literal notranslate"><span class="pre">Meters</span> <span class="pre">and</span> <span class="pre">Labels</span></code>... <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Ohmmeter</span></code>.</p>
+<p>In the following simulation, add the necessary ohmmetters to measure the resistance value of R1 in series with R2 and the resistance value of R1 in parallel with R2.</p>
+<div class="video-center">
+<iframe src="/circuits/index.html?startCircuit=electric-simulador-resistencia-2.txt"></iframe>
+</div></div>
 <div class="section" id="ejercicios">
 <h2>Exercises<a class="headerlink" href="#ejercicios" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li>What is electrical resistance?</li>
+<li>What applications can have an electrical resistor?</li>
+<li>In which units is the electrical resistance measured? Name 3 daily elements and its electrical resistance.</li>
+<li>What is the name of the device that measures the electrical resistance? How should you connect to resistors?</li>
 </ol>
 </div>
 </div>
@@ -128,7 +185,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="bornas-lamparas-index.html" class="btn btn-neutral float-right" title="Lamp wiring with terminals" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="electric-simulador-potencia.html" class="btn btn-neutral float-right" title="8. Electric power" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="electric-simulador-corriente.html" class="btn btn-neutral" title="6. Electric current" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -240,6 +297,9 @@
 <li class="toctree-l3"><a class="reference internal" href="electric-simulador-tension.html">5. Electrical voltage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electric-simulador-corriente.html">6. Electric current</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">7. Electrical resistance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-potencia.html">8. Electric power</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-leyohm.html">9. Ohm law</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-alterna.html">10. Corriente alterna</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="bornas-lamparas-index.html">Lamp wiring with terminals</a></li>

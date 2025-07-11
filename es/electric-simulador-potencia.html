@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Electricidad - Simulador eléctrico - 8. Potencia eléctrica">
+  <title>8. Potencia eléctrica - Simulador eléctrico - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/electric-simulador-potencia.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índice" href="content.html">
+  <link rel="search" title="Búsqueda" href="search.html">
+  <link rel="next" title="9. Ley de Ohm" href="electric-simulador-leyohm.html">
+  <link rel="prev" title="7. Resistencia eléctrica" href="electric-simulador-resistencia.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="electric-index.html">Electricidad</a>/</li>
+        
+          <li><a href="electric-simulador-index.html">Simulador eléctrico</a>/</li>
+        
+      <li><span class="section-number">8. </span>Potencia eléctrica</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/electric-simulador-potencia.rst.txt" rel="nofollow"> Ver texto fuente</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="potencia-electrica">
+<span id="electric-simulador-potencia"></span><h1><span class="section-number">8. </span><span class="target" id="index-0"></span>Potencia eléctrica<a class="headerlink" href="#potencia-electrica" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>La <strong>potencia eléctrica</strong> es la cantidad de energía que entrega o
+que consume un componente o circuito eléctrico cada segundo.</p>
+<p>La potencia es directamente proporcional a la tensión y a la corriente
+de un circuito, de manera que cuanta más tensión tenga el circuito más
+potencia consumirá. Asimismo cuanta más corriente consuma un circuito
+más potencia consumirá.</p>
+<div class="section" id="vatios">
+<h2><span class="target" id="index-1"></span>Vatios<a class="headerlink" href="#vatios" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>La potencia eléctrica se mide en <strong>vatios</strong>, abreviado con la letra [W].</p>
+<p>En la siguiente tabla aparecen las potencias típicas que consumen
+varios componentes comunes en nuestro entorno:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width:67%;">
+<col style="width:33%;">
+</colgroup>
+<thead style="vertical-align:bottom;">
+<tr class="row-odd"><th class="head">Componente</th>
+<th class="head">Potencia [W]</th>
+</tr>
+</thead>
+<tbody style="vertical-align:top;">
+<tr class="row-even"><td>Led indicador de encendido.</td>
+<td>20 milivatios</td>
+</tr>
+<tr class="row-odd"><td>Bombilla led de techo.</td>
+<td>10 vatios</td>
+</tr>
+<tr class="row-even"><td>Batidora de cocina.</td>
+<td>400 vatios</td>
+</tr>
+<tr class="row-odd"><td>Calentador eléctrico de aire.</td>
+<td>2000 vatios</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="vatimetro">
+<h2><span class="target" id="index-2"></span>Vatímetro<a class="headerlink" href="#vatimetro" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Un <strong>vatímetro</strong> es un aparato eléctrico que permite medir la potencia
+consumida por un componente o circuito eléctrico.
+El vatímetro se conecta siempre entre el generador y el elemento que se
+desea medir, por lo que es necesario cortar el circuito para poder
+insertarlo. Al tener cuatro cables, el vatímetro corta tanto el cable de
+ida como el cable de vuelta de la corriente:</p>
+<div class="figure align-center">
+<img alt="_images/electric-simulador-potencia-1.png" src="_images/electric-simulador-potencia-1.png">
+</div>
+<p>Para simular un vatímetro debemos escogerlo desde el menú <code class="docutils literal notranslate"><span class="pre">Dibujar</span></code>...
+<code class="docutils literal notranslate"><span class="pre">Medidores</span> <span class="pre">y</span> <span class="pre">Etiquetas</span></code>... <code class="docutils literal notranslate"><span class="pre">Añadir</span> <span class="pre">Vatímetro</span></code>.</p>
+<p>En el siguiente circuito simulado, añade un <strong>vatímetro</strong> que mida
+la potencia consumida por la lámpara del circuito.</p>
+<p>A continuación dibuja otra fuente de tensión conectada a dos lámparas en
+paralelo e inserta otro vatímetro para comprobar que la potencia consumida
+es el doble que la anterior:</p>
+<div class="video-center">
+<iframe src="/circuits/index.html?startCircuit=electric-simulador-potencia-1.txt"></iframe>
+</div></div>
+<div class="section" id="ejercicios">
+<h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Enlazar permanentemente con este título">¶</a></h2>
+<ol class="arabic simple">
+<li>¿Qué es la potencia eléctrica?</li>
+<li>¿Cómo se relaciona la potencia eléctrica con la tensión y con la
+corriente eléctrica?</li>
+<li>¿En qué unidades se mide la potencia eléctrica?
+Nombra al menos tres elementos comunes de nuestro entorno y escribe
+la potencia eléctrica que consumen.</li>
+<li>¿Qué es un vatímetro? ¿Cómo se debe conectar para medir potencia?</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="electric-simulador-leyohm.html" class="btn btn-neutral float-right" title="9. Ley de Ohm" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="electric-simulador-resistencia.html" class="btn btn-neutral" title="7. Resistencia eléctrica" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacto</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifiesto</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Aviso legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Créditos</a></li>
+    <li><a href="genindex.html" target="_blank">Glosario</a></li>
+    <li><a href="content.html" target="_blank">Índice</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Actualizado por última vez en julio, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../en/electric-simulador-potencia.html">English</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar docs">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibujo Técnico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecánica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materiales</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="electric-index.html">Electricidad</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="electric-circuito.html">El circuito eléctrico</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-receptores.html">Efectos de la electricidad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-componentes-index.html">Componentes eléctricos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-simbolos.html">Símbolos eléctricos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-ley-ohm.html">La ley de Ohm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-ley-ohm-regla.html">Regla de cálculo para la ley de Ohm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-serie-paralelo.html">Serie, paralelo y cortocircuito</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-serie-paralelo-resistencias.html">Resistencias equivalentes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-resolver-circuitos.html">Resolución de circuitos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-energia.html">Energía</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-potencia.html">Potencia eléctrica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-sistema-electrico.html">Sistema eléctrico español</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-cableado.html">Cableado de circuitos eléctricos</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="electric-simulador-index.html">Simulador eléctrico</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-interruptor.html">1. Interruptor y pulsador</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-serie.html">2. Conexión en serie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-paralelo.html">3. Conexión en paralelo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-mixto.html">4. Conexión en circuito mixto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-tension.html">5. Tensión eléctrica</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-corriente.html">6. Corriente eléctrica</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-resistencia.html">7. Resistencia eléctrica</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">8. Potencia eléctrica</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-leyohm.html">9. Ley de Ohm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-alterna.html">10. Corriente alterna</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bornas-lamparas-index.html">Cableado de lámparas con bornas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-recursos.html">Recursos para electricidad</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrónica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informática</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robótica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicaciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller de Tecnología</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Otros recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislación Educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

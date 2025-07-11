@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Electricidad - Simulador eléctrico - 9. Ley de Ohm">
+  <title>9. Ley de Ohm - Simulador eléctrico - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/electric-simulador-leyohm.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índice" href="content.html">
+  <link rel="search" title="Búsqueda" href="search.html">
+  <link rel="next" title="10. Corriente alterna" href="electric-simulador-alterna.html">
+  <link rel="prev" title="8. Potencia eléctrica" href="electric-simulador-potencia.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="electric-index.html">Electricidad</a>/</li>
+        
+          <li><a href="electric-simulador-index.html">Simulador eléctrico</a>/</li>
+        
+      <li><span class="section-number">9. </span>Ley de Ohm</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/electric-simulador-leyohm.rst.txt" rel="nofollow"> Ver texto fuente</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ley-de-ohm">
+<span id="electric-simulador-leyohm"></span><h1><span class="section-number">9. </span><span class="target" id="index-0"></span>Ley de Ohm<a class="headerlink" href="#ley-de-ohm" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>La ley de Ohm establece la relación que existe entre las tres magnitudes
+principales de un circuito eléctrico con resistencia.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/electric-ley-ohm-00.png"><img alt="_images/electric-ley-ohm-00.png" src="_images/electric-ley-ohm-00.png" style="width: 300px;"></a>
+</div>
+<ul class="simple">
+<li>Cuánto mayor sea la tensión, mayor será la corriente del circuito.</li>
+<li>Cuanto mayor sea la resistencia, menor será la corriente del circuito.</li>
+</ul>
+<div class="section" id="formula-de-la-ley-de-ohm">
+<h2>Fórmula de la ley de Ohm<a class="headerlink" href="#formula-de-la-ley-de-ohm" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>La ley de Ohm expresada de forma matemática tiene la siguiente fórmula:</p>
+<div class="math">
+<p><img src="_images/math/b1b852ee7961418c8fecbc28805f217742dccb0a.svg" alt="I = \cfrac{V}{R}"></p>
+</div><p>Siendo las magnitudes y unidades las siguientes:</p>
+<blockquote>
+<div><p>I = Intensidad de corriente en amperios [A]</p>
+<p>V = Tensión eléctrica en voltios [V]</p>
+<p>R = Resistencia eléctrica en ohmios [Ω]</p>
+</div></blockquote>
+</div>
+<div class="section" id="variacion-de-la-tension">
+<h2>Variación de la tensión<a class="headerlink" href="#variacion-de-la-tension" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>En la siguiente simulación vamos a cambiar la <strong>tensión</strong> del circuito
+para comprobar cómo se comporta.
+Cambiando la tensión de la pila desde 5 voltios hasta 15 voltios
+(tres veces más), podemos comprobar cómo la corriente cambia
+aumentando hasta tres veces más su valor inicial:</p>
+<div class="video-center">
+<iframe src="/circuits/index.html?startCircuit=electric-simulador-leyohm-1.txt"></iframe>
+</div><table class="docutils align-default">
+<colgroup>
+<col style="width:50%;">
+<col style="width:50%;">
+</colgroup>
+<thead style="vertical-align:bottom;">
+<tr class="row-odd"><th class="head">Tensión [V]</th>
+<th class="head">Intensidad [A]</th>
+</tr>
+</thead>
+<tbody style="vertical-align:top;">
+<tr class="row-even"><td>5 voltios</td>
+<td>0.1 amperios</td>
+</tr>
+<tr class="row-odd"><td>10 voltios</td>
+<td>0.2 amperios</td>
+</tr>
+<tr class="row-even"><td>15 voltios</td>
+<td>0.3 amperios</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ejercicio:</strong> añade un circuito más a la simulación copiando y pegando
+uno de los circuitos existentes y cambiando el valor de la tensión de la
+pila para que la corriente valga 0.5 amperios.</p>
+</div>
+<div class="section" id="variacion-de-la-resistencia">
+<h2>Variación de la resistencia<a class="headerlink" href="#variacion-de-la-resistencia" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>En la siguiente simulación vamos a cambiar la <strong>resistencia</strong> del circuito
+para comprobar cómo se comporta.
+Cambiando el valor de la resistencia desde 10 ohmios hasta 50 ohmios,
+podemos comprobar cómo la corriente cambia desde su valor inicial hasta
+cinco veces menos:</p>
+<div class="video-center">
+<iframe src="/circuits/index.html?startCircuit=electric-simulador-leyohm-2.txt"></iframe>
+</div><table class="docutils align-default">
+<colgroup>
+<col style="width:50%;">
+<col style="width:50%;">
+</colgroup>
+<thead style="vertical-align:bottom;">
+<tr class="row-odd"><th class="head">Resistencia [Ω]</th>
+<th class="head">Intensidad [A]</th>
+</tr>
+</thead>
+<tbody style="vertical-align:top;">
+<tr class="row-even"><td>10 ohmios</td>
+<td>1 amperio</td>
+</tr>
+<tr class="row-odd"><td>20 ohmios</td>
+<td>0.5 amperios</td>
+</tr>
+<tr class="row-even"><td>50 ohmios</td>
+<td>0.2 amperios</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ejercicio:</strong> añade un circuito más a la simulación copiando y pegando
+uno de los circuitos existentes y cambiando el valor de la resistencia
+para que la corriente valga 0.1 amperios.</p>
+</div>
+<div class="section" id="ejercicios">
+<h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Enlazar permanentemente con este título">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">¿Qué es la ley de Ohm? ¿A qué tipo de circuitos se aplica?</p>
+</li>
+<li><p class="first">¿Cuál es la fórmula de la ley de Ohm y cuáles son sus magnitudes
+y unidades?</p>
+</li>
+<li><p class="first">¿Qué le ocurre a un circuito con resistencia si aumentamos la tensión?</p>
+</li>
+<li><p class="first">¿Qué le ocurre a un circuito con resistencia si aumentamos el valor
+de la resistencia?</p>
+</li>
+<li><p class="first">¿Cuánto valdrá la intensidad de corriente en los siguientes circuitos?</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width:33%;">
+<col style="width:33%;">
+<col style="width:33%;">
+</colgroup>
+<thead style="vertical-align:bottom;">
+<tr class="row-odd"><th class="head">Tensión [V]</th>
+<th class="head">Resistencia [Ω]</th>
+<th class="head">Intensidad [A]</th>
+</tr>
+</thead>
+<tbody style="vertical-align:top;">
+<tr class="row-even"><td>20 voltios</td>
+<td>50 ohmios</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>5 voltios</td>
+<td>1000 ohmios</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>230 voltios</td>
+<td>10 ohmios</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>3 voltios</td>
+<td>200 ohmios</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="electric-simulador-alterna.html" class="btn btn-neutral float-right" title="10. Corriente alterna" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="electric-simulador-potencia.html" class="btn btn-neutral" title="8. Potencia eléctrica" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacto</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifiesto</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Aviso legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Créditos</a></li>
+    <li><a href="genindex.html" target="_blank">Glosario</a></li>
+    <li><a href="content.html" target="_blank">Índice</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Actualizado por última vez en julio, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../en/electric-simulador-leyohm.html">English</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar docs">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibujo Técnico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecánica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materiales</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="electric-index.html">Electricidad</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="electric-circuito.html">El circuito eléctrico</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-receptores.html">Efectos de la electricidad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-componentes-index.html">Componentes eléctricos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-simbolos.html">Símbolos eléctricos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-ley-ohm.html">La ley de Ohm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-ley-ohm-regla.html">Regla de cálculo para la ley de Ohm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-serie-paralelo.html">Serie, paralelo y cortocircuito</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-serie-paralelo-resistencias.html">Resistencias equivalentes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-resolver-circuitos.html">Resolución de circuitos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-energia.html">Energía</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-potencia.html">Potencia eléctrica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-sistema-electrico.html">Sistema eléctrico español</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-cableado.html">Cableado de circuitos eléctricos</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="electric-simulador-index.html">Simulador eléctrico</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-interruptor.html">1. Interruptor y pulsador</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-serie.html">2. Conexión en serie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-paralelo.html">3. Conexión en paralelo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-mixto.html">4. Conexión en circuito mixto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-tension.html">5. Tensión eléctrica</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-corriente.html">6. Corriente eléctrica</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-resistencia.html">7. Resistencia eléctrica</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-potencia.html">8. Potencia eléctrica</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">9. Ley de Ohm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-alterna.html">10. Corriente alterna</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bornas-lamparas-index.html">Cableado de lámparas con bornas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-recursos.html">Recursos para electricidad</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrónica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informática</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robótica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicaciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller de Tecnología</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Otros recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislación Educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

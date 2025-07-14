@@ -5,8 +5,8 @@
   <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Electricidad - Simulador eléctrico - 10. Corriente alterna">
-  <title>10. Corriente alterna - Simulador eléctrico - Picuino</title>
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Electricidad - Simulador eléctrico - 10. Tensión alterna">
+  <title>10. Tensión alterna - Simulador eléctrico - Picuino</title>
 
   
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
@@ -71,7 +71,7 @@
         
           <li><a href="electric-simulador-index.html">Simulador eléctrico</a>/</li>
         
-      <li><span class="section-number">10. </span>Corriente alterna</li>
+      <li><span class="section-number">10. </span>Tensión alterna</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -93,14 +93,141 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="corriente-alterna">
-<span id="electric-simulador-alterna"></span><h1><span class="section-number">10. </span><span class="target" id="index-0"></span>Corriente alterna<a class="headerlink" href="#corriente-alterna" title="Enlazar permanentemente con este título">¶</a></h1>
+  <div class="section" id="tension-alterna">
+<span id="electric-simulador-alterna"></span><h1><span class="section-number">10. </span><span class="target" id="index-0"></span>Tensión alterna<a class="headerlink" href="#tension-alterna" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Una fuente de <strong>tensión alterna</strong> también llamada de <strong>corriente alterna</strong>
+es un generador que produce entre sus bornes tensiones positivas y
+tensiones negativas alternativamente, varias veces por segundo.</p>
+<p>La forma de onda más común de la tensión es la <strong>sinusoidal</strong>, que puede
+verse en la siguiente imagen:</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/electric-alterna.png"><img alt="_images/electric-alterna.png" src="_images/electric-alterna.png" style="width: 480px;"></a>
+<p class="caption"><span class="caption-text">Forma de onda de una tensión alterna y sus parámetros.</span><a class="headerlink" href="#id1" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<p>La tensión no varía bruscamente, sino que va cambiando desde un valor cero
+hasta un pico de amplitud positivo, desciende de nuevo hasta valer cero,
+cambia a un valor de pico de amplitud negativo y vuelve a ascender hasta
+valer cero otra vez.</p>
+<p>En la siguiente simulación podemos ver un generador de tensión alterna
+que alimenta una resistencia.
+Los electrones se desplazan hacia adelante y hacia atrás alternativamente.
+La tensión superior del generador cambia de positivo (verde) a negativo
+(rojo) también alternativamente.
+Por último, en el osciloscopio inferior podemos ver la forma de onda
+<strong>sinusoidal</strong> de la tensión:</p>
 <div class="video-center">
-<iframe src="/circuits/index.html?startCircuit=empty.txt"></iframe>
-</div><div class="section" id="ejercicios">
+<iframe src="/circuits/index.html?startCircuit=electric-simulador-alterna-1.txt"></iframe>
+</div><div class="section" id="amplitud-de-pico-y-amplitud-eficaz">
+<h2>Amplitud de pico y amplitud eficaz<a class="headerlink" href="#amplitud-de-pico-y-amplitud-eficaz" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>La amplitud de una tensión alterna es el valor de pico o valor máximo que
+llega a tener esa tensión.</p>
+<p>Pero normalmente no se define la amplitud de una señal alterna por su
+valor de pico, sino por su valor <strong>eficaz</strong>.
+El valor eficaz de una tensión alterna es aquel valor de tensión
+continua que produce el mismo efecto sobre una resistencia.</p>
+<p>Esto significa que la tensión de la red eléctrica de una casa, que es de
+230 voltios eficaces, calienta una resistencia igual que lo haría una
+tensión continua de 230 voltios.</p>
+<p>La relación entre el valor de pico y el valor eficaz es la siguiente:</p>
+<div class="math">
+<p><img src="_images/math/0999fd1a360f99cebcc895e4a3fe77412a9b59bf.svg" alt="V_{eficaz} = \cfrac{V_{pico}}{\sqrt{2}}"></p>
+</div><p>De manera que decir que la tensión de casa tiene 230 voltios eficaces
+es igual que decir que tiene 230 * 1,4142 = 325,26 voltios de pico.</p>
+</div>
+<div class="section" id="periodo-y-frecuencia">
+<h2><span class="target" id="index-1"></span>Periodo y frecuencia<a class="headerlink" href="#periodo-y-frecuencia" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El periodo es el tiempo que tarda la onda alterna en completar un ciclo
+completo. Este tiempo suele ser pequeño, del orden de milisegundos, por
+lo que se suele hablar normalmente de su valor inverso, que es la
+frecuencia.</p>
+<p>La frecuencia se define como el número de ciclos que completa la onda
+alterna en un segundo. La red eléctrica europea es de 50 hercios
+(ciclos por segundo). La red eléctrica de la mayoría de América es
+de 60 hercios.</p>
+<p>La fórmula que relaciona el periodo y la frecuencia es la siguiente:</p>
+<div class="math">
+<p><img src="_images/math/09f58d19f06c48e24e0fe9ddcbf261fc17881ba0.svg" alt="F = \cfrac{1}{P}"></p>
+</div><p>Siendo las magnitudes y unidades las siguientes:</p>
+<blockquote>
+<div><p>F = Frecuencia en Hercios [Hz]</p>
+<p>P = Periodo en Segundos [s]</p>
+</div></blockquote>
+</div>
+<div class="section" id="ejercicios">
 <h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Enlazar permanentemente con este título">¶</a></h2>
-<ol class="arabic simple">
-<li></li>
+<ol class="arabic">
+<li><p class="first">¿Qué es una fuente de tensión alterna? ¿Cómo se la denomina también?</p>
+</li>
+<li><p class="first">Dibuja una señal alterna de tensión y dibuja sobre ella sus principales
+parámetros.</p>
+</li>
+<li><p class="first">Dibuja una fuente de tensión alterna conectada a una resistencia.</p>
+</li>
+<li><p class="first">Completa la siguiente tabla con los valores de pico y los valores
+eficaces de tensión alterna que faltan.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width:50%;">
+<col style="width:50%;">
+</colgroup>
+<thead style="vertical-align:bottom;">
+<tr class="row-odd"><th class="head">Tensión eficaz [V]</th>
+<th class="head">Tensión de pico [V]</th>
+</tr>
+</thead>
+<tbody style="vertical-align:top;">
+<tr class="row-even"><td>230 voltios</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>17 voltios</td>
+</tr>
+<tr class="row-even"><td>125 voltios</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>29 voltios</td>
+</tr>
+<tr class="row-even"><td>5 voltios</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first">Completa la siguiente tabla con los valores de frecuencia y de periodo
+de tiempo que que faltan.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width:50%;">
+<col style="width:50%;">
+</colgroup>
+<thead style="vertical-align:bottom;">
+<tr class="row-odd"><th class="head">Frecuencia [Hz]</th>
+<th class="head">Periodo [s]</th>
+</tr>
+</thead>
+<tbody style="vertical-align:top;">
+<tr class="row-even"><td>50 hercios</td>
+<td>0.020 segundos</td>
+</tr>
+<tr class="row-odd"><td>60 hercios</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>400 hercios</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>0.1 segundos</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>0.012 segundos</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>0.001 segundos</td>
+</tr>
+</tbody>
+</table>
+</li>
 </ol>
 </div>
 </div>
@@ -228,7 +355,7 @@
 <li class="toctree-l3"><a class="reference internal" href="electric-simulador-resistencia.html">7. Resistencia eléctrica</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electric-simulador-potencia.html">8. Potencia eléctrica</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electric-simulador-leyohm.html">9. Ley de Ohm</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">10. Corriente alterna</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">10. Tensión alterna</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="bornas-lamparas-index.html">Cableado de lámparas con bornas</a></li>

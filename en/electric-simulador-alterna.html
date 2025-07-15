@@ -102,7 +102,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="tension-alterna">
-<span id="electric-simulador-alterna"></span><h1><span class="section-number">10. </span><span class="target" id="index-2"></span>Alternating voltage<a class="headerlink" href="#tension-alterna" title="Permalink to this headline">¶</a></h1>
+<span id="electric-simulador-alterna"></span><h1><span class="section-number">10. </span><span class="target" id="index-3"></span>Alternating voltage<a class="headerlink" href="#tension-alterna" title="Permalink to this headline">¶</a></h1>
 <p>A source of <strong>alternating voltage</strong> also called <strong>alternating current</strong> is a generator that produces positive voltages and negative voltages alternately, several times per second.</p>
 <p>The most common waveform of voltage is the <strong>sinusoidal</strong>, which can be seen in the following image:</p>
 <div class="figure align-center" id="id1">
@@ -114,17 +114,20 @@
 <div class="video-center">
 <iframe src="/circuits/index.html?startCircuit=electric-simulador-alterna-1.txt"></iframe>
 </div><div class="section" id="amplitud-de-pico-y-amplitud-eficaz">
-<h2>RMS peak and amplitude amplitude<a class="headerlink" href="#amplitud-de-pico-y-amplitud-eficaz" title="Permalink to this headline">¶</a></h2>
+<h2>Peak amplitude and <span class="target" id="index-4"></span>RMS amplitude<a class="headerlink" href="#amplitud-de-pico-y-amplitud-eficaz" title="Permalink to this headline">¶</a></h2>
 <p>The amplitude of an alternating voltage is the maximum peak or value value that has that voltage.</p>
-<p>But normally the amplitude of an alternate signal is not defined by its peak value, but for its <strong>RMS value</strong>. The RMS value of an alternating voltage is that continuous voltage value that produces the same effect on a resistance.</p>
+<p>But normally the amplitude of an alternate signal is not defined by its peak value, but for its RMS value. The <strong>RMS value</strong> of an alternating voltage is the continuous voltage that has the same effect on a resistance as the alternating voltage.</p>
 <p>This means that the voltage of the electricity network, which is 230 RMS volts, heats a resistance like a continuous voltage of 230 volts.</p>
 <p>The relationship between the peak value and the RMS value is as follows:</p>
 <div class="math">
 <p><img src="_images/math/7965d82eb6fa638938cd334243a18b15fa9c2825.svg" alt="V_{RMS} = \cfrac {V_{peak}}{\sqrt {2}}"></p>
 </div><p>So saying that the house voltage has 230 RMS volts is the same as saying that it has 230 * 1.4142 = 325.26 volts of peak.</p>
-</div>
+<p>In the following simulation we can see an alternating voltage generator of 7.071 volts peak producing the same effect on a lamp as the 5 volt direct current generator:</p>
+<div class="video-center">
+<iframe src="/circuits/index.html?startCircuit=electric-simulador-alterna-2.txt"></iframe>
+</div></div>
 <div class="section" id="periodo-y-frecuencia">
-<h2><span class="target" id="index-3"></span>Period and frequency<a class="headerlink" href="#periodo-y-frecuencia" title="Permalink to this headline">¶</a></h2>
+<h2><span class="target" id="index-5"></span>Period and frequency<a class="headerlink" href="#periodo-y-frecuencia" title="Permalink to this headline">¶</a></h2>
 <p>The period is the time it takes for the alternate wave to complete a complete cycle. This time is usually small, of the order of milliseconds, so it usually speaks normally of its inverse value, which is the frequency.</p>
 <p>The frequency is defined as the number of cycles that completes the alternate wave in a second. The European electricity grid is 50 hertzs (cycles per second). The electricity grid of most America is 60 hertzs.</p>
 <p>The formula that relates the period and the frequency is as follows:</p>
@@ -144,6 +147,8 @@
 <li><p class="first">Draw an alternate voltage signal and draw on it its main parameters.</p>
 </li>
 <li><p class="first">Draw an alternate voltage source connected to a resistor.</p>
+</li>
+<li><p class="first">What is the RMS voltage of an AC voltage generator and how is it calculated from the peak voltage?</p>
 </li>
 <li><p class="first">Complete the following table with the peak values and the RMS alternating voltage values that are missing.</p>
 <table class="docutils align-default">
@@ -197,7 +202,7 @@
 <td>&#160;</td>
 </tr>
 <tr class="row-odd"><td>&#160;</td>
-<td>0.1 seconds</td>
+<td>0.100 seconds</td>
 </tr>
 <tr class="row-even"><td>&#160;</td>
 <td>0.012 seconds</td>

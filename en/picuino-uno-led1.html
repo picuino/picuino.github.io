@@ -5,8 +5,8 @@
   <meta name="keywords" content="Technology, Secondary Education, Drawing, Structures, Mechanisms, Materials, Electricity, Electronics, Computer Science, Programming, Control, Arduino, Communications, Workshop">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Libre educational resources for Technology in Secondary Education. Arduino - Shield Picuino UNO - 1. Encendido y apagado de los LED">
-  <title>1. Encendido y apagado de los LED - Shield Picuino UNO - Picuino</title>
+  <meta name="description" content="Libre educational resources for Technology in Secondary Education. Arduino - Shield Picuino UNO - 1. Turning the LEDs on and off">
+  <title>1. Turning the LEDs on and off - Shield Picuino UNO - Picuino</title>
 
   
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
@@ -71,7 +71,7 @@
         
           <li><a href="picuino-uno-index.html">Shield Picuino UNO</a>/</li>
         
-      <li><span class="section-number">1. </span>Encendido y apagado de los LED</li>
+      <li><span class="section-number">1. </span>Turning the LEDs on and off</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -102,42 +102,35 @@
            <div itemprop="articleBody">
             
   <div class="section" id="encendido-y-apagado-de-los-led">
-<h1><span class="section-number">1. </span>Encendido y apagado de los LED<a class="headerlink" href="#encendido-y-apagado-de-los-led" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">1. </span>Turning the LEDs on and off<a class="headerlink" href="#encendido-y-apagado-de-los-led" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="objetivos">
-<h2>Objetivos<a class="headerlink" href="#objetivos" title="Permalink to this headline">¶</a></h2>
+<h2>Goals<a class="headerlink" href="#objetivos" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Encender y apagar los diodos led del shield Picuino UNO.</li>
-<li>Generar parpadeo de ledes mediante esperas de tiempo.</li>
+<li>Turn on and off the led diodes of the Picuino UNO shield.</li>
+<li>Generate led blinking by waiting time.</li>
 </ul>
 </div>
 <div class="section" id="libreria-de-manejo-para-arduino">
-<h2>Librería de manejo para Arduino<a class="headerlink" href="#libreria-de-manejo-para-arduino" title="Permalink to this headline">¶</a></h2>
+<h2>Management library for Arduino<a class="headerlink" href="#libreria-de-manejo-para-arduino" title="Permalink to this headline">¶</a></h2>
 <p>Para poder comenzar a programar es necesario descargar e instalar
 previamente la <a class="reference download internal" download="" href="_downloads/Picuino-UNO-05.zip"><code class="xref download docutils literal notranslate"><span class="pre">librería</span> <span class="pre">necesaria</span> <span class="pre">para</span> <span class="pre">programar</span> <span class="pre">el</span> <span class="pre">shield</span>
 <span class="pre">Picuino</span> <span class="pre">UNO</span></code></a></p>
-<p>En la siguiente página web se pueden ver cómo los pasos necesarios
-para la instalación de una librería para Arduino.</p>
+<p>In the following web page you can see how the necessary steps for the installation of a library for Arduino.</p>
 <p><a class="reference internal" href="arduprog/add-library.html#add-library"><span class="std std-ref">Add a library to Arduino</span></a></p>
 </div>
 <div class="section" id="la-funcion-ledwrite">
-<h2>La función <code class="docutils literal notranslate"><span class="pre">ledWrite</span></code><a class="headerlink" href="#la-funcion-ledwrite" title="Permalink to this headline">¶</a></h2>
+<h2>The <code class="docutils literal notranslate"><span class="pre">ledWrite</span></code> function<a class="headerlink" href="#la-funcion-ledwrite" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
 <dt id="ledWrite">
 <code class="descname">ledWrite</code><span class="sig-paren">(</span><em>int ledNum</em>, <em>int bright</em><span class="sig-paren">)</span><a class="headerlink" href="#ledWrite" title="Permalink to this definition">¶</a></dt>
-<dd><p>Esta función permite encender o apagar un led concreto.
-Sus parámetros son los siguientes:</p>
-<p><code class="docutils literal notranslate"><span class="pre">ledNum</span></code>: led que se va a encender o apagar. Los valores válidos
-van desde 1 para el led D1 hasta 8 para el color azul del led D6.</p>
-<p>El led D6 es un led RGB, que integra 3 ledes en su interior.
-Los números 6, 7, 8 representan respectivamente los colores rojo,
-verde y azul del led D6.</p>
+<dd><p>This function allows you to turn a specific led on or off. Its parameters are the following:</p>
+<p><code class="docutils literal notranslate"><span class="pre">ledNum</span></code>: led to turn on or off. Valid values ​​range from 1 for led D1 to 8 for the blue color of led D6.</p>
+<p>The D6 led is an RGB led, which integrates 3 leds inside. The numbers 6, 7, 8 respectively represent the red, green and blue colors of led D6.</p>
 <dl class="docutils">
-<dt><code class="docutils literal notranslate"><span class="pre">bright</span></code>: brillo con el que se va a encender el led.</dt><dd><ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">LED_OFF</span></code>: apaga el led. Se puede sustituir por el número
-cero.</li>
-<li><code class="docutils literal notranslate"><span class="pre">LED_ON</span></code>: enciende el led con la intensidad máxima.</li>
-<li>Valores entre 2 y 255: enciende el led con una intensidad
-proporcional al número.</li>
+<dt><code class="docutils literal notranslate"><span class="pre">bright</span></code>: brightness with which the led will light up.</dt><dd><ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">LED_OFF</span></code>: turns off the led. It can be replaced by the number zero.</li>
+<li><code class="docutils literal notranslate"><span class="pre">LED_ON</span></code>: turns on the led with maximum intensity.</li>
+<li>Values ​​between 2 and 255: turn on the led with an intensity proportional to the number.</li>
 </ul>
 </dd>
 </dl>
@@ -145,8 +138,8 @@ proporcional al número.</li>
 
 </div>
 <div class="section" id="encender-el-led-d1">
-<h2>Encender el led D1<a class="headerlink" href="#encender-el-led-d1" title="Permalink to this headline">¶</a></h2>
-<p>El siguiente programa encenderá de forma permanente el led D1</p>
+<h2>Turn on led D1<a class="headerlink" href="#encender-el-led-d1" title="Permalink to this headline">¶</a></h2>
+<p>The following program will permanently light led D1</p>
 <div class="highlight-Arduino notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -172,17 +165,8 @@ proporcional al número.</li>
 </td></tr></table></div>
 </div>
 <div class="section" id="parpadeo-del-led-d1">
-<h2>Parpadeo del led D1<a class="headerlink" href="#parpadeo-del-led-d1" title="Permalink to this headline">¶</a></h2>
-<p>Si se desea encender y apagar el led D1 con un periodo de un segundo,
-una forma de realizarlo es encender el led, esperar medio segundo,
-apagar el led y esperar medio segundo. Cuando esta secuencia se
-repite, el led parpadea.
-Para conseguir una espera de medio segundo se utiliza la función
-<code class="docutils literal notranslate"><span class="pre">delay(500)</span></code> que provoca una espera de 500 milisegundos
-(0,5 segundos).
-Para conseguir que la secuencia se repita indefinidamente, el código
-se introduce dentro del bloque <code class="docutils literal notranslate"><span class="pre">loop()</span></code>, que se repite una y otra
-vez una vez iniciado el programa de Arduino.</p>
+<h2>LED D1 flashing<a class="headerlink" href="#parpadeo-del-led-d1" title="Permalink to this headline">¶</a></h2>
+<p>If you want to turn led D1 on and off with a period of one second, one way to do it is to turn on the led, wait half a second, turn off the led and wait half a second. When this sequence is repeated, the led flashes. To achieve a half-second wait, use the <code class="docutils literal notranslate"><span class="pre">delay(500)</span></code> function, which causes a 500-millisecond (0.5-second) wait. To make the sequence loop indefinitely, the code is inserted inside the <code class="docutils literal notranslate"><span class="pre">loop()</span></code> block, which loops over and over once the Arduino program is started.</p>
 <div class="highlight-arduino notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -214,50 +198,26 @@ vez una vez iniciado el programa de Arduino.</p>
 </td></tr></table></div>
 </div>
 <div class="section" id="ejercicios">
-<h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Permalink to this headline">¶</a></h2>
-<p>Programa el código necesario para resolver los siguientes problemas.</p>
+<h2>Exercises<a class="headerlink" href="#ejercicios" title="Permalink to this headline">¶</a></h2>
+<p>Program the code needed to solve the following problems.</p>
 <ol class="arabic">
-<li><p class="first">Encender los ledes D1, D3 y D5 de forma permanente.</p>
+<li><p class="first">Turn on leds D1, D3 and D5 permanently.</p>
 </li>
-<li><p class="first">Encender el led D1, esperar un segundo, encender el led D2, esperar
-un segundo y seguir así hasta que estén encendidos los 5 primeros
-led.
-Una vez terminado, el programa mantendrá los 5 ledes encendidos.</p>
+<li><p class="first">Turn on led D1, wait one second, turn on led D2, wait one second and continue like this until the first 5 leds are on. Once finished, the program will keep the 5 leds on.</p>
 </li>
-<li><p class="first">Encender los ledes rojo, ámbar y verde como en un semáforo.</p>
-<p>Primero se encenderá el led verde y permanecerá encendido
-durante 4 segundos.
-A continuación se apagará el led verde y se encenderá el led
-ámbar durante 2 segundos.
-Por último se apagará el led ámbar y se encenderá el rojo,
-que permanecerá encendido durante 4 segundos.</p>
-<p>Esta secuencia se repetirá indefinidamente.</p>
+<li><p class="first">Turn on the red, amber and green leds as in a traffic light.</p>
+<p>First the green led will light up and stay on for 4 seconds. Then the green led will turn off and the amber led will light up for 2 seconds. Finally, the amber led will turn off and the red one will turn on, which will remain on for 4 seconds.</p>
+<p>This sequence will repeat indefinitely.</p>
 </li>
-<li><p class="first">Modificar el ejercicio 3 para que el led ámbar parpadee tres
-veces, cambiando de encendido a apagado cada medio segundo, antes
-de pasar a encender el led rojo.</p>
+<li><p class="first">Modify exercise 3 so that the amber led flashes three times, changing from on to off every half second, before turning on the red led.</p>
 </li>
-<li><p class="first">Programar una baliza que encienda alternativamente el led rojo y
-el led azul.
-Cada led debe permanecer encendido durante un segundo.
-Siempre debe estar uno de los dos led encendidos y nunca estarán
-los dos led encendidos a la vez.</p>
+<li><p class="first">Program a beacon that turns on alternately the red led and the blue led. Each led should stay on for one second. One of the two LEDs must always be on and both LEDs will never be on at the same time.</p>
 </li>
-<li><p class="first">Encender el led D1, esperar un segundo, apagar el led D1 y encender
-el led D2.
-Se encenderán de esta forma, consecutivamente, los 5 primeros ledes.
-En cada momento solo un led estará encendido.
-Una vez terminada la secuencia, comenzará de nuevo desde el
-principio.</p>
+<li><p class="first">Turn on led D1, wait a second, turn off led D1 and turn on led D2. In this way, the first 5 leds will light up consecutively. At each moment only one led will be on. Once the sequence is finished, it will start over from the beginning.</p>
 </li>
-<li><p class="first">Realizar una modificación al ejercicio anterior para que en todo
-momento haya 2 ledes encendidos.
-Al comenzar el programa deben encenderse los ledes D1 y D2.
-Pasado un segundo se encenderán los ledes D2 y D3.
-La secuencia continuará hasta llegar a la situación inicial.</p>
+<li><p class="first">Make a modification to the previous exercise so that at all times there are 2 LEDs on. When the program starts, leds D1 and D2 should light up. After a second, leds D2 and D3 will light up. The sequence will continue until reaching the initial situation.</p>
 </li>
-<li><p class="first">El siguiente programa tiene varios errores, corrige los
-errores sintácticos para que funcione correctamente.</p>
+<li><p class="first">The following program has several errors, correct the syntax errors so that it works correctly.</p>
 <div class="highlight-arduino notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -308,8 +268,7 @@ errores sintácticos para que funcione correctamente.</p>
 </pre></div>
 </td></tr></table></div>
 </li>
-<li><p class="first">Realizar un programa que haga parpadear D1 una vez por segundo a
-la vez que D2 parpadea dos veces por segundo.</p>
+<li><p class="first">Make a program that makes D1 blink once per second while D2 blinks twice per second.</p>
 </li>
 </ol>
 </div>
@@ -425,7 +384,7 @@ la vez que D2 parpadea dos veces por segundo.</p>
 <li class="toctree-l2"><a class="reference internal" href="arduprog/pc42-index.html">Control Panel PC42</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arduprog/ardublock-index.html">Ardublock</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="picuino-uno-index.html">Shield Picuino UNO</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">1. Encendido y apagado de los LED</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">1. Turning the LEDs on and off</a></li>
 <li class="toctree-l3"><a class="reference internal" href="picuino-uno-led2.html">2. Parpadeo de los LED</a></li>
 <li class="toctree-l3"><a class="reference internal" href="picuino-uno-key1.html">3. Pulsadores</a></li>
 <li class="toctree-l3"><a class="reference internal" href="picuino-uno-key2.html">4. Pulsadores: Eventos</a></li>

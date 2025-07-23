@@ -208,7 +208,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/content.html</loc>
-  <lastmod>2025-07-21</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -964,7 +964,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/error-404.html</loc>
-  <lastmod>2025-07-21</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -1096,7 +1096,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/genindex.html</loc>
-  <lastmod>2025-07-21</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -1252,7 +1252,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/index.html</loc>
-  <lastmod>2025-07-21</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -1624,85 +1624,91 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/ley-autonomica-aragon.html</loc>
-  <lastmod>2025-06-27</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/ley-autonomica-madrid.html</loc>
-  <lastmod>2025-06-27</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/ley-autonomica.html</loc>
-  <lastmod>2025-06-27</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/ley-bachillerato.html</loc>
-  <lastmod>2025-06-27</lastmod>
+  <lastmod>2025-07-23</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.picuino.com/en/ley-ciencias-computacion-bach.html</loc>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/ley-ciencias-computacion.html</loc>
-  <lastmod>2025-06-27</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/ley-digitalizacion.html</loc>
-  <lastmod>2025-06-27</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/ley-index.html</loc>
-  <lastmod>2025-06-27</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/ley-intro.html</loc>
-  <lastmod>2025-06-27</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/ley-materias.html</loc>
-  <lastmod>2025-06-27</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/ley-secundaria.html</loc>
-  <lastmod>2025-06-27</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/ley-tecnologia-digitalizacion.html</loc>
-  <lastmod>2025-06-27</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/ley-tecnologia-ingenieria.html</loc>
-  <lastmod>2025-06-27</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/ley-tecnologia.html</loc>
-  <lastmod>2025-06-27</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/ley-temario-tecnologia.html</loc>
-  <lastmod>2025-06-27</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -2500,7 +2506,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/search.html</loc>
-  <lastmod>2025-07-21</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -3154,7 +3160,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/content.html</loc>
-  <lastmod>2025-07-22</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -3910,7 +3916,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/error-404.html</loc>
-  <lastmod>2025-07-22</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -4042,7 +4048,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/genindex.html</loc>
-  <lastmod>2025-07-22</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -4198,7 +4204,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/index.html</loc>
-  <lastmod>2025-07-22</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -4570,85 +4576,91 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/ley-autonomica-aragon.html</loc>
-  <lastmod>2025-06-27</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/ley-autonomica-madrid.html</loc>
-  <lastmod>2025-06-27</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/ley-autonomica.html</loc>
-  <lastmod>2025-06-27</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/ley-bachillerato.html</loc>
-  <lastmod>2025-06-27</lastmod>
+  <lastmod>2025-07-23</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.picuino.com/es/ley-ciencias-computacion-bach.html</loc>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/ley-ciencias-computacion.html</loc>
-  <lastmod>2025-06-27</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/ley-digitalizacion.html</loc>
-  <lastmod>2025-06-27</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/ley-index.html</loc>
-  <lastmod>2025-06-27</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/ley-intro.html</loc>
-  <lastmod>2025-06-27</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/ley-materias.html</loc>
-  <lastmod>2025-06-27</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/ley-secundaria.html</loc>
-  <lastmod>2025-06-27</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/ley-tecnologia-digitalizacion.html</loc>
-  <lastmod>2025-06-27</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/ley-tecnologia-ingenieria.html</loc>
-  <lastmod>2025-06-27</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/ley-tecnologia.html</loc>
-  <lastmod>2025-06-27</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/ley-temario-tecnologia.html</loc>
-  <lastmod>2025-06-27</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -5446,7 +5458,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/search.html</loc>
-  <lastmod>2025-07-22</lastmod>
+  <lastmod>2025-07-23</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>

@@ -114,12 +114,12 @@
 <p>The following figure shows the modification that must be made to the closed-loop control system to convert it into an open-loop system that responds to a step signal, removing the PID controller:</p>
 <a class="reference internal image-reference" href="_images/img-0059.png"><img alt="Esquema de señal escalón aplicada a un sistema en lazo abierto." class="align-center" src="_images/img-0059.png" style="width: 640px;"></a>
 <p>In the following image you can see the step input to the actuator or signal <strong>c(t)</strong> represented in red. In blue the output of the system measured by the sensor or signal <strong>h(t)</strong> is represented. The input step <strong>c(t)</strong> must be between 10% and 20% of the nominal input value. As can be seen, the system response presents a delay, also called dead time, represented by T1.</p>
-<a class="reference internal image-reference" href="_images/img-0060.png"><img alt="Respuesta al escalón en un horno. Periodo inicial." class="align-center" src="_images/img-0060.png" style="width: 640px;"></a>
+<a class="reference internal image-reference" href="_images/img-0060.png"><img alt="Respuesta al escalón en un horno. Período inicial." class="align-center" src="_images/img-0060.png" style="width: 640px;"></a>
 <p>To calculate the parameters, we begin by drawing a straight line tangent to the output signal of the system (blue curve). This tangent is drawn on the image with a dashed line.</p>
 <p>The <strong>time T1</strong> corresponds to the <strong>dead time</strong>. This is the time it takes for the system to start responding. This interval is measured from when the step signal rises, to the point of intersection of the tangent line with the initial value of the system, which in this case is the value 25ºC.</p>
 <p>The <strong>T2 time</strong> is the <strong>rise time</strong>. Time 2 will start where the tangent line intersects the start output value (25º at 2 seconds) and will end where the tangent line intersects the output end value (225º at 14 seconds).</p>
 <div class="figure align-center" id="id1">
-<a class="reference internal image-reference" href="_images/img-0061.png"><img alt="Respuesta al escalón en un horno. Periodo completo." src="_images/img-0061.png" style="width: 640px;"></a>
+<a class="reference internal image-reference" href="_images/img-0061.png"><img alt="Respuesta al escalón en un horno. Período completo." src="_images/img-0061.png" style="width: 640px;"></a>
 <p class="caption"><span class="caption-text">Step response. Time 2 begins after T1 and ends when the tangent line reaches the maximum output value, in this case 225ºC.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
 <p>In addition to these two characteristic times, the variation of the step signal dX and the variation of the system response dY must also be calculated.</p>
@@ -396,7 +396,7 @@
       unless otherwise specified.
       <br>
       <span class="lastupdated">
-        Last updated on June, 2025.
+        Last updated on August, 2025.
       </span>
 
     </p>

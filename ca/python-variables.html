@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Programació - Tutorial Python - 3. Les variables">
+  <title>3. Les variables - Tutorial Python - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/python-variables.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="4. Paraules reservades" href="python-palabras-reservadas.html">
+  <link rel="prev" title="2. Dades numèriques" href="python-datos-numeros.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="prog-index.html">Programació</a>/</li>
+        
+          <li><a href="python-index.html">Tutorial Python</a>/</li>
+        
+      <li><span class="section-number">3. </span>Les variables</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/python-variables.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/python-variables.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="las-variables">
+<span id="python-variables"></span><h1><span class="section-number">3. </span>Les variables<a class="headerlink" href="#las-variables" title="Link permanent a aquest títol">¶</a></h1>
+<p>Les variables d’un llenguatge de programació són contenidors que serveixen per emmagatzemar informació amb un nom descriptiu. La manera d’assignar un valor a una variable és escriure el nom de la variable, un igual i el valor assignat</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pi</span> <span class="o">=</span> <span class="mf">3.1415927</span>
+<span class="n">altura</span> <span class="o">=</span> <span class="mi">176</span>
+<span class="n">peso</span> <span class="o">=</span> <span class="mi">72</span>
+</pre></div>
+</div>
+<p>El valor d’una variable es pot mantenir igual a tot el programa o pot canviar</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">altura</span> <span class="o">=</span> <span class="mi">170</span>
+<span class="o">...</span>
+<span class="o">...</span>
+<span class="n">altura</span> <span class="o">=</span> <span class="mi">180</span>
+</pre></div>
+</div>
+<div class="section" id="numeros-magicos">
+<h2>Nombres màgics<a class="headerlink" href="#numeros-magicos" title="Link permanent a aquest títol">¶</a></h2>
+<p>El més correcte a l’hora d’escriure un programa és emmagatzemar tots els números dins de les variables i utilitzar només les variables. Això evita utilitzar els nombres màgics, que no són desitjables.</p>
+<p>Els números que apareixen en un programa i no es troben dins d’una variable s’anomenen nombres màgics. El programador entén aquests números en el moment d’escriure el codi, però és habitual que altres persones entenguin el seu significat. Fins i tot el propi programador, amb el pas del temps, pot oblidar el significat d’un número específic que va escriure al codi.</p>
+<p>Les variables ens permeten donar un nom significatiu a un número, que facilita la lectura i la comprensió del codi, evitant així nombres màgics.</p>
+<p>Per exemple, en lloc d’haver d’escriure en cada ocasió el número π (3.1416), l’hem d’emmagatzemar en una variable anomenada “pi”, de manera que el codi sigui més comprensible.</p>
+<p>Si un dia volem canviar el valor d’aquesta constant, per exemple, per donar més dígits de precisió (3.141592653589793), només haureu de canviar una línia de tot el codi, en la definició de PI.</p>
+<p>En resum, les variables són una eina essencial en la programació, ja que ens permeten emmagatzemar i accedir a la informació en un organitzat i fàcil d’entendre.</p>
+</div>
+<div class="section" id="nombrar-variables">
+<h2>Nom de variables<a class="headerlink" href="#nombrar-variables" title="Link permanent a aquest títol">¶</a></h2>
+<p>Quan busqueu un nom per a les variables, és important seguir algunes regles per assegurar -vos que el codi sigui fàcil d’entendre i fàcil de modificar més endavant.</p>
+<dl class="docutils">
+<dt>** Utilitzeu noms significatius **</dt><dd>El nom d’una variable ha de reflectir el seu contingut o el seu propòsit en el codi. Per exemple, en lloc d’utilitzar una variable anomenada &quot;x &quot; o &quot;temp &quot;, és millor utilitzar un nom com a &quot;qualificacions &quot; o &quot;mitjà &quot;.</dd>
+<dt>** Utilitzeu noms curts però descriptius **</dt><dd>Tot i que és important utilitzar noms significatius, també és important evitar noms massa llargs o complexos. Un nom curt però descriptiu és més fàcil de llegir i escriure.</dd>
+<dt>** No utilitzeu caràcters especials **</dt><dd>Personatges especials (accents, eñe, dioésis, etc.) i els espais poden causar problemes en alguns llenguatges de programació o altres programadors. És millor acostumar -se a no utilitzar -los mai.</dd>
+<dt>** Utilitzeu Snake_Case Notation **</dt><dd><p>Es tracta d’un estil d’escriptura en què les paraules del nom de la variable estan separades pel caràcter subratllat &quot;_ &quot;. Exemples d'aquesta notació són &quot;number_de_alumnos &quot;, &quot;longitud_piscina &quot;, etc.</p>
+<p>Si anem a crear diverses variables relacionades, és preferible que la vostra primera paraula coincideixi en totes elles</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">persona_altura</span> <span class="o">=</span> <span class="mi">175</span>
+<span class="n">persona_peso</span> <span class="o">=</span> <span class="mi">68</span>
+<span class="n">persona_nombre</span> <span class="o">=</span> <span class="s1">&#39;Juan&#39;</span>
+<span class="n">persona_apellido</span> <span class="o">=</span> <span class="s1">&#39;Gómez&#39;</span>
+
+<span class="n">piscina_longitud</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="n">piscina_anchura</span> <span class="o">=</span> <span class="mi">15</span>
+<span class="n">piscina_profundidad</span> <span class="o">=</span> <span class="mf">2.5</span>
+</pre></div>
+</div>
+</dd>
+<dt>** No utilitzeu paraules reservades **</dt><dd>Les paraules de llenguatge reservades com &quot;imprimir &quot;, &quot;input &quot;, &quot;per &quot;, &quot;mentre &quot;, &quot;rupte &quot;, &quot;Continuar &quot;, &quot;true &quot;, &quot;fals &quot;, etc. No s'han d'utilitzar com a names variables.</dd>
+</dl>
+<p>Seguint aquestes regles, podeu anomenar les vostres variables clarament i organitzades, cosa que us ajudarà a escriure un codi fàcil per comprendre i mantenir.</p>
+</div>
+<div class="section" id="ejercicios">
+<h2>Exercicis<a class="headerlink" href="#ejercicios" title="Link permanent a aquest títol">¶</a></h2>
+<p>Escriviu un programa o macro per a cada exercici proposat. Deseu els programes amb els noms proposats als exercicis.</p>
+<ol class="arabic">
+<li><p class="first">Feu un programa per calcular el perímetre d’un cercle. El programa ha de demanar a l'usuari que introdueixi el radi del cercle i, a continuació, calculeu el perímetre mitjançant la fórmula &quot;2 * PI * Radio &quot;. Poseu un nom a les variables per emmagatzemar el radi, el número PI i el perímetre del cercle.</p>
+<p>Imprimiu el resultat a la pantalla.</p>
+<p>No oblideu fer tots els números introduïts pel teclat per flotar.</p>
+<p>No oblideu anomenar les variables amb estil Snake_case.</p>
+<p>Solució d'exercici</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pi</span> <span class="o">=</span> <span class="mf">3.141592653589793</span>
+
+<span class="n">radio</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Introduce el radio del círculo: &quot;</span><span class="p">)</span>
+
+<span class="n">radio</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">radio</span><span class="p">)</span>
+
+<span class="n">perimetro</span> <span class="o">=</span> <span class="mf">2.0</span> <span class="o">*</span> <span class="n">pi</span> <span class="o">*</span> <span class="n">radio</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Perímetro del círculo = &quot;</span><span class="p">,</span> <span class="n">perimetro</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Deseu el programa amb el nom `` subjecte_03_ejercio_01.py```</p>
+<p>Tingueu en compte que el número 2.0 que apareix al programa és un número màgic. Ha estat així perquè forma part de la fórmula perimetral, coneguda per tots.</p>
+</li>
+<li><p class="first">Escriviu un programa per calcular el sou d’un empleat. El programa ha de demanar a l'usuari que escrigui les hores treballades. El sou per hora serà de 15 euros i s’ha d’emmagatzemar en una variable. Calculeu el sou total multiplicant les hores pel sou per hora.</p>
+<p>Imprimiu el resultat a la pantalla.</p>
+<p>Pista: utilitzeu el programa anterior com a model, canviant el nom de les variables i els valors numèrics.</p>
+<p>Deseu el programa amb el nom `` subjecte_03_ejercio_02.py```</p>
+</li>
+<li><p class="first">Escriviu un programa per calcular el volum d’un cub. El programa ha de demanar a l'usuari que escrigui la longitud d'un costat. El volum del cub es calcularà augmentant la tercera potència (** 3) la longitud del costat.</p>
+<p>Imprimiu el resultat a la pantalla.</p>
+<p>Deseu el programa amb el nom `` subjecte_03_ejercio_03.py```</p>
+</li>
+<li><p class="first">Feu un programa per calcular el canvi de compra. El programa ha de demanar a l’usuari que escrigui el cost total de la compra i els diners rebuts. Calculeu per sota del canvi que s’ha de retornar fent una resta.</p>
+<p>Imprimiu el resultat a la pantalla.</p>
+<p>Deseu el programa amb el nom `` subjecte_03_ejercio_04.py```</p>
+</li>
+<li><p class="first">Feu un programa per calcular el preu final d’un producte de descompte del 25%.</p>
+<p>El percentatge de descompte s’ha d’emmagatzemar en una variable.</p>
+<p>El programa ha de demanar a l'usuari que escrigui el cost del producte. A continuació, calculeu el preu del descompte amb la fórmula següent</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">precio_final</span> <span class="o">=</span> <span class="n">precio_inicial</span> <span class="o">*</span> <span class="p">(</span><span class="mi">100</span> <span class="o">-</span> <span class="n">descuento</span><span class="p">)</span> <span class="o">/</span> <span class="mi">100</span>
+</pre></div>
+</div>
+<p>Imprimiu el resultat a la pantalla.</p>
+<p>Deseu el programa amb el nom `` subjecte_03_ejercio_05.py```</p>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="python-palabras-reservadas.html" class="btn btn-neutral float-right" title="4. Paraules reservades" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="python-datos-numeros.html" class="btn btn-neutral" title="2. Dades numèriques" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/python-variables.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="prog-index.html">Programació</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="prog-lang-edu.html">Llenguatges de programació</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-flowchart.html">Diagrames de flux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-unplugged.html">Activitats desconnectades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-codeorg.html">Tutorials de codi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scratch3-index.html">Tutorial Scratch 3</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="python-index.html">Tutorial Python</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="python-intro.html">1. Introducció a la llengua de Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-datos-numeros.html">2. Dades numèriques</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">3. Les variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-palabras-reservadas.html">4. Paraules reservades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-comentarios.html">5. Els comentaris</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-print.html">6. La funció: py: funció: `imprimir '</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-input.html">7. La funció: py: funció: `entrada '</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-booleanos.html">8. El tipus booleà</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-if-else.html">9. Judici `` si '' `` else ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-if-and-or-not.html">10. Operadors `` <cite>,</cite> ``, `` no ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-if-anidados.html">11. Judicis `si '' nided</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-if-elif.html">12. Judici `` elif ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for.html">13. Judici `` per ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for-range.html">14. La funció: py: funció: `range '</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for-continue.html">15. Judici &quot;Continua&quot;</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for-break.html">16. Judici `` Break ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for-anidados.html">17. Judicis `` `` anity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-while.html">18. Judici `` mentre ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-funciones.html">19. Definició de funcions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-funciones-argumentos.html">20. Paràmetres amb valors d’omissió</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-textos.html">21. Cadenes de text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-textos-indices.html">22. Índexs de la cadena de text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-textos-metodos.html">23. Mètodes de la cadena de text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-textos-formateo.html">24. Format de la cadena de text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-listas.html">25. Llistes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-listas-indices.html">26. Llista dels índexs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-listas-iteracion.html">27. Iteració de llistes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-listas-metodos.html">28. Llista de mètodes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-busqueda.html">29. Cerca de dades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-busqueda-binaria.html">30. Cerca binària</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-desplazamiento.html">31. Desplaçament de dades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-sort-seleccion.html">32. Gestió de la selecció</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-sort-insercion.html">33. Gestió d'inserció</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-recursividad.html">34. Recursió</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-sort-mezcla.html">35. Barrejant l’ordenació</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-codewars.html">36. Codewars katas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-recursos.html">37. Recursos Python</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="prog-recursos.html">Recursos per a la programació</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

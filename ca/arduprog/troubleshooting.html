@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Arduino - Recursos - Resolució de problemes">
+  <title>Resolució de problemes - Recursos - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/arduprog/troubleshooting.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="../_static/opensearch.xml">
+
+  <link rel="stylesheet" href="../_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="../genindex.html">
+  <link rel="index" title="Índex" href="../content.html">
+  <link rel="search" title="Cerca" href="../search.html">
+  <link rel="next" title="Descàrregues" href="downloads.html">
+  <link rel="prev" title="Components per dur a terme projectes amb Arduino" href="component-kit.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../content.html"><img src="../_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../content.html">Home</a>/</li>
+        
+          <li><a href="index.html">Arduino</a>/</li>
+        
+          <li><a href="resource-index.html">Recursos</a>/</li>
+        
+      <li>Resolució de problemes</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/arduprog/troubleshooting.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="../contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/arduprog/troubleshooting.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="solucion-de-problemas">
+<span id="troubleshooting"></span><h1>Resolució de problemes<a class="headerlink" href="#solucion-de-problemas" title="Link permanent a aquest títol">¶</a></h1>
+<p>El més comú és que els programes i els circuits no funcionen en el primer intent. Això passa fins i tot als més experimentats, ningú no es desfà de la 'Llei Murphy &lt;<a class="reference external" href="https://es.wikipedia.org/wiki/ley_de_murphy" rel="noopener noreferrer" target="_blank">https://es.wikipedia.org/wiki/ley_de_murphy</a>&gt;`__.</p>
+<p>Els fracassos més freqüents i també els més difícils de trobar solen ser els més senzills. Són fallades de tipus Per què funciona aquesta televisió? Sense adonar -se que no està connectat.</p>
+<p>A continuació, es mostra una llista dels errors més habituals de manera que pot orientar -se per trobar aquells fracassos que resisteixen i tanta feina.</p>
+<div class="section" id="esta-conectado">
+<h2>Està connectat?<a class="headerlink" href="#esta-conectado" title="Link permanent a aquest títol">¶</a></h2>
+<p>Hi ha múltiples versions d’aquest fracàs comú. En aquest moment cal destacar que la verificació s’ha de fer de manera que es garanteixi la bona connexió amb la fiabilitat total. No n’hi ha prou de veure si el cable està al seu lloc. També cal verificar que hi hagi continuïtat, s’ha de comprovar amb una política que arribi el senyal i que no hi hagi altres connexions no desitjades, com ara un curtcircuit. Abans de continuar buscant fallades més complexes, s’hauria de demostrar completament que la connexió és correcta. A continuació es troba una llista de versions molt comunes d’aquest problema.</p>
+</div>
+<div class="section" id="esta-conectada-la-alimentacion-y-tiene-la-tension-correcta">
+<h2>El menjar està connectat i té la tensió correcta?<a class="headerlink" href="#esta-conectada-la-alimentacion-y-tiene-la-tension-correcta" title="Link permanent a aquest títol">¶</a></h2>
+<p>El control més senzill i segur consisteix a mesurar la tensió d’alimentació del circuit amb un canter. Si el circuit té un LED per comprovar la presència de menjar, també us ajudarà, però amb un LED no es pot assegurar que la tensió sigui correcta.</p>
+<p>En general, no n’hi ha prou de saber que el circuit està connectat, perquè això pot enganyar. Imaginem una placa connectada a un cable USB que l’alimenta. Evidentment, la placa està connectada, però està connectat l’altre final del cable? El centre al qual està connectat el cable està connectat a l'ordinador? L’ordinador està en marxa? Es talla algun dels cables? Alguns dels interruptors d’encesa no estan en una posició ON o s’ha quedat a la meitat? El més segur és comprovar la tensió d’alimentació al circuit final.</p>
+</div>
+<div class="section" id="esta-conectada-la-senal-analogica">
+<h2>El senyal analògic està connectat?<a class="headerlink" href="#esta-conectada-la-senal-analogica" title="Link permanent a aquest títol">¶</a></h2>
+<p>Com en el punt anterior, el més segur és mesurar el nivell de senyal que arriba al circuit. Quan s’intenta mesurar un senyal analògic, sempre mesura el mateix o només es rep el soroll. En aquest cas, heu de comprovar diverses connexions:</p>
+<blockquote>
+<div><ul class="simple">
+<li>La massa està connectada?</li>
+<li>Els senyals de referència de tensió estan connectats V+ i V-?</li>
+<li>Continua el cable que va del sensor al microcontrolador?</li>
+<li>Hi ha un curtcircuit que no permeti arribar el senyal?</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="esta-conectada-la-senal-a-la-patilla-correcta">
+<h2>El senyal està connectat al passador adequat?<a class="headerlink" href="#esta-conectada-la-senal-a-la-patilla-correcta" title="Link permanent a aquest títol">¶</a></h2>
+<p>La primera entrada de Puerto Ra0 i la segona RA1 pot provocar confusió en ocasions, el senyal està connectat a la seva entrada? Si hi ha una confusió al port d’entrada/sortida, comencen els problemes. Esteu connectat a RA o RB? En alguns microcontroladors és possible assignar les entrades/sortides als pints per programari, es configura el pin d'entrada/sortida?</p>
+</div>
+<div class="section" id="esta-conectada-la-resistencia-de-pull-up-o-pull-down">
+<h2>Està connectada la resistència de desplegament o desplegable?<a class="headerlink" href="#esta-conectada-la-resistencia-de-pull-up-o-pull-down" title="Link permanent a aquest títol">¶</a></h2>
+<p>Algunes sortides han de tenir una resistència connectada a l'alimentació perquè la sortida pugui donar senyal. Aquest és el cas d'alguns circuits comparatius com LM311 (sortida del col·lector obert) o algunes sortides especials de microcontroladors (sortida de desguàs obert). La millor manera de comprovar l’operació correcta és comprovar la tensió del passador amb un canter. En aquests casos, una lectura detallada del full de característiques (full de dades) pot evitar cometre aquest fracàs.</p>
+</div>
+<div class="section" id="esta-configurada-la-patilla-como-entrada-o-como-salida">
+<h2>El PIN està configurat com a entrada o com a sortida?<a class="headerlink" href="#esta-configurada-la-patilla-como-entrada-o-como-salida" title="Link permanent a aquest títol">¶</a></h2>
+<p>Una confusió en la configuració i podem passar hores buscant el problema. El més senzill és comprovar primer la configuració dels pins d’entrada i sortida.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Es configura correctament el pin MCLR?</li>
+<li>Es configura correctament el pin LVP per a la programació de baixa tensió?</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="hay-alguna-entrada-al-aire-que-recoja-ruido-ambiente">
+<h2>Hi ha alguna entrada d'aire que reculli soroll ambient?<a class="headerlink" href="#hay-alguna-entrada-al-aire-que-recoja-ruido-ambiente" title="Link permanent a aquest títol">¶</a></h2>
+<p>Cal assegurar -se que totes les entrades digitals i les entrades analògiques estan connectades per defecte a la massa. Les entrades a l’aire poden provocar fallades intermitents molt difícils de trobar i un major consum del circuit. Especialment els pins MCLR i LPV poden causar fallades que provoquen el restabliment del microcontrolador si no es configuren correctament i es connecten a VDD o GND.</p>
+</div>
+<div class="section" id="esta-la-polaridad-cambiada">
+<h2>Es canvia la polaritat?<a class="headerlink" href="#esta-la-polaridad-cambiada" title="Link permanent a aquest títol">¶</a></h2>
+<p>Alguns connectors obliguen a connectar una polaritat específica. En altres casos, un connector només té una posició, però els cables es canvien. Una dieta invertida pot destruir el circuit i un senyal analògic amb polaritat invertida no funcionarà. La polaritat és correcta?</p>
+<p>Les entrades digitals poden estar actives a nivell alt o baix. És el nivell lògic correcte?</p>
+<p>Si el pin de restabliment /MCLR està connectat amb una resistència de massa i un botó al positiu (viceversa de la seva connexió normal), res no funcionarà. No és habitual cometre aquest error i, pel mateix motiu, podeu perdre molt de temps intentant trobar aquest fracàs.</p>
+<p>Si un port de microcontrolador està configurat amb entrades en pull-up (resistència positiva) i connecta els botons externs al positiu del menjar ... Cap funcionarà.</p>
+</div>
+<div class="section" id="hay-cortocircuito">
+<h2>Hi ha curtcircuit?<a class="headerlink" href="#hay-cortocircuito" title="Link permanent a aquest títol">¶</a></h2>
+<p>L’autor pot indicar continuïtat als cables, però si hi ha un curtcircuit entre el circuit, el circuit no funcionarà. Per comprovar la continuïtat d’un component, s’ha de desconnectar el component del circuit. Heu de comprovar que no hi ha curtcircuits abans de comprovar si hi ha continuïtat.</p>
+<p>Si aquest error és freqüent, hi ha dispositius específics per comprovar els curtcircuits. Des d’un sol miliomimeter fins a un complex reflectòmetre de domini de temps &lt;<a class="reference external" href="https://es.wikipedia.org/wiki/reflect%C3%B3meter_de_de_de_de_tiempo" rel="noopener noreferrer" target="_blank">https://es.wikipedia.org/wiki/reflect%C3%B3meter_de_de_de_de_tiempo</a>&gt; `` __ __</p>
+</div>
+<div class="section" id="se-ha-comprobado-con-seguridad">
+<h2>S'ha demostrat amb seguretat?<a class="headerlink" href="#se-ha-comprobado-con-seguridad" title="Link permanent a aquest títol">¶</a></h2>
+<p>Val la pena tornar a insistir en aquest moment. En moltes ocasions se suposa que hi ha una connexió només perquè veiem el cable al seu lloc. Això no és suficient. El xec pot trigar molt poc i estalviar molt d’esforç i algun mal de cap.</p>
+<p>És fàcil &quot;veure &quot; que dos terminals vermells i negres estan connectats correctament a l'autor ... fins que un aspecte més atent ens permet veure que els terminals estan connectats en mode de tensió, mentre s'intenta mesurar el corrent.</p>
+</div>
+<div class="section" id="las-variables-y-constantes-estan-correctamente-configuradas">
+<h2>Es configuren correctament les variables i les constants?<a class="headerlink" href="#las-variables-y-constantes-estan-correctamente-configuradas" title="Link permanent a aquest títol">¶</a></h2>
+<p>Aquesta és una secció que genera freqüents i difícils de trobar perquè se suposa que hauria de funcionar correctament. El llenguatge predeterminat que es tractarà és el C, perquè és el llenguatge d’alt nivell més utilitzat per programar microcontroladors.</p>
+</div>
+<div class="section" id="las-variables-pueden-contener-el-dato">
+<h2>Les variables poden contenir dades?<a class="headerlink" href="#las-variables-pueden-contener-el-dato" title="Link permanent a aquest títol">¶</a></h2>
+<p>Un bucle de repetició de 1000 no es pot fer amb una variable de 8 bits. Una variable de 8 bits amb un signe només pot comptar fins a 127. Els valors principals confonran el bucle quan el valor negatiu</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">signed</span> <span class="n">char</span> <span class="n">i</span><span class="p">;</span>
+<span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">130</span><span class="p">;</span> <span class="n">i</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="nb">print</span> <span class="n">i</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>Aquest codi no imprimirà res, ja que i s’inicialitza amb un valor inferior a zero (i = 130 = -126 en format de 8 bits amb signe).</p>
+<p>La base de numeració és correcta? Cal comprovar que utilitzem una base de numeració adequada</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mh">0x11001100</span><span class="p">;</span>   <span class="o">//</span> <span class="n">Se</span> <span class="n">está</span> <span class="n">utilizando</span> <span class="n">base</span> <span class="n">hexadecimal</span><span class="p">,</span> <span class="n">aunque</span> <span class="n">parezca</span> <span class="n">binario</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="hay-definiciones-repetidas-o-fuera-de-contexto">
+<h2>Hi ha definicions repetides o fora de context?<a class="headerlink" href="#hay-definiciones-repetidas-o-fuera-de-contexto" title="Link permanent a aquest títol">¶</a></h2>
+<p>Si hi ha una definició de constant &quot;#define &quot; en un moment del programa i es defineix de nou en un altre punt, això pot comportar confusió quan es programi. Les definicions han d’aparèixer només una vegada.</p>
+<p>Les variables locals d’una funció sobreposen les variables globals. Hem de trucar a variables globals perquè no coincideixin amb variables locals.</p>
+</div>
+<div class="section" id="las-condiciones-estan-correctamente-escritas">
+<h2>Les condicions estan escrites correctament?<a class="headerlink" href="#las-condiciones-estan-correctamente-escritas" title="Link permanent a aquest títol">¶</a></h2>
+<p>Les condicions són una font freqüent d’errors. Alguns dels més freqüents són:</p>
+<p>Escriure un únic igual és incorrecte</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>     <span class="o">//</span> <span class="n">Incorrecto</span><span class="o">.</span> <span class="n">Se</span> <span class="n">asigna</span> <span class="mi">1</span> <span class="n">a</span> <span class="n">la</span> <span class="n">variable</span> <span class="s1">&#39;a&#39;</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>    <span class="o">//</span> <span class="n">Correcto</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="mh">0xF0</span> <span class="o">&amp;</span> <span class="mh">0x0F</span><span class="p">);</span>    <span class="o">//</span> <span class="n">Incorrecto</span><span class="p">,</span> <span class="n">resultado</span> <span class="n">falso</span>
+<span class="k">if</span> <span class="p">(</span><span class="mh">0xF0</span> <span class="o">&amp;&amp;</span> <span class="mh">0x0F</span><span class="p">);</span>   <span class="o">//</span> <span class="n">Correcto</span><span class="p">,</span> <span class="n">resultado</span> <span class="n">verdadero</span>
+<span class="k">if</span> <span class="p">((</span><span class="mh">0xF0</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="mh">0x0F</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">));</span>   <span class="o">//</span> <span class="n">Más</span> <span class="n">correcto</span> <span class="n">aún</span><span class="p">,</span> <span class="n">la</span> <span class="n">condición</span> <span class="n">aparece</span> <span class="n">explícita</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="downloads.html" class="btn btn-neutral float-right" title="Descàrregues" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="component-kit.html" class="btn btn-neutral" title="Components per dur a terme projectes amb Arduino" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="../contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="../manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="../legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="../legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="../genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="../content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../../es/arduprog/troubleshooting.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../prog-index.html">Programació</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Arduino</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="protoboard-index.html">Circuits amb Protoboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-index.html">Programes</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="resource-index.html">Recursos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting-arduino.html">Solució de problemes amb Arduino</a></li>
+<li class="toctree-l3"><a class="reference internal" href="add-library.html">Afegiu una llibreria a Arduino</a></li>
+<li class="toctree-l3"><a class="reference internal" href="component-kit.html">Components per dur a terme projectes amb Arduino</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Resolució de problemes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="downloads.html">Descàrregues</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pc42-index.html">Tauler de control PC42</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ardublock-index.html">Ardublock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../picuino-uno-index.html">Shield Picuino One</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="../_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

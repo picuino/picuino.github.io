@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Mecànica - Pneumàtica - 4. Cilindre d&#39;efecte de doble efecte">
+  <title>4. Cilindre d&#39;efecte de doble efecte - Pneumàtica - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/mecan-neumatic-doble-efecto.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="5. La vàlvula del selector o o de la vàlvula" href="mecan-neumatic-valvula-or.html">
+  <link rel="prev" title="3. Cilindre d&#39;efecte senzill" href="mecan-neumatic-simple-efecto.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="mecan-index.html">Mecànica</a>/</li>
+        
+          <li><a href="mecan-neumatic-index.html">Pneumàtica</a>/</li>
+        
+      <li><span class="section-number">4. </span>Cilindre d'efecte de doble efecte</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/mecan-neumatic-doble-efecto.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/mecan-neumatic-doble-efecto.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cilindro-de-doble-efecto">
+<span id="mecan-neumatic-doble-efecto"></span><h1><span class="section-number">4. </span>Cilindre d'efecte de doble efecte<a class="headerlink" href="#cilindro-de-doble-efecto" title="Link permanent a aquest títol">¶</a></h1>
+<p>Un cilindre ** Dual ** ** és un cilindre que té dues vies respiratòries d’entrada i sortida d’aire. La tija pot sortir amb força quan s’injecta l’aire a la part posterior i pot entrar amb força quan s’injecta l’aire a la part davantera.</p>
+<p>La força de sortida de la tija sempre és una mica més gran que la força d’entrada perquè l’aire comprimit no pot pressionar la zona ocupada per la descendència. Si injectem aire de pressió a les dues rutes del cilindre, quedarà amb poca força.</p>
+<p>En cas que el cilindre de doble efecte no tingui pressió de l’aire en cap de les seves dues maneres, no tindrà força de cap manera i es pot moure lliurement sense esforç, tant dins com fora.</p>
+<p>Els cilindres d'efecte doble estan comandats per una vàlvula ** 4/2 ** o per una vàlvula ** 5/2 <a href="#id1"><span class="problematic" id="id2">**</span></a>. Les dues vàlvules són similars i només difereixen en el nombre d’escapament que posseeixen (una escapada de la 4/2 i dues s’escapa de la vàlvula 5/2).</p>
+<p>A continuació es mostra l’esquema de descans del cilindre d’efecte doble:</p>
+<a class="reference internal image-reference" href="_images/neumatic-52-doble-0.png"><img alt="Pistón de doble efecto (dentro) comandado por válvula 5/2." class="align-center" src="_images/neumatic-52-doble-0.png" style="width: 260px;"></a>
+<p>Quan activem la vàlvula 5/2, l’aire que prové de la unitat de manteniment passa al camí superior esquerre de la vàlvula i entra a la part posterior del cilindre. Com a conseqüència, el cilindre s’omple d’aire a la part posterior mentre que la part frontal s’escapa de l’atmosfera. El resultat és que la vareta del cilindre surt empenyent la càrrega que hi ha al davant.</p>
+<a class="reference internal image-reference" href="_images/neumatic-52-doble-2.png"><img alt="Pistón de doble efecto (saliendo) comandado por válvula 5/2." class="align-center" src="_images/neumatic-52-doble-2.png" style="width: 316px;"></a>
+<p>Una vegada que la descendència hagi estat al capdamunt, trobem el següent esquema:</p>
+<a class="reference internal image-reference" href="_images/neumatic-52-doble-1.png"><img alt="Pistón de doble efecto (fuera) comandado por válvula 5/2." class="align-center" src="_images/neumatic-52-doble-1.png" style="width: 341px;"></a>
+<div class="section" id="ejercicios">
+<h2>Exercicis<a class="headerlink" href="#ejercicios" title="Link permanent a aquest títol">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Expliqueu les característiques principals d’un cilindre d’efecte de doble efecte.</p>
+</li>
+<li><p class="first">Dibuixeu un esquema d’un cilindre d’efecte doble en repòs, amb la tija dins, comandat per una vàlvula 5/2.</p>
+</li>
+<li><p class="first">Dibuixa un esquema d’un cilindre d’efecte doble, amb la tija fora, comandat per una vàlvula 5/2.</p>
+</li>
+<li><p class="first">Simula el funcionament d’un cilindre de doble efecte comandat per una vàlvula 5/2.</p>
+<p><a class="reference external" href="../_static/flash/simulator-neumatica.html" rel="noopener noreferrer" target="_blank">Simulador pneumàtic.</a></p>
+</li>
+<li><p class="first">Què passarà si traiem les escapades de la vàlvula 5/2? Simula l'operació. Expliqueu com canvia l’operació quan es manté la fugida i explica per què es comporta així.</p>
+</li>
+<li><p class="first">Utilitzeu dues vàlvules 3/2 per operar un cilindre d'efecte de doble efecte al simulador. &lt;../_ static/flash/simulator-neumatica.html&gt;`__</p>
+<p>Expliqueu el funcionament del circuit:</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/neumatic-32-doble-4.png"><img alt="Escape." src="_images/neumatic-32-doble-4.png" style="width: 447px;"></a>
+</div>
+</li>
+<li><p class="first">Què pot passar al circuit anterior si activem les dues vàlvules alhora?</p>
+</li>
+<li><p class="first">Què pot passar al circuit anterior si no actuem amb cap vàlvula 3/2?</p>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="mecan-neumatic-valvula-or.html" class="btn btn-neutral float-right" title="5. La vàlvula del selector o o de la vàlvula" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="mecan-neumatic-simple-efecto.html" class="btn btn-neutral" title="3. Cilindre d&#39;efecte senzill" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/mecan-neumatic-doble-efecto.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="mecan-index.html">Mecànica</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="mecan-estructuras-index.html">Estructures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mecan-maquinas-index.html">Màquines i mecanismes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mecan-calibre.html">El: Índex: `calibre '</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="mecan-neumatic-index.html">Pneumàtica</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-intro.html">1. Introducció a la pneumàtica</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-simbolos.html">2. Símbols pneumàtics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-simple-efecto.html">3. Cilindre d'efecte senzill</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">4. Cilindre d'efecte de doble efecte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvula-or.html">5. La vàlvula del selector o o de la vàlvula</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvula-and.html">6. La simultaneïtat o la vàlvula i la vàlvula de la vàlvula</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvula-antirretorno.html">7. La vàlvula anti -retrobament</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-pilotaje-neumatico.html">8. Vàlvula amb pilot pneumàtic</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="freecad-index.html">Freecad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blockscad-index.html">Blocscad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mecan-origami.html">Papiroflexia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mecan-recursos.html">Recursos per a la mecànica</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programació</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

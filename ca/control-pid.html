@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Robòtica - Control dels sistemes - Controlador PID">
+  <title>Controlador PID - Control dels sistemes - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/control-pid.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="Mètode Ziegler-Nichols" href="control-ziegler-nichols.html">
+  <link rel="prev" title="Control automàtic" href="control-auto.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="robotica-index.html">Robòtica</a>/</li>
+        
+          <li><a href="control-index.html">Control dels sistemes</a>/</li>
+        
+      <li>Controlador PID</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/control-pid.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/control-pid.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="controlador-pid">
+<span id="control-pid"></span><h1>Controlador PID<a class="headerlink" href="#controlador-pid" title="Link permanent a aquest títol">¶</a></h1>
+<p>Un controlador o regulador PID és un dispositiu que permet controlar un sistema de bucle tancat per arribar a l'estat de sortida desitjat. El controlador PID està compost per tres elements que proporcionen una acció proporcional, completa i derivada. Aquestes tres accions són les que donen nom al controlador PID.</p>
+<a class="reference internal image-reference" href="_images/img-0055.png"><img alt="Sistema de control en lazo cerrado con controlador PID" class="align-center" src="_images/img-0055.png" style="width: 640px;"></a>
+<div class="section" id="senal-de-referencia-y-senal-de-error">
+<h2>Senyal de referència i senyal d’error<a class="headerlink" href="#senal-de-referencia-y-senal-de-error" title="Link permanent a aquest títol">¶</a></h2>
+<p>El senyal ** r (t) ** s’anomena ** referència ** i indica que l’estat s’aconsegueix a la sortida del sistema ** i (t) <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>La lletra ** t ** dins del parèntesi significa que els senyals canvien amb el pas del temps (t), és a dir, no es mantenen amb el mateix valor.</p>
+<p>En un sistema de control de temperatura, la referència r (t) serà la temperatura desitjada i la sortida i (t) serà la temperatura real del sistema controlat, que canviarà amb el pas del temps.</p>
+<p>Com es pot veure a l’esquema anterior, l’entrada al controlador PID és el senyal ** Error e (t) <a href="#id1"><span class="problematic" id="id2">**</span></a>. Aquest senyal indica al controlador la diferència entre l'estat que és aconseguir o fer referència r (t) i l'estat real del sensor mesurat, senyal ** h (t) <a href="#id3"><span class="problematic" id="id4">**</span></a>.</p>
+<p>Si el senyal d’error és gran, vol dir que l’estat del sistema està lluny de l’estat de referència desitjat. Si, per contra, l'error és petit, vol dir que el sistema ha arribat a l'estat desitjat.</p>
+</div>
+<div class="section" id="accion-de-control-proporcional">
+<h2>Acció de control proporcional<a class="headerlink" href="#accion-de-control-proporcional" title="Link permanent a aquest títol">¶</a></h2>
+<p>Com el seu nom indica, aquesta acció de control és proporcional al senyal d'error E (t). Internament l’acció proporcional multiplica el senyal d’error per una constant ** kp ** que determina la quantitat d’acció proporcional que tindrà el controlador.</p>
+<p>Aquesta acció de control intenta minimitzar l'error del sistema. Quan l’error és gran, l’acció de control és gran i tendeix a minimitzar aquest error.</p>
+<p>Augmenta l’acció proporcional ** KP ** té els efectes següents:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Augmentar la velocitat de resposta del sistema.</li>
+<li>L’error del sistema disminueix en el règim permanent.</li>
+<li>Augmentar la inestabilitat del sistema.</li>
+</ol>
+</div></blockquote>
+<p>Els dos primers efectes són positius i desitjables. L’últim efecte és negatiu i cal que es redueixi. En l'acció proporcional creixent, hi ha un punt d'equilibri en el qual s'aconsegueix la velocitat suficient de resposta del sistema i reducció d'errors, sense que el sistema sigui massa inestable. L’augment d’acció proporcional més enllà d’aquest punt produirà una inestabilitat indesitjable. Reduir l’acció proporcional reduirà la velocitat de resposta del sistema i augmentarà el vostre error permanent.</p>
+<a class="reference internal image-reference" href="_images/img-0056.png"><img alt="PID. Respuesta al Control Proporcional." class="align-center" src="_images/img-0056.png" style="width: 800px;"></a>
+<p>En els gràfics anteriors es pot observar l'efecte de l'acció proporcional creixent progressivament en un control de posició.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Amb una petita acció proporcional KP = 2, el sistema és lent, trigant 20 segons per arribar a la posició desitjada i l’error de posició és gran, 50 mil·límetres. A mesura que l’acció proporcional augmenta, l’error disminueix i la velocitat de resposta augmenta.</li>
+<li>Amb un guany proporcional KP = 20 El sistema és més ràpid, trigant 12 segons a establir la posició permanent. L’error també s’ha reduït a una desena, només 5 mil·límetres. També podeu observar un Overpulso en la resposta i l’inici d’una certa inestabilitat.</li>
+<li>Amb guanys més grans, es redueix encara més un error permanent, però la velocitat de resposta no augmenta perquè el sistema es fa tan inestable que la posició triga molt a establir -se en el seu estat final.</li>
+</ul>
+</div></blockquote>
+<p>En aquest exemple, s'ha augmentat una acció proporcional de manera que els seus valors estiguin entre 0 i 100.</p>
+<p>En aquest moment, es pot veure que l’acció proporcional ja no pot millorar la resposta del sistema. La millor opció amb kp = 20 presenta un sobrepulum d’uns 30 mil·límetres i un error permanent de 5 mil·límetres. Si voleu millorar aquesta resposta, cal incorporar un altre tipus de control. Aquí és on el control derivat pot ajudar a millorar la resposta del sistema.</p>
+</div>
+<div class="section" id="accion-de-control-derivativa">
+<h2>Acció de control derivat<a class="headerlink" href="#accion-de-control-derivativa" title="Link permanent a aquest títol">¶</a></h2>
+<p>Com el seu nom indica, aquesta acció de control és proporcional a la derivada del senyal d'error ** e (t) ** multiplicat per la constant ** kd <a href="#id1"><span class="problematic" id="id2">**</span></a>. La derivada de l'error és una altra manera de cridar la &quot;velocitat &quot; de l'error. Aleshores veureu per què és tan important calcular aquesta velocitat. En els gràfics anteriors, quan la posició és inferior a 150 mm, l’acció de control proporcional sempre intenta augmentar la posició. El problema té en compte la inèrcia. Quan el sistema es mou a una gran velocitat cap al punt de referència, el sistema passarà a causa de la seva inèrcia. Això produeix un sobrepuls i oscil·lacions al voltant de la referència. Per evitar aquest problema, el controlador ha de reconèixer la velocitat amb què el sistema s’acosta a la referència per poder aturar -lo amb antelació a mesura que s’acosta a la referència desitjada i evitar que la superi.</p>
+<p>Augmenteu la constant de control derivat ** KD ** té els efectes següents:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Augmenta l’estabilitat del sistema controlat.</li>
+<li>La velocitat del sistema disminueix una mica.</li>
+<li>L’error de règim permanent es mantindrà el mateix.</li>
+</ol>
+</div></blockquote>
+<p>Per tant, aquesta acció de control servirà per estabilitzar una resposta que oscil·la massa.</p>
+<a class="reference internal image-reference" href="_images/img-0057.png"><img alt="PID. Respuesta al Control Derivativo." class="align-center" src="_images/img-0057.png" style="width: 800px;"></a>
+<p>En els gràfics anteriors es pot veure com, augmentant l’acció derivada KD, és possible reduir les oscil·lacions fins al punt que desapareixen per KD = 50. També es pot veure com la resposta es fa una mica més lenta augmentant la constant derivada. Amb KD = 0 El sistema triga 1,8 segons a pujar al valor de referència. Amb KD = 20 El sistema triga 2 segons a pujar al valor de referència. En aquest exemple, l'acció derivada s'ha pujat de manera que els seus valors estiguin entre 0 i 100.</p>
+<p>Un problema que presenta el control derivat és que amplifica els senyals que varien ràpidament, per exemple, el soroll d’alta freqüència. A causa d'aquest efecte, el soroll del senyal d'error apareix amplificat a la unitat de la planta. Per tal de reduir aquest efecte, és necessari reduir el soroll del senyal d’error mitjançant un filtre de passada baixa &lt;<a class="reference external" href="https://es.wikipedia.org/wiki/filtro_paso_bajo" rel="noopener noreferrer" target="_blank">https://es.wikipedia.org/wiki/filtro_paso_bajo</a>&gt;`__ abans d’aplicar -lo al terme derivat. Amb aquest filtre, l’acció derivada és limitada, per la qual cosa és desitjable reduir el soroll del senyal d’error per altres mitjans abans de recórrer a un filtre de passada baixa.</p>
+<p>Arribats a aquest punt, el sistema és ràpid i estable, però encara manté un petit error en el règim permanent. Això significa que la posició real del sistema no és exactament la posició desitjada. Per poder reduir aquest error, s’utilitza la tercera acció del controlador PID, un control complet.</p>
+</div>
+<div class="section" id="accion-de-control-integral">
+<h2>Acció de control integral<a class="headerlink" href="#accion-de-control-integral" title="Link permanent a aquest títol">¶</a></h2>
+<p>Aquesta acció de control, com el seu nom indica, calcula la integral del senyal ** Error e (t) ** i es multiplica per la constant ** ki <a href="#id1"><span class="problematic" id="id2">**</span></a>. La integral es pot veure com la suma o l’acumulació del senyal d’error. A mesura que passen petits errors, s’afegeixen per augmentar l’acció integral. Amb això, és possible reduir l’error del sistema en règim permanent. L’inconvenient d’utilitzar l’acció integral és que afegeix una certa inèrcia al sistema i, per tant, la fa més inestable.</p>
+<p>Augmenta l’acció integral ** Ki ** té els efectes següents:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>L’error del sistema disminueix en el règim permanent.</li>
+<li>Augmentar la inestabilitat del sistema.</li>
+<li>Augmentar la velocitat del sistema.</li>
+</ol>
+</div></blockquote>
+<p>Aquesta acció de control reduirà l’error en règim permanent.</p>
+<a class="reference internal image-reference" href="_images/img-0058.png"><img alt="PID. Respuesta al Control Integral." class="align-center" src="_images/img-0058.png" style="width: 800px;"></a>
+<p>En els gràfics anteriors, s'ha afegit un senyal d'error ampliat i verd, per apreciar millor com es redueix l'error a mesura que augmenta l'acció integral. Un altre efecte visible és l’augment de la inestabilitat del sistema a mesura que augmenta el KI. Per aquest motiu, el control integral es combina generalment amb el control derivat per evitar les oscil·lacions del sistema.</p>
+</div>
+<div class="section" id="sintonizacion-manual-de-un-controlador-pid">
+<h2>Ajustar manual d’un controlador pregunta<a class="headerlink" href="#sintonizacion-manual-de-un-controlador-pid" title="Link permanent a aquest títol">¶</a></h2>
+<p>Després de veure les diferents accions proporcionals, integrals i derivades d’un control PID, es poden aplicar regles simples per ajustar aquest controlador manualment.</p>
+<p>** 1r - Acció proporcional. **</p>
+<p>L’acció proporcional s’incrementa gradualment per reduir l’error (diferència entre l’estat desitjat i l’estat aconseguit) i per augmentar la velocitat de resposta.</p>
+<p>Si s’arriba a la velocitat i l’error desitjats, el PID ja està ajustat.</p>
+<p>Si el sistema es fa inestable abans de rebre la resposta desitjada, cal augmentar l'acció derivada.</p>
+<p>** 2n - Acció derivada. **</p>
+<p>Si el sistema és massa inestable, la constant derivada de KD s’incrementarà gradualment per aconseguir l’estabilitat de resposta de nou.</p>
+<p>** 3r - Acció completa. **</p>
+<p>En el cas que l’error del sistema sigui superior a l’anada, s’incrementarà la constant integral de Ki fins que es minimitzi l’error amb la rapidesa desitjada.</p>
+<p>Si el sistema es fa inestable abans de rebre la resposta desitjada, cal augmentar l'acció derivada.</p>
+<p>Amb aquestes regles senzilles, és fàcil perfeccionar gradualment el controlador PID fins que s’aconsegueixi la resposta desitjada.</p>
+</div>
+<div class="section" id="ecuacion-del-controlador">
+<h2>Equació del controlador<a class="headerlink" href="#ecuacion-del-controlador" title="Link permanent a aquest títol">¶</a></h2>
+<p>L’equació de control PID és la següent:</p>
+<div class="math">
+<p><img src="_images/math/572c3402644a6ccaf3b03428563434c9ead70a7a.svg" alt="c (t) = kp \ cdot e (t) + ki \ cdot \ int _ {}^{} e (t) dt + kd \ cdot \ fraid {\ parcial e (t)} {\ \ parcial t}"></p>
+</div><p>Per:</p>
+<blockquote>
+<div><ul class="simple">
+<li>C (t) = senyal de control</li>
+<li>E (t) = senyal d'error</li>
+<li>KP, KI, KD = Paràmetres del controlador Pregunta</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="saturacion-y-limites-del-controlador-pid">
+<h2>Saturació i límits del controlador pregunten<a class="headerlink" href="#saturacion-y-limites-del-controlador-pid" title="Link permanent a aquest títol">¶</a></h2>
+<p>En sistemes reals hi ha limitacions que redueixen la capacitat del controlador per aconseguir la resposta desitjada. Per molt que augmenti l’acció proporcional, arribarà un moment en què l’actuador es saturarà i no podrà donar -li més coses. Per exemple, en un sistema de control de temperatura, la resistència a la calefacció pot proporcionar potència a 2000 watts. Si el controlador intenta proporcionar més energia per aconseguir més velocitat de calefacció, no pot ser i el sistema no aconseguirà més ràpidament. Tot i que l’acció de control proporcional s’incrementa, el límit de l’actuador de 2000 watts limita la velocitat màxima de calefacció.</p>
+<p>Per tant, hem de tenir en compte que la velocitat de resposta dels sistemes reals té certs límits que el control no pot superar.</p>
+</div>
+<div class="section" id="simuladores-de-control-pid">
+<h2>Sol·licitar controladors<a class="headerlink" href="#simuladores-de-control-pid" title="Link permanent a aquest títol">¶</a></h2>
+<p>Aquest petit programa simula automàticament un cotxe guiat i controlat per un controlador PID. L’objectiu del programa és aprendre a modificar els paràmetres del controlador PID per aconseguir que el cotxe es posicioni ràpidament i sense error.</p>
+<p>: Descàrrega: <a href="#id1"><span class="problematic" id="id2">`</span></a>Control de moviment. 0,31 Versió &lt;control/_downloads/moviment-control-031.zip&gt; `</p>
+<p>Aquest altre programa simula la calefacció d’una caldera que s’utilitza per escalfar aigua de calefacció. El sistema tèrmic utilitza dos controls PID per controlar les dues temperatures de l’aigua diferents.</p>
+<p>: Descarregueu: <a href="#id1"><span class="problematic" id="id2">`</span></a>Control temal. 0.11 Versió &lt;Control/_Downloads/Themal-Control-011.zip&gt; `</p>
+</div>
+<div class="section" id="referencias">
+<h2>Referències<a class="headerlink" href="#referencias" title="Link permanent a aquest títol">¶</a></h2>
+<p><a class="reference external" href="https://es.wikipedia.org/wiki/proporala_integral_derivative" rel="noopener noreferrer" target="_blank">Wikipedia: controlador PID</a></p>
+<p><a class="reference external" href="https://es.wikipedia.org/wiki/system_de_control" rel="noopener noreferrer" target="_blank">Wikipedia: Sistema de control</a></p>
+<p><a class="reference external" href="https://es.wikipedia.org/wiki/servomotor_de_modelismo" rel="noopener noreferrer" target="_blank">Wikipedia: Servomotor</a></p>
+<p>[1] Ogata, Katsuhiko. Enginyeria de control moderna. Tercera edició. Saló de Prentice Editorial.</p>
+<p>[2] Ogata, Katsuhiko. Sistemes de control de temps discrets. Segona edició. Saló de Prentice Editorial.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="control-ziegler-nichols.html" class="btn btn-neutral float-right" title="Mètode Ziegler-Nichols" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="control-auto.html" class="btn btn-neutral" title="Control automàtic" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/control-pid.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programació</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="robotica-index.html">Robòtica</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="control-index.html">Control dels sistemes</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="control-auto.html">Control automàtic</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Controlador PID</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control-ziegler-nichols.html">Mètode Ziegler-Nichols</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control-pid-digital.html">Controlador digital PID</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="control-actuator-index.html">Actuadors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="control-sensor-index.html">Sensors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="robotica-normativa.html">Codi de l'escola 4.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="robotica-recursos.html">Recursos per a la robòtica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="robotica-robots-actuales.html">Robots actuals</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

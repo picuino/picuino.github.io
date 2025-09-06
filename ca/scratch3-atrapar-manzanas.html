@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Programació - Tutorial Scratch 3 - 9. Agafar pomes">
+  <title>9. Agafar pomes - Tutorial Scratch 3 - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/scratch3-atrapar-manzanas.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="10. Mata als Marcianitos" href="scratch3-matar-marcianitos.html">
+  <link rel="prev" title="8. Breaks Bricks" href="scratch3-romper-ladrillos.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="prog-index.html">Programació</a>/</li>
+        
+          <li><a href="scratch3-index.html">Tutorial Scratch 3</a>/</li>
+        
+      <li><span class="section-number">9. </span>Agafar pomes</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/scratch3-atrapar-manzanas.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/scratch3-atrapar-manzanas.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="atrapar-manzanas">
+<span id="scratch3-atrapar-manzanas"></span><h1><span class="section-number">9. </span>Agafar pomes<a class="headerlink" href="#atrapar-manzanas" title="Link permanent a aquest títol">¶</a></h1>
+<p>En aquesta pràctica programarem un joc que consisteix a agafar pomes amb un gat i evitar els raigs que maten. El gat es mourà amb les tecles dreta i esquerra. Quan el gat perd les seves tres vides, el joc s’acabarà.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p08-screen.png"><img alt="_images/scratch3-p08-screen.png" src="_images/scratch3-p08-screen.png" style="width: 360px;"></a>
+<p>; BR |</p>
+<ol class="arabic">
+<li><p class="first">Comencem el | Editor_de_scratch <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Premeu el botó d'idioma | Botó-Idioma | A la barra superior i va triar ** espanyol <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara escollim un fons adequat per al nostre joc. Canviem el fons d’escenari per ** un desert <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Premeu el botó Trieu un fons | Select-Fondo <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<p>Estem buscant a la secció exterior ** <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>I seleccionem el fons ** Desert <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<img alt="_images/scratch3-fondo-desert.png" src="_images/scratch3-fondo-desert.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">Canviem el nom de l'objecte per ** cat <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<img alt="_images/scratch3-objeto-nombre-gato.png" src="_images/scratch3-objeto-nombre-gato.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">Creem la variable ** vides ** que mantindrà el nombre de vides que té el gat. Quan valgui aquesta variable, el programa s’acabarà.</p>
+<p>Premeu el botó variable | Botó-Variables <a href="#id1"><span class="problematic" id="id2">|</span></a>,</p>
+<p>Premeu per crear una variable | Botó-Crear-Variable <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<p>Canviem el nom de la variable a ** viu **</p>
+<img alt="_images/scratch3-crear-variable-vidas.png" src="_images/scratch3-crear-variable-vidas.png">
+<p>Finalment, feu clic al botó ** acceptar **</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara programem les instruccions d’iniciació per a l’objecte CAT. Aquest programa donarà al gat tres, mostrarà el valor de la pantalla, situarà el gat sota la pantalla i l'estil de rotació dreta i esquerra.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p08-gato-01.png"><img alt="_images/scratch3-p08-gato-01.png" src="_images/scratch3-p08-gato-01.png" style="width: 333px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Continuem donant el moviment del gat cap a un costat i un altre. El programa següent comprova si s'ha premut una tecla de fletxa esquerra o fletxa dreta i, si és així, mou el gat en una o altra direcció.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p08-gato-02.png"><img alt="_images/scratch3-p08-gato-02.png" src="_images/scratch3-p08-gato-02.png" style="width: 446px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Premeu la bandera verda | Flag-Verde | Per provar el funcionament del programa.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara creem la variable ** punts ** que mantindrà el nombre de punts que hem aconseguit en capturar pomes.</p>
+<p>Premeu el botó variable | Botó-Variables <a href="#id1"><span class="problematic" id="id2">|</span></a>,</p>
+<p>Premeu per crear una variable | Botó-Crear-Variable <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<p>Canviem el nom de la variable per ** punts **</p>
+<img alt="_images/scratch3-crear-variable-puntos.png" src="_images/scratch3-crear-variable-puntos.png">
+<p>Finalment, feu clic al botó ** acceptar **</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">A continuació, afegim un personatge nou, un ** Apple <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Premeu el botó Trieu un objecte | Select-objecte <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<p>Estem buscant al menjar ** <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>i seleccionem l'objecte ** Apple <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<img alt="_images/scratch3-objeto-apple.png" src="_images/scratch3-objeto-apple.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">Crearem una altra disfressa per a la poma, una poma aixafada. Primer anem a la pestanya de disfresses | Piñania-Disfraces |</p>
+<p>Després doblem la disfressa de poma.</p>
+<img alt="_images/scratch3-p08-duplicar-disfraz-manzana.png" src="_images/scratch3-p08-duplicar-disfraz-manzana.png">
+<p>; BR |</p>
+<p>Ara seleccionem la disfressa duplicada i aixafem -la.</p>
+<img alt="_images/scratch3-p08-seleccionar-disfraz-manzana.png" src="_images/scratch3-p08-seleccionar-disfraz-manzana.png">
+<img alt="_images/scratch3-p08-aplastar-disfraz-manzana.png" src="_images/scratch3-p08-aplastar-disfraz-manzana.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">Ja podem realitzar el programa Apple dins de la pestanya Codi | Paracania-Codigo | de la poma.</p>
+<p>Primer anem a amagar la poma, assignem zero als punts i creem clons de la poma per aparèixer a la pantalla, mentre que el gat tingui vides.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p08-manzana-01.png"><img alt="_images/scratch3-p08-manzana-01.png" src="_images/scratch3-p08-manzana-01.png" style="width: 431px;"></a>
+</li>
+<li><p class="first">Abans de realitzar el programa següent, el bloc s'ha de definir &quot;dins dels meus blocs | Button-Misblos | Premeu &quot; Creeu un bloc &quot;| Button-Crear-Block | i en nom del bloc que vam escriure &quot; ** Fall Soil ** &quot;.</p>
+</li>
+<li><p class="first">El següent programa apareixerà cada clon de la poma a la part superior en una posició aleatòria, de manera que després caigui cap a terra.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p08-manzana-02.png"><img alt="_images/scratch3-p08-manzana-02.png" src="_images/scratch3-p08-manzana-02.png" style="width: 423px;"></a>
+</li>
+<li><p class="first">Finalment, programem el bloc que fa que la poma caigui a terra. En cas de tocar el gat, un punt augmentarà i el clon de poma desapareix. Si el clon de poma toca el terra, es triturarà.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p08-manzana-03.png"><img alt="_images/scratch3-p08-manzana-03.png" src="_images/scratch3-p08-manzana-03.png" style="width: 410px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Premeu la bandera verda | Flag-Verde | Per provar el funcionament del programa.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Afegim un objecte nou, un ** ray <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Premeu el botó Trieu un objecte | Select-objecte <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<p>Estem buscant a la secció ** tot <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>i seleccionem l'objecte ** Lightning <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<img alt="_images/scratch3-objeto-lightning.png" src="_images/scratch3-objeto-lightning.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara realitzem el programa per generar clons de llamps cada pocs segons.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p08-rayo-01.png"><img alt="_images/scratch3-p08-rayo-01.png" src="_images/scratch3-p08-rayo-01.png" style="width: 427px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Cada vegada que es genera un clon, el seu comportament serà el següent.</p>
+<p>Passarà des de la part superior de la pantalla. Si és el gat, les vides es redueixen per un. Si la vora inferior toca, el llamp desapareix.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p08-rayo-02.png"><img alt="_images/scratch3-p08-rayo-02.png" src="_images/scratch3-p08-rayo-02.png" style="width: 416px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Finalment, programem el gat per morir quan les vides arriben a zero. Primer seleccionem l'objecte CAT.</p>
+<img alt="_images/scratch3-p08-seleccionar-gato.png" src="_images/scratch3-p08-seleccionar-gato.png">
+<p>A continuació, afegim el programa.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p08-gato-03.png"><img alt="_images/scratch3-p08-gato-03.png" src="_images/scratch3-p08-gato-03.png" style="width: 378px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Premeu la bandera verda | Flag-Verde | Per provar el funcionament del programa.</p>
+<p>; BR |</p>
+</li>
+</ol>
+<hr class="docutils">
+<div class="section" id="retos">
+<h2>Reptes<a class="headerlink" href="#retos" title="Link permanent a aquest títol">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Afegiu un personatge nou que elimini vides igual que els llamps. Aquest nou personatge hauria d’aparèixer al cap de deu segons.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Modifiqueu el programa de manera que el nombre de raigs augmenti amb el pas del temps, de manera que el joc es faci cada cop més difícil.</p>
+<p>Per aconseguir -ho, heu de crear una nova variable anomenada Time_rayos. La variable s’ha d’iniciar a 2 (dos segons) en prémer la bandera verda. Al cap de 10 segons, canviarem el valor de la variable a 1 (un segon). Al cap de deu segons més, canviarem el valor de la variable a 0,5 (mig segon).</p>
+<p>Perquè els raigs apareguin a diferents velocitats, heu de canviar el temps d’espera entre la creació dels rajos pel valor de la variable `` `` rare_trey '.</p>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="scratch3-matar-marcianitos.html" class="btn btn-neutral float-right" title="10. Mata als Marcianitos" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="scratch3-romper-ladrillos.html" class="btn btn-neutral" title="8. Breaks Bricks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/scratch3-atrapar-manzanas.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="prog-index.html">Programació</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="prog-lang-edu.html">Llenguatges de programació</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-flowchart.html">Diagrames de flux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-unplugged.html">Activitats desconnectades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-codeorg.html">Tutorials de codi</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="scratch3-index.html">Tutorial Scratch 3</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="scratch3-dibujar-disfraces.html">1. Dibuixar disfresses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-volar-personaje.html">2. Gat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-jugar-futbol.html">3. Juga a futbol</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-pasear-escenarios.html">4. Escenaris de caminar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-animar-nombre.html">5. Animar el nom</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-comer-peces.html">6. Menjar peix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-atrapar-bichos.html">7. Captura d'errors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-romper-ladrillos.html">8. Breaks Bricks</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">9. Agafar pomes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-matar-marcianitos.html">10. Mata als Marcianitos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-dibujar-espirales.html">11. Dibuixa espirals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-dibujar-flores.html">12. Dibuixa flors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-aterrizar-cohete.html">13. Rocket terrestre</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-recorrer-laberintos.html">14. Walk Labyrinths</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-saltar-arboles.html">15. Saltar arbres</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-retos-codigoescuela.html">16. Rastreja els reptes de la comunitat de Madrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-retos-robotix.html">17. Robotix Reptes per Scratch</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="python-index.html">Tutorial Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-recursos.html">Recursos per a la programació</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

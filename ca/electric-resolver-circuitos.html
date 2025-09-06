@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Electricitat - Resolució del circuit">
+  <title>Resolució del circuit - Electricitat - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/electric-resolver-circuitos.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title=": Índex: `energia &#39;" href="electric-energia.html">
+  <link rel="prev" title="Resistències equivalents" href="electric-serie-paralelo-resistencias.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="electric-index.html">Electricitat</a>/</li>
+        
+      <li>Resolució del circuit</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/electric-resolver-circuitos.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/electric-resolver-circuitos.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="resolucion-de-circuitos">
+<span id="electric-resolver-circuitos"></span><h1>Resolució del circuit<a class="headerlink" href="#resolucion-de-circuitos" title="Link permanent a aquest títol">¶</a></h1>
+<p>En aquesta unitat estudiarem com resoldre circuits amb resistències per trobar els corrents i les tensions que circulen per ells.</p>
+<div class="contents local topic" id="indice-de-contenidos">
+<p class="topic-title">Índex de contingut:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#leyes-y-formulas-utilizadas" id="id1">Lleis i fórmules utilitzades</a></li>
+<li><a class="reference internal" href="#divisor-de-tension-con-dos-resistencias" id="id2">Divisor de tensió amb dues resistències</a></li>
+<li><a class="reference internal" href="#divisor-de-tension-con-dos-resistencias-desconocidas" id="id3">Divisor de tensió amb dues resistència desconeguda</a></li>
+<li><a class="reference internal" href="#circuito-mixto-serie-paralelo" id="id4">Circuit paral·lel de sèries mixtes</a></li>
+<li><a class="reference internal" href="#ejercicios" id="id5">Exercicis</a></li>
+<li><a class="reference internal" href="#cuestionarios" id="id6">Qüestionaris</a></li>
+</ul>
+</div>
+<div class="section" id="leyes-y-formulas-utilizadas">
+<h2><a class="toc-backref" href="#id1">Lleis i fórmules utilitzades</a><a class="headerlink" href="#leyes-y-formulas-utilizadas" title="Link permanent a aquest títol">¶</a></h2>
+<p>Les equacions que utilitzarem per resoldre els circuits són la llei d'Ohm i les lleis dels circuits en paral·lel i en sèrie.</p>
+<p>També podem utilitzar les fórmules, que ja hem estudiat, a partir de les resistències equivalents a un circuit en sèrie i a un circuit paral·lel.</p>
+<dl class="docutils">
+<dt>Fórmules de llei d'Ohm</dt><dd><div class="math">
+<p><img src="_images/math/ef38e7fbcb2c0a29bd98ff8fa3686ea4f28ba58e.svg" alt="V = i \ cdot r"></p>
+</div><div class="math">
+<p><img src="_images/math/b1b852ee7961418c8fecbc28805f217742dccb0a.svg" alt="I = \cfrac{V}{R}"></p>
+</div><div class="math">
+<p><img src="_images/math/4280e822e8904eabe7cf46c9f65d893a6f63bcdc.svg" alt="R = \cfrac{V}{I}"></p>
+</div></dd>
+<dt>Lleis de circuits en sèrie</dt><dd><ul class="simple">
+<li>El corrent que circula per diverses resistències de sèries és el mateix per a tots ells.</li>
+<li>La tensió total d’un circuit de sèrie és igual a la suma de les tensions de cadascuna de les seves resistències.</li>
+</ul>
+</dd>
+<dt>Lleis de circuits paral·lels</dt><dd><ul class="simple">
+<li>El corrent total que circula per diverses resistències paral·leles és igual a la suma dels corrents que circulen per les resistències.</li>
+<li>La tensió de cadascuna de les resistències que són paral·leles és la mateixa per a totes elles.</li>
+</ul>
+</dd>
+<dt>Resistència equivalent a un circuit de sèrie</dt><dd><div class="math">
+<p><img src="_images/math/61abe066b34a3936f36d80a8804da053de76a353.svg" alt="R12 = R1 + R2"></p>
+</div><div class="math">
+<p><img src="_images/math/1e58b24ac333f946d0d38a8d6b100070694602af.svg" alt="R123 = R1 + R2 + R3"></p>
+</div></dd>
+<dt>Resistència equivalent a un circuit paral·lel</dt><dd><div class="math">
+<p><img src="_images/math/acf486686d219c9f22fde3d3ba496aa64295d041.svg" alt="R12 = \cfrac{1}{ \cfrac{1}{R1} + \cfrac{1}{R2} }"></p>
+</div><div class="math">
+<p><img src="_images/math/529104ff90c4c05f58a3f9aab8f6bada5487e44b.svg" alt="R123 = \cfrac{1}{ \cfrac{1}{R1} + \cfrac{1}{R2} + \cfrac{1}{R3} }"></p>
+</div></dd>
+</dl>
+<p>Cadascun dels circuits que analitzarem tindrà una xarxa amb la tensió, la intensitat de corrent i la resistència de cada component. Aquesta graella haurà d’omplir -se de les solucions que estem obtenint quan apliquem les fórmules anteriors, fins que la xarxa sencera no estigui completa i coneixem tots els valors del circuit.</p>
+</div>
+<div class="section" id="divisor-de-tension-con-dos-resistencias">
+<h2><a class="toc-backref" href="#id2">Divisor de tensió amb dues resistències</a><a class="headerlink" href="#divisor-de-tension-con-dos-resistencias" title="Link permanent a aquest títol">¶</a></h2>
+<p>Aquest circuit s'utilitza àmpliament en l'electrònica per obtenir tensions inferiors a la tensió d'alimentació. Consta de dues resistències connectades en sèrie entre elles i els dos terminals alimentaris.</p>
+<p>Si tenim un circuit amb una tensió d’alimentació de 5 volts i necessitem una tensió de 3 volts, el divisor de tensió és la manera més fàcil d’aconseguir -la.</p>
+<p>A la imatge següent podem veure el circuit de divisor de tensió.</p>
+<a class="reference internal image-reference" href="_images/electric-resolver-circuitos-ejemplo-01.png"><img alt="Circuito divisor de tensión con dos resistencias." class="align-center" src="_images/electric-resolver-circuitos-ejemplo-01.png" style="width: 480px;"></a>
+<p>Per resoldre el circuit comencem escrivint a la taula els valors de les resistències que coneixem, R1 i R2.</p>
+<a class="reference internal image-reference" href="_images/electric-resolver-circuitos-ejemplo-02.png"><img alt="Circuito divisor de tensión con dos resistencias." class="align-center" src="_images/electric-resolver-circuitos-ejemplo-02.png" style="width: 480px;"></a>
+<p>A continuació, escrivim a la taula els valors de tensió que coneixem, que en aquest cas serà la tensió total de les dues resistències R1 i R2 en sèrie, que coincideix amb la tensió de la pila.</p>
+<a class="reference internal image-reference" href="_images/electric-resolver-circuitos-ejemplo-03.png"><img alt="Circuito divisor de tensión con dos resistencias." class="align-center" src="_images/electric-resolver-circuitos-ejemplo-03.png" style="width: 480px;"></a>
+<p>Ara hem de mirar si podeu resoldre qualsevol graella amb les fórmules que coneixem. La resistència total R12 es pot calcular amb la fórmula de les resistències de la sèrie, és a dir, afegint les dues resistències.</p>
+<a class="reference internal image-reference" href="_images/electric-resolver-circuitos-ejemplo-04.png"><img alt="Circuito divisor de tensión con dos resistencias." class="align-center" src="_images/electric-resolver-circuitos-ejemplo-04.png" style="width: 480px;"></a>
+<p>Per continuar, a la darrera fila tenim tensió i resistència per tal de trobar la intensitat amb la llei d’Ohm. Dividint la tensió entre la resistència, obtenim 20 amplificadors de corrent.</p>
+<a class="reference internal image-reference" href="_images/electric-resolver-circuitos-ejemplo-05.png"><img alt="Circuito divisor de tensión con dos resistencias." class="align-center" src="_images/electric-resolver-circuitos-ejemplo-05.png" style="width: 480px;"></a>
+<p>Ara podem aplicar la llei dels circuits de la sèrie que diu que el corrent serà el mateix per a tots els components del circuit.</p>
+<a class="reference internal image-reference" href="_images/electric-resolver-circuitos-ejemplo-06.png"><img alt="Circuito divisor de tensión con dos resistencias." class="align-center" src="_images/electric-resolver-circuitos-ejemplo-06.png" style="width: 480px;"></a>
+<p>Finalment, amb la llei d'Ohm, podem trobar les tensions en cadascuna de les resistències multiplicant el corrent per resistència.</p>
+<a class="reference internal image-reference" href="_images/electric-resolver-circuitos-ejemplo-07.png"><img alt="Circuito divisor de tensión con dos resistencias." class="align-center" src="_images/electric-resolver-circuitos-ejemplo-07.png" style="width: 480px;"></a>
+<p>I el circuit es resol completament.</p>
+<p>La tensió de resistència R2 serà igual a 2 volts, una tensió inferior a la tensió d’alimentació perquè aquest circuit ha dividit ** la tensió d’alimentació entre 6.</p>
+</div>
+<div class="section" id="divisor-de-tension-con-dos-resistencias-desconocidas">
+<h2><a class="toc-backref" href="#id3">Divisor de tensió amb dues resistència desconeguda</a><a class="headerlink" href="#divisor-de-tension-con-dos-resistencias-desconocidas" title="Link permanent a aquest títol">¶</a></h2>
+<p>En aquesta secció solucionarem un circuit en sèrie en el qual no coneixem el valor de les resistències, només coneixem el corrent que circula pel circuit (10m) i la tensió que volem obtenir en R2 (9V).</p>
+<a class="reference internal image-reference" href="_images/electric-resolver-circuitos-ejemplo-11.png"><img alt="Circuito divisor de tensión con dos resistencias desconocidas." class="align-center" src="_images/electric-resolver-circuitos-ejemplo-11.png" style="width: 480px;"></a>
+<p>Comencem omplint la taula amb els valors que coneixem del circuit.</p>
+<a class="reference internal image-reference" href="_images/electric-resolver-circuitos-ejemplo-12.png"><img alt="Circuito divisor de tensión con dos resistencias desconocidas." class="align-center" src="_images/electric-resolver-circuitos-ejemplo-12.png" style="width: 480px;"></a>
+<p>A continuació, podem calcular la resistència total R12 aplicant la llei d'Ohm.</p>
+<a class="reference internal image-reference" href="_images/electric-resolver-circuitos-ejemplo-13.png"><img alt="Circuito divisor de tensión con dos resistencias desconocidas." class="align-center" src="_images/electric-resolver-circuitos-ejemplo-13.png" style="width: 480px;"></a>
+<p>Per continuar, apliquem la llei dels components de la sèrie que diu que el corrent per tots els elements del circuit és el mateix.</p>
+<a class="reference internal image-reference" href="_images/electric-resolver-circuitos-ejemplo-14.png"><img alt="Circuito divisor de tensión con dos resistencias desconocidas." class="align-center" src="_images/electric-resolver-circuitos-ejemplo-14.png" style="width: 480px;"></a>
+<p>Ara podem tornar a aplicar la llei d’Ohm a la segona resistència per trobar el seu valor.</p>
+<a class="reference internal image-reference" href="_images/electric-resolver-circuitos-ejemplo-15.png"><img alt="Circuito divisor de tensión con dos resistencias desconocidas." class="align-center" src="_images/electric-resolver-circuitos-ejemplo-15.png" style="width: 480px;"></a>
+<p>En aquest moment podem continuar aplicant la llei dels circuits de la sèrie que diu que la tensió total de les resistències és igual a la suma de les tensions de cada resistència.</p>
+<p>És a dir: v_r1 + v_r2 = 12v -&gt; v_r1 = 12v - 9v = 3V</p>
+<a class="reference internal image-reference" href="_images/electric-resolver-circuitos-ejemplo-16.png"><img alt="Circuito divisor de tensión con dos resistencias desconocidas." class="align-center" src="_images/electric-resolver-circuitos-ejemplo-16.png" style="width: 480px;"></a>
+<p>Finalment, apliquem la llei d’Ohm a la primera resistència i trobem el seu valor.</p>
+<a class="reference internal image-reference" href="_images/electric-resolver-circuitos-ejemplo-17.png"><img alt="Circuito divisor de tensión con dos resistencias desconocidas." class="align-center" src="_images/electric-resolver-circuitos-ejemplo-17.png" style="width: 480px;"></a>
+<p>En aquesta darrera caixa també podríem haver aplicat la fórmula de l’equivalent a les resistències de la sèrie. Sabent que R1 + R2 = R12, es pot calcular fàcilment que R1 ha de valer 300 ohms.</p>
+</div>
+<div class="section" id="circuito-mixto-serie-paralelo">
+<h2><a class="toc-backref" href="#id4">Circuit paral·lel de sèries mixtes</a><a class="headerlink" href="#circuito-mixto-serie-paralelo" title="Link permanent a aquest títol">¶</a></h2>
+<p>En aquesta secció solucionarem un circuit mixt, amb connexions en sèrie i paral·leles, en què coneixem el valor de tota resistència.</p>
+<p>Comencem copiant a la taula els valors de resistència i tensió que ja coneixem.</p>
+<a class="reference internal image-reference" href="_images/electric-resolver-circuitos-ejemplo-21.png"><img alt="Cálculos de un circuito mixto serie-paralelo." class="align-center" src="_images/electric-resolver-circuitos-ejemplo-21.png" style="width: 480px;"></a>
+<p>A partir d’aquí no tenim dades per resoldre cap de les tres primeres files. La primera tasca serà calcular la resistència equivalent de les tres resistències del circuit.</p>
+<p>Primer trobem el paral·lel de 100 ohms i 400 ohms que ens proporciona el resultat de 80 ohms.</p>
+<div class="math">
+<p><img src="_images/math/2a3cd52064d2dab6df6f8b79399f3a0c45c24405.svg" alt="R23 = \cfrac{1}{ \cfrac{1}{100\Omega} + \cfrac{1}{400\Omega} } = 80\Omega"></p>
+</div><p>A continuació, calculem l’equivalent en la resistència a la sèrie R1, amb 120 ohms, i el resultat anterior, 80 ohms. Afegir tots dos ens dóna un resultat total de 200 ohms, que podem escriure al forat corresponent a la resistència R123.</p>
+<a class="reference internal image-reference" href="_images/electric-resolver-circuitos-ejemplo-22.png"><img alt="Cálculos de un circuito mixto serie-paralelo." class="align-center" src="_images/electric-resolver-circuitos-ejemplo-22.png" style="width: 480px;"></a>
+<p>Ara podem aplicar la llei d’Ohm a la quarta fila per trobar la intensitat total que circula pel circuit, 60 mil·límetres.</p>
+<a class="reference internal image-reference" href="_images/electric-resolver-circuitos-ejemplo-23.png"><img alt="Cálculos de un circuito mixto serie-paralelo." class="align-center" src="_images/electric-resolver-circuitos-ejemplo-23.png" style="width: 480px;"></a>
+<p>Tot el corrent que circula pel circuit circularà per R1 per ser sèries. Amb aquestes dades, podem omplir el corrent R1 copiant el corrent total.</p>
+<a class="reference internal image-reference" href="_images/electric-resolver-circuitos-ejemplo-24.png"><img alt="Cálculos de un circuito mixto serie-paralelo." class="align-center" src="_images/electric-resolver-circuitos-ejemplo-24.png" style="width: 480px;"></a>
+<p>En aquest moment podem aplicar la llei d’Ohm a la primera fila per calcular la tensió en resistència R1.</p>
+<a class="reference internal image-reference" href="_images/electric-resolver-circuitos-ejemplo-25.png"><img alt="Cálculos de un circuito mixto serie-paralelo." class="align-center" src="_images/electric-resolver-circuitos-ejemplo-25.png" style="width: 480px;"></a>
+<p>La tensió total de la pila, de 12V, serà igual a la suma de les tensions de les dues sèries de circuits, R1 i R23.</p>
+<div class="math">
+<p><img src="_images/math/6930954d7d63c8cbaee18486dd00adfd995ad44c.svg" alt="12v = v_ {r1} + v_ {r23}."></p>
+</div><p>Esborrant hem de tensió en resistències R2 i R3 és de 12V - 7.2V = 4.8V, que podem escriure a les caixes corresponents.</p>
+<a class="reference internal image-reference" href="_images/electric-resolver-circuitos-ejemplo-26.png"><img alt="Cálculos de un circuito mixto serie-paralelo." class="align-center" src="_images/electric-resolver-circuitos-ejemplo-26.png" style="width: 480px;"></a>
+<p>Ara podem aplicar la llei d’Ohm a la segona i tercera files per acabar de calcular els valors d’intensitat que encara no sabem.</p>
+<a class="reference internal image-reference" href="_images/electric-resolver-circuitos-ejemplo-28.png"><img alt="Cálculos de un circuito mixto serie-paralelo." class="align-center" src="_images/electric-resolver-circuitos-ejemplo-28.png" style="width: 480px;"></a>
+<p>Finalment, comprovarem que la suma dels corrents en R2 i en R3 és igual al corrent total que circula pel circuit.</p>
+<div class="math">
+<p><img src="_images/math/4d249d5f13d4b2e316fc1031534728a5c6f25ad0.svg" alt="60 mA = 48 mA + 12 m."></p>
+</div></div>
+<div class="section" id="ejercicios">
+<h2><a class="toc-backref" href="#id5">Exercicis</a><a class="headerlink" href="#ejercicios" title="Link permanent a aquest títol">¶</a></h2>
+<p>Exercicis per resoldre circuits.</p>
+<a class="reference internal image-reference" href="_images/electric-resolver-circuitos-ejemplo-01.png"><img alt="_images/electric-resolver-circuitos-ejemplo-01.png" src="_images/electric-resolver-circuitos-ejemplo-01.png" style="width: 303px;"></a>
+<p>: Descarregueu: <a href="#id1"><span class="problematic" id="id2">`</span></a>Exercicis per resoldre circuits. PDF &lt;Electric-Elèctric-Resolver-Circuito Format.pdf&gt; `</p>
+<p>: Descarregueu: <a href="#id1"><span class="problematic" id="id2">`</span></a>Exercicis per resoldre circuits. KICAD &lt;Electric-Elèctric-Resolve-Circuito. Zip&gt; '</p>
+</div>
+<div class="section" id="cuestionarios">
+<h2><a class="toc-backref" href="#id6">Qüestionaris</a><a class="headerlink" href="#cuestionarios" title="Link permanent a aquest títol">¶</a></h2>
+<p>Qüestionaris sobre resolució de circuits.</p>
+<ul class="simple">
+<li><a class="reference external" href="../Test/Es-Elèctric-Resolve-Circuitos-1.html" rel="noopener noreferrer" target="_blank">Qüestionari. Resol Circuits I.</a></li>
+<li><a class="reference external" href="../test/es-elèctric-resolucions-circuitos-2.html" rel="noopener noreferrer" target="_blank">Qüestionari. Resoldre circuits II.</a></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="electric-energia.html" class="btn btn-neutral float-right" title=": Índex: `energia &#39;" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="electric-serie-paralelo-resistencias.html" class="btn btn-neutral" title="Resistències equivalents" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/electric-resolver-circuitos.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="electric-index.html">Electricitat</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="electric-circuito.html">El circuit elèctric</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-receptores.html">Efectes de l’electricitat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-componentes-index.html">Components elèctrics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-simbolos.html">Símbols elèctrics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-ley-ohm.html">Ohm's Law</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-ley-ohm-regla.html">Regla de càlcul per a la llei d'Ohm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-serie-paralelo.html">Sèrie, paral·lel i curtcircuit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-serie-paralelo-resistencias.html">Resistències equivalents</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Resolució del circuit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-energia.html">: Índex: `energia '</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-potencia.html">: Índex: `Potència elèctrica '</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-sistema-electrico.html">Sistema elèctric espanyol</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-cableado.html">Cablejat del circuit elèctric</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-simulador-index.html">Simulador elèctric</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bornas-lamparas-index.html">Cobriment de làmpades amb terminals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-recursos.html">Recursos per a l’electricitat</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programació</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

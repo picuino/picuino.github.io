@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Programació - Tutorial Python - 28. Llista de mètodes">
+  <title>28. Llista de mètodes - Tutorial Python - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/python-listas-metodos.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="29. Cerca de dades" href="python-busqueda.html">
+  <link rel="prev" title="27. Iteració de llistes" href="python-listas-iteracion.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="prog-index.html">Programació</a>/</li>
+        
+          <li><a href="python-index.html">Tutorial Python</a>/</li>
+        
+      <li><span class="section-number">28. </span>Llista de mètodes</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/python-listas-metodos.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/python-listas-metodos.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="metodos-de-listas">
+<span id="python-listas-metodos"></span><h1><span class="section-number">28. </span>Llista de mètodes<a class="headerlink" href="#metodos-de-listas" title="Link permanent a aquest títol">¶</a></h1>
+<p>Els <a class="reference external" href="https://docs.python.org/es/3/torma/datasructures.html#more-on-listes" rel="noopener noreferrer" target="_blank">LLISTA MÈTODES</a> són funcions associades a les llistes que es poden utilitzar per gestionar-les. Es diuen afegir un punt i el nom del mètode</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>  <span class="c1"># Añadir un elemento al final de la lista</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lista</span>
+<span class="go">    [1, 2, 3, 4, 5, 6]</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lista</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>  <span class="c1"># Retira un elemento del final de la lista</span>
+<span class="go">    6</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lista</span>
+<span class="go">    [1, 2, 3, 4, 5]</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lista</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># Retira un elemento del comienzo de la lista</span>
+<span class="go">    1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lista</span>
+<span class="go">    [2, 3, 4, 5]</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lista</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="c1"># Devuelve la posición de un elemento en la lista</span>
+<span class="go">    2</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lista</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="c1"># Devuelve cuántas veces encuentra 3 en la lista</span>
+<span class="go">    1</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;uno&#39;</span><span class="p">,</span> <span class="s1">&#39;dos&#39;</span><span class="p">,</span> <span class="s1">&#39;tres&#39;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span> <span class="c1"># Une las cadenas de texto de una lista</span>
+<span class="go">    &#39;uno, dos, tres&#39;</span>
+</pre></div>
+</div>
+<div class="section" id="funciones-con-listas">
+<h2>Funcions amb llistes<a class="headerlink" href="#funciones-con-listas" title="Link permanent a aquest títol">¶</a></h2>
+<dl class="py function">
+<dt id="max">
+<code class="descname">max</code><span class="sig-paren">(</span><em><span class="n">lista</span></em><span class="sig-paren">)</span><a class="headerlink" href="#max" title="Link permanent a aquesta definició">¶</a></dt>
+<dd><p>La funció `` max (llista) retorna l'element amb el valor més alt de tots els elements de la llista</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">max</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="go">    8</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="min">
+<code class="descname">min</code><span class="sig-paren">(</span><em><span class="n">lista</span></em><span class="sig-paren">)</span><a class="headerlink" href="#min" title="Link permanent a aquesta definició">¶</a></dt>
+<dd><p>La funció `` min (llista) retorna l'element amb el valor més baix de tots els elements de la llista</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">max</span><span class="p">([</span><span class="s1">&#39;hola&#39;</span><span class="p">,</span> <span class="s1">&#39;mundo&#39;</span><span class="p">])</span>
+<span class="go">    &#39;hola&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="sum">
+<code class="descname">sum</code><span class="sig-paren">(</span><em><span class="n">lista</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sum" title="Link permanent a aquesta definició">¶</a></dt>
+<dd><p>La funció <a href="#id1"><span class="problematic" id="id2">`</span></a>som (llista) retorna la suma de tots els números que conté una llista</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">sum</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="go">    23</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="len">
+<code class="descname">len</code><span class="sig-paren">(</span><em><span class="n">lista</span></em><span class="sig-paren">)</span><a class="headerlink" href="#len" title="Link permanent a aquesta definició">¶</a></dt>
+<dd><p>La funció `` len (llista) retorna el nombre d'elements que contenen una llista</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="go">    5</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="sorted">
+<code class="descname">sorted</code><span class="sig-paren">(</span><em><span class="n">lista</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sorted" title="Link permanent a aquesta definició">¶</a></dt>
+<dd><p>El `` ordenat (llista) `` retorna una altra llista més gran a la llista</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">sorted</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="go">    [1, 3, 5, 6, 8]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="list">
+<code class="descname">list</code><span class="sig-paren">(</span><em><span class="n">elementos</span></em><span class="sig-paren">)</span><a class="headerlink" href="#list" title="Link permanent a aquesta definició">¶</a></dt>
+<dd><p>Converteix un iterable en una llista</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="s1">&#39;Hola, mundo&#39;</span><span class="p">)</span>
+<span class="go">    [&#39;H&#39;, &#39;o&#39;, &#39;l&#39;, &#39;a&#39;, &#39;,&#39;, &#39; &#39;, &#39;m&#39;, &#39;u&#39;, &#39;n&#39;, &#39;d&#39;, &#39;o&#39;]</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">))</span>
+<span class="go">    [10, 8, 6, 4, 2, 0]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="ejercicios">
+<h2>Exercicis<a class="headerlink" href="#ejercicios" title="Link permanent a aquest títol">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Escriviu una funció que calculi la mitjana d’una llista de números. La mitjana és igual a la suma dels elements dividits pel nombre d’elements.</p>
+<p>Truqueu a la funció per calcular la mitjana de les llistes següents</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">]</span>
+
+<span class="p">[</span><span class="mf">7.0</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">,</span> <span class="mf">6.8</span><span class="p">,</span> <span class="mf">6.3</span><span class="p">,</span> <span class="mf">8.2</span><span class="p">]</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Escriviu una funció que accepti una llista com a argument i retorna una altra llista que només conté números parells.</p>
+<p>Heu de crear una nova llista buida i afegir els números uniformes de la darrera llista com a argument.</p>
+<p>Truqueu a la funció amb les llistes següents com a arguments</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">77</span><span class="p">,</span> <span class="mi">78</span><span class="p">,</span> <span class="mi">84</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">54</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">66</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">]</span>
+
+<span class="p">[</span><span class="mi">81</span><span class="p">,</span> <span class="mi">52</span><span class="p">,</span> <span class="mi">78</span><span class="p">,</span> <span class="mi">88</span><span class="p">,</span> <span class="mi">51</span><span class="p">,</span> <span class="mi">74</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">47</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Escriviu una funció que accepti una llista com a argument i retorna una altra llista amb l’element menor, l’element principal, el nombre d’elements i la suma de tots els elements.</p>
+<p>Truqueu a la funció amb les llistes següents com a argument</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">resumen</span><span class="p">([</span><span class="mi">49</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">44</span><span class="p">,</span> <span class="mi">38</span><span class="p">,</span> <span class="mi">43</span><span class="p">])</span>
+<span class="go">    [6, 49, 14, 327]</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">resumen</span><span class="p">([</span><span class="mi">28</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">48</span><span class="p">,</span> <span class="mi">47</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">43</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">24</span><span class="p">])</span>
+<span class="go">    [5, 48, 10, 284]</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">resumen</span><span class="p">([</span><span class="mi">7</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">47</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">38</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">50</span><span class="p">])</span>
+<span class="go">    [1, 50, 12, 330]</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="python-busqueda.html" class="btn btn-neutral float-right" title="29. Cerca de dades" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="python-listas-iteracion.html" class="btn btn-neutral" title="27. Iteració de llistes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/python-listas-metodos.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="prog-index.html">Programació</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="prog-lang-edu.html">Llenguatges de programació</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-flowchart.html">Diagrames de flux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-unplugged.html">Activitats desconnectades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-codeorg.html">Tutorials de codi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scratch3-index.html">Tutorial Scratch 3</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="python-index.html">Tutorial Python</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="python-intro.html">1. Introducció a la llengua de Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-datos-numeros.html">2. Dades numèriques</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-variables.html">3. Les variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-palabras-reservadas.html">4. Paraules reservades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-comentarios.html">5. Els comentaris</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-print.html">6. La funció: py: funció: `imprimir '</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-input.html">7. La funció: py: funció: `entrada '</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-booleanos.html">8. El tipus booleà</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-if-else.html">9. Judici `` si '' `` else ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-if-and-or-not.html">10. Operadors `` <cite>,</cite> ``, `` no ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-if-anidados.html">11. Judicis `si '' nided</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-if-elif.html">12. Judici `` elif ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for.html">13. Judici `` per ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for-range.html">14. La funció: py: funció: `range '</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for-continue.html">15. Judici &quot;Continua&quot;</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for-break.html">16. Judici `` Break ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for-anidados.html">17. Judicis `` `` anity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-while.html">18. Judici `` mentre ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-funciones.html">19. Definició de funcions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-funciones-argumentos.html">20. Paràmetres amb valors d’omissió</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-textos.html">21. Cadenes de text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-textos-indices.html">22. Índexs de la cadena de text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-textos-metodos.html">23. Mètodes de la cadena de text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-textos-formateo.html">24. Format de la cadena de text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-listas.html">25. Llistes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-listas-indices.html">26. Llista dels índexs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-listas-iteracion.html">27. Iteració de llistes</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">28. Llista de mètodes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-busqueda.html">29. Cerca de dades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-busqueda-binaria.html">30. Cerca binària</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-desplazamiento.html">31. Desplaçament de dades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-sort-seleccion.html">32. Gestió de la selecció</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-sort-insercion.html">33. Gestió d'inserció</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-recursividad.html">34. Recursió</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-sort-mezcla.html">35. Barrejant l’ordenació</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-codewars.html">36. Codewars katas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-recursos.html">37. Recursos Python</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="prog-recursos.html">Recursos per a la programació</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

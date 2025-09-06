@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Electrònica - Electrònica analògica - 9. Transistor a la base comuna">
+  <title>9. Transistor a la base comuna - Electrònica analògica - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/electronic-bjt-common-b.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="10. L’esquema de Darlington" href="electronic-bjt-darlington.html">
+  <link rel="prev" title="8. El transistor del col·leccionista comú" href="electronic-bjt-common-c.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="electronic-index.html">Electrònica</a>/</li>
+        
+          <li><a href="electronic-analog-index.html">Electrònica analògica</a>/</li>
+        
+      <li><span class="section-number">9. </span>Transistor a la base comuna</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/electronic-bjt-common-b.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/electronic-bjt-common-b.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="el-transistor-en-base-comun">
+<span id="electronic-bjt-common-b"></span><h1><span class="section-number">9. </span>Transistor a la base comuna<a class="headerlink" href="#el-transistor-en-base-comun" title="Link permanent a aquest títol">¶</a></h1>
+<p>En aquesta configuració, el transistor té la base connectada a una tensió fixa. El senyal d’entrada arriba per l’emissor del transistor i el senyal amplificat surt a través del col·leccionista del transistor.</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/electronic-analog-common-b.png"><img alt="Esquema simplificado de un transistor NPN en base común." src="_images/electronic-analog-common-b.png" style="width: 200px;"></a>
+<p class="caption"><span class="caption-text">Esquema simplificat d’un transistor NPN de forma comuna.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>Aquesta configuració permet amplificar la tensió d’entrada mantenint el corrent igual. Aquesta operació és útil en etapes d’entrada de senyal d’un component que genera poca tensió, però amb corrents relativament alts.</p>
+<p>Un exemple d’aplicació pràctica és amplificar el senyal induït en una bobina. Per exemple, amplifiqueu el so capturat per un altaveu, convertint l'altaveu en un micròfon.</p>
+<p>A continuació es pot veure una simulació d’un transistor NPN en la configuració de base comuna. El transistor amplifica un senyal que entra a través de l’emissor generant un senyal amb tensió molt més gran que surt del col·leccionista.</p>
+<div class="video-center">
+<iframe src="/circuits/index.html?startCircuit=bjt-common-b.txt"></iframe>
+</div><p>La funció de cadascun dels components és la següent:</p>
+<ul>
+<li><p class="first">El generador de senyal alternatiu ** ** genera un petit senyal d’entrada de 0,050 volts de pic.</p>
+</li>
+<li><p class="first">Les resistències ** R1 i R2 ** mantenen una tensió fixa a la base que ** polaritza el transistor ** per treballar sempre amb corrents positius, malgrat que la tensió d’entrada és positiva i negativa.</p>
+</li>
+<li><p class="first">El transistor ** NPN ** rep un senyal de tensió petita per l'emissor, que produeix un corrent a l'emissor. Les transferències del transistor que emeten corrent al col·lector, on la resistència R3 converteix el corrent en una tensió superior a la tensió d’entrada.</p>
+<p>En aquesta fase no hi ha cap amplificació de corrent, només tensió.</p>
+</li>
+<li><p class="first">La resistència ** R3 ** rep el corrent del col·lector i el converteix en tensió de sortida. Com més alta sigui aquesta resistència, més gran és la tensió de sortida i, per tant, l’amplificació de la tensió de l’etapa.</p>
+</li>
+</ul>
+<div class="section" id="ejercicios">
+<h2>Exercicis<a class="headerlink" href="#ejercicios" title="Link permanent a aquest títol">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Dibuixa un esquema simplificat d’un transistor NPN que funciona en la configuració de base comuna, mostrant on arriba el senyal d’entrada i on surt el senyal amplificat.</p>
+</li>
+<li><p class="first">Dibuixa un esquema realista d’un transistor NPN que treballa en la configuració de base comuna.</p>
+</li>
+<li><p class="first">Quina és la funció principal d’un transistor que funciona en la configuració de base comuna?</p>
+</li>
+<li><p class="first">Per a què serveixen les resistències R1 i R2?</p>
+</li>
+<li><p class="first">Per a què serveix la resistència R3?</p>
+</li>
+<li><p class="first">Quin guany de tensió té l’etapa simulada?</p>
+<p>Per calcular el guany de tensió, cal dividir la variació de tensió en la sortida entre la variació de la tensió a l’entrada.</p>
+<div class="math">
+<p><img src="_images/math/c7fcd811055875ec7d3b1d382581c18f4759e6a8.svg" alt="Profit\_V = \cfrac{V_{out\_max} - V_{out\_min}}{ V_{in\_max} - V_{in\_min}}"></p>
+</div><p>Podeu obtenir els valors de tensió necessaris dels oscil·loscopis que es troben a la part inferior del simulador.</p>
+</li>
+<li><p class="first">Si modifiquem R3 amb un valor de 500 ohm i R1 amb un valor de 8 kohm, què passa amb el senyal de sortida del circuit? Per què creus que passa això?</p>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="electronic-bjt-darlington.html" class="btn btn-neutral float-right" title="10. L’esquema de Darlington" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="electronic-bjt-common-c.html" class="btn btn-neutral" title="8. El transistor del col·leccionista comú" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/electronic-bjt-common-b.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="electronic-index.html">Electrònica</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="electronic-components-index.html">Components electrònics</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="electronic-analog-index.html">Electrònica analògica</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="electronic-diodo.html">1. El díode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-diodo-rectificador.html">2. El díode rectificador</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-diodo-limitador.html">3. El díode limitant</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-diodo-zener.html">4. El díode zener</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-diodo-led.html">5. El díode LED</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bjt.html">6. El transistor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bjt-common-e.html">7. El transistor en comú emissor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bjt-common-c.html">8. El transistor del col·leccionista comú</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">9. Transistor a la base comuna</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bjt-darlington.html">10. L’esquema de Darlington</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bjt-pushpull.html">11. L’esquema Push-Pull</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bjt-diferencial.html">12. La part diferencial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bjt-current.html">13. La font actual</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-mosfet.html">14. El transistor MOSFET</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-operational.html">15. L'amplificador operatiu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-operational-follower.html">16. L'amplificador de seguidors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-operational-inverting.html">17. L'amplificador d'inversions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-operational-adder.html">18. L’amplificador d’estiu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-operational-noninverting.html">19. L'amplificador no inversor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-operational-differential.html">20. L'amplificador diferencial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-operational-peakdetector.html">21. El Detector de Peak</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-operational-comparator.html">22. El comparador</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-operational-hysteresis.html">23. El comparador amb la histèresi</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="electronic-digital-index.html">Electrònica digital</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electronic-bornas-index.html">Cablejat de components electrònics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electronic-pcb-luces-led.html">Circuit imprès amb llums LED</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programació</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

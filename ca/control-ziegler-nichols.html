@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Robòtica - Control dels sistemes - Mètode Ziegler-Nichols">
+  <title>Mètode Ziegler-Nichols - Control dels sistemes - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/control-ziegler-nichols.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="Controlador digital PID" href="control-pid-digital.html">
+  <link rel="prev" title="Controlador PID" href="control-pid.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="robotica-index.html">Robòtica</a>/</li>
+        
+          <li><a href="control-index.html">Control dels sistemes</a>/</li>
+        
+      <li>Mètode Ziegler-Nichols</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/control-ziegler-nichols.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/control-ziegler-nichols.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="metodo-de-ziegler-nichols">
+<span id="control-ziegler-nichols"></span><h1>Mètode Ziegler-Nichols<a class="headerlink" href="#metodo-de-ziegler-nichols" title="Link permanent a aquest títol">¶</a></h1>
+<p>El mètode Ziegler-Nichols us permet ajustar o &quot;sintonitzar en &quot; A: ref: <cite>controlador PID &lt;rotor&gt;</cite> <a href="#id1"><span class="problematic" id="id2">`</span></a>empíricament, sense conèixer les equacions de la planta ni del sistema controlat. Aquestes regles d’ajustament proposades per Ziegler i Nichols es van publicar el 1942 i des d’aleshores és un dels mètodes d’afinació més generalitzats i utilitzats.</p>
+<p>Els valors proposats per aquest mètode intenten obtenir al sistema de retroalimentació una &quot;resposta al pas &lt;<a class="reference external" href="https://es.wikipedia.org/wiki/an%C3%A1lisis_de_la_la_phanes_temporal_de_un_system" rel="noopener noreferrer" target="_blank">https://es.wikipedia.org/wiki/an%C3%A1lisis_de_la_la_phanes_temporal_de_un_system</a>&gt;` __ amb un superpuls màxim de 25%, que és un valor robust amb una bona característica de velocitat i estabilitat per a la major part de la major part del sistema.</p>
+<p>El mètode de sintonia dels reguladors PID de Ziegler-Nichols ens permet definir beneficis proporcionals, complets i derivats (KP, KI i KD) de la resposta del sistema de bucle obert o de la resposta del sistema de bucle tancat. Cadascun dels dos assajos s’adapta millor a un tipus de sistema.</p>
+<div class="section" id="sintonizacion-por-la-respuesta-al-escalon">
+<h2>Sintonització per a la resposta al pas<a class="headerlink" href="#sintonizacion-por-la-respuesta-al-escalon" title="Link permanent a aquest títol">¶</a></h2>
+<p>Aquest mètode d’afinació s’adapta bé als sistemes estables en bucle obert i que tenen un temps de retard del fet que reben el senyal de control fins que comencen a actuar.</p>
+<p>Per poder determinar la resposta als passos de la planta o sistema controlat, el controlador PID ha de ser eliminat i substituir -lo per un senyal de pas aplicat a l’actuador.</p>
+<a class="reference internal image-reference" href="_images/img-0055.png"><img alt="Sistema de control en lazo cerrado con controlador PID" class="align-center" src="_images/img-0055.png" style="width: 640px;"></a>
+<p>La figura següent mostra la modificació que es realitzarà al sistema de control del bucle tancat per convertir -lo en un sistema de bucle obert que respon a un senyal de pas, eliminant el controlador PID:</p>
+<a class="reference internal image-reference" href="_images/img-0059.png"><img alt="Esquema de señal escalón aplicada a un sistema en lazo abierto." class="align-center" src="_images/img-0059.png" style="width: 640px;"></a>
+<p>A la imatge següent, l’entrada de pas a l’actuador o al senyal ** c (t) ** està representada en vermell. En blau es representa la sortida del sistema mesurada pel sensor o el senyal ** h (t) <a href="#id1"><span class="problematic" id="id2">**</span></a>. El pas d’entrada ** C (t) ** ha d’estar entre el 10% i el 20% del valor d’entrada nominal. Com es pot veure, la resposta del sistema presenta un retard, també anomenat temps mort, representat per T1.</p>
+<a class="reference internal image-reference" href="_images/img-0060.png"><img alt="Respuesta al escalón en un horno. Período inicial." class="align-center" src="_images/img-0060.png" style="width: 640px;"></a>
+<p>Per calcular els paràmetres, comença dibuixant una línia recta tangent al senyal de sortida del sistema (corba blava). Aquesta tangent es dibuixa a la imatge amb una línia recta.</p>
+<p>El temps ** t1 ** correspon a ** temps mort <a href="#id1"><span class="problematic" id="id2">**</span></a>. Aquest és el temps que es necessita perquè el sistema comenci a respondre. Aquest interval es mesura ja que el senyal de pas puja, fins al punt de tall de la línia tangent amb el valor inicial del sistema, que en aquest cas és el valor de 25 ºC</p>
+<p>El ** Time T2 ** és el temps de pujada ** <a href="#id1"><span class="problematic" id="id2">**</span></a>. El temps 2 s’iniciarà on la línia tangent es redueix al valor de sortida inicial (25º a 2 segons) i acabarà on la línia tangent es redueix al valor de sortida final (225º a 14 segons).</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/img-0061.png"><img alt="Respuesta al escalón en un horno. Período completo." src="_images/img-0061.png" style="width: 640px;"></a>
+<p class="caption"><span class="caption-text">Resposta de pas. El temps 2 comença després de la T1 i s’acaba quan s’arriba al valor màxim de sortida, en aquest cas 225ºC.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>A més d’aquests dos temps característics, també s’ha de calcular la variació del senyal de pas DX i la variació de la resposta del sistema DY.</p>
+<p>La variació ** dx ** correspon als passos del senyal de control. A l'exemple que apareix a les imatges, la variació dels passos correspon a dx = 5 volts del senyal de control c (t).</p>
+<p>La ** variació dy ** del sistema a causa del senyal de pas que hem introduït, correspon a l'exemple a dy = 200 ºC mesurat pel sensor H (t) en una certa quantitat de volts.</p>
+<p>A partir d’aquests valors podeu calcular la constant del sistema KO:</p>
+<blockquote>
+<div>Ko = (dx * t2) / (dy * t1)</div></blockquote>
+<p>I des de la constant KO, els paràmetres del controlador PID amb només proporció (P), proporcional i integral (PI), proporcional i derivada (PD) o acció completa i derivada (PID) (PID):</p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width:18%;">
+<col style="width:21%;">
+<col style="width:29%;">
+<col style="width:32%;">
+</colgroup>
+<thead style="vertical-align:bottom;">
+<tr class="row-odd"><th class="head">Control</th>
+<th class="head">Kp</th>
+<th class="head">Ki</th>
+<th class="head">Kd</th>
+</tr>
+</thead>
+<tbody style="vertical-align:top;">
+<tr class="row-even"><td>P</td>
+<td>Ko</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Pi</td>
+<td>0,9*KO</td>
+<td>0,27*KO/T1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>P.S.</td>
+<td>1.6*ko</td>
+<td>&#160;</td>
+<td>0,60*ko*t1</td>
+</tr>
+<tr class="row-odd"><td>PID</td>
+<td>1.2*ko</td>
+<td>0,60*KO/T1</td>
+<td>0,60*ko*t1</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>La constant de KP correspon al guany proporcional, Ki és el guany integral i KD és el guany derivat.</p>
+</div>
+<div class="section" id="ejemplo-de-sintonizacion-de-pid-con-la-respuesta-al-escalon">
+<h2>Exemple d’ajustament PID amb la resposta al pas<a class="headerlink" href="#ejemplo-de-sintonizacion-de-pid-con-la-respuesta-al-escalon" title="Link permanent a aquest títol">¶</a></h2>
+<p>A l'exemple que apareix a les imatges anteriors, s'ha utilitzat la simulació d'un forn elaborat amb un full de càlcul. També està disponible un simulador d’un sistema de calefacció amb dues calderes.</p>
+<blockquote>
+<div>Simulador de control de la temperatura :: Descarregar: <a href="#id1"><span class="problematic" id="id2">`</span></a>Control temal. Versió 0.11 &lt;Control/_Downloads/Themal-Control-011.zip&gt; `</div></blockquote>
+<p>Per calcular els paràmetres del sistema, una resposta al pas configureu el senyal de control per 0 volts amb un pas de 5 volts. El sistema respon canviant de 25 graus centígrads (0,25V) a 225 graus centígrads (2.25V). Els temps són els que apareixen als gràfics anteriors, que amb els quals els valors de la corba de resposta del sistema són els següents:</p>
+<blockquote>
+<div><p>Dx = 5 - 0 = 5 volts</p>
+<p>Dy = 2,25 - 0,25 = 2 volts</p>
+<p>T1 = 2,2 - 1 = 1,2 segons</p>
+<p>T2 = 13,8 - 2,2 = 11,6 segons</p>
+</div></blockquote>
+<p>A partir d’aquests valors podeu calcular els paràmetres del regulador PID:</p>
+<blockquote>
+<div><p>Ko = (dx * t2) / (dy * t1) = (5 * 11.6) / (2 * 1.2) = 24,2</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width:18%;">
+<col style="width:21%;">
+<col style="width:29%;">
+<col style="width:32%;">
+</colgroup>
+<thead style="vertical-align:bottom;">
+<tr class="row-odd"><th class="head">Control</th>
+<th class="head">Kp</th>
+<th class="head">Ki</th>
+<th class="head">Kd</th>
+</tr>
+</thead>
+<tbody style="vertical-align:top;">
+<tr class="row-even"><td>P</td>
+<td>24.2</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Pi</td>
+<td>21,8</td>
+<td>5.44</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Pi</td>
+<td>38,7</td>
+<td>&#160;</td>
+<td>17.4</td>
+</tr>
+<tr class="row-odd"><td>PID</td>
+<td>29,0</td>
+<td>12.1</td>
+<td>17.4</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Després d’introduir els valors KP, KI i KD al PID, s’obté la resposta següent:</p>
+<a class="reference internal image-reference" href="_images/img-0062.png"><img alt="Ziegler-Nichols. Respuesta de un horno sintonizado con respuesta al escalón." class="align-center" src="_images/img-0062.png" style="width: 640px;"></a>
+<p>Ara els paràmetres PID es poden ajustar per obtenir una resposta lleugerament més estable. El guany derivat i reduït ha augmentat la integral per reduir les oscil·lacions:</p>
+<blockquote>
+<div><p>KP = 28</p>
+<p>Ki = 10</p>
+<p>KD = 21</p>
+</div></blockquote>
+<p>Com a resultat, el sistema ara s’estabilitza en 12 segons:</p>
+<a class="reference internal image-reference" href="_images/img-0063.png"><img alt="Ziegler-Nichols. Respuesta de un horno sintonizado con respuesta al escalón. Ajuste final a mano." class="align-center" src="_images/img-0063.png" style="width: 640px;"></a>
+<p>En tots els casos, la resposta integral ha estat limitada de manera que val la pena zero si l’error és superior a 40 ºC. Aquest mode de guany integral s’anomena <a class="reference external" href="https://en.wikipedia.org/wiki/integral_windup" rel="noopener noreferrer" target="_blank">anti-Windup</a> i serveix per evitar un excessiu excessiu en la resposta. Aquest Overpico es produeix perquè el control integral augmenta mentre l’actuador està saturat, de manera que s’acumula massa alt i no s’ajusta al sistema real del sistema.</p>
+</div>
+<div class="section" id="sintonizacion-por-la-ganancia-critica-en-lazo-cerrado">
+<h2>Sintonització per al guany crític en bucle tancat<a class="headerlink" href="#sintonizacion-por-la-ganancia-critica-en-lazo-cerrado" title="Link permanent a aquest títol">¶</a></h2>
+<p>Aquest mètode no requereix eliminar el controlador PID del bucle tancat. En aquest cas, només cal minimitzar l’acció derivada i l’acció integral del regulador PID. L’assaig de bucle tancat és augmentar gradualment el guany proporcional fins que el sistema oscil·la d’una manera mantingut abans de qualsevol pertorbació. Aquesta oscil·lació ha de ser lineal, sense saturacions. En aquest moment, heu de mesurar el guany proporcional, anomenats guanys crítics o KC, i el període d’oscil·lació del TC en segons.</p>
+<a class="reference internal image-reference" href="_images/img-0064.png"><img alt="Ganancia crítica de lazo cerrado. Señal recortada." class="align-center" src="_images/img-0064.png" style="width: 640px;"></a>
+<p>Un cop mesurats aquests dos valors, podeu calcular els paràmetres del controlador PID amb només una acció proporcional (P), proporcional i integral (PI), proporcional i derivada (PD) o proporcional i derivada (PID) (PID):</p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width:18%;">
+<col style="width:21%;">
+<col style="width:29%;">
+<col style="width:32%;">
+</colgroup>
+<thead style="vertical-align:bottom;">
+<tr class="row-odd"><th class="head">Control</th>
+<th class="head">Kp</th>
+<th class="head">Ki</th>
+<th class="head">Kd</th>
+</tr>
+</thead>
+<tbody style="vertical-align:top;">
+<tr class="row-even"><td>P</td>
+<td>0,50*kc</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Pi</td>
+<td>0,45*kc</td>
+<td>0,54*KC/TC</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>P.S.</td>
+<td>0,80*kc</td>
+<td>&#160;</td>
+<td>0,075*kc*tc</td>
+</tr>
+<tr class="row-odd"><td>PID</td>
+<td>0,59*kc</td>
+<td>1.18*KC/TC</td>
+<td>0,075*kc*tc</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>La constant de KP correspon al guany proporcional, Ki és el guany integral i KD és el guany derivat.</p>
+</div>
+<div class="section" id="ejemplo-de-sintonizacion-de-pid-con-la-ganancia-critica">
+<h2>Exemple de sintonització de PID amb guany crític<a class="headerlink" href="#ejemplo-de-sintonizacion-de-pid-con-la-ganancia-critica" title="Link permanent a aquest títol">¶</a></h2>
+<p>Realitzarem una sintonia del sistema tèrmic simulat anteriorment:</p>
+<blockquote>
+<div>Simulador de control de la temperatura :: Descarregar: <a href="#id1"><span class="problematic" id="id2">`</span></a>Control temal. Versió 0.11 &lt;Control/_Downloads/Themal-Control-011.zip&gt; `</div></blockquote>
+<p>La primera operació serà cancel·lar els guanys derivats i integrals:</p>
+<blockquote>
+<div><p>Kd = 0</p>
+<p>Ki = 0</p>
+</div></blockquote>
+<p>A continuació, s’estableix una temperatura de treball en la referència i s’incrementa el guany proporcional fins que s’aconsegueixi una resposta oscil·ladora mantinguda.</p>
+<p>Amb un guany proporcional kp = 0,40, la resposta continua amortint:</p>
+<a class="reference internal image-reference" href="_images/img-0065.png"><img alt="Ganancia crítica de lazo cerrado. Sistema sobreamortiguado." class="align-center" src="_images/img-0065.png" style="width: 640px;"></a>
+<p>En augmentar el guany proporcional a KP = 0,43, s’obté una resposta amb oscil·lacions mantingudes:</p>
+<a class="reference internal image-reference" href="_images/img-0066.png"><img alt="Ganancia crítica de lazo cerrado. Sistema crítico." class="align-center" src="_images/img-0066.png" style="width: 480px;"></a>
+<p>En augmentar el guany a KP = 0,45, les oscil·lacions creixen amb el pas del temps, de manera que el guany seria massa alt.</p>
+<a class="reference internal image-reference" href="_images/img-0067.png"><img alt="Ganancia crítica de lazo cerrado. Sistema oscilante." class="align-center" src="_images/img-0067.png" style="width: 640px;"></a>
+<p>En aquest cas, per tant, el guany crític i el període són:</p>
+<blockquote>
+<div><p>KC = 0,43</p>
+<p>Tc = 21/4 = 5,3 s</p>
+</div></blockquote>
+<p>A partir d’aquests valors es calculen els paràmetres del controlador PID:</p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width:18%;">
+<col style="width:21%;">
+<col style="width:29%;">
+<col style="width:32%;">
+</colgroup>
+<thead style="vertical-align:bottom;">
+<tr class="row-odd"><th class="head">Control</th>
+<th class="head">Kp</th>
+<th class="head">Ki</th>
+<th class="head">Kd</th>
+</tr>
+</thead>
+<tbody style="vertical-align:top;">
+<tr class="row-even"><td>P</td>
+<td>0,215</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Pi</td>
+<td>0.195</td>
+<td>0,044</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Pi</td>
+<td>0,344</td>
+<td>&#160;</td>
+<td>0.169</td>
+</tr>
+<tr class="row-odd"><td>PID</td>
+<td>0,254</td>
+<td>0,096</td>
+<td>0.169</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Com es pot veure, els valors són similars als valors obtinguts anteriorment amb el mètode de resposta al pas. Les diferències es deuen al fet que aquest sistema no és lineal i, per tant, té una resposta oscil·ladora distorsionada quan es busca el guany crític.</p>
+<p>Introduint els valors anteriors al controlador PID, s’obté la resposta següent del sistema tèrmic amb el controlador PID:</p>
+<a class="reference internal image-reference" href="_images/img-0068.png"><img alt="Ziegler-Nichols. Respuesta de un horno sintonizado con ganancia crítica." class="align-center" src="_images/img-0068.png" style="width: 640px;"></a>
+<p>En aquest cas, també podeu acabar de perfeccionar el regulador PID per obtenir una resposta lleugerament més estable.</p>
+</div>
+<div class="section" id="referencias">
+<h2>Referències<a class="headerlink" href="#referencias" title="Link permanent a aquest títol">¶</a></h2>
+<p><a class="reference external" href="https://es.wikipedia.org/wiki/proporala_integral_derivative" rel="noopener noreferrer" target="_blank">Wikipedia: controlador PID</a></p>
+<p><a class="reference external" href="https://es.wikipedia.org/wiki/system_de_control" rel="noopener noreferrer" target="_blank">Wikipedia: Sistema de control</a></p>
+<p><a class="reference external" href="https://es.wikipedia.org/wiki/servomotor_de_modelismo" rel="noopener noreferrer" target="_blank">Wikipedia: Servomotor</a></p>
+<p>[1] Ogata, Katsuhiko. Enginyeria de control moderna. Tercera edició. Saló de Prentice Editorial.</p>
+<p>[2] Ogata, Katsuhiko. Sistemes de control de temps discrets. Segona edició. Saló de Prentice Editorial.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="control-pid-digital.html" class="btn btn-neutral float-right" title="Controlador digital PID" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="control-pid.html" class="btn btn-neutral" title="Controlador PID" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/control-ziegler-nichols.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programació</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="robotica-index.html">Robòtica</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="control-index.html">Control dels sistemes</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="control-auto.html">Control automàtic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control-pid.html">Controlador PID</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Mètode Ziegler-Nichols</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control-pid-digital.html">Controlador digital PID</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="control-actuator-index.html">Actuadors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="control-sensor-index.html">Sensors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="robotica-normativa.html">Codi de l'escola 4.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="robotica-recursos.html">Recursos per a la robòtica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="robotica-robots-actuales.html">Robots actuals</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

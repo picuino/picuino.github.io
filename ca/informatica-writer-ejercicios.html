@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Informàtica - Tutorial d&#39;escriptors - 2. Exercicis d’escriptors">
+  <title>2. Exercicis d’escriptors - Tutorial d&#39;escriptors - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/informatica-writer-ejercicios.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="Escriptor 7 Tutorial" href="writer-index.html">
+  <link rel="prev" title="1. Pràctiques guiades per a escriptors" href="informatica-tutowriter.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="informatica-index.html">Informàtica</a>/</li>
+        
+          <li><a href="informatica-writer-index.html">Tutorial d'escriptors</a>/</li>
+        
+      <li><span class="section-number">2. </span>Exercicis d’escriptors</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/informatica-writer-ejercicios.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/informatica-writer-ejercicios.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ejercicios-de-writer">
+<h1><span class="section-number">2. </span>Exercicis d’escriptors<a class="headerlink" href="#ejercicios-de-writer" title="Link permanent a aquest títol">¶</a></h1>
+<p>Aquesta secció consta de 30 exercicis en què aplicarem diversos continguts tractats en pràctiques guiades.</p>
+<p>Creeu a l’ordinador una carpeta amb el vostre nom en què desarem els documents generats.</p>
+<div class="contents local topic" id="indice-de-contenidos">
+<p class="topic-title">Índex de contingut:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#ejercicio-1-formato-de-archivo" id="id1">Exercici 1: Format de fitxer</a></li>
+<li><a class="reference internal" href="#ejercicio-2-formato-de-texto" id="id2">Exercici 2: Format de text</a></li>
+<li><a class="reference internal" href="#ejercicio-3-subindices-y-superindices" id="id3">Exercici 3: Subscripcions i Superince</a></li>
+<li><a class="reference internal" href="#ejercicio-4-formato-de-parrafo" id="id4">Exercici 4: Format de paràgraf</a></li>
+<li><a class="reference internal" href="#ejercicio-5-comentarios" id="id5">Exercici 5: comentaris</a></li>
+<li><a class="reference internal" href="#ejercicio-6-formato-de-pagina-y-formas" id="id6">Exercici 6: Format i formes de pàgina</a></li>
+<li><a class="reference internal" href="#ejercicio-7-corrector" id="id7">Exercici 7: corrector</a></li>
+<li><a class="reference internal" href="#ejercicio-8-columnas" id="id8">Exercici 8: columnes</a></li>
+<li><a class="reference internal" href="#ejercicio-9-pegado-especial" id="id9">Exercici 9: Stick especial</a></li>
+<li><a class="reference internal" href="#ejercicio-10-imagenes-e-hiperenlaces" id="id10">Exercici 10: Imatges i hibernlaques</a></li>
+<li><a class="reference internal" href="#ejercicio-11-curriculum" id="id11">Exercici 11: Currículum</a></li>
+<li><a class="reference internal" href="#ejercicio-12-encabezado-y-pie-de-pagina" id="id12">Exercici 12: capçalera i peu de pàgina</a></li>
+<li><a class="reference internal" href="#ejercicio-13-notas-al-pie-y-al-final" id="id13">Exercici 13: Notes de peu i al final</a></li>
+<li><a class="reference internal" href="#ejercicio-14-tabuladores" id="id14">Exercici 14: tabuladors</a></li>
+<li><a class="reference internal" href="#ejercicio-15-buscar-y-reemplazar" id="id15">Exercici 15: cerca i substituïu</a></li>
+<li><a class="reference internal" href="#ejercicio-16-numeracion-y-vinetas" id="id16">Exercici 16: Número i Viñetas</a></li>
+<li><a class="reference internal" href="#ejercicio-17-tablas" id="id17">Exercici 17: Taules</a></li>
+<li><a class="reference internal" href="#ejercicio-18-tablas-ii" id="id18">Exercici 18: Taules (II)</a></li>
+<li><a class="reference internal" href="#ejercicio-19-filtros-de-imagen" id="id19">Exercici 19: filtres d’imatges</a></li>
+<li><a class="reference internal" href="#ejercicio-20-secciones" id="id20">Exercici 20: seccions</a></li>
+<li><a class="reference internal" href="#ejercicio-21-indice" id="id21">Exercici 21: Índex</a></li>
+<li><a class="reference internal" href="#ejercicio-22-portada" id="id22">Exercici 22: coberta</a></li>
+<li><a class="reference internal" href="#ejercicio-23-convertir-tabla-en-texto" id="id23">Exercici 23: Converteix la taula en text</a></li>
+<li><a class="reference internal" href="#ejercicio-24-proteger-un-documento" id="id24">Exercici 24: protegir un document</a></li>
+<li><a class="reference internal" href="#ejercicio-25-formulario" id="id25">Exercici 25: Forma</a></li>
+<li><a class="reference internal" href="#ejercicio-26-formulario-ii" id="id26">Exercici 26: Forma (II)</a></li>
+<li><a class="reference internal" href="#ejercicio-27-formulario-iii" id="id27">Exercici 27: Forma (iii)</a></li>
+<li><a class="reference internal" href="#ejercicio-28-caracteres-especiales-y-formulas" id="id28">Exercici 28: caràcters i fórmules especials</a></li>
+<li><a class="reference internal" href="#ejercicio-29-combinar-correspondencia" id="id29">Exercici 29: Combina la correspondència</a></li>
+<li><a class="reference internal" href="#ejercicio-30-combinar-correspondencia-ii" id="id30">Exercici 30: Combina la correspondència (II)</a></li>
+<li><a class="reference internal" href="#creditos" id="id31">Crèdits</a></li>
+</ul>
+</div>
+<div class="section" id="ejercicio-1-formato-de-archivo">
+<h2><a class="toc-backref" href="#id1">Exercici 1: Format de fitxer</a><a class="headerlink" href="#ejercicio-1-formato-de-archivo" title="Link permanent a aquest títol">¶</a></h2>
+<p>Obriu el <a class="reference external" href="../_Static/Tutorial-Writer/Writer/CAS/Exercici_01.odt" rel="noopener noreferrer" target="_blank">Exercici_01.odt</a> i protegeix-lo en format <a href="#id1"><span class="problematic" id="id2">**</span></a>. Doc <a href="#id3"><span class="problematic" id="id4">**</span></a>, <a href="#id5"><span class="problematic" id="id6">**</span></a>. DOCX ** i exporteu -lo en format <a href="#id7"><span class="problematic" id="id8">**</span></a>. Pdf ** de manera que obtingueu els fitxers següents:</p>
+<ul class="simple">
+<li>Exercici_01_namer.doc</li>
+<li>Exercici_01_namer.docx</li>
+<li>Exercici_01_namer.pdf</li>
+</ul>
+</div>
+<div class="section" id="ejercicio-2-formato-de-texto">
+<h2><a class="toc-backref" href="#id2">Exercici 2: Format de text</a><a class="headerlink" href="#ejercicio-2-formato-de-texto" title="Link permanent a aquest títol">¶</a></h2>
+<p>Obriu el <a href="#id1"><span class="problematic" id="id2">`</span></a>Exercici_01.odt</p>
+<p>Deseu el fitxer resultant com a ** &quot;Exercici_02_nombrerealumno.odt &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<img alt="Ejercicio 02 de Writer." class="align-center" src="_images/writer-ej02.png">
+</div>
+<div class="section" id="ejercicio-3-subindices-y-superindices">
+<h2><a class="toc-backref" href="#id3">Exercici 3: Subscripcions i Superince</a><a class="headerlink" href="#ejercicio-3-subindices-y-superindices" title="Link permanent a aquest títol">¶</a></h2>
+<p>En un nou document, escriviu el text següent en format Arial, mida 16. Doneu als subscripcions una mida relativa del 75% i a les enquestes del 58%.</p>
+<p>Deseu el fitxer resultant com a ** &quot;Exercici_03_nombrerealumno.odt &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<img alt="Ejercicio 03 de Writer." class="align-center" src="_images/writer-ej03.png">
+</div>
+<div class="section" id="ejercicio-4-formato-de-parrafo">
+<h2><a class="toc-backref" href="#id4">Exercici 4: Format de paràgraf</a><a class="headerlink" href="#ejercicio-4-formato-de-parrafo" title="Link permanent a aquest títol">¶</a></h2>
+<p>El <a class="reference external" href="../_estàtic/tutorial-writer/escriptor/cas/exercici_04.odt" rel="noopener noreferrer" target="_blank">Exercici_04.odt</a> conté quatre paràgrafs. Doneu a cada paràgraf el format indicat a la vostra declaració.</p>
+<p>També haureu d’utilitzar el <a class="reference external" href="../_static/tutorial-writer/cas/exercici_04.jpg" rel="noopener noreferrer" target="_blank">Exercici_04.jpg</a></p>
+<p>Deseu el fitxer resultant com a ** &quot;Exercici_04_nombrerealumno.odt &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</div>
+<div class="section" id="ejercicio-5-comentarios">
+<h2><a class="toc-backref" href="#id5">Exercici 5: comentaris</a><a class="headerlink" href="#ejercicio-5-comentarios" title="Link permanent a aquest títol">¶</a></h2>
+<p>Obriu el document que heu creat l'any anterior ** &quot;Exercici_04_name.dt &quot; ** i afegiu els comentaris següents:</p>
+<ul class="simple">
+<li>Al paràgraf 1: &quot;Canvieu la font Arial per Verdana &quot;.</li>
+<li>Al paràgraf 2: &quot;Aquesta imatge de fons s'ha d'eliminar i posar un color &quot;.</li>
+</ul>
+<p>Deseu el fitxer resultant com a ** &quot;Exercici_05_nombrerealumno.odt &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</div>
+<div class="section" id="ejercicio-6-formato-de-pagina-y-formas">
+<h2><a class="toc-backref" href="#id6">Exercici 6: Format i formes de pàgina</a><a class="headerlink" href="#ejercicio-6-formato-de-pagina-y-formas" title="Link permanent a aquest títol">¶</a></h2>
+<p>Obriu un document nou, doneu -li la mida A4 i ** Orientació horitzontal <a href="#id1"><span class="problematic" id="id2">**</span></a>. Poseu ** vores ** i un ** color de fons ** a la pàgina (utilitzeu els valors que vulgueu).</p>
+<p>Introduïu ** Cinc formes ** de la barra d’eines de dibuix de diferents categories. Diferents formats als formularis (farcit, línia, extrusió, ...) i en un d'ells escriu el nom ** i el cognom <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Deseu el fitxer resultant com a ** &quot;Exercici_06_NOMBREALUMNO.ODT &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</div>
+<div class="section" id="ejercicio-7-corrector">
+<h2><a class="toc-backref" href="#id7">Exercici 7: corrector</a><a class="headerlink" href="#ejercicio-7-corrector" title="Link permanent a aquest títol">¶</a></h2>
+<p>Al document `` 07.odt &lt;../_ static/tutorial-writer/escriptor/cas/exercici_07.odt&gt;`__ Hi ha tres errors d’ortografia. Utilitzeu l'ortografia ** ortografia i gramàtica ** per corregir -les.</p>
+<p>Seleccioneu les paraules corregides i canvieu el seu format a la mida negreta 14.</p>
+<p>Deseu el fitxer resultant com a ** &quot;Exercici_07_nombrerealumno.odt &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</div>
+<div class="section" id="ejercicio-8-columnas">
+<h2><a class="toc-backref" href="#id8">Exercici 8: columnes</a><a class="headerlink" href="#ejercicio-8-columnas" title="Link permanent a aquest títol">¶</a></h2>
+<p>Obriu el fitxer corregit de l'exercici anterior. Distribuïu el text en columnes amb les següents característiques:</p>
+<ul class="simple">
+<li>** Primer paràgraf: ** Dues columnes de la mateixa amplada, espaiades 1 cm amb una línia de separació d’1 punt d’amplada i verd.</li>
+<li>** Segon paràgraf: ** Dues columnes, la de l'esquerra de 5 cm d'ample i la de la dreta d'11,50 cm amb un espai entre 0,50 cm.</li>
+<li>** Tercer paràgraf: ** Tres columnes d’amplada igual amb un espai entre 0,30 cm.</li>
+</ul>
+<p>Mantingueu el fitxer resultant com a ** &quot;Exercici_08_NOMBREALUMNO.ODT &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</div>
+<div class="section" id="ejercicio-9-pegado-especial">
+<h2><a class="toc-backref" href="#id9">Exercici 9: Stick especial</a><a class="headerlink" href="#ejercicio-9-pegado-especial" title="Link permanent a aquest títol">¶</a></h2>
+<p>Busqueu informació sobre Wikipedia sobre un escriptor o escriptor que us agradi. Utilitzant la part de còpia &quot;especial enganxada&quot; del contingut de Wikipedia en un nou document de text, sense fer front a hiperenllaços ni el format original.</p>
+<p>Deseu el fitxer resultant com a ** &quot;Exercici_09_NOMBREALUMNO.ODT &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</div>
+<div class="section" id="ejercicio-10-imagenes-e-hiperenlaces">
+<h2><a class="toc-backref" href="#id10">Exercici 10: Imatges i hibernlaques</a><a class="headerlink" href="#ejercicio-10-imagenes-e-hiperenlaces" title="Link permanent a aquest títol">¶</a></h2>
+<p>Obriu el document de text de l'any anterior. La ** Fotografia ** de l'escriptor o escriptor que ha buscat a la Viquipèdia i la col·loca a la part superior dreta de la primera pàgina.</p>
+<p>Al final del document introdueix un formulari ** &quot;Arrow a la dreta &quot; ** de la barra d'eines de dibuix i introdueix un hiperenllaç al lloc web des del qual heu obtingut la informació.</p>
+<p>Deseu el fitxer resultant com a ** &quot;Exercici_10_NOMBREALUMNO.ODT &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</div>
+<div class="section" id="ejercicio-11-curriculum">
+<h2><a class="toc-backref" href="#id11">Exercici 11: Currículum</a><a class="headerlink" href="#ejercicio-11-curriculum" title="Link permanent a aquest títol">¶</a></h2>
+<p>Heu estat el responsable d’escriure el currículum d’una persona.</p>
+<p>Les vostres dades són:</p>
+<img alt="Ejercicio 11 de Writer." class="align-center" src="_images/writer-ej11.png">
+<p>Inseriu la imatge <a class="reference external" href="../_static/tutorial-writer/escriptor/cas/exercici_11.jpg" rel="noopener noreferrer" target="_blank">Exercici_11.jpg</a> al currículum.</p>
+<p>El disseny serà gratuït. Utilitzeu els formats de text i paràgraf que vulgueu.</p>
+<p>Deseu el fitxer resultant com a ** &quot;Exercici_11_nombrerealumno.odt &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</div>
+<div class="section" id="ejercicio-12-encabezado-y-pie-de-pagina">
+<h2><a class="toc-backref" href="#id12">Exercici 12: capçalera i peu de pàgina</a><a class="headerlink" href="#ejercicio-12-encabezado-y-pie-de-pagina" title="Link permanent a aquest títol">¶</a></h2>
+<p>Obriu el document de text <a class="reference external" href="../_Static/Tutorial-Writer/Writer/Cas/Exercici_12.odt" rel="noopener noreferrer" target="_blank">Exercici_12.odt</a>. Inseriu a totes les seves pàgines la capçalera següent: ** &quot;Preàmbul de la llei orgànica 2/2006, del 3 de maig, de l'educació &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Canvieu el format d'aquesta capçalera a Arial, mida 9, estil italic i alineació dreta.</p>
+<p>Inseriu al peu de la pàgina ** &quot;Pàgina x de y &quot; ** on x serà el camp ** &quot;Número de pàgina &quot; ** e i serà el camp ** &quot;Pàgines totals &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Deseu el fitxer resultant com a ** &quot;Exercici_12_nombrerealumno.odt &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</div>
+<div class="section" id="ejercicio-13-notas-al-pie-y-al-final">
+<h2><a class="toc-backref" href="#id13">Exercici 13: Notes de peu i al final</a><a class="headerlink" href="#ejercicio-13-notas-al-pie-y-al-final" title="Link permanent a aquest títol">¶</a></h2>
+<p>Obriu el document que heu creat l'any anterior.</p>
+<p>Al final del primer paràgraf, escriviu la nota de pàgina següent: ** &quot;Boe 4 de maig de 2006 &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Al final del segon paràgraf, escriviu la nota de pàgina següent: ** &quot;Podeu accedir al Boe fent clic aquí &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>. A la paraula &quot;aquí &quot; insereix un hiperenllaç al lloc web: ** &quot;www.boe.es &quot; <a href="#id3"><span class="problematic" id="id4">**</span></a>.</p>
+<p>Deseu el fitxer resultant com a ** &quot;Exercici_13_nombrerealumno.odt &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</div>
+<div class="section" id="ejercicio-14-tabuladores">
+<h2><a class="toc-backref" href="#id14">Exercici 14: tabuladors</a><a class="headerlink" href="#ejercicio-14-tabuladores" title="Link permanent a aquest títol">¶</a></h2>
+<p>En un nou document crea tabuladors en posicions:</p>
+<ul class="simple">
+<li>1 cm</li>
+<li>5 cm</li>
+<li>12 cm</li>
+<li>20 cm</li>
+</ul>
+<p>Amb el contingut alineat a l’esquerra.</p>
+<p>Si premeu la tecla TAB introdueix els camps següents:</p>
+<ul class="simple">
+<li>Nom</li>
+<li>Localitat</li>
+<li>Correu electrònic</li>
+<li>Envellir</li>
+</ul>
+<p>A continuació, modifica els tabuladors perquè estiguin separats per punts.</p>
+<p>Escriviu les dades inventades de cinc persones.</p>
+<p>Deseu el fitxer resultant com a ** &quot;Exercici_14_nombrerealumno.odt &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</div>
+<div class="section" id="ejercicio-15-buscar-y-reemplazar">
+<h2><a class="toc-backref" href="#id15">Exercici 15: cerca i substituïu</a><a class="headerlink" href="#ejercicio-15-buscar-y-reemplazar" title="Link permanent a aquest títol">¶</a></h2>
+<p>Obriu el <a class="reference external" href="../_Static/Tutorial-Writer/Writer/Cas/Exercici_15.odt" rel="noopener noreferrer" target="_blank">Exercici_15.odt</a>.</p>
+<p>Amb l'eina ** &quot;Cerca i substituïu &quot; ** busqueu tots els termes &quot;Galicia &quot; del document i substituïu el seu format actual per les següents:</p>
+<ul class="simple">
+<li>Font: Arial</li>
+<li>Mida: 16</li>
+<li>Estil: atrevit</li>
+<li>Color: Blau</li>
+</ul>
+<p>Deseu el fitxer resultant com a ** &quot;Exercici_15_nombrerealumno.odt &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</div>
+<div class="section" id="ejercicio-16-numeracion-y-vinetas">
+<h2><a class="toc-backref" href="#id16">Exercici 16: Número i Viñetas</a><a class="headerlink" href="#ejercicio-16-numeracion-y-vinetas" title="Link permanent a aquest títol">¶</a></h2>
+<p>Escriviu el nom de les quatre províncies Galician en un nou document.</p>
+<p>Copieu i enganxeu la llista dues vegades i utilitzeu els &quot;Numeració i vinyetes &quot; per obtenir un resultat com la imatge següent:</p>
+<img alt="Ejercicio 16 de Writer." class="align-center" src="_images/writer-ej16.png">
+<p>Deseu el fitxer resultant com a ** &quot;Exercici_16_NOMBREALUMNO.ODT &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</div>
+<div class="section" id="ejercicio-17-tablas">
+<h2><a class="toc-backref" href="#id17">Exercici 17: Taules</a><a class="headerlink" href="#ejercicio-17-tablas" title="Link permanent a aquest títol">¶</a></h2>
+<p>Creeu una taula com la imatge següent en un document nou. Podeu utilitzar altres formats de text i colors de fons.</p>
+<img alt="Ejercicio 17 de Writer." class="align-center" src="_images/writer-ej17.png">
+<p>Deseu el fitxer resultant com a ** &quot;Exercici_17_nombrerealumno.odt &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</div>
+<div class="section" id="ejercicio-18-tablas-ii">
+<h2><a class="toc-backref" href="#id18">Exercici 18: Taules (II)</a><a class="headerlink" href="#ejercicio-18-tablas-ii" title="Link permanent a aquest títol">¶</a></h2>
+<p>Creeu una taula amb la vostra programació de classes en un document nou. Utilitzeu els formats que vulgueu.</p>
+<p>Mantingueu el fitxer resultant com ** &quot;Exercici_18_NOMBREALUMNO.ODT &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</div>
+<div class="section" id="ejercicio-19-filtros-de-imagen">
+<h2><a class="toc-backref" href="#id19">Exercici 19: filtres d’imatges</a><a class="headerlink" href="#ejercicio-19-filtros-de-imagen" title="Link permanent a aquest títol">¶</a></h2>
+<p>Creeu una taula de dos i dues columnes. A cadascuna de les cel·les inseriu la imatge `` <a class="reference external" href="../_static/tutorial-writer/escriptor/cas/exercici_04.jpg" rel="noopener noreferrer" target="_blank">04.jpg</a>.</p>
+<p>Horitzontalment i verticalment els centren i s’apliquen a cadascun d’un filtre diferent.</p>
+<p>Deseu el fitxer resultant com a ** &quot;Exercici_19_NOMBREALUMNO.ODT &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</div>
+<div class="section" id="ejercicio-20-secciones">
+<h2><a class="toc-backref" href="#id20">Exercici 20: seccions</a><a class="headerlink" href="#ejercicio-20-secciones" title="Link permanent a aquest títol">¶</a></h2>
+<p>Obriu el document <a class="reference external" href="../_Static/Tutorial-Writer/Writer/Cas/Exercici_20.odt" rel="noopener noreferrer" target="_blank">Exercici_20.odt</a>.</p>
+<p>El document consta de sis seccions. Inseriu salts de pàgina de manera que cada secció només ocupi una pàgina.</p>
+<p>A continuació, inseriu sis seccions i, apliqueu un format de pàgina (orientació, color de fons, vores, etc.) diferent de la resta.</p>
+<p>Deseu el fitxer resultant com ** &quot;Exercici_20_namerumno.odt &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</div>
+<div class="section" id="ejercicio-21-indice">
+<h2><a class="toc-backref" href="#id21">Exercici 21: Índex</a><a class="headerlink" href="#ejercicio-21-indice" title="Link permanent a aquest títol">¶</a></h2>
+<p>Obriu el fitxer ** &quot;Exercici_20_namer.</p>
+<p>Deseu el fitxer resultant com a ** &quot;Exercici_21_namerumno.odt &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</div>
+<div class="section" id="ejercicio-22-portada">
+<h2><a class="toc-backref" href="#id22">Exercici 22: coberta</a><a class="headerlink" href="#ejercicio-22-portada" title="Link permanent a aquest títol">¶</a></h2>
+<p>Obriu el fitxer ** &quot;Exercici_21_namer. En ell, inseriu un ** &quot; fontwork &quot;** amb el text: ** &quot; perifèrics de l'ordinador &quot;<a href="#id1"><span class="problematic" id="id2">**</span></a>. Afegiu el vostre nom ** i cognom <a href="#id3"><span class="problematic" id="id4">**</span></a>.</p>
+<p>Deseu el fitxer resultant com a ** &quot;Exercici_22_nombrerealumno.odt &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</div>
+<div class="section" id="ejercicio-23-convertir-tabla-en-texto">
+<h2><a class="toc-backref" href="#id23">Exercici 23: Converteix la taula en text</a><a class="headerlink" href="#ejercicio-23-convertir-tabla-en-texto" title="Link permanent a aquest títol">¶</a></h2>
+<p>Obriu el document <a class="reference external" href="../_Static/Tutorial-Writer/Writer/CAS/Exercici_23.odt" rel="noopener noreferrer" target="_blank">Exercici_23.odt</a>.</p>
+<p>Convertiu la taula en un text mitjançant el punt i mengeu com a separador.</p>
+<p>Deseu el fitxer resultant com a ** &quot;Exercici_23_nombrerealumno.odt &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</div>
+<div class="section" id="ejercicio-24-proteger-un-documento">
+<h2><a class="toc-backref" href="#id24">Exercici 24: protegir un document</a><a class="headerlink" href="#ejercicio-24-proteger-un-documento" title="Link permanent a aquest títol">¶</a></h2>
+<p>Obriu el fitxer ** &quot;Exercici_23_namer.odt &quot; ** que heu creat l'any anterior.</p>
+<p>Guardeu -ho com ** &quot;Exercici_24_namer.odt &quot; ** protegit amb contrasenya ** 12345 <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</div>
+<div class="section" id="ejercicio-25-formulario">
+<h2><a class="toc-backref" href="#id25">Exercici 25: Forma</a><a class="headerlink" href="#ejercicio-25-formulario" title="Link permanent a aquest títol">¶</a></h2>
+<p>Imagineu -vos que un equip esportiu de la vostra ciutat (futbol, ​​bàsquet, ...) té cura d’un formulari per recollir les dades dels nous socis.</p>
+<p>Creeu un formulari que inclogui una imatge de l’equip de l’equip i diversos camps amb les dades personals dels socis (nom, cognom, adreça, telèfon, etc.).</p>
+<p>Introduïu tres botons d’opció per al pagament de la quota:</p>
+<ul class="simple">
+<li>Mensual</li>
+<li>Trimestral</li>
+<li>Anual</li>
+</ul>
+<p>Els socis només poden marcar una de les tres opcions.</p>
+<p>Deseu el fitxer resultant com a ** &quot;Exercici_25_nombrerealumno.odt &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</div>
+<div class="section" id="ejercicio-26-formulario-ii">
+<h2><a class="toc-backref" href="#id26">Exercici 26: Forma (II)</a><a class="headerlink" href="#ejercicio-26-formulario-ii" title="Link permanent a aquest títol">¶</a></h2>
+<p>Obriu el fitxer ** &quot;Exercici_25_namer.odt &quot; ** que vau crear l'any anterior.</p>
+<p>Protegeix amb la contrasenya ** 12345 ** Totes les parts del formulari, excepte els camps que han de ser coberts pels socis.</p>
+<p>Mantingueu el fitxer resultant com a ** &quot;Exercici_26_nombrerealumno.odt &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</div>
+<div class="section" id="ejercicio-27-formulario-iii">
+<h2><a class="toc-backref" href="#id27">Exercici 27: Forma (iii)</a><a class="headerlink" href="#ejercicio-27-formulario-iii" title="Link permanent a aquest títol">¶</a></h2>
+<p>Obriu el fitxer ** &quot;Exercici_26_namer.</p>
+<p>Genera un PDF perquè els socis puguin omplir -lo i imprimir -lo.</p>
+<p>Deseu el fitxer resultant com a ** &quot;Exercici_27_nombrerealumno.pdf &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</div>
+<div class="section" id="ejercicio-28-caracteres-especiales-y-formulas">
+<h2><a class="toc-backref" href="#id28">Exercici 28: caràcters i fórmules especials</a><a class="headerlink" href="#ejercicio-28-caracteres-especiales-y-formulas" title="Link permanent a aquest títol">¶</a></h2>
+<p>Inserir caràcters especials i utilitzar la fórmula assistent escriu en un nou document Les fórmules següents:</p>
+<img alt="Ejercicio 28 de Writer." class="align-center" src="_images/writer-ej28.png">
+<p>Deseu el fitxer resultant com a ** &quot;Exercici_28_nombrerealumno.odt &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</div>
+<div class="section" id="ejercicio-29-combinar-correspondencia">
+<h2><a class="toc-backref" href="#id29">Exercici 29: Combina la correspondència</a><a class="headerlink" href="#ejercicio-29-combinar-correspondencia" title="Link permanent a aquest títol">¶</a></h2>
+<p>Creeu un document de text que contingui una carta similar a la de la imatge següent, dirigida a tots els clients que figuren al full de càlcul <a href="#id1"><span class="problematic" id="id2">`</span></a>Exercici</p>
+<p>Utilitzeu els formats de tipus de lletra, el text, el paràgraf i la pàgina que vulgueu.</p>
+<img alt="Ejercicio 29 de Writer." class="align-center" src="_images/writer-ej29.png">
+<p>Deseu el fitxer resultant com a ** &quot;Exercici_29_NOMBREALUMNO.ODT &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</div>
+<div class="section" id="ejercicio-30-combinar-correspondencia-ii">
+<h2><a class="toc-backref" href="#id30">Exercici 30: Combina la correspondència (II)</a><a class="headerlink" href="#ejercicio-30-combinar-correspondencia-ii" title="Link permanent a aquest títol">¶</a></h2>
+<p>Creeu un document de text que contingui la mateixa carta que l'any anterior, però que només es dirigeixi als clients de la província de Pontevedra.</p>
+<p>Deseu el fitxer resultant com a ** &quot;Exercici_30_nombrerealumno.odt &quot; <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</div>
+<div class="section" id="creditos">
+<h2><a class="toc-backref" href="#id31">Crèdits</a><a class="headerlink" href="#creditos" title="Link permanent a aquest títol">¶</a></h2>
+<p>Autor dels exercicis originals: José Manuel Blanco Guimarey</p>
+<p>Llicència: <a href="#id1"><span class="problematic" id="id2">`</span></a>Creative Commons By-NC-S</p>
+<p>Font: <a class="reference external" href="../_static/tutorial-writer/escriptor/index.html" rel="noopener noreferrer" target="_blank">Exercicis proposats</a></p>
+<p>Crèdits tutorials: <a class="reference external" href="../_static/tutorial-writer/escriptor/docs/creditos.html" rel="noopener noreferrer" target="_blank">crèdits</a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="writer-index.html" class="btn btn-neutral float-right" title="Escriptor 7 Tutorial" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="informatica-tutowriter.html" class="btn btn-neutral" title="1. Pràctiques guiades per a escriptors" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/informatica-writer-ejercicios.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="informatica-index.html">Informàtica</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="informatica-hardware-index.html">Maquinari de l'ordinador</a></li>
+<li class="toctree-l2"><a class="reference internal" href="informatica-software-index.html">Programari informàtic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="informatica-tutoimpress.html">Tutorial impressionant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="informatica-calc-index.html">Tutorial de Calc</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="informatica-writer-index.html">Tutorial d'escriptors</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="informatica-tutowriter.html">1. Pràctiques guiades per a escriptors</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">2. Exercicis d’escriptors</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="writer-index.html">Escriptor 7 Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="informatica-tutogimp.html">Tutorial GIMP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inkscape-index.html">Tutorial de paisatge a Inkscape</a></li>
+<li class="toctree-l2"><a class="reference internal" href="html-index.html">Tutorial HTML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="css-index.html">Tutorial CSS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="informatica-ciberseguridad-index.html">Ciberseguretat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="informatica-machine-learning.html">Intel·ligència artificial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="informatica-recursos.html">Recursos per a la informàtica</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programació</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Electrònica - Electrònica digital - 10. La taula de veritat">
+  <title>10. La taula de veritat - Electrònica digital - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/electronic-truth-table.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="11. Codi gris" href="electronic-gray-code.html">
+  <link rel="prev" title="9. Les lleis de De Morgan" href="electronic-morgan-laws.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="electronic-index.html">Electrònica</a>/</li>
+        
+          <li><a href="electronic-digital-index.html">Electrònica digital</a>/</li>
+        
+      <li><span class="section-number">10. </span>La taula de veritat</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/electronic-truth-table.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/electronic-truth-table.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="la-tabla-de-verdad">
+<span id="electronic-truth-table"></span><h1><span class="section-number">10. </span>La taula de veritat<a class="headerlink" href="#la-tabla-de-verdad" title="Link permanent a aquest títol">¶</a></h1>
+<p>En qüestions passades hem vist què és una taula de veritat d’una porta lògica. Sobre aquest tema veurem, pas a pas, com crear la taula de veritat de qualsevol circuit combinatiu.</p>
+<p>Els passos per crear la taula de veritat d’un circuit són:</p>
+<ol class="arabic">
+<li><p class="first">Nomenar cadascuna de les entrades del circuit amb una lletra majúscula de l’alfabet, a, b, c, etc.</p>
+</li>
+<li><p class="first">Poseu un nom a cadascuna de les sortides del circuit amb un o més un número, O1, O2, O3, etc.</p>
+</li>
+<li><p class="first">Dibuixa una taula amb tantes columnes com el nombre de bitllets més el nombre de sortides té el circuit.</p>
+<p>A la primera fila de la taula col·locarem el nom de les entrades A, B, C, etc. i el nom de les sortides O1, O2, O3, etc.</p>
+</li>
+<li><p class="first">Acabeu de dibuixar a la taula tantes files com sigui necessari (2 elevades al nombre d’entrades).</p>
+<p>Per a 2 entrades, 4 files.</p>
+<p>Per a 3 entrades, 8 files.</p>
+<p>Per a 4 entrades, 16 files.</p>
+</li>
+<li><p class="first">Número en binari Les files corresponents a les entrades.</p>
+</li>
+<li><p class="first">Per a cada combinació d’entrades, calculeu els punts de sortida del circuit i dibuixeu -los a la taula.</p>
+</li>
+</ol>
+<div class="section" id="ejercicio-resuelto">
+<h2>Exercici resolt<a class="headerlink" href="#ejercicio-resuelto" title="Link permanent a aquest títol">¶</a></h2>
+<p>Dibuixa la taula de veritat del circuit següent de 3 entrades i 1 sortida.</p>
+<div class="video-center">
+<iframe src="/circuits/index.html?startCircuit=digital-combinational-01.txt"></iframe>
+</div><ol class="arabic">
+<li><p class="first">Nomenem entrades com A, B, C.</p>
+</li>
+<li><p class="first">Nomenem la sortida com a O1.</p>
+</li>
+<li><p class="first">Dibuixem la taula i a la primera fila col·loquem el nom de les entrades i sortides.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/electronic-truth-table-01.png"><img alt="Tabla de verdad de tres entradas y una salida." src="_images/electronic-truth-table-01.png" style="width: 210px;"></a>
+</div>
+</li>
+<li><p class="first">Acabem de dibuixar la taula amb 8 files lliures (2^3 = 8) per poder numerar totes les entrades possibles.</p>
+</li>
+<li><p class="first">Numerem les files corresponents a les entrades del binari.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/electronic-truth-table-02.png"><img alt="Tabla de verdad de tres entradas y una salida, con las entradas numeradas." src="_images/electronic-truth-table-02.png" style="width: 210px;"></a>
+</div>
+</li>
+<li><p class="first">Finalment, col·loquem cadascuna de les 8 combinacions d’entrades al circuit i escrivim la seva sortida a la columna O1.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/electronic-truth-table-03.png"><img alt="Tabla de verdad de tres entradas y una salida rellena." src="_images/electronic-truth-table-03.png" style="width: 210px;"></a>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="ejercicios">
+<h2>Exercicis<a class="headerlink" href="#ejercicios" title="Link permanent a aquest títol">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Dibuixa la taula de veritat del següent circuit.</p>
+<div class="video-center">
+<iframe src="/circuits/index.html?startCircuit=digital-combinational-02.txt"></iframe>
+</div></li>
+<li><p class="first">Dibuixa la taula de veritat del següent circuit.</p>
+<div class="video-center">
+<iframe src="/circuits/index.html?startCircuit=digital-combinational-03.txt"></iframe>
+</div></li>
+<li><p class="first">Dibuixa la taula de veritat del següent circuit.</p>
+<div class="video-center">
+<iframe src="/circuits/index.html?startCircuit=digital-combinational-04.txt"></iframe>
+</div></li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="electronic-gray-code.html" class="btn btn-neutral float-right" title="11. Codi gris" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="electronic-morgan-laws.html" class="btn btn-neutral" title="9. Les lleis de De Morgan" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/electronic-truth-table.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="electronic-index.html">Electrònica</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="electronic-components-index.html">Components electrònics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electronic-analog-index.html">Electrònica analògica</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="electronic-digital-index.html">Electrònica digital</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="electronic-digital-signals.html">1. Senyals digitals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-error-detection.html">2. Detecció d'errors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-error-correction.html">3. Correcció d'errors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-binary.html">4. El sistema binari</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-gate-not.html">5. La porta lògica no</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-gate-or.html">6. La porta lògica o</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-gate-and.html">7. La lògica i</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-gate-xor.html">8. La porta lògica xor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-morgan-laws.html">9. Les lleis de De Morgan</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">10. La taula de veritat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-gray-code.html">11. Codi gris</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-karnaugh.html">12. Mapa de Karnaugh</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="electronic-bornas-index.html">Cablejat de components electrònics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electronic-pcb-luces-led.html">Circuit imprès amb llums LED</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programació</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

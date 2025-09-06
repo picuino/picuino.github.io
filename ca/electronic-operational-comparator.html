@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Electrònica - Electrònica analògica - 22. El comparador">
+  <title>22. El comparador - Electrònica analògica - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/electronic-operational-comparator.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="23. El comparador amb la histèresi" href="electronic-operational-hysteresis.html">
+  <link rel="prev" title="21. El Detector de Peak" href="electronic-operational-peakdetector.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="electronic-index.html">Electrònica</a>/</li>
+        
+          <li><a href="electronic-analog-index.html">Electrònica analògica</a>/</li>
+        
+      <li><span class="section-number">22. </span>El comparador</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/electronic-operational-comparator.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/electronic-operational-comparator.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="el-comparador">
+<span id="electronic-operational-comparator"></span><h1><span class="section-number">22. </span>El comparador<a class="headerlink" href="#el-comparador" title="Link permanent a aquest títol">¶</a></h1>
+<p>El comparador és un circuit electrònic similar a l’amplificador operatiu, amb la diferència d’especialitzat en donar una sortida digital, que es connecta a la tensió positiva o a la tensió d’alimentació negativa, sense proporcionar tensions intermèdies.</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/electronic-analog-oa.png"><img alt="Símbolo del comparador." src="_images/electronic-analog-oa.png" style="width: 200px;"></a>
+<p class="caption"><span class="caption-text">Símbol del comparador.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>Els terminals comparadors són els mateixos terminals que un amplificador operatiu. La diferència entre tots dos consisteix en el seu funcionament intern, molt més ràpid i especialitzat en donar-li tot.</p>
+<dl class="docutils">
+<dt>Terminals de comparació reial:</dt><dd><ul class="simple">
+<li>Terminal d’entrada negativa.</li>
+<li>Terminal d’entrada positiu.</li>
+<li>Terminal de sortida.</li>
+<li>Terminal d’alimentació positiva.</li>
+<li>Terminal d’alimentació negativa.</li>
+</ul>
+</dd>
+</dl>
+<div class="section" id="funcionamiento">
+<h2>Operació<a class="headerlink" href="#funcionamiento" title="Link permanent a aquest títol">¶</a></h2>
+<p>Un comparador és un component electrònic similar a l'amplificador operatiu. Té dos terminals d’entrada de tensió que es comparen i un terminal de sortida que proporciona una tensió que depèn de la tensió d’entrada que sigui més gran. Si l’entrada positiva té una tensió superior a l’entrada negativa, la tensió de sortida serà positiva. Per contra, si l’entrada negativa té una tensió superior a l’entrada positiva, la tensió de sortida serà negativa.</p>
+<p>La diferència ** ** del comparador respecte a l'amplificador operatiu és que la seva sortida està preparada per proporcionar valors extrems. La sortida es connectarà a la tensió d'alimentació positiva o al voltatge negatiu d'alimentació. Aquest circuit no està preparat per donar valors de tensió intermedis.</p>
+<p>Un avantatge del comparador és que la vostra resposta és molt més ràpida que la resposta d’un amplificador operatiu equivalent.</p>
+</div>
+<div class="section" id="simulacion">
+<h2>Simulació<a class="headerlink" href="#simulacion" title="Link permanent a aquest títol">¶</a></h2>
+<p>Al circuit següent podem veure un comparador que funciona com a detector de lluminositat. El circuit il·lumina una làmpada quan el detector de llum detecta poca lluminositat fora de casa.</p>
+<p>Aquest comparador té una sortida que es diu a &quot;Open Collector &quot; i això vol dir que només és capaç de connectar la sortida de tensió negativa. Per tant, el circuit necessita la resistència R4 per obtenir una tensió positiva a la sortida.</p>
+<p>Aquesta resistència R4 s’anomena “resistència a l’enrotllament &lt;<a class="reference external" href="https://en.wikipedia.org/wiki/pull-up_resistor" rel="noopener noreferrer" target="_blank">https://en.wikipedia.org/wiki/pull-up_resistor</a>&gt;`__ perquè 'aixeca' la tensió de sortida cap a valors positius.</p>
+<div class="video-center">
+<iframe src="/circuits/index.html?startCircuit=oa-comparator-1.txt"></iframe>
+</div></div>
+<div class="section" id="ejercicios">
+<h2>Exercicis<a class="headerlink" href="#ejercicios" title="Link permanent a aquest títol">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Dibuixeu el símbol d’un comparador.</p>
+</li>
+<li><p class="first">Expliqueu amb les vostres paraules el funcionament d’un comparador.</p>
+</li>
+<li><p class="first">Quants terminals té un comparador real? Per a què serveix cadascun?</p>
+</li>
+<li><p class="first">Quines diferències té un comparador pel que fa a un amplificador operatiu?</p>
+</li>
+<li><p class="first">Per a què serveix una resistència a l’abast i per a què serveix?</p>
+<p>Per què és necessària la resistència a l’accés en alguns comparadors?</p>
+</li>
+<li><p class="first">Quin tipus de comentaris creieu que té el circuit de simulació? Raona la teva resposta.</p>
+</li>
+<li><p class="first">Dibuixa un circuit que utilitzi un comparador per detectar la lluminositat ambiental i encendre una làmpada quan l’entorn sigui fosc.</p>
+</li>
+<li><p class="first">Modifiqueu la simulació anterior perquè la làmpada s’encengui quan hi ha molta llum al sensor i desactiveu -la quan hi ha poca llum.</p>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="electronic-operational-hysteresis.html" class="btn btn-neutral float-right" title="23. El comparador amb la histèresi" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="electronic-operational-peakdetector.html" class="btn btn-neutral" title="21. El Detector de Peak" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/electronic-operational-comparator.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="electronic-index.html">Electrònica</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="electronic-components-index.html">Components electrònics</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="electronic-analog-index.html">Electrònica analògica</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="electronic-diodo.html">1. El díode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-diodo-rectificador.html">2. El díode rectificador</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-diodo-limitador.html">3. El díode limitant</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-diodo-zener.html">4. El díode zener</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-diodo-led.html">5. El díode LED</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bjt.html">6. El transistor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bjt-common-e.html">7. El transistor en comú emissor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bjt-common-c.html">8. El transistor del col·leccionista comú</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bjt-common-b.html">9. Transistor a la base comuna</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bjt-darlington.html">10. L’esquema de Darlington</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bjt-pushpull.html">11. L’esquema Push-Pull</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bjt-diferencial.html">12. La part diferencial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bjt-current.html">13. La font actual</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-mosfet.html">14. El transistor MOSFET</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-operational.html">15. L'amplificador operatiu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-operational-follower.html">16. L'amplificador de seguidors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-operational-inverting.html">17. L'amplificador d'inversions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-operational-adder.html">18. L’amplificador d’estiu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-operational-noninverting.html">19. L'amplificador no inversor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-operational-differential.html">20. L'amplificador diferencial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-operational-peakdetector.html">21. El Detector de Peak</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">22. El comparador</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-operational-hysteresis.html">23. El comparador amb la histèresi</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="electronic-digital-index.html">Electrònica digital</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electronic-bornas-index.html">Cablejat de components electrònics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electronic-pcb-luces-led.html">Circuit imprès amb llums LED</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programació</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

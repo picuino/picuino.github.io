@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. 5. Mata als Marcianitos">
+  <title>5. Mata als Marcianitos - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/scratch-marcianitos.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+      <li><span class="section-number">5. </span>Mata als Marcianitos</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/scratch-marcianitos.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/scratch-marcianitos.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="matar-marcianitos">
+<span id="scratch-marcianitos"></span><h1><span class="section-number">5. </span>Mata als Marcianitos<a class="headerlink" href="#matar-marcianitos" title="Link permanent a aquest títol">¶</a></h1>
+<a class="reference internal image-reference" href="_images/scratch-p05-juego.png"><img alt="_images/scratch-p05-juego.png" src="_images/scratch-p05-juego.png" style="width: 240px;"></a>
+<p>En aquesta pràctica programarem un joc que consisteix a matar marcians que cauen des de la part superior de la pantalla amb el làser d’una nau espacial.</p>
+<p>; BR |</p>
+<ol class="arabic">
+<li><p class="first">Comencem el | Editor_de_scratch <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Eliminem el gat prement -li amb el botó dret del ratolí i, a continuació, fem clic.</p>
+<p>; Suprimeix-Gato |</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Canviarem els antecedents de l’escenari amb ** estrelles <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Premeu el botó nou.</p>
+<p>; CHANGE-SCENARY |</p>
+<p>A continuació, fem clic al tema de l'espai ** <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>A continuació, seleccionem el fons ** estrelles <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>La pantalla serà la següent.</p>
+<img alt="_images/scratch-p05-stars.png" src="_images/scratch-p05-stars.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">Afegim un caràcter nou, una nau espacial ** <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Premeu el botó d'objecte nou | Objecte nou |</p>
+<p>A continuació, fem clic al tema de l'espai ** <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>A continuació, seleccionem l'objecte ** naus espacial <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<img alt="_images/scratch-spaceship.png" src="_images/scratch-spaceship.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">Afegim un personatge nou, un ** botó blau ** que servirà per fer el rodatge.</p>
+<p>Premeu el botó d'objecte nou | Objecte nou |</p>
+<p>A continuació, fem clic a les coses de la categoria ** <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>A continuació, seleccionem l'objecte ** Botó2 <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<img alt="_images/scratch-button2.png" src="_images/scratch-button2.png">
+<p>Ara, feu clic al botó ** i <a href="#id1"><span class="problematic" id="id2">**</span></a>, canviem el seu nom per ** Shot **</p>
+<img alt="_images/scratch-p05-disparo.png" src="_images/scratch-p05-disparo.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">Afegim un ** Sea Star <a href="#id1"><span class="problematic" id="id2">**</span></a>, que actuarà com a Marciano.</p>
+<p>Premeu el botó d'objecte nou | Objecte nou |</p>
+<p>A continuació, premem els animals de la categoria ** <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>A continuació, seleccionem l'objecte ** Starfish <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<img alt="_images/scratch-starfish.png" src="_images/scratch-starfish.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">Afegim la variable ** punts <a href="#id1"><span class="problematic" id="id2">**</span></a>, que comptarà el nombre de punts acumulats mentre juguem.</p>
+<p>Dins de la pestanya Dades | Dades <a href="#id1"><span class="problematic" id="id2">|</span></a>,</p>
+<p>Premeu Creeu una variable | Create-variable |</p>
+<p>Canviem el nom de la variable per ** punts **</p>
+<img alt="_images/scratch-variable-puntos.png" src="_images/scratch-variable-puntos.png">
+<p>Finalment, premeu el botó ** ok **</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara anirem al programa de naus espacials</p>
+<img alt="_images/scratch-p05-spaceship.png" src="_images/scratch-p05-spaceship.png">
+<p>I allà creem el següent programa.</p>
+<a class="reference internal image-reference" href="_images/scratch-p05-spaceship-prog1.png"><img alt="_images/scratch-p05-spaceship-prog1.png" src="_images/scratch-p05-spaceship-prog1.png" style="width: 443px;"></a>
+<p>Aquestes instruccions inicien el programa esborrant els punts variables, canvien la mida de la nau espacial i el col·loca a la part inferior de la pantalla.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Continuem programant la nau espacial.</p>
+<a class="reference internal image-reference" href="_images/scratch-p05-spaceship-prog2.png"><img alt="_images/scratch-p05-spaceship-prog2.png" src="_images/scratch-p05-spaceship-prog2.png" style="width: 487px;"></a>
+<p>Aquest bloc mou la nau espacial d’esquerra a dreta i acaba el programa quan un martic toca el vaixell.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Amb una altra funció petita, el vaixell pot disparar el seu làser.</p>
+<a class="reference internal image-reference" href="_images/scratch-p05-spaceship-prog3.png"><img alt="_images/scratch-p05-spaceship-prog3.png" src="_images/scratch-p05-spaceship-prog3.png" style="width: 514px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Intentarem que tot funcioni correctament prement la bandera verda i movent la nau a l’esquerra i a la dreta amb les tecles del cursor.</p>
+<p>El làser funcionarà més tard quan programem l'objecte ** Shot <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</li>
+</ol>
+<div class="section" id="disparo-laser">
+<h2>Xut làser<a class="headerlink" href="#disparo-laser" title="Link permanent a aquest títol">¶</a></h2>
+<ol class="arabic" start="12">
+<li><p class="first">Ara anirem al programa d'objectes ** Shot **</p>
+<img alt="_images/scratch-p05-disparo.png" src="_images/scratch-p05-disparo.png">
+<p>I allà programarem la seva operació.</p>
+<a class="reference internal image-reference" href="_images/scratch-p05-disparo-prog1.png"><img alt="_images/scratch-p05-disparo-prog1.png" src="_images/scratch-p05-disparo-prog1.png" style="width: 628px;"></a>
+<p>Aquest programa situa l’inici del làser a la pantalla inferior (y = -120),</p>
+<p>Col·loqueu el botó verticalment (adreça 0)</p>
+<p>i redueix la mida del botó blau per semblar un tret (mida fins al 20%)</p>
+<p>A continuació, cada clon apareix a la posició actual de la nau espacial i es mou fins arribar a la pantalla, on desapareix.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">En aquest moment, podeu provar el funcionament dels trets amb la nau espacial.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="marcianos">
+<h2>Marcians<a class="headerlink" href="#marcianos" title="Link permanent a aquest títol">¶</a></h2>
+<ol class="arabic" start="14">
+<li><p class="first">Ara anirem al programa d'objectes ** Starfish **</p>
+<img alt="_images/scratch-p05-starfish.png" src="_images/scratch-p05-starfish.png">
+<p>I anem a programar el comportament dels marcians al començament del programa.</p>
+<a class="reference internal image-reference" href="_images/scratch-p05-starfish-prog1.png"><img alt="_images/scratch-p05-starfish-prog1.png" src="_images/scratch-p05-starfish-prog1.png" style="width: 519px;"></a>
+<p>Aquest programa inicia 10 marcians a la part superior de la pantalla i està creant cada moment més marcians.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">El programa que gestioni cadascun dels marcians serà el següent.</p>
+<a class="reference internal image-reference" href="_images/scratch-p05-starfish-prog2.png"><img alt="_images/scratch-p05-starfish-prog2.png" src="_images/scratch-p05-starfish-prog2.png" style="width: 494px;"></a>
+<p>Al començament d’un nou marcià, apareix a la part superior de la pantalla, en una posició aleatòria.</p>
+<p>Si un tret toca un marcià, desapareix i el comptador de punts augmenta un punt</p>
+<p>Si el martic toca la vora inferior, això desapareix i el comptador de punts disminueix 10 punts.</p>
+<p>Cada segona meitat, el marcià baixa a la part inferior de la pantalla.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Aquest és el moment de provar tots els programes junts i jugar als Marcianitos durant un temps.</p>
+<p>; BR |</p>
+</li>
+</ol>
+</div>
+<hr class="docutils">
+<div class="section" id="ejercicios">
+<h2>Exercicis<a class="headerlink" href="#ejercicios" title="Link permanent a aquest títol">¶</a></h2>
+<ol class="arabic simple">
+<li>Canvieu els paràmetres del programa per ajustar la vostra dificultat fent que apareguin més marcians per a la segona i baixa.</li>
+<li>Afegiu una funció de tir doble per a la nau espacial per prémer la tecla &quot;fletxa up &quot;</li>
+<li>Afegiu una barrera que protegeixi la nau espacial durant un segon per prémer &quot;fletxa cap avall &quot;.</li>
+<li>Inventeu una altra modificació original del programa.</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/scratch-marcianitos.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programació</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

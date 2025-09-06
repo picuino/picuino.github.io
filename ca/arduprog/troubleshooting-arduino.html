@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Arduino - Recursos - Solució de problemes amb Arduino">
+  <title>Solució de problemes amb Arduino - Recursos - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/arduprog/troubleshooting-arduino.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="../_static/opensearch.xml">
+
+  <link rel="stylesheet" href="../_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="../genindex.html">
+  <link rel="index" title="Índex" href="../content.html">
+  <link rel="search" title="Cerca" href="../search.html">
+  <link rel="next" title="Afegiu una llibreria a Arduino" href="add-library.html">
+  <link rel="prev" title="Recursos" href="resource-index.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../content.html"><img src="../_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../content.html">Home</a>/</li>
+        
+          <li><a href="index.html">Arduino</a>/</li>
+        
+          <li><a href="resource-index.html">Recursos</a>/</li>
+        
+      <li>Solució de problemes amb Arduino</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/arduprog/troubleshooting-arduino.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="../contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/arduprog/troubleshooting-arduino.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="solucion-de-problemas-con-arduino">
+<span id="troubleshooting-arduino"></span><h1>Solució de problemes amb Arduino<a class="headerlink" href="#solucion-de-problemas-con-arduino" title="Link permanent a aquest títol">¶</a></h1>
+<div class="section" id="esta-conectada-la-placa-arduino">
+<h2>La placa Arduino està connectada?<a class="headerlink" href="#esta-conectada-la-placa-arduino" title="Link permanent a aquest títol">¶</a></h2>
+<p>El cable USB s’ha de connectar a l’ordinador i a la placa Arduino. L’ordinador ha d’estar encès.</p>
+<p>Si tot ha anat bé, la placa Arduino mostra un LED d’encesa anomenat LED de ** Power on <a href="#id1"><span class="problematic" id="id2">**</span></a>:</p>
+<a class="reference internal image-reference" href="../_images/img-0099.jpg"><img alt="Ledes de la placa Arduino UNO." class="align-center" src="../_images/img-0099.jpg" style="width: 400px;"></a>
+</div>
+<div class="section" id="esta-instalado-el-entorno-de-arduino">
+<h2>L’entorn Arduino està instal·lat?<a class="headerlink" href="#esta-instalado-el-entorno-de-arduino" title="Link permanent a aquest títol">¶</a></h2>
+<p>L’entorn ARDUINO IDE es pot descarregar de la pàgina oficial del projecte a la pestanya &quot;Programari&quot;, pressionant el sistema operatiu adequat a la secció &quot;Descarregueu la IDE Arduino&quot;:</p>
+<blockquote>
+<div><a class="reference external" href="https://www.arduino.cc/en/software" rel="noopener noreferrer" target="_blank">https://www.arduino.cc/en/software</a></div></blockquote>
+<p>Un cop descarregat el programa, s’ha d’instal·lar a l’ordinador. També és necessari instal·lar els controladors de manera que l’ordinador reconegui la placa Arduino quan estigui connectat a un port USB.</p>
+<img alt="Icono del entorno IDE de Arduino." class="align-center" src="../_images/arduino-desktop-icon.png">
+</div>
+<div class="section" id="esta-configurada-la-placa-correcta">
+<h2>La placa correcta està configurada?<a class="headerlink" href="#esta-configurada-la-placa-correcta" title="Link permanent a aquest títol">¶</a></h2>
+<p>A les `` eines ... Placa: `` o a les versions antigues `` Eines ... Targeta ... `` Heu de configurar la mateixa placa Arduino connectada a l'ordinador. El model més comú és &quot;Arduino Uno`, però depèn de la placa que es connecta.</p>
+<p>Tant la placa com el port seleccionat es poden veure a la cantonada inferior dreta de l’entorn Arduino:</p>
+<img alt="Configuración de placa y puerto de comunicación serie." class="align-center" src="../_images/img-0037_board.png">
+</div>
+<div class="section" id="esta-configurado-el-puerto-correcto">
+<h2>El port adequat està configurat?<a class="headerlink" href="#esta-configurado-el-puerto-correcto" title="Link permanent a aquest títol">¶</a></h2>
+<p>Hi ha diversos ports en sèrie a l’ordinador. Només un d’aquests ports en sèrie pertany a la placa d’Arduino i aquest és el que hem de configurar.</p>
+<p>El port de comunicacions seleccionat es pot veure a la part inferior dreta de l’entorn Arduino:</p>
+<img alt="Configuración de placa y puerto de comunicación serie." class="align-center" src="../_images/img-0037_port.png">
+<p>Per canviar -lo, heu de prémer el port adequat `` eines ... port ... ``</p>
+<p>Per verificar que el port està ben configurat, es pot obrir el monitor de la sèrie i que els LED de comunicacions de la placa Arduino han de parpellejar. Una altra prova és intentar enviar un programa. Mentre carregueu el programa, els LED de comunicacions han de parpellejar.</p>
+</div>
+<div class="section" id="estan-instalados-los-drivers-adecuados">
+<h2>Els controladors adequats estan instal·lats?<a class="headerlink" href="#estan-instalados-los-drivers-adecuados" title="Link permanent a aquest títol">¶</a></h2>
+<p>Si l’entorn Arduino ja està instal·lat i l’ordinador no reconeix la placa Arduino en connectar -la, el problema es pot solucionar instal·lant els controladors que inclouen el programari de l’entorn Arduino.</p>
+<p>A continuació, es mostren diverses versions dels controladors d'Arduino. Després de descarregar el fitxer, el programari d’instal·lació s’ha de desglossar i executar.</p>
+<ul class="simple">
+<li><a class="reference external" href="../../_Static/Downloads/Arduino-1813-Win-Drivers.zip" rel="noopener noreferrer" target="_blank">Arduino 1.8.1 Controladors per a Windows</a></li>
+<li><a class="reference external" href="../../_Static/Downloads/Arduino-106-Win-Drivers.zip" rel="noopener noreferrer" target="_blank">Controladors Arduino 1.0.6 per a Windows</a></li>
+</ul>
+<p>Si s’utilitza una placa compatible amb Arduino amb un xip de comunicacions ** CH340 <a href="#id1"><span class="problematic" id="id2">**</span></a>, cal instal·lar un altre controlador diferent de l’estàndard:</p>
+<ul class="simple">
+<li><cite>Xip de comunicacions CH340. Controlador per a Windows &lt;../../_ Static/Descàrregues/CH340-WIN-DIRRER-V31.ZIP&gt; `</cite> `</li>
+<li><cite>Pàgina de Microsoft Per descarregar el controlador ch340 &lt;http://catalog.update.microsoft.com/v7/site/scopeviewredirect.aspx?updateid=be9c8169-b12b-475f-81b8-3d3e69181e8c&gt;</cite> `` `` `` `` `` `` `` `` `` `` `` `` `` `` `` `` `` `` `</li>
+</ul>
+</div>
+<div class="section" id="existe-un-cortocircuito">
+<h2>Hi ha un curtcircuit?<a class="headerlink" href="#existe-un-cortocircuito" title="Link permanent a aquest títol">¶</a></h2>
+<p>Si sembla que la placa Arduino està connectada correctament i, malgrat això, el LED d’encesa es manté apagat, és possible que els cables connectats a Arduino estiguin mal connectats i causin un curtcircuit. Per comprovar aquest error, s'ha de desconnectar el cable connectat al terminal &quot;5V&quot; i el cable connectat al terminal &quot;vin&quot;.</p>
+</div>
+<div class="section" id="funcionan-las-comunicaciones-del-cable-usb">
+<h2>Funcionen les comunicacions de cables USB?<a class="headerlink" href="#funcionan-las-comunicaciones-del-cable-usb" title="Link permanent a aquest títol">¶</a></h2>
+<p>Un altre problema que pot sorgir amb el cable USB és que els fils de comunicacions es tallen mentre els fils alimentaris funcionen correctament. En aquest cas, el LED de la placa Arduino s’encendrà, però l’ordinador no reconeixerà la placa i les comunicacions no funcionaran.</p>
+<p>La manera més fàcil de verificar que no hi ha problemes amb el cable USB és connectar aquest cable a un altre dispositiu que funciona correctament o canviar el cable per a un altre i comprovar que tot funciona bé.</p>
+</div>
+<div class="section" id="comprobar-si-la-placa-arduino-esta-bien-instalada">
+<h2>Comproveu si la placa Arduino està ben instal·lada<a class="headerlink" href="#comprobar-si-la-placa-arduino-esta-bien-instalada" title="Link permanent a aquest títol">¶</a></h2>
+<p>Per assegurar -se que la placa Arduino està ben instal·lada i tot funciona correctament, es seguiran els passos següents:</p>
+<ol class="arabic">
+<li><p class="first">Obriu l’entorn IDE d’Arduino fent clic a la seva icona:</p>
+<img alt="Icono del entorno IDE de Arduino." src="../_images/arduino-desktop-icon.png">
+</li>
+<li><p class="first">Obriu un programa d’exemple fent clic al `` fitxer ... exemples ... 01.Basics ... Blink``.</p>
+<p>També podeu copiar i enganxar el programa següent a l’entorn d’Arduino.</p>
+<div class="highlight-Arduino notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">// Blink Program</span>
+<span class="kr">void</span> <span class="nb">setup</span><span class="p">()</span> <span class="p">{</span> <span class="nf">pinMode</span><span class="p">(</span><span class="kr">LED_BUILTIN</span><span class="p">,</span> <span class="kr">OUTPUT</span><span class="p">);</span> <span class="p">}</span>
+
+<span class="kr">void</span> <span class="nb">loop</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nf">digitalWrite</span><span class="p">(</span><span class="kr">LED_BUILTIN</span><span class="p">,</span> <span class="kr">HIGH</span><span class="p">);</span> <span class="c1">// turn the LED On</span>
+  <span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>                     <span class="c1">// wait for a second</span>
+  <span class="nf">digitalWrite</span><span class="p">(</span><span class="kr">LED_BUILTIN</span><span class="p">,</span> <span class="kr">LOW</span><span class="p">);</span>  <span class="c1">// turn the LED Off</span>
+  <span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>                     <span class="c1">// wait for a second</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</li>
+<li><p class="first">Finalment, feu clic al programa `` ... Carrega (Ctrl+U) `` per transferir el programa a la placa Arduino.</p>
+</li>
+</ol>
+<p>Si tot ha funcionat correctament, el LED de la placa Arduino començarà a parpellejar amb un temps per un segon i un temps lliure des d’un altre segon.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="add-library.html" class="btn btn-neutral float-right" title="Afegiu una llibreria a Arduino" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="resource-index.html" class="btn btn-neutral" title="Recursos" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="../contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="../manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="../legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="../legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="../genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="../content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../../es/arduprog/troubleshooting-arduino.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../prog-index.html">Programació</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Arduino</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="protoboard-index.html">Circuits amb Protoboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-index.html">Programes</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="resource-index.html">Recursos</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Solució de problemes amb Arduino</a></li>
+<li class="toctree-l3"><a class="reference internal" href="add-library.html">Afegiu una llibreria a Arduino</a></li>
+<li class="toctree-l3"><a class="reference internal" href="component-kit.html">Components per dur a terme projectes amb Arduino</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html">Resolució de problemes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="downloads.html">Descàrregues</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pc42-index.html">Tauler de control PC42</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ardublock-index.html">Ardublock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../picuino-uno-index.html">Shield Picuino One</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="../_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

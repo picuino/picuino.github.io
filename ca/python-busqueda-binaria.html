@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Programació - Tutorial Python - 30. Cerca binària">
+  <title>30. Cerca binària - Tutorial Python - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/python-busqueda-binaria.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="31. Desplaçament de dades" href="python-desplazamiento.html">
+  <link rel="prev" title="29. Cerca de dades" href="python-busqueda.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="prog-index.html">Programació</a>/</li>
+        
+          <li><a href="python-index.html">Tutorial Python</a>/</li>
+        
+      <li><span class="section-number">30. </span>Cerca binària</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/python-busqueda-binaria.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/python-busqueda-binaria.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="busqueda-binaria">
+<span id="python-busqueda-binaria"></span><h1><span class="section-number">30. </span>Cerca binària<a class="headerlink" href="#busqueda-binaria" title="Link permanent a aquest títol">¶</a></h1>
+<p>L’algoritme de cerca binària és més ràpid que l’algoritme de cerca lineal estudiat a la unitat anterior.</p>
+<p>Aquest algoritme aprofita que una llista ja està ordenada per trobar l’element buscat més ràpidament. Aquests són els passos de l'algorisme:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Repetiu -ho tot mentre estigui a punt per cercar.</li>
+<li>Busquem l’element al mig de la llista.</li>
+<li>Si es troba l’element, retorna la posició de l’element que es troba.</li>
+<li>Si l’element buscat és ** major ** que l’element mig de la llista, dividim la llista en dos i només buscarem a la meitat superior de la llista.</li>
+<li>En cas que l’element buscat sigui ** més petit ** que l’element mig de la llista, dividim la llista en dos i només buscarem a la meitat inferior de la llista.</li>
+<li>Si no s'ha trobat l'element, retorna `` cap '' '</li>
+</ol>
+</div></blockquote>
+<div class="section" id="ejemplo-de-busqueda-binaria">
+<h2>Exemple de cerca binària<a class="headerlink" href="#ejemplo-de-busqueda-binaria" title="Link permanent a aquest títol">¶</a></h2>
+<p>Aquest és un exemple de llista per trobar un element, amb les posicions dels números</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">lista</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="mi">44</span><span class="p">,</span> <span class="mi">46</span><span class="p">,</span> <span class="mi">51</span><span class="p">,</span> <span class="mi">53</span><span class="p">,</span> <span class="mi">63</span><span class="p">,</span> <span class="mi">72</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">85</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">89</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">99</span> <span class="p">]</span>
+<span class="c1">#  ^  ^   ^   ^   ^   ^   ^   ^   ^   ^   ^   ^   ^   ^   ^   ^   ^   ^   ^   ^</span>
+<span class="c1">#  0  1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19</span>
+</pre></div>
+</div>
+<p>Anem a buscar l’element 89 d’aquesta llista amb la cerca binària.</p>
+<p>Primer mirem al mig de la llista, la posició 9, que retorna el número 46. Com a 46 és inferior a 89, sabem que l’element buscat només pot estar a la meitat superior de la llista</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">lista</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="mi">44</span><span class="p">,</span> <span class="mi">46</span><span class="p">,</span> <span class="mi">51</span><span class="p">,</span> <span class="mi">53</span><span class="p">,</span> <span class="mi">63</span><span class="p">,</span> <span class="mi">72</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">85</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">89</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">99</span> <span class="p">]</span>
+<span class="c1">#                                         ^   ^   ^   ^   ^   ^   ^   ^   ^   ^</span>
+<span class="c1">#                                         10  11  12  13  14  15  16  17  18  19</span>
+</pre></div>
+</div>
+<p>Ara mirem a la meitat de la part superior de la llista, a la posició 14, que retorna el número 75. Com a 75 és inferior a 87, sabem que l’element buscat només podria estar a la meitat superior de la llista</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">lista</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="mi">44</span><span class="p">,</span> <span class="mi">46</span><span class="p">,</span> <span class="mi">51</span><span class="p">,</span> <span class="mi">53</span><span class="p">,</span> <span class="mi">63</span><span class="p">,</span> <span class="mi">72</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">85</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">89</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">99</span> <span class="p">]</span>
+<span class="c1">#                                                             ^   ^   ^   ^   ^</span>
+<span class="c1">#                                                             15  16  17  18  19</span>
+</pre></div>
+</div>
+<p>Mirem enrere al mig de la llista superior, a la posició 17, que retorna el número 89. Aquest és l’element buscat, de manera que podem tornar la posició 17.</p>
+<p>Com podem verificar, amb només 3 comparacions s'ha trobat l'element cercat a la posició 17. Una cerca lineal hauria requerit 18 comparacions en total.</p>
+<p>La cerca binària, per tant, és molt més ràpida que la cerca lineal, sobretot en llistes d’elements molt grans, amb l’inconvenient que heu de cercar en una llista que ja està ordenada.</p>
+</div>
+<div class="section" id="programa-de-busqueda-binaria">
+<h2>Programa de cerca binària<a class="headerlink" href="#programa-de-busqueda-binaria" title="Link permanent a aquest títol">¶</a></h2>
+<p>El programa per dur a terme una cerca binària tindrà dos índexs, `` Home '' i `` Final``. Un apunta al començament de la llista i un altre al final de la llista. Aquests índexs s’actualitzaran ja que sabem quina part de la llista pot contenir l’element buscat</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">busqueda_binaria</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">buscado</span><span class="p">):</span>
+    <span class="n">inicio</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">final</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+
+    <span class="k">while</span> <span class="n">inicio</span> <span class="o">&lt;=</span> <span class="n">final</span><span class="p">:</span>
+        <span class="n">medio</span> <span class="o">=</span> <span class="p">(</span><span class="n">inicio</span> <span class="o">+</span> <span class="n">final</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+        <span class="k">if</span> <span class="n">lista</span><span class="p">[</span><span class="n">medio</span><span class="p">]</span> <span class="o">==</span> <span class="n">buscado</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">medio</span>
+        <span class="k">elif</span> <span class="n">lista</span><span class="p">[</span><span class="n">medio</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">buscado</span><span class="p">:</span>
+            <span class="n">inicio</span> <span class="o">=</span> <span class="n">medio</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">final</span> <span class="o">=</span> <span class="n">medio</span> <span class="o">-</span> <span class="mi">1</span>
+
+    <span class="k">return</span> <span class="kc">None</span>
+
+
+<span class="n">lista</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="mi">44</span><span class="p">,</span> <span class="mi">46</span><span class="p">,</span>
+    <span class="mi">51</span><span class="p">,</span> <span class="mi">53</span><span class="p">,</span> <span class="mi">63</span><span class="p">,</span> <span class="mi">72</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">85</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">89</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">99</span>
+    <span class="p">]</span>
+<span class="n">buscado</span> <span class="o">=</span> <span class="mi">87</span>
+
+<span class="n">resultado</span> <span class="o">=</span> <span class="n">busqueda_binaria</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">buscado</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">resultado</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;El elemento </span><span class="si">{</span><span class="n">buscado</span><span class="si">}</span><span class="s1"> no se encuentra en la lista&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;El elemento </span><span class="si">{</span><span class="n">buscado</span><span class="si">}</span><span class="s1"> se encuentra en la posición </span><span class="si">{</span><span class="n">resultado</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="ejercicios">
+<h2>Exercicis<a class="headerlink" href="#ejercicios" title="Link permanent a aquest títol">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Programa una funció de cerca binària que retorna la posició en què s’ha de col·locar un nou element de manera que s’ordeni dins d’una llista de números ja ordenats.</p>
+<p>Pista</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">posicion_insertar</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">nuevo_numero</span><span class="p">):</span>
+    <span class="n">inicio</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">final</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+
+    <span class="k">while</span> <span class="n">inicio</span> <span class="o">&lt;=</span> <span class="n">final</span><span class="p">:</span>
+        <span class="o">...</span>
+        <span class="o">...</span>
+        <span class="o">...</span>
+
+    <span class="k">return</span> <span class="o">...</span>
+
+
+<span class="n">lista</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="mi">44</span><span class="p">,</span> <span class="mi">46</span><span class="p">,</span>
+    <span class="mi">51</span><span class="p">,</span> <span class="mi">53</span><span class="p">,</span> <span class="mi">63</span><span class="p">,</span> <span class="mi">72</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">85</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">89</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">99</span>
+    <span class="p">]</span>
+
+<span class="n">nuevo_numero</span> <span class="o">=</span> <span class="mi">68</span>
+<span class="n">posicion</span> <span class="o">=</span> <span class="n">posicion_insertar</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">nuevo_numero</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;El número </span><span class="si">{</span><span class="n">nuevo_numero</span><span class="si">}</span><span class="s1"> debería insertarse en la posición </span><span class="si">{</span><span class="n">posicion</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Sortida</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">El</span> <span class="n">número</span> <span class="mi">68</span> <span class="n">debería</span> <span class="n">insertarse</span> <span class="n">en</span> <span class="n">la</span> <span class="n">posición</span> <span class="mi">13</span>
+</pre></div>
+</div>
+<p>Proveu el programa amb els números 7, 25, 48 i 100.</p>
+<p>Els resultats correctes són les posicions 0, 4, 10 i 20.</p>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="python-desplazamiento.html" class="btn btn-neutral float-right" title="31. Desplaçament de dades" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="python-busqueda.html" class="btn btn-neutral" title="29. Cerca de dades" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/python-busqueda-binaria.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="prog-index.html">Programació</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="prog-lang-edu.html">Llenguatges de programació</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-flowchart.html">Diagrames de flux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-unplugged.html">Activitats desconnectades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-codeorg.html">Tutorials de codi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scratch3-index.html">Tutorial Scratch 3</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="python-index.html">Tutorial Python</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="python-intro.html">1. Introducció a la llengua de Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-datos-numeros.html">2. Dades numèriques</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-variables.html">3. Les variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-palabras-reservadas.html">4. Paraules reservades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-comentarios.html">5. Els comentaris</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-print.html">6. La funció: py: funció: `imprimir '</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-input.html">7. La funció: py: funció: `entrada '</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-booleanos.html">8. El tipus booleà</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-if-else.html">9. Judici `` si '' `` else ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-if-and-or-not.html">10. Operadors `` <cite>,</cite> ``, `` no ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-if-anidados.html">11. Judicis `si '' nided</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-if-elif.html">12. Judici `` elif ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for.html">13. Judici `` per ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for-range.html">14. La funció: py: funció: `range '</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for-continue.html">15. Judici &quot;Continua&quot;</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for-break.html">16. Judici `` Break ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for-anidados.html">17. Judicis `` `` anity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-while.html">18. Judici `` mentre ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-funciones.html">19. Definició de funcions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-funciones-argumentos.html">20. Paràmetres amb valors d’omissió</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-textos.html">21. Cadenes de text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-textos-indices.html">22. Índexs de la cadena de text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-textos-metodos.html">23. Mètodes de la cadena de text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-textos-formateo.html">24. Format de la cadena de text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-listas.html">25. Llistes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-listas-indices.html">26. Llista dels índexs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-listas-iteracion.html">27. Iteració de llistes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-listas-metodos.html">28. Llista de mètodes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-busqueda.html">29. Cerca de dades</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">30. Cerca binària</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-desplazamiento.html">31. Desplaçament de dades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-sort-seleccion.html">32. Gestió de la selecció</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-sort-insercion.html">33. Gestió d'inserció</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-recursividad.html">34. Recursió</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-sort-mezcla.html">35. Barrejant l’ordenació</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-codewars.html">36. Codewars katas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-recursos.html">37. Recursos Python</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="prog-recursos.html">Recursos per a la programació</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

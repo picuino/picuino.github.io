@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Arduino - Tauler de control PC42 - 4. Parpelleig LED">
+  <title>4. Parpelleig LED - Tauler de control PC42 - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/arduprog/pc42-led2.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="../_static/opensearch.xml">
+
+  <link rel="stylesheet" href="../_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="../genindex.html">
+  <link rel="index" title="Índex" href="../content.html">
+  <link rel="search" title="Cerca" href="../search.html">
+  <link rel="next" title="5. Botons i estats" href="pc42-key1.html">
+  <link rel="prev" title="3. Encès i desactivació dels LEDs" href="pc42-led1.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../content.html"><img src="../_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../content.html">Home</a>/</li>
+        
+          <li><a href="index.html">Arduino</a>/</li>
+        
+          <li><a href="pc42-index.html">Tauler de control PC42</a>/</li>
+        
+      <li><span class="section-number">4. </span>Parpelleig LED</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/arduprog/pc42-led2.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="../contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/arduprog/pc42-led2.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="parpadeo-de-los-led">
+<span id="pc42-led2"></span><h1><span class="section-number">4. </span>Parpelleig LED<a class="headerlink" href="#parpadeo-de-los-led" title="Link permanent a aquest títol">¶</a></h1>
+<a class="reference internal image-reference" href="../_images/img-0090.jpg"><img alt="LED de colores y RGB." class="align-center" src="../_images/img-0090.jpg" style="width: 300px;"></a>
+<div class="section" id="objetivos">
+<h2>Els pendents<a class="headerlink" href="#objetivos" title="Link permanent a aquest títol">¶</a></h2>
+<ul class="simple">
+<li>Generar parpelleig de LED mitjançant la funció LEDBLINK.</li>
+</ul>
+</div>
+<div class="section" id="la-funcion-ledblink">
+<h2>La funció: CPP: Fun: <a href="#id1"><span class="problematic" id="id2">`</span></a>ledblink '<a class="headerlink" href="#la-funcion-ledblink" title="Link permanent a aquest títol">¶</a></h2>
+<dl class="cpp function">
+<dt id="_CPPv48ledBlinkiii">
+<span id="_CPPv38ledBlinkiii"></span><span id="_CPPv28ledBlinkiii"></span><span id="ledBlink__i.i.i"></span><code class="descname">ledBlink</code><span class="sig-paren">(</span>int <em>ledNum</em>, int <em>time_on</em>, int <em>time_off</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv48ledBlinkiii" title="Link permanent a aquesta definició">¶</a><br></dt>
+<dd><p>Aquesta funció parpelleja un LED amb una certa cadència. Els seus paràmetres són els següents:</p>
+<p>`` lednum``: LED que parpellejarà. Els valors vàlids oscil·len entre 1 per LED D1 a 8 per al color blau del LED D6.</p>
+<p>El LED D6 és un LED RGB, que integra 3 LEDs al seu interior. Els números 6, 7, 8 representen respectivament els colors vermells, verds i blaus del LED D6.</p>
+<p>`` Temps_on ': temps, en mil·lèsimes de segon, que el LED ha de romandre en marxa. Si aquest paràmetre val zero, el LED romandrà en tot el temps.</p>
+<p>`` Temps_off``: temps, en mil·lèsimes de segon, que el LED ha de romandre fora.</p>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">Cada vegada que s’executa la funció: CPP: FUN: <cite>LEDBLINK</cite>, el LED comença la il·luminació del cicle al llarg del temps` TIME_ON``. Es pot utilitzar per sincronitzar l’inici del parpelleig d’un LED. Si la funció: CPP: Fun: <cite>ledblink</cite> s’executa repetidament cada poc temps, el LED es mantindrà tot el temps, ja que el seu temps es reinicia una i altra vegada.</p>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="parpadeo-del-led-d1">
+<h2>LED D1 Flash<a class="headerlink" href="#parpadeo-del-led-d1" title="Link permanent a aquest títol">¶</a></h2>
+<p>En aquest exemple, voleu parpellejar a la LED D1 amb un temps a mig segon i un temps de mig segon. Per tant, el període parpelleig serà de segon. En aquest cas, la funció es donarà a la `` configuració () `` `` `` `</p>
+<div class="highlight-Arduino notranslate" id="led-ledblink"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">// Parpadea el led D1 una vez por segundo</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;Wire.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;PC42.h&gt;</span><span class="cp"></span>
+
+<span class="kr">void</span> <span class="nb">setup</span><span class="p">()</span> <span class="p">{</span>
+   <span class="n">pc</span><span class="p">.</span><span class="nf">begin</span><span class="p">();</span>               <span class="c1">// Inicializar el módulo PC42</span>
+   <span class="n">pc</span><span class="p">.</span><span class="n">ledBlink</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">500</span><span class="p">);</span> <span class="c1">// Parpadea el led D1</span>
+                             <span class="c1">//   500 milésimas de segundo encendido</span>
+                             <span class="c1">//   500 milésimas de segundo apagado</span>
+<span class="p">}</span>
+
+<span class="kr">void</span> <span class="nb">loop</span><span class="p">()</span> <span class="p">{</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<p>Programa equivalent a l’entorn Arcublock:</p>
+<a class="reference internal image-reference" href="../_images/ardublock_ledBlink.png"><img alt="Programa de Ardublock para parpadear el led D1 del panel de control PC42" src="../_images/ardublock_ledBlink.png" style="width: 600px;"></a>
+<p>En aquest enllaç podeu descarregar: Descarregueu: <cite>Fitxer de programa per a Arcublock 'Ledblink' &lt;_downloads/ardublock_ledblink.abp&gt;</cite> `</p>
+</div>
+<div class="section" id="ejercicios">
+<h2>Exercicis<a class="headerlink" href="#ejercicios" title="Link permanent a aquest títol">¶</a></h2>
+<p>Programa el codi necessari per resoldre els problemes següents.</p>
+<ol class="arabic">
+<li><p class="first">Flash el LED D1 i el LED D4 amb un temps d’encesa mig segon i mig segon de temps. Els dos LED s’han d’encendre i desactivar alhora. Utilitzeu la funció: CPP: Fun: <cite>ledblink</cite>.</p>
+</li>
+<li><p class="first">Modifiqueu l'exercici anterior de manera que l'encesa dels dos LED D1 i D4 sigui alternativa, de manera que només un LED està en tot moment. El temps d’encesa de cada LED serà mig segon.</p>
+</li>
+<li><p class="first">Feu que dos LED flaixin alhora amb una freqüència de segon. El LED D1 es programarà amb el `` ledblink (1, 500, 500) <a href="#id1"><span class="problematic" id="id2">``</span></a>, al contrari, el LED D3 es programarà amb el codi següent.</p>
+<div class="highlight-arduino notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kr">void</span> <span class="nb">loop</span><span class="p">()</span> <span class="p">{</span>
+   <span class="n">pc</span><span class="p">.</span><span class="n">ledWrite</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">LED_ON</span><span class="p">);</span>  <span class="c1">// Encender el led D3</span>
+   <span class="nf">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>              <span class="c1">// Esperar medio segundo (500 ms)</span>
+   <span class="n">pc</span><span class="p">.</span><span class="n">ledWrite</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">LED_OFF</span><span class="p">);</span> <span class="c1">// Apagar el led D3</span>
+   <span class="nf">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>              <span class="c1">// Esperar medio segundo (500 ms)</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<p>Heu d’intentar sincronitzar els dos LED per parpellejar alhora ajustant els temps d’encesa modificant el temps de la funció `` de retard (500) <a href="#id1"><span class="problematic" id="id2">`</span></a>.</p>
+</li>
+<li><p class="first">Corregiu els errors sintàctics del programa següent per fer -lo funcionar correctament.</p>
+<div class="highlight-arduino notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">// Programa con errores sintácticos.</span>
+<span class="c1">// Luces de Navidad.</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;Wire.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;PC42.h&gt;</span><span class="cp"></span>
+
+<span class="kr">void</span> <span class="nb">setup</span><span class="p">()</span> <span class="p">{</span>
+   <span class="kr">int</span> <span class="n">time_on</span><span class="p">;</span>   <span class="c1">// Declara la variable time_on como un número entero</span>
+   <span class="kr">int</span> <span class="n">time_off</span><span class="p">;</span>  <span class="c1">// Declara la variable time_off como un número entero</span>
+
+   <span class="n">pc</span><span class="p">.</span><span class="nf">begin</span><span class="p">();</span>    <span class="c1">// Inicializar el módulo PC42</span>
+
+   <span class="c1">// Repite y asigna valores a variable &#39;num&#39; desde 1 hasta 5</span>
+   <span class="k">for</span><span class="p">(</span><span class="kr">int</span> <span class="n">num</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">num</span><span class="o">&lt;=</span><span class="mi">5</span><span class="p">;</span> <span class="n">num</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+
+      <span class="c1">// Tiempo encendido = aleatorio entre 0,5 y 3,0 segundos</span>
+      <span class="n">time_on</span> <span class="o">=</span> <span class="nf">random</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="mi">3000</span><span class="p">)</span>
+
+      <span class="c1">// Tiempo apagado = aleatorio entre 0,5 y 3,0 segundos</span>
+      <span class="n">time_off</span> <span class="o">=</span> <span class="n">Random</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="mi">3000</span><span class="p">)</span>
+
+      <span class="c1">// Parpadea el led &#39;num&#39; un tiempo aleatorio</span>
+      <span class="n">pc</span><span class="p">.</span><span class="n">ledblink</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="n">time_on</span><span class="p">,</span> <span class="n">time_off</span><span class="p">)</span>
+
+<span class="p">}</span>
+
+<span class="kr">void</span> <span class="nb">loop</span><span class="p">()</span> <span class="p">{</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</li>
+<li><p class="first">Feu un flaix LED d’una manera que s’encengui durant dues dècimes de segon cada deu segons, per indicar que el mòdul funciona gastant molt poca energia.</p>
+</li>
+<li><p class="first">Feu un flaix LED d’una manera que s’encengui durant dues dècimes de segon, cada segon.</p>
+</li>
+<li><p class="first">Els primers sis LED s’han d’encendre en seqüència de manera que el LED D1 s’encengui i acabi en el LED D6. Entre l’encesa d’un LED i el següent ha de passar entre 250 i 500 mil·lèsimes de segon. Un cop s’encenguin tots els LED, començaran a sortir pel LED D1 fins que tothom estigui apagat. Nota: Per solucionar aquest problema, només s'ha d'utilitzar una funció: CPP: Fun: <cite>LedBlink</cite> per a cada LED, juntament amb la funció de retard ()` per esperar un temps entre una ignició i la següent.</p>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="pc42-key1.html" class="btn btn-neutral float-right" title="5. Botons i estats" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="pc42-led1.html" class="btn btn-neutral" title="3. Encès i desactivació dels LEDs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="../contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="../manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="../legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="../legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="../genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="../content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../../es/arduprog/pc42-led2.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../prog-index.html">Programació</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Arduino</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="protoboard-index.html">Circuits amb Protoboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-index.html">Programes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="resource-index.html">Recursos</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="pc42-index.html">Tauler de control PC42</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="pc42-intro.html">1. Introducció al panell PC42</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pc42-install.html">2. Instal·lació del panell de control PC42</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pc42-led1.html">3. Encès i desactivació dels LEDs</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">4. Parpelleig LED</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pc42-key1.html">5. Botons i estats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pc42-key2.html">6. Botons i esdeveniments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pc42-key3.html">7. Botons i mostradors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pc42-display1.html">8. Pantalla de 7 segments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pc42-buzzer.html">9. Timbre</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ardublock-index.html">Ardublock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../picuino-uno-index.html">Shield Picuino One</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="../_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

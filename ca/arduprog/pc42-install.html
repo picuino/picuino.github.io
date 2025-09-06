@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Arduino - Tauler de control PC42 - 2. Instal·lació del panell de control PC42">
+  <title>2. Instal·lació del panell de control PC42 - Tauler de control PC42 - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/arduprog/pc42-install.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="../_static/opensearch.xml">
+
+  <link rel="stylesheet" href="../_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="../genindex.html">
+  <link rel="index" title="Índex" href="../content.html">
+  <link rel="search" title="Cerca" href="../search.html">
+  <link rel="next" title="3. Encès i desactivació dels LEDs" href="pc42-led1.html">
+  <link rel="prev" title="1. Introducció al panell PC42" href="pc42-intro.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../content.html"><img src="../_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../content.html">Home</a>/</li>
+        
+          <li><a href="index.html">Arduino</a>/</li>
+        
+          <li><a href="pc42-index.html">Tauler de control PC42</a>/</li>
+        
+      <li><span class="section-number">2. </span>Instal·lació del panell de control PC42</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/arduprog/pc42-install.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="../contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/arduprog/pc42-install.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="instalacion-del-panel-de-control-pc42">
+<span id="pc42-install"></span><h1><span class="section-number">2. </span>Instal·lació del panell de control PC42<a class="headerlink" href="#instalacion-del-panel-de-control-pc42" title="Link permanent a aquest títol">¶</a></h1>
+<div class="section" id="objetivos">
+<h2>Els pendents<a class="headerlink" href="#objetivos" title="Link permanent a aquest títol">¶</a></h2>
+<ul class="simple">
+<li>Connecteu el tauler de control PC42 a una placa Arduino</li>
+<li>Instal·leu: Descarregueu: <cite>Biblioteques necessàries per programar el panell PC42 &lt;_downloads/pc42.zip&gt;</cite> `</li>
+<li>Instal·leu: Descarregueu: <cite>eina Arcublock-Picuino &lt;_Downloads/Arduck-Picuino.Zip&gt;</cite> Per programar amb blocs gràfics</li>
+<li>Instal·leu altres &quot;biblioteques auxiliars d'Arduino. &lt;../../_ static/descàrregues/arduino-libraries.zip&gt;`__</li>
+</ul>
+</div>
+<div class="section" id="instalacion">
+<h2>Instal·lació<a class="headerlink" href="#instalacion" title="Link permanent a aquest títol">¶</a></h2>
+<p>Per instal·lar el tauler de control PC42 PICUINO, cal realitzar dues operacions:</p>
+<ul class="simple">
+<li>Connecteu el panell PC42 a un Arduino per 4 cables masculins-hembra</li>
+<li>Instal·leu la biblioteca de control PC42</li>
+</ul>
+<p>També podeu afegir l’eina de programació de blocs Ardublock.</p>
+</div>
+<div class="section" id="conexion-con-arduino-uno">
+<h2>Connexió amb Arduino One<a class="headerlink" href="#conexion-con-arduino-uno" title="Link permanent a aquest títol">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/img-0088.jpg"><img alt="Conexión Arduino UNO con Panel PC42 r3." class="align-center" src="../_images/img-0088.jpg" style="width: 480px;"></a>
+<p>A la taula següent es mostren les connexions necessàries per comunicar la placa Arduino UNO amb el panell PC42:</p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width:12%;">
+<col style="width:19%;">
+<col style="width:34%;">
+<col style="width:34%;">
+</colgroup>
+<thead style="vertical-align:bottom;">
+<tr class="row-odd"><th class="head">Agulla</th>
+<th class="head">Color</th>
+<th class="head">Tauler PC42</th>
+<th class="head">Arduino One</th>
+</tr>
+</thead>
+<tbody style="vertical-align:top;">
+<tr class="row-even"><td>1</td>
+<td>Blava</td>
+<td>VDD +5V</td>
+<td>VDD +5V</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>Blava</td>
+<td>SDA</td>
+<td>A4</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>Blava</td>
+<td>SCL</td>
+<td>A5</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>Marró</td>
+<td>Gnd 0v</td>
+<td>Gnd 0v</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Les connexions del panell PC42 estan protegides contra la inversió de polaritat, de manera que el panell no es danyarà encara que els cables s’intercanvien. L’única connexió que pot causar danys permanents al panell és una dieta per sobre de 5 volts, que es pot trobar al pin &quot;d'Arduino quan s'alimenta amb bateria externa.</p>
+</div>
+<div class="section" id="conexion-con-arduino-nano">
+<h2>Connexió amb Arduino Nano<a class="headerlink" href="#conexion-con-arduino-nano" title="Link permanent a aquest títol">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/pc42-r3-to-nano.jpg"><img alt="Conexión Arduino Nano con Panel PC42 r3." class="align-center" src="../_images/pc42-r3-to-nano.jpg" style="width: 480px;"></a>
+<p>A la taula següent es mostren les connexions necessàries per comunicar la placa Nano Arduino amb el panell PC42:</p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width:12%;">
+<col style="width:19%;">
+<col style="width:34%;">
+<col style="width:34%;">
+</colgroup>
+<thead style="vertical-align:bottom;">
+<tr class="row-odd"><th class="head">Agulla</th>
+<th class="head">Color</th>
+<th class="head">Tauler PC42</th>
+<th class="head">Arduino Nano</th>
+</tr>
+</thead>
+<tbody style="vertical-align:top;">
+<tr class="row-even"><td>1</td>
+<td>Blava</td>
+<td>VDD +5V</td>
+<td>VDD +5V</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>Blava</td>
+<td>SDA</td>
+<td>A4</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>Blava</td>
+<td>SCL</td>
+<td>A5</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>Marró</td>
+<td>Gnd 0v</td>
+<td>Gnd 0v</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="instalacion-del-entorno-arduino">
+<h2>Instal·lació de l’entorn Arduino<a class="headerlink" href="#instalacion-del-entorno-arduino" title="Link permanent a aquest títol">¶</a></h2>
+<p>Per tal de treballar amb la placa Arduino, cal instal·lar el programari de programació Arduino i els controladors corresponents.</p>
+<p>A la secció de: Ref: <cite>Solució de problemes amb Arduino &lt;Resolució de problemes-Supplies&gt;</cite> Tots els passos per instal·lar el programari de plaques Arduino i resoldre els errors d'instal·lació més freqüents es poden trobar.</p>
+</div>
+<div class="section" id="instalacion-de-la-libreria-para-el-panel-pc42">
+<h2>Instal·lació de la llibreria per al panell PC42<a class="headerlink" href="#instalacion-de-la-libreria-para-el-panel-pc42" title="Link permanent a aquest títol">¶</a></h2>
+<p>Per tal que funcioni el tauler de control PC42, cal descarregar i instal·lar una llibreria per a Arduino.</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p class="first">Descarregueu la llibreria del panell de control PC42 per a Arduino.</p>
+<p>: Descarregueu: <cite>PC42 R3 Bookstore &lt;_Downloads/PC42.zip&gt;</cite></p>
+</li>
+<li><p class="first">Seguiu els passos d’instal·lació descrits a la pàgina següent.</p>
+<p>: Ref: <a href="#id1"><span class="problematic" id="id2">`</span></a>add-library '</p>
+</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="instalacion-de-ardublock">
+<h2>Instal·lació Ardublock<a class="headerlink" href="#instalacion-de-ardublock" title="Link permanent a aquest títol">¶</a></h2>
+<p>Ardublock és una eina per a Arduino que permet programar amb blocs gràfics. Està orientat a facilitar la programació als usuaris sense experiència, simplificant la tasca de realitzar programes amb un entorn gràfic senzill.</p>
+<a class="reference internal image-reference" href="../_images/ardublock-1-4-2.png"><img alt="Ardublock Picuino versión 1.4.2." class="align-center" src="../_images/ardublock-1-4-2.png" style="width: 640px;"></a>
+<p>La versió Arcublock-Picuino és encara més senzilla que el projecte Arcublock original i conté les instruccions necessàries per a la programació del panell de control PC42.</p>
+<p>Per instal·lar la versió més recent d’Ardublock-Picuino, heu de seguir els passos següents:</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p class="first">Descarregueu LA: Descarregueu: <cite>eina Arcublock-Picuino &lt;_downloads/arduck-picuino.zip&gt;</cite></p>
+</li>
+<li><p class="first">Copieu el fitxer al directori Arduino. El directori es pot trobar a l’entorn Arduino, prement el menú:</p>
+<p>`` Arxiu ... preferències ... Ubicació del projecte ''.</p>
+</li>
+<li><p class="first">Descomprimeix el fitxer al directori d'Arduino.</p>
+</li>
+<li><p class="first">Tancar i reobrir l’entorn d’Arduino. La nova eina ha d’aparèixer al menú:</p>
+<p>`` Eines ... ardublock ''</p>
+</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="instalacion-de-librerias-auxiliares-para-arduino">
+<h2>Instal·lació de llibreries auxiliars per a Arduino<a class="headerlink" href="#instalacion-de-librerias-auxiliares-para-arduino" title="Link permanent a aquest títol">¶</a></h2>
+<p>Aquestes biblioteques permeten a la placa Arduino controlar els perifèrics com ara un panell de visualitzadors LCD o emissors i receptors d’infrarojos.</p>
+<p><a class="reference external" href="../../_static/descàrregues/arduino-libraries.zip" rel="noopener noreferrer" target="_blank">Arxiu de llibreries per a Arduino.</a></p>
+<p>En aquest paquet podeu trobar junts les següents llibreries:</p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference external" href="../../_static/descàrregues/dht11.zip" rel="noopener noreferrer" target="_blank">Dht11</a> Control del sensor de la humitat i la temperatura DHT11</li>
+<li><a class="reference external" href="../../_Static/Downloads/Irremote.Zip" rel="noopener noreferrer" target="_blank">Irremote</a> Control de emissors i receptors d'infrarojos</li>
+<li><a class="reference external" href="../../_Static/Descàrregues/LiquidCrystal.zip" rel="noopener noreferrer" target="_blank">LiquidCrystal</a> Visualització del control del panell LCD</li>
+<li><a class="reference external" href="../../_static/descàrregues/newliquidcrystal.zip" rel="noopener noreferrer" target="_blank">NewLiquidcrystal</a> Control de panells de visualitzadors LCD</li>
+<li><a class="reference external" href="../../_static/descàrregues/scoup.zip" rel="noopener noreferrer" target="_blank">Scoop</a> Programació de multitasking</li>
+<li><a class="reference external" href="../../_static/descàrregues/sdplus.zip" rel="noopener noreferrer" target="_blank">Sdplus</a> gestió de memòries sd</li>
+<li><a class="reference external" href="../../_static/descàrregues/makeblock.zip" rel="noopener noreferrer" target="_blank">MakeBlock</a> Gestió de robots i aparells de makeBlock</li>
+<li>: Descarregueu: <cite>PC42 &lt;_Downloads/PC42.ZIP&gt;</cite> PC42 Gestió del panell de control PICUINO</li>
+</ul>
+</div></blockquote>
+<p>Per instal·lar totes les llibreries alhora <a href="#id1"><span class="problematic" id="id2">**</span></a>, heu de seguir els passos següents:</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p class="first">Descarregueu l'arxiu amb les llibreries per arduino &lt;../../_ static/descàrregues/arduino-libraries.zip&gt;`__</p>
+</li>
+<li><p class="first">Copieu el fitxer al directori Arduino. El directori es pot trobar a l’entorn Arduino, prement el menú:</p>
+<p>`` Arxiu ... preferències ... Ubicació del projecte ''.</p>
+</li>
+<li><p class="first">Descomprimeix el fitxer al directori d'Arduino.</p>
+</li>
+<li><p class="first">Tancar i reobrir l’entorn d’Arduino. Les noves llibreries haurien d’aparèixer al menú:</p>
+<p>`` Programa ... Inclou la llibreria ... '</p>
+</li>
+</ol>
+</div></blockquote>
+<p>Per instal·lar llibreries individuals mitjançant l’entorn Arduino, podeu llegir el següent enllaç a: Ref: <cite>Com afegir una llibreria a l’entorn Arduino &lt;den-library&gt;</cite>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="pc42-led1.html" class="btn btn-neutral float-right" title="3. Encès i desactivació dels LEDs" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="pc42-intro.html" class="btn btn-neutral" title="1. Introducció al panell PC42" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="../contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="../manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="../legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="../legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="../genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="../content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../../es/arduprog/pc42-install.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../prog-index.html">Programació</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Arduino</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="protoboard-index.html">Circuits amb Protoboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-index.html">Programes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="resource-index.html">Recursos</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="pc42-index.html">Tauler de control PC42</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="pc42-intro.html">1. Introducció al panell PC42</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">2. Instal·lació del panell de control PC42</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pc42-led1.html">3. Encès i desactivació dels LEDs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pc42-led2.html">4. Parpelleig LED</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pc42-key1.html">5. Botons i estats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pc42-key2.html">6. Botons i esdeveniments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pc42-key3.html">7. Botons i mostradors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pc42-display1.html">8. Pantalla de 7 segments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pc42-buzzer.html">9. Timbre</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ardublock-index.html">Ardublock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../picuino-uno-index.html">Shield Picuino One</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="../_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

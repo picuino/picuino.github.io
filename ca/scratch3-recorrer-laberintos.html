@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Programació - Tutorial Scratch 3 - 14. Walk Labyrinths">
+  <title>14. Walk Labyrinths - Tutorial Scratch 3 - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/scratch3-recorrer-laberintos.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="15. Saltar arbres" href="scratch3-saltar-arboles.html">
+  <link rel="prev" title="13. Rocket terrestre" href="scratch3-aterrizar-cohete.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="prog-index.html">Programació</a>/</li>
+        
+          <li><a href="scratch3-index.html">Tutorial Scratch 3</a>/</li>
+        
+      <li><span class="section-number">14. </span>Walk Labyrinths</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/scratch3-recorrer-laberintos.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/scratch3-recorrer-laberintos.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="recorrer-laberintos">
+<span id="scratch3-recorrer-laberintos"></span><h1><span class="section-number">14. </span>Walk Labyrinths<a class="headerlink" href="#recorrer-laberintos" title="Link permanent a aquest títol">¶</a></h1>
+<p>En aquesta pràctica, programarem un joc que consisteix a viatjar diversos laberints des del seu començament fins al punt final abans que el nostre personatge acabi la seva energia.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p14-screen.png"><img alt="_images/scratch3-p14-screen.png" src="_images/scratch3-p14-screen.png" style="width: 360px;"></a>
+<p>; BR |</p>
+<ol class="arabic">
+<li><p class="first">Comencem el | Editor_de_scratch <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Premeu el botó d'idioma | Botó-Idioma | A la barra superior i va triar ** espanyol <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Eliminem l'objecte CAT prement a la icona del cub d'escombraries.</p>
+<p>; Suprimeix-Gato |</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">A continuació, afegim un personatge nou, una pilota de ** bàsquet <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Premeu el botó Trieu un objecte | Select-objecte <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<p>Estem buscant a la secció ** Sports <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>I seleccionem l'objecte ** Bàsquet <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<img alt="_images/scratch3-objeto-basketball.png" src="_images/scratch3-objeto-basketball.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara crearem la variable ** fase ** que comptarà el nombre de laberints que viatgem. Quan aquesta variable supera els cinc laberints, el programa s’acabarà.</p>
+<p>Premeu el botó variable | Botó-Variables <a href="#id1"><span class="problematic" id="id2">|</span></a>,</p>
+<p>Premeu per crear una variable | Botó-Crear-Variable <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<p>Canviem el nom de la variable a ** fase **</p>
+<img alt="_images/scratch3-p14-variable-fase.png" src="_images/scratch3-p14-variable-fase.png">
+<p>Finalment, feu clic al botó ** acceptar **</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">També crearem la variable ** energia ** que comptarà amb l’energia que tenim per recórrer tots els laberints. Si es buida la variable d’energia, perdrem el joc i el programa s’acabarà.</p>
+<p>Premeu el botó variable | Botó-Variables <a href="#id1"><span class="problematic" id="id2">|</span></a>,</p>
+<p>Premeu per crear una variable | Botó-Crear-Variable <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<p>Canviem el nom de la variable a ** energia **</p>
+<img alt="_images/scratch3-p14-variable-energia.png" src="_images/scratch3-p14-variable-energia.png">
+<p>Finalment, feu clic al botó ** acceptar **</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Creem dos nous blocs anomenats ** mown_x ** i ** mow_y ** que mouran la pilota a la pantalla.</p>
+<p>Primer, feu clic als meus blocs | Botó-Misblos |</p>
+<p>A continuació, feu clic a Creació d’un bloc | Botó-Crear-Block |</p>
+<p>A continuació, canviem el nom del nou bloc a ** mueve_x **</p>
+<p>Primer, feu clic als meus blocs | Botó-Misblos |</p>
+<p>A continuació, feu clic a Creació d’un bloc | Botó-Crear-Block |</p>
+<p>A continuació, canviem el nom del nou bloc a ** mueve_y **</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Realitzem un programa que mou la pilota en les quatre direccions, consumint energia i rebotant a les parets del laberint de manera que no es pugui creuar.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p14-basketball-3.png"><img alt="_images/scratch3-p14-basketball-3.png" src="_images/scratch3-p14-basketball-3.png" style="width: 444px;"></a>
+<a class="reference internal image-reference" href="_images/scratch3-p14-basketball-4.png"><img alt="_images/scratch3-p14-basketball-4.png" src="_images/scratch3-p14-basketball-4.png" style="width: 423px;"></a>
+<p>La pilota encara no es mourà perquè necessitem una altra rutina per trucar a les funcions que hem creat.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara creem un bloc nou, ** Start <a href="#id1"><span class="problematic" id="id2">**</span></a>, que mostrarà la pilota amb una mida petita al començament del laberint.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p14-basketball-2.png"><img alt="_images/scratch3-p14-basketball-2.png" src="_images/scratch3-p14-basketball-2.png" style="width: 212px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Per continuar programant la rutina principal que anomena tots els blocs que hem creat anteriorment.</p>
+<p>Encara no podem canviar els antecedents a &quot;sense_energy &quot; perquè encara no s'ha creat aquest fons. No oblideu canviar -ho després de crear el fons.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p14-basketball-1.png"><img alt="_images/scratch3-p14-basketball-1.png" src="_images/scratch3-p14-basketball-1.png" style="width: 393px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Per acabar el programa de pilota, programarem el comportament quan rebem els missatges de ** start ** i ** acabat <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p14-basketball-5.png"><img alt="_images/scratch3-p14-basketball-5.png" src="_images/scratch3-p14-basketball-5.png" style="width: 207px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara canviarem a ** escenari ** i dins de la pestanya Fons crearem els missatges del joc.</p>
+<p>Primer seleccionem en fons, pinta un fons.</p>
+<img alt="_images/scratch3-p14-pinta-un-fondo.png" src="_images/scratch3-p14-pinta-un-fondo.png">
+<p>A continuació, amb el text ** ** escrivim el missatge següent a la pantalla.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p14-fondo-perdido.png"><img alt="_images/scratch3-p14-fondo-perdido.png" src="_images/scratch3-p14-fondo-perdido.png" style="width: 442px;"></a>
+<p>Canvieu el nom de la disfressa a &quot;sense_energy &quot;.</p>
+<img alt="_images/scratch3-p14-disfraz-sin-energia.png" src="_images/scratch3-p14-disfraz-sin-energia.png">
+<p>No oblideu modificar el programa de pilota de bàsquet ara que aquest antecedent ja està creat.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara tornarem a canviar per ** escenari ** i dins de la pestanya Fons crearem més missatges de joc.</p>
+<p>Seleccionem en fons, pintem un fons.</p>
+<img alt="_images/scratch3-p14-pinta-un-fondo.png" src="_images/scratch3-p14-pinta-un-fondo.png">
+<p>A continuació, amb el text ** ** escrivim el missatge següent a la pantalla.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p14-fondo-terminado.png"><img alt="_images/scratch3-p14-fondo-terminado.png" src="_images/scratch3-p14-fondo-terminado.png" style="width: 449px;"></a>
+<p>Canviem el nom de la disfressa per &quot;acabat &quot;.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Seleccionem de nou per pintar un fons.</p>
+<p>A continuació, amb el text ** ** escrivim el missatge següent a la pantalla.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p14-fondo-finalizado.png"><img alt="_images/scratch3-p14-fondo-finalizado.png" src="_images/scratch3-p14-fondo-finalizado.png" style="width: 443px;"></a>
+<p>Canviem el nom de la disfressa per &quot;acabat &quot;.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Per completar els fons, descarregarem el següent fitxer comprimit que conté diversos laberints al seu interior.</p>
+<p>: Descarregueu: <a href="#id1"><span class="problematic" id="id2">`</span></a>Labyrinths per viatjar. Format postal. &lt;scratch3/scratch3-laberintos.zip&gt; '</p>
+<p>Un cop descarregat, obrim el fitxer zip i extreuem tots els fitxers de laberint dins d’una carpeta coneguda.</p>
+<p>Podeu extreure tots els fitxers fent clic amb el botó dret del ratolí al fitxer zip i seleccionant el `` Extreu -ho tot ...</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">De nou a l'escenari ** <a href="#id1"><span class="problematic" id="id2">**</span></a>, dins de la pestanya Fons, importarem els diferents laberints.</p>
+<p>Primer seleccionem en fons, ** Carregueu un fons <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<img alt="_images/scratch3-p14-carga-un-fondo.png" src="_images/scratch3-p14-carga-un-fondo.png">
+<p>Hem escollit la carpeta on s’han descarregat el fitxer zip anterior i la carpeta on s’han extret els laberints. Pregunteu al vostre professor si no sabeu com continuar en aquest pas.</p>
+<p>Un cop a la carpeta Labyrinth, feu clic al primer laberint i premeu el botó `` obert ''.</p>
+<img alt="_images/scratch3-p14-carga-de-archivos.png" src="_images/scratch3-p14-carga-de-archivos.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">Repetim el pas anterior amb els cinc primers laberints.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Per continuar, programarem el comportament de l’etapa a la pestanya Codi.</p>
+<p>Al començament del programa, establim el valor de la variable de fase en 1 (el número de laberint) i mostrem el primer laberint.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p14-escenario-1.png"><img alt="_images/scratch3-p14-escenario-1.png" src="_images/scratch3-p14-escenario-1.png" style="width: 404px;"></a>
+<p>Cada vegada que rebeu el missatge de ** Start ** Un nou laberint, afegiu -ne un a la variable de fase i mostreu el laberint corresponent. Un cop assolits 6 laberints, el programa haurà acabat i podem acabar el programa amb un missatge guanyador.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p14-escenario-2.png"><img alt="_images/scratch3-p14-escenario-2.png" src="_images/scratch3-p14-escenario-2.png" style="width: 306px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Quan arribi aquest punt, només cal definir quan acabi cada laberint. Per aconseguir -ho, afegirem un objecte nou, una fletxa, que enviarà el missatge de llicència acabat quan toqui la pilota de bàsquet.</p>
+<p>Afegim un personatge nou, ** una fletxa <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Premeu el botó Trieu un objecte | Select-objecte <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<p>Estem buscant a la secció ** tot <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>i seleccionem l'objecte ** Arrow1 <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<img alt="_images/scratch3-objeto-arrow1.png" src="_images/scratch3-objeto-arrow1.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">Realitzem un programa que mostra la fletxa a la cantonada inferior dreta al començament del programa. També ha de ser sempre detectar si es juga la pilota de bàsquet, per acabar el laberint i començar -ne un de nou.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p14-arrow-1.png"><img alt="_images/scratch3-p14-arrow-1.png" src="_images/scratch3-p14-arrow-1.png" style="width: 381px;"></a>
+<p>També programarem que la fletxa s’amaga des del final d’un laberint fins que comenci el laberint següent.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p14-arrow-2.png"><img alt="_images/scratch3-p14-arrow-2.png" src="_images/scratch3-p14-arrow-2.png" style="width: 208px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Premeu la bandera verda | Flag-Verde | Per provar el funcionament del programa.</p>
+<p>; BR |</p>
+</li>
+</ol>
+<hr class="docutils">
+<div class="section" id="retos">
+<h2>Reptes<a class="headerlink" href="#retos" title="Link permanent a aquest títol">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Afegiu un sender blau clar al moviment de la pilota de manera que sabem en tot moment el que ha fet el viatge.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Mesureu la quantitat d’energia que consumeix la pilota per recórrer cada laberint i estableix al principi un valor d’energia just per passar el joc.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Al començament de cada laberint, afegiu -hi petites fruites disperses aleatòriament. Quan la bola toca una d’aquestes fruites, la fruita ha de desaparèixer i afegir energia a la bola.</p>
+<p>S'afegiran fruites com a clons d'una fruita que han de romandre amagades.</p>
+<p>Estableix per a la pilota un valor energètic inicial inferior, de manera que cal recollir diverses fruites per poder acabar tots els laberints amb energia suficient.</p>
+<p>Ajusteu el nombre de fruites i l’energia que afegeix cada fruita de manera que el joc sigui difícil, però es pot acabar.</p>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="scratch3-saltar-arboles.html" class="btn btn-neutral float-right" title="15. Saltar arbres" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="scratch3-aterrizar-cohete.html" class="btn btn-neutral" title="13. Rocket terrestre" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/scratch3-recorrer-laberintos.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="prog-index.html">Programació</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="prog-lang-edu.html">Llenguatges de programació</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-flowchart.html">Diagrames de flux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-unplugged.html">Activitats desconnectades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-codeorg.html">Tutorials de codi</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="scratch3-index.html">Tutorial Scratch 3</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="scratch3-dibujar-disfraces.html">1. Dibuixar disfresses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-volar-personaje.html">2. Gat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-jugar-futbol.html">3. Juga a futbol</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-pasear-escenarios.html">4. Escenaris de caminar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-animar-nombre.html">5. Animar el nom</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-comer-peces.html">6. Menjar peix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-atrapar-bichos.html">7. Captura d'errors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-romper-ladrillos.html">8. Breaks Bricks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-atrapar-manzanas.html">9. Agafar pomes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-matar-marcianitos.html">10. Mata als Marcianitos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-dibujar-espirales.html">11. Dibuixa espirals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-dibujar-flores.html">12. Dibuixa flors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-aterrizar-cohete.html">13. Rocket terrestre</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">14. Walk Labyrinths</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-saltar-arboles.html">15. Saltar arbres</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-retos-codigoescuela.html">16. Rastreja els reptes de la comunitat de Madrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-retos-robotix.html">17. Robotix Reptes per Scratch</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="python-index.html">Tutorial Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-recursos.html">Recursos per a la programació</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

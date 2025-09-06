@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Arduino - Ardublock - 4. Exercicis amb botons">
+  <title>4. Exercicis amb botons - Ardublock - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/arduprog/ardublock-key1.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="../_static/opensearch.xml">
+
+  <link rel="stylesheet" href="../_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="../genindex.html">
+  <link rel="index" title="Índex" href="../content.html">
+  <link rel="search" title="Cerca" href="../search.html">
+  <link rel="next" title="5. Exercicis amb pantalla" href="ardublock-display1.html">
+  <link rel="prev" title="3. Exercicis amb LED, parpellejar" href="ardublock-led2.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../content.html"><img src="../_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../content.html">Home</a>/</li>
+        
+          <li><a href="index.html">Arduino</a>/</li>
+        
+          <li><a href="ardublock-index.html">Ardublock</a>/</li>
+        
+      <li><span class="section-number">4. </span>Exercicis amb botons</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/arduprog/ardublock-key1.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="../contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/arduprog/ardublock-key1.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ejercicios-con-pulsadores">
+<span id="ardublock-key1"></span><h1><span class="section-number">4. </span>Exercicis amb botons<a class="headerlink" href="#ejercicios-con-pulsadores" title="Link permanent a aquest títol">¶</a></h1>
+<p>Programa els blocs necessaris per resoldre els problemes següents.</p>
+<ol class="arabic">
+<li><p class="first">** Poseu el botó.</p>
+<a class="reference internal image-reference" href="../_images/ardublock-key01.png"><img alt="Programa Ardublock. Enciende D1 con pulsador 1." src="../_images/ardublock-key01.png" style="width: 517px;"></a>
+</li>
+<li><p class="first">Completa l'exercici anterior per desactivar el LED D1 si es prem el botó.</p>
+</li>
+<li><p class="first">** Seqüència d’encesa. ** Copieu el programa següent que il·lumina dos LED amb botons. El LED D1 s’encendrà en prémer el botó 1. A continuació, el LED D2 s’encendrà quan prémer el botó 2. El LED D2 no es pot activar abans que el LED D1 s’encengui.</p>
+<a class="reference internal image-reference" href="../_images/ardublock-key02.png"><img alt="Programa Ardublock. Enciende D1 con pulsador 1, D2 con el pulsador 2." src="../_images/ardublock-key02.png" style="width: 517px;"></a>
+</li>
+<li><p class="first">Completeu el programa anterior perquè els botons s’encenguin tots els LED al D6.</p>
+</li>
+<li><p class="first">** Desplaçament de llum. ** Copieu el programa, que funciona de la manera següent:</p>
+<p>Al començament del programa, el LED D1 està encès.</p>
+<p>En prémer el botó 1, el LED D1 s’apagarà i el LED D2 s’encendrà.</p>
+<p>A continuació, quan es prem el botó, el LED D2 s’apagarà i el LED D3 s’encendrà.</p>
+<a class="reference internal image-reference" href="../_images/ardublock-key03.png"><img alt="Programa Ardublock. La luz led se desplaza con los pulsadores hacia la derecha." src="../_images/ardublock-key03.png" style="width: 608px;"></a>
+</li>
+<li><p class="first">Completeu el programa anterior per continuar il·luminant el LED a la dreta fins que arribeu al LED D5.</p>
+<p>Al final, prement el botó 5, el LED D5 s’apagarà i tornarà a apagar el LED D1.</p>
+</li>
+<li><p class="first">** Desplaçament invers. ** Modifiqueu el programa anterior perquè els LED es mostrin de D5 a D1.</p>
+<p>Quan el torn de desactivar el LED D1, el LED D5 s’encendrà de nou.</p>
+</li>
+<li><p class="first">** Encenament bimanual ** Copieu el programa següent que s’encén els LED D1 i D2 en prémer els botons 1 i 2.</p>
+<p>Aquest programa pot servir per actuar una premsa perillosa quan es pressionen alhora, amb les dues mans, dos botons separats els uns dels altres. Això protegeix les mans del perill de la premsa.</p>
+<a class="reference internal image-reference" href="../_images/ardublock-key04.png"><img alt="Programa Ardublock. Encender D1 y D2 al presionar pulsadores 1 y 2 a la vez." src="../_images/ardublock-key04.png" style="width: 576px;"></a>
+</li>
+<li><p class="first">Modifiqueu el programa anterior de manera que els tres LED D1, D2 i D3 s’encenguin prement alhora els tres botons 1, 2 i 3.</p>
+<p>Els tres LED s’han d’apagar en prémer el botó 4.</p>
+</li>
+<li><p class="first">** Bloqueig electrònic. ** Copieu el programa següent que simula un bloqueig electrònic. En prémer per ordre de la seqüència de botons 3, 1 i 5, s’obrirà un bloqueig electrònic. L’obertura s’indica amb la paraula oberta a la pantalla.</p>
+<a class="reference internal image-reference" href="../_images/ardublock-key05.png"><img alt="Programa Ardublock. Cerradura electrónica." src="../_images/ardublock-key05.png" style="width: 829px;"></a>
+</li>
+<li><p class="first">Modifiqueu l'exercici anterior de manera que el bloqueig s'obri prement la seqüència del botó 2, 6, 1 i 4.</p>
+</li>
+</ol>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ardublock-display1.html" class="btn btn-neutral float-right" title="5. Exercicis amb pantalla" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ardublock-led2.html" class="btn btn-neutral" title="3. Exercicis amb LED, parpellejar" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="../contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="../manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="../legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="../legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="../genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="../content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../../es/arduprog/ardublock-key1.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../prog-index.html">Programació</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Arduino</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="protoboard-index.html">Circuits amb Protoboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-index.html">Programes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="resource-index.html">Recursos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pc42-index.html">Tauler de control PC42</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ardublock-index.html">Ardublock</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ardublock-intro.html">1. Introducció a Ardublock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ardublock-led1.html">2. Exercicis amb LED, encès i desactivat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ardublock-led2.html">3. Exercicis amb LED, parpellejar</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">4. Exercicis amb botons</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ardublock-display1.html">5. Exercicis amb pantalla</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ardublock-buzzer1.html">6. Exercicis amb el timbre</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../picuino-uno-index.html">Shield Picuino One</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="../_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Arduino - Tauler de control PC42 - 5. Botons i estats">
+  <title>5. Botons i estats - Tauler de control PC42 - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/arduprog/pc42-key1.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="../_static/opensearch.xml">
+
+  <link rel="stylesheet" href="../_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="../genindex.html">
+  <link rel="index" title="Índex" href="../content.html">
+  <link rel="search" title="Cerca" href="../search.html">
+  <link rel="next" title="6. Botons i esdeveniments" href="pc42-key2.html">
+  <link rel="prev" title="4. Parpelleig LED" href="pc42-led2.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../content.html"><img src="../_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../content.html">Home</a>/</li>
+        
+          <li><a href="index.html">Arduino</a>/</li>
+        
+          <li><a href="pc42-index.html">Tauler de control PC42</a>/</li>
+        
+      <li><span class="section-number">5. </span>Botons i estats</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/arduprog/pc42-key1.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="../contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/arduprog/pc42-key1.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pulsadores-y-estados">
+<span id="pc42-key1"></span><h1><span class="section-number">5. </span>Botons i estats<a class="headerlink" href="#pulsadores-y-estados" title="Link permanent a aquest títol">¶</a></h1>
+<a class="reference internal image-reference" href="../_images/img-0095.jpg"><img alt="Pulsador." class="align-center" src="../_images/img-0095.jpg" style="width: 300px;"></a>
+<div class="section" id="objetivos">
+<h2>Els pendents<a class="headerlink" href="#objetivos" title="Link permanent a aquest títol">¶</a></h2>
+<ul class="simple">
+<li>Llegiu l’estat d’un botó.</li>
+<li>Programa Arduino per respondre a les pulsacions de l'usuari.</li>
+</ul>
+</div>
+<div class="section" id="pulsadores-del-panel-de-control-pc42">
+<h2>Botons de panell de control PC42<a class="headerlink" href="#pulsadores-del-panel-de-control-pc42" title="Link permanent a aquest títol">¶</a></h2>
+<p>El tauler PC42 té un teclat amb sis botons. Cada botó s’identifica amb un número o una constant que porta el seu nom. El nom de cada botó es pot veure a la pantalla d'impressió del circuit imprès. Les sis constants i números que representen els botons són les següents.</p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width:48%;">
+<col style="width:52%;">
+</colgroup>
+<thead style="vertical-align:bottom;">
+<tr class="row-odd"><th class="head">Constant</th>
+<th class="head">Botó</th>
+</tr>
+</thead>
+<tbody style="vertical-align:top;">
+<tr class="row-even"><td>Key_left</td>
+<td>1</td>
+</tr>
+<tr class="row-odd"><td>Key_right</td>
+<td>2</td>
+</tr>
+<tr class="row-even"><td>Key_down</td>
+<td>3</td>
+</tr>
+<tr class="row-odd"><td>Key_up</td>
+<td>4</td>
+</tr>
+<tr class="row-even"><td>Key_enter</td>
+<td>5</td>
+</tr>
+<tr class="row-odd"><td>Key_back</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>El nombre de botons es representarà en aquest manual com a `` keynum``.</p>
+</div>
+<div class="section" id="la-funcion-keypressed">
+<h2>La funció: CPP: Func: <a href="#id1"><span class="problematic" id="id2">`</span></a>KeyPressed '<a class="headerlink" href="#la-funcion-keypressed" title="Link permanent a aquest títol">¶</a></h2>
+<dl class="cpp function">
+<dt id="_CPPv410keyPressedi">
+<span id="_CPPv310keyPressedi"></span><span id="_CPPv210keyPressedi"></span><span id="keyPressed__i"></span>int <code class="descname">keyPressed</code><span class="sig-paren">(</span>int <em>keyNum</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv410keyPressedi" title="Link permanent a aquesta definició">¶</a><br></dt>
+<dd><p>Aquesta funció retorna el valor d’un botó. Retorna el valor 1 Si es prem el botó i 0 si no ho és. El valor d’aquesta funció filtra el soroll elèctric i els rebots.</p>
+<p>El soroll elèctric ** ** són interferències associades a motors elèctrics, interruptors, llums modernes de baix consum o telèfons mòbils. Qualsevol d'aquests dispositius pot fer que es prengui un botó durant un breu moment, fins i tot si no és cert. És molt recomanable filtrar aquest soroll per evitar pulsacions &quot;falses&quot; o &quot;fantasmes&quot;.</p>
+<p>Els rebots són un fenomen que fa que el botó no es posi en contacte durant un període de temps curt, alguns mil·lisegons, just després de prémer -lo perquè la xapa metàl·lica &quot;rebot&quot; i deixa de posar -se en contacte. Aquest fenomen pot fer que la pulsació s’interpreti com a dues pulsacions, de manera que es recomana filtrar -la per eliminar -la.</p>
+<p>L’inconvenient d’aquest filtre de soroll és que aquesta funció té un retard de 20 mil·lisegons per respondre ja que l’estat real del botó canvia fins que retorna el valor correcte.</p>
+<p>Si s'utilitza l'argument `` key_all``, la funció retorna un número que depèn de la suma dels botons que es pressionen.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width:34%;">
+<col style="width:26%;">
+<col style="width:40%;">
+</colgroup>
+<thead style="vertical-align:bottom;">
+<tr class="row-odd"><th class="head">Botó de pressió</th>
+<th class="head">Valor retornat</th>
+<th class="head">Valor retornat (binari)</th>
+</tr>
+</thead>
+<tbody style="vertical-align:top;">
+<tr class="row-even"><td>Key_left</td>
+<td>1</td>
+<td>0B000001</td>
+</tr>
+<tr class="row-odd"><td>Key_right</td>
+<td>2</td>
+<td>0B000010</td>
+</tr>
+<tr class="row-even"><td>Key_down</td>
+<td>4</td>
+<td>0B000100</td>
+</tr>
+<tr class="row-odd"><td>Key_up</td>
+<td>8</td>
+<td>0B001000</td>
+</tr>
+<tr class="row-even"><td>Key_enter</td>
+<td>16</td>
+<td>0B010000</td>
+</tr>
+<tr class="row-odd"><td>Key_back</td>
+<td>32</td>
+<td>0B100000</td>
+</tr>
+</tbody>
+</table>
+<p>Si es prem el botó, la funció retornarà el valor 8. Amb el botó 6 pressionat, la funció retornarà el valor 32. Si els dos botons 4 i 6 es premsen alhora, la funció retornarà la suma de 8 i 32, és a dir, 40.</p>
+<p>; Keynum |</p>
+<p>; Key_values ​​|</p>
+</dd></dl>
+
+</div>
+<div class="section" id="encender-un-led-con-un-pulsador">
+<h2>Enceneu un LED amb un botó<a class="headerlink" href="#encender-un-led-con-un-pulsador" title="Link permanent a aquest títol">¶</a></h2>
+<p>El programa següent s'encendrà el LED D1 quan es prem el botó 1 (`` key_left`))</p>
+<div class="highlight-Arduino notranslate" id="button-keypressed-on"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">// Enciende el led D1 cuando se presione el pulsador 1</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;Wire.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;PC42.h&gt;</span><span class="cp"></span>
+
+<span class="kr">void</span> <span class="nb">setup</span><span class="p">()</span> <span class="p">{</span>
+   <span class="n">pc</span><span class="p">.</span><span class="nf">begin</span><span class="p">();</span>   <span class="c1">// Inicializar el módulo PC42</span>
+<span class="p">}</span>
+
+<span class="kr">void</span> <span class="nb">loop</span><span class="p">()</span> <span class="p">{</span>
+   <span class="kr">int</span> <span class="n">on_off</span><span class="p">;</span>
+   <span class="n">on_off</span> <span class="o">=</span> <span class="n">pc</span><span class="p">.</span><span class="nf">keyPressed</span><span class="p">(</span><span class="n">KEY_LEFT</span><span class="p">);</span> <span class="c1">// Lee el estado del pulsador 1</span>
+   <span class="n">pc</span><span class="p">.</span><span class="n">ledWrite</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">on_off</span><span class="p">);</span>           <span class="c1">// Enciende el led D1 si está</span>
+                                     <span class="c1">// presionado el pulsador 1</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<p>Programa equivalent a l’entorn Arcublock:</p>
+<a class="reference internal image-reference" href="../_images/ardublock_keyPressed.png"><img alt="Programa de Ardublock para encender el led D1 con el pulsador 1 del panel de control PC42" src="../_images/ardublock_keyPressed.png" style="width: 624px;"></a>
+<p>En aquest enllaç podeu descarregar: Descarregueu: <a href="#id1"><span class="problematic" id="id2">`</span></a>Program Archive for Environment</p>
+</div>
+<div class="section" id="apagar-un-led-con-un-pulsador">
+<h2>Apagueu un LED amb un botó<a class="headerlink" href="#apagar-un-led-con-un-pulsador" title="Link permanent a aquest títol">¶</a></h2>
+<p>El programa següent realitzarà la funció contrària a l'anterior</p>
+<div class="highlight-Arduino notranslate" id="button-keypressed-off"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">// Apaga el led D1 presionando el pulsador 1</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;Wire.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;PC42.h&gt;</span><span class="cp"></span>
+
+<span class="kr">void</span> <span class="nb">setup</span><span class="p">()</span> <span class="p">{</span>
+   <span class="n">pc</span><span class="p">.</span><span class="nf">begin</span><span class="p">();</span>                  <span class="c1">// Inicializar el módulo PC42</span>
+<span class="p">}</span>
+
+<span class="kr">void</span> <span class="nb">loop</span><span class="p">()</span> <span class="p">{</span>
+   <span class="kr">int</span> <span class="n">on_off</span><span class="p">;</span>
+   <span class="n">on_off</span> <span class="o">=</span> <span class="n">pc</span><span class="p">.</span><span class="nf">keyPressed</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>   <span class="c1">// Lee el estado del pulsador 1</span>
+   <span class="n">pc</span><span class="p">.</span><span class="n">ledWrite</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">!</span><span class="n">on_off</span><span class="p">);</span>     <span class="c1">// Enciende el led D1 si no está</span>
+                                <span class="c1">// presionado el pulsador 1</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<p>El llenguatge d’Arduino permet escriure l’última funció del programa anterior en moltes altres formes. Aquestes són algunes alternatives que aconsegueixen el mateix resultat.</p>
+<div class="highlight-Arduino notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">// Enciende el led D1 si el pulsador 1 no está presionado</span>
+
+<span class="c1">// Función NOT lógico</span>
+<span class="n">pc</span><span class="p">.</span><span class="n">ledWrite</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">!</span><span class="n">on_off</span><span class="p">);</span>
+
+<span class="c1">// Función Negación binaria</span>
+<span class="n">pc</span><span class="p">.</span><span class="n">ledWrite</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">~</span><span class="n">on_off</span><span class="p">);</span>
+
+<span class="c1">// Función resta</span>
+<span class="n">pc</span><span class="p">.</span><span class="n">ledWrite</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="o">-</span><span class="n">on_off</span><span class="p">);</span>
+
+<span class="c1">// Funciones de comparación</span>
+<span class="n">pc</span><span class="p">.</span><span class="n">ledWrite</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="n">on_off</span> <span class="o">==</span> <span class="mi">0</span><span class="p">));</span>
+<span class="n">pc</span><span class="p">.</span><span class="n">ledWrite</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="n">on_off</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">));</span>
+
+<span class="c1">// Función XOR</span>
+<span class="n">pc</span><span class="p">.</span><span class="n">ledWrite</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">on_off</span> <span class="o">^</span> <span class="mi">1</span><span class="p">);</span>
+</pre></div>
+</td></tr></table></div>
+<p>Com veieu, el llenguatge d’Arduino és molt ric en expressions. Gràcies a això, és un llenguatge molt potent i, al seu torn, complex per aprendre. Per aquest motiu, en els exemples següents apareixerà el nombre mínim d’expressions lògiques, per no complicar l’aprenentatge.</p>
+<p>El programa equivalent a l’entorn Arcublock és més fàcil:</p>
+<a class="reference external image-reference" href="../_downloads/ardublock_keyPressed_2.abp" rel="noopener noreferrer" target="_blank"><img alt="Programa de Ardublock para apagar el led D1 con el pulsador 1 del panel de control PC42" src="../_images/ardublock_keyPressed_2.png" style="width: 668px;"></a>
+<p>: Descarregueu: <cite>Programa d'entorn Arcublock: 'keyPressed_2' &lt;_downloads/ardublock_keypresssed_2.abp&gt;</cite> ``</p>
+</div>
+<div class="section" id="la-funcion-keyvalue">
+<h2>La funció: CPP: Fun: <a href="#id1"><span class="problematic" id="id2">`</span></a>KeyValue '<a class="headerlink" href="#la-funcion-keyvalue" title="Link permanent a aquest títol">¶</a></h2>
+<dl class="cpp function">
+<dt id="_CPPv48keyValuei">
+<span id="_CPPv38keyValuei"></span><span id="_CPPv28keyValuei"></span><span id="keyValue__i"></span>int <code class="descname">keyValue</code><span class="sig-paren">(</span>int <em>keyNum</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv48keyValuei" title="Link permanent a aquesta definició">¶</a><br></dt>
+<dd><p>Aquesta funció és similar a la funció: CPP: Fun: <a href="#id1"><span class="problematic" id="id2">`</span></a>KeyPressed 'View abans. Retorna el valor d’un botó. Si es prem el botó, retorna el valor 1 Si no es prem el botó retorna el valor 0. Aquesta funció no filtra el soroll elèctric tal com fa la funció: CPP: Fun: <a href="#id3"><span class="problematic" id="id4">`</span></a>KeyPressed '.</p>
+<p>Aquesta funció retorna l'estat actual del botó sense filtre i, per tant, pot retornar valors falsos produïts per soroll elèctric o rebots.</p>
+<p>Com a avantatge, aquesta funció retorna el valor del botó sense retard de temps en la resposta.</p>
+<p>; Keynum |</p>
+<p>; Key_values ​​|</p>
+</dd></dl>
+
+</div>
+<div class="section" id="ejercicios">
+<h2>Exercicis<a class="headerlink" href="#ejercicios" title="Link permanent a aquest títol">¶</a></h2>
+<p>Programa el codi necessari per resoldre els problemes següents.</p>
+<ol class="arabic">
+<li><p class="first">Enceneu el LED D1 amb el botó 1 i desactiveu el LED D1 amb el botó 2. Corregiu els errors sintàctics del programa següent. Els errors més habituals són: oblideu el punt i coma al final de la instrucció, canvieu la part superior i la minúscula, oblideu un bracket o parèntesis. Arduino ajuda a trobar errors de dues maneres. Quan escriviu una funció correcta, apareix amb un color taronja. En recopilar el codi, la finestra inferior informa sobre els errors que es troben.</p>
+<div class="highlight-Arduino notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">// Programa con errores.</span>
+<span class="c1">// Enciende el led D1 con el pulsador 1 y</span>
+<span class="c1">// apaga el led D1 con el pulsador 2</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;Wire.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;PC42.h&gt;</span><span class="cp"></span>
+
+<span class="kr">void</span> <span class="nb">setup</span><span class="p">()</span> <span class="p">{</span>
+   <span class="n">pc</span><span class="p">.</span><span class="n">Begin</span><span class="p">();</span>                 <span class="c1">// Inicializar el módulo PC42</span>
+<span class="p">}</span>
+
+<span class="kr">void</span> <span class="nb">loop</span><span class="p">()</span> <span class="p">{</span>
+   <span class="k">if</span> <span class="p">(</span><span class="n">pc</span><span class="p">.</span><span class="n">keypressed</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>       <span class="c1">// Si (pulsador 1 está presionado)</span>
+      <span class="n">pc</span><span class="p">.</span><span class="n">ledWrite</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">LED_ON</span><span class="p">);</span>  <span class="c1">//   Enciende led D1</span>
+   <span class="k">if</span> <span class="p">(</span><span class="n">pc</span><span class="p">.</span><span class="n">keypressed</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>       <span class="c1">// Si (pulsador 2 está presionado)</span>
+      <span class="n">pc</span><span class="p">.</span><span class="n">ledWrite</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">LED_OFF</span><span class="p">)</span>  <span class="c1">//   Apaga el led D1</span>
+</pre></div>
+</td></tr></table></div>
+</li>
+<li><p class="first">Enceneu tots els LED de la següent manera. El LED D1 s’encendrà en prémer el botó 1. Aleshores el LED D2 s’encendrà quan prémer el botó 2. El programa continuarà d’aquesta manera fins a 5 LED encesa. Completeu el programa que apareix a continuació.</p>
+<div class="highlight-Arduino notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">// Programa incompleto.</span>
+<span class="c1">// Enciende todos los ledes uno a uno y por orden</span>
+<span class="c1">// con todos los pulsadores</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;Wire.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;PC42.h&gt;</span><span class="cp"></span>
+
+<span class="kr">void</span> <span class="nb">setup</span><span class="p">()</span> <span class="p">{</span>
+   <span class="n">pc</span><span class="p">.</span><span class="nf">begin</span><span class="p">();</span>   <span class="c1">// Inicializar el módulo PC42</span>
+
+   <span class="c1">// Mientras (pulsador 1 no esta presionado), espera</span>
+   <span class="k">while</span> <span class="p">(</span><span class="n">pc</span><span class="p">.</span><span class="nf">keyPressed</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">);</span>
+
+   <span class="c1">// Enciende el led D1</span>
+   <span class="n">pc</span><span class="p">.</span><span class="n">ledWrite</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">LED_ON</span><span class="p">);</span>
+
+
+<span class="p">}</span>
+
+<span class="kr">void</span> <span class="nb">loop</span><span class="p">()</span> <span class="p">{</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<p>Programa equivalent a l’entorn Arcublock:</p>
+<a class="reference external image-reference" href="../_downloads/ardublock_keyPressed_3.abp" rel="noopener noreferrer" target="_blank"><img alt="Programa de Ardublock para encender una secuencia de led con los pulsadores" src="../_images/ardublock_keyPressed_3.png" style="width: 669px;"></a>
+<p>: Descarregueu: <a href="#id1"><span class="problematic" id="id2">`</span></a>Programa d'entorn Arcublock:</p>
+</li>
+<li><p class="first">Al principi, el LED D1 s’encendrà. Quan es prem el primer botó, el LED D1 s’apagarà i el següent LED s’encendrà. La llum es traslladarà a la dreta al LED D5. En prémer el botó 5, el LED D5 s’apagarà i s’encendrà el LED D1 LED. Completeu el programa que apareix a continuació segons els comentaris.</p>
+<div class="highlight-Arduino notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">// Programa incompleto.</span>
+<span class="c1">// Mover la luz de los ledes hacia la derecha</span>
+<span class="c1">// con los pulsadores</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;Wire.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;PC42.h&gt;</span><span class="cp"></span>
+
+<span class="kr">int</span> <span class="n">i</span><span class="p">;</span>
+
+<span class="kr">void</span> <span class="nb">setup</span><span class="p">()</span> <span class="p">{</span>
+   <span class="n">pc</span><span class="p">.</span><span class="nf">begin</span><span class="p">();</span>              <span class="c1">// Inicializar el módulo PC42</span>
+   <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>                   <span class="c1">// El primer led encendido es el 1</span>
+<span class="p">}</span>
+
+<span class="kr">void</span> <span class="nb">loop</span><span class="p">()</span> <span class="p">{</span>
+   <span class="n">pc</span><span class="p">.</span><span class="n">ledWrite</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">LED_ON</span><span class="p">);</span>   <span class="c1">// Enciende el led i</span>
+   <span class="k">if</span> <span class="p">(</span><span class="n">pc</span><span class="p">.</span><span class="nf">keyPressed</span><span class="p">(</span><span class="n">i</span><span class="p">))</span> <span class="p">{</span>   <span class="c1">// Si (pulsador i está presionado)</span>
+      <span class="n">pc</span><span class="p">.</span>                    <span class="c1">//    Apaga el led i</span>
+      <span class="n">i</span> <span class="o">=</span>                    <span class="c1">//    Aumenta i en una unidad</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">&gt;</span> <span class="mi">6</span><span class="p">)</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>      <span class="c1">// Si (i es mayor que 6) i vale 1</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<p>Programa equivalent a l’entorn Arcublock:</p>
+<a class="reference external image-reference" href="../_downloads/ardublock_keyPressed_4.abp" rel="noopener noreferrer" target="_blank"><img alt="Programa de Ardublock para encender una secuencia de led con los pulsadores" src="../_images/ardublock_keyPressed_4.png" style="width: 672px;"></a>
+<p>: Descarregueu: <cite>Programa de l'entorn Arcublock: 'keyPressed_4' &lt;_downloads/ardublock_keypresssed_4.abp&gt;</cite> ``</p>
+</li>
+<li><p class="first">Modifiqueu el programa anterior perquè els LED es mostrin de D6 a D1. Quan arribi el torn de la LED D1, el LED D6 tornarà a encendre.</p>
+</li>
+<li><p class="first">Els tres LEDES D1, D2 i D3 s’encendran quan els tres botons 1, 2 i 3. Utilitzeu l’operador '&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;AL que avalua si es produeixen dues condicions alhora. Completeu el programa que apareix a continuació segons els comentaris.</p>
+<div class="highlight-Arduino notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">// Programa incompleto.</span>
+<span class="c1">// Enciende los ledes D1, D2, D3 cuando</span>
+<span class="c1">// se presionen los pulsadores 1, 2 y 3</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;Wire.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;PC42.h&gt;</span><span class="cp"></span>
+
+<span class="kr">void</span> <span class="nb">setup</span><span class="p">()</span> <span class="p">{</span>
+   <span class="n">pc</span><span class="p">.</span><span class="nf">begin</span><span class="p">();</span>                <span class="c1">// Inicializar el módulo PC42</span>
+<span class="p">}</span>
+
+<span class="kr">void</span> <span class="nb">loop</span><span class="p">()</span> <span class="p">{</span>
+
+   <span class="k">if</span> <span class="p">(</span><span class="n">pc</span><span class="p">.</span><span class="nf">keyPressed</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="o">&amp;&amp;</span>   <span class="c1">// Si ( (pulsador 1 presionado) y</span>
+       <span class="n">pc</span><span class="p">.</span><span class="nf">keyPressed</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>  <span class="o">&amp;&amp;</span>   <span class="c1">//      (pulsador 2 presionado) y</span>
+       <span class="n">pc</span><span class="p">.</span><span class="nf">keyPressed</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span> <span class="p">{</span>    <span class="c1">//      (pulsador 3 presionado))</span>
+      <span class="n">pc</span><span class="p">.</span>                     <span class="c1">//    Enciende los ledes D1, D2 y D3</span>
+
+
+   <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<p>Programa equivalent a l’entorn Arcublock:</p>
+<a class="reference external image-reference" href="../_downloads/ardublock_keyPressed_5.abp" rel="noopener noreferrer" target="_blank"><img alt="Programa de Ardublock para encender una secuencia de led con los pulsadores" src="../_images/ardublock_keyPressed_5.png" style="width: 680px;"></a>
+<p>: Descarregueu: <cite>Programa de l'entorn Arcublock: 'keyPressed_5' &lt;_downloads/ardublock_keypresssed_5.abp&gt;</cite> ``</p>
+</li>
+<li><p class="first">Després de prémer per tal de la seqüència del botó 2, 4 i 1, s’obrirà un bloqueig electrònic. L’obertura s’indicarà il·luminant els LEDs vermells, grocs i verds, un cada segon. Completa els forats del programa que apareix a continuació segons els comentaris.</p>
+<div class="highlight-Arduino notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">// Programa incompleto.</span>
+<span class="c1">// Cerradura electrónica</span>
+<span class="c1">// Presionar la secuencia 2, 4, 1 para abrir la cerradura</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;Wire.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;PC42.h&gt;</span><span class="cp"></span>
+
+<span class="kr">int</span> <span class="nf">step</span><span class="p">;</span>
+
+<span class="kr">void</span> <span class="nb">setup</span><span class="p">()</span> <span class="p">{</span>
+   <span class="n">pc</span><span class="p">.</span><span class="nf">begin</span><span class="p">();</span>   <span class="c1">// Inicializar el módulo PC42</span>
+   <span class="nf">step</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>     <span class="c1">// Espera la pulsación del primer pulsador</span>
+<span class="p">}</span>
+
+<span class="kr">void</span> <span class="nb">loop</span><span class="p">()</span> <span class="p">{</span>
+
+   <span class="c1">// Si (etapa del programa es 1)</span>
+   <span class="k">if</span> <span class="p">(</span><span class="nf">step</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+
+      <span class="c1">// Si (solo el pulsador 2 presionado)</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">pc</span><span class="p">.</span><span class="nf">keyPressed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mb">0b00000010</span><span class="p">)</span> <span class="p">{</span>
+
+         <span class="c1">// Espera a que no esté presionado</span>
+         <span class="k">while</span><span class="p">(</span><span class="n">pc</span><span class="p">.</span><span class="nf">keyPressed</span><span class="p">(</span><span class="mi">2</span><span class="p">));</span>
+
+         <span class="c1">// Pasa a la siguiente etapa del programa</span>
+         <span class="nf">step</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+      <span class="p">}</span>
+   <span class="p">}</span>
+
+   <span class="c1">// Si (etapa del programa es 2)</span>
+   <span class="k">if</span> <span class="p">(</span><span class="nf">step</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// Si (solo el pulsador 4 presionado)</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">pc</span><span class="p">.</span><span class="nf">keyPressed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mb">0b001000</span><span class="p">)</span> <span class="p">{</span>
+
+         <span class="c1">// Espera a que no esté presionado</span>
+         <span class="k">while</span><span class="p">(</span><span class="n">pc</span><span class="p">.</span><span class="nf">keyPressed</span><span class="p">(</span><span class="mi">4</span><span class="p">));</span>
+
+         <span class="c1">// Pasa a la siguiente etapa del programa</span>
+         <span class="nf">step</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+      <span class="p">}</span>
+   <span class="p">}</span>
+
+   <span class="c1">// Si (etapa del programa es 3)</span>
+   <span class="k">if</span> <span class="p">(</span><span class="nf">step</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// Si (solo el pulsador 1 presionado)</span>
+      <span class="k">if</span> <span class="p">(</span>                       <span class="p">)</span> <span class="p">{</span>
+
+         <span class="c1">// Espera a que no esté presionado</span>
+
+
+         <span class="c1">// Pasa a la siguiente etapa del programa</span>
+
+      <span class="p">}</span>
+   <span class="p">}</span>
+
+   <span class="c1">// Si (etapa del programa es 4)</span>
+   <span class="k">if</span> <span class="p">(</span><span class="nf">step</span> <span class="o">==</span> <span class="mi">4</span><span class="p">)</span> <span class="p">{</span>
+
+      <span class="c1">// Enciende el led rojo y espera un segundo</span>
+      <span class="n">pc</span><span class="p">.</span><span class="n">ledWrite</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">LED_ON</span><span class="p">);</span>
+      <span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+
+      <span class="c1">// Enciende el led amarillo y espera un segundo</span>
+      <span class="n">pc</span><span class="p">.</span><span class="n">ledWrite</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">LED_ON</span><span class="p">);</span>
+      <span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+
+      <span class="c1">// Enciende el led verde y espera un segundo</span>
+      <span class="n">pc</span><span class="p">.</span><span class="n">ledWrite</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">LED_ON</span><span class="p">);</span>
+      <span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+
+      <span class="c1">// Apaga todos los ledes</span>
+      <span class="n">pc</span><span class="p">.</span><span class="n">ledBegin</span><span class="p">();</span>
+
+      <span class="c1">// Pasa a la primera etapa del programa</span>
+      <span class="nf">step</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<p>Programa equivalent a l’entorn Arcublock:</p>
+<a class="reference external image-reference" href="../_downloads/ardublock_keyPressed_6.abp" rel="noopener noreferrer" target="_blank"><img alt="Programa de Ardublock para encender una secuencia de led con los pulsadores" src="../_images/ardublock_keyPressed_6.png" style="width: 854px;"></a>
+<p>: Descarregueu: <cite>Programa de l'entorn Arcublock: 'keyPressed_6' &lt;_downloads/ardublock_keypresssed_6.abp&gt;</cite> ``</p>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="pc42-key2.html" class="btn btn-neutral float-right" title="6. Botons i esdeveniments" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="pc42-led2.html" class="btn btn-neutral" title="4. Parpelleig LED" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="../contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="../manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="../legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="../legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="../genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="../content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../../es/arduprog/pc42-key1.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../prog-index.html">Programació</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Arduino</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="protoboard-index.html">Circuits amb Protoboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-index.html">Programes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="resource-index.html">Recursos</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="pc42-index.html">Tauler de control PC42</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="pc42-intro.html">1. Introducció al panell PC42</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pc42-install.html">2. Instal·lació del panell de control PC42</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pc42-led1.html">3. Encès i desactivació dels LEDs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pc42-led2.html">4. Parpelleig LED</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">5. Botons i estats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pc42-key2.html">6. Botons i esdeveniments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pc42-key3.html">7. Botons i mostradors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pc42-display1.html">8. Pantalla de 7 segments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pc42-buzzer.html">9. Timbre</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ardublock-index.html">Ardublock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../picuino-uno-index.html">Shield Picuino One</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="../_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

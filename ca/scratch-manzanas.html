@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. 7. Agafar pomes">
+  <title>7. Agafar pomes - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/scratch-manzanas.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+      <li><span class="section-number">7. </span>Agafar pomes</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/scratch-manzanas.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/scratch-manzanas.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="atrapar-manzanas">
+<span id="scratch-manzanas"></span><h1><span class="section-number">7. </span>Agafar pomes<a class="headerlink" href="#atrapar-manzanas" title="Link permanent a aquest títol">¶</a></h1>
+<a class="reference internal image-reference" href="_images/scratch-p03-escenario2.png"><img alt="_images/scratch-p03-escenario2.png" src="_images/scratch-p03-escenario2.png" style="width: 240px;"></a>
+<p>En aquesta pràctica, programarem un joc que consisteix a agafar pomes amb el gat i evitar els rajos que maten. El gat es mourà amb les tecles dreta i esquerra. Quan el gat perd les seves tres vides, el joc s’acabarà.</p>
+<p>; BR |</p>
+<ol class="arabic">
+<li><p class="first">Comencem el | Editor_de_scratch <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Canviarem els antecedents a un ** desert <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Premeu el botó nou.</p>
+<p>; CHANGE-SCENARY |</p>
+<p>A continuació, fem clic al tema de la naturalesa ** <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>A continuació, seleccionem el fons ** Desert <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>La pantalla serà la següent.</p>
+<img alt="_images/scratch-p03-escenario.png" src="_images/scratch-p03-escenario.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara hem de fer clic al gat per realitzar el vostre programa. Cal seleccionar la icona del gat.</p>
+<p>; Selected Cat |</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Premant a la lletra ** i ** dins de la icona del gat, podem canviar el vostre nom.</p>
+<img alt="_images/scratch-p03-cambiar-nombre-gato.png" src="_images/scratch-p03-cambiar-nombre-gato.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">A la pestanya Programes CAT crearem una nova funció anomenada ** Home **</p>
+<p>Primer fem clic al botó més blocs</p>
+<p>; Mas-Blques |</p>
+<p>A continuació, feu clic a Creació d’un bloc | Create-Bocate |</p>
+<p>A continuació, canviem el nom del nou bloc a ** start **</p>
+<img alt="_images/scratch-bloque-inicio.png" src="_images/scratch-bloque-inicio.png">
+<p>Finalment, premeu el botó ** ok **</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara crearem la variable ** vides <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Dins de la pestanya Dades | Dades <a href="#id1"><span class="problematic" id="id2">|</span></a>,</p>
+<p>Premeu Creeu una variable | Create-variable |</p>
+<p>Canviem el nom de la variable a ** viu **</p>
+<img alt="_images/scratch-p03-variable-vidas.png" src="_images/scratch-p03-variable-vidas.png">
+<p>Finalment, premeu el botó ** ok **</p>
+<p>Aquesta variable emmagatzemarà les vides que encara té el gat. Quan el seu valor arribi a zero, el gat morirà.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara escriurem el ** Block Block <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Primer fem clic al botó més blocs</p>
+<p>; Mas-Blques |</p>
+<p>A continuació, feu clic a Creació d’un bloc | Create-Bocate |</p>
+<p>A continuació, canviem el nom del nou bloc a ** start **</p>
+<p>Col·loquem els següents blocs a ** start <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<a class="reference internal image-reference" href="_images/scratch-p03-programa-inicio.png"><img alt="_images/scratch-p03-programa-inicio.png" src="_images/scratch-p03-programa-inicio.png" style="width: 494px;"></a>
+<p>Aquest programa dóna tres vides al gat al principi.</p>
+<p>Col·loqueu el gat a la pantalla inferior, amb el mode de rotació esquerra-dreta.</p>
+<p>També suprimeix totes les imatges de la pantalla.</p>
+<p>Finalment, espereu que continuï la clau d’espai.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara programarem un bloc que mourà el gat a la dreta i a l’esquerra amb les tecles de direcció. El nou bloc s’anomenarà ** move_gato **</p>
+<a class="reference internal image-reference" href="_images/scratch-p03-programa-mover-gato.png"><img alt="_images/scratch-p03-programa-mover-gato.png" src="_images/scratch-p03-programa-mover-gato.png" style="width: 507px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Per acabar aquesta secció, realitzarem un petit programa que posarà a prova tot el que hem programat fins ara.</p>
+<a class="reference internal image-reference" href="_images/scratch-p03-programa-gato1.png"><img alt="_images/scratch-p03-programa-gato1.png" src="_images/scratch-p03-programa-gato1.png" style="width: 182px;"></a>
+<p>En prémer la bandera verda | Flag-Verde <a href="#id1"><span class="problematic" id="id2">|</span></a>, el gat primer esperarà que pressionem la barra d'espai, i el gat es desplaçarà cap a l'esquerra i a la dreta prement les tecles ** esquerre i dret <a href="#id3"><span class="problematic" id="id4">**</span></a>.</p>
+</li>
+</ol>
+<div class="section" id="programa-de-las-manzanas">
+<h2>Programa de pomes<a class="headerlink" href="#programa-de-las-manzanas" title="Link permanent a aquest títol">¶</a></h2>
+<div class="admonition warning">
+<p class="first admonition-title">Avís</p>
+<p class="last">A partir d’aquest punt, s’han d’afegir totes les instruccions a la pestanya Programes d’objectes ** Apple <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</div>
+<p>; BR |</p>
+<ol class="arabic" start="10">
+<li><p class="first">El primer que farem serà afegir un personatge nou, un ** Apple **</p>
+<p>Premeu el botó d'objecte nou | Objecte nou |</p>
+<p>A continuació, fem clic a les coses de la categoria ** <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>A continuació, seleccionem l'objecte ** Apple <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<img alt="_images/scratch-p03-manzana.png" src="_images/scratch-p03-manzana.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara crearem una nova variable anomenada ** punts **</p>
+<p>Dins de la pestanya Dades | Dades <a href="#id1"><span class="problematic" id="id2">|</span></a>,</p>
+<p>Premeu Creeu una variable | Create-variable |</p>
+<p>Canviem el nom de la variable per ** punts **</p>
+<img alt="_images/scratch-variable-puntos.png" src="_images/scratch-variable-puntos.png">
+<p>Finalment, premeu el botó ** ok **</p>
+<p>Aquesta variable dirà als punts que s’acumula el personatge del joc.</p>
+<p>El gat guanyarà un punt cada vegada que agafeu una poma i perdeu dos punts si la poma cau a terra.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara afegim un missatge nou anomenat ** start **</p>
+<p>Premeu el botó Esdeveniments.</p>
+<p>; Esdeveniments |</p>
+<p>i passa als programes el bloc &quot;recepció del missatge1 &quot;.</p>
+<p>Feu clic a la fletxa, seleccionem ** Missatge nou ... **</p>
+<p>; New-Mesate |</p>
+<p>Anomenem el nou missatge com a ** Start <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<img alt="_images/scratch-p03-mensaje-iniciar.png" src="_images/scratch-p03-mensaje-iniciar.png">
+<p>Finalment, premeu el botó ** ok **</p>
+<p>Aquest missatge servirà per notificar a les pomes ** ** que poden començar a caure un cop premuda la tecla Space.</p>
+<p>També suprimeix els punts per iniciar el joc i els mostra a la pantalla.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara podem programar les instruccions necessàries perquè les pomes caiguin en rebre el missatge ** start <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<a class="reference internal image-reference" href="_images/scratch-p03-programa-manzana1.png"><img alt="_images/scratch-p03-programa-manzana1.png" src="_images/scratch-p03-programa-manzana1.png" style="width: 518px;"></a>
+<p>El programa amaga l'objecte de manera que no es vegi a la pantalla, inicieu els punts a zero i creeu còpies de la poma (clons de la poma) de tant en tant aleatòria, mentre que el gat té vides.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Anem a crear un altre vestit que representi la poma aixafada a terra a terra.</p>
+<p>Primer seleccionem la pestanya Vistumes | Disfresses | de la poma.</p>
+<p>A continuació, seleccionem amb el botó dret del ratolí del vestit de poma per doblar.</p>
+<img alt="_images/scratch-p03-duplicar-manzana.png" src="_images/scratch-p03-duplicar-manzana.png">
+<p>Amb el vestit de recentment creat Apple2, aixafem la imatge.</p>
+<img alt="_images/scratch-p03-aplastar-manzana.png" src="_images/scratch-p03-aplastar-manzana.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">En aquesta secció definirem com es comporten els clons de poma. Crearem els programes següents.</p>
+<a class="reference internal image-reference" href="_images/scratch-p03-programa-manzana2.png"><img alt="_images/scratch-p03-programa-manzana2.png" src="_images/scratch-p03-programa-manzana2.png" style="width: 429px;"></a>
+<a class="reference internal image-reference" href="_images/scratch-p03-programa-manzana3.png"><img alt="_images/scratch-p03-programa-manzana3.png" src="_images/scratch-p03-programa-manzana3.png" style="width: 392px;"></a>
+<p>La poma es col·loca a la part superior de la pantalla i cau a poc a poc (canvi i per a -10) fins que toqui el gat o fins que caigui a terra.</p>
+<p>Si la poma toca el gat, augmenta els punts i desapareix.</p>
+<p>Si la poma toca el terra, aixafarà i sonarà un cop.</p>
+<p>El programa s'ha dividit en diverses funcions per simplificar cadascun dels blocs.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara verificarem que les noves instruccions funcionen. ** Modifiquem el programa CAT ** per afegir el missatge ** inici **</p>
+<a class="reference internal image-reference" href="_images/scratch-p03-programa-gato2.png"><img alt="_images/scratch-p03-programa-gato2.png" src="_images/scratch-p03-programa-gato2.png" style="width: 181px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">En aquest moment, el gat pot jugar per recollir pomes. Hem de moure el gat amb les fletxes esquerre i dret per tocar les pomes abans que caiguin a terra.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="programa-de-los-rayos">
+<h2>Programa de raigs<a class="headerlink" href="#programa-de-los-rayos" title="Link permanent a aquest títol">¶</a></h2>
+<p>En aquesta secció programarem que diversos rajos cauen des de dalt i que eliminen vides al gat. D’aquesta manera donem al joc més dificultats i emocions.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Avís</p>
+<p class="last">A partir d’aquest punt, s’han d’afegir totes les instruccions a la pestanya Programes d’objectes ** Rayo <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</div>
+<p>; BR |</p>
+<ol class="arabic" start="18">
+<li><p class="first">El primer que farem és afegir un personatge nou, un ** ray <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Premeu el botó d'objecte nou | Objecte nou |</p>
+<p>A continuació, fem clic a les coses de la categoria ** <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>A continuació, seleccionem l'objecte ** Lightning <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<img alt="_images/scratch-p03-rayo.png" src="_images/scratch-p03-rayo.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara programem la caiguda dels raigs des de la part superior de la pantalla. Igual que amb les pomes, els rajos cauran mentre el gat tingui vides.</p>
+<a class="reference internal image-reference" href="_images/scratch-p03-programa-rayo.png"><img alt="_images/scratch-p03-programa-rayo.png" src="_images/scratch-p03-programa-rayo.png" style="width: 446px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Afegirem un nou so al raig, de manera que el gat es queixa quan cau un raig.</p>
+<p>Seleccionem la pestanya So | Sons | del raig.</p>
+<p>Premeu per seleccionar un so nou a la llibreria | So-Now <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<p>A la categoria ** animal ** Seleccionem el so ** meow **</p>
+<img alt="_images/scratch-p03-sonido-meow.png" src="_images/scratch-p03-sonido-meow.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara hem de crear un programa per a cada clon de raigs.</p>
+<a class="reference internal image-reference" href="_images/scratch-p03-programa-rayo-clon.png"><img alt="_images/scratch-p03-programa-rayo-clon.png" src="_images/scratch-p03-programa-rayo-clon.png" style="width: 430px;"></a>
+<p>Aquests programes situaran cada raig en una posició aleatòria cada vegada que es crei un clon. A continuació, el llamp caurà (canviarà i per -1) fins que toqui el gat o toqui la vora inferior.</p>
+<p>Si el raig toca el gat, es traurà una vida i esborrarà.</p>
+<p>Si el raig toca el terra, desapareix.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Comprovarem prement la bandera verda | Flag-Verde | Que tot funciona bé.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="muerte-del-gato">
+<h2>Mort del gat<a class="headerlink" href="#muerte-del-gato" title="Link permanent a aquest títol">¶</a></h2>
+<p>Quan el gat perd tota la vida, el joc s’acaba i deixa de caure pomes i rajos, però el gat continua movent -se. En aquesta secció afegirem les instruccions necessàries perquè el gat sembli mort al final del joc.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Avís</p>
+<p class="last">A partir d’aquest punt, s’han d’afegir totes les instruccions a la pestanya Programes d’objectes ** Cat <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+</div>
+<p>; BR |</p>
+<ol class="arabic" start="23">
+<li><p class="first">Afegim la funció CAT_MUERE, que funciona quan el gat perd tota la vida.</p>
+<a class="reference internal image-reference" href="_images/scratch-p03-programa-gato-muere.png"><img alt="_images/scratch-p03-programa-gato-muere.png" src="_images/scratch-p03-programa-gato-muere.png" style="width: 374px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">I modifiquem el programa del gat.</p>
+<a class="reference internal image-reference" href="_images/scratch-p03-programa-gato3.png"><img alt="_images/scratch-p03-programa-gato3.png" src="_images/scratch-p03-programa-gato3.png" style="width: 305px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">En aquest moment, per acabar, afegirem un so de fons al joc.</p>
+<a class="reference internal image-reference" href="_images/scratch-p03-programa-sonido.png"><img alt="_images/scratch-p03-programa-sonido.png" src="_images/scratch-p03-programa-sonido.png" style="width: 332px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Proveu el joc per comprovar que tot funciona correctament.</p>
+</li>
+</ol>
+</div>
+<hr class="docutils">
+<div class="section" id="ejercicios">
+<h2>Exercicis<a class="headerlink" href="#ejercicios" title="Link permanent a aquest títol">¶</a></h2>
+<ol class="arabic simple">
+<li>Modifiqueu el programa de manera que el nombre de raigs augmenti amb el pas del temps, de manera que el joc es faci cada cop més difícil.</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/scratch-manzanas.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programació</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

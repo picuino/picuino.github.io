@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Electrònica - Circuit imprès amb llums LED">
+  <title>Circuit imprès amb llums LED - Electrònica - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/electronic-pcb-luces-led.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="Informàtica" href="informatica-index.html">
+  <link rel="prev" title="4. Cablejat a Protoboard" href="bornas-protoboard.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="electronic-index.html">Electrònica</a>/</li>
+        
+      <li>Circuit imprès amb llums LED</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/electronic-pcb-luces-led.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/electronic-pcb-luces-led.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="circuito-impreso-con-luces-led">
+<span id="electronic-pcb-luces-led"></span><h1>Circuit imprès amb llums LED<a class="headerlink" href="#circuito-impreso-con-luces-led" title="Link permanent a aquest títol">¶</a></h1>
+<p>Disseny i muntatge d’un circuit imprès senzill amb 6 llums LED intermitents.</p>
+<a class="reference internal image-reference" href="_images/electronic-pcb-luces-led-03t.jpg"><img alt="Circuito impreso con luces led, ya montado." class="align-center" src="_images/electronic-pcb-luces-led-03t.jpg" style="width: 480px;"></a>
+<p>: Descarregueu: <a href="#id1"><span class="problematic" id="id2">`</span></a>Placa de circuit imprès ja muntat. Format JPG. &lt;Electronic/_Images/Electronic-PB-Luces-Led-03.jpg&gt; `</p>
+<div class="section" id="circuito-electrico-completo">
+<h2>Circuit elèctric complet<a class="headerlink" href="#circuito-electrico-completo" title="Link permanent a aquest títol">¶</a></h2>
+<a class="reference internal image-reference" href="_images/electronic-pcb-luces-led-02.png"><img alt="Circuito eléctrico." class="align-center" src="_images/electronic-pcb-luces-led-02.png" style="width: 480px;"></a>
+<p>: Descàrrega: <a href="#id1"><span class="problematic" id="id2">`</span></a>Circuit elèctric del circuit amb llums LED. Format PDF. &lt;Electronic/Electronic-PB-Luces-led.pdf&gt; '</p>
+</div>
+<div class="section" id="funcionamiento-del-circuito-oscilador">
+<h2>Funcionament del circuit oscil·lador<a class="headerlink" href="#funcionamiento-del-circuito-oscilador" title="Link permanent a aquest títol">¶</a></h2>
+<p>El circuit amb llums que parpelleja es basa en un oscil·lador que canvia la seva sortida cada poc temps, encès i desactivat el LED.</p>
+<a class="reference internal image-reference" href="_images/electronic-pcb-luces-led-02b.png"><img alt="Circuito eléctrico oscilador." class="align-center" src="_images/electronic-pcb-luces-led-02b.png" style="width: 480px;"></a>
+<p>Aquest circuit oscil·lador està format per un inversor amb Trigger Schmitt, un condensador C1 i una resistència a la retroalimentació R3.</p>
+<p>El circuit d’inversors amb disparador Schmitt canvia la seva sortida a diferents tensions d’entrada. Aquest comportament s’anomena histèresi d’entrada i és el que permet que el circuit funcioni com a oscil·lador. Al gràfic següent podem veure com canvia la tensió de sortida del inversor per a diferents tensions d’entrada. Aquesta figura rectangular amb dues línies horitzontals és el que té l’inversor i indica que treballa amb histèresi.</p>
+<a class="reference internal image-reference" href="_images/electronic-schmitt-histeresis.png"><img alt="Histéresis del circuito inversor Schmitt." class="align-center" src="_images/electronic-schmitt-histeresis.png" style="width: 340px;"></a>
+<p>Quan el circuit està activat per primera vegada, el condensador es descarrega i, per tant, la seva tensió al terminal positiu val zero volts. L’inversor de Schmitt té, per tant, zero volts (un zero lògic) i a la seva sortida els 5 volts d’alimentació positiva (lògica). En aquesta situació, la resistència a la retroalimentació R3 porta gradualment la tensió del condensador fins que arribi a 3,33 volts, la tensió de la qual l’inversor de Schmitt considera que l’entrada val la pena lògica i, per tant, canvia la seva sortida a zero volts (lògic zero).</p>
+<p>Ara, la resistència a la retroalimentació de R3 està descarregant gradualment la tensió del condensador fins que arribi a 1,66 volts, la tensió de la qual l’inversor de Schmitt considera que l’entrada val la pena un zero lògic i, per tant, canvia la seva sortida a cinc volts (un lògic) retornant el cicle per repetir -se una i altra vegada.</p>
+<p>La velocitat d’oscil·lació dependrà dels valors del condensador i de la resistència. Com més vells siguin, més llarg el circuit trigarà a abastar -se. La fórmula aproximada del temps d’oscil·lació és:</p>
+<blockquote>
+<div>Temps d’oscil·lació = 0,8 · R3 · C1 = 0,8 · 220000 · 0.000010 = 1,76 segons</div></blockquote>
+<a class="reference internal image-reference" href="_images/electronic-pcb-luces-led-02.png"><img alt="Circuito eléctrico." class="align-center" src="_images/electronic-pcb-luces-led-02.png" style="width: 640px;"></a>
+<p>El LED D1 connectat a la sortida oscil·ladora mitjançant una resistència limitant R1, s’encendrà i s’apagarà a la mateixa velocitat que l’oscil·lador.</p>
+<p>El LED D2 connectat a la sortida d’un altre inversor Schmitt mitjançant una resistència limitant R2, s’encendrà quan D1 s’apagui i s’apagarà quan D1 estigui activat, produint un parpelleig alternatiu.</p>
+<p>Aquest comportament es repeteix en els tres oscil·ladors que el circuit complet té, a diferents freqüències des de R3, R6 i R9, tenen valors diferents i, per tant, diferents velocitats de matràs.</p>
+</div>
+<div class="section" id="circuito-impreso-pcb">
+<h2>Circuit imprès (PCB)<a class="headerlink" href="#circuito-impreso-pcb" title="Link permanent a aquest títol">¶</a></h2>
+<a class="reference internal image-reference" href="_images/electronic-pcb-luces-led-01t.jpg"><img alt="Circuito impreso." class="align-center" src="_images/electronic-pcb-luces-led-01t.jpg" style="width: 400px;"></a>
+<p>: Descàrrega: <a href="#id1"><span class="problematic" id="id2">`</span></a>Disseny del circuit elèctric i del circuit imprès. Format KICAD. &lt;Electronic/Electronic-PB-Luces-led.zip&gt; '</p>
+<p>: Descarregueu: <a href="#id1"><span class="problematic" id="id2">`</span></a>Gerber Files per a la fabricació del circuit imprès. Format postal. &lt;Electronic/Electronic-PB-Luces-Led-Gerber.Zip&gt; '</p>
+<p>Els fitxers Gerber serveixen per sol·licitar la fabricació de la placa de circuit imprès a una empresa de fabricació de plaques de circuit imprès com ara <a class="reference external" href="https://jlcpcb.com/" rel="noopener noreferrer" target="_blank">jlcpcb</a> o <cite>pcbway &lt;https://www.pcbway.com/&gt;</cite> __.</p>
+<p>En total, hi ha un conjunt de 7 fitxers Gerber diferents, tres fitxers per a la part frontal, 3 fitxers per a la capa posterior i un per a les vores de la placa. També hi ha un fitxer que indica on s’han de fer els exercicis (perfor).</p>
+<p>Els fitxers Gerber i de perforació es distribueixen tal com s’indica a continuació:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Pistes de coure de la capa frontal (f_cu)</li>
+<li>Pistes de coure de la capa posterior (B_CU)</li>
+<li>Màscara de soldadura de capa frontal (F_MASK)</li>
+<li>Màscara de soldadura de la capa posterior (b_mask)</li>
+<li>Impressió de components de la part frontal (f_silks)</li>
+<li>Fons dels components posteriors (b_silks)</li>
+<li>Vores per tallar la placa (edge_cuts)</li>
+<li>Arxius de perforació (.DRL)</li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/electronic-pcb-luces-led-05.png"><img alt="Circuito impreso. Capas frontales." class="align-center" src="_images/electronic-pcb-luces-led-05.png" style="width: 400px;"></a>
+<a class="reference internal image-reference" href="_images/electronic-pcb-luces-led-06.png"><img alt="Circuito impreso. Capas traseras." class="align-center" src="_images/electronic-pcb-luces-led-06.png" style="width: 400px;"></a>
+<dl class="docutils">
+<dt>** Pistes de coure: **</dt><dd>Són els conductors que connecten tots els components de la placa de circuit imprès. Apareixen al dibuix groc (sense màscara de soldadura) o de color verd clar (ja cobert amb màscara de soldadura).</dd>
+<dt>** Màscara de soldadura: **</dt><dd>És una capa de pintura, generalment verda, tot i que pot tenir altres colors, que serveix per protegir les pistes de coure de la corrosió i per evitar els curtmetratges quan es realitzen el procés de soldadura. La màscara de soldadura no s'aplica a sobre de les pastilles de soldadura.</dd>
+<dt>** Serigrafia de components <a href="#id1"><span class="problematic" id="id2">**</span></a>:</dt><dd>És una capa de pintura, generalment blanca, que serveix per indicar el nom dels components del circuit i per escriure indicacions o dibuixos. Aquesta capa de pintura s’aplica amb la tècnica d’impressió de pantalla i, per tant, el seu nom.</dd>
+</dl>
+</div>
+<div class="section" id="listado-de-componentes-bom">
+<h2>Llista de components (BOM)<a class="headerlink" href="#listado-de-componentes-bom" title="Link permanent a aquest títol">¶</a></h2>
+<p>La llista de components (també anomenat BOM o Bill of Materials) és una llista on tots els components del circuit imprès apareixen amb la seva quantitat i referència per poder -los obtenir abans de fer el muntatge.</p>
+<p>La llista de components també pot tenir la referència de compra d’un distribuïdor de components electrònics. Al document següent, s’han afegit les referències del <a class="reference external" href="https://www.tme.eu/es/" rel="noopener noreferrer" target="_blank">TME</a> distribuïdor.</p>
+<p>: Descarregueu: <a href="#id1"><span class="problematic" id="id2">`</span></a>Llista de components de la placa amb llums LED. Format PDF. &lt;Electronic/PCB-Luces-Led/Bom/Electronic-PCB-Luces-Led-bom.pdf&gt; '</p>
+<p>: Descarregueu: <a href="#id1"><span class="problematic" id="id2">`</span></a>Llista de components de la placa amb llums LED. Format ODS. &lt;Electronic/PCB-Luces-Led/Bom/Electronic-Pb-Luces-Led-Bom.ods&gt; '</p>
+</div>
+<div class="section" id="orden-y-posicion-de-montaje">
+<h2>Ordre de muntatge i posició<a class="headerlink" href="#orden-y-posicion-de-montaje" title="Link permanent a aquest títol">¶</a></h2>
+<p>Quan la soldadura, els components han de seguir un ordre, de manera que els components més baixos es solden primer i els més alts. D’aquesta manera, al voltant de la placa del circuit imprès, els components poden confiar en la taula i no es desprenen de la placa.</p>
+<p>A més, cada component té una posició de soldadura. Si no respectem aquesta posició, correm el risc de fer malbé el component o fer que el circuit funcioni.</p>
+<p>L’ordre i la posició del muntatge són els següents:</p>
+<p>** 1. Resistències <a href="#id1"><span class="problematic" id="id2">**</span></a>:</p>
+<blockquote>
+<div>No necessiten cap ordre particular per funcionar correctament, però el codi de colors és més elegant i fàcil de llegir quan totes les bandes d'or estan alineades a la dreta (resistències horitzontals) o cap amunt (resistències verticals) com a la imatge de l'inici d'aquesta unitat.</div></blockquote>
+<p>** 2. Sw1 Switch Switch <a href="#id1"><span class="problematic" id="id2">**</span></a>:</p>
+<blockquote>
+<div>Caldrà muntar -lo de manera que la palanca de commutador estigui situada fora del circuit imprès de manera que sigui senzill conduir l’interruptor.</div></blockquote>
+<p>** 3. Circuit integrat Zócalo <a href="#id1"><span class="problematic" id="id2">**</span></a>:</p>
+<blockquote>
+<div><p>El Zocalo té una petita fitxa a la part superior que ha d’estar alineada amb la pestanya d’impressió de pantalla de components, també a la part superior del Zócalo.</p>
+<p>Si inserim el circuit integrat de manera incorrecta (cap avall), correm el risc de fer -lo malbé quan circula el corrent.</p>
+</div></blockquote>
+<p>** 4. CONDENTS <a href="#id1"><span class="problematic" id="id2">**</span></a>:</p>
+<blockquote>
+<div><p>Els condensadors electrolítics tenen una banda blanca en un dels seus dos pins que indica el pol negatiu del component i que també s’ha de muntar a la zona blanca de la impressió del circuit imprès.</p>
+<p>És molt important que els condensadors estiguin muntats correctament perquè si reben tensió al revés, s’esfondraran i també generaran gas dins que poden fer -los explotar.</p>
+</div></blockquote>
+<p>** 5. Diodes LED <a href="#id1"><span class="problematic" id="id2">**</span></a>:</p>
+<blockquote>
+<div><p>Els díodes només condueixen en un sentit i no funcionen en sentit contrari. A la pantalla d’impressió de la placa del circuit imprès, el negatiu o el càtode del LED sempre mira cap a l’esquerra. Es distingeix perquè el cercle té un chaflán i perquè el coixinet de soldadura és quadrat.</p>
+<a class="reference internal image-reference" href="_images/electronic-pcb-catodo-2.png"><img alt="Cátodo de un diodo led en la serigrafía." class="align-center" src="_images/electronic-pcb-catodo-2.png" style="width: 340px;"></a>
+<p>En distingir el càtode en díodes LED, la manera més fàcil és mirar cap a dins i buscar la zona metàl·lica més gran, on el LED es recolza i es connecta al passador negatiu (càtode).</p>
+<a class="reference internal image-reference" href="_images/electronic-pcb-catodo.png"><img alt="Cátodo de un diodo led." class="align-center" src="_images/electronic-pcb-catodo.png" style="width: 240px;"></a>
+</div></blockquote>
+<p>** 6. Cables de bateria <a href="#id1"><span class="problematic" id="id2">**</span></a>:</p>
+<blockquote>
+<div><p>És molt important respectar l’ordre dels cables de la bateria per no cremar el circuit.</p>
+<p>El cable vermell ** és positiu ** i està connectat al forat superior (indicat amb un símbol <cite>+</cite> a la serigrafia).</p>
+<p>El cable ** negre és negatiu ** i està connectat al forat inferior (indicat amb un símbol <cite>-</cite> a la serigrafia).</p>
+</div></blockquote>
+</div>
+<div class="section" id="soldadura">
+<h2>Soldadura<a class="headerlink" href="#soldadura" title="Link permanent a aquest títol">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p>La soldadura es fa proporcionant material compost per estany i ** plom <a href="#id1"><span class="problematic" id="id2">**</span></a>, per la qual cosa cal seguir alguns procediments de seguretat.</p>
+<p>És important utilitzar guants o ** rentar-vos les mans ** correctament després de manejar el fil de llauna.</p>
+<p class="last">Durant la soldadura ** gasos tòxics ** es produeixen des del flux antioxidant. Aquests gasos no s’han d’inhalar. S'ha de soldar en un lloc ben ventilat amb finestres obertes.</p>
+</div>
+<p>La tècnica de soldadura és relativament senzilla, però no és dolent tenir conceptes clars sobre com fer -ho correctament.</p>
+<p>Al següent vídeo podeu veure la tècnica correcta per a la soldadura dels components.</p>
+<ul class="simple">
+<li>VÍDEO: <a class="reference external" href="https://www.youtube-nocokie.com/embed/vax89whpz3k" rel="noopener noreferrer" target="_blank">Solder mitjançant components de forats - Tècniques de soldadura #02.</a></li>
+</ul>
+<p>Al següent vídeo podem veure la gran diferència entre una bona qualitat i una estany de soldadura de baixa qualitat. La llauna de bona qualitat és molt més fàcil de treballar i deixar una soldadura brillant, menys oxidada i més robusta.</p>
+<ul class="simple">
+<li>Vídeo: <cite>Wire Solder - baixa i alta qualitat. &lt;https://www.youtube-nocokie.com/embed/5ku7i3ha3a&gt; `</cite> `</li>
+</ul>
+<p>El vídeo següent ens mostra la utilitat del flux en la soldadura. Si es manté un punt de soldadura calenta durant un temps excessiu, el flux s’evapora i la soldadura s’oxida i perd la brillantor.</p>
+<ul class="simple">
+<li>Vídeo: <a class="reference external" href="https://www.youtube-nocokie.com/embed/tfiwhugzuek" rel="noopener noreferrer" target="_blank">Quan utilitzar FLX?</a></li>
+</ul>
+</div>
+<div class="section" id="reparar-una-soldadura">
+<h2>Repareu una soldadura<a class="headerlink" href="#reparar-una-soldadura" title="Link permanent a aquest títol">¶</a></h2>
+<p>En cas que incorregim un component de manera incorrecta, podem desaprovar la soldadura en la posició adequada. Per decebre hi ha moltes tècniques, una de les més senzilles és absorbir la llauna de soldadura amb una malla de fils de coure fins.</p>
+<p>Al següent vídeo podeu veure algunes tècniques de Desold.</p>
+<ul class="simple">
+<li>Vídeo: <a class="reference external" href="https://www.youtube-nocokie.com/embed/bg7yw9figja" rel="noopener noreferrer" target="_blank">Desoldering | Soldadura per a principiants.</a></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="informatica-index.html" class="btn btn-neutral float-right" title="Informàtica" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="bornas-protoboard.html" class="btn btn-neutral" title="4. Cablejat a Protoboard" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/electronic-pcb-luces-led.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="electronic-index.html">Electrònica</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="electronic-components-index.html">Components electrònics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electronic-analog-index.html">Electrònica analògica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electronic-digital-index.html">Electrònica digital</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electronic-bornas-index.html">Cablejat de components electrònics</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Circuit imprès amb llums LED</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programació</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

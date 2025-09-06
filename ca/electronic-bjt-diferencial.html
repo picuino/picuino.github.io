@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Electrònica - Electrònica analògica - 12. La part diferencial">
+  <title>12. La part diferencial - Electrònica analògica - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/electronic-bjt-diferencial.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="13. La font actual" href="electronic-bjt-current.html">
+  <link rel="prev" title="11. L’esquema Push-Pull" href="electronic-bjt-pushpull.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="electronic-index.html">Electrònica</a>/</li>
+        
+          <li><a href="electronic-analog-index.html">Electrònica analògica</a>/</li>
+        
+      <li><span class="section-number">12. </span>La part diferencial</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/electronic-bjt-diferencial.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/electronic-bjt-diferencial.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="el-par-diferencial">
+<span id="electronic-bjt-diferencial"></span><h1><span class="section-number">12. </span>La part diferencial<a class="headerlink" href="#el-par-diferencial" title="Link permanent a aquest títol">¶</a></h1>
+<p>El &quot;diferencial par &lt;<a class="reference external" href="https://es.wikipedia.org/wiki" rel="noopener noreferrer" target="_blank">https://es.wikipedia.org/wiki</a>/amplifier_díferential#tecnolog%C3%ada&gt;`__ està compost per dos transistors amb els dos emissors connectats a una font actual.</p>
+<p>Quan la tensió a les bases és la mateixa, el corrent dels col·leccionistes continua sent el mateix en els dos transistors i, per tant, no amplifica el senyal.</p>
+<p>Quan la tensió a la base d’un transistor és més gran que a la base de l’altre transistor, el corrent es desvia al transistor amb major tensió a la base i aquest senyal “diferencial” s’amplifica a la sortida.</p>
+<p>Per tant, aquest amplificador només amplifica les diferències entre dues tensions d’entrada i no amplifica (rebutja) els canvis que són comuns a les dues tensions d’entrada.</p>
+<p>Aquest amplificador (el PAR diferencial) s’utilitza a l’entrada dels amplificadors operatius molt populars, que es veuran més endavant.</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/electronic-analog-diferencial.png"><img alt="Esquema de dos transistores NPN en montaje diferencial." src="_images/electronic-analog-diferencial.png" style="width: 300px;"></a>
+<p class="caption"><span class="caption-text">Esquema de dos transistors NPN en un muntatge diferencial.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>El símbol connectat sota emissors transistos és un generador de corrent constant.</p>
+<div class="section" id="simulacion">
+<h2>Simulació<a class="headerlink" href="#simulacion" title="Link permanent a aquest títol">¶</a></h2>
+<p>A continuació, es pot veure la simulació d’un PAR diferencial amb dos transistors NPN. El senyal d’entrada diferencial té 25 mil·livolts d’amplitud màxima i el senyal de sortida té 1 volt d’amplitud màxima. Això significa que l’etapa té un guany de tensió a la sortida de 40 vegades la tensió d’entrada.</p>
+<div class="video-center">
+<iframe src="/circuits/index.html?startCircuit=bjt-differential.txt"></iframe>
+</div></div>
+<div class="section" id="ejercicios">
+<h2>Exercicis<a class="headerlink" href="#ejercicios" title="Link permanent a aquest títol">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Dibuixa un esquema simplificat de dos transistors NPN que treballen en configuració parlamentària diferencial.</p>
+</li>
+<li><p class="first">Dibuixa un esquema realista de dos transistors NPN que treballen en la configuració parlamentària diferencial.</p>
+</li>
+<li><p class="first">Quin és l’objectiu principal que té un parroquial diferencial? Quins dispositius populars són els dispositius diferencials?</p>
+</li>
+<li><p class="first">Modifiqueu a la simulació els dos generadors de tensió d’1 volts per lliurar 2 volts. Com canvia la sortida?</p>
+<p>Si augmentem la tensió dels dos generadors a 3 volts, com canvia la sortida?</p>
+<p>Què significa aquesta operació?</p>
+</li>
+<li><p class="first">Realitza al <a class="reference external" href="/circuits/?startCircit=Empy.txt" rel="noopener noreferrer" target="_blank">Simulador de circuits</a> una simulació d'un parlament diferencial amb transistors PNP. L’esquema serà com la següent figura:</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/electronic-analog-diferencial-pnp.png"><img alt="Esquema de dos transistores PNP en montaje diferencial." src="_images/electronic-analog-diferencial-pnp.png" style="width: 480px;"></a>
+</div>
+</li>
+<li><p class="first">Quines diferències operatives té el circuit anterior respecte al primer circuit simulat?</p>
+<p>Quina gamma de tensió comuna accepta el circuit anterior a la seva entrada?</p>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="electronic-bjt-current.html" class="btn btn-neutral float-right" title="13. La font actual" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="electronic-bjt-pushpull.html" class="btn btn-neutral" title="11. L’esquema Push-Pull" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/electronic-bjt-diferencial.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="electronic-index.html">Electrònica</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="electronic-components-index.html">Components electrònics</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="electronic-analog-index.html">Electrònica analògica</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="electronic-diodo.html">1. El díode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-diodo-rectificador.html">2. El díode rectificador</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-diodo-limitador.html">3. El díode limitant</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-diodo-zener.html">4. El díode zener</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-diodo-led.html">5. El díode LED</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bjt.html">6. El transistor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bjt-common-e.html">7. El transistor en comú emissor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bjt-common-c.html">8. El transistor del col·leccionista comú</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bjt-common-b.html">9. Transistor a la base comuna</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bjt-darlington.html">10. L’esquema de Darlington</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bjt-pushpull.html">11. L’esquema Push-Pull</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">12. La part diferencial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bjt-current.html">13. La font actual</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-mosfet.html">14. El transistor MOSFET</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-operational.html">15. L'amplificador operatiu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-operational-follower.html">16. L'amplificador de seguidors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-operational-inverting.html">17. L'amplificador d'inversions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-operational-adder.html">18. L’amplificador d’estiu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-operational-noninverting.html">19. L'amplificador no inversor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-operational-differential.html">20. L'amplificador diferencial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-operational-peakdetector.html">21. El Detector de Peak</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-operational-comparator.html">22. El comparador</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-operational-hysteresis.html">23. El comparador amb la histèresi</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="electronic-digital-index.html">Electrònica digital</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electronic-bornas-index.html">Cablejat de components electrònics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electronic-pcb-luces-led.html">Circuit imprès amb llums LED</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programació</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

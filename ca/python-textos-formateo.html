@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Programació - Tutorial Python - 24. Format de la cadena de text">
+  <title>24. Format de la cadena de text - Tutorial Python - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/python-textos-formateo.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="25. Llistes" href="python-listas.html">
+  <link rel="prev" title="23. Mètodes de la cadena de text" href="python-textos-metodos.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="prog-index.html">Programació</a>/</li>
+        
+          <li><a href="python-index.html">Tutorial Python</a>/</li>
+        
+      <li><span class="section-number">24. </span>Format de la cadena de text</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/python-textos-formateo.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/python-textos-formateo.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="formateo-de-cadenas-de-texto">
+<span id="python-textos-formateo"></span><h1><span class="section-number">24. </span>Format de la cadena de text<a class="headerlink" href="#formateo-de-cadenas-de-texto" title="Link permanent a aquest títol">¶</a></h1>
+<p><a class="reference external" href="https://docs.python.org/es/3/reference/lexical_analysis.html#f-strings" rel="noopener noreferrer" target="_blank">Una cadena de text literal amb format</a> és una cadena de text que comença amb la lletra `` `` `` <a href="#id1"><span class="problematic" id="id2">``</span></a>} '. Els camps de substitució contenen variables Python i, opcionalment, el format que s’ha de donar al contingut de la variable.</p>
+<p>Si voleu imprimir una clau, cal doblar -la: <cite>{{</cite> <cite>o '</cite> <cite>}}</cite>.</p>
+<p>Exemple</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">nombre</span> <span class="o">=</span> <span class="s1">&#39;Guido&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">apellido</span> <span class="o">=</span> <span class="s1">&#39;van Rossum&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;El creador de Python es </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="n">apellido</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="go">    El creador de Python es Guido van Rossum</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">num</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;James Bond es el agente </span><span class="si">{</span><span class="n">num</span><span class="si">:</span><span class="s1">03d</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="go">    James Bond es el agente 007</span>
+</pre></div>
+</div>
+<div class="section" id="ejercicios">
+<h2>Exercicis<a class="headerlink" href="#ejercicios" title="Link permanent a aquest títol">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Repetiu l'exercici següent canviant el valor de la variable `` nom 'amb el vostre propi nom.</p>
+<p>Exercici</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nombre</span> <span class="o">=</span> <span class="s1">&#39;Anselmo&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">nombre</span><span class="si">:</span><span class="s1">&gt;20</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>    <span class="c1"># Justificado a la derecha</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">nombre</span><span class="si">:</span><span class="s1">&lt;20</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>    <span class="c1"># Justificado a la izquierda</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">nombre</span><span class="si">:</span><span class="s1">^20</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>    <span class="c1"># Centrado</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">nombre</span><span class="si">:</span><span class="s1">_^20</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>   <span class="c1"># Centrado con relleno &#39;_&#39;</span>
+</pre></div>
+</div>
+<p>Sortida</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>             <span class="n">Anselmo</span>
+<span class="n">Anselmo</span>
+      <span class="n">Anselmo</span>
+<span class="n">______Anselmo_______</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Repetiu l'exercici següent canviant el valor del `` num = 78` <a href="#id1"><span class="problematic" id="id2">``</span></a>. A la darrera línia canvia el nombre per al vostre any de naixement.</p>
+<p>Exercici</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">44</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">num</span><span class="si">:</span><span class="s1">10d</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>    <span class="c1"># Formato decimal entero. Longitud 10</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">num</span><span class="si">:</span><span class="s1">+10d</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>   <span class="c1"># Formato decimal entero con signo. Longitud 10</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">num</span><span class="si">:</span><span class="s1">10X</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>    <span class="c1"># Formato hexadecimal en mayúsculas. Longitud 10</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">num</span><span class="si">:</span><span class="s1">010b</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>   <span class="c1"># Formato binario con ceros a la izquierda. Longitud 10</span>
+</pre></div>
+</div>
+<p>Sortida</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>        <span class="mi">44</span>
+       <span class="o">+</span><span class="mi">44</span>
+        <span class="mi">2</span><span class="n">C</span>
+<span class="mi">0000101100</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Repetiu l'exercici següent amb la variable `` e = 2.718281828``. Recordeu que a Python els decimals sempre es separen amb un punt, no amb una coma.</p>
+<p>Exercici</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pi</span> <span class="o">=</span> <span class="mf">3.14159</span>
+<span class="c1"># Número de punto flotante que ocupa 10 espacios en total y tiene 3 decimales</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">pi</span><span class="si">:</span><span class="s1">10.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">pi</span><span class="si">:</span><span class="s1">010.5f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span> <span class="c1"># Cinco decimales y ceros a la izquierda</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">pi</span><span class="si">:</span><span class="s1">10.0f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>  <span class="c1"># Igual que el primero, con cero decimales</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">pi</span><span class="si">:</span><span class="s1">10.4e</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>  <span class="c1"># Igual que el primero, en notación científica</span>
+</pre></div>
+</div>
+<p>Sortida</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>     <span class="mf">3.142</span>
+<span class="mf">0003.14159</span>
+         <span class="mi">3</span>
+ <span class="mf">3.142e+00</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Repetiu el següent exercici canviant el valor dels números utilitzats per aparèixer per a altres caràcters Unicode.</p>
+<p>Exercici</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="mi">78</span><span class="si">:</span><span class="s1">c</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>      <span class="c1"># Formato de carácter Unicode</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="mi">128520</span><span class="si">:</span><span class="s1">c</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>  <span class="c1"># Formato de carácter Unicode</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="mi">250</span><span class="si">:</span><span class="s1">c</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>     <span class="c1"># Formato de carácter Unicode</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="mi">2023</span><span class="si">:</span><span class="s1">c</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>    <span class="c1"># Formato de carácter Unicode</span>
+</pre></div>
+</div>
+<p>Sortida</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>N
+😀
+ú
+ߧ
+</pre></div>
+</div>
+</li>
+<li><p class="first">Escriviu un programa que sol·liciti un personatge al teclat i retorna els següents 20 caràcters Unicode.</p>
+<p>Utilitzeu la funció `` ord () `` per convertir el caràcter en el seu número d'unicode.</p>
+<p>Pista</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">char</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Introduce un carácter: &#39;</span><span class="p">)</span>
+<span class="n">num</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">char</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="k">for</span> <span class="n">code</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">num</span> <span class="o">+</span> <span class="mi">21</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Código: ...  carácter: ... &#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Sortida</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Introduce un carácter: ñ
+Código: 242  carácter: ò
+Código: 243  carácter: ó
+Código: 244  carácter: ô
+Código: 245  carácter: õ
+Código: 246  carácter: ö
+Código: 247  carácter: ÷
+Código: 248  carácter: ø
+Código: 249  carácter: ù
+Código: 250  carácter: ú
+Código: 251  carácter: û
+Código: 252  carácter: ü
+Código: 253  carácter: ý
+Código: 254  carácter: þ
+Código: 255  carácter: ÿ
+Código: 256  carácter: Ā
+Código: 257  carácter: ā
+Código: 258  carácter: Ă
+Código: 259  carácter: ă
+Código: 260  carácter: Ą
+Código: 261  carácter: ą
+</pre></div>
+</div>
+<p>Proveu d’introduir diferents caràcters del teclat. Proveu de copiar des d’Internet i enganxar símbols, emojis, lletres gregues i cirilic, etc.</p>
+</li>
+<li><p class="first">Escriviu una funció que imprimeixi el valor d’un color RGB en hexadecimal. Els tres paràmetres de la funció seran tres números decimals R, G i B (vermell, verd i blau) que han d’estar entre 0 i 255.</p>
+<p>Recordeu que els valors hexadecimals s’han de capitalitzar i tenir dues xifres. La manera de convertir una variable en hexadecimal que sempre té dues figures és afegir a la variable el format següent: `` f '{variable: 02x}' <a href="#id1"><span class="problematic" id="id2">`</span></a>.</p>
+<p>Exemple</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">color_hex</span><span class="p">(</span><span class="n">red</span><span class="p">,</span> <span class="n">green</span><span class="p">,</span> <span class="n">blue</span><span class="p">):</span>
+   <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39; ... &#39;</span><span class="p">)</span>
+
+
+<span class="n">color_hex</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="mi">196</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="n">color_hex</span><span class="p">(</span><span class="mi">250</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">64</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Sortida</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#80C404</span>
+<span class="c1">#FA0540</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="python-listas.html" class="btn btn-neutral float-right" title="25. Llistes" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="python-textos-metodos.html" class="btn btn-neutral" title="23. Mètodes de la cadena de text" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/python-textos-formateo.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="prog-index.html">Programació</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="prog-lang-edu.html">Llenguatges de programació</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-flowchart.html">Diagrames de flux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-unplugged.html">Activitats desconnectades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-codeorg.html">Tutorials de codi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scratch3-index.html">Tutorial Scratch 3</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="python-index.html">Tutorial Python</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="python-intro.html">1. Introducció a la llengua de Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-datos-numeros.html">2. Dades numèriques</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-variables.html">3. Les variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-palabras-reservadas.html">4. Paraules reservades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-comentarios.html">5. Els comentaris</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-print.html">6. La funció: py: funció: `imprimir '</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-input.html">7. La funció: py: funció: `entrada '</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-booleanos.html">8. El tipus booleà</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-if-else.html">9. Judici `` si '' `` else ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-if-and-or-not.html">10. Operadors `` <cite>,</cite> ``, `` no ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-if-anidados.html">11. Judicis `si '' nided</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-if-elif.html">12. Judici `` elif ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for.html">13. Judici `` per ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for-range.html">14. La funció: py: funció: `range '</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for-continue.html">15. Judici &quot;Continua&quot;</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for-break.html">16. Judici `` Break ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for-anidados.html">17. Judicis `` `` anity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-while.html">18. Judici `` mentre ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-funciones.html">19. Definició de funcions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-funciones-argumentos.html">20. Paràmetres amb valors d’omissió</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-textos.html">21. Cadenes de text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-textos-indices.html">22. Índexs de la cadena de text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-textos-metodos.html">23. Mètodes de la cadena de text</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">24. Format de la cadena de text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-listas.html">25. Llistes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-listas-indices.html">26. Llista dels índexs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-listas-iteracion.html">27. Iteració de llistes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-listas-metodos.html">28. Llista de mètodes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-busqueda.html">29. Cerca de dades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-busqueda-binaria.html">30. Cerca binària</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-desplazamiento.html">31. Desplaçament de dades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-sort-seleccion.html">32. Gestió de la selecció</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-sort-insercion.html">33. Gestió d'inserció</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-recursividad.html">34. Recursió</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-sort-mezcla.html">35. Barrejant l’ordenació</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-codewars.html">36. Codewars katas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-recursos.html">37. Recursos Python</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="prog-recursos.html">Recursos per a la programació</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

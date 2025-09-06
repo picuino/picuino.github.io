@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Àmbit">
+  <title>Àmbit - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/python-funciones-scope.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+      <li>Àmbit</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/python-funciones-scope.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/python-funciones-scope.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="alcance-de-las-variables">
+<span id="python-funciones-scope"></span><h1>Àmbit<a class="headerlink" href="#alcance-de-las-variables" title="Link permanent a aquest títol">¶</a></h1>
+<p>Ara que s’han vist les variables i els blocs de programes, tant funcions com bucles, podeu estudiar l’abast de les variables.</p>
+<p>Les variables externes es poden utilitzar dins dels blocs, però no viceversa. Les variables internes d’un bloc no es poden utilitzar fora del bloc.</p>
+<p>Veurem alguns exemples de l’abast de les variables, és a dir, on es poden utilitzar i on no.</p>
+<div class="section" id="sentencia-global">
+<h2>Judici `` Global ''<a class="headerlink" href="#sentencia-global" title="Link permanent a aquest títol">¶</a></h2>
+<p>Les variables globals són les que es defineixen al cos del programa no dins de bucles o funcions.</p>
+<p>Exemple de variable global</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">mensaje</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Número =&#39;</span><span class="p">,</span> <span class="n">numero</span><span class="p">)</span>
+
+<span class="n">numero</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">mensaje</span><span class="p">()</span>
+<span class="n">numero</span> <span class="o">=</span> <span class="mi">11</span>
+<span class="n">mensaje</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Sortida</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Número</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">Número</span> <span class="o">=</span> <span class="mi">11</span>
+</pre></div>
+</div>
+<p>En el cas anterior, la variable global &quot;número&quot; es pot llegir dins de la funció &quot;Missatge ()&quot;.</p>
+<p>Tanmateix, si intentem actualitzar la variable &quot;número&quot; dins del &quot;missatge ()&quot; no funcionarà perquè estem creant dues variables. Una variable serà la variable ** global ** &quot;número&quot; i una altra serà la variable ** local ** &quot;número&quot;, que s'anomenen iguals, però són diferents.</p>
+<p>Exemple d'una variable global i local del mateix nom que generen un error</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">mensaje</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Número =&#39;</span><span class="p">,</span> <span class="n">numero</span><span class="p">)</span> <span class="c1"># variable local no definida (error)</span>
+    <span class="n">numero</span> <span class="o">=</span> <span class="mi">11</span>               <span class="c1"># variable local</span>
+
+<span class="n">numero</span> <span class="o">=</span> <span class="mi">10</span> <span class="c1"># variable global</span>
+<span class="n">mensaje</span><span class="p">()</span>
+<span class="n">mensaje</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Sortida</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Número =&#39;</span><span class="p">,</span> <span class="n">numero</span><span class="p">)</span>
+<span class="ne">UnboundLocalError</span><span class="p">:</span> <span class="n">cannot</span> <span class="n">access</span> <span class="n">local</span> <span class="n">variable</span> <span class="s1">&#39;numero&#39;</span> <span class="n">where</span> <span class="n">it</span> <span class="ow">is</span>
+<span class="ow">not</span> <span class="n">associated</span> <span class="k">with</span> <span class="n">a</span> <span class="n">value</span>
+</pre></div>
+</div>
+<p>Per solucionar el problema, hem d’utilitzar el judici `` global '' que declara &quot;número&quot; com a variable global i no local.</p>
+<p>Exemple de variable global sense error</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">mensaje</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">numero</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Número =&#39;</span><span class="p">,</span> <span class="n">numero</span><span class="p">)</span>
+    <span class="n">numero</span> <span class="o">=</span> <span class="mi">11</span>
+
+<span class="n">numero</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">mensaje</span><span class="p">()</span>
+<span class="n">mensaje</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Sortida</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Número</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">Número</span> <span class="o">=</span> <span class="mi">11</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/python-funciones-scope.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programació</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

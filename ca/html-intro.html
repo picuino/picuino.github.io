@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Informàtica - Tutorial HTML - 1. Introducció als exercicis HTML i CSS">
+  <title>1. Introducció als exercicis HTML i CSS - Tutorial HTML - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/html-intro.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="2. Estructura de pàgines HTML" href="html-body.html">
+  <link rel="prev" title="Tutorial HTML" href="html-index.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="informatica-index.html">Informàtica</a>/</li>
+        
+          <li><a href="html-index.html">Tutorial HTML</a>/</li>
+        
+      <li><span class="section-number">1. </span>Introducció als exercicis HTML i CSS</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/html-intro.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/html-intro.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="introduccion-a-los-ejercicios-html-y-css">
+<span id="html-intro"></span><h1><span class="section-number">1. </span>Introducció als exercicis HTML i CSS<a class="headerlink" href="#introduccion-a-los-ejercicios-html-y-css" title="Link permanent a aquest títol">¶</a></h1>
+<div class="section" id="editor-de-texto">
+<h2>Editor de text<a class="headerlink" href="#editor-de-texto" title="Link permanent a aquest títol">¶</a></h2>
+<p>Per crear els fitxers que es veuran en aquest tutorial, només cal un simple editor de text.</p>
+<p>A Windows, el més senzill és el bloc de notes, que té l’avantatge d’estar a totes les versions de Windows.</p>
+<img alt="_images/block-de-notas.png" src="_images/block-de-notas.png">
+<p>En desar el codi HTML o el codi CSS per primera vegada, heu de seleccionar dues opcions per no tenir problemes amb el fitxer.</p>
+<img alt="_images/notepad-html-utf8.png" src="_images/notepad-html-utf8.png">
+<ol class="arabic">
+<li><p class="first">El tipus de fitxer ha de ser &quot;Tots els fitxers (*. *) &quot;</p>
+<p>Amb aquesta opció, es pot triar l’abast del fitxer com a .html o com .css en lloc de desar l’extensió .txt predeterminada, que no serviria.</p>
+</li>
+<li><p class="first">La codificació ha de ser UTF-8</p>
+<p>D’aquesta manera, es desaran i es mostraran caràcters especials com Accents o Eñe correctament.</p>
+</li>
+<li><p class="first">Per desar les modificacions posteriors del fitxer .html, no cal repetir tot aquest procés.</p>
+<p>Simplement seleccioneu al menú Fitxer ... Desa o feu clic a Ctrl-G i es desarà correctament.</p>
+</li>
+</ol>
+<p>Si voleu utilitzar un editor de text més professional i amb més opcions, el `` editor de text Notepad ++ &lt;<a class="reference external" href="https://notepad-plus-plus.org/" rel="noopener noreferrer" target="_blank">https://notepad-plus-plus.org/</a>&gt;`__ és gratuït, gratuït i una opció fantàstica.</p>
+<p>L’avantatge d’utilitzar NotePad ++ o un altre editor de text avançat és que aquests editors fan ** destacats de la sintaxi ** i això ajuda molt a comprovar els errors i evitar -los mentre escriuen el codi.</p>
+</div>
+<div class="section" id="visualizacion-en-navegador-y-modificaciones">
+<h2>Visualització i modificacions del navegador<a class="headerlink" href="#visualizacion-en-navegador-y-modificaciones" title="Link permanent a aquest títol">¶</a></h2>
+<p>Un cop desat el fitxer HTML, feu clic a ell s’obrirà al navegador i podem veure el resultat.</p>
+<p>Per fer modificacions, haurem d’editar el fitxer amb l’editor de text. No és possible modificar un fitxer HTML a través del navegador.</p>
+<p>Per aconseguir -ho, hem de prémer el botó dret del ratolí del fitxer i triar l’opció Obrir amb ... per triar les notes.</p>
+<p>Una altra solució és arrossegar el fitxer HTML al bloc Notes i el seu contingut s’obrirà per editar -lo.</p>
+</div>
+<div class="section" id="errores-de-codigo">
+<h2>Errors de codi<a class="headerlink" href="#errores-de-codigo" title="Link permanent a aquest títol">¶</a></h2>
+<p>Normalment, el navegador no mostra els errors que s’han comès a l’hora d’escriure el codi. De vegades no mostra res si el codi és incorrecte.</p>
+<p>Per visualitzar els errors de codi, al navegador Firefox seleccionem al menú Eines ... desenvolupador web ... Inspector</p>
+<p>A la part inferior del navegador apareixerà una eina molt útil per comprovar quina part del codi correspon a la pantalla i viceversa.</p>
+<div class="line-block">
+<div class="line"><br></div>
+<div class="line"><br></div>
+<div class="line">** Errors habituals **</div>
+</div>
+<p>Aquesta és una petita llista amb els errors més habituals. S'hauria de revisar abans de buscar altres errors menys habituals.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Una etiqueta no s'ha tancat correctament. Per exemple, a &lt;h1&gt; títol &lt;H1&gt; Li falta la barra de la segona etiqueta:</li>
+<li>Un comentari no s'ha tancat correctament.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="editor-de-texto-para-linux">
+<h2>Editor de text per a Linux<a class="headerlink" href="#editor-de-texto-para-linux" title="Link permanent a aquest títol">¶</a></h2>
+<p>Hi ha molts editors de text compatibles amb el sistema operatiu Linux. Els editors predeterminats com l'editor de text o la ploma GEDIT s'utilitzen per realitzar qualsevol pràctica d'aquest tutorial.</p>
+<p>Es recomana utilitzar GEDIT amb la sintaxi destacada (Syntax Hightlight) per trobar errors amb més facilitat. Per activar aquesta opció, heu de seleccionar al menú Vista ... Mode ressaltar ... i el llenguatge utilitzat.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="html-body.html" class="btn btn-neutral float-right" title="2. Estructura de pàgines HTML" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="html-index.html" class="btn btn-neutral" title="Tutorial HTML" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/html-intro.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="informatica-index.html">Informàtica</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="informatica-hardware-index.html">Maquinari de l'ordinador</a></li>
+<li class="toctree-l2"><a class="reference internal" href="informatica-software-index.html">Programari informàtic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="informatica-tutoimpress.html">Tutorial impressionant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="informatica-calc-index.html">Tutorial de Calc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="informatica-writer-index.html">Tutorial d'escriptors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="writer-index.html">Escriptor 7 Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="informatica-tutogimp.html">Tutorial GIMP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inkscape-index.html">Tutorial de paisatge a Inkscape</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="html-index.html">Tutorial HTML</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">1. Introducció als exercicis HTML i CSS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="html-body.html">2. Estructura de pàgines HTML</a></li>
+<li class="toctree-l3"><a class="reference internal" href="html-paragraph.html">3. Paràgrafs de text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="html-head.html">4. Capçaleres de diferents nivells</a></li>
+<li class="toctree-l3"><a class="reference internal" href="html-comment.html">5. Comentaris</a></li>
+<li class="toctree-l3"><a class="reference internal" href="html-newline.html">6. Noves etiquetes de línia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="html-chars.html">7. Símbols especials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="html-pre.html">8. Text preformat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="html-strong.html">9. Etiquetes d'èmfasi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="html-blockquote.html">10. Bloc de cita externa</a></li>
+<li class="toctree-l3"><a class="reference internal" href="html-link.html">11. Hiperenllaços</a></li>
+<li class="toctree-l3"><a class="reference internal" href="html-img.html">12. Imatges</a></li>
+<li class="toctree-l3"><a class="reference internal" href="html-object.html">13. Objectes externs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="html-combine2.html">14. Combina les etiquetes d’imatges i enllaços</a></li>
+<li class="toctree-l3"><a class="reference internal" href="html-ex-link.html">15. Exercici d'enllaç intern</a></li>
+<li class="toctree-l3"><a class="reference internal" href="html-list.html">16. Llistes de dades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="html-combine3.html">17. Llistes imbricades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="html-definition.html">18. Definició de paraules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="html-table1.html">19. Taules de dades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="html-table2.html">20. Uniu -vos a una cel·les de taula</a></li>
+<li class="toctree-l3"><a class="reference internal" href="html-combine4.html">21. Combina les etiquetes de la llista i la taula</a></li>
+<li class="toctree-l3"><a class="reference internal" href="html-combine5.html">22. Combina les etiquetes de la imatge i la taula</a></li>
+<li class="toctree-l3"><a class="reference internal" href="html-ex-namecard.html">23. Lloc web</a></li>
+<li class="toctree-l3"><a class="reference internal" href="html-tags.html">24. Resum de l'etiqueta HTML</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="css-index.html">Tutorial CSS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="informatica-ciberseguridad-index.html">Ciberseguretat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="informatica-machine-learning.html">Intel·ligència artificial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="informatica-recursos.html">Recursos per a la informàtica</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programació</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

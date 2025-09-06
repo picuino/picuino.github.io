@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Dibuix tècnic - Escales">
+  <title>Escales - Dibuix tècnic - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/dibujo-escalas.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="Dimensionament" href="dibujo-acotacion.html">
+  <link rel="prev" title="Perspectiva isomètrica" href="dibujo-isometrica.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="dibujo-index.html">Dibuix tècnic</a>/</li>
+        
+      <li>Escales</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/dibujo-escalas.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/dibujo-escalas.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="escalas">
+<span id="dibujo-escalas"></span><h1>Escales<a class="headerlink" href="#escalas" title="Link permanent a aquest títol">¶</a></h1>
+<p>Representació d'objectes a diferents mides.</p>
+<a class="reference internal image-reference" href="_images/dibujo-escalas.png"><img alt="_images/dibujo-escalas.png" class="align-center" src="_images/dibujo-escalas.png" style="width: 480px;"></a>
+<p>Quan heu de representar un objecte gran en un avió, per exemple un camió, no és pràctic dibuixar -lo amb la seva mida real. En aquests casos, és convenient dibuixar l'objecte a mida reduïda. Si els objectes són massa petits, per exemple, un component electrònic, és convenient dibuixar amb una mida ampliada.</p>
+<dl class="docutils">
+<dt>** Escala **</dt><dd><p>És la proporció d'extensió o reducció amb la qual es dibuixa un objecte de paper.</p>
+<p>Si l'escala comença amb un nombre més gran que un és una escala d'extensió (per exemple, una escala de 10: 1). Si l'escala comença un seguit d'un nombre superior a un, és una escala de reducció (per exemple, una escala 1:10)</p>
+</dd>
+<dt>** Escala natural **</dt><dd>S'utilitza per representar objectes amb un dibuix de la mateixa mida que la realitat. L’escala natural també es representa com a escala 1: 1</dd>
+<dt>** Escala de reducció **</dt><dd>S'utilitza quan la mida de l'objecte és superior a la mida del full de paper. Una escala 1:10 significa que el dibuix serà de mida deu vegades menys que l'objecte real. Per exemple, un armari de 200cm dibuixat a escala 1:10 tindrà una mida de 20cm a la fitxa de paper.</dd>
+<dt>** Escala d'extensió **</dt><dd>S'utilitza per representar objectes petits. Una escala d’extensió 10: 1 servirà per representar un engranatge de rellotge de 5 mm, amb una mida de 50 mil·límetres en paper.</dd>
+</dl>
+<div class="section" id="escalas-normalizadas">
+<h2>Escales estandarditzades<a class="headerlink" href="#escalas-normalizadas" title="Link permanent a aquest títol">¶</a></h2>
+<p>Tot i que es pot utilitzar qualsevol valor d’escala, a la pràctica es recomana utilitzar determinats valors normalitzats en els avions tècnics per facilitar la lectura de les dimensions. Aquestes són algunes de les escales normalitzades:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width:26%;">
+<col style="width:8%;">
+<col style="width:8%;">
+<col style="width:9%;">
+<col style="width:9%;">
+<col style="width:9%;">
+<col style="width:11%;">
+<col style="width:11%;">
+<col style="width:11%;">
+</colgroup>
+<tbody style="vertical-align:top;">
+<tr class="row-odd"><td>Reducció</td>
+<td>1: 2</td>
+<td>1: 5</td>
+<td>1:10</td>
+<td>1:20</td>
+<td>1:50</td>
+<td>1: 100</td>
+<td>1: 200</td>
+<td>1: 500</td>
+</tr>
+<tr class="row-even"><td>Extensió</td>
+<td>2: 1</td>
+<td>5: 1</td>
+<td>10: 1</td>
+<td>20: 1</td>
+<td>50: 1</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>En casos especials, com en la construcció d’edificis, s’utilitzen escales intermèdies com l’escala 1:40 o l’escala 1:25.</p>
+<p>A la taula següent apareixen alguns exemples d’escales i la mida dels objectes que es poden representar en aquesta escala en un full de mida de foli o paper A4.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width:23%;">
+<col style="width:77%;">
+</colgroup>
+<thead style="vertical-align:bottom;">
+<tr class="row-odd"><th class="head">Escala</th>
+<th class="head"><div class="first last line-block">
+<div class="line">Mida que es pot representar en un foli</div>
+<div class="line">Exemple d'objectes</div>
+</div>
+</th>
+</tr>
+</thead>
+<tbody style="vertical-align:top;">
+<tr class="row-even"><td>1: 100</td>
+<td><div class="first last line-block">
+<div class="line">Fins a 25 x 15 metres en un foli</div>
+<div class="line">Casa, camió, gran saló</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td>1:20</td>
+<td><div class="first last line-block">
+<div class="line">Fins a 5 x 3 metres en un foli</div>
+<div class="line">Prestatgeria, armari, cotxe, habitació</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td>1:10</td>
+<td><div class="first last line-block">
+<div class="line">Fins a 250 x 150 centímetres en un foli</div>
+<div class="line">Bicicleta, televisió, cadira</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td>1: 2</td>
+<td><div class="first last line-block">
+<div class="line">Fins a 50 x 30 centímetres en un foli</div>
+<div class="line">Consola de videojocs, ampolla, Sierra</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td>1: 1 (natural)</td>
+<td><div class="first last line-block">
+<div class="line">Fins a 25 x 15 centímetres en un foli</div>
+<div class="line">Tornavís, tauleta</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td>2: 1</td>
+<td><div class="first last line-block">
+<div class="line">Fins a 12 x 7 centímetres en un foli</div>
+<div class="line">Smartphone, cargol</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td>10: 1</td>
+<td><div class="first last line-block">
+<div class="line">Fins a 25 x 15 mil·límetres en un foli</div>
+<div class="line">Peces de rellotge, memòria micro sd</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="ejercicios-de-escalas">
+<h2>Exercicis d’escales<a class="headerlink" href="#ejercicios-de-escalas" title="Link permanent a aquest títol">¶</a></h2>
+<p>Aquest exercici consisteix a copiar les figures en un paper quadriculat amb la mateixa mida que apareix al full imprès. La xifra es copiarà amb una escala d'extensió 2: 1, el doble de la seva mida. Finalment, s’ha de copiar la xifra amb una escala de reducció 1: 2, a la meitat de la seva mida.</p>
+<p>El primer full conté figures senzilles, formades només amb línies verticals i línies horitzontals. El segon full conté figures amb línies verticals i horitzontals, figures amb línies inclinades i figures amb cercles.</p>
+<p>Plaques amb figures per dibuixar a l'escala.</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width:50%;">
+<col style="width:50%;">
+</colgroup>
+<tbody style="vertical-align:top;">
+<tr class="row-odd"><td><a class="first last reference internal image-reference" href="_images/dibujo-escalas-01.png"><img alt="_images/dibujo-escalas-01.png" class="align-center" src="_images/dibujo-escalas-01.png" style="width: 240px;"></a>
+</td>
+<td><a class="first last reference internal image-reference" href="_images/dibujo-escalas-02.png"><img alt="_images/dibujo-escalas-02.png" class="align-center" src="_images/dibujo-escalas-02.png" style="width: 240px;"></a>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line">: Descàrrega: <a href="#id1"><span class="problematic" id="id2">`</span></a>Dibuix a escala. Placa 01. Format PDF. &lt;Dibuix/dibuix-scalas-01.pdf&gt; '</div>
+<div class="line">: Descàrrega: <a href="#id1"><span class="problematic" id="id2">`</span></a>Dibuix a escala. Placa 02. Format PDF. &lt;dibuix/dibuix-scalas-02.pdf&gt; '</div>
+<div class="line"><br></div>
+<div class="line">: Descàrrega: <a href="#id1"><span class="problematic" id="id2">`</span></a>Dibuix a escala. Placa 01. Dibuix d’oficina de format gratuït. &lt;dibuix/dibuix-scalas-01.odg&gt; '</div>
+<div class="line">: Descàrrega: <a href="#id1"><span class="problematic" id="id2">`</span></a>Dibuix a escala. Placa 02. Dibuix d’oficina de format gratuït. &lt;dibuix/dibuix-scalas-02.odg&gt; '</div>
+<div class="line"><br></div>
+<div class="line">: Descarregueu: <a href="#id1"><span class="problematic" id="id2">`</span></a>4mm plantilla quadrada. Format PDF. &lt;dibuix/dibuix-4mm.pdf&gt; '</div>
+<div class="line">: Descarregueu: <a href="#id1"><span class="problematic" id="id2">`</span></a>4mm plantilla quadrada. Dibuix d’oficina de format gratuït. &lt;dibuix/dibuix-4mm.odg&gt; '</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="dibujo-acotacion.html" class="btn btn-neutral float-right" title="Dimensionament" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="dibujo-isometrica.html" class="btn btn-neutral" title="Perspectiva isomètrica" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/dibujo-escalas.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="dibujo-intro.html">Introducció al dibuix tècnic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dibujo-boceto-croquis.html">Esbossos i esbossos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dibujo-vistas.html">Visualitzacions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dibujo-isometrica.html">Perspectiva isomètrica</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Escales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dibujo-acotacion.html">Dimensionament</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dibujo-mesilla.html">Disseny d'una taula nocturna</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dibujo-por-ordenador.html">Disseny assistit per ordinador</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dibujo-recursos.html">Recursos tècnics de dibuix</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programació</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

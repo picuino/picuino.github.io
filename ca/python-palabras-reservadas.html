@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Programació - Tutorial Python - 4. Paraules reservades">
+  <title>4. Paraules reservades - Tutorial Python - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/python-palabras-reservadas.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="5. Els comentaris" href="python-comentarios.html">
+  <link rel="prev" title="3. Les variables" href="python-variables.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="prog-index.html">Programació</a>/</li>
+        
+          <li><a href="python-index.html">Tutorial Python</a>/</li>
+        
+      <li><span class="section-number">4. </span>Paraules reservades</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/python-palabras-reservadas.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/python-palabras-reservadas.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="palabras-reservadas">
+<span id="python-palabras-reservadas"></span><h1><span class="section-number">4. </span>Paraules reservades<a class="headerlink" href="#palabras-reservadas" title="Link permanent a aquest títol">¶</a></h1>
+<p>Les paraules reservades d’un llenguatge de programació són un conjunt de paraules que tenen un significat especial i que es reserven per utilitzar -se per al llenguatge. Cadascuna d’aquestes paraules té un propòsit específic i no es pot utilitzar com a noms de variables o com a noms de funcions.</p>
+<p>Aquestes són les 33 paraules reservades a Python:</p>
+<table class="hlist"><tr><td><ul class="simple">
+<li><a href="#id1"><span class="problematic" id="id2">`</span></a>Fals</li>
+<li><cite>Cap &lt;https://docs.python.org/es/3/library/constants.html&gt;</cite> `` `</li>
+<li><cite>True &lt;https://docs.python.org/es/3/libry/constants.html&gt;</cite> `` `</li>
+<li><a class="reference external" href="https://www.w3schools.com/python/ref_keyword_and.asp" rel="noopener noreferrer" target="_blank">i</a></li>
+<li><a class="reference external" href="https://www.w3schools.com/python/ref_keyword_as.asp" rel="noopener noreferrer" target="_blank">Com</a></li>
+<li><a class="reference external" href="https://www.w3schools.com/python/ref_keyword_assert.asp" rel="noopener noreferrer" target="_blank">Assert</a></li>
+<li>&quot;Break &lt;<a class="reference external" href="https://www.w3schools.com/python/ref_keyword_break.asp" rel="noopener noreferrer" target="_blank">https://www.w3schools.com/python/ref_keyword_break.asp</a>&gt;`__</li>
+<li><a class="reference external" href="https://www.w3schools.com/python/ref_keyword_class.asp" rel="noopener noreferrer" target="_blank">Classe</a></li>
+<li><a href="#id1"><span class="problematic" id="id2">`</span></a>Continua &lt;<a class="reference external" href="https://www.w3schools.com/python/ref_keyword_continue.asp" rel="noopener noreferrer" target="_blank">https://www.w3schools.com/python/ref_keyword_continue.asp</a>&gt;</li>
+<li><a class="reference external" href="https://www.w3schools.com/python/ref_keyword_def.asp" rel="noopener noreferrer" target="_blank">Def</a></li>
+<li><a class="reference external" href="https://www.w3schools.com/python/ref_keyword_del.asp" rel="noopener noreferrer" target="_blank">de</a></li>
+</ul>
+</td><td><ul class="simple">
+<li><a class="reference external" href="https://www.w3schools.com/python/ref_keyword_elif.asp" rel="noopener noreferrer" target="_blank">Elif</a></li>
+<li><a class="reference external" href="https://www.w3schools.com/python/ref_keyword_else.asp" rel="noopener noreferrer" target="_blank">Else</a></li>
+<li><a class="reference external" href="https://www.w3schools.com/python/ref_keyword_except.asp" rel="noopener noreferrer" target="_blank">Excepte</a></li>
+<li><a class="reference external" href="https://www.w3schools.com/python/ref_keyword_fininly.asp" rel="noopener noreferrer" target="_blank">Finalment</a></li>
+<li><a class="reference external" href="https://www.w3schools.com/python/ref_keyword_for.asp" rel="noopener noreferrer" target="_blank">per a</a></li>
+<li><a class="reference external" href="https://www.w3schools.com/python/ref_keyword_from.asp" rel="noopener noreferrer" target="_blank">De</a></li>
+<li><a class="reference external" href="https://www.w3schools.com/python/ref_keyword_global.asp" rel="noopener noreferrer" target="_blank">Global</a></li>
+<li><a class="reference external" href="https://www.w3schools.com/python/ref_keyword_if.asp" rel="noopener noreferrer" target="_blank">Si</a></li>
+<li><a class="reference external" href="https://www.w3schools.com/python/ref_keyword_import.asp" rel="noopener noreferrer" target="_blank">Importa</a></li>
+<li><a class="reference external" href="https://www.w3schools.com/python/ref_keyword_in.asp" rel="noopener noreferrer" target="_blank">a</a></li>
+<li><a class="reference external" href="https://www.w3schools.com/python/ref_keyword_is.asp" rel="noopener noreferrer" target="_blank">És</a></li>
+</ul>
+</td><td><ul class="simple">
+<li><a class="reference external" href="https://www.w3schools.com/python/ref_keyword_lambda.asp" rel="noopener noreferrer" target="_blank">LAMBDA</a></li>
+<li><a class="reference external" href="https://www.w3schools.com/python/ref_keyword_nonlocal.asp" rel="noopener noreferrer" target="_blank">Non -local</a> __</li>
+<li><a class="reference external" href="https://www.w3schools.com/python/ref_keyword_not.asp" rel="noopener noreferrer" target="_blank">No</a></li>
+<li><a class="reference external" href="https://www.w3schools.com/python/ref_keyword_or.asp" rel="noopener noreferrer" target="_blank">O</a></li>
+<li><a class="reference external" href="https://www.w3schools.com/python/ref_keyword_pass.asp" rel="noopener noreferrer" target="_blank">Pass</a></li>
+<li><a class="reference external" href="https://www.w3schools.com/python/ref_keyword_raise.asp" rel="noopener noreferrer" target="_blank">Raise</a></li>
+<li><a class="reference external" href="https://www.w3schools.com/python/ref_keyword_return.asp" rel="noopener noreferrer" target="_blank">return</a></li>
+<li><a href="#id1"><span class="problematic" id="id2">`</span></a>Proveu &lt;<a class="reference external" href="https://www.w3schools.com/python/ref_keyword_try.asp" rel="noopener noreferrer" target="_blank">https://www.w3schools.com/python/ref_keyword_try.asp</a>&gt;</li>
+<li><a class="reference external" href="https://www.w3schools.com/python/ref_keyword_while.asp" rel="noopener noreferrer" target="_blank">Mentre que</a></li>
+<li>amb</li>
+<li>Produir</li>
+</ul>
+</td></tr></table>
+<p>Quan el codi s’escriu amb un editor amb ** ressaltat de la sintaxi ** Les paraules reservades es coloren per distingir -les de la resta. Per exemple, a l’editor oci de Python, va reservar les paraules Colo amb taronja.</p>
+<div class="section" id="funciones-integradas">
+<h2>Funcions integrades<a class="headerlink" href="#funciones-integradas" title="Link permanent a aquest títol">¶</a></h2>
+<p>Python té una sèrie de funcions i tipus inclosos en l’idioma que sempre estan disponibles sense importar cap mòdul.</p>
+<p>Aquestes funcions no són paraules de llenguatge reservades, però hem d’evitar utilitzar -les com a nom de les nostres variables o funcions.</p>
+<table class="hlist"><tr><td><ul class="simple">
+<li><a class="reference external" href="https://docs.python.org/es/3/library/funcations.html#abs" rel="noopener noreferrer" target="_blank">ABS ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/functs.html#aiter" rel="noopener noreferrer" target="_blank">Aiter ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funcctions.html#all" rel="noopener noreferrer" target="_blank">All ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funcations.html#any" rel="noopener noreferrer" target="_blank">Qualsevol ()</a> __</li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funnsions.html#anext" rel="noopener noreferrer" target="_blank">Anext ()</a> __</li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funcctions.html#ascii" rel="noopener noreferrer" target="_blank">Ascii ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/functs.html#bin" rel="noopener noreferrer" target="_blank">bin ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funnsions.html#bool" rel="noopener noreferrer" target="_blank">Bool ()</a></li>
+<li><cite>Breakpoint () &lt;https://docs.python.org/es/3/libry/funcctions.html#breakpoint&gt;</cite> `` `` `` `` `</li>
+<li><a class="reference external" href="https://docs.python.org/es/3/library/funcctions.html#func-byteraray" rel="noopener noreferrer" target="_blank">bytearray ()</a></li>
+<li><cite>bytes () &lt;https://docs.python.org/es/3/libry/funcctions.html#func-bytes&gt;</cite> __</li>
+<li><cite>Qualable () &lt;https://docs.python.org/es/3/libry/funcctions.html#callable&gt;</cite> __</li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/functs.html#chr" rel="noopener noreferrer" target="_blank">chr ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funcations.html#classMethod" rel="noopener noreferrer" target="_blank">classmethod ()</a> __</li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funcctions.html#compile" rel="noopener noreferrer" target="_blank">Compile ()</a> __</li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funnsions.html#complex" rel="noopener noreferrer" target="_blank">Complex ()</a> __</li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funcctions.html#delattr" rel="noopener noreferrer" target="_blank">Deattr ()</a> __</li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funcctions.html#func-ict" rel="noopener noreferrer" target="_blank">Dict ()</a> __</li>
+<li><a class="reference external" href="https://docs.python.org/es/3/library/funcations.html#dir" rel="noopener noreferrer" target="_blank">dir ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funnsions.html#divMod" rel="noopener noreferrer" target="_blank">Ddmod ()</a></li>
+<li><a href="#id1"><span class="problematic" id="id2">`</span></a>Histle</li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funcctions.html#eval" rel="noopener noreferrer" target="_blank">Aval ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funcations.html#exec" rel="noopener noreferrer" target="_blank">Exec ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funnsions.html#filter" rel="noopener noreferrer" target="_blank">Filter ()</a> __</li>
+</ul>
+</td><td><ul class="simple">
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funnsions.html#float" rel="noopener noreferrer" target="_blank">Float ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funnsions.html#format" rel="noopener noreferrer" target="_blank">Format ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/library/funcions.html#func-frozenset" rel="noopener noreferrer" target="_blank">Frozenset ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funcions.html#gettr" rel="noopener noreferrer" target="_blank">GetAttr ()</a> __</li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funnsions.html#globals" rel="noopener noreferrer" target="_blank">Globals ()</a> __</li>
+<li><a href="#id1"><span class="problematic" id="id2">`</span></a>Hasattr ()</li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/functs.html#hash" rel="noopener noreferrer" target="_blank">hash ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/functs.html#help" rel="noopener noreferrer" target="_blank">Help ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/functs.html#hex" rel="noopener noreferrer" target="_blank">Hex ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/library/funcations.html#id" rel="noopener noreferrer" target="_blank">Id ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funcctions.html#input" rel="noopener noreferrer" target="_blank">entrada ()</a> __</li>
+<li><a class="reference external" href="https://docs.python.org/es/3/library/funnsions.html#int" rel="noopener noreferrer" target="_blank">Int ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funcctions.html#isinstance" rel="noopener noreferrer" target="_blank">IsInstance ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funcations.html#issubclass" rel="noopener noreferrer" target="_blank">IssubClass ()</a></li>
+<li><a href="#id1"><span class="problematic" id="id2">`</span></a>Iter ()</li>
+<li><a href="#id1"><span class="problematic" id="id2">`</span></a>Len</li>
+<li><cite>Llista () &lt;https://docs.python.org/es/3/libry/funnsions.html#func--list&gt;</cite> __</li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funnsions.html#locals" rel="noopener noreferrer" target="_blank">Locals ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funcctions.html#map" rel="noopener noreferrer" target="_blank">Mapa ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funnsions.html#max" rel="noopener noreferrer" target="_blank">Max ()</a></li>
+<li><cite>MemoryView () &lt;https://docs.python.org/es/3/libry/funcctions.html#func-memoryView&gt;</cite> `` `` `` `` `` `` ``</li>
+<li><a class="reference external" href="https://docs.python.org/es/3/library/funcations.html#min" rel="noopener noreferrer" target="_blank">min ()</a></li>
+<li><a href="#id1"><span class="problematic" id="id2">`</span></a>Següent ()</li>
+</ul>
+</td><td><ul class="simple">
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/functions.html#object" rel="noopener noreferrer" target="_blank">Objecte ()</a> __</li>
+<li><a class="reference external" href="https://docs.python.org/es/3/library/funcations.html#oct" rel="noopener noreferrer" target="_blank">Oct ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funcctions.html#open" rel="noopener noreferrer" target="_blank">Open ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/library/funcctions.html#ord" rel="noopener noreferrer" target="_blank">Ord ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/functs.html#pow" rel="noopener noreferrer" target="_blank">POW ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/functs.html#print" rel="noopener noreferrer" target="_blank">imprimir ()</a> __</li>
+<li><cite>Propietat () &lt;https://docs.python.org/es/3/libry/funcctions.html#property&gt;</cite> __</li>
+<li><cite>Range () &lt;https://docs.python.org/es/3/libry/funcations.html#func-range&gt;</cite> __</li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/functs.html#repr" rel="noopener noreferrer" target="_blank">repres ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funcctions.html#rented" rel="noopener noreferrer" target="_blank">Venerat ()</a> __</li>
+<li><a href="#id1"><span class="problematic" id="id2">`</span></a>rodó</li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funnsions.html#func-set" rel="noopener noreferrer" target="_blank">Set ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/functions.html#settr" rel="noopener noreferrer" target="_blank">SetAttr ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funnsions.html#sice" rel="noopener noreferrer" target="_blank">Slice ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funcctions.html#sorted" rel="noopener noreferrer" target="_blank">Ordenat ()</a> __</li>
+<li><cite>staticMethod () &lt;https://docs.python.org/es/3/libry/funcctions.html#staticMethod&gt;</cite> `` `` `` `` `` `` `` `` `</li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/functs.html#func-str" rel="noopener noreferrer" target="_blank">Str ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/library/funcions.html#sum" rel="noopener noreferrer" target="_blank">Sum ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/library/funcations.html#super" rel="noopener noreferrer" target="_blank">Super ()</a> __</li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funnsions.html#func-tuple" rel="noopener noreferrer" target="_blank">Tuple ()</a> __</li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funcctions.html#type" rel="noopener noreferrer" target="_blank">Tipus ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/functs.html#vars" rel="noopener noreferrer" target="_blank">Vars ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funcations.html#zip" rel="noopener noreferrer" target="_blank">Zip ()</a></li>
+</ul>
+</td></tr></table>
+<p>Quan el codi està escrit amb un editor amb ** ressaltat de la sintaxi ** Les funcions integrades es coloren per distingir -les de la resta. Per exemple, a l’editor inactiu de Python, les funcions integrades es coloren amb color morat.</p>
+</div>
+<div class="section" id="mayusculas-y-minusculas">
+<h2>Superior i minúscula<a class="headerlink" href="#mayusculas-y-minusculas" title="Link permanent a aquest títol">¶</a></h2>
+<p>Es diu que les paraules de Python són ** sensibles al cas <a href="#id1"><span class="problematic" id="id2">**</span></a>, cosa que significa que són diferents si estan escrites en majúscules escrites en minúscules.</p>
+<p>D’aquesta manera, la paraula “falsa” serà diferent de la paraula <a href="#id1"><span class="problematic" id="id2">`</span></a>fals”. Heu de tenir en compte això per no equivocar -vos quan escriviu la paraula correcta, que és &quot;falsa&quot;.</p>
+<p>Heu d’evitar utilitzar aquesta funció Python per anomenar dues variables diferents amb el mateix nom, una de majúscules i una altra en minúscules. El resultat seria vàlid i funcionaria com a dues variables diferents, però no s’hauria de programar d’aquesta manera perquè pot provocar fallades difícils.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">variable</span> <span class="o">=</span> <span class="mi">3</span>
+
+<span class="c1"># Esta una variable diferente</span>
+<span class="n">Variable</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="c1"># No se deben nombrar variables tan semejantes</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="ejercicios">
+<h2>Exercicis<a class="headerlink" href="#ejercicios" title="Link permanent a aquest títol">¶</a></h2>
+<ol class="arabic simple">
+<li>Poseu un nom a quatre variables per contenir l’edat, l’alçada, el pes i el nom d’una persona. Cap d’aquests noms variables ha de coincidir amb les paraules reservades ni les funcions integrades.</li>
+<li>Investigueu per a quines són les funcions integrades següents:<ul>
+<li><a class="reference external" href="https://docs.python.org/es/3/library/funcations.html#abs" rel="noopener noreferrer" target="_blank">ABS ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/library/funcions.html#sum" rel="noopener noreferrer" target="_blank">Sum ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/libry/funnsions.html#max" rel="noopener noreferrer" target="_blank">Max ()</a></li>
+<li><a class="reference external" href="https://docs.python.org/es/3/library/funcations.html#min" rel="noopener noreferrer" target="_blank">min ()</a></li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="python-comentarios.html" class="btn btn-neutral float-right" title="5. Els comentaris" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="python-variables.html" class="btn btn-neutral" title="3. Les variables" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/python-palabras-reservadas.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="prog-index.html">Programació</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="prog-lang-edu.html">Llenguatges de programació</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-flowchart.html">Diagrames de flux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-unplugged.html">Activitats desconnectades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-codeorg.html">Tutorials de codi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scratch3-index.html">Tutorial Scratch 3</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="python-index.html">Tutorial Python</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="python-intro.html">1. Introducció a la llengua de Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-datos-numeros.html">2. Dades numèriques</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-variables.html">3. Les variables</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">4. Paraules reservades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-comentarios.html">5. Els comentaris</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-print.html">6. La funció: py: funció: `imprimir '</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-input.html">7. La funció: py: funció: `entrada '</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-booleanos.html">8. El tipus booleà</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-if-else.html">9. Judici `` si '' `` else ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-if-and-or-not.html">10. Operadors `` <cite>,</cite> ``, `` no ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-if-anidados.html">11. Judicis `si '' nided</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-if-elif.html">12. Judici `` elif ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for.html">13. Judici `` per ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for-range.html">14. La funció: py: funció: `range '</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for-continue.html">15. Judici &quot;Continua&quot;</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for-break.html">16. Judici `` Break ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for-anidados.html">17. Judicis `` `` anity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-while.html">18. Judici `` mentre ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-funciones.html">19. Definició de funcions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-funciones-argumentos.html">20. Paràmetres amb valors d’omissió</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-textos.html">21. Cadenes de text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-textos-indices.html">22. Índexs de la cadena de text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-textos-metodos.html">23. Mètodes de la cadena de text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-textos-formateo.html">24. Format de la cadena de text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-listas.html">25. Llistes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-listas-indices.html">26. Llista dels índexs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-listas-iteracion.html">27. Iteració de llistes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-listas-metodos.html">28. Llista de mètodes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-busqueda.html">29. Cerca de dades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-busqueda-binaria.html">30. Cerca binària</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-desplazamiento.html">31. Desplaçament de dades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-sort-seleccion.html">32. Gestió de la selecció</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-sort-insercion.html">33. Gestió d'inserció</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-recursividad.html">34. Recursió</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-sort-mezcla.html">35. Barrejant l’ordenació</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-codewars.html">36. Codewars katas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-recursos.html">37. Recursos Python</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="prog-recursos.html">Recursos per a la programació</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

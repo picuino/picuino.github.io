@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Electricitat - Sèrie, paral·lel i curtcircuit">
+  <title>Sèrie, paral·lel i curtcircuit - Electricitat - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/electric-serie-paralelo.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="Resistències equivalents" href="electric-serie-paralelo-resistencias.html">
+  <link rel="prev" title="Regla de càlcul per a la llei d&#39;Ohm" href="electric-ley-ohm-regla.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="electric-index.html">Electricitat</a>/</li>
+        
+      <li>Sèrie, paral·lel i curtcircuit</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/electric-serie-paralelo.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/electric-serie-paralelo.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="serie-paralelo-y-cortocircuito">
+<span id="electric-serie-paralelo"></span><h1>Sèrie, paral·lel i curtcircuit<a class="headerlink" href="#serie-paralelo-y-cortocircuito" title="Link permanent a aquest títol">¶</a></h1>
+<p>Els circuits elèctrics poden connectar -se de moltes maneres possibles. Les connexions més simples són la connexió en sèrie i la connexió paral·lela. S'aconsegueix combinar una connexió mixta.</p>
+<p>La connexió a la sèrie ** ** s'utilitza quan volem que alguns components afectin el comportament d'altres components. Així, l’interruptor de llum es col·locarà en sèrie amb la bombeta de manera que pugui activar -lo o desactivar -lo.</p>
+<p>La connexió a ** paral·lel ** s'utilitza quan volem que els components siguin independents. D’aquesta manera, col·locarem les dues bombetes d’una làmpada en paral·lel de manera que quan un dels bulbs es fongui l’altra continuarà funcionant sense problemes.</p>
+<p>Finalment, si les connexions elèctriques estan mal fetes, es pot produir un curtcircuit ** ** o un circuit obert <a href="#id1"><span class="problematic" id="id2">**</span></a>. Tots dos evitaran que el circuit elèctric funcioni.</p>
+<p>A continuació, estudiarem amb més detall tots aquests tipus de connexions.</p>
+<div class="contents local topic" id="indice-de-contenidos">
+<p class="topic-title">Índex de contingut:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#circuito-en-serie" id="id1">Circuit de sèrie</a></li>
+<li><a class="reference internal" href="#circuito-en-paralelo" id="id2">Circuit paral·lel</a></li>
+<li><a class="reference internal" href="#cortocircuito" id="id3">Curtcircuit</a></li>
+<li><a class="reference internal" href="#circuito-abierto" id="id4">Circuit obert</a></li>
+<li><a class="reference internal" href="#ejercicios" id="id5">Exercicis</a></li>
+<li><a class="reference internal" href="#cuestionarios" id="id6">Qüestionaris</a></li>
+</ul>
+</div>
+<div class="section" id="circuito-en-serie">
+<h2><a class="toc-backref" href="#id1">Circuit de sèrie</a><a class="headerlink" href="#circuito-en-serie" title="Link permanent a aquest títol">¶</a></h2>
+<p>En un circuit de sèries, els components es connecten a la cadena, un darrere de l'altre.</p>
+<a class="reference internal image-reference" href="_images/electric-sch-02a.png"><img alt="Circuito en serie." src="_images/electric-sch-02a.png" style="width: 236px;"></a>
+<p>** Característiques d’un circuit de sèrie: **</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p class="first">El corrent elèctric que passa per tots els components és el mateix.</p>
+<p>Això vol dir que si eliminem o obrim un component, els altres components no tindran corrents i no funcionaran.</p>
+</li>
+<li><p class="first">La tensió de la pila es divideix entre els components connectats en sèries, que, per tant, tindran una tensió inferior a la bateria.</p>
+<p>Això significa que les bombetes s’il·luminen menys quan estan en sèrie.</p>
+</li>
+</ol>
+</div></blockquote>
+<p>** Connexió d’un circuit de sèrie: **</p>
+<blockquote>
+<div><p>La tensió positiva de la pila arriba a la primera bombeta.</p>
+<a class="reference internal image-reference" href="_images/electric-sch-02b.png"><img alt="Circuito en serie. Camino de la corriente." src="_images/electric-sch-02b.png" style="width: 236px;"></a>
+<p>A continuació, només hi ha una connexió entre la primera bombeta i la segona.</p>
+<a class="reference internal image-reference" href="_images/electric-sch-02c.png"><img alt="Circuito en serie. Camino de la corriente." src="_images/electric-sch-02c.png" style="width: 236px;"></a>
+<p>Finalment, hi ha una connexió entre la segona bombeta i la bateria.</p>
+<a class="reference internal image-reference" href="_images/electric-sch-02d.png"><img alt="Circuito en serie. Camino de la corriente." src="_images/electric-sch-02d.png" style="width: 236px;"></a>
+</div></blockquote>
+<p>** Falla d'un component de sèrie: **</p>
+<blockquote>
+<div><p>En un circuit de sèrie, si eliminem una de les bombetes, l’altra deixa de funcionar i s’apaga.</p>
+<a class="reference internal image-reference" href="_images/electric-sch-02e.png"><img alt="Circuito en serie con fallo en un componente." src="_images/electric-sch-02e.png" style="width: 236px;"></a>
+<p>Els sensors d’alarma i altres sistemes de seguretat estan connectats en sèrie. Si un component falla o es trenca, tot el circuit deixarà de funcionar i l’alarma donarà un avís o la màquina perillosa s’aturarà.</p>
+</div></blockquote>
+</div>
+<div class="section" id="circuito-en-paralelo">
+<h2><a class="toc-backref" href="#id2">Circuit paral·lel</a><a class="headerlink" href="#circuito-en-paralelo" title="Link permanent a aquest títol">¶</a></h2>
+<p>En un circuit paral·lel, els components estan connectats entre ells a banda i banda.</p>
+<a class="reference internal image-reference" href="_images/electric-sch-01a.png"><img alt="Circuito en paralelo." src="_images/electric-sch-01a.png" style="width: 302px;"></a>
+<p>** Característiques d’un circuit paral·lel: **</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p class="first">La tensió elèctrica que arriba a tots els components és la mateixa.</p>
+<p>Això significa que les bombetes tenen tota la tensió de la pila i s’il·luminen.</p>
+</li>
+<li><p class="first">El corrent de la bateria es divideix entre els components connectats en paral·lel. Per tant, un corrent menor circularà per les bombetes que la bateria.</p>
+</li>
+</ol>
+</div></blockquote>
+<p>** Connexió d’un circuit paral·lel: **</p>
+<blockquote>
+<div><p>Els dos terminals de bombetes estan connectats entre si.</p>
+<p>La tensió positiva de la pila arriba a totes les bombetes per igual.</p>
+<a class="reference internal image-reference" href="_images/electric-sch-01b.png"><img alt="Circuito en paralelo. Camino de la corriente." src="_images/electric-sch-01b.png" style="width: 302px;"></a>
+<p>La tensió negativa de la pila arriba a totes les bombetes per igual.</p>
+<a class="reference internal image-reference" href="_images/electric-sch-01c.png"><img alt="Circuito en paralelo. Camino de la corriente." src="_images/electric-sch-01c.png" style="width: 302px;"></a>
+</div></blockquote>
+<p>** Falla d'un component paral·lel: **</p>
+<blockquote>
+<div><p>Si eliminem una de les bombetes d’un circuit connectat en paral·lel o si falla, els altres bombetes continuaran funcionant.</p>
+<a class="reference internal image-reference" href="_images/electric-sch-01d.png"><img alt="Circuito en paralelo con fallo en un componente." src="_images/electric-sch-01d.png" style="width: 302px;"></a>
+<p>Les bombetes i altres components comuns d’una casa estan connectats en paral·lel. De Esta Forma, El Fallo de Un Componente No Impide Funcionar a Los Demás. Si eliminem una bombeta de casa, els altres bombetes continuaran funcionant.</p>
+</div></blockquote>
+</div>
+<div class="section" id="cortocircuito">
+<h2><a class="toc-backref" href="#id3">Curtcircuit</a><a class="headerlink" href="#cortocircuito" title="Link permanent a aquest títol">¶</a></h2>
+<p>Un curtcircuit és la unió dels dos terminals del mateix component amb un cable. Quan un component és en breu, no pot funcionar perquè tot el corrent es desviarà pel cable. Si en breu una pila o un generador, tot el corrent que genera passarà pel cable i el generador o el cable es cremarà.</p>
+<p>** curtcircuit en un component: **</p>
+<blockquote>
+<div><p>En el següent esquema hi ha un curtcircuit a la primera bombeta. El cable portarà tot el corrent de manera que la bombeta deixi de funcionar i la bombeta per sota de L2 s’enfonsarà molt més que si fos en sèrie.</p>
+<a class="reference internal image-reference" href="_images/electric-sch-02a.png"><img alt="Circuito en serie." src="_images/electric-sch-02a.png" style="width: 210px;"></a>
+<a class="reference internal image-reference" href="_images/electric-sch-03a.png"><img alt="Circuito en serie con cortocircuito en un componente." src="_images/electric-sch-03a.png" style="width: 236px;"></a>
+<p>A la imatge següent podeu veure el camí de l’electricitat. Veiem com el cable és el camí preferit, de menys resistència, del corrent elèctric. Per tant, tot el corrent elèctric que anteriorment passava per la bombeta L1 passa ara pel curtcircuit.</p>
+<a class="reference internal image-reference" href="_images/electric-sch-03b.png"><img alt="Camino de la corriente en un cortocircuito de componente." src="_images/electric-sch-03b.png" style="width: 236px;"></a>
+</div></blockquote>
+<p>** curtcircuit a la pila: **</p>
+<blockquote>
+<div><p>En aquest esquema hi ha un curtcircuit entre els terminals de pila. Això significa que tot el corrent de la bateria passarà pel cable i un dels dos es cremarà.</p>
+<p>Les bombetes no s’encenen perquè no arriben al corrent elèctric.</p>
+<p>Esquema de curtcircuit de tempestes i corrent al corrent.</p>
+<a class="reference internal image-reference" href="_images/electric-sch-03c.png"><img alt="Cortocircuito de pila." src="_images/electric-sch-03c.png" style="width: 236px;"></a>
+<a class="reference internal image-reference" href="_images/electric-sch-03d.png"><img alt="Cortocircuito de pila. Camino de la corriente." src="_images/electric-sch-03d.png" style="width: 236px;"></a>
+</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p>No repetiu aquest experiment en cap circumstància, és molt perillós.</p>
+<p class="last">Vídeo: <a class="reference external" href="https://www.youtube-nocoakie.com/embed/wpvthsf9xny" rel="noopener noreferrer" target="_blank">La bateria de liti explota a causa d'un curtcircuit causat</a>.</p>
+</div>
+</div>
+<div class="section" id="circuito-abierto">
+<h2><a class="toc-backref" href="#id4">Circuit obert</a><a class="headerlink" href="#circuito-abierto" title="Link permanent a aquest títol">¶</a></h2>
+<p>Un circuit obert és un circuit que no té manera de circular el corrent elèctric. Es pot donar un circuit obert si falta un cable per tancar el circuit, si hi ha un interruptor obert o si algun component serial és fos.</p>
+<p>Es pot obrir un circuit si falta la ruta per arribar a la tensió positiva de la pila o si falta la ruta per arribar a la tensió negativa de la pila.</p>
+<a class="reference internal image-reference" href="_images/electric-sch-04a.png"><img alt="Circuito abierto." src="_images/electric-sch-04a.png" style="width: 246px;"></a>
+<a class="reference internal image-reference" href="_images/electric-sch-04b.png"><img alt="Circuito abierto." src="_images/electric-sch-04b.png" style="width: 246px;"></a>
+<p>És el primer que es comprova quan un aparell elèctric no funciona, està connectat?</p>
+</div>
+<div class="section" id="ejercicios">
+<h2><a class="toc-backref" href="#id5">Exercicis</a><a class="headerlink" href="#ejercicios" title="Link permanent a aquest títol">¶</a></h2>
+<p>Exercicis per identificar circuits en sèrie, en paral·lel, amb curtcircuit en una bombeta o amb curtcircuit a la bateria.</p>
+<a class="reference internal image-reference" href="_images/electric-serie-paralelo-logo.png"><img alt="Circuitos en serie, en paralelo y en cortocircuito." src="_images/electric-serie-paralelo-logo.png" style="width: 540px;"></a>
+<div class="line-block">
+<div class="line">: Descarregueu: <a href="#id1"><span class="problematic" id="id2">`</span></a>Identifiqueu els circuits en sèrie, paral·lel i curtcircuit. Format PDF. &lt;Electric/Electric-Serie-Palelo.pdf&gt; '</div>
+<div class="line">: Descarregueu: <a href="#id1"><span class="problematic" id="id2">`</span></a>Imatges dels circuits. Format PNG. &lt;Electric/Electric-Serie-Palelo-Images.zip&gt; '</div>
+<div class="line">: Descàrrega: <a href="#id1"><span class="problematic" id="id2">`</span></a>Projecte Editable. Format KICAD. &lt;Electric/Electric-Serie-Paralelo.Zip&gt; '</div>
+</div>
+</div>
+<div class="section" id="cuestionarios">
+<h2><a class="toc-backref" href="#id6">Qüestionaris</a><a class="headerlink" href="#cuestionarios" title="Link permanent a aquest títol">¶</a></h2>
+<p>Tipus de prova del qüestionari per identificar circuits en sèrie, en paral·lel, amb curtcircuit a la bateria o amb curtcircuit a la bombeta.</p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference external" href="../test/es-elèctric-sèrie-parallel-identify.html" rel="noopener noreferrer" target="_blank">Qüestionari. Identifiqueu sèries i paral·leles</a></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="electric-serie-paralelo-resistencias.html" class="btn btn-neutral float-right" title="Resistències equivalents" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="electric-ley-ohm-regla.html" class="btn btn-neutral" title="Regla de càlcul per a la llei d&#39;Ohm" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/electric-serie-paralelo.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="electric-index.html">Electricitat</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="electric-circuito.html">El circuit elèctric</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-receptores.html">Efectes de l’electricitat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-componentes-index.html">Components elèctrics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-simbolos.html">Símbols elèctrics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-ley-ohm.html">Ohm's Law</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-ley-ohm-regla.html">Regla de càlcul per a la llei d'Ohm</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Sèrie, paral·lel i curtcircuit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-serie-paralelo-resistencias.html">Resistències equivalents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-resolver-circuitos.html">Resolució del circuit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-energia.html">: Índex: `energia '</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-potencia.html">: Índex: `Potència elèctrica '</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-sistema-electrico.html">Sistema elèctric espanyol</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-cableado.html">Cablejat del circuit elèctric</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-simulador-index.html">Simulador elèctric</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bornas-lamparas-index.html">Cobriment de làmpades amb terminals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-recursos.html">Recursos per a l’electricitat</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programació</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

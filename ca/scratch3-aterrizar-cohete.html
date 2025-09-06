@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Programació - Tutorial Scratch 3 - 13. Rocket terrestre">
+  <title>13. Rocket terrestre - Tutorial Scratch 3 - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/scratch3-aterrizar-cohete.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="14. Walk Labyrinths" href="scratch3-recorrer-laberintos.html">
+  <link rel="prev" title="12. Dibuixa flors" href="scratch3-dibujar-flores.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="prog-index.html">Programació</a>/</li>
+        
+          <li><a href="scratch3-index.html">Tutorial Scratch 3</a>/</li>
+        
+      <li><span class="section-number">13. </span>Rocket terrestre</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/scratch3-aterrizar-cohete.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/scratch3-aterrizar-cohete.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="aterrizar-cohete">
+<span id="scratch3-aterrizar-cohete"></span><h1><span class="section-number">13. </span>Rocket terrestre<a class="headerlink" href="#aterrizar-cohete" title="Link permanent a aquest títol">¶</a></h1>
+<p>En aquesta pràctica, programarem un joc que consisteix a desembarcar a la lluna un coet que tindrà un moviment realista amb la gravetat i amb l’encesa dels motors. L’objectiu és activar els motors en el moment adequat de manera que el coet aterri a baixa velocitat i no es bloquegi.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p13-screen.png"><img alt="_images/scratch3-p13-screen.png" src="_images/scratch3-p13-screen.png" style="width: 360px;"></a>
+<p>; BR |</p>
+<ol class="arabic">
+<li><p class="first">Comencem el | Editor_de_scratch <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Premeu el botó d'idioma | Botó-Idioma | A la barra superior i va triar ** espanyol <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Eliminem l'objecte CAT prement a la icona del cub d'escombraries.</p>
+<p>; Suprimeix-Gato |</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara escollim un fons adequat per al nostre joc. Canviem el fons de l'escenari per ** luna <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Premeu el botó Trieu un fons | Select-Fondo <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<p>Estem buscant a l’espai ** <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>I seleccionem el fons ** lluna <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<img alt="_images/scratch3-fondo-moon.png" src="_images/scratch3-fondo-moon.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">A continuació, afegim un nou personatge, un coet ** <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Premeu el botó Trieu un objecte | Select-objecte <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<p>Estem buscant a la secció ** tot <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>i seleccionem l'objecte ** coetship <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<img alt="_images/scratch3-objeto-rocketship.png" src="_images/scratch3-objeto-rocketship.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara crearem la variable ** velocitat ** que emmagatzemarà la velocitat de caiguda del coet a la lluna. Si aquesta variable és molt alta quan el coet xoca amb la lluna, el coet es destruirà.</p>
+<p>Premeu el botó variable | Botó-Variables <a href="#id1"><span class="problematic" id="id2">|</span></a>,</p>
+<p>Premeu per crear una variable | Botó-Crear-Variable <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<p>Canviem el nom de la variable a ** velocitat **</p>
+<img alt="_images/scratch3-crear-variable-velocidad.png" src="_images/scratch3-crear-variable-velocidad.png">
+<p>Finalment, feu clic al botó ** acceptar **</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara crearem la variable ** combustible ** que emmagatzemarà la quantitat de combustible que el coet ha de ser capaç d’encendre els motors i aturar la caiguda a la lluna. Si el combustible s’acaba, el coet no pot aturar la caiguda.</p>
+<p>Premeu el botó variable | Botó-Variables <a href="#id1"><span class="problematic" id="id2">|</span></a>,</p>
+<p>Premeu per crear una variable | Botó-Crear-Variable <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<p>Canviem el nom de la variable a ** combustible **</p>
+<img alt="_images/scratch3-crear-variable-combustible.png" src="_images/scratch3-crear-variable-combustible.png">
+<p>Finalment, feu clic al botó ** acceptar **</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Realitzem una subrutina que inicialitza la posició i la mida del coet al començament del programa. També establirà els valors inicials de les variables.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p13-inicio.png"><img alt="_images/scratch3-p13-inicio.png" src="_images/scratch3-p13-inicio.png" style="width: 288px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Realitzem una subrutina que mou el coet durant el vol. La velocitat augmentarà quan encenem els motors i augmentem amb els motors.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p13-vuelo.png"><img alt="_images/scratch3-p13-vuelo.png" src="_images/scratch3-p13-vuelo.png" style="width: 399px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Realitzem una subrutina que atura el coet en arribar al terra i determina si la velocitat és massa alta o correcta per donar el desembarcament per bé.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p13-aterrizaje.png"><img alt="_images/scratch3-p13-aterrizaje.png" src="_images/scratch3-p13-aterrizaje.png" style="width: 375px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Programem el programa principal que compleix totes les subrutines.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p13-programa.png"><img alt="_images/scratch3-p13-programa.png" src="_images/scratch3-p13-programa.png" style="width: 365px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">A continuació, afegim un caràcter nou, un botó ** ** que servirà com a plataforma de desembarcament.</p>
+<p>Premeu el botó Trieu un objecte | Select-objecte <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<p>Estem buscant a la secció ** tot <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>i seleccionem l'objecte ** Botó2 <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<img alt="_images/scratch3-objeto-button2.png" src="_images/scratch3-objeto-button2.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">Afegim el programa d’inicialització del botó.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p13-button2-init.png"><img alt="_images/scratch3-p13-button2-init.png" src="_images/scratch3-p13-button2-init.png" style="width: 388px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Premeu la bandera verda | Flag-Verde | Per provar el funcionament del programa.</p>
+</li>
+</ol>
+<hr class="docutils">
+<div class="section" id="retos">
+<h2>Reptes<a class="headerlink" href="#retos" title="Link permanent a aquest títol">¶</a></h2>
+<ol class="arabic simple">
+<li>Afegiu meteorits que es mouen d’un costat a l’altre lentament de manera que el coet els hagi de superar.</li>
+<li>Juga diverses vegades per establir la millor marca de combustible sobrant un cop aterrat el coet. A partir d’aquí, podeu descarregar el combustible inicial del programa per dificultar el joc.</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="scratch3-recorrer-laberintos.html" class="btn btn-neutral float-right" title="14. Walk Labyrinths" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="scratch3-dibujar-flores.html" class="btn btn-neutral" title="12. Dibuixa flors" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/scratch3-aterrizar-cohete.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="prog-index.html">Programació</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="prog-lang-edu.html">Llenguatges de programació</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-flowchart.html">Diagrames de flux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-unplugged.html">Activitats desconnectades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-codeorg.html">Tutorials de codi</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="scratch3-index.html">Tutorial Scratch 3</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="scratch3-dibujar-disfraces.html">1. Dibuixar disfresses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-volar-personaje.html">2. Gat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-jugar-futbol.html">3. Juga a futbol</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-pasear-escenarios.html">4. Escenaris de caminar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-animar-nombre.html">5. Animar el nom</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-comer-peces.html">6. Menjar peix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-atrapar-bichos.html">7. Captura d'errors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-romper-ladrillos.html">8. Breaks Bricks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-atrapar-manzanas.html">9. Agafar pomes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-matar-marcianitos.html">10. Mata als Marcianitos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-dibujar-espirales.html">11. Dibuixa espirals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-dibujar-flores.html">12. Dibuixa flors</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">13. Rocket terrestre</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-recorrer-laberintos.html">14. Walk Labyrinths</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-saltar-arboles.html">15. Saltar arbres</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-retos-codigoescuela.html">16. Rastreja els reptes de la comunitat de Madrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-retos-robotix.html">17. Robotix Reptes per Scratch</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="python-index.html">Tutorial Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-recursos.html">Recursos per a la programació</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

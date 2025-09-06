@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Programació - Tutorial Python - 27. Iteració de llistes">
+  <title>27. Iteració de llistes - Tutorial Python - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/python-listas-iteracion.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="28. Llista de mètodes" href="python-listas-metodos.html">
+  <link rel="prev" title="26. Llista dels índexs" href="python-listas-indices.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="prog-index.html">Programació</a>/</li>
+        
+          <li><a href="python-index.html">Tutorial Python</a>/</li>
+        
+      <li><span class="section-number">27. </span>Iteració de llistes</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/python-listas-iteracion.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/python-listas-iteracion.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="iteracion-de-listas">
+<span id="python-listas-iteracion"></span><h1><span class="section-number">27. </span>Iteració de llistes<a class="headerlink" href="#iteracion-de-listas" title="Link permanent a aquest títol">¶</a></h1>
+<p>Iterar una llista significa viatjar cadascun dels elements de la llista un per un per realitzar alguna acció amb cada element. Aquesta tècnica us permet manipular de forma repetitiva les dades sense haver d’escriure el codi diverses vegades.</p>
+<p>Les llistes poden beepo amb un bucle `` per ''.</p>
+<p>Exemple</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Juan&#39;</span><span class="p">,</span> <span class="s1">&#39;Nerea&#39;</span><span class="p">,</span> <span class="s1">&#39;Camila&#39;</span><span class="p">,</span> <span class="s1">&#39;Esteban&#39;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">nombre</span> <span class="ow">in</span> <span class="n">lista</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Hola </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Sortida</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Hola</span> <span class="n">Juan</span>
+<span class="n">Hola</span> <span class="n">Nerea</span>
+<span class="n">Hola</span> <span class="n">Camila</span>
+<span class="n">Hola</span> <span class="n">Esteban</span>
+</pre></div>
+</div>
+<div class="section" id="funcion-len">
+<h2>Funció `` len () '<a class="headerlink" href="#funcion-len" title="Link permanent a aquest títol">¶</a></h2>
+<p>La funció `` len () retorna el nombre d'elements que conté una llista. És útil per a iteracions amb l’índex ** ** en què es troba cada element</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>
+<span class="go">    6</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lista</span><span class="p">)):</span>
+<span class="gp">... </span>    <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<span class="gp">... </span>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="go">    A</span>
+<span class="go">    C</span>
+<span class="go">    E</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lista</span><span class="p">)):</span>
+<span class="gp">... </span>    <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+<span class="gp">... </span>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="go">    B</span>
+<span class="go">    D</span>
+<span class="go">    F</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="funcion-list">
+<h2>`` Llista () `` '<a class="headerlink" href="#funcion-list" title="Link permanent a aquest títol">¶</a></h2>
+<p>La `` llista () `` <cite>us permet crear una llista de diversos elements o convertir un iterable com a '</cite> Rage () `` en una llista</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="go">    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span> <span class="c1"># Impares</span>
+<span class="go">    [1, 3, 5, 7, 9]</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="s1">&#39;Hola, mundo&#39;</span><span class="p">)</span>
+<span class="go">    [&#39;H&#39;, &#39;o&#39;, &#39;l&#39;, &#39;a&#39;, &#39;,&#39;, &#39; &#39;, &#39;m&#39;, &#39;u&#39;, &#39;n&#39;, &#39;d&#39;, &#39;o&#39;]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="comprension-de-listas">
+<h2>Enumereu la comprensió<a class="headerlink" href="#comprension-de-listas" title="Link permanent a aquest títol">¶</a></h2>
+<p>La comprensió de la llista és un mètode breu i ràpid de generar llistes. Utilitzeu el bucle `` `` dins de dos claudàtors `` [] `` `</p>
+<p>Exemple</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="n">num</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)]</span>
+</pre></div>
+</div>
+<p>És equivalent a aquest altre codi, més lent i llarg per escriure</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">lista</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="ejercicios">
+<h2>Exercicis<a class="headerlink" href="#ejercicios" title="Link permanent a aquest títol">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Escriviu un programa que defineixi una llista de noms i després s’imprimeixi a la pantalla el nom i les lletres pel qual comença amb el format següent</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Juan</span>       <span class="n">comienza</span> <span class="n">por</span> <span class="s1">&#39;J&#39;</span>
+<span class="n">Nerea</span>      <span class="n">comienza</span> <span class="n">por</span> <span class="s1">&#39;N&#39;</span>
+<span class="n">Camila</span>     <span class="n">comienza</span> <span class="n">por</span> <span class="s1">&#39;C&#39;</span>
+<span class="n">Esteban</span>    <span class="n">comienza</span> <span class="n">por</span> <span class="s1">&#39;E&#39;</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Escriviu un programa que demani una frase per a l’entrada del teclat. El programa ha de convertir la frase en una llista de personatges.</p>
+<p>Aleshores, el programa ha d’imprimir la frase cap enrere, a partir de l’última lletra i acabant per a la primera lletra.</p>
+<p>Pista: anar del final al començament, es pot utilitzar un índex amb el `` per a la gamma (len (llista) -1, -1, -1): <a href="#id1"><span class="problematic" id="id2">``</span></a>.</p>
+</li>
+<li><p class="first">Escriviu un programa que generi una llista de números imparells fins al 99. El programa ha d’afegir tots els números a la llista i imprimir el resultat, que ha de ser igual a 2500.</p>
+</li>
+<li><p class="first">Escriviu un programa que defineixi la llista següent d’elements</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">lista_1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>El programa ha de generar una nova llista que contingui tots els elements del primer, excepte els que es dupliquen</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">lista_2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Pista: recorre tots els elements de la llista_1 i si no són a la llista_2, els afegiu a la llista_2.</p>
+</li>
+<li><p class="first">Escriviu un programa que llegeixi una frase del teclat i del kifre amb l'algoritme següent.</p>
+<p>El programa ha de dividir la frase en lletres amb la `` llista (frase) <a href="#id1"><span class="problematic" id="id2">``</span></a>.</p>
+<p>A continuació, el programa ha de generar una nova llista amb les lletres amb un par.</p>
+<p>A aquesta llista nova, les lletres amb un índex estrany s’han d’afegir al final.</p>
+<p>Finalment, s’imprimiran totes les cartes de la nova llista.</p>
+<p>Sortida</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Introduce</span> <span class="n">una</span> <span class="n">frase</span><span class="p">:</span> <span class="n">La</span> <span class="n">lluvia</span> <span class="n">en</span> <span class="n">Sevilla</span> <span class="n">es</span> <span class="n">una</span> <span class="n">pura</span> <span class="n">maravilla</span>
+
+<span class="n">L</span> <span class="n">lvae</span> <span class="n">eil</span> <span class="n">suapr</span> <span class="n">aailalui</span> <span class="n">nSvlae</span> <span class="n">n</span> <span class="n">uamrvla</span>
+</pre></div>
+</div>
+<p>Sortida</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Introduce</span> <span class="n">una</span> <span class="n">frase</span><span class="p">:</span> <span class="n">En</span> <span class="n">un</span> <span class="n">lugar</span> <span class="n">de</span> <span class="n">la</span> <span class="n">Mancha</span><span class="p">,</span> <span class="n">de</span> <span class="n">cuyo</span> <span class="n">nombre</span> <span class="n">no</span> <span class="n">quiero</span> <span class="n">acordarme</span>
+
+<span class="n">E</span> <span class="n">nlgrd</span> <span class="n">aMnh</span><span class="p">,</span><span class="n">d</span> <span class="n">uonmr</span> <span class="n">oqir</span> <span class="n">cramnu</span> <span class="n">ua</span> <span class="n">el</span> <span class="n">aca</span> <span class="n">ecy</span> <span class="n">oben</span> <span class="n">ueoaodre</span>
+</pre></div>
+</div>
+<p>Sortida</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Introduce</span> <span class="n">una</span> <span class="n">frase</span><span class="p">:</span> <span class="n">Si</span> <span class="n">eres</span> <span class="n">capaz</span> <span class="n">de</span> <span class="n">descifrar</span> <span class="n">esto</span><span class="p">,</span> <span class="n">es</span> <span class="n">que</span> <span class="n">eres</span> <span class="n">un</span><span class="o">/</span><span class="n">a</span> <span class="n">crack</span>
+
+<span class="n">S</span> <span class="n">rscpzd</span> <span class="n">ecfa</span> <span class="n">so</span> <span class="n">sqeee</span> <span class="n">nacakiee</span> <span class="n">aa</span> <span class="n">edsirret</span><span class="p">,</span><span class="n">e</span> <span class="n">u</span> <span class="n">rsu</span><span class="o">/</span> <span class="n">rc</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Escriviu un programa que desxifiqui el codi produït pel programa anterior.</p>
+<p>Pista</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">frase</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Escribe la frase cifrada: &#39;</span><span class="p">)</span>
+
+<span class="c1"># Para evitar errores debe haber un número par de caracteres</span>
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">frase</span><span class="p">)</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">frase</span> <span class="o">=</span> <span class="n">frase</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span>
+
+<span class="c1"># Genera dos listas con los caracteres de índice par</span>
+<span class="c1"># y los caracteres de índice impar</span>
+<span class="n">lista_cifrada</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">frase</span><span class="p">)</span>
+<span class="n">lista_cifrada_par</span> <span class="o">=</span> <span class="n">lista_cifrada</span><span class="p">[</span> <span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">frase</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">lista_cifrada_impar</span> <span class="o">=</span> <span class="n">lista_cifrada</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">frase</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span> <span class="p">:</span> <span class="p">]</span>
+
+<span class="c1"># Genera una lista descifrada vacía</span>
+<span class="n">lista_descifrada</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">frase</span><span class="p">)</span>
+
+<span class="c1"># Reparte los caracteres pares</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lista_cifrada_par</span><span class="p">)):</span>
+    <span class="n">lista_descifrada</span><span class="p">[</span><span class="n">i</span><span class="o">*</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">lista_cifrada_par</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+
+<span class="c1"># Reparte los caracteres impares</span>
+<span class="k">for</span> <span class="o">...</span>
+
+<span class="c1"># Imprime el resultado</span>
+<span class="k">for</span> <span class="o">...</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="python-listas-metodos.html" class="btn btn-neutral float-right" title="28. Llista de mètodes" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="python-listas-indices.html" class="btn btn-neutral" title="26. Llista dels índexs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/python-listas-iteracion.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="prog-index.html">Programació</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="prog-lang-edu.html">Llenguatges de programació</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-flowchart.html">Diagrames de flux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-unplugged.html">Activitats desconnectades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-codeorg.html">Tutorials de codi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scratch3-index.html">Tutorial Scratch 3</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="python-index.html">Tutorial Python</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="python-intro.html">1. Introducció a la llengua de Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-datos-numeros.html">2. Dades numèriques</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-variables.html">3. Les variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-palabras-reservadas.html">4. Paraules reservades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-comentarios.html">5. Els comentaris</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-print.html">6. La funció: py: funció: `imprimir '</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-input.html">7. La funció: py: funció: `entrada '</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-booleanos.html">8. El tipus booleà</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-if-else.html">9. Judici `` si '' `` else ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-if-and-or-not.html">10. Operadors `` <cite>,</cite> ``, `` no ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-if-anidados.html">11. Judicis `si '' nided</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-if-elif.html">12. Judici `` elif ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for.html">13. Judici `` per ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for-range.html">14. La funció: py: funció: `range '</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for-continue.html">15. Judici &quot;Continua&quot;</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for-break.html">16. Judici `` Break ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for-anidados.html">17. Judicis `` `` anity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-while.html">18. Judici `` mentre ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-funciones.html">19. Definició de funcions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-funciones-argumentos.html">20. Paràmetres amb valors d’omissió</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-textos.html">21. Cadenes de text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-textos-indices.html">22. Índexs de la cadena de text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-textos-metodos.html">23. Mètodes de la cadena de text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-textos-formateo.html">24. Format de la cadena de text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-listas.html">25. Llistes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-listas-indices.html">26. Llista dels índexs</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">27. Iteració de llistes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-listas-metodos.html">28. Llista de mètodes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-busqueda.html">29. Cerca de dades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-busqueda-binaria.html">30. Cerca binària</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-desplazamiento.html">31. Desplaçament de dades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-sort-seleccion.html">32. Gestió de la selecció</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-sort-insercion.html">33. Gestió d'inserció</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-recursividad.html">34. Recursió</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-sort-mezcla.html">35. Barrejant l’ordenació</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-codewars.html">36. Codewars katas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-recursos.html">37. Recursos Python</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="prog-recursos.html">Recursos per a la programació</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

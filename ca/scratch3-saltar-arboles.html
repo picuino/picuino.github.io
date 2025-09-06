@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Programació - Tutorial Scratch 3 - 15. Saltar arbres">
+  <title>15. Saltar arbres - Tutorial Scratch 3 - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/scratch3-saltar-arboles.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="16. Rastreja els reptes de la comunitat de Madrid" href="scratch3-retos-codigoescuela.html">
+  <link rel="prev" title="14. Walk Labyrinths" href="scratch3-recorrer-laberintos.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="prog-index.html">Programació</a>/</li>
+        
+          <li><a href="scratch3-index.html">Tutorial Scratch 3</a>/</li>
+        
+      <li><span class="section-number">15. </span>Saltar arbres</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/scratch3-saltar-arboles.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/scratch3-saltar-arboles.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="saltar-arboles">
+<span id="scratch3-saltar-arboles"></span><h1><span class="section-number">15. </span>Saltar arbres<a class="headerlink" href="#saltar-arboles" title="Link permanent a aquest títol">¶</a></h1>
+<p>En aquesta pràctica programarem un joc similar al joc de dinosaures que apareix al navegador Chrome quan no hi ha connexió a Internet. Un dinosaure funcionarà tot el temps a la dreta de la pantalla mentre apareixen arbres que hauran de saltar per no xocar amb ells.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p15-screen.png"><img alt="_images/scratch3-p15-screen.png" src="_images/scratch3-p15-screen.png" style="width: 360px;"></a>
+<p>; BR |</p>
+<ol class="arabic">
+<li><p class="first">Comencem el | Editor_de_scratch <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Premeu el botó d'idioma | Botó-Idioma | A la barra superior i va triar ** espanyol <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Eliminem l'objecte CAT prement a la icona del cub d'escombraries.</p>
+<p>; Suprimeix-Gato |</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">A continuació, afegim un personatge nou, un ** dinosaure <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Premeu el botó Trieu un objecte | Select-objecte <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<p>Mirem a la secció ** Animals <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>i seleccionem l'objecte ** Dinosaur4 <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<img alt="_images/scratch3-p15-dinosaur4.png" src="_images/scratch3-p15-dinosaur4.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara crearem la variable ** velocitat ** que emmagatzemarà la velocitat de salt dels dinosaures. Al començament del salt, aquesta velocitat serà positiva, però disminuirà fins a negativa quan el dinosaure caigui cap a terra.</p>
+<p>Premeu el botó variable | Botó-Variables <a href="#id1"><span class="problematic" id="id2">|</span></a>,</p>
+<p>Premeu per crear una variable | Botó-Crear-Variable <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<p>Canviem el nom de la variable a ** velocitat **</p>
+<img alt="_images/scratch3-crear-variable-velocidad.png" src="_images/scratch3-crear-variable-velocidad.png">
+<p>Finalment, feu clic al botó ** acceptar **</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara crearem la variable ** punts ** que emmagatzemaran els punts que obtenim durant el joc.</p>
+<p>Premeu el botó variable | Botó-Variables <a href="#id1"><span class="problematic" id="id2">|</span></a>,</p>
+<p>Premeu per crear una variable | Botó-Crear-Variable <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<p>Canviem el nom de la variable per ** punts **</p>
+<img alt="_images/scratch3-crear-variable-puntos.png" src="_images/scratch3-crear-variable-puntos.png">
+<p>Finalment, feu clic al botó ** acceptar **</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Creem tres blocs diferents ** Start <a href="#id1"><span class="problematic" id="id2">**</span></a>, ** Jump ** i ** Finalitzar ** que programarem més endavant.</p>
+</li>
+<li><p class="first">Ara podem crear el nostre primer programa de dinosaures. Al començament del programa, les variables i les posicions començaran, després d’esperar un segon, enviarà a tots els objectes que l’ordre de reproduir i per sempre serà responsable de saltar al dinosaure i comprovar si el programa s’ha acabat.</p>
+<p>En aquest tipus de programació de dalt a baix, primer definim aquesta rutina principal i després es detallen cadascuna de les subrutines secundàries.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p15-dinosaur-1.png"><img alt="_images/scratch3-p15-dinosaur-1.png" src="_images/scratch3-p15-dinosaur-1.png" style="width: 371px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Per continuar, definim les comandes del bloc ** Start <a href="#id1"><span class="problematic" id="id2">**</span></a>. Aquest bloc esborrarà la pantalla, col·locarà el dinosaure en la seva posició inicial, us mostrarà la mida i el vestit adequats. També establirà els valors inicials de les variables i la seva pantalla a la pantalla.</p>
+<p>No oblideu fer clic al botó Afegeix extensió | Aniadir-Extensió | i trieu l'extensió ** Pencil ** per utilitzar les instruccions verdes com ara &quot;Esborrar tot&quot;.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p15-dinosaur-2.png"><img alt="_images/scratch3-p15-dinosaur-2.png" src="_images/scratch3-p15-dinosaur-2.png" style="width: 271px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">També programarem el bloc ** Salv <a href="#id1"><span class="problematic" id="id2">**</span></a>. Aquest bloc calcula la velocitat del salt quan el dinosaure està per sobre del terra, de manera que puja amb una velocitat cada cop més inferior fins que comenci a caure a terra. Aquest programa simula la força de la gravetat i la dinàmica en un salt real.</p>
+<p>Un cop a terra (posició i &lt;-32), el dinosaure tornarà a tenir velocitat zero.</p>
+<p>Quan pressionem l’espai o les tecles cap amunt, el dinosaure saltarà amb una velocitat inicial de 10.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p15-dinosaur-3.png"><img alt="_images/scratch3-p15-dinosaur-3.png" src="_images/scratch3-p15-dinosaur-3.png" style="width: 713px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">El bloc ** acabat ** és responsable de verificar que el dinosaure ha xotat amb un arbre. En aquest cas, es copia una imatge del dinosaure amb boca oberta a la pantalla, que no es mou. Envieu el missatge mor a tots els altres objectes i el programa finalitza.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p15-dinosaur-4.png"><img alt="_images/scratch3-p15-dinosaur-4.png" src="_images/scratch3-p15-dinosaur-4.png" style="width: 330px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Per continuar, programarem el comportament de la puntuació de punts al començament del partit. Aquest marcador ha d’afegir punts contínuament fins que s’acabi el partit.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p15-dinosaur-5.png"><img alt="_images/scratch3-p15-dinosaur-5.png" src="_images/scratch3-p15-dinosaur-5.png" style="width: 246px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Per obtenir un moviment més realista, des del moment en què comença el joc canviarem contínuament el vestit de dinosaure perquè sembli que funcioni.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p15-dinosaur-6.png"><img alt="_images/scratch3-p15-dinosaur-6.png" src="_images/scratch3-p15-dinosaur-6.png" style="width: 287px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Premeu la bandera verda | Flag-Verde | Per provar el funcionament del programa.</p>
+<p>El dinosaure funcionarà en una posició fixa de la pantalla. Quan premem l’espai o la tecla de fletxa, el dinosaure ha de fer un salt i tornar a caure.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara afegirem un pis al joc. Hem de fer clic a l’opció per pintar un objecte perquè un objecte nou aparegui al joc.</p>
+<img alt="_images/scratch3-p15-pinta-objeto.png" src="_images/scratch3-p15-pinta-objeto.png">
+<p>A la pestanya de disfresses dibuixem una línia de peluix gris i brillant, amb una vora grisa 50 i amb 6 gruix.</p>
+<img alt="_images/scratch3-p15-suelo-3.png" src="_images/scratch3-p15-suelo-3.png">
+<img alt="_images/scratch3-p15-suelo-2.png" src="_images/scratch3-p15-suelo-2.png">
+<p>La línia ha d’excel·lir a banda i banda de la pantalla per assegurar -se que cobrirà tota l’amplada de la pantalla quan es mostri.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Ja podem canviar a la pestanya Codi per realitzar el programa, que serà molt senzill. Només mostrarà la línia en la posició adequada.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p15-suelo-1.png"><img alt="_images/scratch3-p15-suelo-1.png" src="_images/scratch3-p15-suelo-1.png" style="width: 364px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Acaba el terreny, afegirem els ** arbres ** al joc. Afegim un personatge nou, ** arbres <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Premeu el botó Trieu un objecte | Select-objecte <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<p>Estem buscant a la secció ** tot <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>i seleccionem l'objecte ** arbres <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<img alt="_images/scratch3-p15-trees.png" src="_images/scratch3-p15-trees.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">A la pestanya Disfressa esborrarem l’arbre anomenat ** Trees-B <a href="#id1"><span class="problematic" id="id2">**</span></a>. A continuació, doblarem l’arbre anomenat ** Trees-a ** fent clic amb el botó dret del ratolí de la seva imatge.</p>
+<p>Un cop duplicat, una altra imatge anomenada ** Trees-A2 ** que modificarem per contenir dos arbres apareixerà.</p>
+<p>Amb l’eina de selecció | Selecció de botons | Seleccionem l’arbre sencer i el doble amb el botó de còpia i el botó de pasta.</p>
+<img alt="_images/scratch3-p15-copiar-pegar.png" src="_images/scratch3-p15-copiar-pegar.png">
+<p>Finalment, movem l’arbre recentment copiat per estar al costat del primer arbre.</p>
+<img alt="_images/scratch3-p15-arboles-6.png" src="_images/scratch3-p15-arboles-6.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">Hem realitzat la mateixa operació que en el punt anterior duplicant el vestit de l’arbre i duplicant l’arbre inicial de manera que tinguem aquesta vegada un vestit amb tres arbres en total.</p>
+<img alt="_images/scratch3-p15-arboles-7.png" src="_images/scratch3-p15-arboles-7.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">Un cop finalitzi els vestits dels arbres, completarem el codi del programa. Comencem amb el començament que esborra tot, col·loca els arbres a la dreta de la pantalla amb la mida del 20% i s’amaga a la vista.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p15-arboles-1.png"><img alt="_images/scratch3-p15-arboles-1.png" src="_images/scratch3-p15-arboles-1.png" style="width: 388px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">En rebre el missatge de ** Play <a href="#id1"><span class="problematic" id="id2">**</span></a>, el codi començarà a crear clons dels arbres amb un vestit aleatori. Entre un clon i un altre esperarem un temps aleatori entre 1,5 i 3,5 segons.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p15-arboles-2.png"><img alt="_images/scratch3-p15-arboles-2.png" src="_images/scratch3-p15-arboles-2.png" style="width: 444px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Cada vegada que un arbre comença com a clon, heu de mostrar a la pantalla i esperar fins que toqueu la vora esquerra. Aleshores, aplicarem un efecte esvaït i eliminarem el clon.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p15-arboles-3.png"><img alt="_images/scratch3-p15-arboles-3.png" src="_images/scratch3-p15-arboles-3.png" style="width: 354px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">De manera que els arbres es mouen a l’esquerra, donant la sensació que el dinosaure corre a la dreta, s’ha d’afegir el codi següent que mou l’arbre per a cada clon.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p15-arboles-4.png"><img alt="_images/scratch3-p15-arboles-4.png" src="_images/scratch3-p15-arboles-4.png" style="width: 192px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Per acabar aquest codi, en rebre el missatge que el dinosaure ** mor <a href="#id1"><span class="problematic" id="id2">**</span></a>, hem de segellar els clons de la pantalla i eliminar -los.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p15-arboles-5.png"><img alt="_images/scratch3-p15-arboles-5.png" src="_images/scratch3-p15-arboles-5.png" style="width: 209px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Només tenim la tasca d’afegir un missatge de &quot;joc sobre &quot; quan finalitzi el joc. Tornem a prémer l’opció per pintar un objecte.</p>
+<img alt="_images/scratch3-p15-pinta-objeto.png" src="_images/scratch3-p15-pinta-objeto.png">
+<p>Escrivim el joc sobre el missatge amb l’eina de text, empleneu el negre i el píxel.</p>
+<img alt="_images/scratch3-p15-game-over-2.png" src="_images/scratch3-p15-game-over-2.png">
+<img alt="_images/scratch3-p15-game-over-3.png" src="_images/scratch3-p15-game-over-3.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara només queda completar el codi que amaga el missatge fins que finalitzi el programa, moment en què s’ha de mostrar.</p>
+<a class="reference internal image-reference" href="_images/scratch3-p15-game-over-1.png"><img alt="_images/scratch3-p15-game-over-1.png" src="_images/scratch3-p15-game-over-1.png" style="width: 375px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Premeu la bandera verda | Flag-Verde | Per provar el funcionament del programa.</p>
+<p>; BR |</p>
+</li>
+</ol>
+<hr class="docutils">
+<div class="section" id="retos">
+<h2>Reptes<a class="headerlink" href="#retos" title="Link permanent a aquest títol">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Augmenteu l’acceleració del salt per dificultar el joc. Per aconseguir -ho, resteu a la velocitat, al bloc de salt, un nombre més gran. Proveu diversos valors fins que en trobeu un que funcioni, però dificulta el joc.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Afegiu un moviment de gir a cada salt del personatge.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Quan els punts tenen un valor superior a 1000, la dificultat del joc augmenta fent que els arbres siguin més freqüents (cada menys temps).</p>
+<p>; BR |</p>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="scratch3-retos-codigoescuela.html" class="btn btn-neutral float-right" title="16. Rastreja els reptes de la comunitat de Madrid" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="scratch3-recorrer-laberintos.html" class="btn btn-neutral" title="14. Walk Labyrinths" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/scratch3-saltar-arboles.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="prog-index.html">Programació</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="prog-lang-edu.html">Llenguatges de programació</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-flowchart.html">Diagrames de flux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-unplugged.html">Activitats desconnectades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-codeorg.html">Tutorials de codi</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="scratch3-index.html">Tutorial Scratch 3</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="scratch3-dibujar-disfraces.html">1. Dibuixar disfresses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-volar-personaje.html">2. Gat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-jugar-futbol.html">3. Juga a futbol</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-pasear-escenarios.html">4. Escenaris de caminar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-animar-nombre.html">5. Animar el nom</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-comer-peces.html">6. Menjar peix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-atrapar-bichos.html">7. Captura d'errors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-romper-ladrillos.html">8. Breaks Bricks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-atrapar-manzanas.html">9. Agafar pomes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-matar-marcianitos.html">10. Mata als Marcianitos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-dibujar-espirales.html">11. Dibuixa espirals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-dibujar-flores.html">12. Dibuixa flors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-aterrizar-cohete.html">13. Rocket terrestre</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-recorrer-laberintos.html">14. Walk Labyrinths</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">15. Saltar arbres</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-retos-codigoescuela.html">16. Rastreja els reptes de la comunitat de Madrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scratch3-retos-robotix.html">17. Robotix Reptes per Scratch</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="python-index.html">Tutorial Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-recursos.html">Recursos per a la programació</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

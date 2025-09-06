@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Electrònica - Electrònica digital - 7. La lògica i">
+  <title>7. La lògica i - Electrònica digital - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/electronic-gate-and.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="8. La porta lògica xor" href="electronic-gate-xor.html">
+  <link rel="prev" title="6. La porta lògica o" href="electronic-gate-or.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="electronic-index.html">Electrònica</a>/</li>
+        
+          <li><a href="electronic-digital-index.html">Electrònica digital</a>/</li>
+        
+      <li><span class="section-number">7. </span>La lògica i</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/electronic-gate-and.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/electronic-gate-and.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="la-puerta-logica-and">
+<span id="electronic-gate-and"></span><h1><span class="section-number">7. </span>La lògica i<a class="headerlink" href="#la-puerta-logica-and" title="Link permanent a aquest títol">¶</a></h1>
+<p>Les entrades i més o més i una porta de sortida.</p>
+<p>La sortida té un valor lògic elevat (1) si totes les seves entrades tenen un valor lògic elevat (1).</p>
+<p>És a dir, si l’entrada a ** i ** Entrada B està a nivell alt, la sortida serà a un nivell alt. D’aquí el nom ** i ** en anglès.</p>
+<p>El símbol ** de la porta i ** és el següent:</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/electronic-simbolo-puerta-and.png"><img alt="Puerta lógica AND de dos entradas." src="_images/electronic-simbolo-puerta-and.png" style="width: 180px;"></a>
+<p class="caption"><span class="caption-text">Lògica i símbol de la porta d’entrada.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>La funció lògica de la porta i ** està representada per multiplicació, de manera que la sortida de la porta serà la multiplicació lògica de les entrades:</p>
+<div class="math">
+<p><img src="_images/math/73db601f20beead3bf9faf2f02879554b062ebcb.svg" alt="Out = a \ cdot b"></p>
+</div><p>La ** Taula de veritat i ** és la següent:</p>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/electronic-puerta-and-02.png"><img alt="Tabla de verdad de la puerta lógica AND de dos entradas." src="_images/electronic-puerta-and-02.png" style="width: 160px;"></a>
+<p class="caption"><span class="caption-text">Taula de veritat de la lògica i dues entrades.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>Si les dues entrades valen una, la sortida valdrà una, però si alguna entrada val zero, la sortida valdrà zero.</p>
+<div class="section" id="la-puerta-logica-nand">
+<h2>La porta lògica nand<a class="headerlink" href="#la-puerta-logica-nand" title="Link permanent a aquest títol">¶</a></h2>
+<p>La porta de la lògica NAND té dues o més entrades i una sortida.</p>
+<p>La sortida serà la mateixa que la de la porta i, però invertida. És a dir, la sortida només valdrà zero quan totes les entrades en valen.</p>
+<p>El símbol ** de la porta ** és el següent:</p>
+<div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="_images/electronic-simbolo-puerta-nand.png"><img alt="Puerta lógica NAND de dos entradas." src="_images/electronic-simbolo-puerta-nand.png" style="width: 180px;"></a>
+<p class="caption"><span class="caption-text">Símbol lògic de dos entrades.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>La funció lògica de la porta NAND ** es representa mitjançant una multiplicació negada, de manera que la sortida de la porta serà la multiplicació lògica de les entrades que finalment s’inverteix:</p>
+<div class="math">
+<p><img src="_images/math/06821e8539520d8c35e7149f87b0fb680050a75f.svg" alt="Out = \ overline {a \ cdot b}"></p>
+</div><p>La ** Taula de veritat de la porta de Nand ** és la següent:</p>
+<div class="figure align-center" id="id4">
+<a class="reference internal image-reference" href="_images/electronic-puerta-nand-02.png"><img alt="Tabla de verdad de la puerta lógica NAND de dos entradas." src="_images/electronic-puerta-nand-02.png" style="width: 160px;"></a>
+<p class="caption"><span class="caption-text">Taula de veritat de la lògica de dues entrades.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="simulacion">
+<h2>Simulació<a class="headerlink" href="#simulacion" title="Link permanent a aquest títol">¶</a></h2>
+<p>A la simulació següent podem veure el funcionament de la porta lògica i, a continuació, el funcionament de la porta lògica NAND.</p>
+<div class="video-center">
+<iframe src="/circuits/index.html?startCircuit=digital-puerta-and.txt"></iframe>
+</div></div>
+<div class="section" id="ejercicios">
+<h2>Exercicis<a class="headerlink" href="#ejercicios" title="Link permanent a aquest títol">¶</a></h2>
+<ol class="arabic simple">
+<li>Expliqueu amb les vostres paraules el funcionament de la porta lògica i.</li>
+<li>Dibuixa el símbol de la lògica i dues entrades, la seva funció lògica i la seva taula de veritat.</li>
+<li>Expliqueu amb les vostres paraules el funcionament de la lògica NAND.</li>
+<li>Dibuixa el símbol lògic NAND de dues entrades, la seva funció lògica i la seva taula de veritat.</li>
+<li>Al simulador afegeix una porta d’inversió a la sortida de la i comprova que la vostra resposta és igual a la de la porta de Nand.</li>
+<li>Dibuixa una lògica i tres entrades, la seva funció lògica i la seva taula de veritat.</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="electronic-gate-xor.html" class="btn btn-neutral float-right" title="8. La porta lògica xor" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="electronic-gate-or.html" class="btn btn-neutral" title="6. La porta lògica o" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/electronic-gate-and.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="electronic-index.html">Electrònica</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="electronic-components-index.html">Components electrònics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electronic-analog-index.html">Electrònica analògica</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="electronic-digital-index.html">Electrònica digital</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="electronic-digital-signals.html">1. Senyals digitals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-error-detection.html">2. Detecció d'errors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-error-correction.html">3. Correcció d'errors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-binary.html">4. El sistema binari</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-gate-not.html">5. La porta lògica no</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-gate-or.html">6. La porta lògica o</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">7. La lògica i</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-gate-xor.html">8. La porta lògica xor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-morgan-laws.html">9. Les lleis de De Morgan</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-truth-table.html">10. La taula de veritat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-gray-code.html">11. Codi gris</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-karnaugh.html">12. Mapa de Karnaugh</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="electronic-bornas-index.html">Cablejat de components electrònics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electronic-pcb-luces-led.html">Circuit imprès amb llums LED</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programació</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

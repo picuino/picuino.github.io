@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. 6. Breaks Bricks">
+  <title>6. Breaks Bricks - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/scratch-ladrillos.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+      <li><span class="section-number">6. </span>Breaks Bricks</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/scratch-ladrillos.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/scratch-ladrillos.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="romper-ladrillos">
+<span id="scratch-ladrillos"></span><h1><span class="section-number">6. </span>Breaks Bricks<a class="headerlink" href="#romper-ladrillos" title="Link permanent a aquest títol">¶</a></h1>
+<a class="reference internal image-reference" href="_images/scratch-p07-juego.png"><img alt="_images/scratch-p07-juego.png" src="_images/scratch-p07-juego.png" style="width: 240px;"></a>
+<p>En aquesta pràctica programarem un joc que consisteix a trencar els maons amb una pilota que rebota en un bar. Cada maó trencat ens donarà un punt.</p>
+<p>; BR |</p>
+<ol class="arabic">
+<li><p class="first">Comencem el | Editor_de_scratch <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Eliminem el gat prement -li amb el botó dret del ratolí i, a continuació, fem clic.</p>
+<p>; Suprimeix-Gato |</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Afegim tres personatges nous. Un botó blau, una bola de tennis i un botó gris.</p>
+<img alt="_images/scratch-p07-barra.png" src="_images/scratch-p07-barra.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">A continuació, canviarem els noms dels tres personatges nous prement el botó blau &quot;i &quot; de cadascun dels personatges.</p>
+<p>Anomenem el botó blau.</p>
+<p>Anomenem la pilota de tennis.</p>
+<p>Anomenem el maó al botó gris.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara crearem la variable ** punts <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Dins de la pestanya Dades | Dades <a href="#id1"><span class="problematic" id="id2">|</span></a>,</p>
+<p>Premeu Creeu una variable | Create-variable |</p>
+<p>Canviem el nom de la variable per ** punts **</p>
+<img alt="_images/scratch-variable-puntos.png" src="_images/scratch-variable-puntos.png">
+<p>Finalment, premeu el botó ** ok **</p>
+<p>Aquesta variable emmagatzemarà els punts que obtenim cada maó.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara crearem la variable ** posició <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Dins de la pestanya Dades | Dades <a href="#id1"><span class="problematic" id="id2">|</span></a>,</p>
+<p>Premeu Creeu una variable | Create-variable |</p>
+<p>Canviem el nom de la variable a ** POSICIÓ **</p>
+<p>Aquesta variable emmagatzemarà la posició de cadascun dels maons en iniciar el programa.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara afegirem el ** bar <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Primer seleccionem la barra i després la pestanya Programes.</p>
+<p>Afegim els blocs següents.</p>
+<a class="reference internal image-reference" href="_images/scratch-p07-prog1.png"><img alt="_images/scratch-p07-prog1.png" src="_images/scratch-p07-prog1.png" style="width: 470px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">A continuació, afegirem el programa ** Ball <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Primer seleccionem la barra i després la pestanya Programes.</p>
+<p>Afegim els blocs següents.</p>
+<a class="reference internal image-reference" href="_images/scratch-p07-prog2.png"><img alt="_images/scratch-p07-prog2.png" src="_images/scratch-p07-prog2.png" style="width: 512px;"></a>
+<a class="reference internal image-reference" href="_images/scratch-p07-prog5.png"><img alt="_images/scratch-p07-prog5.png" src="_images/scratch-p07-prog5.png" style="width: 501px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Finalment, afegirem el programa ** de maó <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Primer seleccionem el maó i després la pestanya Programes.</p>
+<p>Afegim els blocs següents.</p>
+<a class="reference internal image-reference" href="_images/scratch-p07-prog3.png"><img alt="_images/scratch-p07-prog3.png" src="_images/scratch-p07-prog3.png" style="width: 422px;"></a>
+<a class="reference internal image-reference" href="_images/scratch-p07-prog4.png"><img alt="_images/scratch-p07-prog4.png" src="_images/scratch-p07-prog4.png" style="width: 482px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara demostrarem que tots els programes funcionen correctament jugant a un joc.</p>
+</li>
+</ol>
+<hr class="docutils">
+<div class="section" id="ejercicios">
+<h2>Exercicis<a class="headerlink" href="#ejercicios" title="Link permanent a aquest títol">¶</a></h2>
+<ol class="arabic simple">
+<li>Modifiqueu el programa de manera que apareguin més maons a la part superior.</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/scratch-ladrillos.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programació</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

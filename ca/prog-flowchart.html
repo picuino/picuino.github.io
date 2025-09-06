@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Programació - Diagrames de flux">
+  <title>Diagrames de flux - Programació - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/prog-flowchart.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="Activitats desconnectades" href="prog-unplugged.html">
+  <link rel="prev" title="Llenguatges de programació" href="prog-lang-edu.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="prog-index.html">Programació</a>/</li>
+        
+      <li>Diagrames de flux</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/prog-flowchart.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/prog-flowchart.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="diagramas-de-flujo">
+<span id="chart-flowchart"></span><h1>Diagrames de flux<a class="headerlink" href="#diagramas-de-flujo" title="Link permanent a aquest títol">¶</a></h1>
+<p>Un diagrama de flux és un dibuix que representa un procés que detalla les seves tasques i decisions. El seu propòsit és expressar de manera senzilla i visual el que passa en un procés o en un programa, de manera que sigui fàcil d’entendre.</p>
+<p>Els diagrames de flux es poden presentar al programador de manera que entengui millor el que el client vol realitzar. Posteriorment, el programador desenvolupa el programa basat en els diagrames de flux.</p>
+<p>Els diagrames de flux també es dibuixen per documentar un programa informàtic un cop acabat, per comunicar el que fa el programa de manera visual i comprensible.</p>
+<p>Els diagrames de flux no es limiten a representar el funcionament dels programes, també ens poden informar de les tasques que hem de realitzar en una situació determinada.</p>
+<p>Aquesta és l’aparició d’un diagrama de flux:</p>
+<a class="reference internal image-reference" href="_images/flowchart-estudiar.png"><img alt="_images/flowchart-estudiar.png" class="align-center" src="_images/flowchart-estudiar.png" style="width: 240px;"></a>
+<div class="section" id="simbolos">
+<h2>Símbols<a class="headerlink" href="#simbolos" title="Link permanent a aquest títol">¶</a></h2>
+<p>A continuació, es presenten els símbols principals que s’utilitzen per dibuixar diagrames de flux.</p>
+<p>** Start i Final **</p>
+<p>Tots els diagrames de flux han de tenir un símbol d’inici i un símbol de finalització, que es representen amb rectangles arrodonits als extrems.</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/flowchart-inicio.png"><img alt="_images/flowchart-inicio.png" src="_images/flowchart-inicio.png" style="width: 240px;"></a>
+<p class="caption"><span class="caption-text">Els símbols d’inici i finalització del programa.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>** Tasques **</p>
+<p>Les tasques realitzades pel programa estan representades amb rectangles. Dins del rectangle heu d’escriure en què consisteix la tasca. Per exemple, afegiu dos números o envieu un missatge.</p>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/flowchart-tarea.png"><img alt="_images/flowchart-tarea.png" src="_images/flowchart-tarea.png" style="width: 240px;"></a>
+<p class="caption"><span class="caption-text">Símbol de la tasca.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>** Entrada i sortida de dades **</p>
+<p>Quan la tasca consisteix en una entrada o sortida de dades, com ara escriure a la pantalla, demanant que l’usuari escrigui un text, imprimeixi un full de paper, etc. En aquest cas, la tasca tindrà un formulari de rectangle inclinat.</p>
+<div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="_images/flowchart-entrada.png"><img alt="_images/flowchart-entrada.png" src="_images/flowchart-entrada.png" style="width: 240px;"></a>
+<p class="caption"><span class="caption-text">Símbol d’entrada i sortida.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>** Decisions **</p>
+<p>Un símbol molt especial és el símbol de la decisió. Amb aquest símbol, el programa pot seguir dos camins diferents, depenent de si la condició es compleix o no es compleix.</p>
+<div class="figure align-center" id="id4">
+<a class="reference internal image-reference" href="_images/flowchart-decision.png"><img alt="_images/flowchart-decision.png" src="_images/flowchart-decision.png" style="width: 240px;"></a>
+<p class="caption"><span class="caption-text">Símbol de decisió. La manera de seguir depèn de la condició.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<p>** fletxes de flux **</p>
+<p>Tots els símbols s’han d’enllaçar entre ells per fletxes que indiquen com es realitza la seqüència. Les fletxes indiquen la ruta o el flux que segueix l’ordinador des del principi fins a la finalització del programa, a través de totes les tasques.</p>
+<div class="figure align-center" id="id5">
+<a class="reference internal image-reference" href="_images/flowchart-flecha.png"><img alt="_images/flowchart-flecha.png" src="_images/flowchart-flecha.png" style="width: 240px;"></a>
+<p class="caption"><span class="caption-text">Fletxa de les tasques de la Unió.</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+<p>** Connectors de fletxa **</p>
+<p>Quan les dues tasques que s’han de sumar són massa lluny o quan es confonen creuar moltes fletxes, s’utilitzen dos cercles amb el mateix nombre, per indicar l’inici i el final de la fletxa:</p>
+<p>Cada fletxa ha de tenir un nombre diferent, de manera que només hi ha d’haver dos cercles amb el mateix número: un inici i un altre cercle de terminació.</p>
+<div class="figure align-center" id="id6">
+<a class="reference internal image-reference" href="_images/flowchart-conector.png"><img alt="_images/flowchart-conector.png" src="_images/flowchart-conector.png" style="width: 240px;"></a>
+<p class="caption"><span class="caption-text">Fletxa llarga, separada per connectors circulars.</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+<p>** Altres símbols **</p>
+<p>Fins ara hem vist els símbols més importants. Amb ells podeu representar tots els diagrames amb els quals anem a treballar. També hi ha altres símbols especialitzats que permeten representar les tasques amb més detall, però utilitzar -les només complicaria els diagrames, de manera que no els utilitzarem.</p>
+</div>
+<div class="section" id="diagramas-de-ejemplo">
+<h2>Exemple Diagrames<a class="headerlink" href="#diagramas-de-ejemplo" title="Link permanent a aquest títol">¶</a></h2>
+<p>** Diagrama seqüencial **</p>
+<p>En aquest diagrama, les tasques es segueixen sense cap decisió. Aquest tipus de diagrama és útil per conèixer l’ordre en què s’ha de realitzar una tasca.</p>
+<div class="figure align-center" id="id7">
+<a class="reference internal image-reference" href="_images/flowchart-huevo.png"><img alt="_images/flowchart-huevo.png" src="_images/flowchart-huevo.png" style="width: 240px;"></a>
+<p class="caption"><span class="caption-text">Diagrama de flux que descriu com fer un ou fregit.</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+<p>** Diagrama amb condicions **</p>
+<p>En aquest tipus de diagrama, el flux de la tasca no és seqüencial i es desvia en funció de les condicions que es compleixen.</p>
+<div class="figure align-center" id="id8">
+<a class="reference internal image-reference" href="_images/flowchart-mueve.png"><img alt="_images/flowchart-mueve.png" src="_images/flowchart-mueve.png" style="width: 320px;"></a>
+<p class="caption"><span class="caption-text">Com moure un personatge amb el teclat.</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="recursos">
+<h2>Recursos<a class="headerlink" href="#recursos" title="Link permanent a aquest títol">¶</a></h2>
+<p>Web per dibuixar diagrames de fluxos en línia:</p>
+<blockquote>
+<div><a class="reference external" href="https://app.diagrams.net/" rel="noopener noreferrer" target="_blank">app.diagrams.net</a></div></blockquote>
+</div>
+<hr class="docutils">
+<div class="section" id="ejercicios">
+<h2>Exercicis<a class="headerlink" href="#ejercicios" title="Link permanent a aquest títol">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Dibuixeu un diagrama de flux que descrigui les tasques més importants que heu de realitzar al matí des que us desperteu fins que arribeu a l’institut. Hi ha d’haver entre 5 i 8 tasques.</p>
+</li>
+<li><p class="first">Dibuixa el diagrama de flux d’un semàfor que encén una llum verda 10 segons, després apaga la llum verda i s’encén una llum ambre dos segons, després apaga la llum ambre i envia una llum vermella 10 segons. Finalment, apagueu la llum vermella i torneu a començar el cicle.</p>
+</li>
+<li><p class="first">Dibuixeu un diagrama de flux que expliqui com arreglar una làmpada. Primer heu de comprovar si hi ha llum a la casa. Aleshores comprovarà si la làmpada està connectada. Finalment, veureu que la bombeta no és fos. S'ha de donar solució a cadascuna de les situacions anteriors. Si es dóna alguna de les situacions anteriors, trucareu al servei de reparació.</p>
+</li>
+<li><p class="first">Dibuixeu un diagrama de flux que descrigui un mètode per ordenar lletres numerades, de menys a més gran.</p>
+<p>Hi ha dues cartes, una desordenada i una ordenada. Primer heu de prendre una carta de la pila desordenada. A continuació, es compara amb la primera lletra de la pila ordenada. Si la nova lletra és més petita, es col·loca a la pila ordenada.</p>
+<p>Si la nova lletra és superior a la primera lletra ordenada, busquem la carta següent de la pila ordenada i comparem quina carta és més gran. Ho repetim fins que la nova lletra es posi al seu lloc.</p>
+<p>Un cop col·locada la nova carta, agafem una altra carta de la pila desordenada.</p>
+<p>Quan s’acaba la pila de cartes desordenades, el programa s’acaba.</p>
+</li>
+<li><p class="first">Dibuixa un diagrama de flux amb ajuda informàtica i amb el programa de dibuix gratuït. A la secció següent podeu descarregar una plantilla de sorteig d’oficina gratuïta per dibuixar diagrames de flux.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="descargas">
+<h2>Descàrregues<a class="headerlink" href="#descargas" title="Link permanent a aquest títol">¶</a></h2>
+<p>: Descarregueu: <a href="#id1"><span class="problematic" id="id2">`</span></a>Plantilla per a diagrames de flux. Dibuix d’oficina de format gratuït. &lt;Prog/Prog-FlowCharts-Template.odg&gt; '</p>
+<p>: Descàrrega: <a href="#id1"><span class="problematic" id="id2">`</span></a>Diagrames de flux. Dibuix d’oficina de format gratuït. &lt;Prog/Prog-FlowCharts.odg&gt; '</p>
+<p>: Descarregueu: <a href="#id1"><span class="problematic" id="id2">`</span></a>Theme Flow Sharts en format Microsoft Word. &lt;Prog/Prog-Diagrams-Flujo.doc&gt; '</p>
+<p>: Descarregueu: <a href="#id1"><span class="problematic" id="id2">`</span></a>Diagrames de flux de temes en format PDF. &lt;Prog/Prog-Diagrams-Flujo.pdf&gt; '</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="prog-unplugged.html" class="btn btn-neutral float-right" title="Activitats desconnectades" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="prog-lang-edu.html" class="btn btn-neutral" title="Llenguatges de programació" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/prog-flowchart.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="prog-index.html">Programació</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="prog-lang-edu.html">Llenguatges de programació</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Diagrames de flux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-unplugged.html">Activitats desconnectades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-codeorg.html">Tutorials de codi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scratch3-index.html">Tutorial Scratch 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="python-index.html">Tutorial Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-recursos.html">Recursos per a la programació</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

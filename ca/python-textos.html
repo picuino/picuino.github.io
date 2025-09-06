@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Programació - Tutorial Python - 21. Cadenes de text">
+  <title>21. Cadenes de text - Tutorial Python - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/python-textos.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="22. Índexs de la cadena de text" href="python-textos-indices.html">
+  <link rel="prev" title="20. Paràmetres amb valors d’omissió" href="python-funciones-argumentos.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="prog-index.html">Programació</a>/</li>
+        
+          <li><a href="python-index.html">Tutorial Python</a>/</li>
+        
+      <li><span class="section-number">21. </span>Cadenes de text</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/python-textos.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/python-textos.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cadenas-de-texto">
+<span id="python-textos"></span><h1><span class="section-number">21. </span>Cadenes de text<a class="headerlink" href="#cadenas-de-texto" title="Link permanent a aquest títol">¶</a></h1>
+<p>A més dels números, Python pot manipular text o caràcters. Les cadenes de text es poden bloquejar en cites dobles &quot;&quot; o en cotitzacions simples. ''</p>
+<p>Si hem d'utilitzar una cita senzilla o una cita doble dins d'una cadena de text, podem utilitzar el caràcter d'escapament '\'</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;Hola, mundo&#39;</span>  <span class="c1"># Comillas simples</span>
+<span class="go">    &#39;Hola, mundo&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s2">&quot;doesn&#39;t&quot;</span>     <span class="c1"># Comillas dobles</span>
+<span class="go">    &quot;doesn&#39;t&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;doesn</span><span class="se">\&#39;</span><span class="s1">t&#39;</span>    <span class="c1"># Carácter escape</span>
+<span class="go">    &quot;doesn&#39;t&quot;</span>
+</pre></div>
+</div>
+<p>Els símbols d’escapament més utilitzats són</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\\ <span class="o">-&gt;</span> \
+\<span class="n">n</span> <span class="o">-&gt;</span> <span class="n">Nueva</span> <span class="n">línea</span>
+\<span class="n">r</span> <span class="o">-&gt;</span> <span class="n">Comienzo</span> <span class="n">de</span> <span class="n">línea</span>
+\<span class="n">t</span> <span class="o">-&gt;</span> <span class="n">Tabulación</span>
+\<span class="n">b</span> <span class="o">-&gt;</span> <span class="n">Un</span> <span class="n">carácter</span> <span class="n">hacia</span> <span class="n">atrás</span> <span class="p">(</span><span class="n">backspace</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Les cadenes de text poden contenir caràcters <a class="reference external" href="https://es.wikipedia.org/wiki/unicode" rel="noopener noreferrer" target="_blank">Unicode</a>, és a dir que poden contenir les lletres de l'alfabet llatí 'ñ', diferents lletres de l'alfabet com el grec 'ω', el círílic 'я' o fins i tot, fins i tot, símbols 'i emojis' i emojis.</p>
+<div class="section" id="cadenas-de-texto-multilinea">
+<h2>Cadenes de text multilínies<a class="headerlink" href="#cadenas-de-texto-multilinea" title="Link permanent a aquest títol">¶</a></h2>
+<p>En el cas de voler escriure moltes línies de text, el nou personatge de la línia '\ n' es pot incloure a la cadena o utilitzar les cadenes multilíniques que es troben entre tres cites simples o dobles</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Este es un ejemplo de una cadena de texto</span>
+<span class="s2">que ocupa varias líneas.</span>
+
+<span class="s2">Al imprimir este texto sale tal y como se ha escrito.&quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Sortida</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Este</span> <span class="n">es</span> <span class="n">un</span> <span class="n">ejemplo</span> <span class="n">de</span> <span class="n">una</span> <span class="n">cadena</span> <span class="n">de</span> <span class="n">texto</span>
+<span class="n">que</span> <span class="n">ocupa</span> <span class="n">varias</span> <span class="n">líneas</span><span class="o">.</span>
+
+<span class="n">Al</span> <span class="n">imprimir</span> <span class="n">este</span> <span class="n">texto</span> <span class="n">sale</span> <span class="n">tal</span> <span class="n">y</span> <span class="n">como</span> <span class="n">se</span> <span class="n">ha</span> <span class="n">escrito</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>Aquests textos multilineals es poden utilitzar dins de les funcions per afegir un text d’ajuda que expliqui la seva operació</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+   <span class="sd">&quot;&quot;&quot;Devuelve el factorial del número n (n!).</span>
+<span class="sd">   El factorial es el resultado de multiplicar todos los valores</span>
+<span class="sd">   enteros desde el número 1 hasta n.&quot;&quot;&quot;</span>
+
+   <span class="n">mult</span> <span class="o">=</span> <span class="mi">1</span>
+   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+      <span class="n">mult</span> <span class="o">=</span> <span class="n">mult</span> <span class="o">*</span> <span class="n">i</span>
+   <span class="k">return</span> <span class="n">mult</span>
+
+
+<span class="n">help</span><span class="p">(</span><span class="n">factorial</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Sortida</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Help on function factorial in module __main__:
+
+factorial(n)
+    Devuelve el factorial del número n (n!).
+    El factorial es el resultado de multiplicar todos los valores
+    enteros desde el número 1 hasta n.
+</pre></div>
+</div>
+<p>La funció `` help () retorna la cadena de text de la funció per informar -nos de la seva operació. Totes les funcions internes de Python tenen aquesta cadena de text informativa per demanar ajuda sobre la seva operació.</p>
+</div>
+<div class="section" id="union-de-cadenas-de-texto">
+<h2>Unió de cadenes de text<a class="headerlink" href="#union-de-cadenas-de-texto" title="Link permanent a aquest títol">¶</a></h2>
+<p>Per unir -nos a dues cadenes de text, podem utilitzar el símbol de la suma</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;Hola, &#39;</span> <span class="o">+</span> <span class="s1">&#39;mundo&#39;</span>
+<span class="go">    &#39;Hola, mundo&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="s1">&#39;Hola, &#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="s1">&#39;mundo&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<span class="go">    &#39;Hola, mundo&#39;</span>
+</pre></div>
+</div>
+<p>Dues o més cadenes literals s’uneixen entre elles si es troben davant de l’altra</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;Hola &#39;</span> <span class="s1">&#39;Inés &#39;</span> <span class="s1">&#39;¿Qué tal estás?&#39;</span>
+<span class="go">    &#39;Hola Inés ¿Qué tal estás?&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="multiplicacion-de-cadenas-de-texto">
+<h2>Multiplicació de cadenes de text<a class="headerlink" href="#multiplicacion-de-cadenas-de-texto" title="Link permanent a aquest títol">¶</a></h2>
+<p>El símbol de multiplicació es pot utilitzar per obtenir un text diverses vegades</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;Ja &#39;</span> <span class="o">*</span> <span class="mi">5</span>
+<span class="go">    &#39;Ja Ja Ja Ja Ja&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;Hola, mund&#39;</span> <span class="o">+</span> <span class="s1">&#39;o&#39;</span> <span class="o">*</span> <span class="mi">10</span>
+<span class="go">    &#39;Hola, mundoooooooooo&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="ejercicios">
+<h2>Exercicis<a class="headerlink" href="#ejercicios" title="Link permanent a aquest títol">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Creeu una cadena de text amb caràcters especials com accents, lletres gregues, símbols, emojis, etc. Podeu copiar i enganxar de diverses pàgines d'Internet:</p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference external" href="https://symbl.cc/es/" rel="noopener noreferrer" target="_blank">Símbol</a></li>
+<li><a class="reference external" href="https://www.rapidtables.org/code/text/unicode-characters.html" rel="noopener noreferrer" target="_blank">Taula de caràcters Unicode</a></li>
+<li>Mapa de caràcters de Windows</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Creeu una cadena de text multilínia amb una caixa doble al voltant d’una frase inventada.</p>
+<p>Utilitzeu aquests símbols per fer la caixa</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>╔ ═ ╗
+║   ║
+╚ ═ ╝
+</pre></div>
+</div>
+</li>
+<li><p class="first">Creeu una funció que imprimi una taula de 2 files per 2 columnes en què apareixen 4 números inventats.</p>
+<p>La funció ha de tenir una cadena de text multilineal en què s’explica quin és el seu propòsit.</p>
+<p>Utilitzeu aquests símbols per caixa de la taula</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>╔ ═ ╦ ═ ╗
+║   ║   ║
+╠ ═ ╬ ═ ╣
+║   ║   ║
+╚ ═ ╩ ═ ╝
+</pre></div>
+</div>
+</li>
+<li><p class="first">Escriu un programa que entra en una cadena de text al teclat i escrigui el nombre de caràcters que té la cadena.</p>
+<p>Pista: la funció len (&quot;text&quot;) retorna la longitud, és a dir, el nombre de caràcters, d'una cadena de text.</p>
+</li>
+<li><p class="first">Escriviu una funció que generi automàticament un quadre al voltant de qualsevol cadena de text que dediquem com a argument.</p>
+<p>Truqueu a la funció diverses vegades amb diferents cadenes de text.</p>
+<p>Exemple</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">recuadro</span><span class="p">(</span><span class="s1">&#39;Hola, mundo&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Sortida</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>╔═════════════╗
+║ Hola, mundo ║
+╚═════════════╝
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>Pistes:</dt><dd><ul class="simple">
+<li>Utilitzeu la multiplicació de caràcters per imprimir el personatge &quot;Ç&quot; diverses vegades.</li>
+<li>Utilitzeu la funció `` len (text) `` per conèixer la longitud de la cadena de text que volem imprimir.</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="python-textos-indices.html" class="btn btn-neutral float-right" title="22. Índexs de la cadena de text" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="python-funciones-argumentos.html" class="btn btn-neutral" title="20. Paràmetres amb valors d’omissió" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/python-textos.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="prog-index.html">Programació</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="prog-lang-edu.html">Llenguatges de programació</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-flowchart.html">Diagrames de flux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-unplugged.html">Activitats desconnectades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prog-codeorg.html">Tutorials de codi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scratch3-index.html">Tutorial Scratch 3</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="python-index.html">Tutorial Python</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="python-intro.html">1. Introducció a la llengua de Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-datos-numeros.html">2. Dades numèriques</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-variables.html">3. Les variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-palabras-reservadas.html">4. Paraules reservades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-comentarios.html">5. Els comentaris</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-print.html">6. La funció: py: funció: `imprimir '</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-input.html">7. La funció: py: funció: `entrada '</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-booleanos.html">8. El tipus booleà</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-if-else.html">9. Judici `` si '' `` else ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-if-and-or-not.html">10. Operadors `` <cite>,</cite> ``, `` no ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-if-anidados.html">11. Judicis `si '' nided</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-if-elif.html">12. Judici `` elif ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for.html">13. Judici `` per ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for-range.html">14. La funció: py: funció: `range '</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for-continue.html">15. Judici &quot;Continua&quot;</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for-break.html">16. Judici `` Break ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-for-anidados.html">17. Judicis `` `` anity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-while.html">18. Judici `` mentre ''</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-funciones.html">19. Definició de funcions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-funciones-argumentos.html">20. Paràmetres amb valors d’omissió</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">21. Cadenes de text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-textos-indices.html">22. Índexs de la cadena de text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-textos-metodos.html">23. Mètodes de la cadena de text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-textos-formateo.html">24. Format de la cadena de text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-listas.html">25. Llistes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-listas-indices.html">26. Llista dels índexs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-listas-iteracion.html">27. Iteració de llistes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-listas-metodos.html">28. Llista de mètodes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-busqueda.html">29. Cerca de dades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-busqueda-binaria.html">30. Cerca binària</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-desplazamiento.html">31. Desplaçament de dades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-sort-seleccion.html">32. Gestió de la selecció</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-sort-insercion.html">33. Gestió d'inserció</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-recursividad.html">34. Recursió</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-sort-mezcla.html">35. Barrejant l’ordenació</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-codewars.html">36. Codewars katas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-recursos.html">37. Recursos Python</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="prog-recursos.html">Recursos per a la programació</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

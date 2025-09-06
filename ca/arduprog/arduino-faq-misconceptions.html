@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Arduino, dubtes i conceptes errònics">
+  <title>Arduino, dubtes i conceptes errònics - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/arduprog/arduino-faq-misconceptions.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="../_static/opensearch.xml">
+
+  <link rel="stylesheet" href="../_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="../genindex.html">
+  <link rel="index" title="Índex" href="../content.html">
+  <link rel="search" title="Cerca" href="../search.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../content.html"><img src="../_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../content.html">Home</a>/</li>
+        
+      <li>Arduino, dubtes i conceptes errònics</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/arduprog/arduino-faq-misconceptions.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="../contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/arduprog/arduino-faq-misconceptions.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="arduino-dudas-y-conceptos-erroneos">
+<h1>Arduino, dubtes i conceptes errònics<a class="headerlink" href="#arduino-dudas-y-conceptos-erroneos" title="Link permanent a aquest títol">¶</a></h1>
+<p>Les respostes s’agrupen aquí a diversos dubtes sobre Arduino, així com explicacions a conceptes errònics força estesos.</p>
+<div class="section" id="que-es-arduino">
+<h2>Què és Arduino?<a class="headerlink" href="#que-es-arduino" title="Link permanent a aquest títol">¶</a></h2>
+<p>Arduino és una marca registrada. Igual que IBM, Apple o Samsung, Arduino fabrica i distribueix diversos productes tecnològics sota la seva marca [#arduino_trademark] _. Quan una botiga o distribuïdor opta per vendre o distribuir productes Arduino, heu de signar un acord exclusiu amb la companyia, que impedeix vendre plaques iguals a Arduino fabricades per tercers. D’aquesta manera, Arduino protegeix les seves vendes perquè tots els seus productes són de maquinari i programari gratuïts i, per tant, és legal fer còpies exactes dels seus productes i, de fet, hi ha molts exemples al mercat a preus més baixos.</p>
+<p>Per tant, és legal fabricar i distribuir còpies de productes Arduino tant en maquinari com en programari. Però no és legal utilitzar la marca Arduino per referir -se a aquests productes. Tampoc es poden distribuir aquestes còpies en botigues i distribuïdors que han signat acords de distribució exclusius amb Arduino. Finalment, el número d’identificador USB utilitzat pels productes Arduino, pertany a la companyia d’Arduino i no es pot utilitzar en productes copiats.</p>
+<p>A causa de certes disputes de marca entre els dissenyadors originals d'Arduino, part d'aquests han utilitzat la marca genuïna per anomenar Arduino Products.</p>
+</div>
+<div class="section" id="que-productos-engloba-la-marca-arduino">
+<h2>Quins productes inclou la marca Arduino?<a class="headerlink" href="#que-productos-engloba-la-marca-arduino" title="Link permanent a aquest títol">¶</a></h2>
+<p>El producte més conegut d’Arduino és una placa de desenvolupament anomenada Arduino One. Aquesta placa de maquinari es basa en un microcontrolador ATMEGA328A de 8 bits i inclou una connexió USB per connectar la placa amb un ordinador.</p>
+<p>Per donar suport a aquesta placa, es va programar un entorn de desenvolupament de gestió de subministrament senzill i obert, basat en el cablejat &lt;<a class="reference external" href="https://es.wikipedia.org/wiki/wiring" rel="noopener noreferrer" target="_blank">https://es.wikipedia.org/wiki/wiring</a>&gt;`__.</p>
+<p>Aquesta placa Arduino es pot ampliar per altres plaques, anomenades Shield perquè estan connectades a la placa de desenvolupament que la cobreix. Aquests escut afegeixen noves funcions a la placa original, com ara la connexió Ethernet, el control de motors DC o STEP -BY -Step, la connexió de la targeta de memòria, etc.</p>
+<p>Avui &quot;L'oferta s'ha ampliat força &lt;<a class="reference external" href="https://www.arduino.cc/en/main/products" rel="noopener noreferrer" target="_blank">https://www.arduino.cc/en/main/products</a>&gt;`__ i podem trobar molts productes diferents:</p>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Plaques de desenvolupament de 8 bits</dt><dd><ul>
+<li>Arduino One</li>
+<li>Arduino Leonardo</li>
+<li>Arduino Mega</li>
+<li>Arduino Nano</li>
+<li>Arduino Sppleen</li>
+<li>Lilypad USB</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Plaques de desenvolupament de 32 bits</dt><dd><ul>
+<li>Arduino degut</li>
+<li>Arduino Zero</li>
+<li>Arduino Yun</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Escuts</dt><dd><ul>
+<li>Motor Shield</li>
+<li>Proto escut</li>
+<li>Escut de relé</li>
+<li>Escut sense fils</li>
+<li>Escut Ethernet</li>
+<li>Escut GSM</li>
+<li>Yun escut</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Kits de desenvolupament</dt><dd><ul>
+<li>Kit d'arrencada</li>
+<li>CTC 101</li>
+<li>Mkr iot paquet</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li>Entorn de programació Arduino IDE</li>
+<li>Llibres de programació</li>
+</ul>
+</div>
+<div class="section" id="todos-los-productos-arduino-deben-utilizarse-juntos">
+<h2>S'han d'utilitzar tots els productes Arduino junts?<a class="headerlink" href="#todos-los-productos-arduino-deben-utilizarse-juntos" title="Link permanent a aquest títol">¶</a></h2>
+<p>No és obligatori. Quan es realitza un desenvolupament típic amb una placa Arduino One, s’utilitzen molts elements diferents, tots ells de la marca Arduino, però es poden substituir sense problemes per diferents elements.</p>
+<p>Primer vegem quins elements s’utilitzen en un projecte típic Arduino:</p>
+<blockquote>
+<div><p>1 Placa de desenvolupament Arduino One 2 Arduino Ide 3 Biblioteques Arduino per a la placa Arduino One 4 C ++ Compilador (AVR-GCC) 5 USB 6 Comunicació de botes d'arrencada d'Arduino 7 Shield Arduino 8 Arduino Libraries</p>
+<blockquote>
+<div><ul class="simple">
+<li>Teensy</li>
+<li>Chipkit uno32</li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+<table class="docutils footnote" frame="void" id="arduino-trademark" rules="none">
+<colgroup><col class="label"><col></colgroup>
+<tbody style="vertical-align:top;">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td><a class="reference external" href="https://www.arduino.cc/en/trademark/homepage" rel="noopener noreferrer" target="_blank">https://www.arduino.cc/en/trademark/homepage</a></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="../contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="../manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="../legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="../legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="../genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="../content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../../es/arduprog/arduino-faq-misconceptions.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../prog-index.html">Programació</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="../_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

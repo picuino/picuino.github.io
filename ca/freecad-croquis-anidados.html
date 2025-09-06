@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Mecànica - Freecad - 14. Extrusió d’esbossos imbricats">
+  <title>14. Extrusió d’esbossos imbricats - Freecad - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/freecad-croquis-anidados.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="15. Esbós amb restriccions" href="freecad-restricciones.html">
+  <link rel="prev" title="13. Extrusió de croquis" href="freecad-croquis-extrudir.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="mecan-index.html">Mecànica</a>/</li>
+        
+          <li><a href="freecad-index.html">Freecad</a>/</li>
+        
+      <li><span class="section-number">14. </span>Extrusió d’esbossos imbricats</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/freecad-croquis-anidados.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/freecad-croquis-anidados.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="extrusion-de-croquis-anidados">
+<span id="freecad-croquis-anidados"></span><h1><span class="section-number">14. </span>Extrusió d’esbossos imbricats<a class="headerlink" href="#extrusion-de-croquis-anidados" title="Link permanent a aquest títol">¶</a></h1>
+<p>En aquesta pràctica, crearem esbossos per extendre -los, situant alguns esbossos a altres i, per tant, formaran figures més complexes.</p>
+<p>; BR |</p>
+<ol class="arabic">
+<li><p class="first">Obrim l’aplicació ** Freecad ** i fem clic a la icona per crear un document ** nou ** | Icon-new-Document <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<p>Seleccionem el disseny de la part del banc de treball ** **</p>
+<img alt="_images/freecad-workbench-part-design.png" src="_images/freecad-workbench-part-design.png">
+<p>A continuació, seleccionem per crear un esbós nou.</p>
+<img alt="_images/freecad-crear-nuevo-croquis.png" src="_images/freecad-crear-nuevo-croquis.png">
+<p>I vam triar el pla XY com a pla base per col·locar el nou esbós.</p>
+<img alt="_images/freecad-croquis-xy.png" src="_images/freecad-croquis-xy.png">
+<p>A la pantalla apareixerà una graella per dibuixar dues dimensions.</p>
+<img alt="_images/freecad-croquis-rejilla.png" src="_images/freecad-croquis-rejilla.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">Aleshores dibuixarem un objecte senzill, un octàgon.</p>
+<p>Primer ajustem els controls d’edició a la pestanya Task, de manera que el dibuix s’ajusti a la xarxa.</p>
+<img alt="_images/freecad-croquis-control-edicion.png" src="_images/freecad-croquis-control-edicion.png">
+<p>Ara crearem un Octagon amb la icona de Polyline | Polilinea <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<img alt="_images/freecad-p14-imagen01.png" src="_images/freecad-p14-imagen01.png">
+<p>Si ens equivoquem quan posem els punts, un cop finalitzat el dibuix, podem fer clic als punts i arrossegar -los amb el ratolí a la seva posició correcta.</p>
+<p>Un cop acabats, feu clic a les tasques ** ** i premeu el botó `` tanca ''. El nostre dibuix es veurà a la vista de plantes com a la figura següent.</p>
+<img alt="_images/freecad-p14-imagen02.png" src="_images/freecad-p14-imagen02.png">
+<p>Si no podeu veure el dibuix, feu clic a la icona de &quot;Ajustar el contingut complet a la pantalla&quot; | Icon-ajustar-contemplate <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Per obtenir una peça de tres dimensions, extreuem el nostre esbós seleccionant la icona corresponent.</p>
+<img alt="_images/freecad-croquis-extruir.png" src="_images/freecad-croquis-extruir.png">
+<p>O seleccionant al disseny de part ...</p>
+<p>En els paràmetres d'extrusió, hem escollit el nivell o l'alçada que volem per a la peça, en aquest cas ** 50 mil·límetres <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Si canviem en perspectiva, podem veure el nostre Octagon en tres dimensions.</p>
+<img alt="_images/freecad-p14-imagen03.png" src="_images/freecad-p14-imagen03.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara seleccionarem l’àrea superior de l’Octagon fent clic sobre ella. La zona canviarà de color verd.</p>
+<img alt="_images/freecad-p14-imagen04.png" src="_images/freecad-p14-imagen04.png">
+<p>Un cop seleccionada la cara superior, feu clic a la icona de la creació de croquis.</p>
+<img alt="_images/freecad-crear-nuevo-croquis.png" src="_images/freecad-crear-nuevo-croquis.png">
+<p>Aquesta vegada, l’esbós es dibuixarà a la cara seleccionada, no a terra.</p>
+<p>Ajustem els controls d’edició perquè s’ajustin a la xarxa.</p>
+<img alt="_images/freecad-croquis-control-edicion.png" src="_images/freecad-croquis-control-edicion.png">
+<p>I dibuixem un altre octagon més petit al primer octàgon.</p>
+<img alt="_images/freecad-p14-imagen05.png" src="_images/freecad-p14-imagen05.png">
+<p>Un cop acabats, feu clic a les tasques ** ** i premeu el botó `` tanca ''. El nostre dibuix es veurà com a la figura següent.</p>
+<img alt="_images/freecad-p14-imagen06.png" src="_images/freecad-p14-imagen06.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">A continuació, extroem el nou esbós per formar una nova figura al primer. Premeu la icona corresponent.</p>
+<img alt="_images/freecad-croquis-extruir.png" src="_images/freecad-croquis-extruir.png">
+<p>O seleccionem al disseny de part ...</p>
+<p>En els paràmetres d'extrusió, hem escollit el nivell o l'alçada que volem per a la peça, en aquest cas ** 50 mil·límetres <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>La peça es veurà com a la imatge següent.</p>
+<img alt="_images/freecad-p14-imagen07.png" src="_images/freecad-p14-imagen07.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara generarem un buidatge ** a la peça creada. Comencem seleccionant la cara superior del nostre objecte en tres dimensions.</p>
+<p>Un cop seleccionada la cara superior, creem un esbós nou.</p>
+<img alt="_images/freecad-crear-nuevo-croquis.png" src="_images/freecad-crear-nuevo-croquis.png">
+<p>Ajustem els controls d’edició perquè s’ajustin a la xarxa.</p>
+<img alt="_images/freecad-croquis-control-edicion.png" src="_images/freecad-croquis-control-edicion.png">
+<p>I dibuixem un quadrat al centre de la peça.</p>
+<img alt="_images/freecad-p14-imagen08.png" src="_images/freecad-p14-imagen08.png">
+<p>Un cop acabats, feu clic a les tasques ** ** i premeu el botó `` tanca ''. El nostre dibuix es veurà com a la figura següent.</p>
+<img alt="_images/freecad-p14-imagen09.png" src="_images/freecad-p14-imagen09.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">A continuació ** Generem un forat ** a partir de l’esbós dibuixat a la icona ** de buidatge <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<img alt="_images/freecad-croquis-vaciado.png" src="_images/freecad-croquis-vaciado.png">
+<p>O seleccionant al disseny de part ...</p>
+<p>Un cop pressionat, canviem els paràmetres de buidatge de manera que el forat ** creui tots els objectes <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<img alt="_images/freecad-p14-imagen10.png" src="_images/freecad-p14-imagen10.png">
+<p>Si feu clic al botó `` `` <a href="#id1"><span class="problematic" id="id2">`</span></a>, es perforarà com es pot veure a la figura següent.</p>
+<img alt="_images/freecad-p14-imagen11.png" src="_images/freecad-p14-imagen11.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">Fins ara sempre hem creat esbossos en vertical, des de baix a dalt, però els esbossos es poden col·locar a qualsevol superfície ** com es pot veure a la figura següent.</p>
+<img alt="_images/freecad-p14-imagen12.png" src="_images/freecad-p14-imagen12.png">
+<p>; BR |</p>
+</li>
+</ol>
+<hr class="docutils">
+<div class="section" id="ejercicios">
+<h2>Exercicis<a class="headerlink" href="#ejercicios" title="Link permanent a aquest títol">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Creeu una màscara en tres dimensions com la figura.</p>
+<img alt="_images/freecad-p14-ejercicio01.png" src="_images/freecad-p14-ejercicio01.png">
+<p>; BR |</p>
+</li>
+<li><p class="first">Creeu una casa com la figura.</p>
+<img alt="_images/freecad-p14-ejercicio02.png" src="_images/freecad-p14-ejercicio02.png">
+<p>El primer esbós amb el cos de la casa es col·locarà al ** pla xz ** i s’extreu al pla Y.</p>
+<p>Els esbossos següents serviran per fer forats al cos principal.</p>
+<img alt="_images/freecad-p14-ejercicio02b.png" src="_images/freecad-p14-ejercicio02b.png">
+<p>Per donar colors a la casa seguirem aquest procediment.</p>
+<ol class="arabic simple">
+<li>Seleccionem la casa completa a la pestanya ** <a href="#id1"><span class="problematic" id="id2">**</span></a>.</li>
+<li>Amb el botó dret del ratolí al model, seleccionem ** Ajustar els colors <a href="#id1"><span class="problematic" id="id2">**</span></a>.</li>
+</ol>
+<img alt="_images/freecad-p14-ejercicio02c.png" src="_images/freecad-p14-ejercicio02c.png">
+<ol class="arabic simple" start="3">
+<li>Seleccionem amb el ratolí la cara de l’objecte que volem canviar de color.</li>
+<li>Seleccionem el color al quadre de diàleg ** tasques <a href="#id1"><span class="problematic" id="id2">**</span></a>.</li>
+</ol>
+<img alt="_images/freecad-p14-ejercicio02d.png" src="_images/freecad-p14-ejercicio02d.png">
+<ol class="arabic simple" start="5">
+<li>Feu clic a `` D'acord ''.</li>
+</ol>
+<p>; BR |</p>
+</li>
+<li><p class="first">Creeu un joc de laberint amb pilota com la figura.</p>
+<img alt="_images/freecad-p14-ejercicio03.png" src="_images/freecad-p14-ejercicio03.png">
+<p>Dels esbossos següents.</p>
+<img alt="_images/freecad-p14-ejercicio03b.png" src="_images/freecad-p14-ejercicio03b.png">
+<p>Afegiu una esfera amb el banc de treball ** Part ** i mou l'esfera com es pot veure a la primera xifra.</p>
+<p>Finalment, canvieu el color de les cares de l’objecte i l’esfera.</p>
+<p>; BR |</p>
+</li>
+</ol>
+</div>
+<hr class="docutils">
+<div class="section" id="videotutorial">
+<h2>Videotuitorial<a class="headerlink" href="#videotutorial" title="Link permanent a aquest títol">¶</a></h2>
+<p>Vídeo: <a class="reference external" href="https://www.youtube-nocoakie.com/embed/dssebtnagts" rel="noopener noreferrer" target="_blank">Extrusions i vacances de croquis.</a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="freecad-restricciones.html" class="btn btn-neutral float-right" title="15. Esbós amb restriccions" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="freecad-croquis-extrudir.html" class="btn btn-neutral" title="13. Extrusió de croquis" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/freecad-croquis-anidados.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="mecan-index.html">Mecànica</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="mecan-estructuras-index.html">Estructures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mecan-maquinas-index.html">Màquines i mecanismes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mecan-calibre.html">El: Índex: `calibre '</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mecan-neumatic-index.html">Pneumàtica</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="freecad-index.html">Freecad</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="freecad-intro.html">1. Introducció a Freecad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="freecad-visualizacion.html">2. Visualització de peces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="freecad-traslacion.html">3. Traducció de peces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="freecad-tamanios.html">4. Mida de les parts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="freecad-union.html">5. Unió de peces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="freecad-rotaciones.html">6. Rotació de la peça</a></li>
+<li class="toctree-l3"><a class="reference internal" href="freecad-diferencia.html">7. Diferència de peces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="freecad-cilindros.html">8. Peces cilíndriques</a></li>
+<li class="toctree-l3"><a class="reference internal" href="freecad-chaflanes.html">9. Chaflanes i arrodoniment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="freecad-esferas.html">10. Peces esfèriques</a></li>
+<li class="toctree-l3"><a class="reference internal" href="freecad-conos.html">11. Peces còniques</a></li>
+<li class="toctree-l3"><a class="reference internal" href="freecad-toroides.html">12. Peces toroides</a></li>
+<li class="toctree-l3"><a class="reference internal" href="freecad-croquis-extrudir.html">13. Extrusió de croquis</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">14. Extrusió d’esbossos imbricats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="freecad-restricciones.html">15. Esbós amb restriccions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="freecad-videotutoriales.html">16. Tutorials de vídeo Freecad</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="blockscad-index.html">Blocscad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mecan-origami.html">Papiroflexia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mecan-recursos.html">Recursos per a la mecànica</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programació</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

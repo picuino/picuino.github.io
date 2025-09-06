@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Robòtica - Actuadors - 1. Servomotor">
+  <title>1. Servomotor - Actuadors - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/control-actuator-servomotor.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="2. Timbre" href="control-actuator-buzzer.html">
+  <link rel="prev" title="Actuadors" href="control-actuator-index.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="robotica-index.html">Robòtica</a>/</li>
+        
+          <li><a href="control-actuator-index.html">Actuadors</a>/</li>
+        
+      <li><span class="section-number">1. </span>Servomotor</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/control-actuator-servomotor.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/control-actuator-servomotor.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="servomotor">
+<span id="actuator-servomotor"></span><h1><span class="section-number">1. </span>Servomotor<a class="headerlink" href="#servomotor" title="Link permanent a aquest títol">¶</a></h1>
+<p>Un servomotor és un motor elèctric que pot recórrer a la posició angular desitjada i mantenir -se estable en aquesta posició.</p>
+<a class="reference internal image-reference" href="_images/img-0085.jpg"><img alt="Servomotor de radiocontrol" class="align-center" src="_images/img-0085.jpg" style="width: 200px;"></a>
+<p>Un servomotor pot convertir un component mecànic o moure un element de lineal.</p>
+<p>Les aplicacions típiques que utilitzen servomotors són:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Vídeo: <a class="reference external" href="https://www.youtube-nocoakie.com/embed/_xzjp3gane4" rel="noopener noreferrer" target="_blank">Gate of a Air Condicioning Panel</a></li>
+<li>Direcció de la direcció d’un vehicle cap al control de la ràdio.</li>
+<li>Moviment de capçalera de lectura d’un lector CDROM o DVD.</li>
+<li>Moviment de miralls retrovisor automàtic d’un cotxe.</li>
+<li>Obertura i tancament d’una caixa de seguretat amb pany electrònic.</li>
+</ul>
+</div></blockquote>
+<div class="section" id="funcionamiento">
+<h2>Operació<a class="headerlink" href="#funcionamiento" title="Link permanent a aquest títol">¶</a></h2>
+<p>Per moure un servomotor, cal connectar -se a una font d’alimentació elèctrica i enviar un senyal electrònic que indiqui la posició desitjada. La majoria dels servomotores de ràdio control tenen un cable de connexió de 3 guns on el corrent d'alimentació i el senyal de control circulen.</p>
+<p>** Composició interna: **</p>
+<p>Vídeo: <a class="reference external" href="https://www.youtube-nocokie.com/embed/zzhud78bldk" rel="noopener noreferrer" target="_blank">Composició i funcionament intern d'un servomotor</a></p>
+<p>Internament, el servomotor està format pels components següents.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Motor elèctric.</li>
+<li>Reductor mecànic.</li>
+<li>Sensor de posició. Generalment és un potenciòmetre.</li>
+<li>Circuit de control.</li>
+</ul>
+</div></blockquote>
+<p>El motor és l’element que produeix el moviment.</p>
+<p>El gir dels motors elèctrics sol ser molt ràpid i amb poca força, el reductor mecànic aconsegueix reduir la velocitat de rotació i augmentar la força, de manera que el gir final sigui més útil.</p>
+<p>El sensor de posició us permet conèixer la posició exacta de l’eix de gir del servomotor. Amb el sensor, la posició de l’eix es pot corregir de manera que en tot moment estigui en la posició desitjada.</p>
+<p>El circuit de control rep el senyal de la posició desitjada pel cable i el compara amb la posició real de l’eix, mesurada pel sensor. Aquest circuit és responsable de moure el motor per agafar la posició desitjada a l’eix i mantenir -lo en aquesta posició. De vegades sembla que l’eix servomotor tremola. Això es deu al circuit de control que corregeix contínuament la posició amb girs a la dreta i a l’esquerra per mantenir la posició final estable.</p>
+</div>
+<div class="section" id="especificaciones">
+<h2>Especificacions<a class="headerlink" href="#especificaciones" title="Link permanent a aquest títol">¶</a></h2>
+<p>Hi ha molts tipus de servomotors. A tall d’exemple, es mostren les especificacions d’un petit “Tower Pro 9G &lt;../_ Static/Document/SG90Servo.pdf&gt;`__ Servomotor.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Tensió de potència = 4,8 a 6,0 V</li>
+<li>Corrent màxim = 570 a 730 mA</li>
+<li>Desplaçament de corrent sense càrrega = 170 a 270 mA</li>
+<li>Angle Giro = de 0 a 180º</li>
+<li>Gireu la força = 1,8 kg-cm a 4.8V</li>
+<li>Velocitat de gir = 180º a 0,36 s</li>
+<li>Pes = 9 grams</li>
+<li>Precisió = 10us = 1,8º</li>
+</ul>
+</div></blockquote>
+<p>La majoria dels servomotores permeten girar angles inferiors a 180º. Al següent vídeo podeu veure el funcionament del servomotor, la seva velocitat de rotació i la seva gamma d’acció. En una imatge oscil·loscopi també podeu veure el senyal electrònic que controla el servomotor.</p>
+<ul class="simple">
+<li>Vídeo: <a class="reference external" href="https://www.youtube-nocokie.com/embed/em4jurm49fi" rel="noopener noreferrer" target="_blank">Processador de servo RC.</a></li>
+</ul>
+</div>
+<div class="section" id="esquema-de-conexion">
+<h2>Esquema de connexió<a class="headerlink" href="#esquema-de-conexion" title="Link permanent a aquest títol">¶</a></h2>
+<p>El següent esquema mostra com connectar un servomotor a la placa Arduino Uno.</p>
+<a class="reference internal image-reference" href="_images/servo-uno-bb.png"><img alt="Cableado del servomotor" class="align-center" src="_images/servo-uno-bb.png" style="width: 600px;"></a>
+<a class="reference internal image-reference" href="_images/servo-uno-schema.png"><img alt="Esquema eléctrico de conexión del servomotor" class="align-center" src="_images/servo-uno-schema.png" style="width: 600px;"></a>
+<p>Tingueu en compte que el sistema de colors i connexions HITEC s’ha utilitzat per realitzar aquest esquema. Altres servomotors tenen un esquema de colors diferent i fins i tot connexions en diferents ordres.</p>
+<a class="reference internal image-reference" href="_images/img-0017.jpg"><img alt="Sistemas de conexión de diferentes marcas de servomotores." class="align-center" src="_images/img-0017.jpg" style="width: 400px;"></a>
+</div>
+<div class="section" id="programa-de-control">
+<h2>Programa de control<a class="headerlink" href="#programa-de-control" title="Link permanent a aquest títol">¶</a></h2>
+<p>La Biblioteca de Control Servomotor arriba de manera normal amb l’entorn Arduino. El seu nom és &lt;servo.h&gt;</p>
+<p>En l'exemple següent, s'utilitza la llibreria Servo.</p>
+<div class="highlight-Arduino notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">// Programa de prueba para mover un servomotor a dos posiciones.</span>
+<span class="cp">#include</span> <span class="cpf">&lt;Servo.h&gt;</span><span class="cp"></span>
+
+<span class="nf">Servo</span> <span class="n">myservo</span><span class="p">;</span>         <span class="c1">// Crea un objeto de tipo servomotor llamado myservo</span>
+
+<span class="kr">void</span> <span class="nb">setup</span><span class="p">()</span> <span class="p">{</span>
+   <span class="n">myservo</span><span class="p">.</span><span class="nf">attach</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>  <span class="c1">// Conecta el servomotor al pin digital 3</span>
+<span class="p">}</span>
+
+<span class="kr">void</span> <span class="nb">loop</span><span class="p">()</span> <span class="p">{</span>
+   <span class="n">myservo</span><span class="p">.</span><span class="nf">write</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>   <span class="c1">// Mueve el servomotor a la posición de 0 grados</span>
+   <span class="nf">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>         <span class="c1">// Espera medio segundo</span>
+   <span class="n">myservo</span><span class="p">.</span><span class="nf">write</span><span class="p">(</span><span class="mi">180</span><span class="p">);</span> <span class="c1">// Mueve el servomotor a la posición de 180 grados</span>
+   <span class="nf">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>         <span class="c1">// Espera medio segundo</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<hr class="docutils">
+<div class="section" id="ejercicios">
+<h2>Exercicis<a class="headerlink" href="#ejercicios" title="Link permanent a aquest títol">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Completa el següent programa que mou lentament el servomotor entre dues posicions diferents.</p>
+<div class="highlight-Arduino notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">// Mueve el servomotor conectado al pin digital 3</span>
+<span class="c1">// lentamente entre dos posiciones distintas</span>
+<span class="cp">#include</span> <span class="cpf">&lt;Servo.h&gt;</span><span class="cp"></span>
+
+<span class="nf">Servo</span> <span class="n">myservo</span><span class="p">;</span>         <span class="c1">// Crea un objeto de tipo servomotor llamado myservo</span>
+
+<span class="kr">void</span> <span class="nb">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">myservo</span><span class="p">.</span><span class="nf">attach</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>   <span class="c1">// Conecta el servomotor al pin digital 3</span>
+<span class="p">}</span>
+
+<span class="kr">void</span> <span class="nb">loop</span><span class="p">()</span> <span class="p">{</span>
+
+   <span class="c1">// Mueve lentamente el servomotor desde 0 hasta 180</span>
+   <span class="kr">int</span> <span class="n">angle</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+   <span class="k">while</span><span class="p">(</span><span class="n">angle</span> <span class="o">&lt;</span> <span class="mi">180</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">myservo</span><span class="p">.</span><span class="nf">write</span><span class="p">(</span><span class="n">angle</span><span class="p">);</span>  <span class="c1">// Mueve el servomotor a la posición &#39;angle&#39;</span>
+      <span class="nf">delay</span><span class="p">(</span><span class="mi">20</span><span class="p">);</span>             <span class="c1">// Espera 20 milisegundos</span>
+      <span class="n">angle</span> <span class="o">=</span> <span class="n">angle</span> <span class="o">+</span> <span class="mi">2</span><span class="p">;</span>
+   <span class="p">}</span>
+
+   <span class="c1">// Mueve lentamente el servomotor desde 180 hasta 0</span>
+
+
+
+
+
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</li>
+<li><p class="first">Feu una modificació al programa anterior perquè el servomotor es mogui lentament de la posició 0 graus a 180 graus. Un cop finalitzat aquest moviment, ha de tornar ràpidament a la posició de 0 graus. El moviment ràpid es pot aconseguir reduint el temps d’espera `` `` <cite>o augmentant l'angle de gir a l'Instrucció</cite> angle = angle + 2`.</p>
+<p>Tingueu en compte que el servomotor triga aproximadament 360 mil·lisegons per tornar a la seva posició inicial. El temps previst per al moviment no ha de ser inferior.</p>
+</li>
+<li><p class="first">Feu un programa que mogui un servomotor per situar -se 0 graus quan prémer el botó 1 i que mogui el servomotor per situar 90 graus en prémer el botó 2.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="extras">
+<h2>Extres<a class="headerlink" href="#extras" title="Link permanent a aquest títol">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>Vídeo: Explicació en anglès del funcionament d'un servomotor &lt;<a class="reference external" href="https://www.youtube-nocoakie.com/embed/hg3tifixwco" rel="noopener noreferrer" target="_blank">https://www.youtube-nocoakie.com/embed/hg3tifixwco</a>&gt;`__</li>
+<li>Vídeo: <a class="reference external" href="https://www.youtube-nocoakie.com/embed/lxurlvga8bq" rel="noopener noreferrer" target="_blank">How Servo Motors i com controlar els servos mitjançant arduino</a></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="control-actuator-buzzer.html" class="btn btn-neutral float-right" title="2. Timbre" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="control-actuator-index.html" class="btn btn-neutral" title="Actuadors" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/control-actuator-servomotor.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programació</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="robotica-index.html">Robòtica</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="control-index.html">Control dels sistemes</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="control-actuator-index.html">Actuadors</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">1. Servomotor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control-actuator-buzzer.html">2. Timbre</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control-actuator-speaker.html">3. Parlant</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control-actuator-stepper-motor.html">4. Pas a pas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control-actuator-brushless.html">5. Motor sense escombrat</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="control-sensor-index.html">Sensors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="robotica-normativa.html">Codi de l'escola 4.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="robotica-recursos.html">Recursos per a la robòtica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="robotica-robots-actuales.html">Robots actuals</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

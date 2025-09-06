@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Electrònica - Electrònica digital - 2. Detecció d&#39;errors">
+  <title>2. Detecció d&#39;errors - Electrònica digital - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/electronic-error-detection.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="3. Correcció d&#39;errors" href="electronic-error-correction.html">
+  <link rel="prev" title="1. Senyals digitals" href="electronic-digital-signals.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="electronic-index.html">Electrònica</a>/</li>
+        
+          <li><a href="electronic-digital-index.html">Electrònica digital</a>/</li>
+        
+      <li><span class="section-number">2. </span>Detecció d'errors</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/electronic-error-detection.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/electronic-error-detection.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="deteccion-de-errores">
+<span id="electronic-error-detection"></span><h1><span class="section-number">2. </span>Detecció d'errors<a class="headerlink" href="#deteccion-de-errores" title="Link permanent a aquest títol">¶</a></h1>
+<p>A l’electrònica digital podeu afegir dades addicionals a la informació enviada per un canal amb soroll, per detectar si la transmissió d’informació ha estat correcta o si s’ha produït algun error.</p>
+<p>La &quot;detecció d'errors &lt;<a class="reference external" href="https://es.wikipedia.org/wiki/detecci%C3%B3n_y_correcci%C3%B3n_de_erores" rel="noopener noreferrer" target="_blank">https://es.wikipedia.org/wiki/detecci%C3%B3n_y_correcci%C3%B3n_de_erores</a>&gt;` __ Afegiu una petita sobrecàrrega d'informació amb bits addicionals anomenats ** redundància <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>A la transmissió de dades en línia o a la xarxa de dades mòbils, si es produeix un error i es detecta, l’ordinador tornarà a demanar la informació fins que la versió correcta arribi sense errors.</p>
+<div class="section" id="bits-de-paridad">
+<h2>Bits de paritat<a class="headerlink" href="#bits-de-paridad" title="Link permanent a aquest títol">¶</a></h2>
+<p>El sistema més senzill per afegir redundància per detectar errors és el &quot;bit de paritat &lt;<a class="reference external" href="https://es.wikipedia.org/wiki/bit_de_parity" rel="noopener noreferrer" target="_blank">https://es.wikipedia.org/wiki/bit_de_parity</a>&gt;`__. Aquest bit té un valor que fa que el nombre de bits sigui un total de sempre.</p>
+<p>Per exemple, si les dades enviades són de 3 bits a un, el bit de paritat també valdrà un de manera que el nombre total de bits a un sigui de 4 (número de parell).</p>
+<p>A la figura següent podeu veure diversos exemples de bits de paritat correctes, enviats juntament amb el vostre byte d'informació.</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/electronic-error-detection-01.png"><img alt="Bit de paridad para varios bytes de datos." src="_images/electronic-error-detection-01.png" style="width: 340px;"></a>
+<p class="caption"><span class="caption-text">Bit de paritat per a diversos bytes de dades.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>Si la paritat final és estranya, això vol dir que un dels bits d’informació ha canviat durant la seva transmissió i, per tant, s’ha produït un error.</p>
+<p>Aquest sistema reconeix el canvi d’un sol bit d’informació. Si hi ha canvis en dos bits alhora, el sistema de control de paritat no podrà reconèixer l'error.</p>
+</div>
+<div class="section" id="suma-de-verificacion">
+<h2>Suma de verificació<a class="headerlink" href="#suma-de-verificacion" title="Link permanent a aquest títol">¶</a></h2>
+<p>La &quot;suma de verificació &lt;<a class="reference external" href="https://es.wikipedia.org/wiki/suma_de_verifaci%C3%B3n" rel="noopener noreferrer" target="_blank">https://es.wikipedia.org/wiki/suma_de_verifaci%C3%B3n</a>&gt;`__, també anomenada checksum, és un fet afegit a les dades d'informació que pretén detectar errors de transmissió amb una precisió més gran que un simple bit de paritat.</p>
+<p>Hi ha diverses versions:</p>
+<ol class="arabic simple">
+<li>Afegiu el valor de tots els bytes d'informació transmesa. És la versió més senzilla de la realització i la menys capaç de detectar errors.</li>
+<li><cite>Codis de redundància cíclica o CRC &lt;https://es.wikipedia.org/wiki/verificaci%C3%B3n_de_redundancia_c%C3%Adclica&gt;</cite> __. Són codis que solen tenir una longitud de 16 o 32 bits i que són capaços de detectar més errors que una suma senzilla. Com a contrapartida, el seu càlcul és més complex.</li>
+<li>Funcions de hash avançades, com ara el <a class="reference external" href="https://es.wikipedia.org/wiki/secure_hash_algorithm" rel="noopener noreferrer" target="_blank">sha</a>. Són codis que solen tenir una longitud de més de 128 bits (16 bytes) i molt car de calcular. D'altra banda, són els més potents i serveixen per detectar errors aleatoris i també errors introduïts per una ciberdelinqüència.</li>
+</ol>
+<p>Aquestes sumes de verificació s’utilitzen àmpliament en línies de comunicació remotes i suports digitals com CD-ROM o Memories USB.</p>
+</div>
+<div class="section" id="ejercicios">
+<h2>Exercicis<a class="headerlink" href="#ejercicios" title="Link permanent a aquest títol">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Per a què serveix els errors?</p>
+</li>
+<li><p class="first">Quina és la informació addicional afegida per detectar errors de transmissió de dades?</p>
+</li>
+<li><p class="first">De les dades següents rebudes, quines tenen errors i per què?</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/electronic-error-detection-02.png"><img alt="Datos con bits de paridad y con errores." src="_images/electronic-error-detection-02.png" style="width: 340px;"></a>
+</div>
+</li>
+<li><p class="first">Escriviu el bit de paritat corresponent als següents números binaris</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span> <span class="mi">1</span> <span class="mi">0</span> <span class="mi">1</span> <span class="mi">0</span> <span class="mi">1</span> <span class="mi">0</span> <span class="mi">1</span>
+
+<span class="mi">1</span> <span class="mi">1</span> <span class="mi">1</span> <span class="mi">1</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">1</span>
+
+<span class="mi">1</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">1</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">1</span>
+
+<span class="mi">0</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">1</span> <span class="mi">1</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Què és un codi de comprovació?</p>
+</li>
+<li><p class="first">Enumereu tres tipus diferents de comprovació.</p>
+<p>Escriviu dos exemples de sistemes que utilitzen els codis anteriors.</p>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="electronic-error-correction.html" class="btn btn-neutral float-right" title="3. Correcció d&#39;errors" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="electronic-digital-signals.html" class="btn btn-neutral" title="1. Senyals digitals" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/electronic-error-detection.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="electronic-index.html">Electrònica</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="electronic-components-index.html">Components electrònics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electronic-analog-index.html">Electrònica analògica</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="electronic-digital-index.html">Electrònica digital</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="electronic-digital-signals.html">1. Senyals digitals</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">2. Detecció d'errors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-error-correction.html">3. Correcció d'errors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-binary.html">4. El sistema binari</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-gate-not.html">5. La porta lògica no</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-gate-or.html">6. La porta lògica o</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-gate-and.html">7. La lògica i</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-gate-xor.html">8. La porta lògica xor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-morgan-laws.html">9. Les lleis de De Morgan</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-truth-table.html">10. La taula de veritat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-gray-code.html">11. Codi gris</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-karnaugh.html">12. Mapa de Karnaugh</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="electronic-bornas-index.html">Cablejat de components electrònics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electronic-pcb-luces-led.html">Circuit imprès amb llums LED</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programació</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

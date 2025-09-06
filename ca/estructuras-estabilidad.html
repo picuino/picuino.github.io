@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Mecànica - Estructures - Estabilitat">
+  <title>Estabilitat - Estructures - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/estructuras-estabilidad.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="Disseny del pont" href="estructuras-bridge-designer.html">
+  <link rel="prev" title="Esforços" href="estructuras-esfuerzos.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="mecan-index.html">Mecànica</a>/</li>
+        
+          <li><a href="mecan-estructuras-index.html">Estructures</a>/</li>
+        
+      <li>Estabilitat</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/estructuras-estabilidad.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/estructuras-estabilidad.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="estabilidad">
+<span id="estructuras-estabilidad"></span><h1>Estabilitat<a class="headerlink" href="#estabilidad" title="Link permanent a aquest títol">¶</a></h1>
+<p>Les estructures que estem estudiant, a més de ser rígides per suportar les càrregues sense trencar -se ni deformar -se, han de ser estables no anul·lar, lliscar ni anar a les forces externes.</p>
+<p>Hi ha diversos problemes que poden presentar les estructures per la seva manca d’estabilitat. A continuació, es detallen els més comuns.</p>
+<div class="section" id="vuelco">
+<h2>: Índex: <a href="#id1"><span class="problematic" id="id2">`</span></a>Robo '<a class="headerlink" href="#vuelco" title="Link permanent a aquest títol">¶</a></h2>
+<p>El canvi d'una estructura es produeix quan el centre de gravetat no es basa en el suport de l'estructura.</p>
+<dl class="docutils">
+<dt>: Índex: <a href="#id1"><span class="problematic" id="id2">`</span></a>Centre de gravetat ':</dt><dd><p>És el punt mig de tota la massa de l'estructura. És el punt en què hem donat suport intuïtivament l’estructura de manera que no es gira cap a un costat o altre.</p>
+<p>En el cas d’un martell, el seu centre de gravetat es troba al mànec, molt a prop del cap, que és la part més pesada.</p>
+<a class="reference internal image-reference" href="_images/centro-gravedad-02.png"><img alt="Camión sin inclinación. Estable." src="_images/centro-gravedad-02.png" style="width: 240px;"></a>
+<a class="reference internal image-reference" href="_images/centro-gravedad-03.png"><img alt="Camión críticamente estable." src="_images/centro-gravedad-03.png" style="width: 240px;"></a>
+<a class="reference internal image-reference" href="_images/centro-gravedad-04.png"><img alt="Camión inestable." src="_images/centro-gravedad-04.png" style="width: 240px;"></a>
+<p>En el cas del camió de la figura, el centre de gravetat es troba al punt vermell, relativament alt.</p>
+<p>A la primera imatge, el centre de gravetat es troba dins de la zona de suport, de manera que el camió és estable i no gira.</p>
+<p>A la segona imatge, el camió s’inclina i el centre de gravetat està a punt de deixar la zona de suport. El camió està a punt de bolcar.</p>
+<p>A la tercera imatge, el camió ha inclinat més i el centre de gravetat no es troba a la zona de suport. En aquest cas, el camió no és estable i girarà.</p>
+</dd>
+</dl>
+<p>Perquè es produeixi ** ** d'una estructura, el centre de gravetat ha de caure fora de la zona de suport de l'estructura amb el sòl.</p>
+</div>
+<div class="section" id="soluciones-al-vuelco">
+<h2>Solucions de desviació<a class="headerlink" href="#soluciones-al-vuelco" title="Link permanent a aquest títol">¶</a></h2>
+<p>Hi ha diverses solucions per evitar que es converteixi una estructura.</p>
+<dl class="docutils">
+<dt>Afegiu un contrapès</dt><dd><p>Quan una estructura està massa escalada a un costat o a un pes lateral, pot fer -la bolcar, un contrapès al costat oposat pot solucionar el problema.</p>
+<p>Exemple: contrapès a les grues de treball o als camions.</p>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/mecan-grua-obra.jpg"><img alt="_images/mecan-grua-obra.jpg" src="_images/mecan-grua-obra.jpg" style="width: 640px;"></a>
+<p class="caption"><span class="caption-text">Treball amb el contrapès esquerre.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+<div class="legend">
+Imatge de <a class="reference external" href="https://pixabay.com/es/users/photomix-company-1546875/" rel="noopener noreferrer" target="_blank">Photomix</a> a <a href="#id1"><span class="problematic" id="id2">`</span></a>pixabay &lt;<a class="reference external" href="https://pixabay.com/photos/edificio-grua-sitio-de" rel="noopener noreferrer" target="_blank">https://pixabay.com/photos/edificio-grua-sitio-de</a>-construcci%C3%</div>
+</div>
+</dd>
+<dt>Amplieu la base de suport</dt><dd><p>Com més gran sigui la base de suport, més difícil és que el centre de gravetat caigui fora de la base.</p>
+<p>Exemples: camió de grua amb suports extensibles. Cotxe esportiu molt ampli. Les persones instintivament separen els peus els uns dels altres per tenir una base de suport més gran quan es mou el sòl.</p>
+<div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="_images/mecan-camion-grua-bomberos.jpg"><img alt="_images/mecan-camion-grua-bomberos.jpg" src="_images/mecan-camion-grua-bomberos.jpg" style="width: 420px;"></a>
+<p class="caption"><span class="caption-text">Camió de bombers amb grua i suports extensibles.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+<div class="legend">
+Imatge de <a class="reference external" href="https://pixabay.com/es/users/kolinger-15617407/" rel="noopener noreferrer" target="_blank">Hermann Kolinger</a> a <cite>pixabay &lt;https://pixabay.com/es/photos/bomberos-psado-r%C3%BCSTFahrzeug-srf-521137/&gt;</cite> `` `` `` `` `` `` '</div>
+</div>
+</dd>
+<dt>Baixeu el centre de gravetat</dt><dd><p>Si el centre de gravetat és menor, és més difícil caure de la base de suport.</p>
+<p>Exemples: Per obtenir el centre de gravetat d’un camió, heu de col·locar els paquets més pesats a la part inferior i els llums de la part superior. Els cotxes esportius solen tenir un centre de gravetat baix i aconseguir una major estabilitat.</p>
+<div class="figure align-center" id="id4">
+<a class="reference internal image-reference" href="_images/mecan-coche-carreras.jpg"><img alt="_images/mecan-coche-carreras.jpg" src="_images/mecan-coche-carreras.jpg" style="width: 480px;"></a>
+<p class="caption"><span class="caption-text">Fórmula 1 amb un centre de gravetat molt baix.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+<div class="legend">
+Imatge de <a class="reference external" href="https://pixabay.com/es/users/cozmicphotos-2999334/" rel="noopener noreferrer" target="_blank">Nathan Wright</a> a <cite>pixabay &lt;https://pixabay.com/es/photos/f1-coche-carreras-raza-velity-2722971/&gt;</cite> `` `` `` `` `` `` `` `` `` `` `` `` `` `` `` `` ''</div>
+</div>
+</dd>
+<dt>Ancoreu l'estructura a terra</dt><dd><p>Amb aquesta solució, l'estructura es reforça ampliant -la a terra.</p>
+<p>Exemples: vents d’una tenda de campanya. Cables d’ancoratge d’antena. Bola o pal de bandera ancorada a terra.</p>
+<div class="figure align-center" id="id5">
+<a class="reference internal image-reference" href="_images/mecan-antenas-radio.jpg"><img alt="_images/mecan-antenas-radio.jpg" src="_images/mecan-antenas-radio.jpg" style="width: 480px;"></a>
+<p class="caption"><span class="caption-text">Antenes de ràdio amb vents per ancorar -les a terra.</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+<div class="legend">
+Imatge de <a class="reference external" href="https://pixabay.com/es/users/loggawiggler-15/" rel="noopener noreferrer" target="_blank">logGawiggler</a> a <cite>pixabay &lt;https://pixabay.com/es/photos/antenas-parab%C3%B3licaS-inal%C3%A1Mbrico-43232/&gt;</cite> `` `` `` `` `` `` `` ``</div>
+</div>
+</dd>
+</dl>
+</div>
+<div class="section" id="pandeo">
+<h2>: Índex: <a href="#id1"><span class="problematic" id="id2">`</span></a>pandeo '<a class="headerlink" href="#pandeo" title="Link permanent a aquest títol">¶</a></h2>
+<a class="reference internal image-reference" href="_images/mecan-pandeo-01.png"><img alt="columna soportando pandeo." class="align-right" src="_images/mecan-pandeo-01.png" style="width: 120px;"></a>
+<p>El <a class="reference external" href="https://es.wikipedia.org/wiki/pandeo" rel="noopener noreferrer" target="_blank">buckling</a> És una inestabilitat que es produeix en barres i columnes ** esvelt ** sotmès a compressió.</p>
+<p>Quan la forma de la barra o la columna és molt estreta i molt llarga (esvelta), corre el risc de doblegar i perdre la seva resistència. El resultat final és que l'estructura es flexiona fins que es divideix i falla.</p>
+</div>
+<div class="section" id="soluciones-al-pandeo">
+<h2>Solucions Pandeo<a class="headerlink" href="#soluciones-al-pandeo" title="Link permanent a aquest títol">¶</a></h2>
+<dl class="docutils">
+<dt>Feu el perfil més gruixut</dt><dd><p>Si augmentem el perfil de la barra o la columna que fa que siguin més gruixuts, deixaran de ser esvelts i no es produirà la fulla.</p>
+<p>Per exemple, es pot utilitzar un tub gruixut amb parets fines en lloc d’una barra sòlida. Els dos tenen el mateix pes i la mateixa quantitat de material, però el tub buit no s’aboca mentre que la barra sòlida, que és més esvelta, si Pandea.</p>
+<p>S'utilitza, per exemple, en les estructures de les bicicletes formades per ** barres tubulars ** o en les estructures de les torres elèctriques formades per les barres en forma de ** l ** en lloc de barres sòlides.</p>
+</dd>
+<dt>Mantingueu el centre de la barra</dt><dd><p>Si mantenim el centre de la barra per evitar que es mogui, no es produirà la fulla.</p>
+<p>Per exemple, una torre d’alta tensió es construeix amb quatre esveltes barres verticals que admeten la major part del pes i les barres horitzontals i oblices que impedeixen que les barres verticals s’enfilin.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="oscilaciones">
+<h2>Oscil·lacions<a class="headerlink" href="#oscilaciones" title="Link permanent a aquest títol">¶</a></h2>
+<p>Les oscil·lacions o vibracions d’una estructura poden ser beneficioses o perjudicials.</p>
+<p>En determinats casos, és convenient que l'estructura no sigui completament rígida. Si l'estructura es pot flexionar i oscil·lar abans d'una càrrega externa, això li permet fallar. Els exemples d’aquest comportament ho tenen en els gratacels que oscil·len al seu sostre en cas de terratrèmol o en cas de donar suport a forts vents. Els pals del vaixell o les ales d’un avió també poden oscil·lar per adaptar -se als esforços que recolzen. Si aquestes estructures fossin completament rígides, es podrien destruir amb els grans esforços que donen suport.</p>
+<p>En altres casos, les oscil·lacions poden unir -se gradualment a la mateixa que en un swing, provocant que l'estructura oscil·li cada cop més amplitud fins que s'esfondri. Això és el que va passar amb el famós <a class="reference external" href="https://es.wikipedia.org/wiki/puente_de_tacoma_narrows" rel="noopener noreferrer" target="_blank">Tacoma Narrows</a> sobrenomenat Gallopin Gertie per les grans oscil·lacions que va patir quan la brisa de l'estiu bufava en les quals es va inaugurar. Quan va arribar la caiguda, un vent de només 64 quilòmetres per hora es va esfondrar el pont, afortunadament sense produir morts. Podeu veure un esdeveniment enregistrant a YouTube:</p>
+<ul class="simple">
+<li>Vídeo: <cite>Tacoma Narrows Pont Collapse &quot; Gallopin 'Gertie &quot;. &lt;https://www.youtube-nocokie.com/embed/j-zczjxsxnw&gt; `</cite> `</li>
+</ul>
+<p>Sense ser tan dramàtics, les oscil·lacions poden produir sorolls i vibracions molt molestes en altres casos. Això es produeix especialment en freqüències de ressonància que són les freqüències en què una estructura vibra de forma natural. Poc a poc, els efectes d’una petita vibració a la mateixa freqüència de ressonància, l’oscil·lació, que en un swing, poden ser molt grans i molestos.</p>
+</div>
+<div class="section" id="soluciones-a-las-oscilaciones">
+<h2>Solucions a les oscil·lacions<a class="headerlink" href="#soluciones-a-las-oscilaciones" title="Link permanent a aquest títol">¶</a></h2>
+<dl class="docutils">
+<dt>Eviteu les càrregues oscil·lants</dt><dd>Aquesta és la solució dels soldats que caminen en formació per sobre d’un pont que no és gaire rígid. En aquest cas, els soldats deixen de caminar alhora i comencen a caminar de manera desorganitzada perquè el pont no ressoni el mateix ritme dels passos [#F1] _.</dd>
+<dt>Xoqueu l'estructura</dt><dd>Aquesta és la solució que es pren a les rodes dels vehicles o en alguns edificis resistents al terratrèmol. Un amortidor és un element que alenteix les oscil·lacions i redueix la ressonància.</dd>
+</dl>
+<ul class="simple">
+<li>VÍDEO: <a class="reference external" href="https://www.youtube-nocokie.com/embed/7scugta8xei" rel="noopener noreferrer" target="_blank">Sintonització de l'absorbidor de xocs de masses</a></li>
+<li>Vídeo: <a class="reference external" href="https://www.youtube-nocoakie.com/embed/qui7acileJo" rel="noopener noreferrer" target="_blank">Exemple didàctic d'estructura de terratrèmols resistents.</a></li>
+</ul>
+</div>
+<hr class="docutils">
+<div class="section" id="ejercicios">
+<h2>Exercicis<a class="headerlink" href="#ejercicios" title="Link permanent a aquest títol">¶</a></h2>
+<ol class="arabic simple">
+<li>Quins problemes d’estabilitat poden tenir les estructures?</li>
+<li>Dibuixa una estructura inestable i una altra que sigui molt estable.</li>
+<li>Quan gira una estructura?</li>
+<li>Quines solucions hi ha per evitar que es converteixi una estructura? Escriviu un exemple de cadascun.</li>
+<li>Què està fent un cop de puny?</li>
+<li>Com es pot evitar el flotador?</li>
+<li>Com es poden evitar les oscil·lacions de danys en una estructura?</li>
+</ol>
+<hr class="docutils">
+<p class="rubric">Notes</p>
+<table class="docutils footnote" frame="void" id="f1" rules="none">
+<colgroup><col class="label"><col></colgroup>
+<tbody style="vertical-align:top;">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>El <a class="reference external" href="http://www.wikivia.org/wikivia/index.php?title=puente_de_broughton_(collapse_structural)" rel="noopener noreferrer" target="_blank">Brouchton Bridge</a> va ser un pont de suspensió a Manchester, Anglaterra, que el 1831 es va esfondrar després del pas d'un troop de soldats que caminava en formació.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="estructuras-bridge-designer.html" class="btn btn-neutral float-right" title="Disseny del pont" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="estructuras-esfuerzos.html" class="btn btn-neutral" title="Esforços" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/estructuras-estabilidad.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="mecan-index.html">Mecànica</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="mecan-estructuras-index.html">Estructures</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="estructuras-intro.html">Introducció a les estructures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="estructuras-esfuerzos.html">Esforços</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Estabilitat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="estructuras-bridge-designer.html">Disseny del pont</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="mecan-maquinas-index.html">Màquines i mecanismes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mecan-calibre.html">El: Índex: `calibre '</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mecan-neumatic-index.html">Pneumàtica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="freecad-index.html">Freecad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blockscad-index.html">Blocscad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mecan-origami.html">Papiroflexia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mecan-recursos.html">Recursos per a la mecànica</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programació</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

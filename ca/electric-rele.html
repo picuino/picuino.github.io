@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Electricitat - Components elèctrics - 2. Els relés">
+  <title>2. Els relés - Components elèctrics - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/electric-rele.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="Símbols elèctrics" href="electric-simbolos.html">
+  <link rel="prev" title="1. El motor elèctric" href="electric-motor.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="electric-index.html">Electricitat</a>/</li>
+        
+          <li><a href="electric-componentes-index.html">Components elèctrics</a>/</li>
+        
+      <li><span class="section-number">2. </span>Els relés</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/electric-rele.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/electric-rele.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="los-reles">
+<span id="electric-rele"></span><h1><span class="section-number">2. </span>Els relés<a class="headerlink" href="#los-reles" title="Link permanent a aquest títol">¶</a></h1>
+<p>Els relés són els primers dispositius elèctrics utilitzats en l’automatització elèctrica.</p>
+<p>En aquesta unitat estudiarem la història del relé, la seva operació, els esquemes elèctrics més habituals i diversos tipus de relés.</p>
+<div class="figure align-center">
+<img alt="_images/electric-reles-crop.png" src="_images/electric-reles-crop.png">
+</div>
+<p>: Descarregueu: <a href="#id1"><span class="problematic" id="id2">`</span></a>El relé. Format PDF &lt;Electric/Components-Rele/Electric-Reles.pdf&gt; `</p>
+<p>: Descarregueu: <a href="#id1"><span class="problematic" id="id2">`</span></a>El relé. Format editable Doc &lt;Electric/Components-Rele/Electric-Reles.Doc&gt; `</p>
+<div class="section" id="que-es-un-rele">
+<h2>Què és un relé<a class="headerlink" href="#que-es-un-rele" title="Link permanent a aquest títol">¶</a></h2>
+<p>És un dispositiu electromecànic amb dos components: la bobina i els contactes. La bobina rep un petit corrent elèctric de baixa tensió al circuit de control i mou els contactes que fan interruptors de corrent i tensió més grans al circuit de potència.</p>
+<div class="figure align-center" id="id1">
+<img alt="_images/electric-relay-principle.gif" src="_images/electric-relay-principle.gif">
+<p class="caption"><span class="caption-text">Esquema d’un relé</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+<div class="legend">
+<cite>Digig-los &lt;https://commons.wikimedia.org/wiki/file:Relay_principice_horizontal_new.gif&gt;</cite> __, <cite>cc bya 3.0 &lt;https://creativecommons.org/licenses/by/3.0/deed.en&gt;</cite> `` `` `` `` `` `` `` `` `` `` `` `` ` `` `` `` `` `` `` `` `` ``</div>
+</div>
+<p>D’aquesta manera aconseguim un petit corrent elèctric per poder moure circuits d’alta potència.</p>
+</div>
+<div class="section" id="funcionamiento-del-rele">
+<h2>Funcionament del relé<a class="headerlink" href="#funcionamiento-del-rele" title="Link permanent a aquest títol">¶</a></h2>
+<p>En el següent esquema podem veure el circuit d’un relé en funcionament.</p>
+<p>El circuit de control ** ** es deixa i està compost per una pila de 12 volts, un botó i la bobina del relé. Quan es prem el botó, el corrent arriba a la bobina i s’activa l’alimentació (commutador).</p>
+<p>El circuit de potència ** ** consisteix en un contacte de relé, un generador de corrent altern de 230 volts i un motor. Quan el contacte es tanca, el motor arriba al motor i comença.</p>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/electric-rele-01.png"><img alt="_images/electric-rele-01.png" src="_images/electric-rele-01.png" style="width: 368px;"></a>
+<p class="caption"><span class="caption-text">Circuit d’un relé alimentat a 12 volts que actua amb un motor de 230 volts.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>Un avantatge d’aquest disseny és que el botó té una tensió segura per a les persones, separada de l’alta tensió del motor més adequada per subministrar grans potències.</p>
+</div>
+<div class="section" id="rele-realimentado">
+<h2>Relé gravat<a class="headerlink" href="#rele-realimentado" title="Link permanent a aquest títol">¶</a></h2>
+<p>Un relé té diversos contactes, alguns normalment oberts i d’altres normalment tancats. Aquests contactes es poden utilitzar per alimentar el circuit de control de manera que es mantingui funcionant un cop activat el relé.</p>
+<p>En el següent esquema podem veure un relé amb progrés i funcionament de parada. El botó de marxa activa la bobina i un cop activat, els dos contactes K1 associats al relé mantenen la bobina amb tensió i el motor en funcionament, fins i tot si s’atura el botó de març.</p>
+<div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="_images/electric-rele-02.png"><img alt="_images/electric-rele-02.png" src="_images/electric-rele-02.png" style="width: 551px;"></a>
+<p class="caption"><span class="caption-text">Esquema d’un relé amb botons de març i parada que actua amb un motor de 230 volts.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>Perquè el circuit s’aturi, haureu de prémer el botó STOP. La bobina deixarà de tenir corrent i els dos contactes K1 s’obren aturant el circuit.</p>
+</div>
+<div class="section" id="rele-oscilador">
+<h2>Relé oscil·lador<a class="headerlink" href="#rele-oscilador" title="Link permanent a aquest títol">¶</a></h2>
+<p>En aquest cas, la retroalimentació es farà amb un contacte normalment tancat del relé K1. Quan es prem el botó S1, el corrent circularà per la bobina. La bobina actuarà movent els contactes i s’obrirà el contacte K1 normalment tancat. Quan s’obri aquest contacte, deixarà de circular el corrent per la bobina. La bobina deixarà d’actuar, de manera que el contacte K1 es tancarà de nou permetent que el corrent circuli de nou.</p>
+<div class="figure align-center" id="id4">
+<a class="reference internal image-reference" href="_images/electric-rele-03.png"><img alt="_images/electric-rele-03.png" src="_images/electric-rele-03.png" style="width: 471px;"></a>
+<p class="caption"><span class="caption-text">Relé oscil·lador amb contacte normalment tancat.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<p>El resultat serà una oscil·lació en què el relé vibrarà una i altra vegada obrint i tancant els seus contactes a tota la velocitat que permet el seu disseny.</p>
+</div>
+<div class="section" id="historia-del-rele">
+<h2>Història del relé<a class="headerlink" href="#historia-del-rele" title="Link permanent a aquest títol">¶</a></h2>
+<p>El relé es va inventar el 1835 i es va començar a utilitzar en telegrafia per amplificar els senyals de llarga distància. Com que el relé és capaç de controlar una potència de sortida més gran que la de l’entrada, es pot considerar un amplificador que permeti augmentar la qualitat dels senyals telegràfics.</p>
+<p>El 1941, Konrad Zuse va construir el primer ordinador basat en relé. Els relés van ser substituïts posteriorment per vàlvules de buit, molt més ràpidament. A partir de l'any 1954, els transistors van començar a utilitzar -se, més ràpid i molt més fiable. Actualment, els transistors encara s’utilitzen en ordinadors i en molts dispositius electrònics.</p>
+<p>Tot i que els relés ja no s’utilitzen com a base dels ordinadors, encara avui s’utilitzen sovint en automatisme per controlar motors i altres elements de gran potència. Podeu trobar exemples a les cases per moure els ascensors, les bombes d’aigua o el temporitzador de la llum de l’escala.</p>
+</div>
+<div class="section" id="contactores">
+<h2>Contactors<a class="headerlink" href="#contactores" title="Link permanent a aquest títol">¶</a></h2>
+<p>Els contactors són relés especials d’alta potència que serveixen per moure motors de tres fases, és a dir, tenen tres línies elèctriques actuals.</p>
+<p>Al dibuix següent podeu veure l’esquema d’un contactor que alimenta un motor de tres fases. En aquest circuit podeu veure el valor dels relés per gestionar grans potències i commutar molts circuits amb un petit senyal de baixa tensió.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/electric-rele-04.png"><img alt="_images/electric-rele-04.png" src="_images/electric-rele-04.png" style="width: 365px;"></a>
+</div>
+</div>
+<hr class="docutils">
+<div class="section" id="ejercicios">
+<h2>Exercicis<a class="headerlink" href="#ejercicios" title="Link permanent a aquest títol">¶</a></h2>
+<ol class="arabic simple">
+<li>Per a què serveix un relé i per a què serveix?</li>
+<li>Dibuixa l’esquema d’un relé que s’encén una bombeta de 125 volts d’una pols alimentada a 24V.</li>
+<li>Dibuixa l’esquema d’un relé que s’encén una resistència de 23 ohms a 220V amb dos botons, un març i una parada. Expliqueu com funciona el circuit.</li>
+<li>Dibuixeu els dos estats d’un relé oscil·lador mentre premeu el botó.</li>
+<li>Quins usos ha tingut el relé al llarg de la història? Per què s’utilitza avui?</li>
+<li>Quins components electrònics van substituir el relé?</li>
+<li>Què és un contactor i per què s’utilitza?</li>
+<li>Dibuixa l’esquema d’un contactor que sempre funciona un motor fins que es pressioni un contacte normalment tancat.</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="electric-simbolos.html" class="btn btn-neutral float-right" title="Símbols elèctrics" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="electric-motor.html" class="btn btn-neutral" title="1. El motor elèctric" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/electric-rele.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="electric-index.html">Electricitat</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="electric-circuito.html">El circuit elèctric</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-receptores.html">Efectes de l’electricitat</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="electric-componentes-index.html">Components elèctrics</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="electric-motor.html">1. El motor elèctric</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">2. Els relés</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="electric-simbolos.html">Símbols elèctrics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-ley-ohm.html">Ohm's Law</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-ley-ohm-regla.html">Regla de càlcul per a la llei d'Ohm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-serie-paralelo.html">Sèrie, paral·lel i curtcircuit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-serie-paralelo-resistencias.html">Resistències equivalents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-resolver-circuitos.html">Resolució del circuit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-energia.html">: Índex: `energia '</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-potencia.html">: Índex: `Potència elèctrica '</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-sistema-electrico.html">Sistema elèctric espanyol</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-cableado.html">Cablejat del circuit elèctric</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-simulador-index.html">Simulador elèctric</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bornas-lamparas-index.html">Cobriment de làmpades amb terminals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-recursos.html">Recursos per a l’electricitat</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programació</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

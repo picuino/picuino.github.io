@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. 2. Dibuixa una flor">
+  <title>2. Dibuixa una flor - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/scratch-flor.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+      <li><span class="section-number">2. </span>Dibuixa una flor</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/scratch-flor.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/scratch-flor.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="dibujar-una-flor">
+<span id="scratch-flor"></span><h1><span class="section-number">2. </span>Dibuixa una flor<a class="headerlink" href="#dibujar-una-flor" title="Link permanent a aquest títol">¶</a></h1>
+<a class="reference internal image-reference" href="_images/scratch-p02-cuatro-flores.png"><img alt="_images/scratch-p02-cuatro-flores.png" src="_images/scratch-p02-cuatro-flores.png" style="width: 240px;"></a>
+<p>En aquesta pràctica programarem una sèrie de funcions que atrauen diversos tipus de flors a la pantalla.</p>
+<p>; BR |</p>
+<ol class="arabic">
+<li><p class="first">Comencem el | Editor_de_scratch <a href="#id1"><span class="problematic" id="id2">|</span></a>.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Creem una nova funció anomenada ** casa <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Primer fem clic al botó més blocs</p>
+<p>; Mas-Blques |</p>
+<p>A continuació, feu clic a Creació d’un bloc | Create-Bocate |</p>
+<p>A continuació, canviem el nom del nou bloc a ** start **</p>
+<img alt="_images/scratch-bloque-inicio.png" src="_images/scratch-bloque-inicio.png">
+<p>Finalment, premeu el botó ** ok **</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Programem l’inici amb els blocs següents.</p>
+<a class="reference internal image-reference" href="_images/scratch-p02-programa-inicio.png"><img alt="_images/scratch-p02-programa-inicio.png" src="_images/scratch-p02-programa-inicio.png" style="width: 278px;"></a>
+<p>Aquest programa col·loca el gat al centre de la pantalla, prepara el llapis i esborra qualsevol dibuix anterior.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Crearem una nova funció anomenada ** punt <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Primer fem clic al botó més blocs</p>
+<p>; Mas-Blques |</p>
+<p>A continuació, feu clic a Creació d’un bloc | Create-Bocate |</p>
+<p>A continuació, canviem el nom del nou bloc a ** punt **</p>
+<p>Ara afegirem la variable ** ràdio <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>A les opcions, afegim una entrada numèrica</p>
+<p>; Entrada-numèrica |</p>
+<p>Anomenarem la nova entrada ** Ràdio **</p>
+<img alt="_images/scratch-p02-punto-radio.png" src="_images/scratch-p02-punto-radio.png">
+<p>Finalment, premeu el botó ** ok **</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara programarem la funció que dibuixa un punt a la pantalla (llapis inferior i pujada del bolígraf).</p>
+<a class="reference internal image-reference" href="_images/scratch-p02-programa-punto.png"><img alt="_images/scratch-p02-programa-punto.png" src="_images/scratch-p02-programa-punto.png" style="width: 338px;"></a>
+<p>Aquest programa traurà un punt de mida que dependrà de la variable de ràdio. Si el radi és molt gran, el punt serà molt gran i si el valor de la ràdio és petit, el punt dibuixat serà petit.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">A continuació, crearem un petit programa de prova per comprovar que el punt es dibuixa a la pantalla.</p>
+<a class="reference internal image-reference" href="_images/scratch-p02-programa-prueba1.png"><img alt="_images/scratch-p02-programa-prueba1.png" src="_images/scratch-p02-programa-prueba1.png" style="width: 184px;"></a>
+<p>En executar el programa, prement la bandera verda | Flag-Verde <a href="#id1"><span class="problematic" id="id2">|</span></a>, apareixerà el següent dibuix a la pantalla.</p>
+<img alt="_images/scratch-p02-punto-rojo.png" src="_images/scratch-p02-punto-rojo.png">
+<p>El gat ha dibuixat un punt de 50 a una distància de 100 passos</p>
+<p>Una vegada que tot funcioni bé, esborrarem el programa de proves.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Ara que podem dibuixar punts, programarem el dibuix d’una flor.</p>
+<p>Primer crearem una nova funció anomenada ** Flor <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Primer fem clic al botó més blocs</p>
+<p>; Mas-Blques |</p>
+<p>A continuació, feu clic a Creació d’un bloc | Create-Bocate |</p>
+<p>A continuació, canviem el nom del nou bloc A ** Flor **</p>
+<p>Ara afegirem la variable ** mida <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>A les opcions, afegim una entrada numèrica</p>
+<p>; Entrada-numèrica |</p>
+<p>Anomenarem la nova entrada ** mida **</p>
+<img alt="_images/scratch-p02-nuevo-bloque-flor.png" src="_images/scratch-p02-nuevo-bloque-flor.png">
+<p>Finalment, premeu el botó ** ok **</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">A continuació, programarem la funció que una flor dibuixarà a la pantalla.</p>
+<a class="reference internal image-reference" href="_images/scratch-p02-programa-flor.png"><img alt="_images/scratch-p02-programa-flor.png" src="_images/scratch-p02-programa-flor.png" style="width: 340px;"></a>
+<p>; BR |</p>
+</li>
+<li><p class="first">Per demostrar que la funció està ben escrita, crearem un petit programa de proves que dibuixi la flor a la pantalla.</p>
+<a class="reference internal image-reference" href="_images/scratch-p02-programa-prueba2.png"><img alt="_images/scratch-p02-programa-prueba2.png" src="_images/scratch-p02-programa-prueba2.png" style="width: 188px;"></a>
+<p>Després de prémer la bandera verda | Flag-Verde <a href="#id1"><span class="problematic" id="id2">|</span></a>, a la pantalla una flor feta amb punts de colors al voltant del gat apareixerà com es mostra la imatge següent.</p>
+<img alt="_images/scratch-p02-circulo-puntos.png" src="_images/scratch-p02-circulo-puntos.png">
+<p>Una vegada que tot funcioni bé, esborrarem el programa de proves.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Finalment, jugarem amb la funció Flower per aparèixer als dibuixos de la pantalla formats per flors de diferents mides.</p>
+<a class="reference internal image-reference" href="_images/scratch-p02-programa-cuatro-anillos.png"><img alt="_images/scratch-p02-programa-cuatro-anillos.png" src="_images/scratch-p02-programa-cuatro-anillos.png" style="width: 182px;"></a>
+<p>El programa anterior dibuixa una imatge formada per diversos anells de colors al voltant del gat.</p>
+<p>Premeu a la bandera verda | Flag-Verde | Per veure el resultat.</p>
+<img alt="_images/scratch-p02-cuatro-anillos.png" src="_images/scratch-p02-cuatro-anillos.png">
+<p>Una vegada que tot funcioni bé, esborrarem el programa de proves.</p>
+<p>; BR |</p>
+</li>
+<li><p class="first">Amb el programa següent, es dibuixaran diverses flors en diferents punts de la pantalla. Al final, el gat estarà al mig.</p>
+<a class="reference internal image-reference" href="_images/scratch-p02-programa-cuatro-flores.png"><img alt="_images/scratch-p02-programa-cuatro-flores.png" src="_images/scratch-p02-programa-cuatro-flores.png" style="width: 188px;"></a>
+<p>Premeu a la bandera verda | Flag-Verde | Per veure el resultat.</p>
+<img alt="_images/scratch-p02-cuatro-flores.png" src="_images/scratch-p02-cuatro-flores.png">
+</li>
+</ol>
+<hr class="docutils">
+<div class="section" id="ejercicios">
+<h2>Exercicis<a class="headerlink" href="#ejercicios" title="Link permanent a aquest títol">¶</a></h2>
+<ol class="arabic simple">
+<li>Modifiqueu el programa de manera que tots els punts de la funció de la flor tinguin el mateix color. Dibuixa una flor composta per anells vermells grans a l’exterior i anells petits i verds a l’interior.</li>
+<li>Feu un programa que dibuixi cinc anells situats com a logotip dels Jocs Olímpics.</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/scratch-flor.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programació</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

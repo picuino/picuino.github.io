@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Informàtica - Maquinari de l&#39;ordinador - Processadors">
+  <title>Processadors - Maquinari de l&#39;ordinador - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/informatica-hardware-cpu.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="Perifèrics" href="informatica-hardware-perifericos.html">
+  <link rel="prev" title=": Índex: `Placa base &#39;" href="informatica-hardware-placabase.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="informatica-index.html">Informàtica</a>/</li>
+        
+          <li><a href="informatica-hardware-index.html">Maquinari de l'ordinador</a>/</li>
+        
+      <li>Processadors</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/informatica-hardware-cpu.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/informatica-hardware-cpu.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="procesadores">
+<h1>Processadors<a class="headerlink" href="#procesadores" title="Link permanent a aquest títol">¶</a></h1>
+<p>Els processadors són el &quot;cervell&quot; dels ordinadors, els components que realitzen les operacions emeses pels programes o aplicacions.</p>
+<p>Els tipus més comuns de processadors són la CPU i la GPU, tot i que n’hi ha més que s’estudiaran a continuació, com ara TPU, DSP, microcontroladors o FPGA.</p>
+<div class="contents local topic" id="indice-de-contenidos">
+<p class="topic-title">Índex de contingut:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#unidad-central-de-procesamiento-cpu" id="id3">Unitat central de processament (: Índex: <cite>CPU</cite>)</a></li>
+<li><a class="reference internal" href="#coprocesador-matematico-fpu" id="id4">Coprocessador matemàtic (: Índex: <cite>fpu</cite>)</a></li>
+<li><a class="reference internal" href="#unidad-de-procesamiento-grafico-gpu" id="id5">Unitat de processament gràfic (: Índex: <cite>GPU</cite>)</a></li>
+<li><a class="reference internal" href="#unidad-de-procesamiento-tensorial-tpu" id="id6">Unitat de processament de tensions (: Índex: `TPU ')</a></li>
+<li><a class="reference internal" href="#procesador-de-senales-digitales-dsp" id="id7">Processador de senyal digital (: Índex: <cite>dsp</cite>)</a></li>
+<li><a class="reference internal" href="#microcontroladores" id="id8">: Índex: `microcontroladors '</a></li>
+<li><a class="reference internal" href="#fpga" id="id9">: Índex: `fpga '</a></li>
+<li><a class="reference internal" href="#caracteristicas-de-un-procesador" id="id10">Característiques d’un processador</a></li>
+<li><a class="reference internal" href="#pruebas-de-rendimiento" id="id11">Proves de rendiment</a></li>
+<li><a class="reference internal" href="#test-de-la-unidad" id="id12">Test de prova</a></li>
+</ul>
+</div>
+<div class="section" id="unidad-central-de-procesamiento-cpu">
+<h2><a class="toc-backref" href="#id3">Unitat central de processament (: Índex: <cite>CPU</cite>)</a><a class="headerlink" href="#unidad-central-de-procesamiento-cpu" title="Link permanent a aquest títol">¶</a></h2>
+<p>Una <a class="reference external" href="https://es.wikipedia.org/wiki/unitat_central_de_processing" rel="noopener noreferrer" target="_blank">CPU o unitat de processament central</a>, també anomenat*microprocessador <a href="#id1"><span class="problematic" id="id2">**</span></a>, és un component informàtic dedicat a interpretar les instruccions dels programes informàtics. Poden realitzar operacions lògiques, aritmètiques i de moviment de dades.</p>
+<p>És el component més complex d’un ordinador. Una CPU d’ordinador personal, el 2022, compta amb <a class="reference external" href="https://en.wikipedia.org/wiki/transistor_count" rel="noopener noreferrer" target="_blank">25.000 a 100 mil milions de transistors</a>.</p>
+<p>Les CPU més conegudes i usades són actualment les de la Intel Company (i3, i5, i7, i9, xeon) o les de la companyia AMD (Ryzen) per a ordinadors i servidors personals.</p>
+<p>Els telèfons intel·ligents, tauletes, televisors i altres dispositius intel·ligents (intel·ligents) utilitzen CPU basat en l’arquitectura de braços (dimensitat, Snapdragon, Kirin, etc.)</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/informatica-cpu-486dx2-b.jpg"><img alt="_images/informatica-cpu-486dx2-b.jpg" src="_images/informatica-cpu-486dx2-b.jpg" style="width: 340px;"></a>
+<p class="caption"><span class="caption-text">CPU 80486dx Típic dels PC de mitjan anys 90.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+<div class="legend">
+<a class="reference external" href="https://commons.wikimedia.org/wiki/file:intel_80486dx2_bottom.jpg" rel="noopener noreferrer" target="_blank">Solipsist</a>, <cite>cc by-sa 2.0 genèric &lt;https://creativecommons.org/licenses/by-sa/2.0/deed.en&gt;</cite> `` `` `` `` `` `` `` `` `` `` `` `` `` `` `` Wikimedia Commons.</div>
+</div>
+</div>
+<div class="section" id="coprocesador-matematico-fpu">
+<h2><a class="toc-backref" href="#id4">Coprocessador matemàtic (: Índex: <cite>fpu</cite>)</a><a class="headerlink" href="#coprocesador-matematico-fpu" title="Link permanent a aquest títol">¶</a></h2>
+<p>El <a class="reference external" href="https://es.wikipedia.org/wiki/unitat_de_coma_flotante" rel="noopener noreferrer" target="_blank">coprocessador matemàtic o la unitat de coma flotant</a> és un tipus de processador especialitzat en realitzar operacions matemàtiques en coma flotant (amb decimals), com ara divisions de multiplicacions, operacions trigonòmiques, lògies i lògies.</p>
+<p>En els seus inicis eren circuits separats de la CPU, però avui en dia s’integren al mateix xip de CPU més potent.</p>
+<p>Aquest coprocessador o FPU permet accelerar programes que necessiten realitzar moltes operacions matemàtiques, com ara programes de disseny d’ordinadors en dimensions de 2 i 3, programes de full de càlcul o programari científic.</p>
+<p>Hi ha coprocessadors especialitzats en operacions matemàtiques orientades a multimèdia (MMX) que acceleren la compressió i la descompressió d’àudio i vídeo. Gràcies a aquests coprocessadors, els programes d’edició o visualització de vídeo poden funcionar ràpidament i sense problemes d’alta definició.</p>
+</div>
+<div class="section" id="unidad-de-procesamiento-grafico-gpu">
+<h2><a class="toc-backref" href="#id5">Unitat de processament gràfic (: Índex: <cite>GPU</cite>)</a><a class="headerlink" href="#unidad-de-procesamiento-grafico-gpu" title="Link permanent a aquest títol">¶</a></h2>
+<p>Una <a class="reference external" href="https://es.wikipedia.org/wiki/unitat_de_processing_gr%C3%A1fico" rel="noopener noreferrer" target="_blank">GPU o unitat de processament gràfic</a> és un processador especialitzat, dedicat a calcular gràfics intensament per alleugerir la càrrega del processador central. És capaç de calcular un dibuix molt ràpid en tres dimensions com els antialiasing (suavitzant les vores de les figures) dibuixen triangles, quadrats, el·lipses, etc.</p>
+<dl class="docutils">
+<dt>: Índex: <a href="#id1"><span class="problematic" id="id2">`</span></a>targeta gràfica '</dt><dd>La majoria de les CPU actuals ja tenen petites GPU amb una capacitat limitada per gestionar els gràfics. N’hi ha prou de gestionar els programes d’oficina o navegar en línia, però no tenen prou capacitat per gestionar videojocs, programes de disseny, etc. Per això als ordinadors de potència més alta `` targetes gràfiques &lt;<a class="reference external" href="https://es.wikipedia.org/wiki/tarjeta_gr%C3%A1Fica" rel="noopener noreferrer" target="_blank">https://es.wikipedia.org/wiki/tarjeta_gr%C3%A1Fica</a>&gt; `` especialitzades, que es contenen molt més elèctriques que la CPU i de la pròpia operació per segon.</dd>
+</dl>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/informatica-tarjeta-video.jpg"><img alt="_images/informatica-tarjeta-video.jpg" src="_images/informatica-tarjeta-video.jpg" style="width: 480px;"></a>
+<p class="caption"><span class="caption-text">Radeon HD 5570 Targeta gràfica.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+<div class="legend">
+<a class="reference external" href="https://commons.wikimedia.org/wiki/file:Sapphire-Radeon-HD-5570-Video-Card.jpg" rel="noopener noreferrer" target="_blank">Evan-amos</a>, domini públic, a través de Wikimedia Commons.</div>
+</div>
+</div>
+<div class="section" id="unidad-de-procesamiento-tensorial-tpu">
+<h2><a class="toc-backref" href="#id6">Unitat de processament de tensions (: Índex: <a href="#id1"><span class="problematic" id="id2">`</span></a>TPU ')</a><a class="headerlink" href="#unidad-de-procesamiento-tensorial-tpu" title="Link permanent a aquest títol">¶</a></h2>
+<p>Una <a class="reference external" href="https://es.wikipedia.org/wiki/unitat_de_processing_tensorial" rel="noopener noreferrer" target="_blank">TPU o unitat de processament tensorial</a> és un processador dedicat al càlcul intensiu de les operacions de xarxes neuronals, utilitzat en intel·ligència artificial.</p>
+<p>El terme TPU és utilitzat per Google per a un circuit inventat per l'empresa, però cada vegada més circuits incorporen capacitats similars per al càlcul de xarxes neuronals, per exemple, en telèfons intel·ligents.</p>
+<p>Aquesta unitat TPU accelera processos com el reconeixement facial, el processament de veu o altres operacions basades en la intel·ligència artificial.</p>
+</div>
+<div class="section" id="procesador-de-senales-digitales-dsp">
+<h2><a class="toc-backref" href="#id7">Processador de senyal digital (: Índex: <cite>dsp</cite>)</a><a class="headerlink" href="#procesador-de-senales-digitales-dsp" title="Link permanent a aquest títol">¶</a></h2>
+<p>Un <a class="reference external" href="https://es.wikipedia.org/wiki/processor_de_se%C3%B1ales_digitales" rel="noopener noreferrer" target="_blank">DSP o processador de senyal digital</a> és un processador especialitzat en executar operacions numèriques relacionades amb el tractament del senyal, a una velocitat molt alta.</p>
+<p>Les seves aplicacions típiques són el tractament en temps real de l’àudio, la veu, la imatge, el vídeo, etc. Amb aquestes aplicacions, Echo es pot eliminar a les línies de comunicació, fer òrgans d’òrgans en equips de diagnòstic mèdic mitjançant ultrasons o ressonància magnètica més clara, fer ajustaments de ** Tune automàtic al procés de senyal.</p>
+</div>
+<div class="section" id="microcontroladores">
+<h2><a class="toc-backref" href="#id8">: Índex: <a href="#id1"><span class="problematic" id="id2">`</span></a>microcontroladors '</a><a class="headerlink" href="#microcontroladores" title="Link permanent a aquest títol">¶</a></h2>
+<p>Un <a class="reference external" href="https://es.wikipedia.org/wiki/microcontroller" rel="noopener noreferrer" target="_blank">microcontroller</a> és un ordinador petit contingut en un sol xip. Incorpora la CPU, la memòria RAM, la memòria ROM Flash i els perifèrics d’entrada/sortida en un espai petit i baix.</p>
+<p>Aquests processadors s’utilitzen per controlar els perifèrics com el teclat, el ratolí, la càmera web, el monitor, els discs durs, etc.</p>
+<p>Gràcies als microcontroladors, la CPU principal de l’ordinador es descarrega de les tasques de control dels perifèrics, cosa que seria molt car en temps i recursos si hagués de gestionar -los directament.</p>
+<p>Una altra aplicació de microcontroladors és automatitzar amb una petita capacitat de càlcul dispositius quotidians com el microones, la rentadora, l’abs d’un cotxe, un pany electrònic, etc.</p>
+</div>
+<div class="section" id="fpga">
+<h2><a class="toc-backref" href="#id9">: Índex: <a href="#id1"><span class="problematic" id="id2">`</span></a>fpga '</a><a class="headerlink" href="#fpga" title="Link permanent a aquest títol">¶</a></h2>
+<p>Un <a class="reference external" href="https://es.wikipedia.org/wiki/field-programmable_gate_array" rel="noopener noreferrer" target="_blank">fpga</a> és un processador basat en portes lògiques programable. Tots els processadors i tots els circuits digitals estan fets de portes lògiques. En el cas de FPGA, aquestes portes lògiques es poden connectar programant, cosa que pot crear un circuit adaptat a les necessitats de l’usuari.</p>
+<p>Aquests circuits es poden programar per resoldre tasques especialitzades molt més ràpidament que amb una CPU convencional. Les aplicacions típiques són els sistemes de visió informàtica, la criptomoneda minada, l’emulació de maquinari antic, l’aprenentatge automàtic, els prototips de circuit personalitzats (ASIC), etc.</p>
+<p>Quan s’executa en paral·lel, FPGA pot accelerar els càlculs i ser diverses vegades més ràpid que una CPU en operacions com ara la compressió d’àudio i vídeo.</p>
+<p>Els idiomes més utilitzats per programar la FPGA són VHDL i Verilog.</p>
+</div>
+<div class="section" id="caracteristicas-de-un-procesador">
+<h2><a class="toc-backref" href="#id10">Característiques d’un processador</a><a class="headerlink" href="#caracteristicas-de-un-procesador" title="Link permanent a aquest títol">¶</a></h2>
+<p>A continuació, es presenten les característiques utilitzades per comparar diferents processadors i avaluar el seu rendiment.</p>
+<dl class="docutils">
+<dt>Consum d’energia</dt><dd><p>El consum d’un processador és cada cop més important.</p>
+<p>D'una banda, el consum inferior té un processador, més temps la bateria del dispositiu que el conté durarà.</p>
+<p>D'altra banda, als ordinadors connectats a la xarxa elèctrica, com més baix sigui el consum d'electricitat, més baix és el cost de mantenir l'ordinador en funcionament. Aquest consum d’electricitat és tan elevat per als ordinadors d’alt rendiment, que l’electricitat costa anualment més que el preu del propi processador. Aquesta és la raó per la qual es canvien els processadors de servidors abans del final de la seva vida útil. És més barat instal·lar un processador nou més eficient que no pas mantenir el vell funcionament.</p>
+<p>El consum d'energia, també anomenat TDP, es mesura en watts. Una CPU típica d’un ordinador personal consumeix uns 100 watts en funcionament normal. Per contra, una CPU típica d’un telèfon intel·ligent consumeix uns 5 watts.</p>
+</dd>
+<dt>Freqüència del rellotge</dt><dd><p>És la freqüència a la qual un processador treballa i determina la quantitat d’instruccions que podeu executar en un segon. Les freqüències típiques dels processadors actuals per a ordinadors personals i telèfons intel·ligents varien de 1000MHz a 4.000MHz. Com més gran sigui la velocitat del rellotge, més ràpid serà un processador, si la resta de paràmetres segueix sent igual.</p>
+<p>EL: Índex: <cite>Overclocking</cite> és una tècnica que consisteix a operar un processador a una freqüència superior a la freqüència per a la qual està dissenyat. El overclocking s’utilitza per accelerar el funcionament de l’ordinador i processar informació més ràpida. Molts processadors admeten treballar amb més freqüència que el nominal, però aquesta tècnica comporta un major consum d’energia i la possibilitat de fallades del sistema.</p>
+</dd>
+<dt>Nombre de nuclis</dt><dd><p>Els processadors actuals estan compostos per diversos processadors individuals anomenats nuclis. Com més nuclis tinguin un processador, més operacions es poden realitzar en paral·lel.</p>
+<p>Els processadors poden dividir el càlcul d'algunes tasques entre diversos nuclis. Per tant, com més nuclis tingui el processador, més ràpid serà l’execució d’aquestes tasques. D'altra banda, la realització de certes tasques no es pot compartir entre diversos nuclis i la velocitat final no serà major per molts nuclis que el processador té.</p>
+<p>El 2022, un processador de mida mitjana per a ordinadors personals sol tenir de 6 a 12 nuclis.</p>
+</dd>
+<dt>Nombre de fils d'execució</dt><dd><p>Els fils d'execució són el nombre de programes diferents que el processador pot executar alhora. En realitat, un processador només pot executar un programa bàsic, però els fils permeten pràcticament doblar el nombre de tasques i accelerar una mica més la velocitat d’execució.</p>
+<p>El 2022, un processador Intel típic sol tenir dos fils d'execució bàsics. És a dir, una CPU de 8 core tindrà 16 fils d’execució.</p>
+</dd>
+<dt>Memòria de la memòria cau</dt><dd><p>És una memòria intermèdia que permet accedir a dades i programes més ràpidament quan el processador ha d’accedir repetidament a les mateixes dades de RAM.</p>
+<p>Els processadors han de llegir la informació de RAM per realitzar la seva tasca, tant la informació del programa a executar com les dades a processar. La velocitat de transferència de memòria RAM sol ser més lenta que el procés del procés del processador. La memòria de la memòria cau s’utilitza com a memòria intermèdia que emmagatzema el contingut de la memòria RAM que es llegeix repetidament. D’aquesta manera, podeu tenir les dades més ràpidament mentre s’estan processant.</p>
+<p>Com més gran sigui la mida de la memòria cau, més gran és la velocitat final del processador.</p>
+<p>La majoria de les CPU tenen diversos nivells de memòria cau inclosos. Cada nivell de memòria cau és més lent que l’anterior, però més gran. Normalment es dóna el valor dels més grans. Una CPU típica d’un ordinador personal el 2022 sol tenir una mida de memòria cau d’uns 6 megabytes.</p>
+</dd>
+<dt>Nombre de bits</dt><dd><p>Cada processador pot gestionar al mateix temps un nombre específic de bits. El nombre de bits determina la quantitat de memòria a la qual es pot accedir i la velocitat amb què s’executaran determinades operacions. Un processador de 8 bits tractarà la informació quatre vegades més lent que un dels 32 bits.</p>
+<p>Els processadors més simples, com els que incorporen un teclat de l’ordinador o un forn de microones, són de 8 bits.</p>
+<p>A sobre d'ells hi ha la CPU de 32 bits, molt més potent i ràpid. Són els que s’utilitzen en telèfons intel·ligents, smartTV, impressores, etc.</p>
+<p>Els ordinadors personals actuals utilitzen, en la majoria dels casos, processadors i programari de 64 bits.</p>
+</dd>
+<dt>Tipus d’autobusos</dt><dd><p>És el tipus de comunicació amb la qual es transfereix informació entre el processador i la resta d’elements de l’ordinador. Com més autobusos té un processador i més ràpid, més gran serà el vostre rendiment.</p>
+<p>Actualment, els processadors d’ordinadors personals tenen tres autobusos de comunicacions amb l’exterior, per millorar la velocitat de transferència:</p>
+<ul class="simple">
+<li>Bus directe amb RAM.</li>
+<li>Bus directe amb ports expressos PCI.</li>
+<li>Bus DMI per connectar -se amb la resta de dispositius (USB, PCI, SATA, Ethernet, etc.).</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="pruebas-de-rendimiento">
+<h2><a class="toc-backref" href="#id11">Proves de rendiment</a><a class="headerlink" href="#pruebas-de-rendimiento" title="Link permanent a aquest títol">¶</a></h2>
+<p>Les proves de rendiment, també anomenades <a class="reference external" href="https://es.wikipedia.org/wiki/benchmark_(Informar%c3%a1tica)" rel="noopener noreferrer" target="_blank">Benchmark</a>, són una tècnica per mesurar el rendiment d'un sistema informàtic o els seus components per separat.</p>
+<p>Són evidències molt útils quan es comparen els processadors. A causa de la gran quantitat de paràmetres o característiques que defineixen un processador, no és fàcil calcular el seu rendiment final. Tanmateix, les proves de referència donaran un nombre senzill que representa aproximadament la potència d’un processador.</p>
+<p>Les proves clàssiques conegudes són les següents.</p>
+<dl class="glossary docutils">
+<dt id="term-MIPS">Bips</dt><dd><p>Els <a class="reference external" href="https://es.wikipedia.org/wiki/millones_de_instrucciones_por_segundo" rel="noopener noreferrer" target="_blank">mips</a> o milions d'instruccions per segon.</p>
+<p>És una prova molt útil per comparar relativament els processadors al llarg de la història i veure com la potència informàtica creix exponencialment amb el pas del temps. Malgrat tot, és una prova amb certs problemes quan es compara diferents arquitectures, de manera que ha caigut en desús.</p>
+<p>Un ordinador personal típic de 2022 té aproximadament 200.000 MIPS.</p>
+</dd>
+<dt id="term-FLOPS">Bangeres</dt><dd><p>Els <a class="reference external" href="https://es.wikipedia.org/wiki/operations_de_coma_flotant_por_segundo" rel="noopener noreferrer" target="_blank">flops</a> O Operacions de coma flotant per segon, mesura quantes operacions matemàtiques amb decimals és capaç de fer un ordinador. Els múltiples són habituals, per la qual cosa un mflops és igual a un milió d’operacions en coma flotant per segon.</p>
+<p>Aquesta mesura és útil per saber com una màquina és ràpida per resoldre problemes científics i càlcul intensiu.</p>
+<p>Un ordinador personal típic de 2022 té aproximadament 50.000 mflops.</p>
+</dd>
+<dt id="term-SPECint-y-SPECfp">Specint i spefp</dt><dd><cite>Standard Performance Avaluation Corporation (SPEC) &lt;https://es.wikipedia.org/wiki/standard_performance_evaluation_corporation&gt;</cite> __ és un consorci sense ànim de lucre que inclou ordinadors venedors, integradors de sistemes, universitats, grups de recerca, grups de publicació i consultors del món. Té dos objectius: crear un punt de referència estàndard per mesurar el rendiment i el control de l’ordinador i publicar els resultats d’aquestes proves &lt;<a class="reference external" href="http://www.spec.org/" rel="noopener noreferrer" target="_blank">http://www.spec.org/</a>&gt;`__.</dd>
+</dl>
+<p>Altres proves:</p>
+<dl class="docutils">
+<dt>Passeig</dt><dd>El &quot;Test Passmark &lt;<a class="reference external" href="https://www.cpubenchmark.net/" rel="noopener noreferrer" target="_blank">https://www.cpubenchmark.net/</a>&gt;`__ és una de les proves comercials més conegudes per a ordinadors personals.</dd>
+</dl>
+</div>
+<div class="section" id="test-de-la-unidad">
+<h2><a class="toc-backref" href="#id12">Test de prova</a><a class="headerlink" href="#test-de-la-unidad" title="Link permanent a aquest títol">¶</a></h2>
+<p><a class="reference external" href="../Test/es-scroll-processes-1.html" rel="noopener noreferrer" target="_blank">Processadors Test I</a></p>
+<p><a class="reference external" href="../Test/Es-Hardware-Processors-2.html" rel="noopener noreferrer" target="_blank">Processadors Test II</a></p>
+<p><a class="reference external" href="../Test/es-Scroll-Processors-3.html" rel="noopener noreferrer" target="_blank">Processadors Test III</a></p>
+<p><a class="reference external" href="../Test/es-scroll-processes-4.html" rel="noopener noreferrer" target="_blank">Prova de processadors IV</a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="informatica-hardware-perifericos.html" class="btn btn-neutral float-right" title="Perifèrics" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="informatica-hardware-placabase.html" class="btn btn-neutral" title=": Índex: `Placa base &#39;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/informatica-hardware-cpu.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="informatica-index.html">Informàtica</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="informatica-hardware-index.html">Maquinari de l'ordinador</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="informatica-hardware-intro.html">Introducció a: Índex: `maquinari '</a></li>
+<li class="toctree-l3"><a class="reference internal" href="informatica-hardware-clasificacion.html">Classificació dels ordinadors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="informatica-hardware-unidades.html">Unitats de mesura de dades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="informatica-hardware-ley-moore.html">Moore Law</a></li>
+<li class="toctree-l3"><a class="reference internal" href="informatica-hardware-esquema-ordenador.html">Maquinari d’ordinador personal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="informatica-hardware-placabase.html">: Índex: `Placa base '</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Processadors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="informatica-hardware-perifericos.html">Perifèrics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="informatica-hardware-almacenamiento.html">Emmagatzematge d'informació</a></li>
+<li class="toctree-l3"><a class="reference internal" href="informatica-hardware-comunicaciones.html">Comunicacions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="informatica-hardware-auxiliares.html">Elements auxiliars</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="informatica-software-index.html">Programari informàtic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="informatica-tutoimpress.html">Tutorial impressionant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="informatica-calc-index.html">Tutorial de Calc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="informatica-writer-index.html">Tutorial d'escriptors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="writer-index.html">Escriptor 7 Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="informatica-tutogimp.html">Tutorial GIMP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inkscape-index.html">Tutorial de paisatge a Inkscape</a></li>
+<li class="toctree-l2"><a class="reference internal" href="html-index.html">Tutorial HTML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="css-index.html">Tutorial CSS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="informatica-ciberseguridad-index.html">Ciberseguretat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="informatica-machine-learning.html">Intel·ligència artificial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="informatica-recursos.html">Recursos per a la informàtica</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programació</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

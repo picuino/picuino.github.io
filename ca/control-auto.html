@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Robòtica - Control dels sistemes - Control automàtic">
+  <title>Control automàtic - Control dels sistemes - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/control-auto.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="Controlador PID" href="control-pid.html">
+  <link rel="prev" title="Control dels sistemes" href="control-index.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="robotica-index.html">Robòtica</a>/</li>
+        
+          <li><a href="control-index.html">Control dels sistemes</a>/</li>
+        
+      <li>Control automàtic</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/control-auto.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/control-auto.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="control-automatico">
+<span id="control-auto"></span><h1>Control automàtic<a class="headerlink" href="#control-automatico" title="Link permanent a aquest títol">¶</a></h1>
+<p>Els controladors o reguladors automàtics formen part de molts dels dispositius que ens envolten, fins i tot si no en sabem.</p>
+<p>Podem trobar exemples de controladors en el termòstat de calefacció o aire condicionat, al control de la temperatura del forn o de la nevera, al regulador de nivell de llum, en la direcció assistida dels cotxes, el sistema d’aturada en un pis dels ascensors o, fins i tot, al sistema d’ompliment d’aigua del dipòsit del vàter. Quan la velocitat, el moviment, la temperatura, la pressió o el nivell romanen regulats, hi ha un controlador que realitza aquest treball.</p>
+<p>Per referir -se a aquest tipus de sistemes, s’utilitza la denominació de controladors automàtics o reguladors automàtics.</p>
+<p>En aquesta pàgina es revisaran els diferents components d’un sistema de control automàtic i els diferents tipus de control existents, de bucle obert i bucle tancat.</p>
+<div class="section" id="elementos-de-un-sistema-de-control-en-lazo-abierto">
+<h2>Elements d’un sistema de control de bucles oberts<a class="headerlink" href="#elementos-de-un-sistema-de-control-en-lazo-abierto" title="Link permanent a aquest títol">¶</a></h2>
+<p>La imatge següent mostra un esquema del sistema de control més senzill, el control de bucle obert.</p>
+<a class="reference internal image-reference" href="_images/img-0052.png"><img alt="Sistema de control en lazo abierto" class="align-center" src="_images/img-0052.png" style="width: 509px;"></a>
+<p>En aquest esquema es poden reconèixer quatre blocs:</p>
+<dl class="glossary docutils">
+<dt id="term-Consigna">Eslògan</dt><dd><p>És la part del sistema que descriu el que volem obtenir del controlador.</p>
+<p>Per exemple, un eslògan pot ser una ordre manual en la qual seleccionem un temps de funcionament de 2 minuts en un microones. Un altre exemple seria l’ordre amb la qual seleccionem la potència de calefacció que volem obtenir en un enòleg de cuina.</p>
+</dd>
+<dt id="term-Controlador">Controlador</dt><dd><p>És responsable de rebre un senyal d’eslògan o senyal de referència i convertir -lo en un senyal que fa que el sistema arribi a la referència desitjada.</p>
+<p>Un exemple de controlador és un temporitzador que s’encén i s’apaga al forn de microones cada pocs segons per controlar la seva potència.</p>
+</dd>
+<dt id="term-Accionador">Actuador</dt><dd><p>És l’encarregat de convertir el senyal de control, que té poca potència, en una acció sobre el sistema, amb una potència més gran.</p>
+<p>Tornant a l’exemple del forn elèctric, l’actuador serà la resistència a la calefacció i el sistema d’energia que l’encengui. En el cas d’un servomecanisme, l’actuador serà el conjunt de transistors i el motor que mou el mecanisme.</p>
+</dd>
+<dt id="term-Sistema">Sistema</dt><dd><p>També es diu de vegades planta, és el que voleu controlar.</p>
+<p>En un forn, el sistema serà la caixa del forn on vulgueu controlar la temperatura. En el cas d’un servomecanisme, el sistema serà el motor i la caixa reductora la posició de la qual es vol controlar.</p>
+</dd>
+</dl>
+<p>De vegades, l’eslògan, el controlador o l’actuador no tenen límits ben definits o no existeixen en cap sistema. En qualsevol cas, és interessant conèixer aquests elements a l’hora d’identificar les diferents parts d’un sistema de control.</p>
+</div>
+<div class="section" id="ejemplos-de-sistemas-de-control-en-lazo-abierto">
+<h2>Exemples de sistemes de control de bucles oberts<a class="headerlink" href="#ejemplos-de-sistemas-de-control-en-lazo-abierto" title="Link permanent a aquest títol">¶</a></h2>
+<p>Podem trobar exemples de sistemes de control de bucles oberts en diversos dispositius del nostre entorn.</p>
+<dl class="docutils">
+<dt>Control de potència d’un forn de microones</dt><dd><p>L’eslògan ** ** és el control rotatiu amb el qual seleccionem el temps d’encesa.</p>
+<p>El ** controlador ** està format per un temporitzador que s’encén al forn i el desactiva al final de l’hora enviada.</p>
+<p>L’actuador ** ** és un <a class="reference external" href="https://es.wikipedia.org/wiki/magnetr%C3%B3n" rel="noopener noreferrer" target="_blank">Magnetrón</a> que produeix els microones que escalfen la llet.</p>
+<p>El sistema ** ** serà, per exemple, el got de llet que s’escalfa dins del forn.</p>
+</dd>
+<dt>Control d'energia d'un escalfador elèctric</dt><dd><p>El ** eslògan ** és l’ordre que girem per aconseguir una potència mitjana o tota la potència.</p>
+<p>El controlador ** ** és l’interruptor que selecciona entre una o dues resistències de calefacció.</p>
+<p>L’actuador ** ** està format per resistències de calefacció i ventilador.</p>
+<p>El sistema ** ** és l’habitació escalfada per l’aire calent del calefactor.</p>
+</dd>
+<dt>Control de la intensitat de la llum</dt><dd><p>El ** Slogan ** és el <a href="#id1"><span class="problematic" id="id2">`</span></a>Menanceòmetre &lt;<a class="reference external" href="https://es.wikipedia.org/wiki/potenci%C3%B3meter" rel="noopener noreferrer" target="_blank">https://es.wikipedia.org/wiki/potenci%C3%B3meter</a>&gt; __ o resistència variable que es converteix en una major o menor lluminositat.</p>
+<p>El controlador ** ** és un circuit electrònic que decideix quant de temps es connectarà la làmpada diverses vegades per segon.</p>
+<p>L’actuador ** ** és un circuit de potència electrònica i la làmpada que produeix llum.</p>
+<p>El sistema ** ** és la sala amb més o menys il·luminació.</p>
+</dd>
+<dt>Control de nivell de so en un equip d'àudio</dt><dd><p>El ** eslògan ** és el potenciòmetre que es mou per aconseguir un nivell de so més gran o menor.</p>
+<p>L’actuador ** ** és l’amplificador i els altaveus de l’equip de música.</p>
+<p>El sistema ** ** és la sala i el nivell de so que s’aconsegueix.</p>
+</dd>
+</dl>
+<p>Un dels controladors de bucle obert més comuns és el ** temporitzador <a href="#id1"><span class="problematic" id="id2">**</span></a>. Es pot trobar en diversos dispositius com ara els llums de l'escala d'un edifici, les escales automàtiques automàtiques, el temporitzador d'un forn de microones, etc.</p>
+<p>En els sistemes de bucle obert es pot controlar que el sistema rep de l’actuador més o menys potència, però el punt en què es trobarà exactament el sistema controlat no es pot controlar.</p>
+<p>En el cas del forn de microones, per exemple, no podem estar segurs de la temperatura que la llet arribi a dins. Tampoc amb el calefactor elèctric podem saber exactament la temperatura que arribarà l’habitació. En ambdós casos, el resultat final dependrà de la mida del vaixell o de la sala, de la temperatura ambient, de l’aïllament, de la potència total del calefactor, etc.</p>
+<p>Aquest desavantatge dels sistemes de bucles oberts no impedeix que s’utilitzin amb molta freqüència per la seva gran senzillesa i per ser molt robustes.</p>
+</div>
+<div class="section" id="elementos-de-un-sistema-de-control-en-lazo-cerrado">
+<h2>Elements d’un sistema de control de bucle tancat<a class="headerlink" href="#elementos-de-un-sistema-de-control-en-lazo-cerrado" title="Link permanent a aquest títol">¶</a></h2>
+<p>La imatge següent mostra un esquema d'un sistema de control de bucle tancat.</p>
+<a class="reference internal image-reference" href="_images/img-0053.png"><img alt="Sistema de control en lazo cerrado" class="align-center" src="_images/img-0053.png" style="width: 578px;"></a>
+<p>Aquest tipus de sistema de control resol el problema dels sistemes de bucle obert, que depenen de l’actuador, de les condicions ambientals, etc. El nom del bucle tancat prové del senyal del sensor que torna al controlador, tancant el bucle de control. Els elements del sistema de control del bucle tancat són els mateixos que els elements del sistema de control de bucles oberts amb dues addicions:</p>
+<dl class="glossary docutils">
+<dt id="term-Sensor">Sensor</dt><dd><p>El sensor mesura l’estat o la variable per controlar el sistema (posició, temperatura, humitat, etc.) Això permet conèixer l’estat del sistema i corregir les desviacions perquè es pugui aconseguir l’estat desitjat.</p>
+<p>Per exemple, en una nevera, el sensor de temperatura detecta la temperatura interior per apagar el motor quan fa massa fred i encendre el motor si la temperatura puja massa.</p>
+</dd>
+<dt id="term-Comparador">Comparador</dt><dd><p>Aquest element està representat per un cercle de l'esquema. La seva funció és comparar el senyal de referència R que prové del lema i el senyal d’alimentació H que prové del sensor i calcular l’error que hi ha entre la resposta desitjada i l’estat real del sistema.</p>
+<p>Des d’aquest error podeu arribar al sistema a l’estat desitjat, que és el que dicta l’eslògan.</p>
+</dd>
+</dl>
+<p>Aquest tipus de control garantirà que el sistema estigui en estat desitjat independentment de les condicions ambientals.</p>
+<p>Els senyals del sistema de control són els següents:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width:12%;">
+<col style="width:26%;">
+<col style="width:62%;">
+</colgroup>
+<thead style="vertical-align:bottom;">
+<tr class="row-odd"><th class="head">Signar</th>
+<th class="head">Nom</th>
+<th class="head">Funcionar</th>
+</tr>
+</thead>
+<tbody style="vertical-align:top;">
+<tr class="row-even"><td>** r **</td>
+<td>** Referència **</td>
+<td>És l’estat que s’ha d’assolir al sistema.</td>
+</tr>
+<tr class="row-odd"><td>** i **</td>
+<td>** Error **</td>
+<td>És la diferència entre l’estat desitjat i l’estat real del sistema a controlar.</td>
+</tr>
+<tr class="row-even"><td>** C **</td>
+<td>** Control **</td>
+<td>És el senyal generat pel controlador.</td>
+</tr>
+<tr class="row-odd"><td>** o **</td>
+<td>** Acció **</td>
+<td>És l’acció que s’exerceix al sistema per controlar -lo.</td>
+</tr>
+<tr class="row-even"><td>** i **</td>
+<td>** Sortida **</td>
+<td>És l’estat real que ha arribat al sistema per controlar -lo.</td>
+</tr>
+<tr class="row-odd"><td>** H **</td>
+<td>** Feedback **</td>
+<td>És la mesura del sistema.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="ejemplos-de-sistemas-de-control-en-lazo-cerrado">
+<h2>Exemples de sistemes de control de bucles tancats<a class="headerlink" href="#ejemplos-de-sistemas-de-control-en-lazo-cerrado" title="Link permanent a aquest títol">¶</a></h2>
+<p>Com en el cas dels controladors de bucles oberts, també hi ha diversos dispositius diaris que tenen sistemes de control de bucles tancats. Es caracteritzen per tenir un sensor que permet mesurar l’estat del sistema i controlar -lo amb precisió.</p>
+<p>Control de temperatura d’un ** nevera <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Control de temperatura en un ** forn elèctric <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Control d'ompliment d'aigua d'una ** cisterna ** del vàter.</p>
+<p>** Adreça assistida ** d’un cotxe o d’un camió.</p>
+<p>Control de posició d’un ** Servomechanisme <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Sistema de marxa i parada a cada pis d’un ** ascensor <a href="#id1"><span class="problematic" id="id2">**</span></a>.</p>
+<p>Obriu el control d’una ** porta automàtica <a href="#id1"><span class="problematic" id="id2">**</span></a>, que s’obre reaccionant a la presència d’algú.</p>
+<a class="reference internal image-reference" href="_images/img-0054.jpg"><img alt="Servomotor" class="align-center" src="_images/img-0054.jpg" style="width: 360px;"></a>
+</div>
+<div class="section" id="referencias">
+<h2>Referències<a class="headerlink" href="#referencias" title="Link permanent a aquest títol">¶</a></h2>
+<p>Wikipedia: <cite>Sistema de control &lt;https://es.wikipedia.org/wiki/system_de_control&gt;</cite> ``</p>
+<p>Viquipèdia: <a class="reference external" href="https://es.wikipedia.org/wiki/servomotor" rel="noopener noreferrer" target="_blank">Servomotor</a></p>
+<p>[1] Ogata, Katsuhiko. Enginyeria de control moderna. Tercera edició. Saló de Prentice Editorial.</p>
+<p>[2] Ogata, Katsuhiko. Sistemes de control de temps discrets. Segona edició. Saló de Prentice Editorial.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="control-pid.html" class="btn btn-neutral float-right" title="Controlador PID" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="control-index.html" class="btn btn-neutral" title="Control dels sistemes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/control-auto.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricitat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programació</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="robotica-index.html">Robòtica</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="control-index.html">Control dels sistemes</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Control automàtic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control-pid.html">Controlador PID</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control-ziegler-nichols.html">Mètode Ziegler-Nichols</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control-pid-digital.html">Controlador digital PID</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="control-actuator-index.html">Actuadors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="control-sensor-index.html">Sensors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="robotica-normativa.html">Codi de l'escola 4.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="robotica-recursos.html">Recursos per a la robòtica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="robotica-robots-actuales.html">Robots actuals</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

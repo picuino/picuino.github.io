@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Electricitat - Simulador elèctric - 11. El Condensador">
+  <title>11. El Condensador - Simulador elèctric - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/electric-simulador-condensador.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índex" href="content.html">
+  <link rel="search" title="Cerca" href="search.html">
+  <link rel="next" title="Cobriment de làmpades amb terminals" href="bornas-lamparas-index.html">
+  <link rel="prev" title="10. Tensió alternativa" href="electric-simulador-alterna.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="electric-index.html">Electricitat</a>/</li>
+        
+          <li><a href="electric-simulador-index.html">Simulador elèctric</a>/</li>
+        
+      <li><span class="section-number">11. </span>El Condensador</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/electric-simulador-condensador.rst.txt" rel="nofollow"> Veure la font de la pàgina</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  <div style="background-color:#fdd; padding: 6px; margin:12px 0 12px 0">
+  <strong>Atenció:</strong> aquesta pàgina és una traducció automàtica de
+  la versió original en castellà. Si voleu contribuir-hi, poseu-vos en
+  <a href="contacto.html" target="_blank">contacte</a> amb l'autor amb el
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/ca/LC_MESSAGES/electric-simulador-condensador.po" target="_blank">fitxer de traducció</a> actualitzat.
+  </div>
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="el-condensador">
+<span id="electric-simulador-condensador"></span><h1><span class="section-number">11. </span>El <span class="target" id="index-0"></span>Condensador<a class="headerlink" href="#el-condensador" title="Link permanent a aquest títol">¶</a></h1>
+<p>Un condensador es un componente que puede almacenar energía eléctrica
+igual que lo hace una pila recargable, pero con dos diferencias.
+La energía almacenada es mucho menor que la de una pila y los ciclos de
+carga y descarga que soporta un condensador son de muchos miles de
+millones, mientras que una pila recargable solo soporta pocos cientos
+de ciclos.</p>
+<p>El símbolo de un condensador es el siguiente:</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/electric-simbolo-condensador.png"><img alt="Símbolo del condensador." src="_images/electric-simbolo-condensador.png" style="width: 240px;"></a>
+<p class="caption"><span class="caption-text">Símbolo del condensador.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>Las aplicaciones prácticas de los condensadores son muy variadas:</p>
+<ol class="arabic simple">
+<li>Mantener constante la tensión de salida de una fuente de alimentación.</li>
+<li>Medir tiempos gracias a su tiempo de carga y descarga.</li>
+<li>Filtrado de señales de sonido en los ecualizadores.</li>
+</ol>
+<div class="section" id="filtro-de-alimentacion">
+<h2>Filtro de alimentación<a class="headerlink" href="#filtro-de-alimentacion" title="Link permanent a aquest títol">¶</a></h2>
+<p>Los transformadores de tensión utilizados en las fuentes de alimentación
+siempre suministran tensión alterna a su salida.
+Cuando queremos transformar esta tensión alterna en tensión
+continua es necesario añadir un rectificador (un diodo, un componente que
+estudiaremos en detalle más adelante) y también es necesario añadir
+<strong>un condensador</strong> para suavizar la tensión de salida.</p>
+<p>En el siguiente circuito podemos ver dos transformadores con sus
+tensiones de entrada y sus tensiones de salida ya rectificadas.
+El primer transformador muestra a la salida picos de tensión positivos que
+no están suavizados al no tener condensador.
+El segundo transformador tiene, además, un condensador que &quot;suaviza&quot; los
+picos de tensión, por lo que la tensión de salida apenas muestra variaciones.</p>
+<div class="video-center">
+<iframe src="/circuits/index.html?startCircuit=electric-simulador-condensador-1.txt"></iframe>
+</div><p>La función del condensador es almacenar energía eléctrica durante los
+picos positivos de tensión del transformador y suministrar energía
+eléctrica durante los momentos en los que el transformador no lo hace,
+manteniendo así la tensión de salida constante.</p>
+</div>
+<div class="section" id="oscilador-con-condensador">
+<h2>Oscilador con condensador<a class="headerlink" href="#oscilador-con-condensador" title="Link permanent a aquest títol">¶</a></h2>
+<p>En este circuito temporizador, el condensador tarda un tiempo en cargarse
+y en descargarse de energía eléctrica a través de la resistencia.
+Ese tiempo de carga y descarga es el que determina el tiempo de oscilación
+de una puerta electrónica.
+Estos osciladores tienen muchas aplicaciones prácticas en todo tipo de
+circuitos digitales.</p>
+<div class="video-center">
+<iframe src="/circuits/index.html?startCircuit=electric-simulador-condensador-2.txt"></iframe>
+</div><p>A la izquierda se puede ver un osciloscopio con la tensión del condensador.
+Tan pronto como la tensión sube hasta los 3,33 voltios, la salida cambia
+a tensión de 0 voltios, obligando al condensador a descargarse.
+Tan pronto como la tensión del condensador baja de 1,66 voltios, la salida
+cambia a tensión positiva de 5 voltios, obligando al condensador a
+cargarse.</p>
+</div>
+<div class="section" id="ejercicios">
+<h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Link permanent a aquest títol">¶</a></h2>
+<ol class="arabic simple">
+<li>¿Qué es un condensador?
+¿En qué se parece y en qué se diferencia de una pila recargable?</li>
+<li>Escribe tres aplicaciones prácticas de los condensadores.</li>
+<li>Dibuja un circuito con un condensador que suavice los picos de tensión
+de salida de un transformador.</li>
+<li>¿Qué función tiene un condensador de filtro de alimentación?</li>
+<li>Dibuja un circuito con un condensador oscilador.</li>
+<li>Cambia el valor del condensador para que la oscilación sea
+cinco veces más rápida. ¿Cuál es su valor ahora?</li>
+<li>Cambia el valor del condensador para que la oscilación sea
+dos veces más lenta. ¿Cuál es su valor ahora?</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bornas-lamparas-index.html" class="btn btn-neutral float-right" title="Cobriment de làmpades amb terminals" accesskey="n" rel="next">Següent <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="electric-simulador-alterna.html" class="btn btn-neutral" title="10. Tensió alternativa" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacte</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifest</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Avís legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Crèdits</a></li>
+    <li><a href="genindex.html" target="_blank">Glossari</a></li>
+    <li><a href="content.html" target="_blank">Índex</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Última actualització el de setembre, 2025.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../es/electric-simulador-condensador.html">Castellano</a>
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documents">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibuix tècnic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mecan-index.html">Mecànica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materials</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="electric-index.html">Electricitat</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="electric-teoria-index.html">Teoría de electricidad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-componentes-index.html">Components elèctrics</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="electric-simulador-index.html">Simulador elèctric</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-interruptor.html">1. Commutador i botó</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-serie.html">2. Connexió en sèrie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-paralelo.html">3. Connexió en paral·lel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-mixto.html">4. Connexió de circuit mixt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-tension.html">5. Tensió elèctrica</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-corriente.html">6. Corrent elèctric</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-resistencia.html">7. Resistència elèctrica</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-potencia.html">8. Potència elèctrica</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-leyohm.html">9. :index:`Ohm 'Llei</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electric-simulador-alterna.html">10. Tensió alternativa</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">11. El Condensador</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bornas-lamparas-index.html">Cobriment de làmpades amb terminals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-recursos.html">Recursos per a l’electricitat</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrònica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informàtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programació</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robòtica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicacions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller tecnològic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Altres recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislació educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

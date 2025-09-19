@@ -21,7 +21,10 @@ y el correo de EducaMadrid.
    :maxdepth: 1
    :titlesonly:
 
-   informatica-av-password.rst
+   informatica-av-password-design.rst
+   informatica-av-password-change.rst
+   informatica-av-email.rst
+   informatica-av-tarea.rst
 
 ..
    informatica-av-email.rst

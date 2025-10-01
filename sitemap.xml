@@ -208,7 +208,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/ca/content.html</loc>
-  <lastmod>2025-09-20</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -976,7 +976,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/ca/error-404.html</loc>
-  <lastmod>2025-09-20</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -1108,7 +1108,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/ca/genindex.html</loc>
-  <lastmod>2025-09-20</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -1192,13 +1192,13 @@
 </url>
 <url>
   <loc>https://www.picuino.com/ca/html-index.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/html-intro.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -1264,37 +1264,37 @@
 </url>
 <url>
   <loc>https://www.picuino.com/ca/index.html</loc>
-  <lastmod>2025-09-20</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/informatica-av-email.html</loc>
-  <lastmod>2025-09-20</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/informatica-av-index.html</loc>
-  <lastmod>2025-09-20</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/informatica-av-password-change.html</loc>
-  <lastmod>2025-09-20</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/informatica-av-password-design.html</loc>
-  <lastmod>2025-09-20</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/informatica-av-tarea.html</loc>
-  <lastmod>2025-09-20</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -1714,13 +1714,19 @@
 </url>
 <url>
   <loc>https://www.picuino.com/ca/ley-index.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/ley-intro.html</loc>
   <lastmod>2025-09-06</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.picuino.com/ca/ley-lomloe.html</loc>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -2188,7 +2194,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/ca/python-index.html</loc>
-  <lastmod>2025-09-14</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -2290,13 +2296,13 @@
 </url>
 <url>
   <loc>https://www.picuino.com/ca/python-textos.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/python-variables.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -2590,7 +2596,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/ca/search.html</loc>
-  <lastmod>2025-09-20</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -2644,145 +2650,145 @@
 </url>
 <url>
   <loc>https://www.picuino.com/ca/writer-buscar-reemplazar-1.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/writer-buscar-reemplazar-2.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/writer-copiar-formato.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/writer-copiar-pegar.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/writer-cortar-pegar.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/writer-estilo-pagina.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/writer-formato-caracter-1.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/writer-formato-caracter-2.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/writer-formato-parrafo-1.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/writer-formato-parrafo-2.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/writer-formato-parrafo-3.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/writer-galeria.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/writer-imagen-1.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/writer-imagen-2.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/writer-imagen-3.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/writer-index.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/writer-numeracion-vinietas.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/writer-ortografia.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/writer-tablas-1.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/writer-tablas-2.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/writer-teclado-1.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/writer-teclado-2.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/writer-teclado-3.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/ca/writer-texto-resaltado.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -2872,7 +2878,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/ca/arduprog/index.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -2967,8 +2973,14 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://www.picuino.com/ca/arduprog/protoboard-guia.html</loc>
+  <lastmod>2025-09-21</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://www.picuino.com/ca/arduprog/protoboard-index.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -3232,7 +3244,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/content.html</loc>
-  <lastmod>2025-09-20</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -4000,7 +4012,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/error-404.html</loc>
-  <lastmod>2025-09-20</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -4132,7 +4144,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/genindex.html</loc>
-  <lastmod>2025-09-20</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -4216,13 +4228,13 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/html-index.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/html-intro.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -4288,37 +4300,37 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/index.html</loc>
-  <lastmod>2025-09-20</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/informatica-av-email.html</loc>
-  <lastmod>2025-09-20</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/informatica-av-index.html</loc>
-  <lastmod>2025-09-20</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/informatica-av-password-change.html</loc>
-  <lastmod>2025-09-20</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/informatica-av-password-design.html</loc>
-  <lastmod>2025-09-20</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/informatica-av-tarea.html</loc>
-  <lastmod>2025-09-20</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -4696,91 +4708,91 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/ley-autonomica-aragon.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/ley-autonomica-madrid.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/ley-autonomica.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/ley-bachillerato.html</loc>
-  <lastmod>2025-09-14</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/ley-ciencias-computacion-bach.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/ley-ciencias-computacion.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/ley-digitalizacion.html</loc>
-  <lastmod>2025-09-14</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/ley-index.html</loc>
-  <lastmod>2025-09-14</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/ley-intro.html</loc>
-  <lastmod>2025-09-14</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.picuino.com/en/ley-materias.html</loc>
-  <lastmod>2025-09-14</lastmod>
+  <loc>https://www.picuino.com/en/ley-lomloe.html</loc>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/ley-secundaria.html</loc>
-  <lastmod>2025-09-14</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/ley-tecnologia-digitalizacion.html</loc>
-  <lastmod>2025-09-14</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/ley-tecnologia-ingenieria.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/ley-tecnologia.html</loc>
-  <lastmod>2025-09-14</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/ley-temario-tecnologia.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -5212,7 +5224,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/python-index.html</loc>
-  <lastmod>2025-09-14</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -5314,13 +5326,13 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/python-textos.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/python-variables.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -5614,7 +5626,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/search.html</loc>
-  <lastmod>2025-09-20</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -5668,385 +5680,385 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/writer-buscar-reemplazar-1.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/writer-buscar-reemplazar-2.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/writer-copiar-formato.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/writer-copiar-pegar.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/writer-cortar-pegar.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/writer-estilo-pagina.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/writer-formato-caracter-1.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/writer-formato-caracter-2.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/writer-formato-parrafo-1.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/writer-formato-parrafo-2.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/writer-formato-parrafo-3.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/writer-galeria.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/writer-imagen-1.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/writer-imagen-2.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/writer-imagen-3.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/writer-index.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/writer-numeracion-vinietas.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/writer-ortografia.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/writer-tablas-1.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/writer-tablas-2.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/writer-teclado-1.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/writer-teclado-2.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/writer-teclado-3.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/writer-texto-resaltado.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/add-library.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/ardublock-buzzer1.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/ardublock-display1.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/ardublock-index.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/ardublock-intro.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/ardublock-key1.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/ardublock-led1.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/ardublock-led2.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/arduino-faq-misconceptions.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/comm-infrared-emitter.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/comm-infrared-receiver.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/comm-pc-control.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/component-kit.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/downloads.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/index.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/pc42-buzzer.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/pc42-display1.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/pc42-index.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/pc42-install.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/pc42-intro.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/pc42-key1.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/pc42-key2.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/pc42-key3.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/pc42-led1.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/pc42-led2.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/prog-haiku.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/prog-index.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/prog-simon.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/prog-timer-control.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/protoboard-buzzer.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.picuino.com/en/arduprog/protoboard-guia.html</loc>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/protoboard-index.html</loc>
-  <lastmod>2025-09-14</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/protoboard-led-d2.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/protoboard-led-vcc.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/protoboard-pot.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/protoboard-push-ledes.html</loc>
-  <lastmod>2025-09-06</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.picuino.com/en/arduprog/protoboard-recursos.html</loc>
-  <lastmod>2025-09-14</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/protoboard-tres-ledes.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/resource-index.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/troubleshooting-arduino.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/arduprog/troubleshooting.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -6268,7 +6280,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/content.html</loc>
-  <lastmod>2025-09-20</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -7036,7 +7048,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/error-404.html</loc>
-  <lastmod>2025-09-20</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -7168,7 +7180,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/genindex.html</loc>
-  <lastmod>2025-09-20</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -7252,13 +7264,13 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/html-index.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/html-intro.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -7324,37 +7336,37 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/index.html</loc>
-  <lastmod>2025-09-20</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/informatica-av-email.html</loc>
-  <lastmod>2025-09-20</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/informatica-av-index.html</loc>
-  <lastmod>2025-09-20</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/informatica-av-password-change.html</loc>
-  <lastmod>2025-09-20</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/informatica-av-password-design.html</loc>
-  <lastmod>2025-09-20</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/informatica-av-tarea.html</loc>
-  <lastmod>2025-09-20</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -7732,91 +7744,91 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/ley-autonomica-aragon.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/ley-autonomica-madrid.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/ley-autonomica.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/ley-bachillerato.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/ley-ciencias-computacion-bach.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/ley-ciencias-computacion.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/ley-digitalizacion.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/ley-index.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/ley-intro.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.picuino.com/es/ley-materias.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <loc>https://www.picuino.com/es/ley-lomloe.html</loc>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/ley-secundaria.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/ley-tecnologia-digitalizacion.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/ley-tecnologia-ingenieria.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/ley-tecnologia.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/ley-temario-tecnologia.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -8248,7 +8260,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/python-index.html</loc>
-  <lastmod>2025-09-14</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -8350,13 +8362,13 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/python-textos.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/python-variables.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -8650,7 +8662,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/search.html</loc>
-  <lastmod>2025-09-20</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -8704,385 +8716,385 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/writer-buscar-reemplazar-1.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/writer-buscar-reemplazar-2.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/writer-copiar-formato.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/writer-copiar-pegar.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/writer-cortar-pegar.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/writer-estilo-pagina.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/writer-formato-caracter-1.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/writer-formato-caracter-2.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/writer-formato-parrafo-1.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/writer-formato-parrafo-2.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/writer-formato-parrafo-3.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/writer-galeria.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/writer-imagen-1.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/writer-imagen-2.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/writer-imagen-3.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/writer-index.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/writer-numeracion-vinietas.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/writer-ortografia.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/writer-tablas-1.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/writer-tablas-2.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/writer-teclado-1.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/writer-teclado-2.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/writer-teclado-3.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/writer-texto-resaltado.html</loc>
-  <lastmod>2025-09-19</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/add-library.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/ardublock-buzzer1.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/ardublock-display1.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/ardublock-index.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/ardublock-intro.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/ardublock-key1.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/ardublock-led1.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/ardublock-led2.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/arduino-faq-misconceptions.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/comm-infrared-emitter.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/comm-infrared-receiver.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/comm-pc-control.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/component-kit.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/downloads.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/index.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/pc42-buzzer.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/pc42-display1.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/pc42-index.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/pc42-install.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/pc42-intro.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/pc42-key1.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/pc42-key2.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/pc42-key3.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/pc42-led1.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/pc42-led2.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/prog-haiku.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/prog-index.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/prog-simon.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/prog-timer-control.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/protoboard-buzzer.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.picuino.com/es/arduprog/protoboard-guia.html</loc>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/protoboard-index.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/protoboard-led-d2.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/protoboard-led-vcc.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/protoboard-pot.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/protoboard-push-ledes.html</loc>
-  <lastmod>2025-09-06</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.picuino.com/es/arduprog/protoboard-recursos.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/protoboard-tres-ledes.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/resource-index.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/troubleshooting-arduino.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/arduprog/troubleshooting.html</loc>
-  <lastmod>2025-09-06</lastmod>
+  <lastmod>2025-09-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>

@@ -134,7 +134,9 @@
 19
 20
 21
-22</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kr">int</span> <span class="n">LED_PIN</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+22
+23</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">// Define el número de pin del led</span>
+<span class="kr">int</span> <span class="n">LED_PIN</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
 
 <span class="c1">// Ejecuta una sola vez las siguientes instrucciones</span>
 <span class="kr">void</span> <span class="nb">setup</span><span class="p">()</span> <span class="p">{</span>
@@ -162,10 +164,13 @@
 <li><p class="first">Modify the previous program so that the led looks like an alarm. It should come on for a tenth of a second and go off for ten seconds.</p>
 </li>
 <li><p class="first">Modify the program so that the led looks like an artificial candle. The turn on time should be random between 100 and 300 milliseconds. The shutdown time should be random between 50 and 150 milliseconds.</p>
-<p>The instruction to be used is:</p>
-<div class="highlight-arduino notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nf">delay</span><span class="p">(</span> <span class="nf">random</span><span class="p">(</span><span class="n">mínimo</span><span class="p">,</span> <span class="n">máximo</span><span class="p">)</span> <span class="p">);</span>
+<p>La instrucción que se debe utilizar para esperar un tiempo aleatorio
+es:</p>
+<div class="highlight-arduino notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nf">delay</span><span class="p">(</span> <span class="nf">random</span><span class="p">(</span><span class="nf">min</span><span class="p">,</span> <span class="nf">max</span><span class="p">)</span> <span class="p">);</span>
 </pre></div>
 </td></tr></table></div>
+<p>Donde <code class="docutils literal notranslate"><span class="pre">min</span></code> y <code class="docutils literal notranslate"><span class="pre">max</span></code> se deben sustituir por el valor mínimo
+y el valor máximo del valor aleatorio que queremos obtener.</p>
 </li>
 <li><p class="first">Modify the program so that the LED flashes quickly (for 100 milliseconds) and then flashes slowly (for 1 second).</p>
 </li>

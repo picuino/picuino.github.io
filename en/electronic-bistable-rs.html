@@ -5,8 +5,8 @@
   <meta name="keywords" content="Technology, Secondary Education, Drawing, Structures, Mechanisms, Materials, Electricity, Electronics, Computer Science, Programming, Control, Arduino, Communications, Workshop">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Libre educational resources for Technology in Secondary Education. Electronics - Digital electronics">
-  <title>Digital electronics - Electronics - Picuino</title>
+  <meta name="description" content="Libre educational resources for Technology in Secondary Education. Electronics - Digital electronics - 13. El biestable RS">
+  <title>13. El biestable RS - Digital electronics - Picuino</title>
 
   
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
@@ -14,7 +14,7 @@
   <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
 
   
-  <link rel="canonical" href="https://www.picuino.com/en/electronic-digital-index.html">
+  <link rel="canonical" href="https://www.picuino.com/en/electronic-bistable-rs.html">
 
   
   <link rel="search" type="application/opensearchdescription+xml"
@@ -27,8 +27,8 @@
   <link rel="glossary" title="Glossary" href="genindex.html">
   <link rel="index" title="Index" href="content.html">
   <link rel="search" title="Search" href="search.html">
-  <link rel="next" title="1. Digital signals" href="electronic-digital-signals.html">
-  <link rel="prev" title="23. The comparator with hysteresis" href="electronic-operational-hysteresis.html">
+  <link rel="next" title="14. El biestable D" href="electronic-bistable-d.html">
+  <link rel="prev" title="12. Mapa de Karnaugh" href="electronic-karnaugh.html">
 
 </head>
 
@@ -70,13 +70,15 @@
         
           <li><a href="electronic-index.html">Electronics</a>/</li>
         
-      <li>Digital electronics</li>
+          <li><a href="electronic-digital-index.html">Digital electronics</a>/</li>
+        
+      <li><span class="section-number">13. </span>El biestable RS</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/electronic-digital-index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/electronic-bistable-rs.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -90,7 +92,7 @@
   original Spanish version. If you'd like to contribute, please
   <a href="contacto.html" target="_blank">contact</a> the author
   with the updated
-  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/en/LC_MESSAGES/electronic-digital-index.po" target="_blank">translation file</a>.
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/en/LC_MESSAGES/electronic-bistable-rs.po" target="_blank">translation file</a>.
   </div>
   
   <hr>
@@ -99,27 +101,126 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="electronica-digital">
-<span id="electronic-digital-index"></span><h1>Digital electronics<a class="headerlink" href="#electronica-digital" title="Permalink to this headline">¶</a></h1>
-<p>Theory and exercises in digital electronics with integrated <a class="reference external" href="../circuits/?startCircuit=empty.txt" rel="noopener noreferrer" target="_blank">online circuit simulator</a>.</p>
-<img alt="Electrónica digital" class="align-center" src="_images/electronic-digital-logo.png">
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="electronic-digital-signals.html">1. Digital signals</a></li>
-<li class="toctree-l1"><a class="reference internal" href="electronic-error-detection.html">2. Error detection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="electronic-error-correction.html">3. Bug fixes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="electronic-binary.html">4. The binary system</a></li>
-<li class="toctree-l1"><a class="reference internal" href="electronic-gate-not.html">5. The logical gate not</a></li>
-<li class="toctree-l1"><a class="reference internal" href="electronic-gate-or.html">6. The logic gate or</a></li>
-<li class="toctree-l1"><a class="reference internal" href="electronic-gate-and.html">7. The logic and</a></li>
-<li class="toctree-l1"><a class="reference internal" href="electronic-gate-xor.html">8. THE LOGIC gate XOR</a></li>
-<li class="toctree-l1"><a class="reference internal" href="electronic-morgan-laws.html">9. De Morgan's laws</a></li>
-<li class="toctree-l1"><a class="reference internal" href="electronic-truth-table.html">10. The truth table</a></li>
-<li class="toctree-l1"><a class="reference internal" href="electronic-gray-code.html">11. Código Gray</a></li>
-<li class="toctree-l1"><a class="reference internal" href="electronic-karnaugh.html">12. Mapa de Karnaugh</a></li>
-<li class="toctree-l1"><a class="reference internal" href="electronic-bistable-rs.html">13. El biestable RS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="electronic-bistable-d.html">14. El biestable D</a></li>
-</ul>
+  <div class="section" id="el-biestable-rs">
+<span id="electronic-bistable-rs"></span><h1><span class="section-number">13. </span>El biestable RS<a class="headerlink" href="#el-biestable-rs" title="Permalink to this headline">¶</a></h1>
+<p>Hasta ahora hemos estudiado circuitos <strong>combinacionales</strong>.
+En este tipo de circuitos las salidas de señal solo dependen de las
+entradas de señal, no existe efecto memoria interna.</p>
+<p>A partir de ahora estudiaremos algunos circuitos <strong>secuenciales</strong> que
+se diferencian de los anteriores en que sus salidas dependen de las
+entradas y también dependen del estado interno del circuito, que tiene
+memoria.</p>
+<p>El primer circuito secuencial que vamos a estudiar es el <strong>biestable RS</strong>.
+Este biestable sirve para almacenar un bit de información (un cero o un
+uno) funcionando como el circuito de memoria más básico que podemos
+utilizar. Es el componente fundamental de los circuitos secuenciales, como
+contadores y registros y es la base de la memoria SRAM de las computadoras.</p>
+<p>Tiene dos entradas, la entrada <strong>S</strong> o <strong>SET</strong> que memoriza un
+<strong>uno</strong> (estado alto) en el circuito y la entrada <strong>R</strong> o <strong>RESET</strong>
+que memoriza un <strong>cero</strong> (estado bajo) en el circuito.</p>
+<p>El biestable RS tiene dos salidas, la salida <strong>Q</strong> refleja el
+estado interno del biestable y la salida negada <strong>/Q</strong> que valdrá lo
+contrario que la primera salida.</p>
+<div class="section" id="simulacion">
+<h2>Simulación<a class="headerlink" href="#simulacion" title="Permalink to this headline">¶</a></h2>
+<p>En la siguiente simulación podemos ver un <strong>biestable RS</strong> fabricado con
+dos puertas NOR:</p>
+<div class="video-center">
+<iframe src="/circuits/index.html?startCircuit=digital-bistable-rs-nor.txt"></iframe>
+</div></div>
+<div class="section" id="tabla-de-verdad">
+<h2>Tabla de verdad<a class="headerlink" href="#tabla-de-verdad" title="Permalink to this headline">¶</a></h2>
+<p>La tabla de verdad del <strong>biestable RS</strong> fabricado con puertas NOR es la
+siguiente:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width:25%;">
+<col style="width:25%;">
+<col style="width:25%;">
+<col style="width:25%;">
+</colgroup>
+<thead style="vertical-align:bottom;">
+<tr class="row-odd"><th class="head">S</th>
+<th class="head">R</th>
+<th class="head">Q</th>
+<th class="head">/Q</th>
+</tr>
+</thead>
+<tbody style="vertical-align:top;">
+<tr class="row-even"><td>0</td>
+<td>0</td>
+<td>Q</td>
+<td>/Q</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr class="row-even"><td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>Al activar la entrada <strong>SET</strong> el biestable se activa y la salida <strong>Q</strong>
+tendrá un valor alto (1 lógico). Una vez que se desactiva la entrada
+<strong>SET</strong> el biestable sigue manteniendo su estado activo hasta que le
+llegue una entrada contraria, <strong>RESET</strong>.</p>
+<p>Al activar la entrada <strong>RESET</strong> el biestable se desactiva y la salida <strong>Q</strong>
+tendrá un valor bajo (0 lógico). Una vez que se desactiva la entrada
+<strong>RESET</strong> el biestable sigue manteniendo su estado inactivo hasta que le
+llegue una entrada contraria, <strong>SET</strong>.</p>
+<p>El último estado, cuando se activan a la vez las entradas <strong>SET</strong> y
+<strong>RESET</strong>, se denomina estado prohibido o estado indeterminado porque
+fuerza a ambas salidas a nivel bajo (cero lógico).
+En este estado, las salidas del biestable se comportan de manera
+ilógica, ya que las señales de <strong>SET</strong> y de <strong>RESET</strong> se oponen
+directamente entre sí.</p>
+</div>
+<div class="section" id="biestable-rs-nand">
+<h2>Biestable RS NAND<a class="headerlink" href="#biestable-rs-nand" title="Permalink to this headline">¶</a></h2>
+<p>En la siguiente simulación podemos ver un <strong>biestable RS</strong> fabricado con
+dos puertas NAND:</p>
+<div class="video-center">
+<iframe src="/circuits/index.html?startCircuit=digital-bistable-rs-nand.txt"></iframe>
+</div><p>Las entradas serán activas a nivel bajo (un cero activa la entrada y un
+uno es igual a entrada en reposo).</p>
+</div>
+<div class="section" id="ejercicios">
+<h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">¿Qué dos tipos de circuitos digitales existen?
+¿En qué se diferencian entre sí?</p>
+</li>
+<li><p class="first">¿Qué tipo de circuito digital es un biestable RS y para qué sirve?</p>
+</li>
+<li><p class="first">¿Cuántas entradas tiene un biestable RS y qué función tiene cada una?</p>
+</li>
+<li><p class="first">¿Cuántas salidas tiene un biestable RS y qué función tiene cada una?</p>
+</li>
+<li><p class="first">Dibuja el circuito de un biestable RS con puertas NOR.</p>
+<p>La entrada SET debe valer 1 y la entrada RESET debe valer cero.
+Dibuja los valores correctos de las salidas Q y /Q.</p>
+</li>
+<li><p class="first">Dibuja la tabla de verdad de un biestable RS y explica brevemente
+su funcionamiento normal.</p>
+</li>
+<li><p class="first">¿Cómo se llama el estado en el que las dos entradas están a nivel alto
+y por qué se llama así?</p>
+</li>
+<li><p class="first">Ayudándote con la última simulación, dibuja la tabla de verdad del
+biestable RS fabricado con puertas NAND.</p>
+<p>Señala en la tabla el estado prohibido o indeterminado.
+¿Qué valen sus dos salidas en ese estado?</p>
+</li>
+</ol>
 </div>
 </div>
 
@@ -132,10 +233,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="electronic-digital-signals.html" class="btn btn-neutral float-right" title="1. Digital signals" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="electronic-bistable-d.html" class="btn btn-neutral float-right" title="14. El biestable D" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="electronic-operational-hysteresis.html" class="btn btn-neutral" title="23. The comparator with hysteresis" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="electronic-karnaugh.html" class="btn btn-neutral" title="12. Mapa de Karnaugh" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -194,7 +295,7 @@
           
           </a>
           <br>
-          <a href="../es/electronic-digital-index.html">Español</a>
+          <a href="../es/electronic-bistable-rs.html">Español</a>
           <br>
 
           
@@ -226,7 +327,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="electronic-index.html">Electronics</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="electronic-components-index.html">Electronic components</a></li>
 <li class="toctree-l2"><a class="reference internal" href="electronic-analog-index.html">Analog electronics</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Digital electronics</a><ul>
+<li class="toctree-l2 current"><a class="reference internal" href="electronic-digital-index.html">Digital electronics</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="electronic-digital-signals.html">1. Digital signals</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-error-detection.html">2. Error detection</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-error-correction.html">3. Bug fixes</a></li>
@@ -239,7 +340,7 @@
 <li class="toctree-l3"><a class="reference internal" href="electronic-truth-table.html">10. The truth table</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-gray-code.html">11. Código Gray</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-karnaugh.html">12. Mapa de Karnaugh</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electronic-bistable-rs.html">13. El biestable RS</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">13. El biestable RS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-bistable-d.html">14. El biestable D</a></li>
 </ul>
 </li>

@@ -5,8 +5,8 @@
   <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Electrónica - Electrónica digital - 6. La puerta lógica OR">
-  <title>6. La puerta lógica OR - Electrónica digital - Picuino</title>
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Electrónica - Electrónica digital - 14. El biestable D">
+  <title>14. El biestable D - Electrónica digital - Picuino</title>
 
   
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
@@ -14,7 +14,7 @@
   <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
 
   
-  <link rel="canonical" href="https://www.picuino.com/es/electronic-gate-or.html">
+  <link rel="canonical" href="https://www.picuino.com/es/electronic-bistable-d.html">
 
   
   <link rel="search" type="application/opensearchdescription+xml"
@@ -27,8 +27,8 @@
   <link rel="glossary" title="Glossary" href="genindex.html">
   <link rel="index" title="Índice" href="content.html">
   <link rel="search" title="Búsqueda" href="search.html">
-  <link rel="next" title="7. La puerta lógica AND" href="electronic-gate-and.html">
-  <link rel="prev" title="5. La puerta lógica NOT" href="electronic-gate-not.html">
+  <link rel="next" title="Cableado de componentes electrónicos" href="electronic-bornas-index.html">
+  <link rel="prev" title="13. El biestable RS" href="electronic-bistable-rs.html">
 
 </head>
 
@@ -72,13 +72,13 @@
         
           <li><a href="electronic-digital-index.html">Electrónica digital</a>/</li>
         
-      <li><span class="section-number">6. </span>La puerta lógica OR</li>
+      <li><span class="section-number">14. </span>El biestable D</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/electronic-gate-or.rst.txt" rel="nofollow"> Ver texto fuente</a>
+            <a href="_sources/electronic-bistable-d.rst.txt" rel="nofollow"> Ver texto fuente</a>
           
         
       </li>
@@ -95,72 +95,106 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="la-puerta-logica-or">
-<span id="electronic-gate-or"></span><h1><span class="section-number">6. </span>La puerta lógica OR<a class="headerlink" href="#la-puerta-logica-or" title="Enlazar permanentemente con este título">¶</a></h1>
-<p>La puerta lógica OR tiene dos o más entradas y una salida.</p>
-<p>La salida tiene un valor lógico alto (1) si alguna de sus entradas
-tiene un valor lógico alto (1).</p>
-<p>Es decir, si la entrada A <strong>o</strong> la entrada B están a nivel alto,
-la salida estará a nivel alto. De ahí el nombre <strong>OR</strong> en inglés.</p>
-<p>El <strong>símbolo de la puerta OR</strong> es el siguiente:</p>
-<div class="figure align-center" id="id1">
-<a class="reference internal image-reference" href="_images/electronic-simbolo-puerta-or.png"><img alt="Puerta lógica OR de dos entradas." src="_images/electronic-simbolo-puerta-or.png" style="width: 180px;"></a>
-<p class="caption"><span class="caption-text">Símbolo de la puerta lógica OR de dos entradas.</span><a class="headerlink" href="#id1" title="Enlace permanente a esta imagen">¶</a></p>
-</div>
-<p>La <strong>función lógica de la puerta OR</strong> se representa mediante una suma,
-de manera que la salida de la puerta será la suma lógica de las entradas:</p>
-<div class="math">
-<p><img src="_images/math/9f8867e368c5e855ec59e2ffef285b23a6512498.svg" alt="Out = A + B"></p>
-</div><p>La <strong>tabla de verdad de la puerta OR</strong> es la siguiente:</p>
-<div class="figure align-center" id="id2">
-<a class="reference internal image-reference" href="_images/electronic-puerta-or-02.png"><img alt="Tabla de verdad de la puerta lógica OR de dos entradas." src="_images/electronic-puerta-or-02.png" style="width: 160px;"></a>
-<p class="caption"><span class="caption-text">Tabla de verdad de la puerta lógica OR de dos entradas.</span><a class="headerlink" href="#id2" title="Enlace permanente a esta imagen">¶</a></p>
-</div>
-<p>Si las dos entradas valen cero, la salida valdrá cero, pero
-si alguna entrada vale uno, la salida valdrá uno.</p>
-<div class="section" id="la-puerta-logica-nor">
-<h2>La puerta lógica NOR<a class="headerlink" href="#la-puerta-logica-nor" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>La puerta lógica NOR tiene dos o más entradas y una salida.</p>
-<p>La salida será la misma que la de una puerta OR, pero invertida.
-Es decir que la salida solo valdrá uno cuando todas las entradas
-valgan cero.</p>
-<p>El <strong>símbolo de la puerta NOR</strong> es el siguiente:</p>
-<div class="figure align-center" id="id3">
-<a class="reference internal image-reference" href="_images/electronic-simbolo-puerta-nor.png"><img alt="Puerta lógica NOR de dos entradas." src="_images/electronic-simbolo-puerta-nor.png" style="width: 180px;"></a>
-<p class="caption"><span class="caption-text">Símbolo de la puerta lógica NOR de dos entradas.</span><a class="headerlink" href="#id3" title="Enlace permanente a esta imagen">¶</a></p>
-</div>
-<p>La <strong>función lógica de la puerta NOR</strong> se representa mediante una
-suma negada, de manera que la salida de la puerta será la
-suma lógica de las entradas que finalmente se invierte:</p>
-<div class="math">
-<p><img src="_images/math/8021780354e166939afdd74dd08b83fc8fb7c1c3.svg" alt="Out = \overline{ A + B }"></p>
-</div><p>La <strong>tabla de verdad de la puerta NOR</strong> es la siguiente:</p>
-<div class="figure align-center" id="id4">
-<a class="reference internal image-reference" href="_images/electronic-puerta-nor-02.png"><img alt="Tabla de verdad de la puerta lógica NOR de dos entradas." src="_images/electronic-puerta-nor-02.png" style="width: 160px;"></a>
-<p class="caption"><span class="caption-text">Tabla de verdad de la puerta lógica NOR de dos entradas.</span><a class="headerlink" href="#id4" title="Enlace permanente a esta imagen">¶</a></p>
-</div>
-</div>
+  <div class="section" id="el-biestable-d">
+<span id="electronic-bistable-d"></span><h1><span class="section-number">14. </span>El biestable D<a class="headerlink" href="#el-biestable-d" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>El <a class="reference external" href="https://es.wikipedia.org/wiki/Biestable#Biestable_D_(Data_o_Delay)" rel="noopener noreferrer" target="_blank">biestable D</a>
+(Data o Delay) es un circuito secuencial básico que, al igual que el
+biestable RS, puede almacenar un bit de información.
+La diferencia entre ambos consiste en la forma de almacenar ese bit
+con sus entradas.</p>
+<p>El <strong>biestable D</strong> tiene una entrada <strong>D</strong> o dato que puede estar a
+nivel alto (1 lógico) o a nivel bajo (0 lógico). Ese dato se va a grabar
+en el interior del biestable cuando se active otra entrada denominada
+Reloj o CLK (Clock), en el flanco de subida o cambio de cero a uno lógico.</p>
+<p>El biestable D sirve principalmente para almacenar datos binarios y para
+sincronizar señales.</p>
 <div class="section" id="simulacion">
 <h2>Simulación<a class="headerlink" href="#simulacion" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>En la siguiente simulación podemos ver el
-funcionamiento de la puerta lógica OR y, debajo,
-el funcionamiento de la puerta lógica NOR.</p>
+<p>En la siguiente simulación podemos ver un <strong>biestable D</strong>:</p>
 <div class="video-center">
-<iframe src="/circuits/index.html?startCircuit=digital-puerta-or.txt"></iframe>
+<iframe src="/circuits/index.html?startCircuit=digital-bistable-d.txt"></iframe>
 </div></div>
+<div class="section" id="tabla-de-verdad">
+<h2>Tabla de verdad<a class="headerlink" href="#tabla-de-verdad" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>La tabla de verdad del <strong>biestable D</strong> es la siguiente:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width:25%;">
+<col style="width:25%;">
+<col style="width:25%;">
+<col style="width:25%;">
+</colgroup>
+<thead style="vertical-align:bottom;">
+<tr class="row-odd"><th class="head">D</th>
+<th class="head">CLK</th>
+<th class="head">Q</th>
+<th class="head">/Q</th>
+</tr>
+</thead>
+<tbody style="vertical-align:top;">
+<tr class="row-even"><td>0</td>
+<td>0</td>
+<td>Q</td>
+<td>/Q</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>0</td>
+<td>Q</td>
+<td>/Q</td>
+</tr>
+<tr class="row-even"><td>0</td>
+<td>_↑¯</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>_↑¯</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr class="row-even"><td>0</td>
+<td>1</td>
+<td>Q</td>
+<td>/Q</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>1</td>
+<td>Q</td>
+<td>/Q</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>Flanco de subida</dt><dd>Los cambios de estado de este biestable ocurren solamente cuando la
+entrada <strong>CLK</strong> cambia de estar inactiva (0 lógico) a estar activa
+(1 lógico).
+No ocurren cuando se mantiene inactiva ni cuando se mantiene activa,
+solo en el momento del cambio de valor de 0 lógico a 1 lógico.
+Este cambio se denomina <strong>&quot;Flanco de subida&quot;</strong> y lo vamos a representar
+con el símbolo &quot;_↑¯&quot;.</dd>
+</dl>
+<p>En el momento que en la entrada <strong>CLK</strong> hay un flanco de subida, el valor
+de la entrada <strong>D</strong> se copia en el interior del biestable y ese valor se
+puede ver en la salida <strong>Q</strong>.</p>
+<p>Una vez que la entrada <strong>CLK</strong> está a nivel alto, aunque cambie la entrada
+<strong>D</strong>, el valor del biestable no cambiará, porque no ha habido un flanco
+de subida.</p>
+<p>La salida <strong>/Q</strong> siempre tendrá el valor contrario a la salida <strong>Q</strong>.
+Como este biestable no tiene estados prohibidos o indeterminados, esta
+condición se cumple siempre.</p>
+</div>
 <div class="section" id="ejercicios">
 <h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Enlazar permanentemente con este título">¶</a></h2>
 <ol class="arabic simple">
-<li>Explica con tus palabras el funcionamiento de la puerta lógica OR.</li>
-<li>Dibuja el símbolo de la puerta lógica OR de dos entradas,
-su función lógica y su tabla de verdad.</li>
-<li>Explica con tus palabras el funcionamiento de la puerta lógica NOR.</li>
-<li>Dibuja el símbolo de la puerta lógica NOR de dos entradas,
-su función lógica y su tabla de verdad.</li>
-<li>En el simulador añade una puerta inversora a la salida de la puerta
-OR y comprueba que su respuesta es igual a la de la puerta NOR.</li>
-<li>Dibuja una puerta lógica OR de tres entradas,
-su función lógica y su tabla de verdad.</li>
+<li>¿Qué es un biestable D y para qué sirve?</li>
+<li>¿Cuántas entradas tiene un biestable D y qué función tiene cada una?</li>
+<li>¿Cuántas salidas tiene un biestable D y qué función tiene cada una?</li>
+<li>Dibuja el circuito de un biestable D con el nombre de sus entradas
+y de sus salidas.</li>
+<li>Dibuja la tabla de verdad de un biestable D y explica brevemente
+su funcionamiento normal.</li>
+<li>¿Puede tener el biestable D una entrada prohibida o indeterminada?
+¿Qué consecuencias tiene ese funcionamiento?</li>
 </ol>
 </div>
 </div>
@@ -174,10 +208,10 @@ su función lógica y su tabla de verdad.</li>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="electronic-gate-and.html" class="btn btn-neutral float-right" title="7. La puerta lógica AND" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="electronic-bornas-index.html" class="btn btn-neutral float-right" title="Cableado de componentes electrónicos" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="electronic-gate-not.html" class="btn btn-neutral" title="5. La puerta lógica NOT" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+        <a href="electronic-bistable-rs.html" class="btn btn-neutral" title="13. El biestable RS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
       
     </div>
   
@@ -236,8 +270,8 @@ su función lógica y su tabla de verdad.</li>
           
           </a>
           <br>
-          <a href="../en/electronic-gate-or.html">English</a>
-          <!-- | <a href="../ca/electronic-gate-or.html">Català</a> -->
+          <a href="../en/electronic-bistable-d.html">English</a>
+          <!-- | <a href="../ca/electronic-bistable-d.html">Català</a> -->
           <br>
 
           
@@ -275,7 +309,7 @@ su función lógica y su tabla de verdad.</li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-error-correction.html">3. Corrección de de errores</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-binary.html">4. El sistema binario</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-gate-not.html">5. La puerta lógica NOT</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">6. La puerta lógica OR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-gate-or.html">6. La puerta lógica OR</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-gate-and.html">7. La puerta lógica AND</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-gate-xor.html">8. La puerta lógica XOR</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-morgan-laws.html">9. Las leyes de De Morgan</a></li>
@@ -283,7 +317,7 @@ su función lógica y su tabla de verdad.</li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-gray-code.html">11. Código Gray</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-karnaugh.html">12. Mapa de Karnaugh</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-bistable-rs.html">13. El biestable RS</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electronic-bistable-d.html">14. El biestable D</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">14. El biestable D</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="electronic-bornas-index.html">Cableado de componentes electrónicos</a></li>

@@ -112,7 +112,7 @@ Solo podrá subir si su altura en centímetros es mayor o igual a 150
 </pre></div>
 </div>
 <p>Ejemplo para calcular si un año es bisiesto:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">year</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Escribe un año:&#39;</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">year</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Escribe un año: &#39;</span><span class="p">)</span>
 <span class="n">year</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">year</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="p">(</span><span class="n">year</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span> <span class="p">(</span><span class="n">year</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">year</span> <span class="o">%</span> <span class="mi">400</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">):</span>
@@ -123,6 +123,16 @@ Solo podrá subir si su altura en centímetros es mayor o igual a 150
 </div>
 <p>Aunque los paréntesis no son obligatorios, es recomendable
 usarlos para que se pueda entender mejor el código.</p>
+<p>El operador <code class="docutils literal notranslate"><span class="pre">not</span></code> sirve para comprobar que la condición que le sigue
+es falsa. Invierte el significado de una condición.</p>
+<p>Ejemplo de uso del operador <code class="docutils literal notranslate"><span class="pre">not</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Escribe un número del 1 al 10: &#39;</span><span class="p">)</span>
+<span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El número&quot;</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="s2">&quot;NO es par&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
 <div class="section" id="ejercicios">
 <h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Enlazar permanentemente con este título">¶</a></h2>
 <ol class="arabic">
@@ -239,7 +249,7 @@ contrario no imprime ningún mensaje.</p>
       a menos que se indique lo contrario.
       <br>
       <span class="lastupdated">
-        Actualizado por última vez en septiembre, 2025.
+        Actualizado por última vez en octubre, 2025.
       </span>
 
     </p>

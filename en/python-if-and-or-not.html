@@ -104,9 +104,7 @@
   <div class="section" id="operadores-and-or-not">
 <span id="python-if-and-or-not"></span><h1><span class="section-number">10. </span><code class="docutils literal notranslate"><span class="pre">and</span></code>, <code class="docutils literal notranslate"><span class="pre">or</span></code>, <code class="docutils literal notranslate"><span class="pre">not</span></code> operators<a class="headerlink" href="#operadores-and-or-not" title="Permalink to this headline">¶</a></h1>
 <p>These operators are used to make more complex conditions in an <code class="docutils literal notranslate"><span class="pre">if</span></code> statement.</p>
-<p>Ejemplo para calcular si una persona puede subir a una montaña rusa.
-Solo podrá subir si su altura en centímetros es mayor o igual a 150
-<strong>y también</strong> debe ser menor o igual a 200:</p>
+<p>Example to calculate whether a person can ride a roller coaster. They can only ride if their height in centimeters is greater than or equal to 150 <strong>and also</strong> less than or equal to 200:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">altura</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Escribe tu altura en centímetros: &#39;</span><span class="p">)</span>
 <span class="n">altura</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">altura</span><span class="p">)</span>
 
@@ -117,7 +115,7 @@ Solo podrá subir si su altura en centímetros es mayor o igual a 150
 </pre></div>
 </div>
 <p>Example to calculate if a year is a leap year:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">year</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Escribe un año:&#39;</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">year</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Escribe un año: &#39;</span><span class="p">)</span>
 <span class="n">year</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">year</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="p">(</span><span class="n">year</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span> <span class="p">(</span><span class="n">year</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">year</span> <span class="o">%</span> <span class="mi">400</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">):</span>
@@ -127,6 +125,15 @@ Solo podrá subir si su altura en centímetros es mayor o igual a 150
 </pre></div>
 </div>
 <p>Although parentheses are not always mandatory, it is advisable to use them so that the code can be better understood.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">not</span></code> operator is used to check that the condition that follows it is false. It reverses the meaning of a condition.</p>
+<p>Example of using the <code class="docutils literal notranslate"><span class="pre">not</span></code> operator:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Escribe un número del 1 al 10: &#39;</span><span class="p">)</span>
+<span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El número&quot;</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="s2">&quot;NO es par&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
 <div class="section" id="ejercicios">
 <h2>Exercises<a class="headerlink" href="#ejercicios" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
@@ -141,9 +148,7 @@ Solo podrá subir si su altura en centímetros es mayor o igual a 150
 </pre></div>
 </div>
 </li>
-<li><p class="first">El siguiente programa comprueba si un número es par.
-Modifica el programa utilizando el operador <code class="docutils literal notranslate"><span class="pre">not</span></code> para que
-compruebe si el número es impar:</p>
+<li><p class="first">The following program checks whether a number is even. Modify the program using the <code class="docutils literal notranslate"><span class="pre">not</span></code> operator to check whether the number is odd:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Escribe un número: &#39;</span><span class="p">)</span>
 <span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
 
@@ -234,7 +239,7 @@ compruebe si el número es impar:</p>
       unless otherwise specified.
       <br>
       <span class="lastupdated">
-        Last updated on September, 2025.
+        Last updated on October, 2025.
       </span>
 
     </p>

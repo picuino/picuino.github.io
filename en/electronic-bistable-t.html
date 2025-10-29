@@ -5,8 +5,8 @@
   <meta name="keywords" content="Technology, Secondary Education, Drawing, Structures, Mechanisms, Materials, Electricity, Electronics, Computer Science, Programming, Control, Arduino, Communications, Workshop">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Libre educational resources for Technology in Secondary Education. Electronics - Digital electronics - 12. Mapa de Karnaugh">
-  <title>12. Mapa de Karnaugh - Digital electronics - Picuino</title>
+  <meta name="description" content="Libre educational resources for Technology in Secondary Education. Electronics - Digital electronics - 16. El biestable T">
+  <title>16. El biestable T - Digital electronics - Picuino</title>
 
   
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
@@ -14,7 +14,7 @@
   <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
 
   
-  <link rel="canonical" href="https://www.picuino.com/en/electronic-karnaugh.html">
+  <link rel="canonical" href="https://www.picuino.com/en/electronic-bistable-t.html">
 
   
   <link rel="search" type="application/opensearchdescription+xml"
@@ -27,8 +27,8 @@
   <link rel="glossary" title="Glossary" href="genindex.html">
   <link rel="index" title="Index" href="content.html">
   <link rel="search" title="Search" href="search.html">
-  <link rel="next" title="13. El biestable RS" href="electronic-bistable-rs.html">
-  <link rel="prev" title="11. Código Gray" href="electronic-gray-code.html">
+  <link rel="next" title="Wiring of electronic components" href="electronic-bornas-index.html">
+  <link rel="prev" title="15. El biestable JK" href="electronic-bistable-jk.html">
 
 </head>
 
@@ -72,13 +72,13 @@
         
           <li><a href="electronic-digital-index.html">Digital electronics</a>/</li>
         
-      <li><span class="section-number">12. </span>Mapa de Karnaugh</li>
+      <li><span class="section-number">16. </span>El biestable T</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/electronic-karnaugh.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/electronic-bistable-t.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -92,7 +92,7 @@
   original Spanish version. If you'd like to contribute, please
   <a href="contacto.html" target="_blank">contact</a> the author
   with the updated
-  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/en/LC_MESSAGES/electronic-karnaugh.po" target="_blank">translation file</a>.
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/en/LC_MESSAGES/electronic-bistable-t.po" target="_blank">translation file</a>.
   </div>
   
   <hr>
@@ -101,53 +101,104 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="mapa-de-karnaugh">
-<span id="electronic-karnaugh"></span><h1><span class="section-number">12. </span>Mapa de Karnaugh<a class="headerlink" href="#mapa-de-karnaugh" title="Permalink to this headline">¶</a></h1>
-<p>Un <a class="reference external" href="https://es.wikipedia.org/wiki/Mapa_de_Karnaugh" rel="noopener noreferrer" target="_blank">mapa de Karnaugh</a>
-es un diagrama que se utiliza para simplificar funciones lógicas de
-manera gráfica.</p>
-<p>Se aplica normalmente a funciones con un número entre 2 y 4 variables.
-Para funciones de más variables se utilizan métodos más avanzados,
-como el <a class="reference external" href="https://es.wikipedia.org/wiki/Algoritmo_Quine%E2%80%93McCluskey" rel="noopener noreferrer" target="_blank">algoritmo Quine-McCluskey</a>.</p>
-<div class="section" id="mapa-de-karnaugh-de-tres-variables">
-<h2>Mapa de Karnaugh de tres variables<a class="headerlink" href="#mapa-de-karnaugh-de-tres-variables" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="_images/electronic-karnaugh-01b.png"><img alt="Tabla de Karnaugh vacía, de tres variables." class="align-center" src="_images/electronic-karnaugh-01b.png" style="width: 317px;"></a>
-</div>
-<div class="section" id="mapa-de-karnaugh-de-cuatro-variables">
-<h2>Mapa de Karnaugh de cuatro variables<a class="headerlink" href="#mapa-de-karnaugh-de-cuatro-variables" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="_images/electronic-karnaugh-02b.png"><img alt="Tabla de Karnaugh vacía, de cuatro variables." class="align-center" src="_images/electronic-karnaugh-02b.png" style="width: 330px;"></a>
+  <div class="section" id="el-biestable-t">
+<span id="electronic-bistable-t"></span><h1><span class="section-number">16. </span>El biestable T<a class="headerlink" href="#el-biestable-t" title="Permalink to this headline">¶</a></h1>
+<p>El <a class="reference external" href="https://es.wikipedia.org/wiki/Biestable#Biestable_T_(Toggle)" rel="noopener noreferrer" target="_blank">biestable T (Toggle)</a>
+es un circuito secuencial que puede almacenar un bit de información.</p>
+<p>El <strong>biestable T</strong> tiene dos entradas, la entrada <strong>T</strong> o toggle, que sirve
+como entrada de datos y la entrada de reloj (Clock o <strong>CLK</strong>) que sirve
+para validar el dato de entrada.
+Este biestable cambia de estado cada vez que recibe un pulso de reloj
+mientras su entrada <strong>T</strong> esté activa (1 lógico).</p>
+<p>El biestable T tiene dos salidas como el resto de biestables. Las salidas
+complementarias <strong>Q</strong> y <strong>/Q</strong> que siempre valen una lo contrario de la
+otra.</p>
+<dl class="docutils">
+<dt>El <strong>biestable T</strong> es muy útil para construir:</dt><dd><ul class="simple">
+<li><strong>Contadores binarios</strong>: son circuitos que cuentan, en código binario,
+los pulsos de entrada que les llegan. Cada biestable que se añade en
+serie es un bit que se añade a la cuenta binaria.</li>
+<li><strong>Divisores de frecuencia</strong>: son circuitos que dividen la frecuencia
+de su entrada en frecuencias menores.
+Esto es útil por ejemplo en los relojes digitales que dividen la
+frecuencia de un cristal de cuarzo para dar pulsos de un segundo
+al motor de las manillas.</li>
+</ul>
+</dd>
+</dl>
+<div class="section" id="simulacion">
+<h2>Simulación<a class="headerlink" href="#simulacion" title="Permalink to this headline">¶</a></h2>
+<p>En la siguiente simulación podemos ver un <strong>biestable T</strong>:</p>
+<div class="video-center">
+<iframe src="/circuits/index.html?startCircuit=digital-bistable-t.txt"></iframe>
+</div></div>
+<div class="section" id="tabla-de-verdad">
+<h2>Tabla de verdad<a class="headerlink" href="#tabla-de-verdad" title="Permalink to this headline">¶</a></h2>
+<p>Los cambios de la salida del biestable T solo se producen cuando
+cambia el estado de la entrada Clock (CLK) de nivel bajo (0 lógico) -&gt;
+a nivel alto (1 lógico), es decir en los <strong>flancos de subida de CLK</strong>.</p>
+<p>La tabla de verdad del <strong>biestable T</strong> es la siguiente:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width:25%;">
+<col style="width:25%;">
+<col style="width:25%;">
+<col style="width:25%;">
+</colgroup>
+<thead style="vertical-align:bottom;">
+<tr class="row-odd"><th class="head">T</th>
+<th class="head">CLK</th>
+<th class="head">Q</th>
+<th class="head">/Q</th>
+</tr>
+</thead>
+<tbody style="vertical-align:top;">
+<tr class="row-even"><td>0</td>
+<td>_↑¯</td>
+<td>Q</td>
+<td>/Q</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>_↑¯</td>
+<td>/Q</td>
+<td>Q</td>
+</tr>
+</tbody>
+</table>
+<p>Si la entrada <strong>T</strong> está a nivel bajo (0 lógico), al llegar
+un flanco de subida en <strong>CLK</strong> las salidas permanecen en el mismo estado
+en el que estaban antes.</p>
+<p>Si la entrada <strong>T</strong> está a nivel alto (1 lógico), al llegar
+un flanco de subida en <strong>CLK</strong> las salidas cambian su nivel al nivel
+contrario de manera que intercambian el estado alto (1 lógico) y el
+estado bajo (0 lógico) entre sí.</p>
+<p>El comportamiento del biestable T es igual al de un biestable JK en el
+que se han unido las dos entradas <strong>J</strong> y <strong>K</strong> en una sola entrada
+llamada <strong>T</strong>.</p>
 </div>
 <div class="section" id="ejercicios">
 <h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
-<li><p class="first">Dibuja un mapa de Karnaugh con la tabla de verdad que aparece
-a continuación. Escribe la función lógica simplificada.</p>
-<a class="reference internal image-reference" href="_images/electronic-truth-table-04b.png"><img alt="Tabla de verdad." class="align-center" src="_images/electronic-truth-table-04b.png" style="width: 125px;"></a>
+<li><p class="first">¿Qué es un biestable T, por qué se llama así y para qué sirve?</p>
 </li>
-<li><p class="first">Dibuja un mapa de Karnaugh con la tabla de verdad que aparece
-a continuación. Escribe la función lógica simplificada.</p>
-<a class="reference internal image-reference" href="_images/electronic-truth-table-05b.png"><img alt="Tabla de verdad." class="align-center" src="_images/electronic-truth-table-05b.png" style="width: 125px;"></a>
+<li><p class="first">¿Qué parecidos y diferencias tiene el biestable T con
+el biestable JK?</p>
 </li>
-<li><p class="first">Dibuja un mapa de Karnaugh con la tabla de verdad que aparece
-a continuación. Escribe la función lógica simplificada.</p>
-<a class="reference internal image-reference" href="_images/electronic-truth-table-06b.png"><img alt="Tabla de verdad." class="align-center" src="_images/electronic-truth-table-06b.png" style="width: 125px;"></a>
+<li><p class="first">¿Cuántas entradas tiene un biestable T y qué función tiene cada una?</p>
 </li>
-<li><p class="first">Dibuja un mapa de Karnaugh con la tabla de verdad que aparece
-a continuación. Escribe la función lógica simplificada.</p>
-<a class="reference internal image-reference" href="_images/electronic-truth-table-07b.png"><img alt="Tabla de verdad." class="align-center" src="_images/electronic-truth-table-07b.png" style="width: 125px;"></a>
+<li><p class="first">¿Cuántas salidas tiene un biestable T y qué función tiene cada una?</p>
 </li>
-<li><p class="first">Dibuja un mapa de Karnaugh con la tabla de verdad que aparece
-a continuación. Escribe la función lógica simplificada.</p>
-<a class="reference internal image-reference" href="_images/electronic-truth-table-08b.png"><img alt="Tabla de verdad." class="align-center" src="_images/electronic-truth-table-08b.png" style="width: 148px;"></a>
+<li><p class="first">Dibuja el circuito de un biestable T con el nombre de sus entradas
+y de sus salidas.</p>
+</li>
+<li><p class="first">Dibuja la tabla de verdad de un biestable T y explica brevemente
+su funcionamiento normal.</p>
+<p>¿Tienen alguna semejanza el biestable T con el biestable JK?</p>
+</li>
+<li><p class="first">Simula todos los estados del biestable T con el simulador de esta
+página.</p>
 </li>
 </ol>
-</div>
-<div class="section" id="recursos">
-<h2>Recursos<a class="headerlink" href="#recursos" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><a class="reference external" href="https://sublime.tools/es/mapa-de-karnaugh" rel="noopener noreferrer" target="_blank">Mapa de Karnaugh en línea.</a></li>
-<li><a class="reference external" href="https://calculadorasonline.com/calculadora-mapa-karnaugh-online/" rel="noopener noreferrer" target="_blank">Calculadora de mapa de Karnaugh.</a></li>
-</ul>
 </div>
 </div>
 
@@ -160,10 +211,10 @@ a continuación. Escribe la función lógica simplificada.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="electronic-bistable-rs.html" class="btn btn-neutral float-right" title="13. El biestable RS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="electronic-bornas-index.html" class="btn btn-neutral float-right" title="Wiring of electronic components" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="electronic-gray-code.html" class="btn btn-neutral" title="11. Código Gray" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="electronic-bistable-jk.html" class="btn btn-neutral" title="15. El biestable JK" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -222,7 +273,7 @@ a continuación. Escribe la función lógica simplificada.</p>
           
           </a>
           <br>
-          <a href="../es/electronic-karnaugh.html">Español</a>
+          <a href="../es/electronic-bistable-t.html">Español</a>
           <br>
 
           
@@ -266,11 +317,11 @@ a continuación. Escribe la función lógica simplificada.</p>
 <li class="toctree-l3"><a class="reference internal" href="electronic-morgan-laws.html">9. De Morgan's laws</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-truth-table.html">10. The truth table</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-gray-code.html">11. Código Gray</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">12. Mapa de Karnaugh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-karnaugh.html">12. Mapa de Karnaugh</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-bistable-rs.html">13. El biestable RS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-bistable-d.html">14. El biestable D</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-bistable-jk.html">15. El biestable JK</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electronic-bistable-t.html">16. El biestable T</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">16. El biestable T</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="electronic-bornas-index.html">Wiring of electronic components</a></li>

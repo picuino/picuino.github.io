@@ -5,8 +5,8 @@
   <meta name="keywords" content="Technology, Secondary Education, Drawing, Structures, Mechanisms, Materials, Electricity, Electronics, Computer Science, Programming, Control, Arduino, Communications, Workshop">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Libre educational resources for Technology in Secondary Education. Electronics - Digital electronics - 13. El biestable RS">
-  <title>13. El biestable RS - Digital electronics - Picuino</title>
+  <meta name="description" content="Libre educational resources for Technology in Secondary Education. Electronics - Digital electronics - 13. The RS flip-flop">
+  <title>13. The RS flip-flop - Digital electronics - Picuino</title>
 
   
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
@@ -27,7 +27,7 @@
   <link rel="glossary" title="Glossary" href="genindex.html">
   <link rel="index" title="Index" href="content.html">
   <link rel="search" title="Search" href="search.html">
-  <link rel="next" title="14. El biestable D" href="electronic-bistable-d.html">
+  <link rel="next" title="14. The D flip-flop" href="electronic-bistable-d.html">
   <link rel="prev" title="12. Mapa de Karnaugh" href="electronic-karnaugh.html">
 
 </head>
@@ -72,7 +72,7 @@
         
           <li><a href="electronic-digital-index.html">Digital electronics</a>/</li>
         
-      <li><span class="section-number">13. </span>El biestable RS</li>
+      <li><span class="section-number">13. </span>The RS flip-flop</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -102,36 +102,21 @@
            <div itemprop="articleBody">
             
   <div class="section" id="el-biestable-rs">
-<span id="electronic-bistable-rs"></span><h1><span class="section-number">13. </span>El biestable RS<a class="headerlink" href="#el-biestable-rs" title="Permalink to this headline">¶</a></h1>
-<p>Hasta ahora hemos estudiado circuitos <strong>combinacionales</strong>.
-En este tipo de circuitos las salidas de señal solo dependen de las
-entradas de señal, no existe efecto memoria interna.</p>
-<p>A partir de ahora estudiaremos algunos circuitos <strong>secuenciales</strong> que
-se diferencian de los anteriores en que sus salidas dependen de las
-entradas y también dependen del estado interno del circuito, que tiene
-memoria.</p>
-<p>El primer circuito secuencial que vamos a estudiar es el <strong>biestable RS</strong>.
-Este biestable sirve para almacenar un bit de información (un cero o un
-uno) funcionando como el circuito de memoria más básico que podemos
-utilizar. Es el componente fundamental de los circuitos secuenciales, como
-contadores y registros y es la base de la memoria SRAM de las computadoras.</p>
-<p>Tiene dos entradas, la entrada <strong>S</strong> o <strong>SET</strong> que memoriza un
-<strong>uno</strong> (estado alto) en el circuito y la entrada <strong>R</strong> o <strong>RESET</strong>
-que memoriza un <strong>cero</strong> (estado bajo) en el circuito.</p>
-<p>El biestable RS tiene dos salidas, la salida <strong>Q</strong> refleja el
-estado interno del biestable y la salida negada <strong>/Q</strong> que valdrá lo
-contrario que la primera salida.</p>
+<span id="electronic-bistable-rs"></span><h1><span class="section-number">13. </span>The RS flip-flop<a class="headerlink" href="#el-biestable-rs" title="Permalink to this headline">¶</a></h1>
+<p>So far we have studied <strong>combinational</strong> circuits. In this type of circuits, the signal outputs depend exclusively on the inputs, without any internal memory effect.</p>
+<p>From now on, we will study some <strong>sequential</strong> circuits, which differ from combinational ones in that their outputs depend not only on the inputs, but also on the internal state of the circuit, which has memory.</p>
+<p>The first sequential circuit that we are going to study is the <strong>RS flip-flop</strong>. This flip-flop is used to store a bit of information (a zero or a one), functioning as the most basic memory circuit we can use. It is the fundamental component of sequential circuits such as counters and registers and is the basis of SRAM memory in computers.</p>
+<p>The RS flip-flop has two inputs: the <strong>S</strong> or <strong>SET</strong> input that memorizes a <strong>one</strong> (high state), and the <strong>R</strong> or <strong>RESET</strong> input that memorizes a <strong>zero</strong> (low state).</p>
+<p>The RS flip-flop has two outputs: the <strong>Q</strong> output reflects the internal state of the flip-flop and the negated output <strong>/Q</strong> will have the opposite value of the <strong>Q</strong> output.</p>
 <div class="section" id="simulacion">
-<h2>Simulación<a class="headerlink" href="#simulacion" title="Permalink to this headline">¶</a></h2>
-<p>En la siguiente simulación podemos ver un <strong>biestable RS</strong> fabricado con
-dos puertas NOR:</p>
+<h2>Simulation<a class="headerlink" href="#simulacion" title="Permalink to this headline">¶</a></h2>
+<p>In the following simulation, we can observe an <strong>RS flip-flop</strong> manufactured with two NOR gates:</p>
 <div class="video-center">
 <iframe src="/circuits/index.html?startCircuit=digital-bistable-rs-nor.txt"></iframe>
 </div></div>
 <div class="section" id="tabla-de-verdad">
-<h2>Tabla de verdad<a class="headerlink" href="#tabla-de-verdad" title="Permalink to this headline">¶</a></h2>
-<p>La tabla de verdad del <strong>biestable RS</strong> fabricado con puertas NOR es la
-siguiente:</p>
+<h2>Truth table<a class="headerlink" href="#tabla-de-verdad" title="Permalink to this headline">¶</a></h2>
+<p>The truth table of the <strong>RS flip-flop</strong> manufactured with NOR gates is the following:</p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
 <col style="width:25%;">
@@ -140,7 +125,7 @@ siguiente:</p>
 <col style="width:25%;">
 </colgroup>
 <thead style="vertical-align:bottom;">
-<tr class="row-odd"><th class="head">S</th>
+<tr class="row-odd"><th class="head">Yes</th>
 <th class="head">R</th>
 <th class="head">Q</th>
 <th class="head">/Q</th>
@@ -169,56 +154,37 @@ siguiente:</p>
 </tr>
 </tbody>
 </table>
-<p>Al activar la entrada <strong>SET</strong> el biestable se activa y la salida <strong>Q</strong>
-tendrá un valor alto (1 lógico). Una vez que se desactiva la entrada
-<strong>SET</strong> el biestable sigue manteniendo su estado activo hasta que le
-llegue una entrada contraria, <strong>RESET</strong>.</p>
-<p>Al activar la entrada <strong>RESET</strong> el biestable se desactiva y la salida <strong>Q</strong>
-tendrá un valor bajo (0 lógico). Una vez que se desactiva la entrada
-<strong>RESET</strong> el biestable sigue manteniendo su estado inactivo hasta que le
-llegue una entrada contraria, <strong>SET</strong>.</p>
-<p>El último estado, cuando se activan a la vez las entradas <strong>SET</strong> y
-<strong>RESET</strong>, se denomina estado prohibido o estado indeterminado porque
-fuerza a ambas salidas a nivel bajo (cero lógico).
-En este estado, las salidas del biestable se comportan de manera
-ilógica, ya que las señales de <strong>SET</strong> y de <strong>RESET</strong> se oponen
-directamente entre sí.</p>
+<p>When the <strong>SET</strong> input is activated, the flip-flop is activated and the <strong>Q</strong> output will have a high value (logical 1). Once the <strong>SET</strong> input is deactivated, the flip-flop continues to maintain its active state until it receives an opposite input, <strong>RESET</strong>.</p>
+<p>When the <strong>RESET</strong> input is activated, the flip-flop is deactivated and the <strong>Q</strong> output will have a low value (logical 0). Once the <strong>RESET</strong> input is deactivated, the flip-flop continues to maintain its inactive state until it receives an opposite input, <strong>SET</strong>.</p>
+<p>The last state, when the <strong>SET</strong> and <strong>RESET</strong> inputs are activated simultaneously, is called <strong>prohibited state</strong> or <strong>indeterminate state</strong> because it forces both outputs low (logical zero). In this state, the flip-flop outputs behave illogically, since the <strong>SET</strong> and <strong>RESET</strong> signals are directly opposed to each other.</p>
 </div>
 <div class="section" id="biestable-rs-nand">
-<h2>Biestable RS NAND<a class="headerlink" href="#biestable-rs-nand" title="Permalink to this headline">¶</a></h2>
-<p>En la siguiente simulación podemos ver un <strong>biestable RS</strong> fabricado con
-dos puertas NAND:</p>
+<h2>Flip-flop RS NAND<a class="headerlink" href="#biestable-rs-nand" title="Permalink to this headline">¶</a></h2>
+<p>In the following simulation, we can see an <strong>RS flip-flop</strong> made with two NAND gates:</p>
 <div class="video-center">
 <iframe src="/circuits/index.html?startCircuit=digital-bistable-rs-nand.txt"></iframe>
-</div><p>Las entradas serán activas a nivel bajo (un cero activa la entrada y un
-uno es igual a entrada en reposo).</p>
+</div><p>The inputs will be active at a low level (a zero activates the input and a one is equal to the input at rest).</p>
 </div>
 <div class="section" id="ejercicios">
-<h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Permalink to this headline">¶</a></h2>
+<h2>Exercises<a class="headerlink" href="#ejercicios" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
-<li><p class="first">¿Qué dos tipos de circuitos digitales existen?
-¿En qué se diferencian entre sí?</p>
+<li><p class="first">What two types of digital circuits exist? How are they different from each other?</p>
 </li>
-<li><p class="first">¿Qué tipo de circuito digital es un biestable RS y para qué sirve?</p>
+<li><p class="first">What type of digital circuit is an RS flip-flop and what is it for?</p>
 </li>
-<li><p class="first">¿Cuántas entradas tiene un biestable RS y qué función tiene cada una?</p>
+<li><p class="first">How many inputs does an RS flip-flop have and what function does each one perform?</p>
 </li>
-<li><p class="first">¿Cuántas salidas tiene un biestable RS y qué función tiene cada una?</p>
+<li><p class="first">How many outputs does an RS flip-flop have and what function does each one fulfill?</p>
 </li>
-<li><p class="first">Dibuja el circuito de un biestable RS con puertas NOR.</p>
-<p>La entrada SET debe valer 1 y la entrada RESET debe valer cero.
-Dibuja los valores correctos de las salidas Q y /Q.</p>
+<li><p class="first">Draw the circuit of an RS flip-flop with NOR gates.</p>
+<p>The SET input must be 1 and the RESET input must be zero. Draw the correct values ​​of the Q and /Q outputs.</p>
 </li>
-<li><p class="first">Dibuja la tabla de verdad de un biestable RS y explica brevemente
-su funcionamiento normal.</p>
+<li><p class="first">Draw the truth table of an RS flip-flop and briefly explain its normal operation.</p>
 </li>
-<li><p class="first">¿Cómo se llama el estado en el que las dos entradas están a nivel alto
-y por qué se llama así?</p>
+<li><p class="first">What is the name of the state in which both inputs are high and why is it called that?</p>
 </li>
-<li><p class="first">Ayudándote con la última simulación, dibuja la tabla de verdad del
-biestable RS fabricado con puertas NAND.</p>
-<p>Señala en la tabla el estado prohibido o indeterminado.
-¿Qué valen sus dos salidas en ese estado?</p>
+<li><p class="first">Helping you with the last simulation, draw the truth table of the RS flip-flop made with NAND gates.</p>
+<p>Indicate the prohibited or undetermined status in the table. What are his two outputs worth in that state?</p>
 </li>
 </ol>
 </div>
@@ -233,7 +199,7 @@ biestable RS fabricado con puertas NAND.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="electronic-bistable-d.html" class="btn btn-neutral float-right" title="14. El biestable D" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="electronic-bistable-d.html" class="btn btn-neutral float-right" title="14. The D flip-flop" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="electronic-karnaugh.html" class="btn btn-neutral" title="12. Mapa de Karnaugh" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -262,7 +228,7 @@ biestable RS fabricado con puertas NAND.</p>
       unless otherwise specified.
       <br>
       <span class="lastupdated">
-        Last updated on October, 2025.
+        Last updated on November, 2025.
       </span>
 
     </p>
@@ -340,10 +306,10 @@ biestable RS fabricado con puertas NAND.</p>
 <li class="toctree-l3"><a class="reference internal" href="electronic-truth-table.html">10. The truth table</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-gray-code.html">11. Código Gray</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-karnaugh.html">12. Mapa de Karnaugh</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">13. El biestable RS</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electronic-bistable-d.html">14. El biestable D</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electronic-bistable-jk.html">15. El biestable JK</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electronic-bistable-t.html">16. El biestable T</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">13. The RS flip-flop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bistable-d.html">14. The D flip-flop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bistable-jk.html">15. The JK flip-flop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bistable-t.html">16. The flip-flop T</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="electronic-bornas-index.html">Wiring of electronic components</a></li>

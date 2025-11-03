@@ -5,8 +5,8 @@
   <meta name="keywords" content="Technology, Secondary Education, Drawing, Structures, Mechanisms, Materials, Electricity, Electronics, Computer Science, Programming, Control, Arduino, Communications, Workshop">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Libre educational resources for Technology in Secondary Education. Electronics - Digital electronics - 16. El biestable T">
-  <title>16. El biestable T - Digital electronics - Picuino</title>
+  <meta name="description" content="Libre educational resources for Technology in Secondary Education. Electronics - Digital electronics - 16. The flip-flop T">
+  <title>16. The flip-flop T - Digital electronics - Picuino</title>
 
   
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
@@ -28,7 +28,7 @@
   <link rel="index" title="Index" href="content.html">
   <link rel="search" title="Search" href="search.html">
   <link rel="next" title="Wiring of electronic components" href="electronic-bornas-index.html">
-  <link rel="prev" title="15. El biestable JK" href="electronic-bistable-jk.html">
+  <link rel="prev" title="15. The JK flip-flop" href="electronic-bistable-jk.html">
 
 </head>
 
@@ -72,7 +72,7 @@
         
           <li><a href="electronic-digital-index.html">Digital electronics</a>/</li>
         
-      <li><span class="section-number">16. </span>El biestable T</li>
+      <li><span class="section-number">16. </span>The flip-flop T</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -102,42 +102,27 @@
            <div itemprop="articleBody">
             
   <div class="section" id="el-biestable-t">
-<span id="electronic-bistable-t"></span><h1><span class="section-number">16. </span>El biestable T<a class="headerlink" href="#el-biestable-t" title="Permalink to this headline">¶</a></h1>
-<p>El <a class="reference external" href="https://es.wikipedia.org/wiki/Biestable#Biestable_T_(Toggle)" rel="noopener noreferrer" target="_blank">biestable T (Toggle)</a>
-es un circuito secuencial que puede almacenar un bit de información.</p>
-<p>El <strong>biestable T</strong> tiene dos entradas, la entrada <strong>T</strong> o toggle, que sirve
-como entrada de datos y la entrada de reloj (Clock o <strong>CLK</strong>) que sirve
-para validar el dato de entrada.
-Este biestable cambia de estado cada vez que recibe un pulso de reloj
-mientras su entrada <strong>T</strong> esté activa (1 lógico).</p>
-<p>El biestable T tiene dos salidas como el resto de biestables. Las salidas
-complementarias <strong>Q</strong> y <strong>/Q</strong> que siempre valen una lo contrario de la
-otra.</p>
+<span id="electronic-bistable-t"></span><h1><span class="section-number">16. </span>The flip-flop T<a class="headerlink" href="#el-biestable-t" title="Permalink to this headline">¶</a></h1>
+<p>The <a class="reference external" href="https://es.wikipedia.org/wiki/Biestable#Biestable_T_(Toggle)" rel="noopener noreferrer" target="_blank">bistable T (toggle)</a> is a sequential circuit that allows storing a bit of information.</p>
+<p>The <strong>T</strong> flip-flop has two inputs, the <strong>T</strong> or <strong>toggle</strong> input, which serves as a data input and the clock input (<strong>Clock</strong> or <strong>CLK</strong>) that validates the input data. This flip-flop changes state every time it receives a clock pulse, as long as its <strong>T</strong> input is active (logic 1).</p>
+<p>The T flip-flop has two outputs like the rest of the flip-flops. The complementary outputs <strong>Q</strong> and <strong>/Q</strong> that always have opposite values.</p>
 <dl class="docutils">
-<dt>El <strong>biestable T</strong> es muy útil para construir:</dt><dd><ul class="simple">
-<li><strong>Contadores binarios</strong>: son circuitos que cuentan, en código binario,
-los pulsos de entrada que les llegan. Cada biestable que se añade en
-serie es un bit que se añade a la cuenta binaria.</li>
-<li><strong>Divisores de frecuencia</strong>: son circuitos que dividen la frecuencia
-de su entrada en frecuencias menores.
-Esto es útil por ejemplo en los relojes digitales que dividen la
-frecuencia de un cristal de cuarzo para dar pulsos de un segundo
-al motor de las manillas.</li>
+<dt>The <strong>T flip-flop</strong> is very useful for building:</dt><dd><ul class="simple">
+<li><strong>Binary counters</strong>: circuits that count, in binary code, the input pulses they receive. Each flip-flop added in series represents an additional bit in the binary count.</li>
+<li><strong>Frequency dividers</strong>: circuits that divide the input frequency into lower frequencies. This is useful, for example, in digital watches, which divide the frequency of a quartz crystal to generate one-second pulses for the motor that moves the hands.</li>
 </ul>
 </dd>
 </dl>
 <div class="section" id="simulacion">
-<h2>Simulación<a class="headerlink" href="#simulacion" title="Permalink to this headline">¶</a></h2>
-<p>En la siguiente simulación podemos ver un <strong>biestable T</strong>:</p>
+<h2>Simulation<a class="headerlink" href="#simulacion" title="Permalink to this headline">¶</a></h2>
+<p>In the following simulation we can observe a <strong>bistable T</strong>:</p>
 <div class="video-center">
 <iframe src="/circuits/index.html?startCircuit=digital-bistable-t.txt"></iframe>
 </div></div>
 <div class="section" id="tabla-de-verdad">
-<h2>Tabla de verdad<a class="headerlink" href="#tabla-de-verdad" title="Permalink to this headline">¶</a></h2>
-<p>Los cambios de la salida del biestable T solo se producen cuando
-cambia el estado de la entrada Clock (CLK) de nivel bajo (0 lógico) -&gt;
-a nivel alto (1 lógico), es decir en los <strong>flancos de subida de CLK</strong>.</p>
-<p>La tabla de verdad del <strong>biestable T</strong> es la siguiente:</p>
+<h2>Truth table<a class="headerlink" href="#tabla-de-verdad" title="Permalink to this headline">¶</a></h2>
+<p>Changes in the output of the T flip-flop only occur when the clock input (<strong>CLK</strong>) changes from a low level (logic 0) to a high level (logic 1), that is, on the <strong>rising edges of CLK</strong>.</p>
+<p>The truth table of the <strong>flip-flop T</strong> is the following:</p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
 <col style="width:25%;">
@@ -165,38 +150,27 @@ a nivel alto (1 lógico), es decir en los <strong>flancos de subida de CLK</stro
 </tr>
 </tbody>
 </table>
-<p>Si la entrada <strong>T</strong> está a nivel bajo (0 lógico), al llegar
-un flanco de subida en <strong>CLK</strong> las salidas permanecen en el mismo estado
-en el que estaban antes.</p>
-<p>Si la entrada <strong>T</strong> está a nivel alto (1 lógico), al llegar
-un flanco de subida en <strong>CLK</strong> las salidas cambian su nivel al nivel
-contrario de manera que intercambian el estado alto (1 lógico) y el
-estado bajo (0 lógico) entre sí.</p>
-<p>El comportamiento del biestable T es igual al de un biestable JK en el
-que se han unido las dos entradas <strong>J</strong> y <strong>K</strong> en una sola entrada
-llamada <strong>T</strong>.</p>
+<p>If the <strong>T</strong> input is low (logical 0), when a rising edge arrives at <strong>CLK</strong>, the outputs remain in the same state they were in before.</p>
+<p>If the <strong>T</strong> input is at a high level (logical 1), when a rising edge arrives at <strong>CLK</strong>, the outputs change level, exchanging the high (logical 1) and low (logical 0) states with each other.</p>
+<p>The behavior of the T flip-flop is the same as that of a <a class="reference internal" href="electronic-bistable-jk.html#electronic-bistable-jk"><span class="std std-ref">JK flip-flop</span></a>, in which the two inputs <strong>J</strong> and <strong>K</strong> have been united into a single input called <strong>T</strong>.</p>
 </div>
 <div class="section" id="ejercicios">
-<h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Permalink to this headline">¶</a></h2>
+<h2>Exercises<a class="headerlink" href="#ejercicios" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
-<li><p class="first">¿Qué es un biestable T, por qué se llama así y para qué sirve?</p>
+<li><p class="first">What is a T flip-flop, why is it called that and what is it for?</p>
 </li>
-<li><p class="first">¿Qué parecidos y diferencias tiene el biestable T con
-el biestable JK?</p>
+<li><p class="first">What similarities and differences does the T flip-flop have with respect to the JK flip-flop?</p>
 </li>
-<li><p class="first">¿Cuántas entradas tiene un biestable T y qué función tiene cada una?</p>
+<li><p class="first">How many inputs does a T flip-flop have and what function does each one perform?</p>
 </li>
-<li><p class="first">¿Cuántas salidas tiene un biestable T y qué función tiene cada una?</p>
+<li><p class="first">How many outputs does a T flip-flop have and what function does each one fulfill?</p>
 </li>
-<li><p class="first">Dibuja el circuito de un biestable T con el nombre de sus entradas
-y de sus salidas.</p>
+<li><p class="first">Draw the circuit of a T flip-flop with the names of its inputs and outputs.</p>
 </li>
-<li><p class="first">Dibuja la tabla de verdad de un biestable T y explica brevemente
-su funcionamiento normal.</p>
-<p>¿Tienen alguna semejanza el biestable T con el biestable JK?</p>
+<li><p class="first">Draw the truth table of a T flip-flop and briefly explain its normal operation.</p>
+<p>Does the T flip-flop have any similarity to the JK flip-flop?</p>
 </li>
-<li><p class="first">Simula todos los estados del biestable T con el simulador de esta
-página.</p>
+<li><p class="first">Simulate all the states of the T flip-flop with the simulator on this page.</p>
 </li>
 </ol>
 </div>
@@ -214,7 +188,7 @@ página.</p>
         <a href="electronic-bornas-index.html" class="btn btn-neutral float-right" title="Wiring of electronic components" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="electronic-bistable-jk.html" class="btn btn-neutral" title="15. El biestable JK" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="electronic-bistable-jk.html" class="btn btn-neutral" title="15. The JK flip-flop" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -240,7 +214,7 @@ página.</p>
       unless otherwise specified.
       <br>
       <span class="lastupdated">
-        Last updated on October, 2025.
+        Last updated on November, 2025.
       </span>
 
     </p>
@@ -318,10 +292,10 @@ página.</p>
 <li class="toctree-l3"><a class="reference internal" href="electronic-truth-table.html">10. The truth table</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-gray-code.html">11. Código Gray</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-karnaugh.html">12. Mapa de Karnaugh</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electronic-bistable-rs.html">13. El biestable RS</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electronic-bistable-d.html">14. El biestable D</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electronic-bistable-jk.html">15. El biestable JK</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">16. El biestable T</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bistable-rs.html">13. The RS flip-flop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bistable-d.html">14. The D flip-flop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bistable-jk.html">15. The JK flip-flop</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">16. The flip-flop T</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="electronic-bornas-index.html">Wiring of electronic components</a></li>

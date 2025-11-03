@@ -99,19 +99,21 @@
 <span id="electronic-bistable-d"></span><h1><span class="section-number">14. </span>El biestable D<a class="headerlink" href="#el-biestable-d" title="Enlazar permanentemente con este título">¶</a></h1>
 <p>El <a class="reference external" href="https://es.wikipedia.org/wiki/Biestable#Biestable_D_(Data_o_Delay)" rel="noopener noreferrer" target="_blank">biestable D</a>
 (Data o Delay) es un circuito secuencial básico que, al igual que el
-biestable RS, puede almacenar un bit de información.
-La diferencia entre el biestable D y el biestable RS consiste en la forma
-diferente que tienen de almacenar ese bit con sus entradas.</p>
-<p>El <strong>biestable D</strong> tiene una entrada <strong>D</strong> o dato que puede estar a
-nivel alto (1 lógico) o a nivel bajo (0 lógico). Ese dato se va a grabar
-en el interior del biestable cuando se active otra entrada denominada
-Reloj o <strong>CLK</strong> (Clock), en el flanco de subida o cambio de cero a uno
-lógico.</p>
-<p>El biestable D sirve principalmente para almacenar datos binarios y para
-sincronizar señales.</p>
+biestable RS, permite almacenar un bit de información.
+La diferencia entre el biestable D y el
+<a class="reference internal" href="electronic-bistable-rs.html#electronic-bistable-rs"><span class="std std-ref">biestable RS</span></a>
+radica en la forma diferente que tienen de almacenar ese bit con
+sus entradas.</p>
+<p>El <strong>biestable D</strong> tiene una entrada <strong>D</strong> (dato), que puede estar a
+nivel alto (1 lógico) o a nivel bajo (0 lógico). Este dato se almacena
+en el interior del biestable cuando se activa otra entrada denominada
+<strong>Reloj</strong> o <strong>CLK</strong> (Clock), en el flanco de subida o cambio de nivel bajo
+(0 lógico) a nivel alto (1 lógico).</p>
+<p>El <strong>biestable D</strong> se utiliza principalmente para almacenar datos binarios
+y para sincronizar señales.</p>
 <div class="section" id="simulacion">
 <h2>Simulación<a class="headerlink" href="#simulacion" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>En la siguiente simulación podemos ver un <strong>biestable D</strong>:</p>
+<p>En la siguiente simulación podemos observar un <strong>biestable D</strong>:</p>
 <div class="video-center">
 <iframe src="/circuits/index.html?startCircuit=digital-bistable-d.txt"></iframe>
 </div></div>
@@ -166,37 +168,37 @@ sincronizar señales.</p>
 </tbody>
 </table>
 <dl class="docutils">
-<dt>Flanco de subida</dt><dd>Los cambios de estado de este biestable ocurren solamente cuando la
+<dt>Flanco de subida</dt><dd>Los cambios de estado de este biestable se producen únicamente cuando la
 entrada <strong>CLK</strong> cambia de estar inactiva (0 lógico) a estar activa
 (1 lógico).
-No ocurren cuando se mantiene inactiva ni cuando se mantiene activa,
-solo en el momento del cambio de valor de 0 lógico a 1 lógico.
-Este cambio se denomina <strong>&quot;Flanco de subida&quot;</strong> y lo vamos a representar
+No ocurren mientras la señal se mantiene estable, sino exclusivamente
+en el momento del cambio de valor de 0 lógico a 1 lógico.
+Este cambio se denomina <strong>&quot;flanco de subida&quot;</strong> y se representa
 con el símbolo &quot;_↑¯&quot;.</dd>
 </dl>
-<p>En el momento que en la entrada <strong>CLK</strong> hay un flanco de subida, el valor
-de la entrada <strong>D</strong> se copia en el interior del biestable y ese valor se
-puede ver en la salida <strong>Q</strong>.</p>
-<p>Una vez que la entrada <strong>CLK</strong> está a nivel alto, aunque cambie la entrada
-<strong>D</strong>, el valor del biestable no cambiará, porque no ha habido un flanco
-de subida.</p>
+<p>En el momento que la entrada <strong>CLK</strong> presenta un flanco de subida, el valor
+de la entrada <strong>D</strong> se copia en el interior del biestable y se refleja en
+la salida <strong>Q</strong>.</p>
+<p>Una vez que la entrada <strong>CLK</strong> permanece a nivel alto, aunque cambie la
+entrada <strong>D</strong>, el valor del biestable no variará, ya que no se ha producido
+un nuevo flanco de subida.</p>
 <p>La salida <strong>/Q</strong> siempre tendrá el valor contrario a la salida <strong>Q</strong>.
-Como este biestable no tiene estados prohibidos o indeterminados, esta
-condición se cumple siempre.</p>
+Como este biestable no posee estados prohibidos ni indeterminados, esta
+condición se cumple en todo momento.</p>
 </div>
 <div class="section" id="ejercicios">
 <h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Enlazar permanentemente con este título">¶</a></h2>
 <ol class="arabic simple">
 <li>¿Qué es un biestable D y para qué sirve?</li>
-<li>¿Cuántas entradas tiene un biestable D y qué función tiene cada una?</li>
-<li>¿Cuántas salidas tiene un biestable D y qué función tiene cada una?</li>
+<li>¿Cuántas entradas tiene un biestable D y qué función cumple cada una?</li>
+<li>¿Cuántas salidas tiene un biestable D y qué función cumple cada una?</li>
 <li>Dibuja el circuito de un biestable D con el nombre de sus entradas
-y de sus salidas.</li>
+y salidas.</li>
 <li>Dibuja la tabla de verdad de un biestable D y explica brevemente
 su funcionamiento normal.</li>
 <li>¿Puede tener el biestable D una entrada prohibida o indeterminada?
 ¿Qué consecuencias tiene ese funcionamiento?</li>
-<li>Simula todos los estados del biestable D con el simulador de esta
+<li>Simula todos los estados del <strong>biestable D</strong> con el simulador de esta
 página.</li>
 </ol>
 </div>
@@ -240,7 +242,7 @@ página.</li>
       a menos que se indique lo contrario.
       <br>
       <span class="lastupdated">
-        Actualizado por última vez en octubre, 2025.
+        Actualizado por última vez en noviembre, 2025.
       </span>
 
     </p>

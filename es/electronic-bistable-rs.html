@@ -98,27 +98,27 @@
   <div class="section" id="el-biestable-rs">
 <span id="electronic-bistable-rs"></span><h1><span class="section-number">13. </span>El biestable RS<a class="headerlink" href="#el-biestable-rs" title="Enlazar permanentemente con este título">¶</a></h1>
 <p>Hasta ahora hemos estudiado circuitos <strong>combinacionales</strong>.
-En este tipo de circuitos las salidas de señal solo dependen de las
-entradas de señal, no existe efecto memoria interna.</p>
-<p>A partir de ahora estudiaremos algunos circuitos <strong>secuenciales</strong> que
-se diferencian de los anteriores en que sus salidas dependen de las
-entradas y también dependen del estado interno del circuito, que tiene
+En este tipo de circuitos, las salidas de señal dependen exclusivamente
+de las entradas, sin ningún efecto de memoria interna.</p>
+<p>A partir de ahora, estudiaremos algunos circuitos <strong>secuenciales</strong>, que
+se diferencian de los combinacionales en que sus salidas dependen no solo
+de las entradas, sino también del estado interno del circuito, que tiene
 memoria.</p>
 <p>El primer circuito secuencial que vamos a estudiar es el <strong>biestable RS</strong>.
-Este biestable sirve para almacenar un bit de información (un cero o un
-uno) funcionando como el circuito de memoria más básico que podemos
+Este biestable se utiliza para almacenar un bit de información (un cero o
+un uno), funcionando como el circuito de memoria más básico que podemos
 utilizar. Es el componente fundamental de los circuitos secuenciales, como
-contadores y registros y es la base de la memoria SRAM de las computadoras.</p>
-<p>Tiene dos entradas, la entrada <strong>S</strong> o <strong>SET</strong> que memoriza un
-<strong>uno</strong> (estado alto) en el circuito y la entrada <strong>R</strong> o <strong>RESET</strong>
-que memoriza un <strong>cero</strong> (estado bajo) en el circuito.</p>
-<p>El biestable RS tiene dos salidas, la salida <strong>Q</strong> refleja el
-estado interno del biestable y la salida negada <strong>/Q</strong> que valdrá lo
-contrario que la primera salida.</p>
+contadores y registros y es la base de la memoria SRAM en las computadoras.</p>
+<p>El biestable RS tiene dos entradas: la entrada <strong>S</strong> o <strong>SET</strong> que memoriza
+un <strong>uno</strong> (estado alto), y la entrada <strong>R</strong> o <strong>RESET</strong> que memoriza un
+<strong>cero</strong> (estado bajo).</p>
+<p>El biestable RS tiene dos salidas: la salida <strong>Q</strong> refleja el
+estado interno del biestable y la salida negada <strong>/Q</strong> que tendrá el valor
+contrario de la salida <strong>Q</strong>.</p>
 <div class="section" id="simulacion">
 <h2>Simulación<a class="headerlink" href="#simulacion" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>En la siguiente simulación podemos ver un <strong>biestable RS</strong> fabricado con
-dos puertas NOR:</p>
+<p>En la siguiente simulación, podemos observar un <strong>biestable RS</strong> fabricado
+con dos puertas NOR:</p>
 <div class="video-center">
 <iframe src="/circuits/index.html?startCircuit=digital-bistable-rs-nor.txt"></iframe>
 </div></div>
@@ -171,16 +171,16 @@ llegue una entrada contraria, <strong>RESET</strong>.</p>
 tendrá un valor bajo (0 lógico). Una vez que se desactiva la entrada
 <strong>RESET</strong> el biestable sigue manteniendo su estado inactivo hasta que le
 llegue una entrada contraria, <strong>SET</strong>.</p>
-<p>El último estado, cuando se activan a la vez las entradas <strong>SET</strong> y
-<strong>RESET</strong>, se denomina estado prohibido o estado indeterminado porque
-fuerza a ambas salidas a nivel bajo (cero lógico).
+<p>El último estado, cuando se activan simultáneamente las entradas <strong>SET</strong> y
+<strong>RESET</strong>, se denomina <strong>estado prohibido</strong> o <strong>estado indeterminado</strong>
+porque fuerza a ambas salidas a nivel bajo (cero lógico).
 En este estado, las salidas del biestable se comportan de manera
 ilógica, ya que las señales de <strong>SET</strong> y de <strong>RESET</strong> se oponen
 directamente entre sí.</p>
 </div>
 <div class="section" id="biestable-rs-nand">
 <h2>Biestable RS NAND<a class="headerlink" href="#biestable-rs-nand" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>En la siguiente simulación podemos ver un <strong>biestable RS</strong> fabricado con
+<p>En la siguiente simulación, podemos ver un <strong>biestable RS</strong> fabricado con
 dos puertas NAND:</p>
 <div class="video-center">
 <iframe src="/circuits/index.html?startCircuit=digital-bistable-rs-nand.txt"></iframe>
@@ -195,9 +195,9 @@ uno es igual a entrada en reposo).</p>
 </li>
 <li><p class="first">¿Qué tipo de circuito digital es un biestable RS y para qué sirve?</p>
 </li>
-<li><p class="first">¿Cuántas entradas tiene un biestable RS y qué función tiene cada una?</p>
+<li><p class="first">¿Cuántas entradas tiene un biestable RS y qué función cumple cada una?</p>
 </li>
-<li><p class="first">¿Cuántas salidas tiene un biestable RS y qué función tiene cada una?</p>
+<li><p class="first">¿Cuántas salidas tiene un biestable RS y qué función cumple cada una?</p>
 </li>
 <li><p class="first">Dibuja el circuito de un biestable RS con puertas NOR.</p>
 <p>La entrada SET debe valer 1 y la entrada RESET debe valer cero.
@@ -256,7 +256,7 @@ biestable RS fabricado con puertas NAND.</p>
       a menos que se indique lo contrario.
       <br>
       <span class="lastupdated">
-        Actualizado por última vez en octubre, 2025.
+        Actualizado por última vez en noviembre, 2025.
       </span>
 
     </p>

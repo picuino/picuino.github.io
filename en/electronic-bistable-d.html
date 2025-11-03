@@ -5,8 +5,8 @@
   <meta name="keywords" content="Technology, Secondary Education, Drawing, Structures, Mechanisms, Materials, Electricity, Electronics, Computer Science, Programming, Control, Arduino, Communications, Workshop">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Libre educational resources for Technology in Secondary Education. Electronics - Digital electronics - 14. El biestable D">
-  <title>14. El biestable D - Digital electronics - Picuino</title>
+  <meta name="description" content="Libre educational resources for Technology in Secondary Education. Electronics - Digital electronics - 14. The D flip-flop">
+  <title>14. The D flip-flop - Digital electronics - Picuino</title>
 
   
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
@@ -27,8 +27,8 @@
   <link rel="glossary" title="Glossary" href="genindex.html">
   <link rel="index" title="Index" href="content.html">
   <link rel="search" title="Search" href="search.html">
-  <link rel="next" title="15. El biestable JK" href="electronic-bistable-jk.html">
-  <link rel="prev" title="13. El biestable RS" href="electronic-bistable-rs.html">
+  <link rel="next" title="15. The JK flip-flop" href="electronic-bistable-jk.html">
+  <link rel="prev" title="13. The RS flip-flop" href="electronic-bistable-rs.html">
 
 </head>
 
@@ -72,7 +72,7 @@
         
           <li><a href="electronic-digital-index.html">Digital electronics</a>/</li>
         
-      <li><span class="section-number">14. </span>El biestable D</li>
+      <li><span class="section-number">14. </span>The D flip-flop</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -102,28 +102,19 @@
            <div itemprop="articleBody">
             
   <div class="section" id="el-biestable-d">
-<span id="electronic-bistable-d"></span><h1><span class="section-number">14. </span>El biestable D<a class="headerlink" href="#el-biestable-d" title="Permalink to this headline">¶</a></h1>
-<p>El <a class="reference external" href="https://es.wikipedia.org/wiki/Biestable#Biestable_D_(Data_o_Delay)" rel="noopener noreferrer" target="_blank">biestable D</a>
-(Data o Delay) es un circuito secuencial básico que, al igual que el
-biestable RS, puede almacenar un bit de información.
-La diferencia entre el biestable D y el biestable RS consiste en la forma
-diferente que tienen de almacenar ese bit con sus entradas.</p>
-<p>El <strong>biestable D</strong> tiene una entrada <strong>D</strong> o dato que puede estar a
-nivel alto (1 lógico) o a nivel bajo (0 lógico). Ese dato se va a grabar
-en el interior del biestable cuando se active otra entrada denominada
-Reloj o <strong>CLK</strong> (Clock), en el flanco de subida o cambio de cero a uno
-lógico.</p>
-<p>El biestable D sirve principalmente para almacenar datos binarios y para
-sincronizar señales.</p>
+<span id="electronic-bistable-d"></span><h1><span class="section-number">14. </span>The D flip-flop<a class="headerlink" href="#el-biestable-d" title="Permalink to this headline">¶</a></h1>
+<p>The <a class="reference external" href="https://es.wikipedia.org/wiki/Biestable#Biestable_D_(Data_o_Delay)" rel="noopener noreferrer" target="_blank">D flip-flop</a> (Data or Delay) is a basic sequential circuit that, like the RS flip-flop, allows one bit of information to be stored. The difference between the D flip-flop and the <a class="reference internal" href="electronic-bistable-rs.html#electronic-bistable-rs"><span class="std std-ref">RS flip-flop</span></a> lies in the different way they store that bit with their inputs.</p>
+<p>The <strong>D</strong> flip-flop has an input <strong>D</strong> (data), which can be high (logic 1) or low (logic 0). This data is stored inside the flip-flop when another input called <strong>Clock</strong> or <strong>CLK</strong> (Clock) is activated, on the rising edge or change from low level (logical 0) to high level (logical 1).</p>
+<p>The <strong>D flip-flop</strong> is mainly used to store binary data and to synchronize signals.</p>
 <div class="section" id="simulacion">
-<h2>Simulación<a class="headerlink" href="#simulacion" title="Permalink to this headline">¶</a></h2>
-<p>En la siguiente simulación podemos ver un <strong>biestable D</strong>:</p>
+<h2>Simulation<a class="headerlink" href="#simulacion" title="Permalink to this headline">¶</a></h2>
+<p>In the following simulation we can observe a <strong>D flip flop</strong>:</p>
 <div class="video-center">
 <iframe src="/circuits/index.html?startCircuit=digital-bistable-d.txt"></iframe>
 </div></div>
 <div class="section" id="tabla-de-verdad">
-<h2>Tabla de verdad<a class="headerlink" href="#tabla-de-verdad" title="Permalink to this headline">¶</a></h2>
-<p>La tabla de verdad del <strong>biestable D</strong> es la siguiente:</p>
+<h2>Truth table<a class="headerlink" href="#tabla-de-verdad" title="Permalink to this headline">¶</a></h2>
+<p>The truth table of the <strong>D flip flop</strong> is the following:</p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
 <col style="width:25%;">
@@ -172,38 +163,22 @@ sincronizar señales.</p>
 </tbody>
 </table>
 <dl class="docutils">
-<dt>Flanco de subida</dt><dd>Los cambios de estado de este biestable ocurren solamente cuando la
-entrada <strong>CLK</strong> cambia de estar inactiva (0 lógico) a estar activa
-(1 lógico).
-No ocurren cuando se mantiene inactiva ni cuando se mantiene activa,
-solo en el momento del cambio de valor de 0 lógico a 1 lógico.
-Este cambio se denomina <strong>&quot;Flanco de subida&quot;</strong> y lo vamos a representar
-con el símbolo &quot;_↑¯&quot;.</dd>
+<dt>Rising edge</dt><dd>State changes of this flip-flop occur only when the <strong>CLK</strong> input changes from inactive (logic 0) to active (logic 1). They do not occur while the signal remains stable, but exclusively at the moment of the value change from logic 0 to logic 1. This change is called <strong>&quot;rising edge&quot;</strong> and is represented by the symbol &quot;_↑¯&quot;.</dd>
 </dl>
-<p>En el momento que en la entrada <strong>CLK</strong> hay un flanco de subida, el valor
-de la entrada <strong>D</strong> se copia en el interior del biestable y ese valor se
-puede ver en la salida <strong>Q</strong>.</p>
-<p>Una vez que la entrada <strong>CLK</strong> está a nivel alto, aunque cambie la entrada
-<strong>D</strong>, el valor del biestable no cambiará, porque no ha habido un flanco
-de subida.</p>
-<p>La salida <strong>/Q</strong> siempre tendrá el valor contrario a la salida <strong>Q</strong>.
-Como este biestable no tiene estados prohibidos o indeterminados, esta
-condición se cumple siempre.</p>
+<p>When input <strong>CLK</strong> presents a rising edge, the value of input <strong>D</strong> is copied inside the flip-flop and reflected at output <strong>Q</strong>.</p>
+<p>Once the <strong>CLK</strong> input remains high, even if the <strong>D</strong> input changes, the value of the flip-flop will not change, since a new rising edge has not occurred.</p>
+<p>The output <strong>/Q</strong> will always have the opposite value to the output <strong>Q</strong>. Since this flip-flop does not have prohibited or indeterminate states, this condition is met at all times.</p>
 </div>
 <div class="section" id="ejercicios">
-<h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Permalink to this headline">¶</a></h2>
+<h2>Exercises<a class="headerlink" href="#ejercicios" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li>¿Qué es un biestable D y para qué sirve?</li>
-<li>¿Cuántas entradas tiene un biestable D y qué función tiene cada una?</li>
-<li>¿Cuántas salidas tiene un biestable D y qué función tiene cada una?</li>
-<li>Dibuja el circuito de un biestable D con el nombre de sus entradas
-y de sus salidas.</li>
-<li>Dibuja la tabla de verdad de un biestable D y explica brevemente
-su funcionamiento normal.</li>
-<li>¿Puede tener el biestable D una entrada prohibida o indeterminada?
-¿Qué consecuencias tiene ese funcionamiento?</li>
-<li>Simula todos los estados del biestable D con el simulador de esta
-página.</li>
+<li>What is a D flip-flop and what is it for?</li>
+<li>How many inputs does a D flip-flop have and what function does each one perform?</li>
+<li>How many outputs does a D flip-flop have and what function does each one fulfill?</li>
+<li>Draw the circuit of a D flip-flop with the name of its inputs and outputs.</li>
+<li>Draw the truth table of a D flip-flop and briefly explain its normal operation.</li>
+<li>Can the D flip-flop have a forbidden or undetermined input? What consequences does this operation have?</li>
+<li>Simulate all states of the <strong>D flip-flop</strong> with the simulator on this page.</li>
 </ol>
 </div>
 </div>
@@ -217,10 +192,10 @@ página.</li>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="electronic-bistable-jk.html" class="btn btn-neutral float-right" title="15. El biestable JK" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="electronic-bistable-jk.html" class="btn btn-neutral float-right" title="15. The JK flip-flop" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="electronic-bistable-rs.html" class="btn btn-neutral" title="13. El biestable RS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="electronic-bistable-rs.html" class="btn btn-neutral" title="13. The RS flip-flop" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -246,7 +221,7 @@ página.</li>
       unless otherwise specified.
       <br>
       <span class="lastupdated">
-        Last updated on October, 2025.
+        Last updated on November, 2025.
       </span>
 
     </p>
@@ -324,10 +299,10 @@ página.</li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-truth-table.html">10. The truth table</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-gray-code.html">11. Código Gray</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-karnaugh.html">12. Mapa de Karnaugh</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electronic-bistable-rs.html">13. El biestable RS</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">14. El biestable D</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electronic-bistable-jk.html">15. El biestable JK</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electronic-bistable-t.html">16. El biestable T</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bistable-rs.html">13. The RS flip-flop</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">14. The D flip-flop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bistable-jk.html">15. The JK flip-flop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bistable-t.html">16. The flip-flop T</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="electronic-bornas-index.html">Wiring of electronic components</a></li>

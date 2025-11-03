@@ -5,8 +5,8 @@
   <meta name="keywords" content="Technology, Secondary Education, Drawing, Structures, Mechanisms, Materials, Electricity, Electronics, Computer Science, Programming, Control, Arduino, Communications, Workshop">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Libre educational resources for Technology in Secondary Education. Electronics - Digital electronics - 15. El biestable JK">
-  <title>15. El biestable JK - Digital electronics - Picuino</title>
+  <meta name="description" content="Libre educational resources for Technology in Secondary Education. Electronics - Digital electronics - 15. The JK flip-flop">
+  <title>15. The JK flip-flop - Digital electronics - Picuino</title>
 
   
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
@@ -27,8 +27,8 @@
   <link rel="glossary" title="Glossary" href="genindex.html">
   <link rel="index" title="Index" href="content.html">
   <link rel="search" title="Search" href="search.html">
-  <link rel="next" title="16. El biestable T" href="electronic-bistable-t.html">
-  <link rel="prev" title="14. El biestable D" href="electronic-bistable-d.html">
+  <link rel="next" title="16. The flip-flop T" href="electronic-bistable-t.html">
+  <link rel="prev" title="14. The D flip-flop" href="electronic-bistable-d.html">
 
 </head>
 
@@ -72,7 +72,7 @@
         
           <li><a href="electronic-digital-index.html">Digital electronics</a>/</li>
         
-      <li><span class="section-number">15. </span>El biestable JK</li>
+      <li><span class="section-number">15. </span>The JK flip-flop</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -102,28 +102,20 @@
            <div itemprop="articleBody">
             
   <div class="section" id="el-biestable-jk">
-<span id="electronic-bistable-jk"></span><h1><span class="section-number">15. </span>El biestable JK<a class="headerlink" href="#el-biestable-jk" title="Permalink to this headline">¶</a></h1>
-<p>El <a class="reference external" href="https://es.wikipedia.org/wiki/Biestable#Biestable_JK" rel="noopener noreferrer" target="_blank">biestable JK</a> es un circuito
-secuencial que puede almacenar un bit de información.</p>
-<p>El <strong>biestable JK</strong> es uno de los más usados. Su funcionamiento es idéntico
-al biestable RS, excepto en el caso de que se activen sus dos entradas
-<strong>J</strong> y <strong>K</strong> a nivel alto (1 lógico). En ese caso las salidas cambian al
-estado contrario al que tenían anteriormente (función toggle) y esto evita
-la indeterminación no deseada del biestable RS.</p>
-<p>Este biestable es la base de numerosos circuitos secuenciales tales como
-contadores, registros, divisores de frecuencia, memorias de estado, etc.</p>
+<span id="electronic-bistable-jk"></span><h1><span class="section-number">15. </span>The JK flip-flop<a class="headerlink" href="#el-biestable-jk" title="Permalink to this headline">¶</a></h1>
+<p>The <a class="reference external" href="https://es.wikipedia.org/wiki/Biestable#Biestable_JK" rel="noopener noreferrer" target="_blank">JK flip-flop</a> is a sequential circuit that allows storing a bit of information.</p>
+<p>The <strong>JK flip-flop</strong> is one of the most used flip-flops due to its versatility. Its operation is identical to the <a class="reference internal" href="electronic-bistable-rs.html#electronic-bistable-rs"><span class="std std-ref">bistable RS</span></a>, except when both inputs <strong>J</strong> and <strong>K</strong> are activated simultaneously at a high level (logical 1). In that case, the outputs change to the opposite state to the one they had previously (<strong>toggle</strong> function), thus avoiding the unwanted indeterminacy of the RS flip-flop.</p>
+<p>This flip-flop forms the basis of numerous sequential circuits, such as counters, registers, frequency dividers or state memories.</p>
 <div class="section" id="simulacion">
-<h2>Simulación<a class="headerlink" href="#simulacion" title="Permalink to this headline">¶</a></h2>
-<p>En la siguiente simulación podemos ver un <strong>biestable JK</strong>:</p>
+<h2>Simulation<a class="headerlink" href="#simulacion" title="Permalink to this headline">¶</a></h2>
+<p>In the following simulation we can see a <strong>JK flip-flop</strong>:</p>
 <div class="video-center">
 <iframe src="/circuits/index.html?startCircuit=digital-bistable-jk.txt"></iframe>
 </div></div>
 <div class="section" id="tabla-de-verdad">
-<h2>Tabla de verdad<a class="headerlink" href="#tabla-de-verdad" title="Permalink to this headline">¶</a></h2>
-<p>Los cambios de la salida del biestable JK solo se producen cuando
-cambia el estado de la entrada Clock (CLK) de nivel bajo (0 lógico) -&gt;
-a nivel alto (1 lógico), es decir en los <strong>flancos de subida de CLK</strong>.</p>
-<p>La tabla de verdad del <strong>biestable JK</strong> es la siguiente:</p>
+<h2>Truth table<a class="headerlink" href="#tabla-de-verdad" title="Permalink to this headline">¶</a></h2>
+<p>Changes in the output of the <strong>JK flip-flop</strong> only occur when the state of the Clock (CLK) input changes from a low level (logic 0) to a high level (logic 1); that is, during the <strong>rising edges of CLK</strong>.</p>
+<p>The truth table of the <strong>JK flip-flop</strong> is the following:</p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
 <col style="width:20%;">
@@ -167,43 +159,29 @@ a nivel alto (1 lógico), es decir en los <strong>flancos de subida de CLK</stro
 </tr>
 </tbody>
 </table>
-<p>Si las dos entradas <strong>J</strong> y <strong>K</strong> están a nivel bajo (0 lógico), al llegar
-un flanco de subida en <strong>CLK</strong> las salidas permanecen en el mismo estado
-en el que estaban antes.</p>
-<p>Si la entrada <strong>J</strong> está a nivel alto (1 lógico), al llegar un flanco de
-subida en <strong>CLK</strong> la salida <strong>Q</strong> cambia a nivel alto (1 lógico) y <strong>/Q</strong>
-cambiará a nivel bajo (0 lógico).
-La entrada <strong>J</strong> es semejante a la entrada <strong>SET</strong> de un biestable RS.</p>
-<p>Si la entrada <strong>K</strong> está a nivel alto (1 lógico), al llegar un flanco de
-subida en <strong>CLK</strong> la salida <strong>Q</strong> cambia a nivel bajo (0 lógico) y <strong>/Q</strong>
-cambiará a nivel alto (1 lógico).
-La entrada <strong>K</strong> es semejante a la entrada <strong>RESET</strong> de un biestable RS.</p>
-<p>Si las dos entradas <strong>J</strong> y <strong>K</strong> están a nivel alto (1 lógico), al llegar
-un flanco de subida en <strong>CLK</strong> las salidas <strong>Q</strong> y <strong>/Q</strong> cambian al
-estado contrario que tenían antes.
-Esto evita la indeterminación que tenía el biestable RS y servirá para
-fabricar otros circuitos útiles, como los divisores de frecuencia.</p>
+<p>If the two inputs <strong>J</strong> and <strong>K</strong> are at a low level (logical 0), when a rising edge arrives at <strong>CLK</strong> the outputs remain in the same state they had previously.</p>
+<p>If input <strong>J</strong> is high (logical 1), when a rising edge occurs at <strong>CLK</strong>, output <strong>Q</strong> goes high (logical 1) and <strong>/Q</strong> goes low (logical 0). The <strong>J</strong> input performs a similar function to the <strong>SET</strong> input of an RS flip-flop.</p>
+<p>If input <strong>K</strong> is high (logical 1), when a rising edge occurs at <strong>CLK</strong>, output <strong>Q</strong> goes low (logical 0) and <strong>/Q</strong> goes high (logical 1). The <strong>K</strong> input performs a similar function to the <strong>RESET</strong> input of an RS flip-flop.</p>
+<p>If both inputs <strong>J</strong> and <strong>K</strong> are at a high level (logical 1), when a rising edge occurs in <strong>CLK</strong>, the outputs <strong>Q</strong> and <strong>/Q</strong> change to the opposite state from what they had before. This behavior eliminates the indeterminacy present in the RS flip-flop and allows other useful circuits to be built, such as frequency dividers and counters.</p>
 </div>
 <div class="section" id="ejercicios">
-<h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Permalink to this headline">¶</a></h2>
+<h2>Exercises<a class="headerlink" href="#ejercicios" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
-<li><p class="first">¿Qué es un biestable JK y para qué sirve?</p>
+<li><p class="first">What is a JK flip-flop and what is it for?</p>
 </li>
-<li><p class="first">¿Cuántas entradas tiene un biestable JK y qué función tiene cada una?</p>
-<p>¿Tienen alguna semejanza con el biestable RS?</p>
+<li><p class="first">How many inputs does a JK flip-flop have and what function does each one perform?</p>
+<p>Do they have any similarity to those of the RS flip-flop?</p>
 </li>
-<li><p class="first">¿Cuántas salidas tiene un biestable JK y qué función tiene cada una?</p>
+<li><p class="first">How many outputs does a JK flip-flop have and what function does each one fulfill?</p>
 </li>
-<li><p class="first">Dibuja el circuito de un biestable JK con el nombre de sus entradas
-y de sus salidas.</p>
+<li><p class="first">Draw the circuit of a JK flip-flop with the names of its inputs and outputs.</p>
 </li>
-<li><p class="first">Dibuja la tabla de verdad de un biestable JK y explica brevemente
-su funcionamiento normal.</p>
+<li><p class="first">Draw the truth table of a JK flip-flop and briefly explain its normal operation.</p>
 </li>
-<li><p class="first">¿Puede tener el biestable JK una entrada prohibida o indeterminada?</p>
+<li><p class="first">Can the JK flip-flop have a forbidden or undetermined input?</p>
+<p>What can be built with the JK flip-flop thanks to that operation?</p>
 </li>
-<li><p class="first">Simula todos los estados del biestable JK con el simulador de esta
-página.</p>
+<li><p class="first">Simulate all states of the JK flip-flop with the simulator on this page.</p>
 </li>
 </ol>
 </div>
@@ -218,10 +196,10 @@ página.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="electronic-bistable-t.html" class="btn btn-neutral float-right" title="16. El biestable T" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="electronic-bistable-t.html" class="btn btn-neutral float-right" title="16. The flip-flop T" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="electronic-bistable-d.html" class="btn btn-neutral" title="14. El biestable D" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="electronic-bistable-d.html" class="btn btn-neutral" title="14. The D flip-flop" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -247,7 +225,7 @@ página.</p>
       unless otherwise specified.
       <br>
       <span class="lastupdated">
-        Last updated on October, 2025.
+        Last updated on November, 2025.
       </span>
 
     </p>
@@ -325,10 +303,10 @@ página.</p>
 <li class="toctree-l3"><a class="reference internal" href="electronic-truth-table.html">10. The truth table</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-gray-code.html">11. Código Gray</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electronic-karnaugh.html">12. Mapa de Karnaugh</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electronic-bistable-rs.html">13. El biestable RS</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electronic-bistable-d.html">14. El biestable D</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">15. El biestable JK</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electronic-bistable-t.html">16. El biestable T</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bistable-rs.html">13. The RS flip-flop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bistable-d.html">14. The D flip-flop</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">15. The JK flip-flop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electronic-bistable-t.html">16. The flip-flop T</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="electronic-bornas-index.html">Wiring of electronic components</a></li>

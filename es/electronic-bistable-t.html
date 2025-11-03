@@ -97,40 +97,39 @@
             
   <div class="section" id="el-biestable-t">
 <span id="electronic-bistable-t"></span><h1><span class="section-number">16. </span>El biestable T<a class="headerlink" href="#el-biestable-t" title="Enlazar permanentemente con este título">¶</a></h1>
-<p>El <a class="reference external" href="https://es.wikipedia.org/wiki/Biestable#Biestable_T_(Toggle)" rel="noopener noreferrer" target="_blank">biestable T (Toggle)</a>
-es un circuito secuencial que puede almacenar un bit de información.</p>
-<p>El <strong>biestable T</strong> tiene dos entradas, la entrada <strong>T</strong> o toggle, que sirve
-como entrada de datos y la entrada de reloj (Clock o <strong>CLK</strong>) que sirve
-para validar el dato de entrada.
-Este biestable cambia de estado cada vez que recibe un pulso de reloj
-mientras su entrada <strong>T</strong> esté activa (1 lógico).</p>
+<p>El <a class="reference external" href="https://es.wikipedia.org/wiki/Biestable#Biestable_T_(Toggle)" rel="noopener noreferrer" target="_blank">biestable T (toggle)</a>
+es un circuito secuencial que permite almacenar un bit de información.</p>
+<p>El <strong>biestable T</strong> tiene dos entradas, la entrada <strong>T</strong> o <strong>toggle</strong>,
+que sirve como entrada de datos y la entrada de reloj (<strong>Clock</strong> o <strong>CLK</strong>)
+que valida el dato de entrada.
+Este biestable cambia de estado cada vez que recibe un pulso de reloj,
+siempre que su entrada <strong>T</strong> esté activa (1 lógico).</p>
 <p>El biestable T tiene dos salidas como el resto de biestables. Las salidas
-complementarias <strong>Q</strong> y <strong>/Q</strong> que siempre valen una lo contrario de la
-otra.</p>
+complementarias <strong>Q</strong> y <strong>/Q</strong> que siempre presentan valores opuestos.</p>
 <dl class="docutils">
 <dt>El <strong>biestable T</strong> es muy útil para construir:</dt><dd><ul class="simple">
-<li><strong>Contadores binarios</strong>: son circuitos que cuentan, en código binario,
-los pulsos de entrada que les llegan. Cada biestable que se añade en
-serie es un bit que se añade a la cuenta binaria.</li>
-<li><strong>Divisores de frecuencia</strong>: son circuitos que dividen la frecuencia
-de su entrada en frecuencias menores.
-Esto es útil por ejemplo en los relojes digitales que dividen la
-frecuencia de un cristal de cuarzo para dar pulsos de un segundo
-al motor de las manillas.</li>
+<li><strong>Contadores binarios</strong>: circuitos que cuentan, en código binario,
+los pulsos de entrada que reciben. Cada biestable añadido en serie
+representa un bit adicional en la cuenta binaria.</li>
+<li><strong>Divisores de frecuencia</strong>: circuitos que dividen la frecuencia
+de entrada en frecuencias menores.
+Esto es útil, por ejemplo, en los relojes digitales, que dividen la
+frecuencia de un cristal de cuarzo para generar pulsos de un segundo
+destinados al motor que mueve las manecillas.</li>
 </ul>
 </dd>
 </dl>
 <div class="section" id="simulacion">
 <h2>Simulación<a class="headerlink" href="#simulacion" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>En la siguiente simulación podemos ver un <strong>biestable T</strong>:</p>
+<p>En la siguiente simulación podemos observar un <strong>biestable T</strong>:</p>
 <div class="video-center">
 <iframe src="/circuits/index.html?startCircuit=digital-bistable-t.txt"></iframe>
 </div></div>
 <div class="section" id="tabla-de-verdad">
 <h2>Tabla de verdad<a class="headerlink" href="#tabla-de-verdad" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Los cambios de la salida del biestable T solo se producen cuando
-cambia el estado de la entrada Clock (CLK) de nivel bajo (0 lógico) -&gt;
-a nivel alto (1 lógico), es decir en los <strong>flancos de subida de CLK</strong>.</p>
+la entrada de reloj (<strong>CLK</strong>) cambia de nivel bajo (0 lógico) a nivel
+alto (1 lógico), es decir, en los <strong>flancos de subida de CLK</strong>.</p>
 <p>La tabla de verdad del <strong>biestable T</strong> es la siguiente:</p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -160,14 +159,14 @@ a nivel alto (1 lógico), es decir en los <strong>flancos de subida de CLK</stro
 </tbody>
 </table>
 <p>Si la entrada <strong>T</strong> está a nivel bajo (0 lógico), al llegar
-un flanco de subida en <strong>CLK</strong> las salidas permanecen en el mismo estado
+un flanco de subida en <strong>CLK</strong>, las salidas permanecen en el mismo estado
 en el que estaban antes.</p>
 <p>Si la entrada <strong>T</strong> está a nivel alto (1 lógico), al llegar
-un flanco de subida en <strong>CLK</strong> las salidas cambian su nivel al nivel
-contrario de manera que intercambian el estado alto (1 lógico) y el
-estado bajo (0 lógico) entre sí.</p>
-<p>El comportamiento del biestable T es igual al de un biestable JK en el
-que se han unido las dos entradas <strong>J</strong> y <strong>K</strong> en una sola entrada
+un flanco de subida en <strong>CLK</strong>, las salidas cambian de nivel,
+intercambiando entre sí los estados alto (1 lógico) y bajo (0 lógico).</p>
+<p>El comportamiento del biestable T es igual al de un
+<a class="reference internal" href="electronic-bistable-jk.html#electronic-bistable-jk"><span class="std std-ref">biestable JK</span></a>,
+en el que se han unido las dos entradas <strong>J</strong> y <strong>K</strong> en una sola entrada
 llamada <strong>T</strong>.</p>
 </div>
 <div class="section" id="ejercicios">
@@ -175,19 +174,19 @@ llamada <strong>T</strong>.</p>
 <ol class="arabic">
 <li><p class="first">¿Qué es un biestable T, por qué se llama así y para qué sirve?</p>
 </li>
-<li><p class="first">¿Qué parecidos y diferencias tiene el biestable T con
-el biestable JK?</p>
+<li><p class="first">¿Qué semejanzas y diferencias presenta el biestable T respecto al
+biestable JK?</p>
 </li>
-<li><p class="first">¿Cuántas entradas tiene un biestable T y qué función tiene cada una?</p>
+<li><p class="first">¿Cuántas entradas tiene un biestable T y qué función cumple cada una?</p>
 </li>
-<li><p class="first">¿Cuántas salidas tiene un biestable T y qué función tiene cada una?</p>
+<li><p class="first">¿Cuántas salidas tiene un biestable T y qué función cumple cada una?</p>
 </li>
 <li><p class="first">Dibuja el circuito de un biestable T con el nombre de sus entradas
 y de sus salidas.</p>
 </li>
 <li><p class="first">Dibuja la tabla de verdad de un biestable T y explica brevemente
 su funcionamiento normal.</p>
-<p>¿Tienen alguna semejanza el biestable T con el biestable JK?</p>
+<p>¿Tienen el biestable T alguna semejanza con el biestable JK?</p>
 </li>
 <li><p class="first">Simula todos los estados del biestable T con el simulador de esta
 página.</p>
@@ -234,7 +233,7 @@ página.</p>
       a menos que se indique lo contrario.
       <br>
       <span class="lastupdated">
-        Actualizado por última vez en octubre, 2025.
+        Actualizado por última vez en noviembre, 2025.
       </span>
 
     </p>

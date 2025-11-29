@@ -122,35 +122,22 @@ emisor.</p>
 <iframe src="/circuits/index.html?startCircuit=bjt-common-c.txt"></iframe>
 </div><p>La función de cada uno de los componentes es la siguiente:</p>
 <ul>
-<li><p class="first">El <strong>generador de señal alterna</strong> genera una señal de entrada
+<li><p class="first">El <strong>generador de señal alterna</strong> genera una señal de entrada (V_in)
 de 2 voltios de pico.</p>
 </li>
-<li><p class="first">El <strong>condensador C1</strong> tiene como función llevar la señal alterna desde
-el generador hasta la base del transistor, eliminando la señal de
-corriente continua.</p>
-<p>El efecto práctico consiste en que la tensión en el generador varía
-en torno a cero voltios y la tensión en la base del transistor varía
-en torno a los 3 voltios.</p>
-</li>
-<li><p class="first">La <strong>resistencia R2</strong> añade a la base una pequeña corriente
-continua para que el transistor pueda funcionar.
-Esta corriente positiva que se suma en la base se denomina
-<strong>corriente de polarización</strong>.</p>
-<p>Hay que tener en cuenta que el transistor solo puede amplificar
-corrientes positivas, por lo que es necesario sumar una pequeña
-corriente positiva a la corriente alterna de entrada
-(positiva y negativa) para que el transistor funcione correctamente.</p>
+<li><p class="first">Un generador de tensión continua añade 4 Voltios a la tensión alterna.
+Hay que tener en cuenta que el transistor solo puede amplificar
+corrientes positivas, por lo que es necesario sumar una tensión
+positiva alterna para evitar las tensiones negativas.</p>
 </li>
 <li><p class="first">El <strong>transistor NPN</strong> recibe una señal de tensión por la base con poca
-corriente y mantiene en el emisor esa misma tensión, menos la tensión
-de unos 0.65 voltios que siempre hay entre base y emisor.</p>
+corriente y mantiene en el emisor esa misma tensión, menos una pequeña
+tensión de 0,65 voltios que siempre hay entre base y emisor.</p>
 <p>La corriente que llega por la base se amplifica para que circule,
 multiplicada, por el colector y por el emisor.</p>
 </li>
-<li><p class="first">La <strong>resistencia R3</strong> recibe la corriente del emisor y la convierte
+<li><p class="first">La <strong>resistencia R2</strong> recibe la corriente del emisor y la convierte
 en tensión de salida.</p>
-<p>Por esta resistencia circulará unas 100 veces la corriente que circula
-por la base del transistor.</p>
 </li>
 </ul>
 <div class="section" id="ejercicios">
@@ -170,20 +157,15 @@ configuración de colector común?</p>
 salida.
 ¿Qué diferencia puedes observar entre las gráficas?</p>
 </li>
-<li><p class="first">Modifica el valor de la resistencia R2 para que valga 20kOhm.
+<li><p class="first">Modifica el valor de la resistencia R1 para que valga 20kOhm.
 Dibuja la gráfica de la tensión de salida.</p>
-<p>¿Qué le ocurre a la tensión de salida cuando la resistencia R2
+<p>¿Qué le ocurre a la tensión de salida cuando la resistencia R1
 aumenta?</p>
 </li>
-<li><p class="first">Modifica el valor de la resistencia R2 para que valga 4kOhm.
-Dibuja la gráfica de la tensión de salida.</p>
-<p>¿Qué le ocurre a la tensión de salida cuando la resistencia R2
-disminuye?</p>
-</li>
-<li><p class="first">Cambia en el simulador el valor de la resistencia de salida R3
+<li><p class="first">Aumenta en el simulador el valor de la resistencia de salida R2
 a 1000 Ohmios.</p>
-<p>Cambia el valor de la resistencia R2 de manera que la tensión de
-salida varíe entre 1 voltio y 5 voltios.</p>
+<p>¿Qué le ocurre a la tensión de salida?
+¿Qué le ocurre a la corriente de salida?</p>
 </li>
 </ol>
 </div>

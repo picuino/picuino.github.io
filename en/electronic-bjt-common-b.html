@@ -108,7 +108,7 @@
 <a class="reference internal image-reference" href="_images/electronic-analog-common-b.png"><img alt="Esquema simplificado de un transistor NPN en base común." src="_images/electronic-analog-common-b.png" style="width: 200px;"></a>
 <p class="caption"><span class="caption-text">Simplified diagram of a common base NPN transistor.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
-<p>This configuration allows the input voltage to be amplified while keeping the current the same. This operation is useful in signal input stages from a component that generates low voltage, but with relatively high currents.</p>
+<p>This configuration allows the input voltage to be amplified while keeping the current the same. This operation is useful in signal input stages from a component that generates little voltage, but with relatively high currents.</p>
 <p>An example of a practical application is to amplify the signal induced in a coil. For example, amplifying the sound picked up by a speaker, turning the speaker into a microphone.</p>
 <p>Below you can see a simulation of an NPN transistor in common base configuration. The transistor amplifies a signal that enters through the emitter, generating a signal with much higher voltage that exits through the collector.</p>
 <div class="video-center">
@@ -119,7 +119,7 @@
 </li>
 <li><p class="first"><strong>Resistors R1 and R2</strong> maintain a fixed voltage at the base that <strong>biases the transistor</strong> so that it always works with positive currents, despite the input voltage being both positive and negative.</p>
 </li>
-<li><p class="first">The <strong>NPN transistor</strong> receives a small voltage signal from the emitter,  which produces a current in the emitter. The transistor transfers that  current from the emitter to the collector, where resistor R3 converts  the current to a voltage greater than the input voltage.</p>
+<li><p class="first">The <strong>NPN transistor</strong> receives a small voltage signal through the emitter, which produces a current in the emitter. The transistor transfers that current from the emitter to the collector, where resistor R3 converts the current into a voltage higher than the input voltage.</p>
 <p>At this stage there is no current amplification, only voltage amplification.</p>
 </li>
 <li><p class="first"><strong>Resistor R3</strong> receives the collector current and converts it into output voltage. The higher this resistance, the higher the output voltage and therefore the voltage amplification of the stage.</p>
@@ -142,7 +142,7 @@
 <p>To calculate the voltage gain, it is necessary to divide the voltage variation at the output by the voltage variation at the input.</p>
 <div class="math">
 <p><img src="_images/math/72ed3d3029a7e6d0bbe8ff1e8ca6243f94c4b93d.svg" alt="Gain\_V = \cfrac{V_{out\_max} - V_{out\_min}}{ V_{in\_max} - V_{in\_min}}"></p>
-</div><p>You can obtain the required voltage values from the oscilloscopes at the bottom of the simulator.</p>
+</div><p>You can obtain the necessary voltage values ​​from the oscilloscopes located at the bottom of the simulator.</p>
 </li>
 <li><p class="first">If we modify R3 with a value of 500 Ohm and R1 with a value of 8 kOhm, what happens to the output signal of the circuit? Why do you think this happens?</p>
 </li>

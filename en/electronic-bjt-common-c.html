@@ -116,19 +116,14 @@
 <iframe src="/circuits/index.html?startCircuit=bjt-common-c.txt"></iframe>
 </div><p>The function of each of the components is the following:</p>
 <ul>
-<li><p class="first">The <strong>alternating signal generator</strong> generates a 2 volt peak input signal.</p>
+<li><p class="first">The <strong>alternating signal generator</strong> generates an input signal (V_in) of 2 volts peak.</p>
 </li>
-<li><p class="first">The function of <strong>capacitor C1</strong> is to carry the alternating signal from the generator to the base of the transistor, eliminating the direct current signal.</p>
-<p>The practical effect is that the voltage at the generator varies around zero volts and the voltage at the base of the transistor varies around 3 volts.</p>
+<li><p class="first">A direct voltage generator adds 4 Volts to the alternating voltage. It must be taken into account that the transistor can only amplify positive currents, so it is necessary to add an alternating positive voltage to avoid negative voltages.</p>
 </li>
-<li><p class="first"><strong>Resistor R2</strong> adds a small direct current to the base so that the transistor can operate. This positive current that is added at the base is called <strong>bias current</strong>.</p>
-<p>It must be taken into account that the transistor can only amplify positive currents, so it is necessary to add a small positive current to the input alternating current (positive and negative) for the transistor to work correctly.</p>
-</li>
-<li><p class="first">The <strong>NPN transistor</strong> receives a voltage signal through the base with little current and maintains that same voltage at the emitter, minus the voltage of about 0.65 volts that always exists between base and emitter.</p>
+<li><p class="first">The <strong>NPN transistor</strong> receives a voltage signal through the base with little current and maintains that same voltage at the emitter, minus a small voltage of 0.65 volts that always exists between base and emitter.</p>
 <p>The current that arrives through the base is amplified so that it circulates, multiplied, through the collector and through the emitter.</p>
 </li>
-<li><p class="first"><strong>Resistor R3</strong> receives the current from the emitter and converts it into output voltage.</p>
-<p>About 100 times the current that flows through the base of the transistor will flow through this resistance.</p>
+<li><p class="first"><strong>Resistor R2</strong> receives the current from the emitter and converts it into output voltage.</p>
 </li>
 </ul>
 <div class="section" id="ejercicios">
@@ -142,14 +137,11 @@
 </li>
 <li><p class="first">Draw a graph with the generator voltage and the output voltage. What difference can you see between the graphs?</p>
 </li>
-<li><p class="first">Modify the value of resistor R2 so that it is 20kOhm. Draw the graph of the output voltage.</p>
-<p>What happens to the output voltage when resistance R2 increases?</p>
+<li><p class="first">Modify the value of resistor R1 so that it is 20kOhm. Draw the graph of the output voltage.</p>
+<p>What happens to the output voltage when resistance R1 increases?</p>
 </li>
-<li><p class="first">Modify the value of resistor R2 so that it is 4kOhm. Draw the graph of the output voltage.</p>
-<p>What happens to the output voltage when resistance R2 decreases?</p>
-</li>
-<li><p class="first">Change the value of the output resistor R3 to 1000 Ohms in the simulator.</p>
-<p>Change the value of resistor R2 so that the output voltage varies between 1 volt and 5 volts.</p>
+<li><p class="first">In the simulator, increase the value of the output resistor R2 to 1000 Ohms.</p>
+<p>What happens to the output voltage? What happens to the output current?</p>
 </li>
 </ol>
 </div>

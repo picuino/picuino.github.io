@@ -5,8 +5,8 @@
   <meta name="keywords" content="Technology, Secondary Education, Drawing, Structures, Mechanisms, Materials, Electricity, Electronics, Computer Science, Programming, Control, Arduino, Communications, Workshop">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Libre educational resources for Technology in Secondary Education. Mechanics - Pneumatics - 3. Single acting cylinder">
-  <title>3. Single acting cylinder - Pneumatics - Picuino</title>
+  <meta name="description" content="Libre educational resources for Technology in Secondary Education. Mechanics - Pneumatics - 5. Single acting cylinder">
+  <title>5. Single acting cylinder - Pneumatics - Picuino</title>
 
   
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
@@ -27,8 +27,8 @@
   <link rel="glossary" title="Glossary" href="genindex.html">
   <link rel="index" title="Index" href="content.html">
   <link rel="search" title="Search" href="search.html">
-  <link rel="next" title="4. Double acting cylinder" href="mecan-neumatic-doble-efecto.html">
-  <link rel="prev" title="2. Pneumatic symbols" href="mecan-neumatic-simbolos.html">
+  <link rel="next" title="6. Double acting cylinder" href="mecan-neumatic-doble-efecto.html">
+  <link rel="prev" title="4. 3/2 valve" href="mecan-neumatic-valvula-32.html">
 
 </head>
 
@@ -72,7 +72,7 @@
         
           <li><a href="mecan-neumatic-index.html">Pneumatics</a>/</li>
         
-      <li><span class="section-number">3. </span>Single acting cylinder</li>
+      <li><span class="section-number">5. </span>Single acting cylinder</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -102,7 +102,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="cilindro-de-simple-efecto">
-<span id="mecan-neumatic-simple-efecto"></span><h1><span class="section-number">3. </span>Single acting cylinder<a class="headerlink" href="#cilindro-de-simple-efecto" title="Permalink to this headline">¶</a></h1>
+<span id="mecan-neumatic-simple-efecto"></span><h1><span class="section-number">5. </span>Single acting cylinder<a class="headerlink" href="#cilindro-de-simple-efecto" title="Permalink to this headline">¶</a></h1>
 <p>A <strong>single acting</strong> cylinder is a cylinder whose rod comes out due to the compressed air injected into the rear part.</p>
 <p>The entry movement of the stem is carried out thanks to a spring that has little force, so it is not useful for moving external loads.</p>
 <p>This cylinder can exert force outwards, but it hardly exerts any force when moving inwards.</p>
@@ -110,9 +110,9 @@
 <p>Below is the schematic at rest of the single-acting cylinder:</p>
 <a class="reference internal image-reference" href="_images/neumatic-32-simple-0.png"><img alt="Pistón de simple efecto (dentro) comandado por válvula 3/2." class="align-center" src="_images/neumatic-32-simple-0.png" style="width: 350px;"></a>
 <p>When we activate the 3/2 valve, the air coming from the maintenance unit passes to the upper valve path and enters the rear part of the cylinder. As a consequence, the cylinder fills with air and the piston leaves the cylinder pushing the load in front of it:</p>
-<a class="reference internal image-reference" href="_images/neumatic-32-simple-1.png"><img alt="Pistón de simple efecto (fuera) comandado por válvula 3/2." class="align-center" src="_images/neumatic-32-simple-1.png" style="width: 439px;"></a>
-<p>Finally, when the 3/2 valve is brought to rest, the compressed air inside the cylinder returns backwards and exits through the exhaust port of the 3/2 valve:</p>
-<a class="reference internal image-reference" href="_images/neumatic-32-simple-2.png"><img alt="Pistón de simple efecto (entrando) comandado por válvula 3/2." class="align-center" src="_images/neumatic-32-simple-2.png" style="width: 389px;"></a>
+<a class="reference internal image-reference" href="_images/neumatic-32-simple-1.png"><img alt="Pistón de simple efecto (fuera) comandado por válvula 3/2." class="align-center" src="_images/neumatic-32-simple-1.png" style="width: 350px;"></a>
+<p>Finally, when the 3/2 valve is brought to rest, the compressed air inside the cylinder returns to the rear and exits through the exhaust port of the 3/2 valve:</p>
+<a class="reference internal image-reference" href="_images/neumatic-32-simple-2.png"><img alt="Pistón de simple efecto (entrando) comandado por válvula 3/2." class="align-center" src="_images/neumatic-32-simple-2.png" style="width: 350px;"></a>
 <div class="section" id="ejercicios">
 <h2>Exercises<a class="headerlink" href="#ejercicios" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
@@ -123,7 +123,7 @@
 <li><p class="first">Draw a diagram of a powered single-acting cylinder, controlled by a 3/2 valve.</p>
 </li>
 <li><p class="first">Simulates the operation of a single-acting cylinder controlled by a 3/2 valve.</p>
-<p><a class="reference external" href="../_static/flash/simulador-neumatica.html" rel="noopener noreferrer" target="_blank">Pneumatics simulator.</a></p>
+<p><a class="reference external" href="/neumatic/index.html" rel="noopener noreferrer" target="_blank">Pneumatic simulator.</a></p>
 </li>
 <li><p class="first">What will happen if we remove the exhaust from the 3/2 valve? Simulates operation. Explain how the operation changes when removing the exhaust and explain why it behaves that way.</p>
 <div class="figure align-center" id="id1">
@@ -131,10 +131,10 @@
 <p class="caption"><span class="caption-text">Pneumatic exhaust.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
 </li>
-<li><p class="first">It uses two 3/2 valves to operate a single acting cylinder in the simulator. &lt;../_static/flash/simulator-neumatica.html&gt;`__ Only one of the valves will have an exhaust.</p>
+<li><p class="first">It uses two 3/2 valves to operate a single acting cylinder in the <a class="reference external" href="/neumatic/index.html" rel="noopener noreferrer" target="_blank">simulator.</a> Only one of the valves will have exhaust.</p>
 <p>Explain how the circuit works:</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="_images/neumatic-32-simple-3.png"><img alt="Escape." src="_images/neumatic-32-simple-3.png" style="width: 421px;"></a>
+<a class="reference internal image-reference" href="_images/neumatic-32-simple-3.png"><img alt="Escape." src="_images/neumatic-32-simple-3.png" style="width: 350px;"></a>
 </div>
 </li>
 </ol>
@@ -150,10 +150,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="mecan-neumatic-doble-efecto.html" class="btn btn-neutral float-right" title="4. Double acting cylinder" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="mecan-neumatic-doble-efecto.html" class="btn btn-neutral float-right" title="6. Double acting cylinder" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="mecan-neumatic-simbolos.html" class="btn btn-neutral" title="2. Pneumatic symbols" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="mecan-neumatic-valvula-32.html" class="btn btn-neutral" title="4. 3/2 valve" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -171,7 +171,7 @@
     <li><a href="content.html" target="_blank">Index</a></li>
     </ul>
     <p class="content-info">
-      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      Copyright &copy; 2013-2026, Carlos Félix Pardo Martín.
       <br>
 
       Contents under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank">CC BY-SA 4.0 license</a>
@@ -179,7 +179,7 @@
       unless otherwise specified.
       <br>
       <span class="lastupdated">
-        Last updated on September, 2025.
+        Last updated on January, 2026.
       </span>
 
     </p>
@@ -245,12 +245,14 @@
 <li class="toctree-l2 current"><a class="reference internal" href="mecan-neumatic-index.html">Pneumatics</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-intro.html">1. Introduction to pneumatics</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-simbolos.html">2. Pneumatic symbols</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">3. Single acting cylinder</a></li>
-<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-doble-efecto.html">4. Double acting cylinder</a></li>
-<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvula-or.html">5. The selector valve or or valve</a></li>
-<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvula-and.html">6. The simultaneous valve or and valve</a></li>
-<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvula-antirretorno.html">7. The non-return valve</a></li>
-<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-pilotaje-neumatico.html">8. Pneumatic pilot valve</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvulas.html">3. Pneumatic valves</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvula-32.html">4. 3/2 valve</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">5. Single acting cylinder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-doble-efecto.html">6. Double acting cylinder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvula-or.html">7. The selector valve or or valve</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvula-and.html">8. The simultaneous valve or and valve</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvula-antirretorno.html">9. The non-return valve</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-pilotaje-neumatico.html">10. Pneumatic pilot valve</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="freecad-index.html">FreeCAD</a></li>

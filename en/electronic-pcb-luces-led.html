@@ -116,8 +116,8 @@
 <p>This oscillator circuit is made up of an inverter with a Schmitt trigger, a capacitor C1 and a feedback resistor R3.</p>
 <p>The inverter circuit with Schmitt trigger changes its output at different input voltages. This behavior is called input hysteresis and is what allows the circuit to function as an oscillator. In the following graph we can see how the output voltage of the inverter changes for different input voltages. This rectangular figure with two horizontal lines is what the inverter has inside and indicates that it works with hysteresis.</p>
 <a class="reference internal image-reference" href="_images/electronic-schmitt-histeresis.png"><img alt="Histéresis del circuito inversor Schmitt." class="align-center" src="_images/electronic-schmitt-histeresis.png" style="width: 340px;"></a>
-<p>When the circuit is first turned on, the capacitor is discharged and therefore its voltage at the positive terminal is zero volts. The Schmitt inverter therefore has zero volts at its input (a logic zero) and 5 volts of positive supply at its output (a logic one). In this situation, the feedback resistor R3 gradually charges the voltage of the capacitor until it reaches 3.33 volts, a voltage from which the Schmitt inverter considers that the input is worth a logic one and therefore changes its value. output at zero volts (logical zero).</p>
-<p>Now, the feedback resistor R3 gradually discharges the voltage of the capacitor until it reaches 1.66 volts, a voltage above which the Schmitt inverter considers the input to be a logical zero and therefore changes its output to five. volts (logical one) returning the cycle to repeat itself over and over again.</p>
+<p>When the circuit is first turned on, the capacitor is discharged and therefore its voltage at the positive terminal is zero volts. The Schmitt inverter therefore has zero volts at its input (a logic zero) and 5 volts of positive supply at its output (a logic one). In this situation, the feedback resistor R3 gradually charges the voltage of the capacitor until it reaches 3.33 volts, a voltage above which the Schmitt inverter considers that the input is worth a logic one and therefore changes its output to zero volts (logic zero).</p>
+<p>Now, the feedback resistor R3 gradually discharges the voltage of the capacitor until it reaches 1.66 volts, a voltage above which the Schmitt inverter considers that the input is worth a logic zero and therefore changes its output to five volts (logical one), repeating the cycle again and again.</p>
 <p>The speed of oscillation will depend on the values ​​of the capacitor and the resistance. The larger they are, the longer it will take for the circuit to oscillate. The approximate formula for the oscillation time is:</p>
 <blockquote>
 <div>Oscillation time = 0.8 R3 C1 = 0.8 220000 0.000010 = 1.76 seconds</div></blockquote>
@@ -125,8 +125,7 @@
 <p>LED D1 connected to the output of the oscillator through a limiting resistor R1 will turn on and off at the same speed as the oscillator.</p>
 <p>LED D2 connected to the output of another Schmitt inverter through a limiting resistor R2 will turn on when D1 is off and will turn off when D1 is on, producing an alternative flashing.</p>
 <p>This behavior is repeated in the three oscillators that the complete circuit has, at different frequencies since R3, R6 and R9 have different values ​​and, therefore, different blinking speeds.</p>
-<p>En la siguiente simulación podemos ver funcionando los tres circuitos
-que encienden dos luces led cada uno, con diferentes frecuencias:</p>
+<p>In the following simulation we can see the three circuits working that turn on two LED lights each, with different frequencies:</p>
 <div class="video-center">
 <iframe src="/circuits/index.html?startCircuit=digital-luces-led.txt"></iframe>
 </div></div>
@@ -154,14 +153,14 @@ que encienden dos luces led cada uno, con diferentes frecuencias:</p>
 <a class="reference internal image-reference" href="_images/electronic-pcb-luces-led-06.png"><img alt="Circuito impreso. Capas traseras." class="align-center" src="_images/electronic-pcb-luces-led-06.png" style="width: 400px;"></a>
 <dl class="docutils">
 <dt><strong>Copper tracks:</strong></dt><dd>They are the conductors that connect all the components of the printed circuit board together. They appear in the drawing as yellow (without solder mask) or light green (already covered with solder mask).</dd>
-<dt><strong>Welding mask:</strong></dt><dd>It is a layer of paint, normally green although it may have other colors, which serves to protect the copper tracks from corrosion and to avoid short circuits when carrying out the soldering process. The solder mask is not applied on top of the solder pads.</dd>
-<dt><strong>Screen printing of components</strong>:</dt><dd>It is a layer of paint, usually white, that is used to indicate the name of the circuit components and to write instructions or drawings. This layer of paint is applied with the screen printing technique and hence its name.</dd>
+<dt><strong>Welding mask:</strong></dt><dd>It is a layer of paint, normally green although it can have other colors, which serves to protect the copper tracks from corrosion and to avoid short circuits when carrying out the soldering process. The solder mask is not applied on top of the solder pads.</dd>
+<dt><strong>Screen printing of components</strong>:</dt><dd>It is a layer of paint, generally white, that is used to indicate the name of the circuit components and to write instructions or drawings. This layer of paint is applied with the screen printing technique and hence its name.</dd>
 </dl>
 </div>
 <div class="section" id="listado-de-componentes-bom">
 <h2>List of components (BOM)<a class="headerlink" href="#listado-de-componentes-bom" title="Permalink to this headline">¶</a></h2>
 <p>The list of components (also called BOM or Bill Of Materials) is a list where all the components of the printed circuit appear with their quantity and reference so that they can be obtained before assembly.</p>
-<p>The list of components may also have the purchase reference of an electronic components distributor. In the following document, the references of the distributor <a class="reference external" href="https://www.tme.eu/es/" rel="noopener noreferrer" target="_blank">TME</a> have been added.</p>
+<p>The component list may also have the purchase reference of an electronic components distributor. In the following document, the references of the distributor <a class="reference external" href="https://www.tme.eu/es/" rel="noopener noreferrer" target="_blank">TME</a> have been added.</p>
 <p><a class="reference download internal" download="" href="_downloads/electronic-pcb-luces-led-bom.pdf"><code class="xref download docutils literal notranslate"><span class="pre">List</span> <span class="pre">of</span> <span class="pre">components</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">board</span> <span class="pre">with</span> <span class="pre">LED</span> <span class="pre">lights.</span> <span class="pre">PDF</span> <span class="pre">format.</span></code></a></p>
 <p><a class="reference download internal" download="" href="_downloads/electronic-pcb-luces-led-bom.ods"><code class="xref download docutils literal notranslate"><span class="pre">List</span> <span class="pre">of</span> <span class="pre">components</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">board</span> <span class="pre">with</span> <span class="pre">LED</span> <span class="pre">lights.</span> <span class="pre">SDG</span> <span class="pre">format.</span></code></a></p>
 </div>
@@ -172,7 +171,7 @@ que encienden dos luces led cada uno, con diferentes frecuencias:</p>
 <p>The assembly order and position are as follows:</p>
 <p><strong>1. Resistances</strong>:</p>
 <blockquote>
-<div>They don't need any particular order to work correctly, but the color coding is more elegant and easier to read when all the gold bands are aligned to the right (horizontal resistors) or up (vertical resistors) as in the image in the start of this unit.</div></blockquote>
+<div>They don't need any particular order to work correctly, but the color coding is more elegant and easier to read when all the gold bands are aligned to the right (horizontal resistors) or up (vertical resistors) as in the image at the beginning of this unit.</div></blockquote>
 <p><strong>2. Ignition switch SW1</strong>:</p>
 <blockquote>
 <div>It will have to be mounted so that the switch lever is located outside the printed circuit board so that it is easy to operate the switch.</div></blockquote>
@@ -188,7 +187,7 @@ que encienden dos luces led cada uno, con diferentes frecuencias:</p>
 </div></blockquote>
 <p><strong>5. LED diodes</strong>:</p>
 <blockquote>
-<div><p>Diodes only conduct in one direction and do not work in the opposite direction. In the silkscreen printing of the printed circuit board, the negative leg or cathode of the LEDs is always facing to the left. It is distinguished because the circle has a chamfer and because the soldering pad is square.</p>
+<div><p>Diodes only conduct in one direction and do not work in the opposite direction. In silkscreen printing of the printed circuit board, the negative leg or cathode of the LEDs is always facing to the left. It is distinguished because the circle has a chamfer and because the soldering pad is square.</p>
 <a class="reference internal image-reference" href="_images/electronic-pcb-catodo-2.png"><img alt="Cátodo de un diodo led en la serigrafía." class="align-center" src="_images/electronic-pcb-catodo-2.png" style="width: 340px;"></a>
 <p>When it comes to distinguishing the cathode in LED diodes, the easiest way is to look inside and look for the largest metal area, where the LED rests and which is connected to the negative pin (cathode).</p>
 <a class="reference internal image-reference" href="_images/electronic-pcb-catodo.png"><img alt="Cátodo de un diodo led." class="align-center" src="_images/electronic-pcb-catodo.png" style="width: 240px;"></a>
@@ -206,7 +205,7 @@ que encienden dos luces led cada uno, con diferentes frecuencias:</p>
 <p class="first admonition-title">Note</p>
 <p>Soldering is carried out by providing material that is composed of tin and <strong>lead</strong>, so it is necessary to follow some safety procedures.</p>
 <p>It is important to wear gloves or <strong>wash your hands</strong> properly after handling tin-lead wire.</p>
-<p class="last">During welding, <strong>toxic gases</strong> are produced from the antioxidant flux. These gases should not be inhaled. Welding should be done in a well-ventilated room with the windows open.</p>
+<p class="last">During welding, <strong>toxic gases</strong> are produced from the antioxidant flux. These gases should not be inhaled. Welding should be done in a well-ventilated area with the windows open.</p>
 </div>
 <p>The welding technique is relatively simple, but it doesn't hurt to have some clear concepts on how to do it correctly before starting.</p>
 <p>In the following video you can see the correct technique for soldering the components.</p>
@@ -262,7 +261,7 @@ que encienden dos luces led cada uno, con diferentes frecuencias:</p>
     <li><a href="content.html" target="_blank">Index</a></li>
     </ul>
     <p class="content-info">
-      Copyright &copy; 2013-2025, Carlos Félix Pardo Martín.
+      Copyright &copy; 2013-2026, Carlos Félix Pardo Martín.
       <br>
 
       Contents under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank">CC BY-SA 4.0 license</a>
@@ -270,7 +269,7 @@ que encienden dos luces led cada uno, con diferentes frecuencias:</p>
       unless otherwise specified.
       <br>
       <span class="lastupdated">
-        Last updated on December, 2025.
+        Last updated on January, 2026.
       </span>
 
     </p>

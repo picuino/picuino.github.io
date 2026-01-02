@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Mecánica - Neumática - 3. Válvulas neumáticas">
+  <title>3. Válvulas neumáticas - Neumática - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/mecan-neumatic-valvulas.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índice" href="content.html">
+  <link rel="search" title="Búsqueda" href="search.html">
+  <link rel="next" title="4. Válvula 3/2" href="mecan-neumatic-valvula-32.html">
+  <link rel="prev" title="2. Símbolos neumáticos" href="mecan-neumatic-simbolos.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="mecan-index.html">Mecánica</a>/</li>
+        
+          <li><a href="mecan-neumatic-index.html">Neumática</a>/</li>
+        
+      <li><span class="section-number">3. </span>Válvulas neumáticas</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/mecan-neumatic-valvulas.rst.txt" rel="nofollow"> Ver texto fuente</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  
+  <hr>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="valvulas-neumaticas">
+<span id="mecan-neumatic-valvulas"></span><h1><span class="section-number">3. </span>Válvulas neumáticas<a class="headerlink" href="#valvulas-neumaticas" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Las <strong>válvulas neumáticas</strong> son componentes que permiten cortar el paso
+del aire comprimido o permitir el paso del aire comprimido a voluntad.</p>
+<p>A continuación se muestra el símbolo de una válvula 2/2 normalmente
+cerrada:</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/neumatic-valve-22-1.png"><img alt="Válvula 2/2 normalmente cerrada, en reposo." src="_images/neumatic-valve-22-1.png" style="width: 130px;"></a>
+<p class="caption"><span class="caption-text">Válvula 2/2 normalmente cerrada, en reposo.</span><a class="headerlink" href="#id1" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<dl class="docutils">
+<dt>La forma de denominar una válvula es la siguiente:</dt><dd><ul class="simple">
+<li>Primero, el nombre genérico <strong>Válvula</strong></li>
+<li>Segundo, el número de vías o tuberías por donde puede circular el aire.
+En este caso son <strong>2</strong> vías, una debajo y otra encima del cuerpo de
+la válvula.</li>
+<li>Tercero, el número de posiciones de la válvula neumática. Son los
+diferentes recuadros que tiene el símbolo, en este caso tiene <strong>2</strong>
+posiciones.</li>
+</ul>
+</dd>
+</dl>
+<p>Los <strong>pilotajes</strong> son los métodos que se utilizan para mover la válvula.
+Las válvulas tienen 2 puntos de pilotaje, para accionarlas y para que
+pasen a reposo.
+La válvula anterior <strong>se acciona manualmente</strong>, con enclavamiento y
+pasa a reposo con ayuda de un <strong>muelle</strong>.</p>
+<div class="section" id="valvula-2-2">
+<h2>Válvula 2/2<a class="headerlink" href="#valvula-2-2" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Esta válvula es equivalente a un <strong>grifo de pulsador</strong>, como el que tienen
+las fuentes de agua. Tiene dos posiciones, reposo y accionado.</p>
+<p>Cuando la válvula está en <strong>reposo</strong>, el aire está cortado y no se permite
+el flujo de aire a través de ella. Esto se indica con dos &quot;T&quot;, que
+representan el paso cerrado.</p>
+<p>Cuando la válvula está <strong>accionada</strong>, el aire puede circular entre las dos
+vías. Esto se indica mediante una flecha que une la vía inferior con la
+superior:</p>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/neumatic-valve-22-2.png"><img alt="Válvula 2/2 normalmente cerrada, accionada." src="_images/neumatic-valve-22-2.png" style="width: 130px;"></a>
+<p class="caption"><span class="caption-text">Válvula 2/2 normalmente cerrada, accionada.</span><a class="headerlink" href="#id2" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">Aunque la flecha indica el flujo preferente del aire desde la parte
+inferior hacia la superior, la válvula es como un grifo abierto y
+permite también que el flujo de aire circule a la inversa, desde
+la vía superior a la vía inferior.</p>
+</div>
+<p>En neumática esta válvula no es muy utilizada, porque solo permite el
+paso de aire en un sentido y no permite el retorno de aire para vaciar
+los cilindros neumáticos.</p>
+<p>De todas formas podemos encontrar ejemplos de uso de las válvulas 2/2
+en las máquinas para inflar neumáticos de las gasolineras,
+en los gatillos de las pistolas de aire para limpieza
+o en los pulsadores de los aerosoles.</p>
+</div>
+<div class="section" id="valvula-2-2-y-cilindro">
+<h2>Válvula 2/2 y cilindro<a class="headerlink" href="#valvula-2-2-y-cilindro" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Para comprobar los problemas que presenta una válvula 2/2 a la hora de
+pilotar un cilindro neumático, vamos a simular su comportamiento
+con el simulador:</p>
+<div class="video-center">
+<iframe src="/neumatic/index.html?loadFile=single-22.txt"></iframe>
+</div><p>Primero vamos a seleccionar en el menú <code class="docutils literal notranslate"><span class="pre">Simular...</span> <span class="pre">Iniciar</span></code> para que
+comience la simulación.</p>
+<ol class="arabic simple">
+<li>Al <strong>accionar la válvula 2/2 de la izquierda</strong>, permitimos el paso de
+aire desde el compresor hacia el cilindro y el vástago del cilindro
+saldrá hacia delante por completo.</li>
+<li>Al <strong>pasar a reposo la válvula 2/2 de la izquierda</strong>, el paso de aire
+desde el compresor se cierra, pero el aire permanece almacenado en
+el cilindro, que permanece extendido.</li>
+<li>Ahora nos vemos obligados a <strong>accionar la válvula 2/2 de la derecha</strong>
+para permitir que el aire del cilindro se escape a la atmósfera y que
+el cilindro pueda volver a su posición inicial de reposo.</li>
+</ol>
+<p>Este esquema es poco flexible porque necesita accionar dos válvulas
+distintas para conseguir los dos movimientos del cilindro.
+A pesar de eso, podemos ver ejemplos de su uso en los cilindros que
+levantan automóviles en los talleres mecánicos.</p>
+<p>Un problema que presenta este esquema es que si accionamos las dos
+válvulas a la vez el aire del compresor se escapará rápidamente a la
+atmósfera, vaciando en poco tiempo el aire comprimido almacenado en el
+compresor.</p>
+</div>
+<div class="section" id="ejercicios">
+<h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Enlazar permanentemente con este título">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">¿Qué es una válvula neumática y de qué partes se compone?</p>
+</li>
+<li><p class="first">¿Cómo se nombra una válvula neumática?</p>
+</li>
+<li><p class="first">Dibuja una válvula 2/2 en reposo y otra válvula 2/2 accionada.</p>
+</li>
+<li><p class="first">Explica con tus palabras el funcionamiento de una válvula 2/2.</p>
+</li>
+<li><p class="first">¿Por qué la flecha del símbolo neumático está orientada hacia arriba?
+¿Está permitido el paso de aire hacia abajo?</p>
+</li>
+<li><p class="first">Escribe tres ejemplos de uso de las válvulas neumáticas 2/2.</p>
+</li>
+<li><p class="first">Dibuja en el siguiente simulador el mismo circuito que puede verse
+en el simulador de más arriba. La simulación debe funcionar igual.</p>
+<div class="video-center">
+<iframe src="/neumatic/index.html"></iframe>
+</div></li>
+<li><p class="first">Explica con tus palabras el funcionamiento del circuito anterior.</p>
+</li>
+<li><p class="first">¿Qué pasará con el cilindro neumático en el circuito anterior si
+accionamos las dos válvulas a la vez?
+Simula este caso y explica el funcionamiento del circuito.</p>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="mecan-neumatic-valvula-32.html" class="btn btn-neutral float-right" title="4. Válvula 3/2" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="mecan-neumatic-simbolos.html" class="btn btn-neutral" title="2. Símbolos neumáticos" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <ul class="link-list">
+    <li><a href="contacto.html" target="_blank">Contacto</a></li>
+    <li><a href="manifiesto.html" target="_blank">Manifiesto</a></li>
+    <li><a href="../es/legal-aviso.html" target="_blank">Aviso legal</a></li>
+    <li><a href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a href="legal-attribution.html" target="_blank">Créditos</a></li>
+    <li><a href="genindex.html" target="_blank">Glosario</a></li>
+    <li><a href="content.html" target="_blank">Índice</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2026, Carlos Félix Pardo Martín.
+      <br>
+
+      Contenidos bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">licencia CC BY-SA 4.0</a>
+      y programas de ordenador bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">licencia GPL v3</a>
+      a menos que se indique lo contrario.
+      <br>
+      <span class="lastupdated">
+        Actualizado por última vez en enero, 2026.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../en/mecan-neumatic-valvulas.html">English</a>
+          <!-- | <a href="../ca/mecan-neumatic-valvulas.html">Català</a> -->
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar docs">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibujo Técnico</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="mecan-index.html">Mecánica</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="mecan-estructuras-index.html">Estructuras</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mecan-maquinas-index.html">Máquinas y Mecanismos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mecan-calibre.html">El Calibre</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="mecan-neumatic-index.html">Neumática</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-intro.html">1. Introducción a la neumática</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-simbolos.html">2. Símbolos neumáticos</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">3. Válvulas neumáticas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvula-32.html">4. Válvula 3/2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-simple-efecto.html">5. Cilindro de simple efecto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-doble-efecto.html">6. Cilindro de doble efecto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvula-or.html">7. La válvula selectora o válvula or</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvula-and.html">8. La válvula de simultaneidad o válvula and</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvula-antirretorno.html">9. La válvula antirretorno</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-pilotaje-neumatico.html">10. Válvula con pilotaje neumático</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="freecad-index.html">FreeCAD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blockscad-index.html">BlocksCAD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mecan-origami.html">Papiroflexia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mecan-recursos.html">Recursos para Mecánica</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materiales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrónica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informática</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robótica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicaciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller de Tecnología</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Otros recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislación Educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>

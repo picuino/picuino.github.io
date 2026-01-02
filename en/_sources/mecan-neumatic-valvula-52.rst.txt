@@ -10,14 +10,14 @@ Una válvula 5/2 tiene 5 vías de aire y 2 posiciones:
 
 .. figure:: neumatic/_images/neumatic-valve-52-1.png
    :alt: Válvula 5/2 en reposo.
-   :width: 160px
+   :width: 230px
    :align: center
 
    Válvula 5/2 en reposo.
 
 .. figure:: neumatic/_images/neumatic-valve-52-2.png
    :alt: Válvula 5/2 accionada.
-   :width: 160px
+   :width: 230px
    :align: center
 
    Válvula 5/2 accionada.
@@ -40,7 +40,7 @@ pilotando dos cilindros de simple efecto:
 * Al **accionar la válvula 5/2**, el aire pasa directamente desde la
   fuente de presión hacia el cilindro neumático 1.0, por lo que el vástago
   sale completamente hacia afuera. Mientras tanto, el cilindro 2.0 se
-  conecta con el escapa, permitiendo que este vuelva a su posición de
+  conecta con el escape, permitiendo que este vuelva a su posición de
   reposo.
 
 * Al **llevar a reposo la válvula 5/2**, el aire antes introducido en el
@@ -58,9 +58,9 @@ Ejercicios
    de sus dos posiciones.
 
 #. Dibuja una válvula 5/2 de accionamiento manual en reposo.
-   Dibuja una válvula 5/2 de accionamiento manual en accionada.
+   Dibuja también una válvula 5/2 de accionamiento manual accionada.
    
-   En ambos casos dibuja la entrada de presión y los escapes.
+   En ambos casos dibuja las entradas de presión y los escapes.
 
 #. Dibuja en el siguiente simulador dos cilindros de simple efecto
    accionados por una válvula 5/2 manual con enclavamiento.

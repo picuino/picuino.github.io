@@ -28,7 +28,7 @@
   <link rel="index" title="Index" href="content.html">
   <link rel="search" title="Search" href="search.html">
   <link rel="next" title="8. The selector valve or or valve" href="mecan-neumatic-valvula-or.html">
-  <link rel="prev" title="6. Válvula 5/2" href="mecan-neumatic-valvula-52.html">
+  <link rel="prev" title="6. 5/2 valve" href="mecan-neumatic-valvula-52.html">
 
 </head>
 
@@ -104,15 +104,38 @@
   <div class="section" id="cilindro-de-doble-efecto">
 <span id="mecan-neumatic-doble-efecto"></span><h1><span class="section-number">7. </span>Double acting cylinder<a class="headerlink" href="#cilindro-de-doble-efecto" title="Permalink to this headline">¶</a></h1>
 <p>A <strong>double-acting</strong> cylinder is a cylinder that has two air inlet and outlet paths. The stem can come out forcefully when air is injected into the rear and can enter forcefully when air is injected into the front.</p>
-<p>The output force of the stem is always a little greater than the input force because the compressed air cannot put pressure on the area occupied by the stem. If we inject pressurized air into both chambers of the cylinder, it will come out with little force.</p>
-<p>In the event that the double-acting cylinder does not have air pressure in either of its two paths, it will have no force in any direction and will be able to move freely without effort, both inside and out.</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/neumatic-doble-0.png"><img alt="Cilindro de doble efecto con vástago dentro." src="_images/neumatic-doble-0.png" style="width: 265px;"></a>
+<p class="caption"><span class="caption-text">Double-acting cylinder with stem inside.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/neumatic-doble-1.png"><img alt="Cilindro de doble efecto con vástago fuera." src="_images/neumatic-doble-1.png" style="width: 265px;"></a>
+<p class="caption"><span class="caption-text">Double-acting cylinder with stem outside.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>In the event that the double-acting cylinder does not have air pressure in either of its two paths, it will have no force in any direction and will be able to move freely without effort, both inside and out. For this reason, the cylinder must always have pressure in one of its two chambers.</p>
 <p>Double-acting cylinders are controlled by a <strong>4/2 valve</strong> or by a <strong>5/2 valve</strong>. Both valves are similar and only differ in the number of exhausts they have (one exhaust for the 4/2 valve and two exhausts for the 5/2 valve).</p>
-<p>Below is the diagram at rest of the double-acting cylinder:</p>
-<a class="reference internal image-reference" href="_images/neumatic-52-doble-0.png"><img alt="Pistón de doble efecto (dentro) comandado por válvula 5/2." class="align-center" src="_images/neumatic-52-doble-0.png" style="width: 350px;"></a>
-<p>When we activate the 5/2 valve, the air coming from the maintenance unit passes to the upper left valve passage and enters the rear part of the cylinder. As a result, the cylinder fills with air at the rear while air at the front escapes to the atmosphere. The result is that the cylinder rod comes outwards, pushing the load in front of it.</p>
-<a class="reference internal image-reference" href="_images/neumatic-52-doble-2.png"><img alt="Pistón de doble efecto (saliendo) comandado por válvula 5/2." class="align-center" src="_images/neumatic-52-doble-2.png" style="width: 350px;"></a>
+<p>Below is the diagram at rest of the double-acting cylinder piloted by a 5/2 valve:</p>
+<div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="_images/neumatic-doble-2.png"><img alt="Cilindro de doble efecto pilotado por una válvula 5/2, en reposo." src="_images/neumatic-doble-2.png" style="width: 280px;"></a>
+<p class="caption"><span class="caption-text">Double-acting cylinder controlled by a 5/2 valve, at rest.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>When we activate the 5/2 valve, the air coming from the maintenance unit passes to the upper left valve passage and enters the rear part of the cylinder. As a result, the cylinder fills with air at the rear while air at the front escapes to the atmosphere. The result is that the cylinder rod comes outwards, pushing the load in front:</p>
+<div class="figure align-center" id="id4">
+<a class="reference internal image-reference" href="_images/neumatic-doble-4.png"><img alt="Cilindro de doble efecto pilotado por una válvula 5/2, saliendo." src="_images/neumatic-doble-4.png" style="width: 280px;"></a>
+<p class="caption"><span class="caption-text">Double-acting cylinder piloted by a 5/2 valve, exiting.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
 <p>Once the stem has come out to the stop, we find the following diagram:</p>
-<a class="reference internal image-reference" href="_images/neumatic-52-doble-1.png"><img alt="Pistón de doble efecto (fuera) comandado por válvula 5/2." class="align-center" src="_images/neumatic-52-doble-1.png" style="width: 350px;"></a>
+<div class="figure align-center" id="id5">
+<a class="reference internal image-reference" href="_images/neumatic-doble-3.png"><img alt="Cilindro de doble efecto pilotado por una válvula 5/2 accionada." src="_images/neumatic-doble-3.png" style="width: 280px;"></a>
+<p class="caption"><span class="caption-text">Double-acting cylinder piloted by an actuated 5/2 valve.</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="cilindro-doblemente-pilotado">
+<h2>Double piloted cylinder<a class="headerlink" href="#cilindro-doblemente-pilotado" title="Permalink to this headline">¶</a></h2>
+<p>The output force of the stem is always a little greater than the input force because the compressed air cannot put pressure on the area occupied by the stem. If we inject pressurized air into both chambers of the cylinder, it will come out with little force.</p>
+<p>To check it in the simulator, first activate valve 1.2 on the right. Once activated, now activate valve 1.1 on the left. You will be able to see how the stem of the cylinder, little by little, comes out to the stop:</p>
+<div class="video-center">
+<iframe src="/neumatic/index.html?loadFile=double-32-manual.txt"></iframe>
+</div></div>
 <div class="section" id="ejercicios">
 <h2>Exercises<a class="headerlink" href="#ejercicios" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
@@ -123,17 +146,16 @@
 <li><p class="first">Draw a diagram of an actuated double-acting cylinder, with the rod out, controlled by a 5/2 valve.</p>
 </li>
 <li><p class="first">Simulates the operation of a double-acting cylinder controlled by a 5/2 valve.</p>
-<p><a class="reference external" href="/neumatic/index.html" rel="noopener noreferrer" target="_blank">Pneumatic simulator.</a></p>
-</li>
+<div class="video-center">
+<iframe src="/neumatic/index.html"></iframe>
+</div></li>
 <li><p class="first">What will happen if we remove the exhausts from the 5/2 valve? Simulates operation. Explain how the operation changes when removing the exhaust and explain why it behaves that way.</p>
 </li>
-<li><p class="first">It uses two 3/2 valves to operate a double-acting cylinder in the <a class="reference external" href="/neumatic/index.html" rel="noopener noreferrer" target="_blank">simulator.</a></p>
-<p>Explain how the circuit works:</p>
-<div class="figure align-center">
-<a class="reference internal image-reference" href="_images/neumatic-32-doble-4.png"><img alt="Escape." src="_images/neumatic-32-doble-4.png" style="width: 350px;"></a>
-</div>
-</li>
-<li><p class="first">What can happen in the previous circuit if we activate both valves at the same time?</p>
+<li><p class="first">Use two 3/2 valves to operate a double-acting cylinder in the following simulator:</p>
+<div class="video-center">
+<iframe src="/neumatic/index.html"></iframe>
+</div></li>
+<li><p class="first">What can happen in the previous circuit if we activate the two 3/2 valves at the same time?</p>
 </li>
 <li><p class="first">What can happen in the previous circuit if we do not activate any 3/2 valve?</p>
 </li>
@@ -153,7 +175,7 @@
         <a href="mecan-neumatic-valvula-or.html" class="btn btn-neutral float-right" title="8. The selector valve or or valve" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="mecan-neumatic-valvula-52.html" class="btn btn-neutral" title="6. Válvula 5/2" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="mecan-neumatic-valvula-52.html" class="btn btn-neutral" title="6. 5/2 valve" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -248,7 +270,7 @@
 <li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvulas.html">3. Pneumatic valves</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvula-32.html">4. 3/2 valve</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-simple-efecto.html">5. Single acting cylinder</a></li>
-<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvula-52.html">6. Válvula 5/2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvula-52.html">6. 5/2 valve</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">7. Double acting cylinder</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvula-or.html">8. The selector valve or or valve</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvula-and.html">9. The simultaneous valve or and valve</a></li>

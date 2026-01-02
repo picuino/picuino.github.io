@@ -5,8 +5,8 @@
   <meta name="keywords" content="Technology, Secondary Education, Drawing, Structures, Mechanisms, Materials, Electricity, Electronics, Computer Science, Programming, Control, Arduino, Communications, Workshop">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Libre educational resources for Technology in Secondary Education. Mechanics - Pneumatics - 1. Introduction to pneumatics">
-  <title>1. Introduction to pneumatics - Pneumatics - Picuino</title>
+  <meta name="description" content="Libre educational resources for Technology in Secondary Education. Mechanics - Pneumatics - 6. Válvula 5/2">
+  <title>6. Válvula 5/2 - Pneumatics - Picuino</title>
 
   
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
@@ -14,7 +14,7 @@
   <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
 
   
-  <link rel="canonical" href="https://www.picuino.com/en/mecan-neumatic-intro.html">
+  <link rel="canonical" href="https://www.picuino.com/en/mecan-neumatic-valvula-52.html">
 
   
   <link rel="search" type="application/opensearchdescription+xml"
@@ -27,8 +27,8 @@
   <link rel="glossary" title="Glossary" href="genindex.html">
   <link rel="index" title="Index" href="content.html">
   <link rel="search" title="Search" href="search.html">
-  <link rel="next" title="2. Pneumatic symbols" href="mecan-neumatic-simbolos.html">
-  <link rel="prev" title="Pneumatics" href="mecan-neumatic-index.html">
+  <link rel="next" title="7. Double acting cylinder" href="mecan-neumatic-doble-efecto.html">
+  <link rel="prev" title="5. Single acting cylinder" href="mecan-neumatic-simple-efecto.html">
 
 </head>
 
@@ -72,13 +72,13 @@
         
           <li><a href="mecan-neumatic-index.html">Pneumatics</a>/</li>
         
-      <li><span class="section-number">1. </span>Introduction to pneumatics</li>
+      <li><span class="section-number">6. </span>Válvula 5/2</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/mecan-neumatic-intro.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/mecan-neumatic-valvula-52.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -92,7 +92,7 @@
   original Spanish version. If you'd like to contribute, please
   <a href="contacto.html" target="_blank">contact</a> the author
   with the updated
-  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/en/LC_MESSAGES/mecan-neumatic-intro.po" target="_blank">translation file</a>.
+  <a href="https://raw.githubusercontent.com/picuino/tecno-recursos/main/locale/en/LC_MESSAGES/mecan-neumatic-valvula-52.po" target="_blank">translation file</a>.
   </div>
   
   <hr>
@@ -101,38 +101,57 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="introduccion-a-la-neumatica">
-<span id="mecan-neumatic-intro"></span><h1><span class="section-number">1. </span>Introduction to pneumatics<a class="headerlink" href="#introduccion-a-la-neumatica" title="Permalink to this headline">¶</a></h1>
-<p>Pneumatics is the technology that uses compressed air as a means of energy transmission to move mechanisms and machines.</p>
-<div class="section" id="simulador-de-neumatica">
-<h2>Pneumatic simulator<a class="headerlink" href="#simulador-de-neumatica" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="valvula-5-2">
+<span id="mecan-neumatic-valvula-52"></span><h1><span class="section-number">6. </span>Válvula 5/2<a class="headerlink" href="#valvula-5-2" title="Permalink to this headline">¶</a></h1>
+<p>Una válvula 5/2 tiene 5 vías de aire y 2 posiciones:</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/neumatic-valve-52-1.png"><img alt="Válvula 5/2 en reposo." src="_images/neumatic-valve-52-1.png" style="width: 160px;"></a>
+<p class="caption"><span class="caption-text">Válvula 5/2 en reposo.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/neumatic-valve-52-2.png"><img alt="Válvula 5/2 accionada." src="_images/neumatic-valve-52-2.png" style="width: 160px;"></a>
+<p class="caption"><span class="caption-text">Válvula 5/2 accionada.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>Las tres vías de la parte inferior se conectan a la fuente de presión
+(vía de en medio) y a los escapes a la izquierda y a la derecha.
+Las dos vías superiores se utilizan para llevar aire a dos lugares
+distintos o para retirar ese aire durante el reposo. Esta válvula está
+pensada para pilotar cilindros de dos vías que veremos más adelante.</p>
+<p>En la siguiente simulación podemos ver cómo funciona esta válvula
+pilotando dos cilindros de simple efecto:</p>
 <div class="video-center">
-<iframe src="/neumatic/index.html?loadFile=double-52-auto.txt"></iframe>
-</div><p><a class="reference external" href="/neumatic/index.html" rel="noopener noreferrer" target="_blank">Full screen pneumatic simulator.</a></p>
-</div>
-<div class="section" id="teoria-sobre-neumatica">
-<h2>Theory about pneumatics<a class="headerlink" href="#teoria-sobre-neumatica" title="Permalink to this headline">¶</a></h2>
-<dl class="docutils">
-<dt>CIDEAD book</dt><dd><p><a class="reference external" href="../_static/4esotecno/quincena9/pdf/quincena9.pdf" rel="noopener noreferrer" target="_blank">Pneumatics and hydraulics I.</a></p>
-<p><a class="reference external" href="../_static/4esotecno/quincena10/pdf/quincena10.pdf" rel="noopener noreferrer" target="_blank">Pneumatics and hydraulics II.</a></p>
-</dd>
-<dt>ESO Web Portal</dt><dd><p><a class="reference external" href="http://www.portaleso.com/neumatica/unidad_didactica_neumatica_4_v1_c.pdf" rel="noopener noreferrer" target="_blank">Pneumatic and hydraulic teaching unit (PDF).</a></p>
-<p><a class="reference external" href="http://www.portaleso.com/neumatica/unidad_neumatica_4_v1_c.ppt" rel="noopener noreferrer" target="_blank">Transparencies of the pneumatic and hydraulic teaching unit (PPT).</a></p>
-</dd>
-</dl>
-</div>
-<div class="section" id="simulador-de-neumatica-hopsan">
-<h2>Hopsan pneumatics simulator<a class="headerlink" href="#simulador-de-neumatica-hopsan" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="https://liu.se/en/research/hopsan" rel="noopener noreferrer" target="_blank">Hopsan</a> is an open-source system simulation tool developed by Linköping University.</p>
-<a class="reference external image-reference" href="https://liu.se/en/research/hopsan" rel="noopener noreferrer" target="_blank"><img alt="Screenshot del programa de simulación neumática Hopsan" class="align-center" src="_images/neumatic-hopsan-01.png" style="width: 480px;"></a>
-</div>
-<div class="section" id="videos-de-circuitos-neumaticos">
-<h2>Videos of pneumatic circuits<a class="headerlink" href="#videos-de-circuitos-neumaticos" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic simple">
-<li>Video: 'What is PNEUMATICS? | COMPRESSED AIR Documentary &lt;<a class="reference external" href="https://www.youtube-nocookie.com/embed/gu3u5TnuBx0" rel="noopener noreferrer" target="_blank">https://www.youtube-nocookie.com/embed/gu3u5TnuBx0</a>&gt;`__</li>
-<li>Video: 'Industrial Pneumatics, How Does a Pneumatic System Work? &lt;<a class="reference external" href="https://www.youtube-nocookie.com/embed/Wee85cI6wwQ" rel="noopener noreferrer" target="_blank">https://www.youtube-nocookie.com/embed/Wee85cI6wwQ</a>&gt;`__</li>
-<li>Video: <a class="reference external" href="https://www.youtube-nocookie.com/embed/PZUS_Eo4dKM" rel="noopener noreferrer" target="_blank">Pneumatic circuits.</a></li>
-<li>Video: <a class="reference external" href="https://www.youtube-nocookie.com/embed/gbQ3JBcjHFI" rel="noopener noreferrer" target="_blank">BASIC PNEUMATICS | INTRODUCTION</a></li>
+<iframe src="/neumatic/index.html?loadFile=single-52.txt"></iframe>
+</div><ul class="simple">
+<li>Al <strong>accionar la válvula 5/2</strong>, el aire pasa directamente desde la
+fuente de presión hacia el cilindro neumático 1.0, por lo que el vástago
+sale completamente hacia afuera. Mientras tanto, el cilindro 2.0 se
+conecta con el escapa, permitiendo que este vuelva a su posición de
+reposo.</li>
+<li>Al <strong>llevar a reposo la válvula 5/2</strong>, el aire antes introducido en el
+cilindro 1.0 tiene una vía de escape a través de la válvula, por lo que
+este cilindro retorna a su posición de reposo.
+Mientras tanto, al cilindro 2.0 le llega toda la presión, por lo que el
+vástago sale completamente hacia fuera.</li>
+</ul>
+<div class="section" id="ejercicios">
+<h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">¿Qué es una válvula neumática 5/2 y de qué partes se compone?</p>
+</li>
+<li><p class="first">Explica con tus palabras cómo funciona una válvula 5/2 en cada una
+de sus dos posiciones.</p>
+</li>
+<li><p class="first">Dibuja una válvula 5/2 de accionamiento manual en reposo.
+Dibuja una válvula 5/2 de accionamiento manual en accionada.</p>
+<p>En ambos casos dibuja la entrada de presión y los escapes.</p>
+</li>
+<li><p class="first">Dibuja en el siguiente simulador dos cilindros de simple efecto
+accionados por una válvula 5/2 manual con enclavamiento.</p>
+<p>Comprueba que su funcionamiento es el mismo que el circuito simulado
+al comienzo de este tema.</p>
+<div class="video-center">
+<iframe src="/neumatic/index.html"></iframe>
+</div></li>
 </ol>
 </div>
 </div>
@@ -146,10 +165,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="mecan-neumatic-simbolos.html" class="btn btn-neutral float-right" title="2. Pneumatic symbols" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="mecan-neumatic-doble-efecto.html" class="btn btn-neutral float-right" title="7. Double acting cylinder" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="mecan-neumatic-index.html" class="btn btn-neutral" title="Pneumatics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="mecan-neumatic-simple-efecto.html" class="btn btn-neutral" title="5. Single acting cylinder" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -208,7 +227,7 @@
           
           </a>
           <br>
-          <a href="../es/mecan-neumatic-intro.html">Español</a>
+          <a href="../es/mecan-neumatic-valvula-52.html">Español</a>
           <br>
 
           
@@ -239,12 +258,12 @@
 <li class="toctree-l2"><a class="reference internal" href="mecan-maquinas-index.html">Machines and Mechanisms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mecan-calibre.html">The Caliber</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="mecan-neumatic-index.html">Pneumatics</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">1. Introduction to pneumatics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-intro.html">1. Introduction to pneumatics</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-simbolos.html">2. Pneumatic symbols</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvulas.html">3. Pneumatic valves</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvula-32.html">4. 3/2 valve</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-simple-efecto.html">5. Single acting cylinder</a></li>
-<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvula-52.html">6. Válvula 5/2</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">6. Válvula 5/2</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-doble-efecto.html">7. Double acting cylinder</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvula-or.html">8. The selector valve or or valve</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvula-and.html">9. The simultaneous valve or and valve</a></li>

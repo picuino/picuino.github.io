@@ -5,8 +5,8 @@
   <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Mecánica - Neumática - 4. Válvula 3/2">
-  <title>4. Válvula 3/2 - Neumática - Picuino</title>
+  <meta name="description" content="Recursos educativos libres para Tecnología en Educación Secundaria. Mecánica - Neumática - 6. Válvula 5/2">
+  <title>6. Válvula 5/2 - Neumática - Picuino</title>
 
   
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
@@ -14,7 +14,7 @@
   <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
 
   
-  <link rel="canonical" href="https://www.picuino.com/es/mecan-neumatic-valvula-32.html">
+  <link rel="canonical" href="https://www.picuino.com/es/mecan-neumatic-valvula-52.html">
 
   
   <link rel="search" type="application/opensearchdescription+xml"
@@ -27,8 +27,8 @@
   <link rel="glossary" title="Glossary" href="genindex.html">
   <link rel="index" title="Índice" href="content.html">
   <link rel="search" title="Búsqueda" href="search.html">
-  <link rel="next" title="5. Cilindro de simple efecto" href="mecan-neumatic-simple-efecto.html">
-  <link rel="prev" title="3. Válvulas neumáticas" href="mecan-neumatic-valvulas.html">
+  <link rel="next" title="7. Cilindro de doble efecto" href="mecan-neumatic-doble-efecto.html">
+  <link rel="prev" title="5. Cilindro de simple efecto" href="mecan-neumatic-simple-efecto.html">
 
 </head>
 
@@ -72,13 +72,13 @@
         
           <li><a href="mecan-neumatic-index.html">Neumática</a>/</li>
         
-      <li><span class="section-number">4. </span>Válvula 3/2</li>
+      <li><span class="section-number">6. </span>Válvula 5/2</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/mecan-neumatic-valvula-32.rst.txt" rel="nofollow"> Ver texto fuente</a>
+            <a href="_sources/mecan-neumatic-valvula-52.rst.txt" rel="nofollow"> Ver texto fuente</a>
           
         
       </li>
@@ -95,112 +95,57 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="valvula-3-2">
-<span id="mecan-neumatic-valvula-32"></span><h1><span class="section-number">4. </span>Válvula 3/2<a class="headerlink" href="#valvula-3-2" title="Enlazar permanentemente con este título">¶</a></h1>
-<p>Una válvula 3/2 tiene 3 vías de aire y 2 posiciones:</p>
+  <div class="section" id="valvula-5-2">
+<span id="mecan-neumatic-valvula-52"></span><h1><span class="section-number">6. </span>Válvula 5/2<a class="headerlink" href="#valvula-5-2" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Una válvula 5/2 tiene 5 vías de aire y 2 posiciones:</p>
 <div class="figure align-center" id="id1">
-<a class="reference internal image-reference" href="_images/neumatic-valve-32-1.png"><img alt="Válvula 3/2 normalmente cerrada, en reposo." src="_images/neumatic-valve-32-1.png" style="width: 160px;"></a>
-<p class="caption"><span class="caption-text">Válvula 3/2 normalmente cerrada, en reposo.</span><a class="headerlink" href="#id1" title="Enlace permanente a esta imagen">¶</a></p>
+<a class="reference internal image-reference" href="_images/neumatic-valve-52-1.png"><img alt="Válvula 5/2 en reposo." src="_images/neumatic-valve-52-1.png" style="width: 160px;"></a>
+<p class="caption"><span class="caption-text">Válvula 5/2 en reposo.</span><a class="headerlink" href="#id1" title="Enlace permanente a esta imagen">¶</a></p>
 </div>
 <div class="figure align-center" id="id2">
-<a class="reference internal image-reference" href="_images/neumatic-valve-32-2.png"><img alt="Válvula 3/2 normalmente cerrada, accionada." src="_images/neumatic-valve-32-2.png" style="width: 160px;"></a>
-<p class="caption"><span class="caption-text">Válvula 3/2 normalmente cerrada, accionada.</span><a class="headerlink" href="#id2" title="Enlace permanente a esta imagen">¶</a></p>
+<a class="reference internal image-reference" href="_images/neumatic-valve-52-2.png"><img alt="Válvula 5/2 accionada." src="_images/neumatic-valve-52-2.png" style="width: 160px;"></a>
+<p class="caption"><span class="caption-text">Válvula 5/2 accionada.</span><a class="headerlink" href="#id2" title="Enlace permanente a esta imagen">¶</a></p>
 </div>
-<p>Las dos vías de debajo se suelen conectar a la fuente de presión en su
-izquierda y al escape a la derecha.
-La vía superior se utiliza para llevar aire a un cilindro de simple
-efecto o para retirar ese aire durante el reposo.</p>
-<p>Esta válvula permite accionar el cilindro y llevarlo al reposo con un
-solo elemento de control, tal y como se puede comprobar en la siguiente
-simulación:</p>
+<p>Las tres vías de la parte inferior se conectan a la fuente de presión
+(vía de en medio) y a los escapes a la izquierda y a la derecha.
+Las dos vías superiores se utilizan para llevar aire a dos lugares
+distintos o para retirar ese aire durante el reposo. Esta válvula está
+pensada para pilotar cilindros de dos vías que veremos más adelante.</p>
+<p>En la siguiente simulación podemos ver cómo funciona esta válvula
+pilotando dos cilindros de simple efecto:</p>
 <div class="video-center">
-<iframe src="/neumatic/index.html?loadFile=single-32.txt"></iframe>
+<iframe src="/neumatic/index.html?loadFile=single-52.txt"></iframe>
 </div><ul class="simple">
-<li>Al <strong>accionar la válvula 3/2</strong>, el aire pasa directamente desde la
-fuente de presión hacia el cilindro neumático, por lo que el vástago
-sale completamente hacia afuera. Este comportamiento es el mismo que
-tenía una válvula 2/2.</li>
-<li>Al <strong>llevar a reposo la válvula 3/2</strong>, el aire introducido en el
-cilindro tiene una vía de escape a través de la válvula, por lo que el
-cilindro retorna a su posición de reposo. Esto es equivalente a abrir
-otra válvula 2/2 para permitir el escape de aire.</li>
+<li>Al <strong>accionar la válvula 5/2</strong>, el aire pasa directamente desde la
+fuente de presión hacia el cilindro neumático 1.0, por lo que el vástago
+sale completamente hacia afuera. Mientras tanto, el cilindro 2.0 se
+conecta con el escapa, permitiendo que este vuelva a su posición de
+reposo.</li>
+<li>Al <strong>llevar a reposo la válvula 5/2</strong>, el aire antes introducido en el
+cilindro 1.0 tiene una vía de escape a través de la válvula, por lo que
+este cilindro retorna a su posición de reposo.
+Mientras tanto, al cilindro 2.0 le llega toda la presión, por lo que el
+vástago sale completamente hacia fuera.</li>
 </ul>
-<div class="section" id="valvula-normalmente-abierta">
-<h2>Válvula normalmente abierta<a class="headerlink" href="#valvula-normalmente-abierta" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>En ocasiones es necesario que la válvula deje pasar el aire cuando está
-en reposo y que corte el paso de aire cuando se acciona.
-La válvula con este funcionamiento se denomina <strong>Normalmente Abierta</strong>
-y tiene en su símbolo los dos estados intercambiados:</p>
-<div class="figure align-center" id="id3">
-<a class="reference internal image-reference" href="_images/neumatic-valve-32-3.png"><img alt="Válvula 3/2 normalmente abierta, en reposo." src="_images/neumatic-valve-32-3.png" style="width: 160px;"></a>
-<p class="caption"><span class="caption-text">Válvula 3/2 normalmente abierta, en reposo.</span><a class="headerlink" href="#id3" title="Enlace permanente a esta imagen">¶</a></p>
-</div>
-<div class="figure align-center" id="id4">
-<a class="reference internal image-reference" href="_images/neumatic-valve-32-4.png"><img alt="Válvula 3/2 normalmente abierta, accionada." src="_images/neumatic-valve-32-4.png" style="width: 160px;"></a>
-<p class="caption"><span class="caption-text">Válvula 3/2 normalmente abierta, accionada.</span><a class="headerlink" href="#id4" title="Enlace permanente a esta imagen">¶</a></p>
-</div>
-</div>
-<div class="section" id="accionamientos">
-<h2>Accionamientos<a class="headerlink" href="#accionamientos" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>Las válvulas vistas hasta el momento tienen un accionamiento manual con
-enclavamiento. Esto significa que la válvula se mueve con la mano y se
-mantiene en esa posición hasta que volvemos a accionarla manualmente.</p>
-<p>Existen otros tipos de accionamientos como el accionamiento por
-<strong>pulsador con retorno a muelle</strong>.
-Este accionamiento mueve la válvula mientras se está pulsando,
-pero vuelve a su posición de reposo al dejar de pulsar:</p>
-<div class="figure align-center" id="id5">
-<a class="reference internal image-reference" href="_images/neumatic-valve-32-5.png"><img alt="Válvula 3/2 accionada por pulsador y retorno a muelle." src="_images/neumatic-valve-32-5.png" style="width: 160px;"></a>
-<p class="caption"><span class="caption-text">Válvula 3/2 accionada por pulsador y retorno a muelle.</span><a class="headerlink" href="#id5" title="Enlace permanente a esta imagen">¶</a></p>
-</div>
-<p>En el <strong>accionamiento por rodillo con retorno a muelle</strong>, un rodillo se
-mueve para accionar la válvula cuando choca con un pistón o con un objeto
-que se mueve:</p>
-<div class="figure align-center" id="id6">
-<a class="reference internal image-reference" href="_images/neumatic-valve-32-6.png"><img alt="Válvula 3/2 accionada por rodillo y retorno a muelle." src="_images/neumatic-valve-32-6.png" style="width: 160px;"></a>
-<p class="caption"><span class="caption-text">Válvula 3/2 accionada por rodillo y retorno a muelle.</span><a class="headerlink" href="#id6" title="Enlace permanente a esta imagen">¶</a></p>
-</div>
-<p>En el <strong>accionamiento por pilotaje neumático</strong> la manera de accionar la
-válvula es aportando aire a presión en cada uno de sus extremos derecho o
-izquierdo:</p>
-<div class="figure align-center" id="id7">
-<a class="reference internal image-reference" href="_images/neumatic-valve-32-7.png"><img alt="Válvula 3/2 accionada neumáticamente." src="_images/neumatic-valve-32-7.png" style="width: 190px;"></a>
-<p class="caption"><span class="caption-text">Válvula 3/2 accionada neumáticamente.</span><a class="headerlink" href="#id7" title="Enlace permanente a esta imagen">¶</a></p>
-</div>
-</div>
 <div class="section" id="ejercicios">
 <h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Enlazar permanentemente con este título">¶</a></h2>
 <ol class="arabic">
-<li><p class="first">¿Qué es una válvula neumática 3/2 y de qué partes se compone?</p>
+<li><p class="first">¿Qué es una válvula neumática 5/2 y de qué partes se compone?</p>
 </li>
-<li><p class="first">Explica con tus palabras cómo funciona una válvula 3/2 en cada una
+<li><p class="first">Explica con tus palabras cómo funciona una válvula 5/2 en cada una
 de sus dos posiciones.</p>
 </li>
-<li><p class="first">Dibuja una válvula 3/2 normalmente abierta y una válvula 3/2
-normalmente cerrada, ambas en reposo.</p>
+<li><p class="first">Dibuja una válvula 5/2 de accionamiento manual en reposo.
+Dibuja una válvula 5/2 de accionamiento manual en accionada.</p>
+<p>En ambos casos dibuja la entrada de presión y los escapes.</p>
 </li>
-<li><p class="first">Dibuja en el siguiente simulador un cilindro de simple efecto accionado
-por una válvula 3/2 manual con enclavamiento, normalmente abierta.</p>
-<p>Para dibujar la válvula <strong>normalmente abierta</strong>, dibuja una válvula
-normalmente cerrada (por defecto) y luego elige en el menú
-<code class="docutils literal notranslate"><span class="pre">Editar...</span> <span class="pre">Voltear</span></code> y al clicar sobre la válvula cambiará su
-funcionamiento.</p>
+<li><p class="first">Dibuja en el siguiente simulador dos cilindros de simple efecto
+accionados por una válvula 5/2 manual con enclavamiento.</p>
+<p>Comprueba que su funcionamiento es el mismo que el circuito simulado
+al comienzo de este tema.</p>
 <div class="video-center">
 <iframe src="/neumatic/index.html"></iframe>
 </div></li>
-<li><p class="first">Explica brevemente cada uno de los 4 accionamientos de una válvula
-neumática que se han visto más arriba.</p>
-</li>
-<li><p class="first">Dibuja en el siguiente simulador un cilindro de simple efecto accionado
-por una válvula 3/2 con accionamiento por rodillo.</p>
-<p>Coloca el rodillo al comienzo de la carrera del cilindro y simula el
-circuito para ver cómo se comporta.</p>
-<div class="video-center">
-<iframe src="/neumatic/index.html"></iframe>
-</div></li>
-<li><p class="first">Explica con tus palabras el comportamiento del circuito anterior
-y por qué funciona de esa manera.</p>
-</li>
 </ol>
 </div>
 </div>
@@ -214,10 +159,10 @@ y por qué funciona de esa manera.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="mecan-neumatic-simple-efecto.html" class="btn btn-neutral float-right" title="5. Cilindro de simple efecto" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="mecan-neumatic-doble-efecto.html" class="btn btn-neutral float-right" title="7. Cilindro de doble efecto" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="mecan-neumatic-valvulas.html" class="btn btn-neutral" title="3. Válvulas neumáticas" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+        <a href="mecan-neumatic-simple-efecto.html" class="btn btn-neutral" title="5. Cilindro de simple efecto" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
       
     </div>
   
@@ -276,8 +221,8 @@ y por qué funciona de esa manera.</p>
           
           </a>
           <br>
-          <a href="../en/mecan-neumatic-valvula-32.html">English</a>
-          <!-- | <a href="../ca/mecan-neumatic-valvula-32.html">Català</a> -->
+          <a href="../en/mecan-neumatic-valvula-52.html">English</a>
+          <!-- | <a href="../ca/mecan-neumatic-valvula-52.html">Català</a> -->
           <br>
 
           
@@ -311,9 +256,9 @@ y por qué funciona de esa manera.</p>
 <li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-intro.html">1. Introducción a la neumática</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-simbolos.html">2. Símbolos neumáticos</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvulas.html">3. Válvulas neumáticas</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">4. Válvula 3/2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvula-32.html">4. Válvula 3/2</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-simple-efecto.html">5. Cilindro de simple efecto</a></li>
-<li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvula-52.html">6. Válvula 5/2</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">6. Válvula 5/2</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-doble-efecto.html">7. Cilindro de doble efecto</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvula-or.html">8. La válvula selectora o válvula or</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mecan-neumatic-valvula-and.html">9. La válvula de simultaneidad o válvula and</a></li>

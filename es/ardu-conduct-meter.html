@@ -106,15 +106,52 @@ Biología y Geología para realizar experimentos.</p>
 <div class="contents local topic" id="indice-de-contenidos">
 <p class="topic-title">Índice de contenidos:</p>
 <ul class="simple">
-<li><a class="reference internal" href="#materiales-y-herramientas" id="id7">Materiales y herramientas</a></li>
-<li><a class="reference internal" href="#esquema-electrico" id="id8">Esquema eléctrico</a></li>
-<li><a class="reference internal" href="#cableado-electrico" id="id9">Cableado eléctrico</a></li>
-<li><a class="reference internal" href="#programa-de-arduino" id="id10">Programa de Arduino</a></li>
-<li><a class="reference internal" href="#fotografias-del-proyecto" id="id11">Fotografías del proyecto</a></li>
+<li><a class="reference internal" href="#puntos-a-destacar" id="id7">Puntos a destacar</a></li>
+<li><a class="reference internal" href="#materiales-y-herramientas" id="id8">Materiales y herramientas</a></li>
+<li><a class="reference internal" href="#esquema-electrico" id="id9">Esquema eléctrico</a></li>
+<li><a class="reference internal" href="#cableado-electrico" id="id10">Cableado eléctrico</a></li>
+<li><a class="reference internal" href="#programa-de-arduino" id="id11">Programa de Arduino</a></li>
+<li><a class="reference internal" href="#fotografias-del-proyecto" id="id12">Fotografías del proyecto</a></li>
 </ul>
 </div>
+<div class="section" id="puntos-a-destacar">
+<h2><a class="toc-backref" href="#id7">Puntos a destacar</a><a class="headerlink" href="#puntos-a-destacar" title="Enlazar permanentemente con este título">¶</a></h2>
+<dl class="docutils">
+<dt>Ventajas:</dt><dd><ul class="simple">
+<li>La medición de conductividad se realiza con un divisor resistivo,
+lo que permite tener un gran margen de medida, desde pocos ohmios
+hasta decenas de megaohmios.</li>
+<li>El divisor resistivo está conectado a tensión mediante salidas
+digitales del Arduino, lo que permite mantener la tensión solo un
+pequeño tiempo durante la medición. La mayor parte del tiempo el
+sensor no tiene tensión y esto reduce mucho la degradación por la
+electrólisis que provoca la tensión de medida.
+Además, la medida se realiza con tensiones alternas, más adecuado
+para un conductímetro que las tensiones continuas.</li>
+<li>Utiliza el nuevo modelo de Arduino UNO Revisión 4, que tiene un
+conversor analógico-digital de mayor resolución, 14 bits (16384
+puntos) frente al conversor tradicional del Arduino UNO Revisión 3
+que solo tenía 10 bits de resolución (1024 puntos).</li>
+</ul>
+</dd>
+<dt>Inconvenientes:</dt><dd><ul class="simple">
+<li>La medida de resistencia (o conductividad), al realizarse con un
+divisor resistivo, tiene poca resolución y maneja un error, en
+ocasiones, mayor del 1%.</li>
+<li>Al conectar el sensor a tensión mediante salidas digitales, se añade
+una pequeña resistencia extra de unos 40 Ohmios correspondiente a las
+salidas digitales.</li>
+<li>El nuevo modelo de Arduino UNO Revisión 4 utilizado no está tan
+disponible en tiendas ni es tan económico como la revisión anterior.</li>
+<li>Al utilizar un divisor resistivo propio, es necesario montarlo en una
+placa de prototipos para soldadura, en vez de poder utilizar un sensor
+estándar de conductividad.</li>
+</ul>
+</dd>
+</dl>
+</div>
 <div class="section" id="materiales-y-herramientas">
-<h2><a class="toc-backref" href="#id7">Materiales y herramientas</a><a class="headerlink" href="#materiales-y-herramientas" title="Enlazar permanentemente con este título">¶</a></h2>
+<h2><a class="toc-backref" href="#id8">Materiales y herramientas</a><a class="headerlink" href="#materiales-y-herramientas" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Listado de materiales y herramientas necesarios para construir el proyecto.</p>
 <dl class="docutils">
 <dt>Materiales:</dt><dd><ul class="simple">
@@ -147,21 +184,21 @@ Biología y Geología para realizar experimentos.</p>
 </dl>
 </div>
 <div class="section" id="esquema-electrico">
-<h2><a class="toc-backref" href="#id8">Esquema eléctrico</a><a class="headerlink" href="#esquema-electrico" title="Enlazar permanentemente con este título">¶</a></h2>
+<h2><a class="toc-backref" href="#id9">Esquema eléctrico</a><a class="headerlink" href="#esquema-electrico" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="figure align-default" id="id1">
 <a class="reference internal image-reference" href="_images/ardu-conduct-meter-sch.png"><img alt="Esquema eléctrico del conductímetro." src="_images/ardu-conduct-meter-sch.png" style="width: 640px;"></a>
 <p class="caption"><span class="caption-text">Esquema eléctrico del conductímetro.</span><a class="headerlink" href="#id1" title="Enlace permanente a esta imagen">¶</a></p>
 </div>
 </div>
 <div class="section" id="cableado-electrico">
-<h2><a class="toc-backref" href="#id9">Cableado eléctrico</a><a class="headerlink" href="#cableado-electrico" title="Enlazar permanentemente con este título">¶</a></h2>
+<h2><a class="toc-backref" href="#id10">Cableado eléctrico</a><a class="headerlink" href="#cableado-electrico" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="figure align-default" id="id2">
 <a class="reference internal image-reference" href="_images/ardu-conduct-meter-bb.png"><img alt="Montaje y cableado del conductímetro." src="_images/ardu-conduct-meter-bb.png" style="width: 640px;"></a>
 <p class="caption"><span class="caption-text">Montaje y cableado del conductímetro.</span><a class="headerlink" href="#id2" title="Enlace permanente a esta imagen">¶</a></p>
 </div>
 </div>
 <div class="section" id="programa-de-arduino">
-<h2><a class="toc-backref" href="#id10">Programa de Arduino</a><a class="headerlink" href="#programa-de-arduino" title="Enlazar permanentemente con este título">¶</a></h2>
+<h2><a class="toc-backref" href="#id11">Programa de Arduino</a><a class="headerlink" href="#programa-de-arduino" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>A continuación se muestra el código del programa con el que hay que
 programar la placa de control Arduino UNO R4.</p>
 <p>Este programa hace funcionar la placa como conductímetro
@@ -520,7 +557,7 @@ valores en el display LDC y por el puerto serie.</p>
 </td></tr></table></div>
 </div>
 <div class="section" id="fotografias-del-proyecto">
-<h2><a class="toc-backref" href="#id11">Fotografías del proyecto</a><a class="headerlink" href="#fotografias-del-proyecto" title="Enlazar permanentemente con este título">¶</a></h2>
+<h2><a class="toc-backref" href="#id12">Fotografías del proyecto</a><a class="headerlink" href="#fotografias-del-proyecto" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Algunas fotografías del proyecto final, montado dentro de una caja y
 con los componentes soldados en una PCB de prototipos para soldar.</p>
 <div class="figure align-default" id="id3">

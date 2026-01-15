@@ -103,90 +103,84 @@
             
   <div class="section" id="engranajes">
 <span id="mecan-engranajes"></span><h1><span class="target" id="index-2"></span>Gears<a class="headerlink" href="#engranajes" title="Permalink to this headline">¶</a></h1>
-<p>A gear is a mechanism made up of two or more toothed wheels. It is used to transmit circular movement and to transform speed and turning force.</p>
-<p>If the two wheels are of different sizes, the larger wheel is called <strong>crown</strong> and the smaller wheel is called <strong>pinion</strong>.</p>
+<p>A <strong>gear system</strong> is a mechanism made up of two or more <strong>toothed wheels</strong> that mesh together. Its main function is to <strong>transmit rotational motion</strong> and to change rotational speed and torque.</p>
+<p>When the wheels are different sizes, the larger wheel is called the <strong>gear wheel</strong>, and the smaller one is called the <strong>pinion</strong>.</p>
 <div class="figure align-center" id="id1">
 <a class="reference internal image-reference" href="_images/mecan-gears-01.png"><img alt="Engranaje de corona y piñón con flechas de sentido de giro" src="_images/mecan-gears-01.png" style="width: 397px;"></a>
-<p class="caption"><span class="caption-text">Crown and pinion gear with arrows for direction of rotation.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">Gear wheel and pinion with arrows showing the direction of rotation.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
-<p>One of the most important applications of gears is the transformation of the speed of rotation from a motor, generally fast and with little torque, to the application that has to do work, generally slower and with more torque.</p>
-<p>For example, with gears, the speed of rotation of a car engine is transformed to a lower speed and with greater torque, of the wheels of the car.</p>
+<p>One of the most important applications of gears is changing rotational speed from a motor, which is usually fast and has low torque, to a system that must perform work, usually slower and with higher torque.</p>
+<p>For example, in a car, gears transform the high speed of the engine (which rotates very fast with little torque) into a lower speed but with greater torque to move the wheels.</p>
 <div class="section" id="par-motor">
-<h2><span class="target" id="index-3"></span>Motor torque<a class="headerlink" href="#par-motor" title="Permalink to this headline">¶</a></h2>
-<p>Motor torque is equivalent to the 'force' with which a shaft turns. The name buoyant force is usually reserved for the case of a force acting in a straight line. In the case of rotating axes, the motor torque indicates what rotating force would have to be applied at a distance of one meter from the axis of rotation to produce the same effect.</p>
-<p>For example, a turbo diesel utility car engine usually has an approximate torque of 250 Newton·meter. This motor torque would be equivalent to pushing a rotating shaft with a lever one meter long, applying 250 Newtons at the end (about 25 kilograms-force).</p>
-<p>Gears increase motor torque (turning force) in the same proportion as they reduce turning speed. In the case of a gear that increases the rotation speed, the motor torque will be reduced in the same proportion. These proportions occur in all mechanisms that transform movements.</p>
-<p>A mechanism that multiplies force will, in turn, reduce the distance or speed of movement.</p>
+<h2><span class="target" id="index-3"></span>Torque<a class="headerlink" href="#par-motor" title="Permalink to this headline">¶</a></h2>
+<p>Torque is the <strong>rotational force</strong> acting on a shaft.</p>
+<p>The term pushing force is usually used for forces acting in a straight line. In the case of rotating shafts, torque can be imagined as the force that would need to be applied with a one-meter-long lever to obtain the same rotational effect.</p>
+<p>For example, if a car engine has a torque of 250 newton-meters, it is as if we were pushing a rotating shaft with a one-meter-long lever using a force of 250 newtons (about 25 kilograms of force).</p>
+<p>Gears can increase torque (rotational force), but when they do so, speed decreases.</p>
+<p>In the same way, if a gear increases speed, torque decreases by the same ratio.</p>
+<p>This happens in all mechanisms that transform motion: if we gain force, we lose speed, and vice versa.</p>
 </div>
 <div class="section" id="calculo-de-engranajes">
-<h2>Gear calculation<a class="headerlink" href="#calculo-de-engranajes" title="Permalink to this headline">¶</a></h2>
-<p>The speed of rotation of each toothed wheel of a gear depends on the number of teeth.</p>
-<p>The formula that relates the speeds of two toothed wheels equals the product of the number of teeth by the angular speed according to the following formula.</p>
+<h2>Gear calculations<a class="headerlink" href="#calculo-de-engranajes" title="Permalink to this headline">¶</a></h2>
+<p>The <strong>rotational speed</strong> of each toothed wheel in a gear system depends on the number of teeth it has.</p>
+<p>The relationship between the two wheels can be calculated using this formula:</p>
 <div class="math">
 <p><img src="_images/math/4aa1edff8658f753a97abc5a049a23bbf1a33eae.svg" alt="Z_{1} \cdot N_{1} = Z_{2} \cdot N_{2}"></p>
-</div><p>Being</p>
+</div><p>Where:</p>
 <blockquote>
-<div><p>Z1 = Teeth of the first sprocket</p>
-<p>N1 = Angular speed of the first gear</p>
-<p>Z2 = Teeth of the second sprocket</p>
-<p>N1 = Angular speed of the second gear</p>
+<div><p>Z1 = Number of teeth of the first gear</p>
+<p>N1 = Rotational speed of the first gear</p>
+<p>Z2 = Number of teeth of the second gear</p>
+<p>N2 = Rotational speed of the second gear</p>
 </div></blockquote>
-<p>Angular velocity is usually measured in <strong>revolutions per minute</strong> also written as <strong>rpm</strong>, which means the number of complete revolutions the wheel turns in one minute. A typical motor usually has an angular velocity in the range from 1,000 rpm to 6,000 rpm.</p>
+<p>This means that the number of teeth of a gear multiplied by its rotational speed is the same for all gears in the system.</p>
+<p>Rotational speed is usually measured in <strong>revolutions per minute</strong>, also written as <strong>rpm</strong>, which means the number of complete turns the wheel makes in one minute. A typical motor usually has a rotational speed in a range from 600 rpm to 6000 rpm.</p>
 </div>
 <div class="section" id="ejercicio-aerogenerador">
 <h2>Wind turbine exercise<a class="headerlink" href="#ejercicio-aerogenerador" title="Permalink to this headline">¶</a></h2>
-<p>In this case we are going to calculate a gear that is used to multiply the speed of rotation of an axis.</p>
-<p>A wind turbine rotates its blades at a speed of 20rpm and you must multiply that speed up to the speed of the generator which is 1000rpm. If the pinion connected to the generator has 15 teeth, how many teeth will the crown have?</p>
-<p>The first step will be to write the data of the problem.</p>
+<p>We want to calculate a gear system that multiplies the rotational speed of a wind turbine shaft.</p>
+<p>The blades of a wind turbine rotate at a speed of 20 rpm, but the electric generator needs to rotate at 1000 rpm. If the <strong>pinion</strong> connected to the generator has 15 teeth, how many teeth will the gear wheel connected to the blades have?</p>
+<p>The first step is to write down the data from the problem:</p>
 <div class="math">
 <p><img src="_images/math/fe29080fd1159f78af09e8661487cef2956592a1.svg" alt="N_{1} = 20 \: rpm"></p>
 </div><div class="math">
 <p><img src="_images/math/15cdd656175719a2fc007c1d62a6ed891e98447d.svg" alt="N_{2} = 1000 \: rpm"></p>
 </div><div class="math">
 <p><img src="_images/math/3cc560ea8d5e1a26b79351b59d40528f866c3475.svg" alt="Z_{2} = 15 \: teeth"></p>
-</div><p>Next we write the formula and substitute the known values.</p>
+</div><p>Next, we write the formula and substitute the known values:</p>
 <div class="math">
 <p><img src="_images/math/4aa1edff8658f753a97abc5a049a23bbf1a33eae.svg" alt="Z_{1} \cdot N_{1} = Z_{2} \cdot N_{2}"></p>
 </div><div class="math">
 <p><img src="_images/math/7ba131a574ca486d4efe0a15b72b999b5353465d.svg" alt="Z_{1} \cdot 20 \: rpm = 15 \cdot 1000 \: rpm"></p>
-</div><p>Finally we solve the equation and calculate the value of the unknown.</p>
+</div><p>Finally, we solve the equation and calculate the value of the unknown:</p>
 <div class="math">
 <p><img src="_images/math/c237e4ca887ceb807629ca8c231844c916f1aad7.svg" alt="Z_{1} = \cfrac{15 \cdot 1000 \: rpm}{20 \: rpm}"></p>
 </div><div class="math">
 <p><img src="_images/math/b5012151ae048cad63ca0a86043e20f0cdf0eea9.svg" alt="Z_{1} = 750 \: teeth"></p>
-</div><p>In practice, when the tooth ratio is so large, gear trains with more than two interconnected wheels are often used to reduce or increase the rotational speed in several stages.</p>
+</div><p>In practice, when the ratio between the numbers of teeth is so large, a gear train with more than two wheels connected together is usually used to reduce or increase rotational speed in several stages.</p>
 <div class="figure align-center" id="id2">
 <a class="reference internal image-reference" href="_images/mecan-gears-02.png"><img alt="Tren de engranajes que reducen mucho la velocidad de giro del piñón" src="_images/mecan-gears-02.png" style="width: 604px;"></a>
-<p class="caption"><span class="caption-text">Gear train that greatly reduces the speed of rotation of the pinion</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">Gear train that greatly reduces the rotational speed of the pinion</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="section" id="ejercicio-automovil-electrico">
-<h2>Ejercicio automóvil eléctrico<a class="headerlink" href="#ejercicio-automovil-electrico" title="Permalink to this headline">¶</a></h2>
-<p>Un automóvil eléctrico tiene el motor conectado mediante un engranaje
-reductor a las ruedas. Sabemos que la velocidad máxima del motor es de
-9000rpm y que la velocidad máxima de las ruedas es de 1500rpm.
-Si el número de dientes del engranaje más pequeño debe ser de 8 ó más
-dientes ¿Cuantos dientes debe tener cada engranaje?</p>
-<p>Este ejercicio permite varias soluciones válidas porque no especifica
-el tamaño del piñón.</p>
-<p>El primer paso será escribir los datos del problema.
-El motor estará conectado al primer engranaje y las ruedas al segundo
-engranaje.</p>
+<h2>Electric car exercise<a class="headerlink" href="#ejercicio-automovil-electrico" title="Permalink to this headline">¶</a></h2>
+<p>An electric car has the motor connected to the wheels through a <strong>reduction gear</strong>. We know that the maximum motor speed is 9000 rpm and that the maximum wheel speed is 1500 rpm. If the smallest gear must have 8 or more teeth, how many teeth should each gear have?</p>
+<p>This exercise allows several valid solutions because the size of the pinion is not specified.</p>
+<p>The first step is to write down the data from the problem. The motor is connected to the first gear and the wheels to the second gear.</p>
 <div class="math">
 <p><img src="_images/math/0348646d7c8f0642504140321cba4629cb84b745.svg" alt="N_{1} = 9000 \: rpm"></p>
 </div><div class="math">
 <p><img src="_images/math/a2623de29a27b657ea1141a77bc75b2451db2817.svg" alt="N_{2} = 1500 \: rpm"></p>
-</div><p>El engranaje 1 conectado al motor es el que gira más rápido y, por lo
-tanto, es el engranaje más pequeño de los dos. Ahora vamos a escoger
-un tamaño para este engranaje pequeño, que sea igual o mayor de 8 dientes.</p>
+</div><p>Gear 1, connected to the motor, rotates faster and is therefore the smaller of the two gears. Now we choose a size for this small gear that is equal to or greater than 8 teeth:</p>
 <div class="math">
 <p><img src="_images/math/8dcb961b15562955caa887e737a95035507045bf.svg" alt="Z_{1} = 10 \: teeth"></p>
-</div><p>Next we write the formula and substitute the known values.</p>
+</div><p>Next, we write the formula and substitute the known values:</p>
 <div class="math">
 <p><img src="_images/math/4aa1edff8658f753a97abc5a049a23bbf1a33eae.svg" alt="Z_{1} \cdot N_{1} = Z_{2} \cdot N_{2}"></p>
 </div><div class="math">
 <p><img src="_images/math/1e88b56a7c20f87f556b381f7e8970d7ea8bf80e.svg" alt="10 \cdot 9000 \: rpm = Z_{2} \cdot 1500 \: rpm"></p>
-</div><p>Finally we solve the equation and calculate the value of the unknown.</p>
+</div><p>Finally, we solve the equation and calculate the value of the unknown:</p>
 <div class="math">
 <p><img src="_images/math/2e05b9d3ff7016df8487a5eaf72c6b309fc776be.svg" alt="Z_{2} = \cfrac{10 \cdot 9000 \: rpm}{1500 \: rpm}"></p>
 </div><div class="math">

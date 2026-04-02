@@ -7,8 +7,9 @@
 
 Acerca de Picuino
 =================
-Picuino es un **proyecto personal** de un profesor de **Educación
-Secundaria** que reúne **recursos abiertos para el aula** de Tecnología.
+Picuino es un **proyecto personal** de Carlos Pardo, profesor de 
+**Educación Secundaria**, que reúne **recursos abiertos para el aula**
+de Tecnología.
 Está pensado para aprender de forma práctica, combinando teoría, 
 materiales, ejercicios y proyectos listos para usar.
 

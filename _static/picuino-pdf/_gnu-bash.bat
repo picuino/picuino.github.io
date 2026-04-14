@@ -1,1 +1,0 @@
-@/Picuino/tecno-recursos/_gnu-bash.bat

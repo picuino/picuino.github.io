@@ -226,7 +226,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/content.html</loc>
-  <lastmod>2026-04-16</lastmod>
+  <lastmod>2026-04-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -441,6 +441,42 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://www.picuino.com/en/cucabot-base.html</loc>
+  <lastmod>2026-04-21</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.picuino.com/en/cucabot-cero.html</loc>
+  <lastmod>2026-04-21</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.picuino.com/en/cucabot-fototropo.html</loc>
+  <lastmod>2026-04-21</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.picuino.com/en/cucabot-index.html</loc>
+  <lastmod>2026-04-21</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.picuino.com/en/cucabot-murofilo.html</loc>
+  <lastmod>2026-04-21</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.picuino.com/en/cucabot-pegatortas.html</loc>
+  <lastmod>2026-04-21</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://www.picuino.com/en/dibujo-acotacion.html</loc>
   <lastmod>2026-03-31</lastmod>
   <changefreq>weekly</changefreq>
@@ -508,7 +544,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/electric-cableado.html</loc>
-  <lastmod>2026-03-31</lastmod>
+  <lastmod>2026-04-20</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -598,7 +634,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/electric-ley-ohm.html</loc>
-  <lastmod>2026-03-31</lastmod>
+  <lastmod>2026-04-20</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -634,25 +670,25 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/electric-resolver-circuitos.html</loc>
-  <lastmod>2026-03-31</lastmod>
+  <lastmod>2026-04-20</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/electric-serie-paralelo-resistencias.html</loc>
-  <lastmod>2026-03-31</lastmod>
+  <lastmod>2026-04-20</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/electric-serie-paralelo.html</loc>
-  <lastmod>2026-03-31</lastmod>
+  <lastmod>2026-04-20</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/electric-simbolos.html</loc>
-  <lastmod>2026-03-31</lastmod>
+  <lastmod>2026-04-20</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -664,7 +700,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/electric-simulador-condensador.html</loc>
-  <lastmod>2026-03-31</lastmod>
+  <lastmod>2026-04-20</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -676,7 +712,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/electric-simulador-index.html</loc>
-  <lastmod>2026-03-31</lastmod>
+  <lastmod>2026-04-20</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -736,7 +772,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/electric-teoria-index.html</loc>
-  <lastmod>2026-03-31</lastmod>
+  <lastmod>2026-04-20</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -1030,7 +1066,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/error-404.html</loc>
-  <lastmod>2026-04-16</lastmod>
+  <lastmod>2026-04-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -1162,7 +1198,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/genindex.html</loc>
-  <lastmod>2026-04-16</lastmod>
+  <lastmod>2026-04-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -1318,7 +1354,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/index.html</loc>
-  <lastmod>2026-04-16</lastmod>
+  <lastmod>2026-04-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -2662,43 +2698,49 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/search.html</loc>
-  <lastmod>2026-04-16</lastmod>
+  <lastmod>2026-04-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/taller-historia-herramientas.html</loc>
-  <lastmod>2026-03-31</lastmod>
+  <lastmod>2026-04-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/taller-index.html</loc>
-  <lastmod>2026-03-31</lastmod>
+  <lastmod>2026-04-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/taller-papercraft.html</loc>
-  <lastmod>2026-03-31</lastmod>
+  <lastmod>2026-04-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/taller-seniales-seguridad.html</loc>
-  <lastmod>2026-03-31</lastmod>
+  <lastmod>2026-04-21</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.picuino.com/en/taller-tablero.html</loc>
+  <lastmod>2026-04-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/taller-tangram.html</loc>
-  <lastmod>2026-03-31</lastmod>
+  <lastmod>2026-04-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/en/taller-tesela-sombrero.html</loc>
-  <lastmod>2026-03-31</lastmod>
+  <lastmod>2026-04-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -3328,7 +3370,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/content.html</loc>
-  <lastmod>2026-04-16</lastmod>
+  <lastmod>2026-04-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -3543,6 +3585,42 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://www.picuino.com/es/cucabot-base.html</loc>
+  <lastmod>2026-04-21</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.picuino.com/es/cucabot-cero.html</loc>
+  <lastmod>2026-04-21</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.picuino.com/es/cucabot-fototropo.html</loc>
+  <lastmod>2026-04-21</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.picuino.com/es/cucabot-index.html</loc>
+  <lastmod>2026-04-21</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.picuino.com/es/cucabot-murofilo.html</loc>
+  <lastmod>2026-04-21</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.picuino.com/es/cucabot-pegatortas.html</loc>
+  <lastmod>2026-04-21</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://www.picuino.com/es/dibujo-acotacion.html</loc>
   <lastmod>2026-03-31</lastmod>
   <changefreq>weekly</changefreq>
@@ -3610,7 +3688,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/electric-cableado.html</loc>
-  <lastmod>2026-03-31</lastmod>
+  <lastmod>2026-04-20</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -3700,7 +3778,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/electric-ley-ohm.html</loc>
-  <lastmod>2026-03-31</lastmod>
+  <lastmod>2026-04-20</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -3736,25 +3814,25 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/electric-resolver-circuitos.html</loc>
-  <lastmod>2026-03-31</lastmod>
+  <lastmod>2026-04-20</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/electric-serie-paralelo-resistencias.html</loc>
-  <lastmod>2026-03-31</lastmod>
+  <lastmod>2026-04-20</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/electric-serie-paralelo.html</loc>
-  <lastmod>2026-03-31</lastmod>
+  <lastmod>2026-04-20</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/electric-simbolos.html</loc>
-  <lastmod>2026-03-31</lastmod>
+  <lastmod>2026-04-20</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -3766,7 +3844,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/electric-simulador-condensador.html</loc>
-  <lastmod>2026-03-31</lastmod>
+  <lastmod>2026-04-20</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -3778,7 +3856,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/electric-simulador-index.html</loc>
-  <lastmod>2026-03-31</lastmod>
+  <lastmod>2026-04-20</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -3838,7 +3916,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/electric-teoria-index.html</loc>
-  <lastmod>2026-03-31</lastmod>
+  <lastmod>2026-04-20</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -4132,7 +4210,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/error-404.html</loc>
-  <lastmod>2026-04-16</lastmod>
+  <lastmod>2026-04-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -4264,7 +4342,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/genindex.html</loc>
-  <lastmod>2026-04-16</lastmod>
+  <lastmod>2026-04-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -4420,7 +4498,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/index.html</loc>
-  <lastmod>2026-04-16</lastmod>
+  <lastmod>2026-04-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -5764,43 +5842,49 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/search.html</loc>
-  <lastmod>2026-04-16</lastmod>
+  <lastmod>2026-04-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/taller-historia-herramientas.html</loc>
-  <lastmod>2026-03-31</lastmod>
+  <lastmod>2026-04-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/taller-index.html</loc>
-  <lastmod>2026-03-31</lastmod>
+  <lastmod>2026-04-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/taller-papercraft.html</loc>
-  <lastmod>2026-03-31</lastmod>
+  <lastmod>2026-04-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/taller-seniales-seguridad.html</loc>
-  <lastmod>2026-03-31</lastmod>
+  <lastmod>2026-04-21</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.picuino.com/es/taller-tablero.html</loc>
+  <lastmod>2026-04-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/taller-tangram.html</loc>
-  <lastmod>2026-03-31</lastmod>
+  <lastmod>2026-04-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.picuino.com/es/taller-tesela-sombrero.html</loc>
-  <lastmod>2026-03-31</lastmod>
+  <lastmod>2026-04-21</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>

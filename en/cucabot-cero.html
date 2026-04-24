@@ -29,7 +29,7 @@
   <link rel="index" title="Index" href="content.html">
   <link rel="search" title="Search" href="search.html">
   <link rel="next" title="3. Murófilo" href="cucabot-murofilo.html">
-  <link rel="prev" title="1. Plataforma universal" href="cucabot-base.html">
+  <link rel="prev" title="1. Plataforma universal" href="cucabot-plataforma.html">
 
 </head>
 
@@ -106,34 +106,101 @@
 <span id="id1"></span><h1><span class="section-number">2. </span>Cucabot cero<a class="headerlink" href="#cucabot-cero" title="Permalink to this headline">¶</a></h1>
 <p>Este es el robot con el circuito eléctrico y funcionamiento más sencillo
 de todos.</p>
-<p>Al conectar el interruptor de marcha el robot avanza hacia adelante hasta
-que choca con un obstáculo, momento en el que el robot comienza a
-retroceder (avanza hacia atrás) hasta que vuelve a chocar con otro
-obstáculo, momento en el que vuelve a invertir el sentido de la marcha.</p>
-<div class="section" id="esquema-electrico">
-<h2>Esquema eléctrico<a class="headerlink" href="#esquema-electrico" title="Permalink to this headline">¶</a></h2>
+<p>Al conectar el interruptor de marcha el robot avanza hacia adelante.
+Cuando choca con un obstáculo de frente el robot comienza a
+retroceder (avanza hacia atrás).
+El robot sigue retrocediendo hasta que vuelve a chocar con otro
+obstáculo por atrás. En ese momento vuelve a invertir el sentido de
+la marcha para ir hacia adelante.</p>
+<div class="section" id="montaje-mecanico">
+<h2>Montaje mecánico<a class="headerlink" href="#montaje-mecanico" title="Permalink to this headline">¶</a></h2>
+<p>El montaje se basa en la plataforma universal para robots Cucabot
+a la que añadiremos un doble parachoques que servirá de sensor para
+cambiar el sentido de la marcha.</p>
+<ol class="arabic simple">
+<li>El parachoques se puede construir a partir de una varilla de 10
+milímetros de sección cuadrada.</li>
+<li>Cortaremos dos trozos de varilla de 140 milímetros de largo para
+tener los parachoques delantero y trasero.</li>
+<li>A continuación cortaremos una varilla de unión de los parachoques
+que debe ser 20 milímetros más larga que la longitud de la plataforma.</li>
+<li>Para sujetar la varilla horizontal a la plataforma cortaremos cuatro
+trozos de varilla de unos 20 milímetros de longitud que se colocarán
+sobre la plataforma a los lados de la varilla de manera que permitan
+que la varilla se mueva con facilidad, pero sin demasiada holgura.</li>
+<li>Cortaremos dos trozos más de 50 milímetros de longitud que colocaremos
+encima de los trozos de sujeción anteriores, para evitar que la varilla
+horizontal se levante de su hueco.</li>
+<li>Continuaremos pegando los parachoques a la varilla horizontal con cola
+termofusible, añadiendo una cantidad generosa de cola en las esquinas
+para evitar que el parachoques se rompa al golpear un obstáculo.</li>
+<li>Después pegaremos un pequeño trozo de varilla de 20 milímetros de
+longitud en el lateral de la varilla horizontal de manera que haga
+de saliente que chocará con el selector de marcha S2.</li>
+<li>Para terminar, pegaremos el selector de marcha S2 de manera que al
+moverse la varilla horizontal, el selector se accionará.</li>
+</ol>
+<p>A continuación se muestran los planos mecánicos del robot Cucabot cero,
+que también se pueden descargar en formato PDF para imprimir:</p>
 <div class="figure align-center" id="id2">
-<a class="reference internal image-reference" href="_images/cucabot-cero-schema.png"><img alt="Esquema eléctrico del robot Cucabot cero." src="_images/cucabot-cero-schema.png" style="width: 640px;"></a>
-<p class="caption"><span class="caption-text">Esquema eléctrico del robot Cucabot cero.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+<a class="reference internal image-reference" href="_images/cucabot-cero-planta.png"><img alt="Vista en planta del robot Cucabot cero." src="_images/cucabot-cero-planta.png" style="width: 720px;"></a>
+<p class="caption"><span class="caption-text">Vista en planta del robot Cucabot cero.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
 </div>
 <div class="figure align-center" id="id3">
-<a class="reference internal image-reference" href="_images/cucabot-cero-cableado.png"><img alt="Cableado eléctrico del robot Cucabot cero." src="_images/cucabot-cero-cableado.png" style="width: 640px;"></a>
-<p class="caption"><span class="caption-text">Cableado eléctrico del robot Cucabot cero.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+<a class="reference internal image-reference" href="_images/cucabot-cero-perfil.png"><img alt="Vista de perfil del robot Cucabot cero." src="_images/cucabot-cero-perfil.png" style="width: 720px;"></a>
+<p class="caption"><span class="caption-text">Vista de perfil del robot Cucabot cero.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
 </div>
-<div class="line-block">
-<div class="line"><a class="reference download internal" download="" href="_downloads/cucabot-cero-electric.pdf"><code class="xref download docutils literal notranslate"><span class="pre">Circuito</span> <span class="pre">eléctrico</span> <span class="pre">y</span> <span class="pre">cableado</span> <span class="pre">del</span> <span class="pre">Cucabot</span> <span class="pre">cero.</span> <span class="pre">Formato</span> <span class="pre">PDF.</span></code></a></div>
+<p><a class="reference download internal" download="" href="_downloads/cucabot-cero-vistas.pdf"><code class="xref download docutils literal notranslate"><span class="pre">Plano</span> <span class="pre">mecánico</span> <span class="pre">del</span> <span class="pre">robot</span> <span class="pre">Cucabot</span> <span class="pre">cero.</span>
+<span class="pre">Formato</span> <span class="pre">PDF.</span></code></a></p>
 </div>
-</div>
-<div class="section" id="montaje-y-funcionamiento">
-<h2>Montaje y funcionamiento<a class="headerlink" href="#montaje-y-funcionamiento" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="montaje-electrico">
+<h2>Montaje eléctrico<a class="headerlink" href="#montaje-electrico" title="Permalink to this headline">¶</a></h2>
+<p>El montaje eléctrico es el mismo que el de la plataforma Cucabot,
+añadiendo un selector de marcha S2 que será el que decida el sentido
+de la marcha del robot dependiendo de la posición de los parachoques.</p>
+<p>Cuando el selector de marcha S2 no está accionado conectará a los
+dos motores con la tensión positiva de la batería V1, haciendo
+que los dos motores giren hacia adelante y que el robot avance.</p>
+<p>Cuando el selector de marcha S2 esté accionado porque el robot ha chocado
+por delante con un obstáculo, se conectará a los motores con la tensión
+negativa de la batería V2, haciendo que los dos motores giren hacia atrás</p>
 <div class="figure align-center" id="id4">
-<a class="reference internal image-reference" href="_images/cucabot-cero-mecan-01.png"><img alt="Funcionamiento del Cucabot cero avanzando hacia una pared a su izquierda." src="_images/cucabot-cero-mecan-01.png" style="width: 240px;"></a>
-<p class="caption"><span class="caption-text">Funcionamiento del Cucabot cero avanzando hacia una pared a su izquierda.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+<a class="reference internal image-reference" href="_images/cucabot-cero-schema.png"><img alt="Esquema eléctrico del robot Cucabot cero." src="_images/cucabot-cero-schema.png" style="width: 640px;"></a>
+<p class="caption"><span class="caption-text">Esquema eléctrico del robot Cucabot cero.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
 </div>
 <div class="figure align-center" id="id5">
-<a class="reference internal image-reference" href="_images/cucabot-cero-mecan-02.png"><img alt="Funcionamiento del Cucabot cero retrocediendo hacia una pared a su derecha." src="_images/cucabot-cero-mecan-02.png" style="width: 240px;"></a>
-<p class="caption"><span class="caption-text">Funcionamiento del Cucabot cero retrocediendo hacia una pared a su derecha.</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+<a class="reference internal image-reference" href="_images/cucabot-cero-cableado.png"><img alt="Cableado eléctrico del robot Cucabot cero." src="_images/cucabot-cero-cableado.png" style="width: 640px;"></a>
+<p class="caption"><span class="caption-text">Cableado eléctrico del robot Cucabot cero.</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
 </div>
+<p><a class="reference download internal" download="" href="_downloads/cucabot-cero-electric.pdf"><code class="xref download docutils literal notranslate"><span class="pre">Circuito</span> <span class="pre">eléctrico</span> <span class="pre">y</span> <span class="pre">cableado</span> <span class="pre">del</span> <span class="pre">Cucabot</span> <span class="pre">cero.</span>
+<span class="pre">Formato</span> <span class="pre">PDF.</span></code></a></p>
+</div>
+<div class="section" id="funcionamiento">
+<h2>Funcionamiento<a class="headerlink" href="#funcionamiento" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Para comenzar colocaremos el parachoques hacia delante de manera que
+el selector de marcha no esté accionado.</li>
+<li>A continuación colocaremos el robot sobre el suelo y accionaremos el
+interruptor de marcha S1 para que el robot comience a avanzar.</li>
+<li>El robot se acercará entonces a un obstáculo, como una pared, de manera
+que el parachoques delantero chocará y moverá la varilla horizontal.</li>
+<li>Al mover la varilla, se accionará el selector de marcha S2 y esto
+provocará que el robot cambie el sentido de la marcha hacia atrás.</li>
+</ol>
+<div class="figure align-center" id="id6">
+<a class="reference internal image-reference" href="_images/cucabot-cero-funcion-01.png"><img alt="Robot Cucabot cero avanzando hacia una pared." src="_images/cucabot-cero-funcion-01.png" style="width: 360px;"></a>
+<p class="caption"><span class="caption-text">Robot Cucabot cero avanzando hacia una pared.</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="id7">
+<a class="reference internal image-reference" href="_images/cucabot-cero-funcion-02.png"><img alt="Robot Cucabot cero después de chocar con una pared de frente." src="_images/cucabot-cero-funcion-02.png" style="width: 360px;"></a>
+<p class="caption"><span class="caption-text">Robot Cucabot cero después de chocar con una pared de frente.</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+<ol class="arabic simple" start="5">
+<li>Cuando el robot choque de nuevo con otro obstáculo en su parte trasera
+la varilla horizontal volverá a moverse y el selector de marcha volverá
+a su posición no accionado o de reposo. En ese momento el robot volverá
+a desplazarse hacia adelante y el ciclo vuelve a comenzar.</li>
+</ol>
 </div>
 <div class="section" id="creditos">
 <h2>Créditos<a class="headerlink" href="#creditos" title="Permalink to this headline">¶</a></h2>
@@ -153,7 +220,7 @@ obstáculo, momento en el que vuelve a invertir el sentido de la marcha.</p>
         <a href="cucabot-murofilo.html" class="btn btn-neutral float-right" title="3. Murófilo" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="cucabot-base.html" class="btn btn-neutral" title="1. Plataforma universal" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="cucabot-plataforma.html" class="btn btn-neutral" title="1. Plataforma universal" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -254,11 +321,10 @@ obstáculo, momento en el que vuelve a invertir el sentido de la marcha.</p>
 <li class="toctree-l2"><a class="reference internal" href="taller-seniales-seguridad.html">Health and safety signs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="taller-tablero.html">Tablas DIN A4</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="cucabot-index.html">Robots Cucabot</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="cucabot-base.html">1. Plataforma universal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cucabot-plataforma.html">1. Plataforma universal</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">2. Cucabot cero</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cucabot-murofilo.html">3. Murófilo</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cucabot-pegatortas.html">4. Pegatortas</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cucabot-fototropo.html">5. Fotótropo</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="taller-historia-herramientas.html">History of tools</a></li>

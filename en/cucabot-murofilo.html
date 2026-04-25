@@ -104,24 +104,103 @@
             
   <div class="section" id="cucabot-murofilo">
 <span id="id1"></span><h1><span class="section-number">3. </span>Cucabot murófilo<a class="headerlink" href="#cucabot-murofilo" title="Permalink to this headline">¶</a></h1>
+<p>Este robot sigue una pared que se encuentra a su izquierda gracias
+a una antena que le sirve de sensor de presencia.</p>
+<p>El robot avanzará hacia la izquierda o avanzará hacia la derecha
+dependiendo de su posición con respecto a la pared, palpándola con la
+antena como un insecto inteligente.</p>
 <div class="section" id="montaje-mecanico">
 <h2>Montaje mecánico<a class="headerlink" href="#montaje-mecanico" title="Permalink to this headline">¶</a></h2>
+<p>El montaje se basa en la plataforma universal para robots Cucabot
+a la que añadiremos una antena de detección de muros que servirá de
+sensor para cambiar el movimiento de los motores a izquierda o a derecha.</p>
+<ol class="arabic simple">
+<li>Primero cortaremos un alambre de acero galvanizado de 0.8 milímetros
+de grosor y 250 milímetros de largo.</li>
+<li>A continuación doblaremos el alambre de acero con las dimensiones que
+aparecen en el plano mecánico.
+El alambre se debe doblar sobre si mismo en la zona en la que está
+unido al sensor S2 para evitar que la antena se caiga hacia el suelo.</li>
+<li>La forma más efectiva de unir el alambre de la antena al sensor S2
+es con un tubo de plástico termoretractil.
+En caso de no disponer de tubo termoretractil, también se puede
+unir con cinta aislante, pero es más difícil conseguir que la antena
+quede bien sujeta.</li>
+<li>Para terminar escribiremos en un trozo de papel la
+referencia del nuevo componente (S2) y lo
+pegaremos junto al componente correspondiente.</li>
+</ol>
+<p>A continuación se muestran los planos mecánicos del robot Cucabot cero,
+que también se pueden descargar en formato PDF para imprimir:</p>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/cucabot-murofilo-planta.png"><img alt="Vista en planta del robot Cucabot murófilo." src="_images/cucabot-murofilo-planta.png" style="width: 640px;"></a>
+<p class="caption"><span class="caption-text">Vista en planta del robot Cucabot murófilo.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p><a class="reference download internal" download="" href="_downloads/cucabot-murofilo-vistas.pdf"><code class="xref download docutils literal notranslate"><span class="pre">Plano</span> <span class="pre">mecánico</span> <span class="pre">del</span> <span class="pre">robot</span> <span class="pre">Cucabot</span> <span class="pre">murófilo.</span>
+<span class="pre">Formato</span> <span class="pre">PDF.</span></code></a></p>
 </div>
 <div class="section" id="montaje-electrico">
 <h2>Montaje eléctrico<a class="headerlink" href="#montaje-electrico" title="Permalink to this headline">¶</a></h2>
-<div class="figure align-center" id="id2">
-<a class="reference internal image-reference" href="_images/cucabot-murofilo-schema.png"><img alt="Esquema eléctrico del robot Cucabot murófilo." src="_images/cucabot-murofilo-schema.png" style="width: 640px;"></a>
-<p class="caption"><span class="caption-text">Esquema eléctrico del robot Cucabot murófilo.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
-</div>
+<p>El montaje eléctrico es el mismo que el de la plataforma Cucabot,
+añadiendo un selector de dirección S2 que será el que decida qué motor
+del robot funciona, dependiendo de la posición de la antena.</p>
+<p>Cuando el selector de dirección S2 no está accionado conectará el motor
+derecho con la tensión positiva de la batería V1, haciendo que el robot
+gire hacia su izquierda, buscando el muro.</p>
+<p>Cuando el robot choque contra el muro a su izquierda la antena se moverá
+y accionará el selector S2. Esto provocará que se conecte el motor
+izquierdo a tensión positiva, haciendo que el robot gire hacia su derecha,
+alejándose del muro.</p>
+<p>Cuando el robot se aleje del muro la antena volverá a encontrarse en
+reposo y el ciclo vuelve a comenzar.</p>
 <div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="_images/cucabot-murofilo-schema.png"><img alt="Esquema eléctrico del robot Cucabot murófilo." src="_images/cucabot-murofilo-schema.png" style="width: 640px;"></a>
+<p class="caption"><span class="caption-text">Esquema eléctrico del robot Cucabot murófilo.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="id4">
 <a class="reference internal image-reference" href="_images/cucabot-murofilo-cableado.png"><img alt="Cableado eléctrico del robot Cucabot murófilo." src="_images/cucabot-murofilo-cableado.png" style="width: 640px;"></a>
-<p class="caption"><span class="caption-text">Cableado eléctrico del robot Cucabot murófilo.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">Cableado eléctrico del robot Cucabot murófilo.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
 </div>
 <p><a class="reference download internal" download="" href="_downloads/cucabot-murofilo-electric.pdf"><code class="xref download docutils literal notranslate"><span class="pre">Plano</span> <span class="pre">eléctrico</span> <span class="pre">del</span> <span class="pre">robot</span> <span class="pre">Cucabot</span> <span class="pre">murófilo.</span>
 <span class="pre">Formato</span> <span class="pre">PDF.</span></code></a></p>
 </div>
 <div class="section" id="funcionamiento">
 <h2>Funcionamiento<a class="headerlink" href="#funcionamiento" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Para comenzar colocaremos el robot cerca de una pared, con la pared
+cerca del motor izquierdo y de la punta de la antena.</li>
+<li>A continuación accionaremos el interruptor de marcha S1 para que el
+robot comience a avanzar hacia su izquierda.</li>
+<li>El robot girará entonces hacia su izquierda, hacia la pared, de manera
+que la antena chocará contra la pared y accionará el selector de
+dirección.</li>
+<li>Al accionar el selector de dirección, el motor derecho se desconecta
+y deja de girar, mientras que el motor izquierdo se conecta y comienza
+a girar, provocando que el robot gire hacia su derecha alejándose
+de la pared con la que había chocado.</li>
+<li>Estos dos movimientos de giro a derecha e izquierda siempre se hacen
+con un avance del robot hacia adelante, por lo que el resultado final
+es que el robot avanza manteniéndose en todo momento junto a la pared.</li>
+</ol>
+<div class="figure align-center" id="id5">
+<a class="reference internal image-reference" href="_images/cucabot-murofilo-funcion-01.png"><img alt="Robot Cucabot murófilo girando hacia una pared." src="_images/cucabot-murofilo-funcion-01.png" style="width: 360px;"></a>
+<p class="caption"><span class="caption-text">Robot Cucabot murófilo girando hacia una pared.</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="id6">
+<a class="reference internal image-reference" href="_images/cucabot-murofilo-funcion-02.png"><img alt="Robot Cucabot murófilo después de chocar con la pared." src="_images/cucabot-murofilo-funcion-02.png" style="width: 360px;"></a>
+<p class="caption"><span class="caption-text">Robot Cucabot murófilo después de chocar con la pared.</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="memoria-de-trabajo">
+<h2>Memoria de trabajo<a class="headerlink" href="#memoria-de-trabajo" title="Permalink to this headline">¶</a></h2>
+<p>El siguiente documento servirá para que cada uno de los alumnos y alumnas
+del grupo de trabajo de taller dibuje y escriba los elementos necesarios
+para realizar el proyecto y enumere los trabajos realizados sobre el
+proyecto.</p>
+<p><a class="reference download internal" download="" href="_downloads/cucabot-memoria.pdf"><code class="xref download docutils literal notranslate"><span class="pre">Memoria</span> <span class="pre">de</span> <span class="pre">trabajo</span> <span class="pre">del</span> <span class="pre">alumno.</span>
+<span class="pre">Formato</span> <span class="pre">PDF.</span></code></a></p>
+<p><a class="reference download internal" download="" href="_downloads/cucabot-memoria.odt"><code class="xref download docutils literal notranslate"><span class="pre">Memoria</span> <span class="pre">de</span> <span class="pre">trabajo</span> <span class="pre">del</span> <span class="pre">alumno.</span>
+<span class="pre">Formato</span> <span class="pre">editable</span> <span class="pre">ODT.</span></code></a></p>
 </div>
 <div class="section" id="creditos">
 <h2>Créditos<a class="headerlink" href="#creditos" title="Permalink to this headline">¶</a></h2>

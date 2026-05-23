@@ -93,6 +93,12 @@ poder generar el teselado completo.
    <taller/taller-tesela-hueso.stl>`
 
 
+.. figure:: taller/_images/taller-tesela-huesos-nazaries-3d-tb.jpg
+   :alt: Teselado de huesos nazaríes impreso en 3D.
+   :align: center
+   :width: 320px
+
+
 Tesela pez volador
 ------------------
 Esta tesela está basada en un **triángulo equilátero**.
@@ -123,6 +129,11 @@ teselas encajen.
 |  :download:`Tesela de pez volador.
    Formato STL binario para imprimir en 3D.
    <taller/taller-tesela-pez-volador-3d.stl>`
+
+.. figure:: taller/_images/taller-tesela-peces-voladores-3d-tb.jpg
+   :alt: Teselado de peces voladores impreso en 3D.
+   :align: center
+   :width: 400px
 
 
 Tesela pájaro

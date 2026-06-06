@@ -5,8 +5,8 @@
   <meta name="keywords" content="Technology, Secondary Education, Drawing, Structures, Mechanisms, Materials, Electricity, Electronics, Computer Science, Programming, Control, Arduino, Communications, Workshop">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Technology resources for the classroom, free to use and share. Arduino - Shield Picuino UNO - 8. Sensor de temperatura y humedad DHT11">
-  <title>8. Sensor de temperatura y humedad DHT11 - Shield Picuino UNO - Picuino</title>
+  <meta name="description" content="Technology resources for the classroom, free to use and share. Arduino - Shield Picuino UNO - 8. DHT11 temperature and humidity sensor">
+  <title>8. DHT11 temperature and humidity sensor - Shield Picuino UNO - Picuino</title>
 
   
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
@@ -73,7 +73,7 @@
         
           <li><a href="picuino-uno-index.html">Shield Picuino UNO</a>/</li>
         
-      <li><span class="section-number">8. </span>Sensor de temperatura y humedad DHT11</li>
+      <li><span class="section-number">8. </span>DHT11 temperature and humidity sensor</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -103,40 +103,37 @@
            <div itemprop="articleBody">
             
   <div class="section" id="sensor-de-temperatura-y-humedad-dht11">
-<h1><span class="section-number">8. </span>Sensor de temperatura y humedad DHT11<a class="headerlink" href="#sensor-de-temperatura-y-humedad-dht11" title="Permalink to this headline">¶</a></h1>
-<p>El sensor DHT11 es un sensor digital de temperatura y humedad relativa del aire.
-Utiliza una comunicación digital con Arduino, de forma que no es necesaria la
-conexión a un pin analógico para realizar las lecturas.</p>
+<h1><span class="section-number">8. </span>DHT11 temperature and humidity sensor<a class="headerlink" href="#sensor-de-temperatura-y-humedad-dht11" title="Permalink to this headline">¶</a></h1>
+<p>The DHT11 sensor is a digital sensor for temperature and relative humidity of the air. It uses digital communication with Arduino, so it is not necessary to connect to an analog pin to take the readings.</p>
 <a class="reference internal image-reference" href="_images/img-00381.jpg"><img alt="Sensor DHT11 de temperatura y humedad." class="align-center" src="_images/img-00381.jpg" style="width: 480px;"></a>
 <div class="section" id="especificaciones-tecnicas">
-<h2>Especificaciones técnicas<a class="headerlink" href="#especificaciones-tecnicas" title="Permalink to this headline">¶</a></h2>
+<h2>Technical specifications<a class="headerlink" href="#especificaciones-tecnicas" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><ul class="simple">
-<li>Tensión de alimentación de 3 a 5 voltios</li>
-<li>Corriente máxima de alimentación 2,5 mA</li>
-<li>Rango de humedad relativa 20% a 80% con 5% de exactitud</li>
-<li>Rango de temperatura de 0 a 50ºC con +-2ºC de exactitud</li>
-<li>Velocidad de 1 medida por segundo</li>
-<li>Tamaño 15.5mm x 12mm x 5,5mm</li>
-<li>Conexión de 4 pines</li>
+<li>Supply voltage from 3 to 5 volts</li>
+<li>Maximum supply current 2.5 mA</li>
+<li>Relative humidity range 20% to 80% with 5% accuracy</li>
+<li>Temperature range from 0 to 50ºC with +-2ºC accuracy</li>
+<li>Speed ​​of 1 measurement per second</li>
+<li>Size 15.5mm x 12mm x 5.5mm</li>
+<li>4 pin connection</li>
 </ul>
 </div></blockquote>
-<p><a class="reference external" href="../../_static/document/DHT11-drobotics.pdf" rel="noopener noreferrer" target="_blank">DHT11. Hoja de características. D-Robotics.</a></p>
+<p><a class="reference external" href="../../_static/document/DHT11-drobotics.pdf" rel="noopener noreferrer" target="_blank">DHT11. Characteristics sheet. D-Robotics</a></p>
 </div>
 <div class="section" id="libreria-arduino">
-<h2>Librería Arduino<a class="headerlink" href="#libreria-arduino" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="../../_static/downloads/dht11-041.zip" rel="noopener noreferrer" target="_blank">Librería Arduino para el sensor DHT11. Versión 0.4.1</a></p>
+<h2>Arduino Library<a class="headerlink" href="#libreria-arduino" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="../../_static/downloads/dht11-041.zip" rel="noopener noreferrer" target="_blank">Arduino library for the DHT11 sensor. Version 0.4.1</a></p>
 </div>
 <div class="section" id="esquema-de-conexion">
-<h2>Esquema de conexión<a class="headerlink" href="#esquema-de-conexion" title="Permalink to this headline">¶</a></h2>
+<h2>Connection scheme<a class="headerlink" href="#esquema-de-conexion" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="_images/img-00401.jpg"><img alt="Módulo DHT11. Pines." class="align-center" src="_images/img-00401.jpg" style="width: 240px;"></a>
 </div>
 <div class="section" id="ejercicios">
-<h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Permalink to this headline">¶</a></h2>
+<h2>Exercises<a class="headerlink" href="#ejercicios" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
-<li><p class="first">El siguiente programa envía por el puerto serie la humedad relativa
-y la temperatura medida por el sensor DHT11.</p>
-<p>Carga el programa en Arduino y muestra los valores por el monitor serie.</p>
+<li><p class="first">The following program sends through the serial port the relative humidity and the temperature measured by the DHT11 sensor.</p>
+<p>Upload the program to the Arduino and display the values ​​on the serial monitor.</p>
 <div class="highlight-Arduino notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -239,17 +236,12 @@ y la temperatura medida por el sensor DHT11.</p>
 </pre></div>
 </td></tr></table></div>
 </li>
-<li><p class="first">Modifica el programa anterior para que muestre en el display la medición
-de temperatura.</p>
+<li><p class="first">Modify the previous program so that it shows the temperature measurement on the display.</p>
 </li>
-<li><p class="first">Modifica el programa anterior para que se encienda un led rojo en caso
-de superar la temperatura ambiental en 2 grados centígrados.</p>
-<p>Comprueba el funcionamiento correcto calentando el sensor.
-El led rojo debe mantenerse encendido aunque la temperatura vuelva a bajar.</p>
+<li><p class="first">Modify the previous program so that a red LED lights up if the ambient temperature exceeds 2 degrees Celsius.</p>
+<p>Check correct operation by heating the sensor. The red led should stay on even if the temperature drops again.</p>
 </li>
-<li><p class="first">Modifica el programa anterior para que suene un zumbador cuando la temperatura
-sea alta. El zumbador sonará durante unas décimas de segundo cada segundo.
-Las instrucciones a utilizar son las siguientes:</p>
+<li><p class="first">Modify the above program to make a buzzer sound when the temperature is high. The buzzer will sound for a few tenths of a second every second. The instructions to use are as follows:</p>
 <div class="highlight-Arduino notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">pio</span><span class="p">.</span><span class="n">buzzTone</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
@@ -257,13 +249,10 @@ Las instrucciones a utilizar son las siguientes:</p>
 <span class="n">pio</span><span class="p">.</span><span class="n">buzzTone</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
 </pre></div>
 </td></tr></table></div>
-<p>El zumbador dejará de sonar cuando la temperatura vuelva a bajar.
-Comprueba el funcionamiento correcto calentando el sensor.</p>
+<p>The buzzer will stop sounding when the temperature drops again. Check correct operation by heating the sensor.</p>
 </li>
-<li><p class="first">Modifica el programa anterior para que se encienda un led azul mientras
-la medida de temperatura se mantenga baja.</p>
-<p>El led azul se apagará en caso de que la temperatura medida supere la
-temperatura ambiental actual más un grado.</p>
+<li><p class="first">Modify the previous program so that a blue led lights up while the temperature measurement remains low.</p>
+<p>The blue led will turn off if the measured temperature exceeds the current ambient temperature plus one degree.</p>
 </li>
 </ol>
 </div>
@@ -310,7 +299,7 @@ temperatura ambiental actual más un grado.</p>
       and software is licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">GPL v3</a>.
       <br>
       <span class="lastupdated">
-        Last updated on May, 2026.
+        Last updated on June, 2026.
       </span>
 
     </p>
@@ -390,7 +379,7 @@ temperatura ambiental actual más un grado.</p>
 <li class="toctree-l3"><a class="reference internal" href="picuino-uno-key3.html">5. Pulsadores: Contadores</a></li>
 <li class="toctree-l3"><a class="reference internal" href="picuino-uno-display1.html">6. Display de 7 segmentos</a></li>
 <li class="toctree-l3"><a class="reference internal" href="picuino-uno-ultrasonic.html">7. Sensor de distancia por ultrasonidos</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">8. Sensor de temperatura y humedad DHT11</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">8. DHT11 temperature and humidity sensor</a></li>
 <li class="toctree-l3"><a class="reference internal" href="picuino-uno-ldr.html">9. Sensor LDR</a></li>
 <li class="toctree-l3"><a class="reference internal" href="picuino-uno-infrared-emiter.html">10. Emisor de infrarrojos</a></li>
 <li class="toctree-l3"><a class="reference internal" href="picuino-uno-infrared-receiver.html">11. Receptor de infrarrojos</a></li>

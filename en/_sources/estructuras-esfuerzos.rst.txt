@@ -1,7 +1,7 @@
-﻿:Date: 10/12/2018
-:Modified: 12/01/2026
-:Author: Carlos Félix Pardo Martín
-:License: Creative Commons Attribution-ShareAlike 4.0 International
+﻿:date: 2018-12-10
+:modified: 2026-01-12
+:author: Carlos Félix Pardo Martín
+:license: Creative Commons Attribution-ShareAlike 4.0 International
 
 
 .. _estructuras-esfuerzos:

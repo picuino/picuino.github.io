@@ -31,26 +31,27 @@ Las tres vistas contienen las tres dimensiones de la pieza, pero repartidas entr
 Para dibujar la pieza en perspectiva tenemos que combinar la información de las tres vistas.
 
 
-Dibujar alzado y perfil
------------------------
+Dibujar el alzado y el perfil
+-----------------------------
 Para comenzar, dibujaremos el alzado y el perfil sobre la plantilla
-isométrica, adaptando sus líneas a las direcciones de la perspectiva.
+isométrica, haciendo que sus líneas sigan las direcciones de la
+perspectiva.
 
 En la perspectiva isométrica, las tres dimensiones de la pieza se
 representan mediante tres direcciones diferentes.
-La altura se dibuja verticalmente y la anchura y la profundidad se dibujan
-mediante líneas inclinadas.
+La altura se representa mediante líneas verticales, mientras que la
+anchura y la profundidad se representan mediante líneas inclinadas.
 
 .. image:: dibujo/_images/dibujo-isometrica-pieza-01-f2.png
    :width: 360px
    :align: center
 
 
-Desplazar el perfil
--------------------
-Para realizar el siguiente paso debemos fijarnos en las aristas que
-todavía no están en su posición correcta y desplazarlas hasta que
-coincidan con las aristas correspondientes del alzado.
+Desplazar las aristas
+---------------------
+Para realizar el siguiente paso, debemos fijarnos en las aristas que
+todavía no están en su posición correcta y desplazarlas hasta hacer
+coincidir las aristas correspondientes del perfil y del alzado.
 
 El perfil solo nos muestra la altura y la profundidad de la pieza.
 No podemos obtener de él la anchura, porque estamos mirando la pieza
@@ -66,15 +67,15 @@ sus aristas coincidan con las aristas que se pueden ver en el alzado.
    :align: center
 
 
-Dibujar tres líneas en los vértices
------------------------------------
+Dibujar tres líneas desde los vértices
+--------------------------------------
 A partir de esta figura, que está prácticamente terminada, añadiremos las
 líneas que faltan en cada vértice.
 
-De cada vértice de una pieza en perspectiva salen tres líneas con
-diferente orientación. En algunos casos, como en los vértices inferiores,
-la tercera línea está oculta y no se representa. Sin embargo, en los
-vértices superiores sí debemos dibujar las tres líneas.
+De cada vértice de una pieza en perspectiva salen tres líneas que siguen
+las tres direcciones de la perspectiva.
+En algunos casos, una de las tres líneas queda oculta y no se representa.
+Cuando las tres aristas son visibles, debemos dibujar las tres líneas.
 
 Estas tres líneas siguen siempre las tres direcciones de la perspectiva
 isométrica:
@@ -83,9 +84,13 @@ isométrica:
    :width: 360px
    :align: center
 
+
+Terminar la pieza
+-----------------
 Ahora solo hace falta prolongar las líneas recién trazadas hasta que se
-encuentren con otras aristas de la pieza. De esta forma, la pieza en tres
-dimensiones estará terminada:
+encuentren con otras aristas de la pieza.
+De esta forma, habremos terminado la representación de la pieza en
+perspectiva isométrica:
 
 .. image:: dibujo/_images/dibujo-isometrica-pieza-01-f5.png
    :width: 360px

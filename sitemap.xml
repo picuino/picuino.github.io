@@ -232,7 +232,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/content.html</loc>
-  <lastmod>2026-09-02</lastmod>
+  <lastmod>2026-09-18</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -1138,7 +1138,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/error-404.html</loc>
-  <lastmod>2026-09-02</lastmod>
+  <lastmod>2026-09-18</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -1270,7 +1270,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/genindex.html</loc>
-  <lastmod>2026-09-02</lastmod>
+  <lastmod>2026-09-18</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -1426,7 +1426,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/index.html</loc>
-  <lastmod>2026-09-02</lastmod>
+  <lastmod>2026-09-18</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -2253,6 +2253,12 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://www.picuino.com/en/pruebas.html</loc>
+  <lastmod>2026-09-18</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://www.picuino.com/en/python-booleanos.html</loc>
   <lastmod>2026-08-25</lastmod>
   <changefreq>weekly</changefreq>
@@ -2770,7 +2776,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/en/search.html</loc>
-  <lastmod>2026-09-02</lastmod>
+  <lastmod>2026-09-18</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -3454,7 +3460,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/content.html</loc>
-  <lastmod>2026-09-02</lastmod>
+  <lastmod>2026-09-18</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -4360,7 +4366,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/error-404.html</loc>
-  <lastmod>2026-09-02</lastmod>
+  <lastmod>2026-09-18</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -4492,7 +4498,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/genindex.html</loc>
-  <lastmod>2026-09-02</lastmod>
+  <lastmod>2026-09-18</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -4648,7 +4654,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/index.html</loc>
-  <lastmod>2026-09-02</lastmod>
+  <lastmod>2026-09-18</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
@@ -5475,6 +5481,12 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://www.picuino.com/es/pruebas.html</loc>
+  <lastmod>2026-09-18</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://www.picuino.com/es/python-booleanos.html</loc>
   <lastmod>2026-08-25</lastmod>
   <changefreq>weekly</changefreq>
@@ -5992,7 +6004,7 @@
 </url>
 <url>
   <loc>https://www.picuino.com/es/search.html</loc>
-  <lastmod>2026-09-02</lastmod>
+  <lastmod>2026-09-18</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>

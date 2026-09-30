@@ -1,5 +1,7 @@
 set OPTIONS=-level 0%%,95%% -fuzz 2%% -transparent White -resize 480x
 
+goto new
+
 set IMAGE=index-antena
 \Bin\ImageMagick\convert %IMAGE%-org.png %OPTIONS% %IMAGE%.webp
 
@@ -40,6 +42,20 @@ set IMAGE=index-test
 \Bin\ImageMagick\convert %IMAGE%-org.png %OPTIONS% %IMAGE%.webp
 
 set IMAGE=index-simulador
+\Bin\ImageMagick\convert %IMAGE%-org.png %OPTIONS% %IMAGE%.webp
+
+set IMAGE=index-junk
+\Bin\ImageMagick\convert %IMAGE%-org.png %OPTIONS% %IMAGE%.webp
+
+
+:new
+
+set OPTIONS=-level 0%%,92%% -fuzz 2%% -transparent White -resize 480x
+
+set IMAGE=index-aulavirtual
+\Bin\ImageMagick\convert %IMAGE%-org.png %OPTIONS% %IMAGE%.webp
+
+set IMAGE=index-novedades
 \Bin\ImageMagick\convert %IMAGE%-org.png %OPTIONS% %IMAGE%.webp
 
 pause

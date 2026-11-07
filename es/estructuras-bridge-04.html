@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es" >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Tecnología, Educación Secundaria, Dibujo, Estructuras, Mecanismos, Materiales, Electricidad, Electrónica, Informática, Programación, Control, Arduino, Comunicaciones, Taller, Legislación Educativa">
+  <meta property="article:published_time" content="2026-11-07T12:00:00+01:00" />
+<meta property="article:modified_time" content="2026-11-07T12:00:00+01:00" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "5. Ejercicio arco Warren",
+  "author": {
+    "@type": "Person",
+    "name": "Carlos Félix Pardo Martín",
+    "url": "https://www.picuino.com/es/author.html",
+    "sameAs": [
+      "https://x.com/picuino",
+      "https://github.com/picuino"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Picuino",
+    "url": "https://www.picuino.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.picuino.com/favicon-192.png"
+    }
+  },
+  "mainEntityOfPage": "https://www.picuino.com/es/estructuras-bridge-04.html",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "datePublished": "2026-11-07T12:00:00+01:00",
+  "dateModified": "2026-11-07T12:00:00+01:00"
+}
+</script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos de Tecnología para el aula, libres para usar y compartir. Mecánica - Bridge Designer - 5. Ejercicio arco Warren">
+  <title>5. Ejercicio arco Warren - Bridge Designer - Picuino</title>
+
+  
+  <link rel="icon" type="image/png" href="/favicon-192.png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="/favicon-192.png" />
+  <meta name="msapplication-TileImage" content="/favicon-192.png" />
+
+  
+  <link rel="canonical" href="https://www.picuino.com/es/estructuras-bridge-04.html">
+
+  
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="Search within ..."
+        href="_static/opensearch.xml">
+
+  <link rel="stylesheet" href="_static/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+  <link rel="stylesheet" href="_static/custom.css" type="text/css">
+  <link rel="author" title="Sobre este documento" href="about.html">
+  <link rel="glossary" title="Glossary" href="genindex.html">
+  <link rel="index" title="Índice" href="content.html">
+  <link rel="search" title="Búsqueda" href="search.html">
+  <link rel="next" title="6. Ejercicio arco Pratt" href="estructuras-bridge-05.html">
+  <link rel="prev" title="4. Ejercicio Pratt" href="estructuras-bridge-03.html">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    <div data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="content.html"><img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino"></a>
+      </nav>
+
+	  <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="content.html">Home</a>/</li>
+        
+          <li><a href="mecan-index.html">Mecánica</a>/</li>
+        
+          <li><a href="estructuras-bridge-index.html">Bridge Designer</a>/</li>
+        
+      <li><span class="section-number">5. </span>Ejercicio arco Warren</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/estructuras-bridge-04.rst.txt" rel="nofollow"> Ver texto fuente</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+
+  
+  
+  <hr>
+
+</div>
+          <div role="main" class="document">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ejercicio-arco-warren">
+<span id="estructuras-bridge-04"></span><h1><span class="section-number">5. </span>Ejercicio arco Warren<a class="headerlink" href="#ejercicio-arco-warren" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>El objetivo de este ejercicio es terminar un puente de estilo Warren
+con un arco por debajo de la carretera.</p>
+<a class="reference internal image-reference" href="_images/mecan-bridge-design-15.png"><img alt="_images/mecan-bridge-design-15.png" src="_images/mecan-bridge-design-15.png" style="width: 600px;"></a>
+<div class="section" id="configurar">
+<h2>Configurar<a class="headerlink" href="#configurar" title="Enlazar permanentemente con este título">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Abrir el programa <strong>Bridge Designer</strong> en el ordenador y clicar en
+<code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">a</span> <span class="pre">New</span> <span class="pre">Bridge</span> <span class="pre">Design</span></code> y luego en el botón <strong>OK</strong>.</p>
+<a class="reference internal image-reference" href="_images/mecan-bridge-portada.png"><img alt="_images/mecan-bridge-portada.png" src="_images/mecan-bridge-portada.png" style="width: 600px;"></a>
+</li>
+<li><p class="first">En la primera pantalla de diseño, clicar simplemente el botón
+<strong>Next&gt;&gt;</strong>.</p>
+<a class="reference internal image-reference" href="_images/mecan-bridge-design-01.png"><img alt="_images/mecan-bridge-design-01.png" src="_images/mecan-bridge-design-01.png" style="width: 600px;"></a>
+</li>
+<li><p class="first">En la segunda pantalla de diseño:</p>
+<ul class="simple">
+<li>Clicar en <code class="docutils literal notranslate"><span class="pre">6-character</span> <span class="pre">Local</span> <span class="pre">Contest</span> <span class="pre">Code</span></code></li>
+<li>Introducir el código <strong>BRI23A</strong> en el cuadro de texto</li>
+<li>Clicar en el botón <strong>Next&gt;&gt;</strong></li>
+</ul>
+<p>En el caso de que el botón <strong>Next&gt;&gt;</strong> no se pueda clicar, habrá que
+introducir de nuevo el código <strong>BRI23A</strong>.</p>
+</li>
+<li><p class="first">En la siguiente pantalla de diseño:</p>
+<ul class="simple">
+<li>Clicar <strong>&lt;none&gt;</strong> en la plantilla a aplicar</li>
+<li>Clicar <strong>Finish</strong> para terminar la configuración</li>
+</ul>
+</li>
+<li><p class="first">En la siguiente pantalla aparecerá la carretera sobre la que vamos
+a construir el puente.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="construccion-del-puente">
+<h2>Construcción del puente<a class="headerlink" href="#construccion-del-puente" title="Enlazar permanentemente con este título">¶</a></h2>
+<ol class="arabic" start="6">
+<li><p class="first">Para ahorrar material, vamos a escoger <code class="docutils literal notranslate"><span class="pre">Hollow</span> <span class="pre">Tube</span></code> (barras huecas
+que soportan mejor el pandeo) y material <code class="docutils literal notranslate"><span class="pre">Quenched</span> <span class="pre">&amp;</span> <span class="pre">Tempered</span> <span class="pre">Steel</span></code>.
+Este material es más caro, pero permite utilizar menos cantidad para
+conseguir la misma resistencia, con un ahorro final.</p>
+<img alt="_images/mecan-bridge-design-06.png" src="_images/mecan-bridge-design-06.png">
+</li>
+<li><p class="first">Para continuar, colocaremos las nuevas juntas y barras en forma de
+triángulos, como puede verse en el la siguiente imagen.</p>
+<a class="reference internal image-reference" href="_images/mecan-bridge-design-15.png"><img alt="_images/mecan-bridge-design-15.png" src="_images/mecan-bridge-design-15.png" style="width: 600px;"></a>
+</li>
+</ol>
+</div>
+<div class="section" id="simulacion">
+<h2>Simulación<a class="headerlink" href="#simulacion" title="Enlazar permanentemente con este título">¶</a></h2>
+<ol class="arabic" start="8">
+<li><p class="first">Ahora podemos probar el funcionamiento de nuestro puente con el
+simulador. Para ello, clicaremos en el botón de simulación.</p>
+<p>En la parte inferior del puente las barras de color azul indican que
+están sometidas a tracción.</p>
+<p>Como el puente se caerá, es necesario volver a la ventana de diseño
+para reforzar las barras.</p>
+</li>
+<li><p class="first">Otra vez en la ventana de diseño podemos ver cómo están señaladas con
+rayas rojas las barras sometidas a demasiada compresión y con
+rayas azules las barras sometidas a demasiada tracción.</p>
+<p>Estas barras hay que reforzarlas con un mayor grosor para que el puente
+resista su propio peso y también el paso del camión.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="reduccion-del-coste">
+<h2>Reducción del coste<a class="headerlink" href="#reduccion-del-coste" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Una vez que el puente resiste el paso del camión, el objetivo será reducir
+su coste todo lo posible.</p>
+<ol class="arabic" start="10">
+<li><p class="first">Otra herramienta que podemos utilizar para visualizar el estado de las
+barras y reducir su tamaño es la ventana derecha del simulador.
+En esta ventana aparecen las tensiones de tracción y de compresión
+de cada una de las barras del puente con un coeficiente que va desde
+el 0 hasta el 1:</p>
+<ul class="simple">
+<li>Si alguno de los dos coeficientes es mayor que 1, significa que
+la barra tiene mayor tensión que la que puede soportar y se romperá.</li>
+<li>Si el coeficiente es menor que 1, por ejemplo 0.70, significa que
+la barra soporta poca tensión y por lo tanto se puede hacer más fina
+sin peligro de que se rompa, ahorrando costo de material.</li>
+</ul>
+<img alt="_images/mecan-bridge-design-11.png" src="_images/mecan-bridge-design-11.png">
+<p>En la imagen se muestra seleccionada la <strong>barra 3</strong>, que soporta un
+esfuerzo de compresión de 0.98 (en el límite de rotura). Esta barra
+ya está optimizada y no se debe cambiar de grosor.</p>
+<p>Sin embargo la <strong>barra 2</strong> soporta un esfuerzo de compresión de 0.72
+por lo  que se puede reducir su grosor y hacerla más fina para
+ahorrar costo de material.</p>
+</li>
+<li><p class="first">El objetivo ahora es conseguir que el puente resista con el menor
+precio posible, reduciendo el grosor de todas las barras que tengan
+tensiones menores que 1.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="puntuacion">
+<h2>Puntuación<a class="headerlink" href="#puntuacion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Para saber tu puntuación, pregunta cuál es el precio más bajo del puente
+e introduce el valor en la primera casilla.
+Después introduce el precio conseguido en tu puente en la segunda casilla
+y la puntuación obtenida aparecerá debajo, en la tercera casilla.</p>
+<script>
+function calc() {
+   precio_min = idtonum("precio_min");
+   precio_actual = idtonum("precio_actual");
+   porcentaje_aumento_para_aprobado = 30;
+   nota_max = 100.0;
+   nota_aprobado = 50.0;
+   k = - ( Math.log(nota_max) - Math.log(nota_aprobado) ) / ( Math.log(100) - Math.log(100 + porcentaje_aumento_para_aprobado) );
+   puntuacion = nota_max * Math.pow(precio_min / precio_actual, k);
+   puntuacion = Math.round(puntuacion);
+   if (Number.isFinite(puntuacion) && puntuacion <= nota_max) {
+      console.log(precio_min, precio_actual, puntuacion);
+      document.getElementById("precio_puntuacion").value = puntuacion;
+   }
+   else {
+      document.getElementById("precio_puntuacion").value = "";
+   };
+}
+
+function idtonum(id) {
+   val = document.getElementById(id).value.replace(',', '.');
+   if (isNaN(val)) return '';
+   return val * 1.0;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+   document.querySelectorAll('input[type=text]').forEach(
+      node => node.addEventListener('keypress', e => { if(e.keyCode == 13) { e.preventDefault(); } }))
+});
+
+</script>
+
+<div class="calc_row">
+   <div class="calc_sname">Precio más bajo</div>
+   <div class="calc_sval"> <form> <input type="text" id="precio_min" onkeyup="calc()"> </form> </div>
+   <div class="calc_sunit">k$</div>
+</div>
+<div class="calc_row">
+   <div class="calc_sname">Precio conseguido</div>
+   <div class="calc_sval"> <form> <input type="text" id="precio_actual" onkeyup="calc()"> </form> </div>
+   <div class="calc_sunit">k$</div>
+</div>
+<div class="calc_row">
+   <div class="calc_sname">Puntuación obtenida</div>
+   <div class="calc_scalc"> <form> <input disabled="disabled" type="text" id="precio_puntuacion"> </form> </div>
+   <div class="calc_sunit">%</div>
+</div></div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="estructuras-bridge-05.html" class="btn btn-neutral float-right" title="6. Ejercicio arco Pratt" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="estructuras-bridge-03.html" class="btn btn-neutral" title="4. Ejercicio Pratt" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <p class="content-info">Recursos de Tecnología para el aula, libres para usar y compartir</p>
+    <ul class="link-list">
+    <li><a class="reference internal" href="docentes.html" target="_blank">¿Eres docente?</a></li>
+    <li><a class="reference internal" href="contacto.html" target="_blank">Contacto</a></li>
+    <li><a class="reference internal" href="about.html" target="_blank">Sobre Picuino</a></li>
+    <li><a class="reference internal" href="author.html" target="_blank">Autor</a></li>
+    </ul>
+    <ul class="link-list">
+    <li><a class="reference internal" href="../es/legal-aviso.html" target="_blank">Aviso legal</a></li>
+    <li><a class="reference internal" href="legal-cookies.html" target="_blank">Política de Cookies</a></li>
+    <li><a class="reference internal" href="legal-attribution.html" target="_blank">Créditos</a></li>
+    <li><a class="reference internal" href="genindex.html" target="_blank">Glosario</a></li>
+    <li><a class="reference internal" href="content.html" target="_blank">Índice</a></li>
+    </ul>
+    <p class="content-info">
+      Copyright &copy; 2013-2026, Carlos Félix Pardo Martín.
+      <br>
+
+      A menos que se indique lo contrario, los contenidos están bajo licencia <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">Creative Commons BY-SA 4.0</a>
+      y el software bajo licencia <a class="reference external" href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">GPL v3</a>.
+      <br>
+      <span class="lastupdated">
+        Actualizado por última vez en noviembre, 2026.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-picuino-bgblue.png" class="logo" alt="O_[]¯O Picuino">
+          
+          </a>
+          <br>
+          <a href="../en/estructuras-bridge-04.html">English</a>
+          <!-- | <a href="../ca/estructuras-bridge-04.html">Català</a> -->
+          <br>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar docs">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dibujo-index.html">Dibujo Técnico</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="mecan-index.html">Mecánica</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="mecan-estructuras-index.html">Estructuras</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="estructuras-bridge-index.html">Bridge Designer</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="estructuras-bridge-designer.html">1. Diseño de puentes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="estructuras-bridge-01.html">2. Ejercicio Warren superior</a></li>
+<li class="toctree-l3"><a class="reference internal" href="estructuras-bridge-02.html">3. Ejercicio Warren inferior</a></li>
+<li class="toctree-l3"><a class="reference internal" href="estructuras-bridge-03.html">4. Ejercicio Pratt</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">5. Ejercicio arco Warren</a></li>
+<li class="toctree-l3"><a class="reference internal" href="estructuras-bridge-05.html">6. Ejercicio arco Pratt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="estructuras-bridge-06.html">7. Ejercicio Warren suspendido</a></li>
+<li class="toctree-l3"><a class="reference internal" href="estructuras-bridge-07.html">8. Ejercicio Warren suspendido doble</a></li>
+<li class="toctree-l3"><a class="reference internal" href="estructuras-bridge-08.html">9. Ejercicio Warren con catenaria</a></li>
+<li class="toctree-l3"><a class="reference internal" href="estructuras-bridge-09.html">10. Ejercicio Warren no uniforme</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="mecan-maquinas-index.html">Máquinas y Mecanismos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mecan-calibre.html">El Calibre</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mecan-neumatic-index.html">Neumática</a></li>
+<li class="toctree-l2"><a class="reference internal" href="freecad-index.html">FreeCAD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blockscad-index.html">BlocksCAD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mecan-origami.html">Papiroflexia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mecan-recursos.html">Recursos para Mecánica</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="material-index.html">Materiales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electric-index.html">Electricidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electronic-index.html">Electrónica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="informatica-index.html">Informática</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prog-index.html">Programación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arduprog/index.html">Arduino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robotica-index.html">Robótica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comm-index.html">Comunicaciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller-index.html">Taller de Tecnología</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-index.html">Otros recursos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ley-index.html">Legislación Educativa</a></li>
+</ul>
+
+            
+          
+
+          <!-- Enlaces directos -->
+          <br>
+          <ul>
+          <li class="toctree-l1"><a class="reference internal"
+          href="/test/" target="_blank">Test de Tecnología</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="/circuits/" target="_blank">Simulador de circuitos</a>
+          </li><li class="toctree-l1"><a class="reference internal"
+          href="https://github.com/picuino/tecno-recursos" target="_blank">Proyecto en GitHub</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script defer id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+
+   
+
+  <script defer src="_static/theme.js"></script>
+
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+</body>
+</html>
